@@ -11,7 +11,16 @@ copyright                   : "2021"  # Copyright year to be placed in the foote
 logo                        : logo.png  # A path to the book logo
 repository:
   url                       : https://github.com/mpavsic/biokeminfo
+  path_to_book              : biokeminfo
+  branch                    : main
 html:
   use_repository_button     : true
+  use_edit_page_button      : false
+  use_issues_button         : false
+  extra_navbar              : ""
+  extra_footer              : ""
+  baseurl                   : https://mpavsic.github.io/biokeminfo
+  home_page_in_navbar       : true
 launch_buttons:
   binderhub_url             : https://mybinder.org
+  notebook_interface        : jupyterlab
