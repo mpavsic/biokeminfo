@@ -10,12 +10,12 @@ Repozitorij je v nastajanju in bo v študijskem letu 2020/2021 redno posodobljen
 
 Osnovna uporaba je enostavna - knjigo si lahko ogledate na [mpavsic.github.io/biokeminfo](http://mpavsic.github.io/biokeminfo), kjer najdete tudi povezave za prenos posameznih zvezkov in strani v formatu PDF, prav tako pa je zvezke Jupyter Lab mogoče poganjati v Binder-ju (povezave so na vrhu zvezkov).
 
-Repozitorij lahko tudi klonirate (*clone*) ter zvezke Jupyter Lab odpirate lokalno.
+Repozitorij lahko tudi klonirate (*clone*) ter zvezke Jupyter Lab odpirate lokalno, lahko pa prenesete le posamezne zvezke.
 
 Prav tako lahko lokalno zgradite tudi celo knjigo:
 - klonirajte ta repozitorij
 - namestite potrebne pakete (najbolje v virtualnem okolju): `pip install -r requirements.txt`
-- zaženite gradnjo: `jupyter-book build .`
+- zaženite gradnjo: `jupyter-book build biokeminfo`
 
 Zgrajena knjiga bo v `_build/html/`.
 
