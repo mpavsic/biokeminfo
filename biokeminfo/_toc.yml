@@ -2,6 +2,12 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: naslovnica
 
+- part: Zbirke
+  chapters:
+  - file: osnove/nt
+    sections:
+      - file: vaje/nt-oligo_analiza
+
 - part: Priloge
   chapters:
     - file: priloge/jupyterlab
