@@ -1,7 +1,8 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
+- file: naslovnica
 
-- part: Dodatki
+- part: Priloge
   chapters:
-    - file: extras/markdown
+    - file: priloge/jupyterlab
+    - file: priloge/markdown
