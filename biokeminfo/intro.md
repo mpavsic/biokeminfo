@@ -7,7 +7,9 @@ Knjiga je sestavljena iz nalog, podprtih s kratkim uvodom ter razlagami. Naloge 
 * naloge, ki se nanašajo na uporabo spletnih podatkovnih zbirk ter spletnih ali lokalno nainstaliranih programov s "prijaznim" uporabniškim vmesnikom, kjer znanje programiranja ni potrebno; 
 * programiranje v jeziku Python.
 
-Podstrani, ki vsebujejo naloge iz programiranja, so napisane v obliki zvezkov JupyterLab. Na tej strani so vidni kot koda in njen izhod, a s kodo tukaj ne morete interagirati. Za to jih morate prenesti na vaš računalnik in jih odpreti v okolju JupyterLab, lahko pa jih odprete v spletni storitvi Binder (povezava je vidna v zvezkih JupyterLab desno zgoraj).
+Podstrani, ki vsebujejo naloge iz programiranja, pa tudi nekatere druge podstrani, so napisane v obliki zvezkov JupyterLab. Na tej strani so vidni kot koda in njen izhod, a s kodo tukaj ne morete interagirati. Zadeva bostane bistveno bolj uporabna če:
+* zvezek oz. zvezke prenesere na vaš računalnik in jih odpreti v okolju JupyterLab ali
+* zvezek odprete v spletni storitvi Binder (povezava je vidna v zvezkih JupyterLab desno zgoraj). V slednjem primeru se spremembe, ki jih naredite v zvezku, ne shranijo na spletu, zato morate zvezek po koncu vaje oz. preden zaprete okno brskalnika shraniti lokalno (ga prenesete na vaš računalnik).
 
 Naloge so smiselno razvrščene v tematske sklope, njihovo zaporedje pa ni nujno povezano z zaporedjem izvajanja na vajah. Katere naloge pridejo v poštev za posamezno vajo je navedeno na posebni podstrani, ki se nanaša na tekoče študijsko leto.
 

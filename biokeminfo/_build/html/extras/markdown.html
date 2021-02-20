@@ -227,8 +227,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nastevanje">
-     Naštevanje
+    <a class="reference internal nav-link" href="#seznami">
+     Seznami
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -312,8 +312,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="nastevanje">
-<h3>Naštevanje<a class="headerlink" href="#nastevanje" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="seznami">
+<h3>Seznami<a class="headerlink" href="#seznami" title="Permalink to this headline">¶</a></h3>
 <p>V vsako vrstico, ki je del seznama, na začetek dodamo <em>zvezdico</em> (<code class="docutils literal notranslate"><span class="pre">*</span></code>). Tako bo seznam zapisan kot …</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">prva</span> <span class="n">alineja</span>
 <span class="o">*</span> <span class="n">druga</span> <span class="n">alineja</span>
@@ -326,6 +326,30 @@
 <li><p>druga alineja</p></li>
 <li><p>tretja alineja</p></li>
 </ul>
+<p>Seznam lahko pripravimo tudi kot oštevilčen, tudi v večih nivojih:</p>
+<ol class="simple">
+<li><p>prva točka</p></li>
+<li><p>druga točka</p>
+<ul class="simple">
+<li><p>prva poddtočka</p></li>
+<li><p>druga poddtočka</p></li>
+</ul>
+</li>
+<li><p>tretja točka</p>
+<ul class="simple">
+<li><p>še ena podtočka</p></li>
+</ul>
+</li>
+</ol>
+<p>koda za zgornji seznam pa je:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">prva</span> <span class="n">točka</span>
+<span class="mf">2.</span> <span class="n">druga</span> <span class="n">točka</span>
+   <span class="o">*</span> <span class="n">prva</span> <span class="n">poddtočka</span>
+   <span class="o">*</span> <span class="n">druga</span> <span class="n">poddtočka</span>
+<span class="mf">3.</span> <span class="n">tretja</span> <span class="n">točka</span>
+   <span class="o">*</span> <span class="n">še</span> <span class="n">ena</span> <span class="n">podtočka</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="poudarjeno-odebeljeno">
 <h3>Poudarjeno, odebeljeno<a class="headerlink" href="#poudarjeno-odebeljeno" title="Permalink to this headline">¶</a></h3>
@@ -378,16 +402,15 @@ $$
 \sum_{k=1}^n \frac{1}{k^2}
 = \frac{\pi^2}{6}
 \]</div>
-<p>Formule lahko izpisujemo tudi kar znotraj besedila oz. v isti vrstici (<em>inline</em>), kar dosežemo objemom formule v enojen <code class="docutils literal notranslate"><span class="pre">$</span></code>. Tako lahko do izpisa <span class="math notranslate nohighlight">\(y=\delta sin(x)\)</span> pridemo z <code class="docutils literal notranslate"><span class="pre">$y=\delta</span> <span class="pre">sin(x)$</span></code>.</p>
+<p>Formule lahko izpisujemo tudi kar znotraj besedila oz. v isti vrstici (<em>inline</em>), kar dosežemo z objemom formule v enojen <code class="docutils literal notranslate"><span class="pre">$</span></code>. Tako lahko do izpisa <span class="math notranslate nohighlight">\(y=\delta sin(x)\)</span> pridemo z <code class="docutils literal notranslate"><span class="pre">$y=\delta</span> <span class="pre">sin(x)$</span></code>.</p>
 </div>
 <div class="section" id="tabele">
 <h3>Tabele<a class="headerlink" href="#tabele" title="Permalink to this headline">¶</a></h3>
-<p>Tabele pravzaprav niso del osnovne sintakse, a jih tukaj vseeno omenjamo. Enostaven primer z razlago:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>| Tabele        | so             | zakon! |
+<p>Tabele pravzaprav niso del osnovne sintakse, a jih tukaj vseeno omenjamo. Pri tabelah prva vrstica vsebuje glavo (<em>header</em>), naslednja določa poravnavo (določimo z dvopičjem), sledi pa vsebina. Enostaven primer z razlago:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>| Tabele        | so             | simpl! |
 | ------------- |:--------------:| -----: |
-| stolpec 3 je  | poravnan desno |   500  |
+| stolpec 3 je  | poravnan desno |    500 |
 | stolpec 2 pa  | sredinsko      |     20 |
-| zebra je      | za pešce       |      1 |
 </pre></div>
 </div>
 <p>se izriše kot</p>
@@ -395,7 +418,7 @@ $$
 <thead>
 <tr class="row-odd"><th class="head"><p>Tabele</p></th>
 <th class="text-align:center head"><p>so</p></th>
-<th class="text-align:right head"><p>zakon!</p></th>
+<th class="text-align:right head"><p>simpl!</p></th>
 </tr>
 </thead>
 <tbody>
@@ -403,22 +426,17 @@ $$
 <td class="text-align:center"><p>poravnan desno</p></td>
 <td class="text-align:right"><p>500</p></td>
 </tr>
-<tr class="row-odd"><td><p>stiolpec 2 pa</p></td>
+<tr class="row-odd"><td><p>stolpec 2 pa</p></td>
 <td class="text-align:center"><p>sredinsko</p></td>
 <td class="text-align:right"><p>20</p></td>
 </tr>
-<tr class="row-even"><td><p>zebra je kot</p></td>
-<td class="text-align:center"><p>za pešce</p></td>
-<td class="text-align:right"><p>1</p></td>
-</tr>
 </tbody>
 </table>
-<p>Isti rezultat bi dobili, če bi tabelo zapisali nekoliko manj urejeno, na primer tako (pomembno je le, da uporabimo vsaj tri znake <code class="docutils literal notranslate"><span class="pre">-</span></code>):</p>
+<p>Ali poravnava deluje ali ne je odvisno od prevajalnika. V JupyterLab poravnava deluje, povsod pa ne. Isti rezultat bi dobili, če bi tabelo zapisali nekoliko manj urejeno, na primer tako (pomembno je le, da uporabimo vsaj tri minuse, torej <code class="docutils literal notranslate"><span class="pre">---</span></code>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>| Tabele | so | zakon! |
 | --- |:---:| ---: |
 | stolpec 3 je | poravnan desno | 500 |
 | stolpec 2 pa | sredinsko | 20 |
-| zebra je | za pešce | 1 |
 </pre></div>
 </div>
 </div>
@@ -441,7 +459,8 @@ $$
 <ul class="simple">
 <li><p><a class="reference external" href="https://spec.commonmark.org/current/">sintaksa CommonMark Markdown</a> (uradna stran)</p></li>
 <li><p><a class="reference external" href="https://myst-parser.readthedocs.io">MyST Markdown</a> (stran z dokumentacijo)</p></li>
-<li><p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">MarkDown Cheatsheet</a> (eden od osebnih repozitorijev na GitHub)</p></li>
+<li><p><a class="reference external" href="https://www.markdownguide.org">Markdown Guide</a> je pregledna stran z navodili za uporabo, vključno s <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/"><em>plonkcem</em> (<em>cheatsheet</em>)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> (eden od osebnih repozitorijev na GitHub)</p></li>
 </ul>
 </div>
 </div>

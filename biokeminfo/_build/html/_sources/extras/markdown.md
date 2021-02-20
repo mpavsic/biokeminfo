@@ -31,7 +31,7 @@ Besedilo lahko razdelimo na razdelke tako, da pred naslov razdelka damo enega al
 ### Podpodnaslov
 ```
 
-### Naštevanje
+### Seznami
 
 V vsako vrstico, ki je del seznama, na začetek dodamo *zvezdico* (```*```). Tako bo seznam zapisan kot ...
 
@@ -41,9 +41,30 @@ V vsako vrstico, ki je del seznama, na začetek dodamo *zvezdico* (```*```). Tak
 * tretja alineja
 ```
 prikazan tako:
+
 * prva alineja
 * druga alineja
 * tretja alineja
+
+Seznam lahko pripravimo tudi kot oštevilčen, tudi v večih nivojih:
+
+1. prva točka
+2. druga točka
+   * prva poddtočka
+   * druga poddtočka
+3. tretja točka
+   * še ena podtočka
+
+koda za zgornji seznam pa je:
+
+```
+1. prva točka
+2. druga točka
+   * prva poddtočka
+   * druga poddtočka
+3. tretja točka
+   * še ena podtočka
+```
 
 ### Poudarjeno, odebeljeno
 
@@ -107,35 +128,33 @@ $$
 = \frac{\pi^2}{6}
 $$
 
-Formule lahko izpisujemo tudi kar znotraj besedila oz. v isti vrstici (*inline*), kar dosežemo objemom formule v enojen ```$```. Tako lahko do izpisa $y=\delta sin(x)$ pridemo z ```$y=\delta sin(x)$```.
+Formule lahko izpisujemo tudi kar znotraj besedila oz. v isti vrstici (*inline*), kar dosežemo z objemom formule v enojen ```$```. Tako lahko do izpisa $y=\delta sin(x)$ pridemo z ```$y=\delta sin(x)$```.
 
 ### Tabele
-Tabele pravzaprav niso del osnovne sintakse, a jih tukaj vseeno omenjamo. Enostaven primer z razlago:
+Tabele pravzaprav niso del osnovne sintakse, a jih tukaj vseeno omenjamo. Pri tabelah prva vrstica vsebuje glavo (*header*), naslednja določa poravnavo (določimo z dvopičjem), sledi pa vsebina. Enostaven primer z razlago:
 
 ```
-| Tabele        | so             | zakon! |
+| Tabele        | so             | simpl! |
 | ------------- |:--------------:| -----: |
-| stolpec 3 je  | poravnan desno |   500  |
+| stolpec 3 je  | poravnan desno |    500 |
 | stolpec 2 pa  | sredinsko      |     20 |
-| zebra je      | za pešce       |      1 |
 ```
 
 se izriše kot
 
-| Tabele        | so             | zakon! |
+| Tabele        | so             | simpl! |
 | ------------- |:--------------:| -----: |
-| stolpec 3 je  | poravnan desno |   500  |
-| stiolpec 2 pa | sredinsko      |     20 |
-| zebra je kot  | za pešce       |      1 |
+| stolpec 3 je  | poravnan desno |    500 |
+| stolpec 2 pa  | sredinsko      |     20 |
 
-Isti rezultat bi dobili, če bi tabelo zapisali nekoliko manj urejeno, na primer tako (pomembno je le, da uporabimo vsaj tri znake ```-```):
+
+Ali poravnava deluje ali ne je odvisno od prevajalnika. V JupyterLab poravnava deluje, povsod pa ne. Isti rezultat bi dobili, če bi tabelo zapisali nekoliko manj urejeno, na primer tako (pomembno je le, da uporabimo vsaj tri minuse, torej ```---```):
 
 ```
 | Tabele | so | zakon! |
 | --- |:---:| ---: |
 | stolpec 3 je | poravnan desno | 500 |
 | stolpec 2 pa | sredinsko | 20 |
-| zebra je | za pešce | 1 |
 ````
 
 ### Citati
@@ -155,4 +174,5 @@ Datoteke v tej knjigi, tudi besedilni odseki zvezkov JupyterLab, so napisani v r
 
 * [sintaksa CommonMark Markdown](https://spec.commonmark.org/current/) (uradna stran)
 * [MyST Markdown](https://myst-parser.readthedocs.io) (stran z dokumentacijo)
-* [MarkDown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (eden od osebnih repozitorijev na GitHub)
+* [Markdown Guide](https://www.markdownguide.org) je pregledna stran z navodili za uporabo, vključno s [*plonkcem* (*cheatsheet*)](https://www.markdownguide.org/cheat-sheet/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (eden od osebnih repozitorijev na GitHub)
