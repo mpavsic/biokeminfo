@@ -71,8 +71,8 @@ Kot vidimo po zbirki iščemo z uporabo *esearch*, če pa želimo prenesti zapis
 Za primer si oglejmo, kako je sestavljen edem izmed zapisov. Spodnja koda vzame prvo kodo PMID v seznamu *IdList* ter prenese in izpiše vsebino zapisa:
 
 first_record = records['IdList'][0]   # prvi zapis v seznamu
-print('Prvi zapis je:', first_record)   # izpis kode PMID prvega zapisa v seznamu
-one_pubmed_entry = Entrez.efetch(db="pubmed", id=first_record, retmode='xml')
+print('Prvi zapis je:' + first_record)   # izpis kode PMID prvega zapisa v seznamu
+one_pubmed_entry = Entrez.efetch(db='pubmed', id=first_record, retmode='xml')
 single_record = Entrez.read(one_pubmed_entry)
 print(single_record)   # izpis zapisa
 
@@ -106,3 +106,14 @@ for identifier in records['IdList']:
 df = pd.DataFrame(list(articles_with_abstracts.items()), columns=['PMID', 'Abstract'])
 print(df)   # izpis dataframe
 df.to_csv('izhod/pubmed_search_output.csv')   # shranimo kot datoteko CSV
+
+---
+## Dodatne informacije
+
+Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je [PyMed](https://pypi.org/project/pymed/), ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek [COVID-19: A scholarly production dataset report for research analysis](https://doi.org/10.1016/j.dib.2020.106178). Kako so podatke pridobili je dostopno v repozitoriju na GitHub [breno-madruga/dib-covid-datased](https://github.com/breno-madruga/dib-covid-dataset), ki si ga lahko prenesere in ogledate.
+
+Zgoraj omenjeni PyMed je doselgjiv prek upravljalnika paketov **pip**. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (*virtual environment*) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. *dependencies*), ne smetite osnovne instalacije Pythona:
+* navodila za virualno okolje prek [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html);
+* navodila za virtualno okolje prek [pip](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
+
+Če želite uporabljati obstoječo instalacijo JupyterLab je morda najbolj smiselno, da si naredite virtualno okolje v Anaconda, nato pa znotraj njega nainstalirate pip (```conda install pip```) ter potrebne ostale pakete.
