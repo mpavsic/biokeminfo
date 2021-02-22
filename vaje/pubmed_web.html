@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PubMed &#8212; Biokemijska informatika</title>
+    <title>VAJA: Iskanje po PubMed &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -54,22 +54,20 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/pubmed.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DEMO: Iskanje po PubMed z uporabo E-utilities" href="../vaje/pubmed_eutilities.html" />
-    <link rel="prev" title="Biokemijska informatika" href="../naslovnica.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/pubmed.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="PubMed" />
-<meta property="og:description" content="PubMed  PubMed je najpomembnejša zbirka bio-medicinske literature. Vzdržuje jo National Center for Biotechnology Information, ki spada pod okrilje National Libr" />
+<meta property="og:title"       content="VAJA: Iskanje po PubMed" />
+<meta property="og:description" content="VAJA: Iskanje po PubMed  V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:  filtriranje rezultatov glede na tip članka, leto ipd.," />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -110,14 +108,14 @@
   Zbirke
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_eutilities.html">
+    <a class="reference internal" href="pubmed_eutilities.html">
      DEMO: Iskanje po PubMed z uporabo E-utilities
     </a>
    </li>
@@ -126,12 +124,12 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="nt.html">
+  <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
+    <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nukleotidnega zaporedja
     </a>
    </li>
@@ -194,7 +192,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/osnove/pubmed.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/pubmed_web.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -232,6 +230,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-1">
+   Naloga 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-2">
+   Naloga 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dodatna-literatura">
+   Dodatna literatura
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -239,18 +261,60 @@
         
               <div>
                 
-  <div class="section" id="pubmed">
-<h1>PubMed<a class="headerlink" href="#pubmed" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> je najpomembnejša zbirka bio-medicinske literature. Vzdržuje jo National Center for Biotechnology Information, ki spada pod okrilje National Library of Medicine, slednja pa pod National Institute of Health. Vsebuje več kot 30 milijonov referenc (citatov) iz zbirke MEDLINE ter ostalih virov.</p>
-<p>Vsak zapis v zbirki (t.j. vsaka referenca oz. citat) ima pripisano unikatno kodo, imenovano <strong>PMID</strong> (PubMed ID), ki je pravzaprav primarni ključ te zbirke. Članki imajo pripisano tudi kodo <strong>PMCID</strong>, ki pa se nanaša na PubMed Central (to je arhiv s celotnimi besedili).</p>
-<p>Po zbirki ponavadi iščemo z uporabo spletnega brskalnika ter vmesnika na naslovu <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, ki je pravzaprav del sistema <a class="reference external" href="https://www.ncbi.nlm.nih.gov/search/"><strong>Entrez</strong></a> (slednji omogoča dostop tudi do drugih zbirk na strežnikih NBCI, npr. GenBank). Spletni vmesnik nam omogoča enostavno iskanje ter filtriranje rezultatov (npr. prikaz samo preglednih člankov, člankov z dostopnim celotnim besedilom v PubMed Central), lahko pa uporabimo tudi naprednejše iskanje. Rezultate iskanja si lahko shranimo v <em>Clipboard</em>, pošljemo po e-pošti ali pa izvozimo za kasnejši uvoz v druge programe oz. analizo z lokalno nainstaliranimi programi.</p>
-<p>Po zbirki lahko iščemo tudi z uporabo programskega dostopa, ki je malce zakompliciran, je pa narejen tako, da lahko na enak način iščemo po vseh zbirkah na strežnikih NIH, npr. po zbirki nukleotidnih zaporedij GenBank.</p>
-<p>Na vajah si bomo pogledali oba najpogostejša načina dostopa do zbirke PubMed in sicer:</p>
+  <div class="section" id="vaja-iskanje-po-pubmed">
+<h1>VAJA: Iskanje po PubMed<a class="headerlink" href="#vaja-iskanje-po-pubmed" title="Permalink to this headline">¶</a></h1>
+<p>V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../vaje/pubmed_web.html"><span class="doc std std-doc">dostop prek spletnega vmesnika</span></a> in</p></li>
-<li><p><a class="reference internal" href="../vaje/pubmed_eutilities.html"><span class="doc std std-doc">programski dostop</span></a>.</p></li>
+<li><p>filtriranje rezultatov glede na tip članka, leto ipd.,</p></li>
+<li><p>kompleksno iskanje z večimi termini.</p></li>
 </ul>
-<div class="toctree-wrapper compound">
+<p>Pri tem bomo uporabljali “novo” verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu https://pubmed.ncbi.nlm.nih.gov/. Z iskanjem lahko začnemo tudi na osnovni strani Entrez (https://www.ncbi.nlm.nih.gov/), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če nastavitev pustili na <em>All Databases</em> se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).</p>
+<p><img alt="pubmed_web_entrez" src="../_images/pubmed_web_entrez.png" /></p>
+<hr class="docutils" />
+<div class="section" id="naloga-1">
+<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
+<p>Odgovorite na naslednja vprašanja:</p>
+<ol class="simple">
+<li><p>S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda <strong>coronavorus</strong>.</p></li>
+<li><p>Koliko od teh člankov ima prosto dostopno celotno besedilo?</p></li>
+<li><p>Koliko člankov je na temo kliničnih preizkusov (<em>Clinical Trial</em>)?</p></li>
+<li><p>Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?</p></li>
+<li><p>Koliko člankov v zvezi s koronavirusom (še vedno smo pri iskalnem pojmu <strong>coronavirus</strong>) je preglednih (t.j. <em>Review</em>)?</p></li>
+</ol>
+<blockquote>
+<div><p>Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahajajo na levi strani (slika spodaj). Še več filtrov najdemo čisto na koncu seznama filtrov pod povezavo <em>Additional filters</em>. Na spletni strani je še nekaj uporabnih funkcij, naj jih naštejemo zgolj nekaj:</p>
+<ul class="simple">
+<li><p><em>Display options</em>, kjer lahko nastavimo sortiranje zadetkov ter število prikazanih zadetkov na stran,</p></li>
+<li><p>shranjevanje in pošiljanje rezultatov (npr. za uvoz v program za upravljanje referenc),</p></li>
+<li><p>prenos datoteke formata CSV s frekvenco objav po letih (oglejte si to za primer koronavirusa!),</p></li>
+<li><p>ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,</p></li>
+<li><p>prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="pubmed_web_primer1" src="../_images/pubmed_web_primer1.png" /></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-2">
+<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/"><strong>Advanced</strong></a> pod osnovnim iskalnim poljem.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Graditelj naprednega iskanja (PubMed Advanced Search Builder) nam omogoča, da posameznemu iskalnemu pojmu pripišemo, kje v referenci se naj nahaja (npr. v naslovu, povzetku), določimo časovno obdobje objave ipd., vse to pa združujemo z osnovnimi operatorji <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolove algebre</a> (AND, OR, NOT).</p>
+</div></blockquote>
+<p>Vaša naloga je, da poiščete, koliko člankov ima v naslovu besedo <em>SARS</em>, bili so pa objavljeni med letoma 2009 in 2019 (vključno s celotnima omenjenima letoma). Koliko pa je bilo takih člankov med letoma 2020 (od 1. januarja) pa do danes?</p>
+<p>Zanima nas še, koliko od člankov, ki ima v naslovu <em>SARS</em>, ima v naslovu in/ali povzetku še besedo <em>cats</em> (mačke).</p>
+<blockquote>
+<div><p>Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v izkalno škatlo (<em>Query box</em>) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.</p>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="dodatna-literatura">
+<h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK3827/">Pomoč za iskanje po PubMed</a>, na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).</p></li>
+<li><p><a class="reference external" href="https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/">18+ Ways to Improve your PubMed searches</a> - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.</p></li>
+</ul>
 </div>
 </div>
 
@@ -267,7 +331,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./osnove"
+            path: "./vaje"
         },
         predefinedOutput: true
     }
@@ -282,8 +346,6 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../naslovnica.html" title="previous page">Biokemijska informatika</a>
-    <a class='right-next' id="next-link" href="../vaje/pubmed_eutilities.html" title="next page">DEMO: Iskanje po PubMed z uporabo E-utilities</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
