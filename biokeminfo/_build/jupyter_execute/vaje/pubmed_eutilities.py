@@ -31,7 +31,9 @@ Modul Bio.Entrez je dejansko osnovan na API (*application programming interface*
 
 V nadaljevanju je prikazano nekaj zgledov, ki demonstrirajo poizvedovanje s programskih dostopom do Entrez.
 
-Najprej so oglejmo, katere podatkovne zbirke so nam na voljo prek tega vmesnika. 
+### Seznam zbirk
+
+Najprej si oglejmo, katere podatkovne zbirke so nam na voljo prek tega vmesnika. 
 
 from Bio import Entrez
 Entrez.email = 'sem.napisite.vas@e-postni.naslov'   # identificiramo se!
@@ -45,6 +47,8 @@ Vidimo, da je ```record``` zapisan kot slovar, vrednost ključa ```DbList``` (Da
 print(record['DbList'])   # izpiše nam vrednost ključa DbList (Database List)
 
 Na voljo imamo torej zbirko *pubmed* (literaturna zbirka), zbirko aminokislinskih (*protein*) in nukleotidnih zaporedij (*nucleotide*) , struktur (*structure) itd.
+
+### Iskanje
 
 Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost ```db``` (database) ustrezno nastavili na *pubmed*. Definirati moramo tudi iskalni pojem (v spodnjem primeru ```search_term```) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali [pri prejšnji vaji](pubmed_web.md). Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na [Pubmed Advanced Search Builder](https://pubmed.ncbi.nlm.nih.gov/advanced/), zgradimo iskanje, ter vsebino iskalne škatle (*query box*) skopiramo in prilepimo kot vrednost ```search_term```.
 
@@ -66,6 +70,8 @@ print(records)
 count = int(records['Count']) # pretvorimo Count v celo število
 print(count) # izpišemo število zadetkov
 
+### Prenos zapisov
+
 Kot vidimo po zbirki iščemo z uporabo *esearch*, če pa želimo prenesti zapise, pa uporabimo *efetch* in sicer v kombinaciji s seznamom PMID (v *IdList*).
 
 Za primer si oglejmo, kako je sestavljen edem izmed zapisov. Spodnja koda vzame prvo kodo PMID v seznamu *IdList* ter prenese in izpiše vsebino zapisa:
@@ -76,6 +82,8 @@ one_pubmed_entry = Entrez.efetch(db='pubmed', id=first_record, retmode='xml')
 single_record = Entrez.read(one_pubmed_entry)
 print(single_record)   # izpis zapisa
 
+### Izpis dela zapisa
+
 Vidimo, da je zapis kar ena *solata*, tako da se v njem malce težko znajti. Spodnja koda nam recimo za vsak PMID izpiše povzetek, če je ta na voljo (tu spet vzamemo vse zadetke prejšnjega iskanja), kar je že nekako lepše.
 
 for identifier in records['IdList']:
@@ -84,6 +92,8 @@ for identifier in records['IdList']:
     article = result['PubmedArticle'][0]['MedlineCitation']['Article']
     if 'Abstract' in article:
         print(article['Abstract']['AbstractText'][0])
+
+### Shranjevanje rezultatov v CSV
 
 Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (*Comma Separated Values*). Pri tem uporabimo knjižnico [**Pandas**](https://pandas.pydata.org/), kar ilustrira spodnji zgled, ki:
 * definira slovar *articles_with_abstracts*,
@@ -110,9 +120,11 @@ df.to_csv('izhod/pubmed_search_output.csv')   # shranimo kot datoteko CSV
 ---
 ## Dodatne informacije
 
-Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je [PyMed](https://pypi.org/project/pymed/), ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek [COVID-19: A scholarly production dataset report for research analysis](https://doi.org/10.1016/j.dib.2020.106178). Kako so podatke pridobili je dostopno v repozitoriju na GitHub [breno-madruga/dib-covid-datased](https://github.com/breno-madruga/dib-covid-dataset), ki si ga lahko prenesere in ogledate.
+Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je [PyMed](https://pypi.org/project/pymed/), ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek [COVID-19: A scholarly production dataset report for research analysis](https://doi.org/10.1016/j.dib.2020.106178). Kako so podatke pridobili je dostopno v repozitoriju na GitHub [breno-madruga/dib-covid-datased](https://github.com/breno-madruga/dib-covid-dataset), ki si ga lahko prenesete in ogledate.
 
-Zgoraj omenjeni PyMed je doselgjiv prek upravljalnika paketov **pip**. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (*virtual environment*) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. *dependencies*), ne smetite osnovne instalacije Pythona:
+Drug tak primer je Entrezpy, ki je opisan v članku [Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases](https://doi.org/10.1093/bioinformatics/btz385). Relevantne povezave [koda v repozitoriju](https://gitlab.com/ncbipy/entrezpy), [dokumentacija](https://entrezpy.readthedocs.io/). 
+
+Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov **pip**. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (*virtual environment*) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. *dependencies*), ne smetite osnovne instalacije Pythona:
 * navodila za virualno okolje prek [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html);
 * navodila za virtualno okolje prek [pip](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 

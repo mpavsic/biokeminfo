@@ -4,7 +4,7 @@ V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:
 * filtriranje rezultatov glede na tip članka, leto ipd.,
 * kompleksno iskanje z večimi termini.
 
-Pri tem bomo uporabljali "novo" verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu https://pubmed.ncbi.nlm.nih.gov/. Z iskanjem lahko začnemo tudi na osnovni strani Entrez (https://www.ncbi.nlm.nih.gov/), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če nastavitev pustili na *All Databases* se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).
+Pri tem bomo uporabljali "novo" verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu [https://pubmed.ncbi.nlm.nih.gov/](https://pubmed.ncbi.nlm.nih.gov/). Z iskanjem lahko začnemo tudi na osnovni strani Entrez ([https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/)), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na *All Databases* se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).
 
 ![pubmed_web_entrez](slike/pubmed_web_entrez.png)
 
@@ -30,7 +30,7 @@ Odgovorite na naslednja vprašanja:
 ---
 ## Naloga 2
 
-> Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava [**Advanced**](https://pubmed.ncbi.nlm.nih.gov/advanced/) pod osnovnim iskalnim poljem.
+>Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava [**Advanced**](https://pubmed.ncbi.nlm.nih.gov/advanced/) pod osnovnim iskalnim poljem.
 
 > Graditelj naprednega iskanja (PubMed Advanced Search Builder) nam omogoča, da posameznemu iskalnemu pojmu pripišemo, kje v referenci se naj nahaja (npr. v naslovu, povzetku), določimo časovno obdobje objave ipd., vse to pa združujemo z osnovnimi operatorji [Boolove algebre](https://en.wikipedia.org/wiki/Boolean_algebra) (AND, OR, NOT).
 

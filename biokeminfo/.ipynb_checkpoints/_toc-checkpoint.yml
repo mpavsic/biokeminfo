@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+- file: naslovnica
+
+- part: Zbirke
+  chapters:
+  - file: osnove/pubmed
+    sections:
+      - file: vaje/pubmed_web
+      - file: vaje/pubmed_eutilities
+  - file: osnove/nt
+    sections:
+      - file: vaje/nt-oligo_analiza
+
+- part: Priloge
+  chapters:
+    - file: priloge/jupyterlab
+    - file: priloge/markdown

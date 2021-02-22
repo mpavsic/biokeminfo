@@ -1,6 +1,6 @@
 # PubMed
 
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/) je najpomembnejša zbirka bio-medicinske literature. Vzdržuje jo National Center for Biotechnology Information, ki spada pod okrilje National Library of Medicine, slednja pa pod National Institute of Health. Vsebuje več kot 30 milijonov referenc (citatov) iz zbirke MEDLINE ter ostalih virov.
+[**PubMed**](https://pubmed.ncbi.nlm.nih.gov/) je najpomembnejša zbirka bio-medicinske literature. Vzdržuje jo *National Center for Biotechnology Information*, ki spada pod okrilje *National Library of Medicine*, slednja pa pod *National Institute of Health*. Vsebuje več kot 30 milijonov referenc (citatov) iz zbirke MEDLINE ter ostalih virov.
 
 Vsak zapis v zbirki (t.j. vsaka referenca oz. citat) ima pripisano unikatno kodo, imenovano **PMID** (PubMed ID), ki je pravzaprav primarni ključ te zbirke. Članki imajo pripisano tudi kodo **PMCID**, ki pa se nanaša na PubMed Central (to je arhiv s celotnimi besedili).
 
