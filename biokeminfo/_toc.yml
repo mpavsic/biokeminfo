@@ -4,6 +4,10 @@
 
 - part: Zbirke
   chapters:
+  - file: osnove/pubmed
+    sections:
+#      - file: vaje/pubmed_web
+      - file: vaje/pubmed_eutilities
   - file: osnove/nt
     sections:
       - file: vaje/nt-oligo_analiza

@@ -1,6 +1,6 @@
 # VAJA: Enostavna analiza nukleotidnega zaporedja
 
-Pri vajah bomo uporabljali [**BioPython**](https://biopython.org), ki vsebuje orodja za delo z bio-podatki (zaporedja, strukture ipd.); podrobnejša navodila najdete na njegovi domači strani, še posebej uporabna je "kuharica" [Biopython Tutorial and Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html), kjer najdete različne primere uporabe z razlagami (težava je le v tem, da nekateri primeri iz kuharice ne delujejo, saj niso bili posodobljeni glede na novo verzijo BioPythona).
+Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili [**BioPython**](https://biopython.org).
 
 Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.
 
