@@ -15,4 +15,4 @@ Drugi tip nalog bo od vas zahteval nekaj znanja programiranja in nekoliko druga�
 
 Naloge so smiselno razvrščene v tematske sklope, njihovo zaporedje pa ni nujno povezano z zaporedjem izvajanja na vajah.
 
-Spletna knjiga je v nastajanju in bo kot taka v študijskem letu 2020/2021 sprotno dopolnjena in posodobljena. Komentarji so dobrodošli: [klik!](mailto:miha.pavsic@fkkt.uni-lj.si)
+Spletna knjiga je v nastajanju in bo kot taka v študijskem letu 2020/2021 sprotno dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov, saj se lahko naslovi podstrani zaradi morebitne reorganizacija vsebine spremenijo. Komentarji so dobrodošli: [klik!](mailto:miha.pavsic@fkkt.uni-lj.si)
