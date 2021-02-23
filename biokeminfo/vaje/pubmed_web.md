@@ -13,7 +13,7 @@ Pri tem bomo uporabljali "novo" verzijo vmesnika, ki je na voljo od konca leta 2
 
 ### Vprašanja
 Odgovorite na naslednja vprašanja:
-1. S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda **coronavorus**.
+1. S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda **coronavirus**.
 2. Koliko od teh člankov ima prosto dostopno celotno besedilo?
 3. Koliko člankov je na temo kliničnih preizkusov (*Clinical Trial*)?
 4. Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?
