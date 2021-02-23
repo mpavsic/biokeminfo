@@ -21,9 +21,8 @@ Modul Bio.Entrez je dejansko osnovan na API (*application programming interface*
 * [A General Introduction to the E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25497/),
 * [Entrez Programming Utilities Help](https://www.ncbi.nlm.nih.gov/books/NBK25501/).
 
-
 **Opozorila**:
-* Pri programskem dostopu do Entrez se morate identificirati z e-poštnim naslovom (v primerih spodaj, če jih boste poganjali, nastavite vrednost ```Èntrez.email``` na vaš naslov.
+* Pri programskem dostopu do Entrez se morate identificirati z e-poštnim naslovom (v primerih spodaj, če jih boste poganjali, nastavite vrednost ```Entrez.email``` na vaš naslov.
 * Če boste poizvedbe izvajali z visoko frekvenco (npr. zelo veliko število poizvedb na minuto) vas lahko strežnik začasno blokira. Podobno velja za visoko frekvenco poizvedb s prenosom velike količine podatkov (npr. velikega števila celotnih zapisov).
 
 ---
