@@ -16,3 +16,5 @@
   chapters:
     - file: priloge/jupyterlab
     - file: priloge/markdown
+    - file: priloge/drobnarije
+    - file: priloge/git

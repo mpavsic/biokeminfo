@@ -94,7 +94,7 @@ for identifier in records['IdList']:
 
 ### Shranjevanje rezultatov v CSV
 
-Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (*Comma Separated Values*). Pri tem uporabimo knjižnico [**Pandas**](https://pandas.pydata.org/), kar ilustrira spodnji zgled, ki:
+Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (*Comma Separated Values*; kratka razlaga je med [drobnarijami](../priloge/drobnarije.md). Pri tem uporabimo knjižnico [**Pandas**](https://pandas.pydata.org/), kar ilustrira spodnji zgled, ki:
 * definira slovar *articles_with_abstracts*,
 * za vsako kodo PMID prenese zapis ter ga doda v slovar pod ključem, ki je enak PMID,
 * pretvori slovar v *Pandas dataframe*,
