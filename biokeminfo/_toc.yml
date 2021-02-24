@@ -21,3 +21,6 @@
       - file: priloge/markdown
       - file: priloge/git
   - file: priloge/drobnarije
+
+- part: Izvedba
+  - file: izvedba/izvedba_2020-2021

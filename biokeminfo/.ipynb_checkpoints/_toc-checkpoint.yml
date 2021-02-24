@@ -2,6 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: naslovnica
 
+- part: Izvedba
+  - file: izvedba/izvedba_2020-2021
+
 - part: Zbirke
   chapters:
   - file: osnove/pubmed
