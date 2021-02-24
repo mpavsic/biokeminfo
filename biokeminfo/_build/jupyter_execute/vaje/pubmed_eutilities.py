@@ -10,7 +10,7 @@ Del BioPythona, ki nam omogoča iskanje zbirkah na strežnikih NCBI, med drugim 
 ### Modul Bio.Entrez
 
 Modul Bio.Entrez nudi več funkcij, nekaj jih je navedenih tukaj (ostale so opisane v dokumentaciji):
-* *esearch* (Entrez Search) - z njim iščemo po zbirki/zbirkah, vrne nam pa primerne ključe za dostop (ID), ki se jih nato uporabi za prenos posmeznih zapisov z npr. *efetch*;
+* *esearch* (Entrez Search) - z njim iščemo po zbirki/zbirkah, vrne nam pa primarne ključe za dostop (ID), ki se jih nato uporabi za prenos posmeznih zapisov z npr. *efetch*;
 * *efetch* (Entrez Fetch) - zapise (kot vhod podamo ključe ID) prenesemo v zahtevanem formatu;
 * *esummary* (Entrez Summary) - za zapise (ID) nam prenese njihove kratke opise;
 * *read* - analizira rezultate v XML, ki nam jih vrnejo zgoraj navedene funkcije;
@@ -45,7 +45,7 @@ Vidimo, da je ```record``` zapisan kot slovar, vrednost ključa ```DbList``` (Da
 
 print(record['DbList'])   # izpiše nam vrednost ključa DbList (Database List)
 
-Na voljo imamo torej zbirko *pubmed* (literaturna zbirka), zbirko aminokislinskih (*protein*) in nukleotidnih zaporedij (*nucleotide*) , struktur (*structure) itd.
+Na voljo imamo torej zbirko *pubmed* (literaturna zbirka), zbirko aminokislinskih (*protein*) in nukleotidnih zaporedij (*nucleotide*) , struktur (*structure*) itd.
 
 ### Iskanje
 
@@ -56,8 +56,8 @@ Pri iskanju moramo zraven zbirke in iskalnega pojma definirati še *retrieval mo
 Spodaj je en tak primer, kjer za iščemo po imenih člankov, zanimajo pa nas samo taki, kjer se v imenu (*Title*) pojavi *coronavirus*, kjerkoli pa mora biti zraven tega še beseda *Tasmania* (iskanje sicer ni oblutljivo na velike in male črke, to pomeni, da ni *case-sensitive*). Kot rezultat dobimo slovar, ki vsebuje število zadetkov (*count*), seznam številk PMID zapisov oz. člankov (*IDList*) in uporabljen iskalni pojem (kot ga interpretira PubMed, vključno z [MeSH](https://www.ncbi.nlm.nih.gov/mesh/)).
 
 # štetje zapisov
-from Bio import Entrez
-Entrez.email = 'sem.napisite.vas@e-postni.naslov' # identificiramo se
+# from Bio import Entrez
+# Entrez.email = 'sem.napisite.vas@e-postni.naslov' # identificiramo se
 search_term = '(coronavirus[Title]) AND Tasmania' # definiramo iskanje
 handle = Entrez.esearch(db='pubmed', term=search_term, retmode='xml')
 records = Entrez.read(handle)
@@ -86,7 +86,7 @@ print(single_record)   # izpis zapisa
 Vidimo, da je zapis kar ena *solata*, tako da se v njem malce težko znajti. Spodnja koda nam recimo za vsak PMID izpiše povzetek, če je ta na voljo (tu spet vzamemo vse zadetke prejšnjega iskanja), kar je že nekako lepše.
 
 for identifier in records['IdList']:
-    pubmed_entry = Entrez.efetch(db="pubmed", id=identifier, retmode="xml")
+    pubmed_entry = Entrez.efetch(db=('pubmed'), id=identifier, retmode='xml')
     result = Entrez.read(pubmed_entry)
     article = result['PubmedArticle'][0]['MedlineCitation']['Article']
     if 'Abstract' in article:
@@ -105,7 +105,7 @@ articles_with_abstracts = {}   # ustvarimo slovar
 
 # spodnja koda je podobna kot zgoraj, le da ne izpisuje povzetkov
 for identifier in records['IdList']:
-    pubmed_entry = Entrez.efetch(db="pubmed", id=identifier, retmode="xml")
+    pubmed_entry = Entrez.efetch(db='pubmed', id=identifier, retmode='xml')
     results = Entrez.read(pubmed_entry)
     article = results['PubmedArticle'][0]['MedlineCitation']['Article']
     if 'Abstract' in article:
@@ -119,12 +119,9 @@ df.to_csv('izhod/pubmed_search_output.csv')   # shranimo kot datoteko CSV
 ---
 ## Dodatne informacije
 
+### Drugi načini programskega dostopa
 Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je [PyMed](https://pypi.org/project/pymed/), ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek [COVID-19: A scholarly production dataset report for research analysis](https://doi.org/10.1016/j.dib.2020.106178). Kako so podatke pridobili je dostopno v repozitoriju na GitHub [breno-madruga/dib-covid-datased](https://github.com/breno-madruga/dib-covid-dataset), ki si ga lahko prenesete in ogledate.
 
 Drug tak primer je Entrezpy, ki je opisan v članku [Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases](https://doi.org/10.1093/bioinformatics/btz385). Relevantne povezave [koda v repozitoriju](https://gitlab.com/ncbipy/entrezpy), [dokumentacija](https://entrezpy.readthedocs.io/). 
 
-Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov **pip**. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (*virtual environment*) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. *dependencies*), ne smetite osnovne instalacije Pythona:
-* navodila za virualno okolje prek [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html);
-* navodila za virtualno okolje prek [pip](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
-
-Če želite uporabljati obstoječo instalacijo JupyterLab je morda najbolj smiselno, da si naredite virtualno okolje v Anaconda, nato pa znotraj njega nainstalirate pip (```conda install pip```) ter potrebne ostale pakete.
+Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov **pip**. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano [tukaj](../osnove/python.ipynb).

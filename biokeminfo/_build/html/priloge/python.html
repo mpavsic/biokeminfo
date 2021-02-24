@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drobnarije &#8212; Biokemijska informatika</title>
+    <title>Python &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -52,21 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/priloge/drobnarije.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/priloge/python.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Git in GitHub" href="git.html" />
+    <link rel="next" title="JupyterLab" href="jupyterlab.html" />
+    <link rel="prev" title="Programi" href="programi.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/priloge/drobnarije.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/priloge/python.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Drobnarije" />
-<meta property="og:description" content="Drobnarije  Datoteke CSV  Datoteke CSV so enostavne tekstne datoteke, v katerih so shranjeni tabelirani podatki. Vsaka vrstica v datoteki predstavlja vrstico ta" />
+<meta property="og:title"       content="Python" />
+<meta property="og:description" content="Python  Python je popularen programski jezik in je nameščen že kot del nekateri operacijskih sistemov (macOS, nekatere distribucije Linux) oz. ga je tam izredno" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -148,13 +149,13 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="programi.html">
    Programi
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="python.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Python
     </a>
    </li>
@@ -179,8 +180,8 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="drobnarije.html">
    Drobnarije
   </a>
  </li>
@@ -220,9 +221,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/priloge/drobnarije.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/priloge/python.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -253,6 +254,23 @@
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/mpavsic/biokeminfo/main?urlpath=lab/tree/biokeminfo/priloge/python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
@@ -264,9 +282,33 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#datoteke-csv">
-   Datoteke CSV
+  <a class="reference internal nav-link" href="#namestitev">
+   Namestitev
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#namestitev-prek-osnovnega-paketa">
+     Namestitev prek osnovnega paketa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#namestitev-v-okviru-anaconde">
+     Namestitev v okviru Anaconde
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#virtualno-okolje">
+   Virtualno okolje
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uporaba-v-binderju">
+     Uporaba v Binderju
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -279,11 +321,43 @@
         
               <div>
                 
-  <div class="section" id="drobnarije">
-<h1>Drobnarije<a class="headerlink" href="#drobnarije" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="datoteke-csv">
-<h2>Datoteke CSV<a class="headerlink" href="#datoteke-csv" title="Permalink to this headline">¶</a></h2>
-<p>Datoteke CSV so enostavne tekstne datoteke, v katerih so shranjeni tabelirani podatki. Vsaka vrstica v datoteki predstavlja vrstico tabele, v vsaki vrstici pa poseben ločitveni znak (<em>delimiting character</em>) ločuje posamezne celice oz. stolpce. V osnovi je ta ločitveni znak vejica (od tod izhaja ime <em>Comma Separated Values</em>), a ker format CSV ni standardiziran se v tovrstnih datotekah lahko kot ločitveni znak pojavlja tabulator, podpičje, presledek ipd. Uporaba drugačnega znaka kot je vejica je pogosta na primer v državah, kjer se že kot decimalni simbol uporablja vejica, tudi v Sloveniji, saj bi v tem primeru prišlo do napak pri interpretaciji, kje se konča in kje začne nova vrednost v posamezni vrstici. Več o formatu CSV je zbrano v zapisu na <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipediji</a>.</p>
+  <div class="section" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.python.org/">Python</a> je popularen programski jezik in je nameščen že kot del nekateri operacijskih sistemov (macOS, nekatere distribucije Linux) oz. ga je tam izredno preprosto namestiti, na voljo pa je tudi za okolje Windows. Aktualna verzija je 3 (t.j. Python 3.x), na nekaterih starejših sistemih lahko naletimo še na prejšnjo verzijo (2.x). Načeloma programi, napisani v Python 2, delujejo tudi v verziji 3, je pa vsekakor priporočljivo, da uporabljate najnovejšo verzijo, sploh zaradi združljivosti z novejšimi paketi.</p>
+<div class="section" id="namestitev">
+<h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">¶</a></h2>
+<p>Ko namestimo Python gre pravzaprav za namestitev prevajalnika, to pa lahko storimo na več načinov, med drugim:</p>
+<ul class="simple">
+<li><p>namestimo osnovni paket z uradne strani <a class="reference external" href="https://www.python.org/">Python</a>,</p></li>
+<li><p>namestimo distribucijo <a class="reference external" href="https://anaconda.org">Anaconda</a>, ki vsebuje Python in kopico drugih paketov.</p></li>
+</ul>
+<div class="section" id="namestitev-prek-osnovnega-paketa">
+<h3>Namestitev prek osnovnega paketa<a class="headerlink" href="#namestitev-prek-osnovnega-paketa" title="Permalink to this headline">¶</a></h3>
+<p>Z <a class="reference external" href="https://www.python.org/downloads/">uradne spletne strani</a> si prenesite zadnjo verzijo namestitvenega programa za vaš operacijski sistem in ga zaženite.</p>
+<p>JupyterLab (ter druge pakete, npr. BioPython) namestite z uporabo upravljalnika paketov <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, BioPython namestite tako: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">biopython</span></code>. Kratka navodila za JupyterLab, vključno z namestitvijo, so <a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">tukaj</span></a>.</p>
+</div>
+<div class="section" id="namestitev-v-okviru-anaconde">
+<h3>Namestitev v okviru Anaconde<a class="headerlink" href="#namestitev-v-okviru-anaconde" title="Permalink to this headline">¶</a></h3>
+<p>Z <a class="reference external" href="https://anaconda.org/">uradne spletne strani</a> prenesite namestitveni paket (<a class="reference external" href="https://www.anaconda.com/products/individual">povezava</a> za vaš operacijski sistem in zaženite namestitev.</p>
+<p>Anaconda pride s svojim upravljalnikom paketom <code class="docutils literal notranslate"><span class="pre">conda</span></code>, ki ga lahko poganjate v lupini (terminalu), lahko pa uporabite tudi grafični vmesnik znotraj Anaconda Navigatorja. Prek tega sistema je dostopnih veliko paketov, ne pa vsi. Priporočljivo je, da pakete najprej poiščete in poizkusite namestiti z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code>, tudi JupyterLab (<a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">navodila</span></a>). Če nekega paketa ni na voljo, pa z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code>namestite <code class="docutils literal notranslate"><span class="pre">pip</span></code>(ukaz: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>), nato pa s <code class="docutils literal notranslate"><span class="pre">pip</span></code>namestite željen paket.</p>
+</div>
+</div>
+<div class="section" id="virtualno-okolje">
+<h2>Virtualno okolje<a class="headerlink" href="#virtualno-okolje" title="Permalink to this headline">¶</a></h2>
+<p>Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (<em>virtual environment</em>) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. <em>dependencies</em>), ne smetite osnovne instalacije Pythona:</p>
+<ul class="simple">
+<li><p>navodila za virualno okolje prek <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Anaconde</a>;</p></li>
+<li><p>navodila za virtualno okolje prek <a class="reference external" href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/">pip</a>.</p></li>
+</ul>
+<p>Če želite uporabljati obstoječo instalacijo JupyterLab v okviru Anaconde je morda najbolj smiselno, da si naredite virtualno okolje v Anaconda, nato pa znotraj njega nainstalirate pip (<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>) ter potrebne ostale pakete.</p>
+<div class="section" id="uporaba-v-binderju">
+<h3>Uporaba v Binderju<a class="headerlink" href="#uporaba-v-binderju" title="Permalink to this headline">¶</a></h3>
+<p>Če se želimo izogniti spreminjanju naše lokalne instalacije Pythona, prav tako pa ne želimo ustvarjali lokalnih virtualnih orodij, lahko nekatere pakete uporabljamo tudi prek JupyterLaba v Binderju in sicer si jih namestimo z uporabo <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, namestitev PyMed v virtualnem okolju v Binderju dosežemo tako:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install pymed
+</pre></div>
+</div>
+<p>Ko jedro v Binderju ugasnemo, se virtualno okolje pobriše. <strong>Pozor, ko okno brskalnika, v katerem interagiramo z Binderjem, zapremo, se pobrišejo tudi naše spremembe datotek!</strong></p>
+</div>
 </div>
 </div>
 
@@ -315,7 +389,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="git.html" title="previous page">Git in GitHub</a>
+    <a class='left-prev' id="prev-link" href="programi.html" title="previous page">Programi</a>
+    <a class='right-next' id="next-link" href="jupyterlab.html" title="next page">JupyterLab</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

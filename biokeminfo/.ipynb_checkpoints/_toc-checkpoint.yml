@@ -14,7 +14,10 @@
 
 - part: Priloge
   chapters:
-    - file: priloge/jupyterlab
-    - file: priloge/markdown
-    - file: priloge/drobnarije
-    - file: priloge/git
+  - file: priloge/programi
+    sections:
+      - file: priloge/python
+      - file: priloge/jupyterlab
+      - file: priloge/markdown
+      - file: priloge/git
+  - file: priloge/drobnarije

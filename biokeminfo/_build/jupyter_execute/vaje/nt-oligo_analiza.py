@@ -1,26 +1,26 @@
 # VAJA: Enostavna analiza nukleotidnega zaporedja
 
-Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili [**BioPython**](https://biopython.org).
+Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili [BioPython](https://biopython.org).
 
 Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.
 
 ---
 ## Teoretično ozadje naloge
 
-Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri [PCR](https://www.youtube.com/watch?v=2KoLnIwoZKU). Povezava vodi na filmček na Youtube, kjer je razložen potek reakcije, je pa slednji skupaj z zaporedjem matrice in oligonukleotidov shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo *forward and reverse oligos*).
+Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri verižni reakciji s polimerazo - **PCR**.  Kratek filmček, kjer je razložen potek reakcije, je na voljo na [YouTube](https://www.youtube.com/watch?v=2KoLnIwoZKU), potek skupaj z zaporedjem matrice in oligonukleotidov pa je shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo *forward and reverse oligos*).
 
 ![pcr](slike/pcr_oligonukleotidi.png)
 
 Iz zgornje sheme je razvidno, da lahko zaporedje enega (smernega) oligonukleotida direktno določimo iz zaporedja matrice, za zaporedje drugega (protismernega) pa uporabimo obratno-komplementarno zaporedje ustreznega dela matrice.
 
-Pri načrtovanju oligonukleotidov je priporočljivo upoštevati nekaj osnovnih pravil, ki pripomorejo k večji uspešnosti reakcije in manjši količini nespecifičnih produktov. Z iskanjem po spletu lahko najdemo kar nekaj proporočil, na primer [navodila podjetja Addgene](https://www.addgene.org/protocols/primer-design/), nekaj osnovnih pa je tukaj:
-* temperatura tališča ($T_m$) smernega in protismetnega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja ($T_a$)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,
+Pri načrtovanju oligonukleotidov je priporočljivo upoštevati nekaj osnovnih pravil, ki pripomorejo k večji uspešnosti reakcije in manjši količini nespecifičnih produktov. Z iskanjem po spletu lahko najdemo kar nekaj priporočil, na primer [navodila podjetja Addgene](https://www.addgene.org/protocols/primer-design/), nekaj osnovnih pa je tukaj:
+* temperatura tališča ($T_m$) smernega in protismernega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja ($T_a$)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,
 * delež parov GC naj bo med 40 in 60 %.
 
 ---
 ## Primeri kode
 
-Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje, dobimo komplementarno zaporedje in obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.
+Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje in dobimo komplementarno ter obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.
 
 from Bio.Seq import Seq
 my_seq = Seq('AGTACACTGGT')
@@ -36,7 +36,7 @@ freq = {}
 for x in my_seq:
     freq[x]=my_seq.count(x)
 print(freq) # izpiše slovar
-print("A:", freq['A']) # izpiše, koliko A je v zaporedju
+print('A:', freq['A']) # izpiše, koliko A je v zaporedju
 
 Pogosto želimo, so vsi nukleotidi napisani bodisi z velikimi ali malimi črkami. Za ta namen lahko uporabimo ```upper``` ali ```lower```:
 
