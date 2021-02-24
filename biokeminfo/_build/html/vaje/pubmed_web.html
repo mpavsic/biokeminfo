@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAJA: Iskanje po PubMed &#8212; Biokemijska informatika</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DEMO: Iskanje po PubMed z uporabo E-utilities" href="pubmed_eutilities.html" />
+    <link rel="prev" title="PubMed" href="../osnove/pubmed.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="VAJA: Iskanje po PubMed" />
+<meta property="og:description" content="VAJA: Iskanje po PubMed  V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:  filtriranje rezultatov glede na tip članka, leto ipd.," />
+<meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../naslovnica.html">
+   Biokemijska informatika
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Zbirke
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/pubmed.html">
+   PubMed
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     VAJA: Iskanje po PubMed
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_eutilities.html">
+     DEMO: Iskanje po PubMed z uporabo E-utilities
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/nt.html">
+   Nukleotidna zaporedja
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nt-oligo_analiza.html">
+     VAJA: Enostavna analiza nukleotidnega zaporedja
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Priloge
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../priloge/programi.html">
+   Programi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/jupyterlab.html">
+     JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/markdown.html">
+     <em>
+      Markdown
+     </em>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/git.html">
+     Git in GitHub
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../priloge/drobnarije.html">
+   Drobnarije
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/vaje/pubmed_web.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mpavsic/biokeminfo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-1">
+   Naloga 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vprasanja">
+     Vprašanja
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#razlaga">
+     Razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-2">
+   Naloga 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uvod">
+     Uvod
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vprašanja
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dodatna-literatura">
+   Dodatna literatura
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="vaja-iskanje-po-pubmed">
+<h1>VAJA: Iskanje po PubMed<a class="headerlink" href="#vaja-iskanje-po-pubmed" title="Permalink to this headline">¶</a></h1>
+<p>V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:</p>
+<ul class="simple">
+<li><p>filtriranje rezultatov glede na tip članka, leto ipd.,</p></li>
+<li><p>kompleksno iskanje z večimi termini.</p></li>
+</ul>
+<p>Pri tem bomo uporabljali “novo” verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a>. Z iskanjem lahko začnemo tudi na osnovni strani Entrez (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na <em>All Databases</em> se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).</p>
+<p><img alt="pubmed_web_entrez" src="../_images/pubmed_web_entrez.png" /></p>
+<hr class="docutils" />
+<div class="section" id="naloga-1">
+<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="vprasanja">
+<h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Permalink to this headline">¶</a></h3>
+<p>Odgovorite na naslednja vprašanja:</p>
+<ol class="simple">
+<li><p>S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda <strong>coronavirus</strong>.</p></li>
+<li><p>Koliko od teh člankov ima prosto dostopno celotno besedilo?</p></li>
+<li><p>Koliko člankov je na temo kliničnih preizkusov (<em>Clinical Trial</em>)?</p></li>
+<li><p>Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?</p></li>
+<li><p>Koliko člankov v zvezi s koronavirusom (še vedno smo pri iskalnem pojmu <strong>coronavirus</strong>) je preglednih (t.j. <em>Review</em>)?</p></li>
+</ol>
+</div>
+<div class="section" id="razlaga">
+<h3>Razlaga<a class="headerlink" href="#razlaga" title="Permalink to this headline">¶</a></h3>
+<p>Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahajajo na levi strani (slika spodaj). Še več filtrov najdemo čisto na koncu seznama filtrov pod povezavo <em>Additional filters</em>. Na spletni strani je še nekaj uporabnih funkcij, naj jih naštejemo zgolj nekaj:</p>
+<ul class="simple">
+<li><p><em>Display options</em>, kjer lahko nastavimo sortiranje zadetkov ter število prikazanih zadetkov na stran,</p></li>
+<li><p>shranjevanje in pošiljanje rezultatov (npr. za uvoz v program za upravljanje referenc),</p></li>
+<li><p>prenos datoteke formata CSV s frekvenco objav po letih (oglejte si to za primer koronavirusa!),</p></li>
+<li><p>ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,</p></li>
+<li><p>prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.</p></li>
+</ul>
+<p><img alt="pubmed_web_primer1" src="../_images/pubmed_web_primer1.png" /></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-2">
+<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uvod">
+<h3>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">¶</a></h3>
+<p>Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/"><strong>Advanced</strong></a> pod osnovnim iskalnim poljem.</p>
+<p>Graditelj naprednega iskanja (PubMed Advanced Search Builder) nam omogoča, da posameznemu iskalnemu pojmu pripišemo, kje v referenci se naj nahaja (npr. v naslovu, povzetku), določimo časovno obdobje objave ipd., vse to pa združujemo z osnovnimi operatorji <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolove algebre</a> (AND, OR, NOT).</p>
+</div>
+<div class="section" id="id1">
+<h3>Vprašanja<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Vaša naloga je, da poiščete, koliko člankov ima v naslovu besedo <em>SARS</em>, bili so pa objavljeni med letoma 2009 in 2019 (vključno s celotnima omenjenima letoma). Koliko pa je bilo takih člankov med letoma 2020 (od 1. januarja) pa do danes?</p>
+<p>Zanima nas še, koliko od člankov, ki ima v naslovu <em>SARS</em>, ima v naslovu in/ali povzetku še besedo <em>cats</em> (mačke).</p>
+</div>
+<div class="section" id="id2">
+<h3>Razlaga<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v izkalno škatlo (<em>Query box</em>) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="dodatna-literatura">
+<h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK3827/">Pomoč za iskanje po PubMed</a>, na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).</p></li>
+<li><p><a class="reference external" href="https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/">18+ Ways to Improve your PubMed searches</a> - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../osnove/pubmed.html" title="previous page">PubMed</a>
+    <a class='right-next' id="next-link" href="pubmed_eutilities.html" title="next page">DEMO: Iskanje po PubMed z uporabo E-utilities</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Miha Pavšič<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
