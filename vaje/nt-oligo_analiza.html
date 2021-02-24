@@ -45,8 +45,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -54,11 +52,13 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/nt-oligo_analiza.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="JupyterLab" href="../priloge/jupyterlab.html" />
+    <link rel="next" title="Programi" href="../priloge/programi.html" />
     <link rel="prev" title="Nukleotidna zaporedja" href="../osnove/nt.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -151,26 +151,40 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../priloge/jupyterlab.html">
-   JupyterLab
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../priloge/programi.html">
+   Programi
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../priloge/markdown.html">
-   <em>
-    Markdown
-   </em>
-  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/jupyterlab.html">
+     JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/markdown.html">
+     <em>
+      Markdown
+     </em>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/git.html">
+     Git in GitHub
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../priloge/drobnarije.html">
    Drobnarije
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../priloge/git.html">
-   Git in GitHub
   </a>
  </li>
 </ul>
@@ -297,24 +311,24 @@
                 
   <div class="section" id="vaja-enostavna-analiza-nukleotidnega-zaporedja">
 <h1>VAJA: Enostavna analiza nukleotidnega zaporedja<a class="headerlink" href="#vaja-enostavna-analiza-nukleotidnega-zaporedja" title="Permalink to this headline">¶</a></h1>
-<p>Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili <a class="reference external" href="https://biopython.org"><strong>BioPython</strong></a>.</p>
+<p>Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili <a class="reference external" href="https://biopython.org">BioPython</a>.</p>
 <p>Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.</p>
 <hr class="docutils" />
 <div class="section" id="teoreticno-ozadje-naloge">
 <h2>Teoretično ozadje naloge<a class="headerlink" href="#teoreticno-ozadje-naloge" title="Permalink to this headline">¶</a></h2>
-<p>Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri <a class="reference external" href="https://www.youtube.com/watch?v=2KoLnIwoZKU">PCR</a>. Povezava vodi na filmček na Youtube, kjer je razložen potek reakcije, je pa slednji skupaj z zaporedjem matrice in oligonukleotidov shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo <em>forward and reverse oligos</em>).</p>
+<p>Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri verižni reakciji s polimerazo - <strong>PCR</strong>.  Kratek filmček, kjer je razložen potek reakcije, je na voljo na <a class="reference external" href="https://www.youtube.com/watch?v=2KoLnIwoZKU">YouTube</a>, potek skupaj z zaporedjem matrice in oligonukleotidov pa je shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo <em>forward and reverse oligos</em>).</p>
 <p><img alt="pcr" src="../_images/pcr_oligonukleotidi.png" /></p>
 <p>Iz zgornje sheme je razvidno, da lahko zaporedje enega (smernega) oligonukleotida direktno določimo iz zaporedja matrice, za zaporedje drugega (protismernega) pa uporabimo obratno-komplementarno zaporedje ustreznega dela matrice.</p>
-<p>Pri načrtovanju oligonukleotidov je priporočljivo upoštevati nekaj osnovnih pravil, ki pripomorejo k večji uspešnosti reakcije in manjši količini nespecifičnih produktov. Z iskanjem po spletu lahko najdemo kar nekaj proporočil, na primer <a class="reference external" href="https://www.addgene.org/protocols/primer-design/">navodila podjetja Addgene</a>, nekaj osnovnih pa je tukaj:</p>
+<p>Pri načrtovanju oligonukleotidov je priporočljivo upoštevati nekaj osnovnih pravil, ki pripomorejo k večji uspešnosti reakcije in manjši količini nespecifičnih produktov. Z iskanjem po spletu lahko najdemo kar nekaj priporočil, na primer <a class="reference external" href="https://www.addgene.org/protocols/primer-design/">navodila podjetja Addgene</a>, nekaj osnovnih pa je tukaj:</p>
 <ul class="simple">
-<li><p>temperatura tališča (<span class="math notranslate nohighlight">\(T_m\)</span>) smernega in protismetnega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja (<span class="math notranslate nohighlight">\(T_a\)</span>)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,</p></li>
+<li><p>temperatura tališča (<span class="math notranslate nohighlight">\(T_m\)</span>) smernega in protismernega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja (<span class="math notranslate nohighlight">\(T_a\)</span>)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,</p></li>
 <li><p>delež parov GC naj bo med 40 in 60 %.</p></li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="primeri-kode">
 <h2>Primeri kode<a class="headerlink" href="#primeri-kode" title="Permalink to this headline">¶</a></h2>
-<p>Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje, dobimo komplementarno zaporedje in obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.</p>
+<p>Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje in dobimo komplementarno ter obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
@@ -344,7 +358,7 @@ ACCAGTGTACT
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_seq</span><span class="p">:</span>
     <span class="n">freq</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">=</span><span class="n">my_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span> <span class="c1"># izpiše slovar</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">freq</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span> <span class="c1"># izpiše, koliko A je v zaporedju</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span> <span class="c1"># izpiše, koliko A je v zaporedju</span>
 </pre></div>
 </div>
 </div>
@@ -381,16 +395,16 @@ A: 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vpiši nukleotidno zaporedje:  AGGATCGCGCTAGAT
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vpiši nukleotidno zaporedje:  AGAGATAGAGAAGAGGGGGG
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGGATCGCGCTAGAT
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGAGATAGAGAAGAGGGGGG
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vpiši nukleotidno zaporedje:  AGAGAGGAGGGGAGAGA
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vpiši nukleotidno zaporedje:  AGCTCGATAGATA
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGAGAGGAGGGGAGAGA
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGCTCGATAGATA
 </pre></div>
 </div>
 </div>
@@ -450,7 +464,7 @@ Tm(upoštevana sol) [°C] = 50.6
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../osnove/nt.html" title="previous page">Nukleotidna zaporedja</a>
-    <a class='right-next' id="next-link" href="../priloge/jupyterlab.html" title="next page">JupyterLab</a>
+    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
