@@ -504,7 +504,8 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </div>
 <div class="section" id="shranjevanje-rezultatov-v-csv">
 <h3>Shranjevanje rezultatov v CSV<a class="headerlink" href="#shranjevanje-rezultatov-v-csv" title="Permalink to this headline">¶</a></h3>
-<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <a class="reference internal" href="../priloge/drobnarije.html"><span class="doc std std-doc">drobnarijami</span></a>. Pri tem uporabimo knjižnico <a class="reference external" href="https://pandas.pydata.org/"><strong>Pandas</strong></a>, kar ilustrira spodnji zgled, ki:</p>
+<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <a class="reference internal" href="../priloge/drobnarije.html"><span class="doc std std-doc">drobnarijami</span></a>. Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
+<p>Spodnji zgled ilustrira uporabo knjižnice <a class="reference external" href="https://pandas.pydata.org/"><strong>Pandas</strong></a> in sicer:</p>
 <ul class="simple">
 <li><p>definira slovar <em>articles_with_abstracts</em>,</p></li>
 <li><p>za vsako kodo PMID prenese zapis ter ga doda v slovar pod ključem, ki je enak PMID,</p></li>
@@ -550,7 +551,7 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 <h3>Drugi načini programskega dostopa<a class="headerlink" href="#drugi-nacini-programskega-dostopa" title="Permalink to this headline">¶</a></h3>
 <p>Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je <a class="reference external" href="https://pypi.org/project/pymed/">PyMed</a>, ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek <a class="reference external" href="https://doi.org/10.1016/j.dib.2020.106178">COVID-19: A scholarly production dataset report for research analysis</a>. Kako so podatke pridobili je dostopno v repozitoriju na GitHub <a class="reference external" href="https://github.com/breno-madruga/dib-covid-dataset">breno-madruga/dib-covid-datased</a>, ki si ga lahko prenesete in ogledate.</p>
 <p>Drug tak primer je Entrezpy, ki je opisan v članku <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btz385">Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases</a>. Relevantne povezave <a class="reference external" href="https://gitlab.com/ncbipy/entrezpy">koda v repozitoriju</a>, <a class="reference external" href="https://entrezpy.readthedocs.io/">dokumentacija</a>.</p>
-<p>Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov <strong>pip</strong>. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano <span class="xref myst">tukaj</span>.</p>
+<p>Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov <strong>pip</strong>. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano <a class="reference internal" href="../priloge/python.html"><span class="doc std std-doc">tukaj</span></a>.</p>
 </div>
 </div>
 </div>

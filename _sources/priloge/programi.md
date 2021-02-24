@@ -1,7 +1,7 @@
 # Programi
 
 Na vajah bomo uporabljali (med drugim) naslednje programe, ki so nekoliko podrobneje opisani na navedenih povezavah:
-* programski jezik **Python** - [navodila](python.ipynb) za namestitev;
+* programski jezik **Python** - [navodila](python.md) za namestitev;
 * programski paket **JupyterLab** za interaktivno programiranje, kratek opis z navodili za namestitev najdete [tukaj](jupyterlab.ipynb);
 * **Git**, ki je sistem za sledenje sprememb v datotekah, ter storitev **GitHub**, ki na njem temelji (oba sta opisana [tukaj](git.md)) - vsebina te knjige je pravzaprav v repozitoriju na GitHub, od tam pa boste preneseli tudi zvezke JupyterLab;
 * označevalni jezik **Markdown**, ki se uporablja v zvezkih JupyterLab za oblikovanje besedila, kratek opis in sintakso pa najdete [tukaj](markdown.md).
