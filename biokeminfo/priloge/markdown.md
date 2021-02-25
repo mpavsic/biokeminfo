@@ -1,18 +1,18 @@
-# _Markdown_
+# Markdown
 
-## Kaj je *Markdown*?
+## Kaj je Markdown?
 
-*Markdown* je enostaven označevalni jezik (*markup language*) za oblikovanje golega besedila, ki nam omogoča, da vanj vnesemo določene "obogatitve" (npr. **odebeljen** ali *poudarjen* tekst). Pogosto se uporablja na spletnih forumih in datotekah "premeri me". Primer tovrstne datoteke je `README.md`, ki je del repozitorija, iz katerega je ustvarjena ta spletna stran. Tudi datoteka HTML, ki jo trenutno berete, je ustvarjena iz datoteke *markdown*. Ravno ta pretvorba, torej iz golega besedila v (X)HTML, je bila mišljena kot primarna uporaba *markdown*-a. Danes je na voljo kopica programov, ki omogočajo pretvorbo tudi v druge formate in pa dodatne funkcionalnosti.
+**Markdown** je enostaven označevalni jezik (*markup language*) za oblikovanje golega besedila, ki nam omogoča, da vanj vnesemo določene "obogatitve" (npr. **odebeljen** ali *poudarjen* tekst). Pogosto se uporablja na spletnih forumih in datotekah "premeri me". Primer tovrstne datoteke je `README.md`, ki je del repozitorija, iz katerega je ustvarjena ta spletna stran. Tudi datoteka HTML, ki jo trenutno berete, je ustvarjena iz datoteke *markdown*. Ravno ta pretvorba, torej iz golega besedila v (X)HTML, je bila mišljena kot primarna uporaba *markdown*-a. Danes je na voljo kopica programov, ki omogočajo pretvorbo tudi v druge formate in pa dodatne funkcionalnosti.
 
 ### Kratka zgodovina
 
-*Markdown* je leta 2004 izumil John Gruber v sodelovanju z Aaronom Swartzem; nekaj osnovnih informacij o zgodovini, razvoju in sintaksi je na [Wikipedii](https://en.wikipedia.org/wiki/Markdown). Avtor vzdržuje tudi [lastno stran](https://daringfireball.net/projects/markdown/), kjer opisuje obe komponenti jezika: **sintakso** (o njej nekoliko več spodaj) in sam **program *markdown*** (napisan v Perlu), ki poskrbi za pretvorbo v format HTML. Njuna specifikacija sintakse ni bila nedvoumna, kar je vodilo v razvoj številnih implementacij in posledično zmešnjave. Kasneje je bila predlagana standardna nedvoumna specifikacija sintakse, imenovana [**CommonMark**](https://commonmark.org).
+*Markdown* je leta 2004 izumil John Gruber v sodelovanju z Aaronom Swartzem; nekaj osnovnih informacij o zgodovini, razvoju in sintaksi je na [Wikipedii](https://en.wikipedia.org/wiki/Markdown). Avtor vzdržuje tudi [lastno stran](https://daringfireball.net/projects/markdown/), kjer opisuje obe komponenti jezika: **sintakso** (o njej nekoliko več spodaj) in sam **program** ```markdown``` (napisan v Perlu), ki poskrbi za pretvorbo v format HTML. Njuna specifikacija sintakse ni bila nedvoumna, kar je vodilo v razvoj številnih implementacij in posledično zmešnjave. Kasneje je bila predlagana standardna nedvoumna specifikacija sintakse, imenovana [**CommonMark**](https://commonmark.org).
 
 ### Splošne značilnosti
 
 Jezik je precej lahek v smislu, da je za opis izgleda besedila potrebno malo dodatnih znakov, datoteka z besedilom v tem formatu pa je enostavno berljiva tudi v primeru, ko ni pretvorjena v HTML (na primer, *poudarjeno* bomo v nepretvorjenem dokumentu še vedno zaznali, le nekoliko drugače bo izgledalo: \*poudarjeno\*). Datoteke tipa *markdown* so sicer čisto običajne tekstovne datoteke - odpremo in urejujemo jih lahko kar v Notepadu (Windows) ali TextEditorju (macOS), vsekakor je pa dobrodošlo, da jih vidimo tudi oblikovane. Za slednje lahko uporabimo kar JupyterLab ali pa katerega od številnih prevajalnikov.
 
-Jezik *Markdown* je lahek tudi v smislu, da se ga je enostavno naučiti - več o tem v nadaljevanju, kjer so predstavljeni najpogostejši primeri uporabe.
+Jezik Markdown je lahek tudi v smislu, da se ga je enostavno naučiti - več o tem v nadaljevanju, kjer so predstavljeni najpogostejši primeri uporabe.
 
 
 ## Sintaksa
@@ -70,7 +70,7 @@ koda za zgornji seznam pa je:
 
 Oblikovanje besedila kot *podarjeno*, **odebeljeno** ali ***poudarjeno in odebeljeno hkrati*** je zelo enostavno!
 
-To bi v *Markdown* zapisali na naslednji način:
+To bi v Markdown zapisali na naslednji način:
 
 ```
 Oblikovanje besedila kot *podarjeno*, **odebeljeno** ali

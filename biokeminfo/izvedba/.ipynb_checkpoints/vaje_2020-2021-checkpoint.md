@@ -8,5 +8,10 @@
    * [Python](../priloge/python.md) in [JupyterLab](../priloge/jupyterlab.ipynb)
    * [Markdown](../priloge/markdown.md)
 2. [VAJA: Iskanje po PubMed](../vaje/pubmed_web.md)
-3. [DEMO: Iskanje po PubMed z uporabo E-utilities](../vaje/pubmed_eutilities.ipynb)
-4. [VAJA: Enostavna analiza nukleotidnega zaporedja](../vaje/nt-oligo_analiza.ipynb)
+3. [DEMO: Iskanje po PubMed z uporabo E-utilities (Python)](../vaje/pubmed_eutilities.ipynb)
+4. [VAJA: Enostavna analiza nukleotidnega zaporedja (Python)](../vaje/nt-oligo_analiza.ipynb)
+
+## V02
+
+1. GenBank (zbirka nukleotidnih zaporedij)
+2. UniProt (zbirka aminokislinskih zaporedij)
