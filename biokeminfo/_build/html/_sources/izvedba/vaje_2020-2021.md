@@ -20,4 +20,4 @@
    * [VAJA: Programski dostop do GenBank in analiza nukleotidnega zaporedja (Python)](../vaje/genbank_eutilities.ipynb)
 2. UniProt (zbirka aminokislinskih zaporedij):
    * VAJA: Dostop do UniProt v brskalniku
-   * VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
+   * [VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)](../vaje/uniprot_rest.ipynb)

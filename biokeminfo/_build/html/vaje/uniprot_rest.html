@@ -1,0 +1,955 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python) &#8212; Biokemijska informatika</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/uniprot_rest.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="prev" title="Aminokislinska zaporedja" href="../osnove/ak.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/uniprot_rest.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)" />
+<meta property="og:description" content="VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)  Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi BioPythona, a le" />
+<meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../naslovnica.html">
+   Uvod
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Zbirke
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/pubmed.html">
+   PubMed
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_web.html">
+     VAJA: Iskanje po PubMed
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_eutilities.html">
+     DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/nt.html">
+   Nukleotidna zaporedja
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nt-oligo_analiza.html">
+     VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="genbank_web.html">
+     VAJA: Dostop do GenBank v brskalniku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="genbank_eutilities.html">
+     VAJA: Programski dostop do GenBank in analiza nukleotidnega zaporedja (Python)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/ak.html">
+   Aminokislinska zaporedja
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Priloge
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../priloge/programi.html">
+   Programi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/jupyterlab.html">
+     JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/markdown.html">
+     Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/git.html">
+     Git in GitHub
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../priloge/drobnarije.html">
+   Drobnarije
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Izvedba
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../izvedba/vaje_2020-2021.html">
+   Vaje 2020/2021
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/vaje/uniprot_rest.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mpavsic/biokeminfo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/mpavsic/biokeminfo/main?urlpath=lab/tree/biokeminfo/vaje/uniprot_rest.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ozadje">
+   Ozadje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zgledi">
+   Zgledi
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definiranje-naslovov">
+     Definiranje naslovov
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iskanje-po-uniprotu">
+     Iskanje po UniProtu
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#izpis-zaporedja">
+     Izpis zaporedja
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#napake-pri-iskanju">
+     Napake pri iskanju
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#izvoz-v-datoteko">
+     Izvoz v datoteko
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drugi-servisi">
+     Drugi servisi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
+   Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analiza-zaporedja-z-drsecim-oknom">
+   Analiza zaporedja z drsečim oknom
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga">
+   Naloga
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dodatna-naloga-za-entuzijaste">
+     Dodatna naloga “za entuzijaste”
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="vaja-programski-dostop-do-uniprot-in-analiza-aminokislinskega-zaporedja-python">
+<h1>VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-in-analiza-aminokislinskega-zaporedja-python" title="Permalink to this headline">¶</a></h1>
+<p>Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi <a class="reference external" href="https://biopython.org">BioPythona</a>, a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula <code class="docutils literal notranslate"><span class="pre">requests</span></code>, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.</p>
+<p>Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.</p>
+<hr class="docutils" />
+<div class="section" id="ozadje">
+<h2>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h2>
+<p>Osnovna navodila za t.i. programatski dostop do zbirke <a class="reference external" href="https://www.uniprot.org">UniProt</a> so na voljo na podstrani <a class="reference external" href="https://www.uniprot.org/help/programmatic_access">Programmatic access</a>, kjer je opisan dostop preko <strong>REST</strong>.</p>
+<p>Kaj je REST? REST ali <em>REpresentational State Transfer</em> podaja smernice pri razvoju spletnih storitev z namenom omogočanja in olajšanja interoperabilnosti med sistemi na spletu. Spletne storitve, ki so v skladu s temi smernicami, se imenujejo RESTful spletne storitve ter omogočajo dostop preko uniformnega in definiranega seta operacij. Več o tem lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipediji</a>, razloženo pa je tudi v videoposnetku spodaj (in še mimogrede vidimo primer, kako v zvezek JupyterLab vključumo video z YouTube).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="nb">id</span><span class="o">=</span><span class="s1">&#39;7YcW25PHnAA&#39;</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="600"
+    height="300"
+    src="https://www.youtube.com/embed/7YcW25PHnAA"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="zgledi">
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definiranje-naslovov">
+<h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Permalink to this headline">¶</a></h3>
+<p>Najprej vključimo modul <em>requests</em>, ki nam omogoča dostop do storitev preko protokola HTTP.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Definiramo spletni naslov storitve in dodatne parametre (torej, kje se kaj nahaja).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASE</span> <span class="o">=</span> <span class="s1">&#39;http://www.uniprot.org&#39;</span>
+<span class="n">KB_ENDPOINT</span> <span class="o">=</span> <span class="s1">&#39;/uniprot/&#39;</span>
+<span class="n">TOOL_ENDPOINT</span> <span class="o">=</span> <span class="s1">&#39;/uploadlists/&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zakaj je tako? Zato, ker lahko do posameznih zapisov v zbirki lahko dostopamo direktno preko naslova, če le poznamo kodo zapisa v zbirko (<em>accession code</em>). Na primer, do zapisa s kodo P59595 lahko direktno dostopamo preko spleta na naslovu https://www.uniprot.org/uniprot/P59595. Druge oblike zapisa so dostopne preko naslednjih naslovov (podanih je nekaj primerov, ostale si lahko ogledate <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">tukaj</a>) - pri vseh vidite enoten vzorec zapisa:</p>
+<ul class="simple">
+<li><p>tekstna datoteka: https://www.uniprot.org/uniprot/P59595.txt</p></li>
+<li><p>zapis v formatu XML: https://www.uniprot.org/uniprot/P59595.xml</p></li>
+<li><p>zaporedje v formatu FASTA: https://www.uniprot.org/uniprot/P59595.fasta</p></li>
+</ul>
+</div>
+<div class="section" id="iskanje-po-uniprotu">
+<h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Permalink to this headline">¶</a></h3>
+<p>Če iščemo po UniProtu preko spletnega vmesnika (<em>Advanced search</em>, na primer s pojmoma <em>matriptase</em> kot ime proteina (<em>name</em>) ter <em>homo sapiens</em> kot organizem ter želimo samo ročno pregledane (<em>reviewed</em>) zapise, to izgleda v iskalnem polju tako: <code class="docutils literal notranslate"><span class="pre">name:matriptase</span> <span class="pre">organism:&quot;homo</span> <span class="pre">sapiens&quot;</span> <span class="pre">AND</span> <span class="pre">reviewed:yes</span></code>. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: <code class="docutils literal notranslate"><span class="pre">https://www.uniprot.org/uniprot/?query=name%3Amatriptase+organism%3A%22homo+sapiens%22+AND+reviewed%3Ayes</span></code>.</p>
+<p>Tak strukturiran zapis lahko uporabimo v Pythonu, pri čemer nastavimo kot tip izpisa seznam (<em>list</em>; glejte na konec URL), da dobimo samo seznam kod zapisov, hkrati pa lahko nastavimo, da nam program vrne ime napake, če gre kaj narobe (kode napak in njihovi opisi so <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">dokumentirani</a>). Torej:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fullURL</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;http://www.uniprot.org/uniprot/?query=name%3Amatriptase+organism%3A</span><span class="si">%22ho</span><span class="s1">mo+sapiens%22+reviewed%3Ayes&amp;format=list&#39;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fullURL</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe &#39;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q9Y5Y6
+Q7RTY8
+Q8IU80
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Morda en majhen komentar: strežnik Uniprot bo zaznal, če boste v zelo kratkih časovnih razmikih poslali isto povpraševanje in bo rezultate drugega, tretjega … povpraševanja vrnil z daljšim zamikom. Namen tega je preprečiti, da bi ljudje zasičili strežnik z poizvedbami z istega naslova IP. Velja torej podobno, kot smo videli pri uporabo NCBI E-utilities.</em></p>
+<p>Elegantnejši način brez direktne uporabe spletnega naslova je s t.i. <em>payload</em>, kjer iskalne pojme določimo posebej. Njihov seznam z opisom, kaj je kaj, najdete na spletnih straneh:</p>
+<ul class="simple">
+<li><p>besedilno iskanje po Uniprot - <a class="reference external" href="https://www.uniprot.org/help/text-search">Text search</a></p></li>
+<li><p>iskalna polja - <a class="reference external" href="https://www.uniprot.org/help/query-fields">UniProtKB query fields</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;name:matriptase AND organism:&quot;homo sapiens&quot; AND reviewed:yes&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;list&#39;</span><span class="p">}</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe: &#39;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q9Y5Y6
+Q7RTY8
+Q8IU80
+</pre></div>
+</div>
+</div>
+</div>
+<p>Če je nek iskalni pojem sestavljen iz večih besed (npr. <em>homo sapiens</em>), ga moramo dati v narekovaje.</p>
+</div>
+<div class="section" id="izpis-zaporedja">
+<h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Permalink to this headline">¶</a></h3>
+<p>V kakšnem formatu želimo izpis določimo preko spremenljivke <em>format</em>, ki lahko zavzame možnosti html, tab, xls, fasta, txt itd., kar je <a class="reference external" href="https://www.uniprot.org/help/api%5Fqueries">dokumentirano v opisu API</a>. Recimo, če si želimo izpis vseh rezultatov v formatu FASTA in izpis omejimo na prvih 300 znakov, naredimo tako:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;name:matriptase AND organism:&quot;homo sapiens&quot; AND reviewed:yes&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;fasta&#39;</span><span class="p">}</span>
+
+<span class="n">result2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">result2</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result2</span><span class="o">.</span><span class="n">text</span><span class="p">[:</span><span class="mi">300</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe  &#39;</span><span class="p">,</span> <span class="n">result2</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q9Y5Y6|ST14_HUMAN Suppressor of tumorigenicity 14 protein OS=Homo sapiens OX=9606 GN=ST14 PE=1 SV=2
+MGSDRARKGGGGPKDFGAGLKYNSRHEKVNGLEEGVEFLPVNNVKKVEKHGPGRWVVLAA
+VLIGLLLVLLGIGFLVWHLQYRDVRVQKVFNGYMRITNENFVDAYENSNSTEFVSLASKV
+KDALKLLYSGVPFLGPYHKESAVTAFSEGSVIAYYWSEFSIPQHLVEEAERVMAEERVVM
+LPPRARSLKSFVV
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ta način lahko uporabimo tudi za dostop do točno določenega zapisa tako, da podamo kodo zapisa:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;accession:Q7RTY8&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;fasta&#39;</span><span class="p">}</span>
+<span class="n">result3</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload3</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result3</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result3</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe: &#39;</span><span class="p">,</span> <span class="n">result3</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q7RTY8|TMPS7_HUMAN Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7 PE=2 SV=3
+MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKP
+KKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIE
+FLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIV
+FVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSST
+IGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCV
+TDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVI
+PEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITK
+KSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNI
+SQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDG
+FRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSS
+SALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWT
+AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
+GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
+GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
+SLL
+</pre></div>
+</div>
+</div>
+</div>
+<p>Če gremo na Uniprot in pogledamo zapis za ta protein vidimo, da je v Uniprot dokumentiranih več zaporedij, ki ustrezajo izooblikam (<em>isoforms</em>): <a class="reference external" href="https://www.uniprot.org/uniprot/Q7RTY8#sequences">https://www.uniprot.org/uniprot/Q7RTY8#sequences</a>.</p>
+<p>Kako vidimo vse? Dodamo <code class="docutils literal notranslate"><span class="pre">include</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload4</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;accession:Q7RTY8&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;fasta&#39;</span><span class="p">,</span>
+            <span class="c1"># spodnja vrstica omogoča vključitev izooblik v izpis</span>
+            <span class="s1">&#39;include&#39;</span> <span class="p">:</span> <span class="s1">&#39;yes&#39;</span><span class="p">}</span>
+<span class="n">result4</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload4</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result4</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result4</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe: &#39;</span><span class="p">,</span> <span class="n">result4</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q7RTY8|TMPS7_HUMAN Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7 PE=2 SV=3
+MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKP
+KKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIE
+FLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIV
+FVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSST
+IGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCV
+TDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVI
+PEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITK
+KSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNI
+SQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDG
+FRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSS
+SALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWT
+AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
+GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
+GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
+SLL
+&gt;sp|Q7RTY8-2|TMPS7_HUMAN Isoform 2 of Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7
+MFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSNNKGGL
+LVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNDKG
+CSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTI
+YDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCE
+NTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGC
+EHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPV
+GSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCEN
+GRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRI
+IGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMY
+VQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRS
+GEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDAC
+KGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
+&gt;sp|Q7RTY8-3|TMPS7_HUMAN Isoform 3 of Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7
+MCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSF
+VSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYP
+PKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRV
+PSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFD
+ESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDIC
+FRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYC
+GASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTF
+DYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQ
+AEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVS
+WGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="napake-pri-iskanju">
+<h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Permalink to this headline">¶</a></h3>
+<p>Včasih se zatipkamo v imenu ali kodi dostopa. Kaj se zgodi v primeru, da UniProt ne najde ničesar? Nekaj možnosti:</p>
+<ul class="simple">
+<li><p>code 200: poizvedba uspešno opravljena</p></li>
+<li><p>code 400: nekaj je narobe s poizvedbo, preverite formulacijo iskanja</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload5</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;accession:Q7RTY8x&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;list&#39;</span><span class="p">}</span>
+<span class="n">result5</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload5</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result5</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Prejet odgovor strežnika, code </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">result5</span><span class="o">.</span><span class="n">status_code</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result5</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nekaj je šlo narobe: &#39;</span><span class="p">,</span> <span class="n">result5</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prejet odgovor strežnika, code 200
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="izvoz-v-datoteko">
+<h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Permalink to this headline">¶</a></h3>
+<p>Pa naredimo sedaj še nekaj drugega - rezultat (lahko bi jih bilo več) shranimo v lokalno datoteko, nato za test izpišemo njeno vsebino ter jo pretvorimo v objekt Seq:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">payload6</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;accession:Q7RTY8&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;fasta&#39;</span><span class="p">}</span>
+<span class="n">result6</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload6</span><span class="p">)</span>
+<span class="c1"># print(result6.text)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">result6</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># odpremo in preberemo datoteko</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>   <span class="c1"># izpišemo objekt</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">)</span>   <span class="c1"># izpišemo samo zaporedje</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq_record</span><span class="p">))</span>   <span class="c1"># izpišemo dolžino zaporedja</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q7RTY8|TMPS7_HUMAN Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7 PE=2 SV=3
+MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKP
+KKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIE
+FLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIV
+FVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSST
+IGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCV
+TDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVI
+PEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITK
+KSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNI
+SQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDG
+FRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSS
+SALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWT
+AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
+GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
+GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
+SLL
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|Q7RTY8|TMPS7_HUMAN
+Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
+MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
+843
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="drugi-servisi">
+<h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Permalink to this headline">¶</a></h3>
+<p>Dostop do zbirk zaporedij je mogoč tudi preko drugih servisovm, na primer EMBL/EBI, kjer na voljo obširna navodila za dostop na strani <a class="reference external" href="https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Job+Dispatcher+Sequence+Analysis+Tools+Home">Job Dispatcher Sequence Analysis Tools Home</a>. Vsebina zbirke je enaka kot na UniProt.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
+<h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Permalink to this headline">¶</a></h2>
+<p>Za aminokislinsko zaporedje od zgoraj lahko s pomočjo <em>ProteinAnalysis</em>, ki je del modula <a class="reference external" href="https://biopython.org/wiki/ProtParam">ProtParam</a> v BioPython, izračunamo nekatere osnovne parametre. Pri tem moramo biti pozorni, da objekt Seq pretvorimo v niz oz. <em>string</em>.</p>
+<p>Kaj vse modul ProtParam omogoča si oglejte na spletni strani <a class="reference external" href="https://biopython.org/wiki/ProtParam">BioPython ProtParam</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.SeqUtils.ProtParam</span> <span class="kn">import</span> <span class="n">ProteinAnalysis</span>
+<span class="n">sequence</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">)</span>
+<span class="n">analysis_seq</span> <span class="o">=</span> <span class="n">ProteinAnalysis</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Molekulska masa [Da]: </span><span class="si">%0.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">molecular_weight</span><span class="p">())</span>
+
+<span class="c1"># število alaninskih ostankov</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Število A:&#39;</span><span class="p">,</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">count_amino_acids</span><span class="p">()[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span>
+
+<span class="c1"># delež ostankov, ki jih predstavljajo alaninski ostanki</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delež  A: </span><span class="si">%0.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">get_amino_acids_percent</span><span class="p">()[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span>
+
+<span class="c1"># izoelektrična točka</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Izoelektrična točka (pI): </span><span class="si">%0.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">isoelectric_point</span><span class="p">())</span>
+
+<span class="c1"># delež ak-ostankov, ki so preferenčno v določenem elementu sekundarne strukture [helix, turn, sheet]</span>
+<span class="n">sec_struc</span> <span class="o">=</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">secondary_structure_fraction</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delež alfa-vijačnic: </span><span class="si">%0.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">sec_struc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># ekstinkcijski koeficient</span>
+<span class="n">excoeff_prot</span> <span class="o">=</span> <span class="n">analysis_seq</span><span class="o">.</span><span class="n">molar_extinction_coefficient</span><span class="p">()</span>
+<span class="c1"># ekstinkcijski koeficient, vsi cisteinski ostanki reducirani (prosti)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Molarni ekstinkcijski koeficient, red. [1/(M cm)]:&quot;</span><span class="p">,</span> <span class="n">excoeff_prot</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1"># ekstinkcijski koeficient, vsi cisteinski ostanki v obliki cistinov</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Molarni ekstinkcijski koeficient, oks. [1/(M cm)]:&quot;</span><span class="p">,</span> <span class="n">excoeff_prot</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Molekulska masa [Da]: 94413.49
+Število A: 40
+Delež  A: 0.05
+Izoelektrična točka (pI): 8.84
+Delež alfa-vijačnic: 0.32
+Molarni ekstinkcijski koeficient, red. [1/(M cm)]: 139690
+Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
+</pre></div>
+</div>
+</div>
+</div>
+<p>Gre za podobno analizo, ki jo izvede spletna storitev ProtParam na naslovu https://web.expasy.org/protparam/.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="analiza-zaporedja-z-drsecim-oknom">
+<h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Permalink to this headline">¶</a></h2>
+<p>Za primer bomo analizirali hidrofobnost proteina in sicer bomo narisali hidrofobni profil. Pri tovrstnih analizah ponavadi uporabljamo drseče okno ustrezne velikosti, pri čemer nek parameter povprečimo po tem oknu in ga pripišemo aminokislinskemu ostanki v sredini tega okna. Zato, da je določitev ak-ostanka v sredini okna nedvoumna, uporabljamo kot velikost okna liho število ak-ostankov.</p>
+<p>O analizi z uporabo drsečega okna smo že govorili na predavanjih:
+<img alt="Analiza z drsečim oknom" src="../_images/drsece_okno.png" /></p>
+<p>Definirajmo aminokislinsko zaporedje, ki ga bomo uporabili za analizo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">seq_record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;vhod/tetraspanin1.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|O60635|TSN1_HUMAN
+</pre></div>
+</div>
+</div>
+</div>
+<p>Kot lestvico hidrofobnosti bomo vzeli Kyte-Doolittle lestvico, ki je pripravljena v datoteki formata <em>comma separated values</em> (csv; <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a>): <span class="xref myst">hphob_scales.csv</span>. Datoteka sicer vsebuje naslednje lestvice hidrofobnosti:</p>
+<ul class="simple">
+<li><p>KD - Kyte &amp; Doolittle</p></li>
+<li><p>HW - Hopp &amp; Woods</p></li>
+<li><p>Co - Cohen</p></li>
+<li><p>Ei - Eisenberg</p></li>
+<li><p>Ro - Rose</p></li>
+<li><p>Ja - Janin</p></li>
+<li><p>En - Engelman</p></li>
+</ul>
+<p>Več o lestvicah hidrofobnosti lahko preberete v članku <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4932767/">50 years of amino acid hydrophobicity scales: revisiting the capacity for peptide classification</a>.</p>
+<p>Za delo s podatki v obliki tabel bomo uporabili <a class="reference external" href="https://pandas.pydata.org">pandas</a>, paket za delo s strukturiranimi podatki, med drugim s heterogenimi tabelaričnimi podatki (podobno kot v tabelah SQL ali selovnih listih v Microsoft Excel). Kratko demonstracijo s prikazom osnovnih funkcij, najdete na uradni spletni strani (<a class="reference external" href="https://pandas.pydata.org/docs/getting_started/10min.html">10 minutes to pandas</a>, mi pa si bomo kar pogledali en primer uporabe.</p>
+<p>Spodaj je prikazano, kako uvozimo datoteko formata csv ter definiramo, kateri stolpec služi za indeksiranje podatkov ter kateri stolpec dejansko uvozimo (v našem primeru KD za Kyte-Doolittle).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vhod/hphob_scales.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;code1&#39;</span><span class="p">)</span>
+<span class="n">num_residues</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_record</span><span class="p">)</span>
+<span class="n">values</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">residue</span> <span class="ow">in</span> <span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
+    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">residue</span><span class="p">,</span><span class="s1">&#39;KD&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Za risanje diagrama bomo uporabili <a class="reference external" href="https://matplotlib.org">matplotlib</a>, diagram pa želimo imeti kar v zvezku (<em>inline</em>).</p>
+<p><em>Pozor: ko boste prvič zagnali matplotlib lahko nekaj časa traja, da kaj zgenerira, saj bo najprej pregledal pisave.</em></p>
+<p>Najprej nekaj osnovnih nastavitev glede velikosti slike (<em>figsize</em> v <em>inch</em>) in ločljivosti (v <em>dpi</em>) ter velikosti pisave.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># velikost slike v inch (širina, višina)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.dpi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">300</span>         <span class="c1"># ločljivost v dpi</span>
+<span class="n">SMALL_SIZE</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">MEDIUM_SIZE</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">BIGGER_SIZE</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">SMALL_SIZE</span><span class="p">)</span>          <span class="c1"># splošna velikost pisave</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">,</span> <span class="n">titlesize</span><span class="o">=</span><span class="n">BIGGER_SIZE</span><span class="p">)</span>    <span class="c1"># velikost pisave za naslov</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">MEDIUM_SIZE</span><span class="p">)</span>    <span class="c1"># velikost pisave za oznake x- in y-osi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;xtick&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">MEDIUM_SIZE</span><span class="p">)</span>   <span class="c1"># velikost pisave za oznake na x-osi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;ytick&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">MEDIUM_SIZE</span><span class="p">)</span>   <span class="c1"># velikost pisave za oznake na y-osi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;legend&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SMALL_SIZE</span><span class="p">)</span>    <span class="c1"># velikost pisave za legendo</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Definiramo velikost okna za izračun:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">half_window</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">window_size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1">#print(half_window)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Definiramo, kaj so <em>x</em> in <em>y</em> vrednosti:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">half_window</span><span class="p">,</span> <span class="n">num_residues</span><span class="o">-</span><span class="n">half_window</span><span class="p">):</span>
+    <span class="n">value_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="n">half_window</span><span class="p">,</span> <span class="n">half_window</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">value_sum</span> <span class="o">+=</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span>
+    <span class="n">y_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value_sum</span> <span class="o">/</span> <span class="n">window_size</span><span class="p">)</span>
+<span class="n">x_data</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">half_window</span><span class="p">,</span> <span class="n">half_window</span><span class="o">+</span><span class="nb">len</span><span class="p">(</span><span class="n">y_data</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Diagram narišemo (seveda mora imeti ustrezno označene osi!) in ga tudi shranimo v datoteko formata PNG.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_residues</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Diagram hidrofobnosti UniProt ID </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">seq_record</span>.id)   # naslov diagrama
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;zaporedna številka ak-ostanka&#39;</span><span class="p">)</span>   <span class="c1"># naslov x-osi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;hidrofobnost po Kyte-Doolittle&#39;</span><span class="p">)</span>   <span class="c1"># naslov y-osi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;izhod/diagram_hidrofobnosti-okno_</span><span class="si">%d</span><span class="s1">.png&#39;</span> <span class="o">%</span><span class="k">window_size</span>, bbox_inches=&#39;tight&#39;)   # sliko shranimo v datoteko
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>   <span class="c1"># sliko prikažemo</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/uniprot_rest_36_0.png" src="../_images/uniprot_rest_36_0.png" />
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga">
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
+<p>Vaša naloga je, da pripravite program, ki vas bo povprašal po naslednjih parametrih (v tem vrstnem redu):</p>
+<ol class="simple">
+<li><p>kodi zapisa v UniProt;</p></li>
+<li><p>velikosti okna, za katero želite izrisati zaporedje.</p></li>
+</ol>
+<p>Program naj nato izriše hidrofobni diagram glede na lestvico hidrofobnosti Kyte-Doolittle in sicer za velikost okna, ki ste ga vpisali. Kot v zgledu se naj hidrofobni diagram izriše v zvezku ter tudi shrani kot slikovna datoteka.</p>
+<p>Nato naredite še to:</p>
+<ol class="simple">
+<li><p>Poizkusite ugotoviti, koliko transmembranskih vijačnic protein, za katerega ste izrisali hidrofobni diagram, vsebuje, ter to primerjajte z zapisov v zbirko UniProt.</p></li>
+<li><p>Poizkusite generirati diagram hidrofobnosti za okna različne velikosti in primerjajte, kako izgledajo. Predvsem se osredotočite na najprimernejšo velikost okna za napoved transmembranskih vijačnic ter zmanjšanje šuma.</p></li>
+<li><p>V razmislek: Lahko takšno napoved uporabimo za napoved proteinov s transmembranskimi <span class="math notranslate nohighlight">\(\beta\)</span>-ploskvami kot so <span class="math notranslate nohighlight">\(\beta\)</span>-sodčki, na primer porinov? Primer porina: <a class="reference external" href="https://www.uniprot.org/uniprot/P22340">UniProt P22340</a>.</p></li>
+</ol>
+<p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
+<div class="section" id="dodatna-naloga-za-entuzijaste">
+<h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Permalink to this headline">¶</a></h3>
+<p>Podobno kot pri osnovni nalogi pripravite program, ki (v tem vrstnem redu):</p>
+<ol class="simple">
+<li><p>vpraša za kodo zapisa v UniProt;</p></li>
+<li><p>izpiše, ali je na voljo več izooblik; če jih ni naj program izpiše, da je na voljo samo ena izooblika, če pa jih je več jih naj izpiše ter vpraša, katero želite analizirati;</p></li>
+<li><p>vpraša, ali želite hidrofobni diagram izrisati za celotno zaporedje ali pa samo za en del, v slednjem primeru pa naj vas vpraša za zaporedno številko začetnega in končnega aminokislinskega ostanka želenega območja;</p></li>
+<li><p>vpraša za velikost okna;</p></li>
+<li><p>izriše diagram hidrofobnosti za vse različne lestvice hidrofobnosti, jih prikaže ter shrani v ustrezno poimenovane datoteke (na slikah naj bo v imenu diagrama zraven kode zapisa vsebovano tudi ime lestvice hidrofobnosti, uporabljene za dotično sliko).</p></li>
+</ol>
+<p>Po želji se lahko igrate in si zamislite drugačen potek…</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../osnove/ak.html" title="previous page">Aminokislinska zaporedja</a>
+    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Miha Pavšič<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
