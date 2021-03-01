@@ -11,6 +11,7 @@
   - file: osnove/nt
     sections:
       - file: vaje/nt-oligo_analiza
+      - file: vaje/genbank_web
 
 - part: Priloge
   chapters:

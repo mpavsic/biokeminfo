@@ -1,4 +1,4 @@
-# VAJA: Enostavna analiza nukleotidnega zaporedja
+# VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
 
 Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili [BioPython](https://biopython.org).
 

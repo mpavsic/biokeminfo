@@ -1,4 +1,4 @@
-# DEMO: Iskanje po PubMed z uporabo E-utilities
+# DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
 
 Na primeru si bomo ogledali, kako iščemo pu zbirki PubMed prek programskega dostopa.
 
@@ -86,7 +86,7 @@ print(single_record)   # izpis zapisa
 Vidimo, da je zapis kar ena *solata*, tako da se v njem malce težko znajti. Spodnja koda nam recimo za vsak PMID izpiše povzetek, če je ta na voljo (tu spet vzamemo vse zadetke prejšnjega iskanja), kar je že nekako lepše.
 
 for identifier in records['IdList']:
-    pubmed_entry = Entrez.efetch(db=('pubmed'), id=identifier, retmode='xml')
+    pubmed_entry = Entrez.efetch(db='pubmed', id=identifier, retmode='xml')
     result = Entrez.read(pubmed_entry)
     article = result['PubmedArticle'][0]['MedlineCitation']['Article']
     if 'Abstract' in article:
@@ -94,7 +94,7 @@ for identifier in records['IdList']:
 
 ### Shranjevanje rezultatov v CSV
 
-Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (*Comma Separated Values*; kratka razlaga je med [drobnarijami](../priloge/drobnarije.md). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (*text mining*), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), ... Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.
+Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (*Comma Separated Values*; kratka razlaga je med [drobnarijami](../priloge/drobnarije.md)). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (*text mining*), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), ... Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.
 
 Spodnji zgled ilustrira uporabo knjižnice [**Pandas**](https://pandas.pydata.org/) in sicer:
 * definira slovar *articles_with_abstracts*,
