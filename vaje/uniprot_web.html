@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nukleotidna zaporedja &#8212; Biokemijska informatika</title>
+    <title>VAJA: Dostop do UniProt v brskalniku &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/nt.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/uniprot_web.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="VAJA: Enostavna analiza nukleotidnega zaporedja (Python)" href="../vaje/nt-oligo_analiza.html" />
-    <link rel="prev" title="DEMO: Iskanje po PubMed z uporabo E-utilities (Python)" href="../vaje/pubmed_eutilities.html" />
+    <link rel="next" title="VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)" href="uniprot_rest.html" />
+    <link rel="prev" title="Aminokislinska zaporedja" href="../osnove/ak.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/nt.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/uniprot_web.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Nukleotidna zaporedja" />
-<meta property="og:description" content="Nukleotidna zaporedja  Zbirke nukleotidnih zaporedij  Obstajajo tri glavne zbirke nukleotidnih zaporedij, ki pa pravzaprav vsebujejo enake podatke, saj med njim" />
+<meta property="og:title"       content="VAJA: Dostop do UniProt v brskalniku" />
+<meta property="og:description" content="VAJA: Dostop do UniProt v brskalniku  Na spodnjih primerih si bomo ogledali, kako iščemo po zbirki UniProt ter kakšne podatke lahko iz zapisov pridobimo. Za isk" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -110,17 +110,17 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="pubmed.html">
+  <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_web.html">
+    <a class="reference internal" href="pubmed_web.html">
      VAJA: Iskanje po PubMed
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_eutilities.html">
+    <a class="reference internal" href="pubmed_eutilities.html">
      DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
     </a>
    </li>
@@ -128,23 +128,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
+    <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_web.html">
+    <a class="reference internal" href="genbank_web.html">
      VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_eutilities.html">
+    <a class="reference internal" href="genbank_eutilities.html">
      VAJA: Programski dostop do GenBank in analiza nukleotidnega zaporedja (Python)
     </a>
    </li>
@@ -152,18 +152,18 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="ak.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/ak.html">
    Aminokislinska zaporedja
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_web.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VAJA: Dostop do UniProt v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_rest.html">
+    <a class="reference internal" href="uniprot_rest.html">
      VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
     </a>
    </li>
@@ -260,7 +260,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/osnove/nt.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/uniprot_web.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -304,39 +304,26 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#zbirke-nukleotidnih-zaporedij">
-   Zbirke nukleotidnih zaporedij
+  <a class="reference internal nav-link" href="#naloga-1">
+   Naloga 1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#genbank">
-   GenBank
+  <a class="reference internal nav-link" href="#naloga-2">
+   Naloga 2
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kode-zapisov">
-     Kode zapisov
+    <a class="reference internal nav-link" href="#ozadje">
+     Ozadje
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#divizije">
-     Divizije
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#genbank-flat-file">
-     GenBank
-     <em>
-      Flat File
-     </em>
+    <a class="reference internal nav-link" href="#vprasanja">
+     Vprašanja
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vaje">
-   Vaje
-  </a>
  </li>
 </ul>
 
@@ -349,48 +336,41 @@
         
               <div>
                 
-  <div class="section" id="nukleotidna-zaporedja">
-<h1>Nukleotidna zaporedja<a class="headerlink" href="#nukleotidna-zaporedja" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="zbirke-nukleotidnih-zaporedij">
-<h2>Zbirke nukleotidnih zaporedij<a class="headerlink" href="#zbirke-nukleotidnih-zaporedij" title="Permalink to this headline">¶</a></h2>
-<p>Obstajajo tri glavne zbirke nukleotidnih zaporedij, ki pa pravzaprav vsebujejo enake podatke, saj med njimi poteka redna (dnevna) izmenjava oz. sinhronizacija in so del mednarodnega združenja <a class="reference external" href="http://www.insdc.org/"><strong>International Nucleotide Sequence Database Collaboration</strong></a>:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/"><strong>GenBank</strong></a> na strežniku <a class="reference external" href="https://www.ncbi.nlm.nih.gov/">NBCI</a> (National Center for Biotechnology Information),</p></li>
-<li><p><a class="reference external" href="https://www.ebi.ac.uk/ena/"><strong>ENA</strong> (European Nucleotide Archive)</a> na strežniku <a class="reference external" href="https://www.ebi.ac.uk">EBI</a> (European Bioinformatics Institute) in</p></li>
-<li><p><a class="reference external" href="https://www.ddbj.nig.ac.jp/"><strong>DDBJ</strong> (DNA Data Bank of Japan)</a>.</p></li>
-</ul>
+  <div class="section" id="vaja-dostop-do-uniprot-v-brskalniku">
+<h1>VAJA: Dostop do UniProt v brskalniku<a class="headerlink" href="#vaja-dostop-do-uniprot-v-brskalniku" title="Permalink to this headline">¶</a></h1>
+<p>Na spodnjih primerih si bomo ogledali, kako iščemo po zbirki UniProt ter kakšne podatke lahko iz zapisov pridobimo. Za iskanje uporabite enostavni ali napredni iskalni vmesnik na strani <a class="reference external" href="http://www.uniprot.org">UniProtKB</a>, pri razumevanju zapisa pa si lahko pomagate z navodili na <a class="reference external" href="http://www.uniprot.org/docs/manual">posebni podstrani</a> na UniProt.</p>
+<p>Rezultati iskanja so prikazani v obliki tabele. Slednjo si lahko prilagodimo, enega ali več zadetkov (zapisov) pa si lahko prenesemo v različnih formatih. Kje so relevantne povezave na te funkcije je prikazano na spodnji sliki.</p>
+<p><img alt="UniProt rezultati v tabeli" src="../_images/uniprot_rezultati_primer1.png" /></p>
+<hr class="docutils" />
+<div class="section" id="naloga-1">
+<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
+<p>Ta naloga je enostavna - z analizo ustreznih zapisov v zbirko UniProt odgovorite na naslednja vprašanja:</p>
+<ol class="simple">
+<li><p>Koliko transmembranskih regij vsebuje človeški E-kadherin?</p></li>
+<li><p>Koliko disulfidnih vezi vsebuje zunajcelični del človeškega proteina EpCAM?</p></li>
+<li><p>Kje v celici oz. izven nje se nahaja človeški katenin alfa-2? Možnih je več odgovorov.</p></li>
+<li><p>Koliko cisteinskih aminokislinskih ostankov ene polipeptidne verige proteina mirakulina iz organizma <em>Synsepalum dulcificum</em> je oksidiranih?</p></li>
+<li><p>Poiščite vse človeške proteine, ki so lipidirani (to je post-translacijska modifikacija (PTM), kjer je nanje kovalentno pritrjena lipidna veriga), ta modifikacija pa je eksperimentalno potrjena.</p></li>
+</ol>
 </div>
-<div class="section" id="genbank">
-<h2>GenBank<a class="headerlink" href="#genbank" title="Permalink to this headline">¶</a></h2>
-<p>GenBank je zbirka, ki se od zgoraj navedenih uporablja najpogosteje, zato jo bomo uporabljali tudi mi. Do zbirke lahko dostopamo na več osnovnih načinov:</p>
-<ul class="simple">
-<li><p>spletni iskalnik Entrez, ki omogoča dostop tudi do drugih podatkov/zbirk, npr. do aminokislinskih zaporedij, struktur makromolekul, PubMed ipd. - gre za način dostopa, ki je podoben oz. enak kot za <a class="reference internal" href="../vaje/pubmed_web.html"><span class="doc std std-doc">PubMed pred brskalnika</span></a>;</p></li>
-<li><p>programski dostop do Entrez z uporabo NCBI E-utilities (enako kot za <a class="reference internal" href="../vaje/pubmed_eutilities.html"><span class="doc std std-doc">programski dostop do PubMed</span></a>;</p></li>
-<li><p>iskanje po GenBank s programom BLAST (iskanje podobnih zaporedij);</p></li>
-<li><p>prek strežnika FTP z anonimnim dostopom, od koder lahko prenesemo datoteke v formatu ASN.1 (<span class="xref myst">ftp</span>) in kot ploske datoteke - <em>flatfile</em> (<span class="xref myst">ftp</span>).</p></li>
-</ul>
-<p>Zbirka vsebuje zapise iz različnih virov - od zapisov, ki jih prispevajo posamezni laboratoriji (na primer, sekvencirate cDNA za nek protein iz nekega organizma, deponiranje zaporedja v javno dostopno zbirko je pogoj za objavo članka, v katerem zaporedje omenjate) do velikih genomskih projektov, vključno z zaporedji iz projektov WGS (<em>whole-genome shotgun</em>, sekvenciranje celotnih genomov po principu hitrem postopku <em>shotgun</em>) in TSA (<em>transcriptome shotgun assembly</em>, združena zaporedja iz hitrega sekvenciranja transkriptomov) ter zaporedji, določenih iz vzorcev iz okolja.</p>
-<div class="section" id="kode-zapisov">
-<h3>Kode zapisov<a class="headerlink" href="#kode-zapisov" title="Permalink to this headline">¶</a></h3>
-<p>Vsakemu zapisu, ki vsebuje zaporedje in pripise (anotacije, <em>annotations</em>), je določena unikatna identifikacijska koda, imenovana <em><strong>accession number</strong></em> (koda za dostop), ki predstavlja primarni ključ zapisa v zbirko in je enak v vse treh zgoraj omenjenih zbirkah (GenBank, ENA, DDBJ). V zapisu je napisana v vrstici z oznako ACCESSION. Ta koda je nespremenljiva in se ohrani tudi v primeru sprememb vsebine zapisa - v tem primeru se novim verzijam doda oznaka verzije, npr. 5. verzija zapisa za mRNA za človeški tiroglobulin z osnovno kodo za dostop NM_003235 tako postane NM_003235.5 (oznaka verzije je torej za piko). Velja, da ko dostopamo do nekega zapisa v zbirki bomo privzeto vedno dobili najnovejšo verzijo zapisa, razen, če bomo izrecno navedli kakšno drugo verzijo. Priporočljivo je, da pri navajanju kode za dostop (npr. v članku navedemo, da smo uporabili zaporedje i zbirke GenBank pod to in to kodo) vedno navedemo še verzijo.</p>
-<p>Vsak zapis ima še eno kodo, imenovano <strong>GI</strong> (Geninfo Identifier), ki je povezana s točno določeno verzijo zapisa. Na primer, verziji zapisa NM_003235.4 in NM_003235.5 imata drugačno kodo GI.</p>
+<hr class="docutils" />
+<div class="section" id="naloga-2">
+<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
+<p>Ta naloga je nekoliko kompleksnejša in ilustrira, kako bi UniProt uporabili v realnem “laboratorijskem” primeru.</p>
+<div class="section" id="ozadje">
+<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
+<p>Delamo na projektu na temo proteolitskega procesiranja proteinov na celični površini. Posebej nas zanima en encim, ki pri tem sodeluje in sicer <em>Disintegrin and metalloproteinase domain-containing protein 28</em>, ki ga  kodira človeški gen <em>ADAM28</em>. Da bi ta encim lahko podrobneje proučili smo si zamislili kup eksperimentov <em>in vitro</em>, za katere pa potrebujemo encim v čisti obliki.</p>
 </div>
-<div class="section" id="divizije">
-<h3>Divizije<a class="headerlink" href="#divizije" title="Permalink to this headline">¶</a></h3>
-<p>Zapisi oz. nukleotidna zaporedja so v zbirki GenBank organizirana v t.i. <strong>divizije</strong> (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/htgs/divisions/"><em>GenBank divisions</em></a>) in sicer glede na taksonomsko razvrstitev organizma, iz katerega zaporedje izhaja, ter glede na pristop sekvenciranja, uporabljen za določitev samega zaporedja. Tako torej ločimo taksonomske in funkcijske divizije.</p>
-<p>Taksonomske divizije so: SYN (sintetična zaporedja), PHG (fagi), ENV (zaporedja iz okoljskih vzorcev), VRL (virusi), BCT (bakterije), PLN (rastline), MAM (sesalci, z izjemo tistih, ki so v svoji ločeni diviziji), VRT (drugi vretenčarji), PRI (primati), UNA (zapisi, kjer pripisi ne omogočajo določitve divizije oz. slednja še ni določena), ROD (glodalci), INV (nevretenčarji).</p>
-<p>Funkcijske divizije so: TSA (hitro sekvenciranje transkriptomov), WHS (sekvenciranje celotnih genomov s hitrim pristopom), PAT (patentirana zaporedja), GSS (<em>Genome survey sequences</em>), EST (<em>Expressed sequence tag</em>, t.j. kratka zaporedja, ki so prepisana z genomske DNA), HGT (genomska zaporedja, dobljena z visoko zmogljivim pristopom skevenciranja; <em>High-throughput genomic</em>), STS (<em>Sequence tagged sites</em>) in HCT (visoko zmogljivo sekvenciranje cDNA; <em>High-throughput cDNA</em>).</p>
-</div>
-<div class="section" id="genbank-flat-file">
-<h3>GenBank <em>Flat File</em><a class="headerlink" href="#genbank-flat-file" title="Permalink to this headline">¶</a></h3>
-<p>Klasična oblika zapisa v zbirki je t.i. ploski format (<em>Flat File</em>), katerega najpomembnejši elementi so na kratko predstavljeni na spodnji sliki, podrobneje pa opisani na <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">uradni spletni strani</a>.</p>
-<p><img alt="GenBank Flat File" src="../_images/genbank_flatfile.png" /></p>
-</div>
-</div>
-<div class="section" id="vaje">
-<h2>Vaje<a class="headerlink" href="#vaje" title="Permalink to this headline">¶</a></h2>
-<p>Mi si bomo v okviru vaj najprej ogledali dostop z uporabo spletnega vmesnika in E-utilities, iskanje z BLAST pa bomo spoznali v okviru ene kasnejših vaj na temo iskanja podobnih zaporedij.</p>
-<div class="toctree-wrapper compound">
+<div class="section" id="vprasanja">
+<h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Permalink to this headline">¶</a></h3>
+<p>Želimo omenjen encim v rekombinantni obliki in sicer kot topen aktiven protein. Odgovorite na naslednja vprašanja, ki se nanašajo na njegovo pripravo.</p>
+<ol class="simple">
+<li><p>Katere ione moramo imeti v raztopini pri encimskih testih, da bo encim sploh aktiven?</p></li>
+<li><p>Kateri del polipeptidne verige (od … do … ak-ostanka) moramo pripraviti, da bo encim aktiven in topen?</p></li>
+<li><p>Če želimo imeti katalitsko neaktivno mutanto - kako to najenostavneje dosežemo?</p></li>
+<li><p>Kateri ekspresijski sistem je primernejši za izražanje oblike iz 2. točke - bakterijski sistem ali insektne celice?</p></li>
+<li><p>Recimo, da je oblika iz 2. točke stabilna pri pH = 8. Kakšen tip ionskega izmenjevalca (kationski, anionski) moramo izbrati, da se bo med čiščenjem z ionsko-izmenjevalno kromatografijo pri tem pH topen rekombinantni protein nanj vezal? Namig: uporabite spletno orodje <a class="reference external" href="https://web.expasy.org/protparam/">ProtParam</a>, ki vam na osnovi danega aminokislinskega zaporedja izračuna različne parametre, vključno s pI.</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -408,7 +388,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./osnove"
+            path: "./vaje"
         },
         predefinedOutput: true
     }
@@ -423,8 +403,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../vaje/pubmed_eutilities.html" title="previous page">DEMO: Iskanje po PubMed z uporabo E-utilities (Python)</a>
-    <a class='right-next' id="next-link" href="../vaje/nt-oligo_analiza.html" title="next page">VAJA: Enostavna analiza nukleotidnega zaporedja (Python)</a>
+    <a class='left-prev' id="prev-link" href="../osnove/ak.html" title="previous page">Aminokislinska zaporedja</a>
+    <a class='right-next' id="next-link" href="uniprot_rest.html" title="next page">VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
