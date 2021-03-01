@@ -1,6 +1,7 @@
 # VAJA: Dostop do GenBank v brskalniku
 
 
+## Uvod
 V okviru te vaje si bomo ogledali najpogostejši in najenostavnejši način dostopa do podatkov v zbirki GenBank, t.j. dostop z uporabo brskalnika.
 
 Do GenBank dostopamo na naslovu: [https://www.ncbi.nlm.nih.gov/genbank/](https://www.ncbi.nlm.nih.gov/genbank/).
@@ -8,7 +9,6 @@ Do GenBank dostopamo na naslovu: [https://www.ncbi.nlm.nih.gov/genbank/](https:/
 Iskanje lahko zožimo z uporabo kompleksnejših poizvedb (*Advanced search* - napredno iskanje, podobno kot pri PubMed), prav tako pa lahko rezultate filtriramo z uporabo številnih filtrov (spet, podobno kot pri PubMed): vrsta zaporedja (tRNA, mRNA, genomsko zaporedje), organizem, ... Filtri so razporejeni na levi in desni strani rezultatov (v osnovi so vse možnosti filtriranja na levi, na desni pa so nekatere možnosti posebej izpostavljene), kot je prikazano na spodnji zaslonski sliki.
 
 ![GenBank iskanje in filtriranje](slike/genbank_web_primer1.png)
-
 
 ---
 ## Naloga
@@ -36,9 +36,3 @@ V zbirki GenBank izvedite iskanja, kjer poiščete spodaj navedene zapise (vsaka
 **Dodatna vprašanja** (za odgovor se malo razglejte po enem od zapisov v brskalniku):
 * Kako pridemo do celotnega nukleotidnega zaporedja nekega zapisa v GenBank v formatu FASTA?
 * Kako pridemo do dela nukleotidnega zapisa v formatu FASTA, ki ustreza zgolj regiji CDS?
-
-
----
-## Dodatna literatura
-* kratek video-vodič [How to use GenBank](https://www.youtube.com/watch?v=j7hV10gYz1Q)
-* [NCBI Minute: A Beginner's Guide to Genes and Sequences at NCBI](https://www.youtube.com/watch?v=QIZ8QH6JcC8&t=890s) na uradnem YouTube kanalu NCBI

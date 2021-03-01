@@ -1,5 +1,6 @@
 # VAJA: Iskanje po PubMed
 
+## Uvod
 V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:
 * filtriranje rezultatov glede na tip članka, leto ipd.,
 * kompleksno iskanje z večimi termini.

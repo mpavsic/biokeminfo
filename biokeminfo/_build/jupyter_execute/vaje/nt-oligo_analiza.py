@@ -5,7 +5,7 @@ Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili [BioP
 Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.
 
 ---
-## Teoretično ozadje naloge
+## Teoretično ozadje
 
 Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri verižni reakciji s polimerazo - **PCR**.  Kratek filmček, kjer je razložen potek reakcije, je na voljo na [YouTube](https://www.youtube.com/watch?v=2KoLnIwoZKU), potek skupaj z zaporedjem matrice in oligonukleotidov pa je shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo *forward and reverse oligos*).
 
