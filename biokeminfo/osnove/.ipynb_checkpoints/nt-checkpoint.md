@@ -12,7 +12,7 @@ GenBank je zbirka, ki se od zgoraj navedenih uporablja najpogosteje, zato jo bom
 * spletni iskalnik Entrez, ki omogoča dostop tudi do drugih podatkov/zbirk, npr. do aminokislinskih zaporedij, struktur makromolekul, PubMed ipd. - gre za način dostopa, ki je podoben oz. enak kot za [PubMed pred brskalnika](../vaje/pubmed_web.md);
 * programski dostop do Entrez z uporabo NCBI E-utilities (enako kot za [programski dostop do PubMed](../vaje/pubmed_eutilities.ipynb);
 * iskanje po GenBank s programom BLAST (iskanje podobnih zaporedij);
-* prek strežnika FTP z anonimnim dostopom, od koder lahko prenesemo datoteke v formatu ASN.1 ([ftp](tp://ftp.ncbi.nlm.nih.gov/ncbi-asn1)) in kot ploske datoteke - *flatfile* ([ftp](ftp://ftp.ncbi.nlm.nih.gov/genbank)).
+* prek strežnika FTP z anonimnim dostopom, od koder lahko prenesemo datoteke v formatu ASN.1 ([ftp](ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1)) in kot ploske datoteke - *flatfile* ([ftp](ftp://ftp.ncbi.nlm.nih.gov/genbank)).
 
 
 Zbirka vsebuje zapise iz različnih virov - od zapisov, ki jih prispevajo posamezni laboratoriji (na primer, sekvencirate cDNA za nek protein iz nekega organizma, deponiranje zaporedja v javno dostopno zbirko je pogoj za objavo članka, v katerem zaporedje omenjate) do velikih genomskih projektov, vključno z zaporedji iz projektov WGS (*whole-genome shotgun*, sekvenciranje celotnih genomov po principu hitrem postopku *shotgun*) in TSA (*transcriptome shotgun assembly*, združena zaporedja iz hitrega sekvenciranja transkriptomov) ter zaporedji, določenih iz vzorcev iz okolja.

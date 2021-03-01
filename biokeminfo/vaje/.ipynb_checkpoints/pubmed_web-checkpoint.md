@@ -6,14 +6,14 @@ V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:
 
 Pri tem bomo uporabljali "novo" verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu [https://pubmed.ncbi.nlm.nih.gov/](https://pubmed.ncbi.nlm.nih.gov/). Z iskanjem lahko začnemo tudi na osnovni strani Entrez ([https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/)), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na *All Databases* se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).
 
-![pubmed_web_entrez](slike/pubmed_web_entrez.png)
+![PubMed Entrez](slike/pubmed_web_entrez.png)
 
 ---
 ## Naloga 1
 
 ### Vprašanja
 Odgovorite na naslednja vprašanja:
-1. S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda **coronavorus**.
+1. S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda **coronavirus**.
 2. Koliko od teh člankov ima prosto dostopno celotno besedilo?
 3. Koliko člankov je na temo kliničnih preizkusov (*Clinical Trial*)?
 4. Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?
@@ -27,7 +27,7 @@ Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahaj
 * ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,
 * prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.
 
-![pubmed_web_primer1](slike/pubmed_web_primer1.png)
+![PubMed Web primer1](slike/pubmed_web_primer1.png)
 
 ---
 ## Naloga 2
@@ -50,3 +50,7 @@ Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso
 
 * [Pomoč za iskanje po PubMed](https://www.ncbi.nlm.nih.gov/books/NBK3827/), na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).
 * [18+ Ways to Improve your PubMed searches](https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/) - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.
+* Uradni kanal NCBI na YouTube:
+   * [avtomatska iskanja po PubMed](https://www.youtube.com/watch?v=kXY5P4C_2l4)
+   * [prilagoditev PubMed z MyNCBI](https://www.youtube.com/watch?v=mih7gJwd5HI)
+   * [filtri na PubMed](https://www.youtube.com/watch?v=696R9GbOyvA)

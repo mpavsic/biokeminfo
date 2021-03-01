@@ -12,6 +12,7 @@
     sections:
       - file: vaje/nt-oligo_analiza
       - file: vaje/genbank_web
+      - file: vaje/genbank_eutilities
 
 - part: Priloge
   chapters:

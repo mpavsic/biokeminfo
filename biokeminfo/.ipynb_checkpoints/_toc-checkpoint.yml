@@ -11,6 +11,8 @@
   - file: osnove/nt
     sections:
       - file: vaje/nt-oligo_analiza
+      - file: vaje/genbank_web
+      - file: vaje/genbank_eutilities
 
 - part: Priloge
   chapters:
@@ -24,4 +26,4 @@
 
 - part: Izvedba
   chapters:
-  - file: izvedba/izvedba_2020-2021
+  - file: izvedba/vaje_2020-2021

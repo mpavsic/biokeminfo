@@ -1,0 +1,345 @@
+LOCUS       NM_005985               1705 bp    mRNA    linear   PRI 21-FEB-2021
+DEFINITION  Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA.
+ACCESSION   NM_005985
+VERSION     NM_005985.4
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1705)
+  AUTHORS   Zhao H, Ling J, Huang Y, Chang A and Zhuo X.
+  TITLE     The expression and clinical significance of an
+            Epithelial-Mesenchymal Transition inducer, SNAI1, in head and neck
+            carcinoma
+  JOURNAL   J Oral Pathol Med 50 (2), 145-154 (2021)
+   PUBMED   32945534
+  REMARK    GeneRIF: The expression and clinical significance of an
+            Epithelial-Mesenchymal Transition inducer, SNAI1, in head and neck
+            carcinoma.
+REFERENCE   2  (bases 1 to 1705)
+  AUTHORS   Qian W, Li Q, Wu X, Li W, Li Q, Zhang J, Li M, Zhang D, Zhao H, Zou
+            X, Jia H, Zhang L, Yang XD and Hou Z.
+  TITLE     Deubiquitinase USP29 promotes gastric cancer cell migration by
+            cooperating with phosphatase SCP1 to stabilize Snail protein
+  JOURNAL   Oncogene 39 (44), 6802-6815 (2020)
+   PUBMED   32973332
+  REMARK    GeneRIF: Deubiquitinase USP29 promotes gastric cancer cell migration
+            by cooperating with phosphatase SCP1 to stabilize Snail protein.
+REFERENCE   3  (bases 1 to 1705)
+  AUTHORS   Lv W, Huan M, Yang W, Gao Y, Wang K, Xu S, Zhang M, Ma J, Wang X,
+            Chen Y and Li L.
+  TITLE     Snail promotes prostate cancer migration by facilitating SPOP
+            ubiquitination and degradation
+  JOURNAL   Biochem Biophys Res Commun 529 (3), 799-804 (2020)
+   PUBMED   32736710
+  REMARK    GeneRIF: Snail promotes prostate cancer migration by facilitating
+            SPOP ubiquitination and degradation.
+REFERENCE   4  (bases 1 to 1705)
+  AUTHORS   Sobierajska K, Ciszewski WM, Macierzynska-Piotrowska E, Klopocka W,
+            Przygodzka P, Karakula M, Pestka K, Wawro ME and Niewiarowska J.
+  TITLE     The New Model of Snail Expression Regulation: The Role of MRTFs in
+            Fast and Slow Endothelial-Mesenchymal Transition
+  JOURNAL   Int J Mol Sci 21 (16), E5875 (2020)
+   PUBMED   32824297
+  REMARK    GeneRIF: The New Model of Snail Expression Regulation: The Role of
+            MRTFs in Fast and Slow Endothelial-Mesenchymal Transition.
+            Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 1705)
+  AUTHORS   Zanfi ED, Fantini S, Lotti R, Bertesi M, Marconi A, Grande A,
+            Manfredini R, Pincelli C and Zanocco-Marani T.
+  TITLE     Wnt/CTNNB1 Signal Transduction Pathway Inhibits the Expression of
+            ZFP36 in Squamous Cell Carcinoma, by Inducing Transcriptional
+            Repressors SNAI1, SLUG and TWIST
+  JOURNAL   Int J Mol Sci 21 (16), E5692 (2020)
+   PUBMED   32784485
+  REMARK    GeneRIF: Wnt/CTNNB1 Signal Transduction Pathway Inhibits the
+            Expression of ZFP36 in Squamous Cell Carcinoma, by Inducing
+            Transcriptional Repressors SNAI1, SLUG and TWIST. Publication
+            Status: Online-Only
+REFERENCE   6  (bases 1 to 1705)
+  AUTHORS   Okubo T, Truong TK, Yu B, Itoh T, Zhao J, Grube B, Zhou D and Chen
+            S.
+  TITLE     Down-regulation of promoter 1.3 activity of the human aromatase gene
+            in breast tissue by zinc-finger protein, snail (SnaH)
+  JOURNAL   Cancer Res 61 (4), 1338-1346 (2001)
+   PUBMED   11245431
+REFERENCE   7  (bases 1 to 1705)
+  AUTHORS   Smith S, Metcalfe JA and Elgar G.
+  TITLE     Identification and analysis of two snail genes in the pufferfish
+            (Fugu rubripes) and mapping of human SNA to 20q
+  JOURNAL   Gene 247 (1-2), 119-128 (2000)
+   PUBMED   10773451
+REFERENCE   8  (bases 1 to 1705)
+  AUTHORS   Batlle E, Sancho E, Franci C, Dominguez D, Monfar M, Baulida J and
+            Garcia De Herreros A.
+  TITLE     The transcription factor snail is a repressor of E-cadherin gene
+            expression in epithelial tumour cells
+  JOURNAL   Nat Cell Biol 2 (2), 84-89 (2000)
+   PUBMED   10655587
+REFERENCE   9  (bases 1 to 1705)
+  AUTHORS   Paznekas WA, Okajima K, Schertzer M, Wood S and Jabs EW.
+  TITLE     Genomic organization, expression, and chromosome location of the
+            human SNAIL gene (SNAI1) and a related processed pseudogene (SNAI1P)
+  JOURNAL   Genomics 62 (1), 42-49 (1999)
+   PUBMED   10585766
+REFERENCE   10  (bases 1 to 1705)
+  AUTHORS   Twigg SR and Wilkie AO.
+  TITLE     Characterisation of the human snail (SNAI1) gene and exclusion as a
+            major disease gene in craniosynostosis
+  JOURNAL   Hum Genet 105 (4), 320-326 (1999)
+   PUBMED   10543399
+COMMENT     ##Evidence-Data-START##
+            Transcript exon combination :: BC012910.1, SRR5189661.136537.1
+            [ECO:0000332]
+            RNAseq introns :: single sample supports all introns SAMEA1965299,
+            SAMEA1966682 [ECO:0000348]
+            ##Evidence-Data-END##
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match          :: ENST00000244050.3/ ENSP00000244050.2
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+            REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from DA972913.1 and BC012910.1.
+            On Nov 22, 2018 this sequence version replaced NM_005985.3.
+            Summary: The Drosophila embryonic protein snail is a zinc finger
+            transcriptional repressor which downregulates the expression of
+            ectodermal genes within the mesoderm. The nuclear protein encoded
+            by this gene is structurally similar to the Drosophila snail
+            protein, and is also thought to be critical for mesoderm formation
+            in the developing embryo. At least two variants of a similar
+            processed pseudogene have been found on chromosome 2. [provided by
+            RefSeq, Jul 2008].
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..1705
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="20"
+                     /map="20q13.13"
+     gene            1..1705
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="snail family transcriptional repressor 1"
+                     /db_xref="GeneID:6615"
+                     /db_xref="HGNC:HGNC:11128"
+                     /db_xref="MIM:604238"
+     exon            1..162
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             81..875
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="snail 1 zinc finger protein; snail 1 homolog; snail
+                     family zinc finger 1; protein sna; protein snail homolog 1"
+                     /codon_start=1
+                     /product="zinc finger protein SNAI1"
+                     /protein_id="NP_005976.2"
+                     /db_xref="CCDS:CCDS13423.1"
+                     /db_xref="GeneID:6615"
+                     /db_xref="HGNC:HGNC:11128"
+                     /db_xref="MIM:604238"
+                     /translation="MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIP
+                     PPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQESPRVAELTSLSDEDSGKGSQPPS
+                     PPSPAPSSFSSTSVSSLEAEAYAAFPGLGQVPKQLAQLSEAKDLQARKAFNCKYCNKEY
+                     LSLGALKMHIRSHTLPCVCGTCGKAFSRPWLLQGHVRTHTGEKPFSCPHCSRAFADRSN
+                     LRAHLQTHSDVKKYQCQACARTFSRMSLLHKHQESGCSGCPR"
+     misc_feature    81..140
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: SNAG domain. /evidence=ECO:0000305|PubMed:20389281,
+                     ECO:0000305|PubMed:21300290"
+     misc_feature    84..101
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: Required and sufficient for interaction with KDM1A.
+                     /evidence=ECO:0000269|PubMed:20389281,
+                     ECO:0000269|PubMed:23721412"
+     misc_feature    108..200
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: LATS2 binding"
+     misc_feature    111..113
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine, by PKA.
+                     /evidence=ECO:0000269|PubMed:19923321; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    324..326
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:19923321; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    354..356
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine, by CK2.
+                     /evidence=ECO:0000269|PubMed:19923321; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    363..380
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: Destruction motif"
+     misc_feature    366..368
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:20305697,
+                     ECO:0000305|PubMed:15448698; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    378..380
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000305|PubMed:15448698; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    390..392
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:15647282,
+                     ECO:0000269|PubMed:19923321, ECO:0000305|PubMed:15448698;
+                     propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     phosphorylation site"
+     misc_feature    399..401
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:15647282,
+                     ECO:0000269|PubMed:19923321, ECO:0000305|PubMed:15448698;
+                     propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     phosphorylation site"
+     misc_feature    411..413
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000305|PubMed:15448698; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    414..416
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="O-linked (GlcNAc) serine.
+                     /evidence=ECO:0000269|PubMed:20959806; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); glycosylation site"
+     misc_feature    423..425
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000305|PubMed:15448698; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    435..437
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000305|PubMed:15448698; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    438..533
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: Required for FBXL14-triggered degradation"
+     misc_feature    531..872
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="propagated from UniProtKB/Swiss-Prot (O95863.2);
+                     Region: Required for nuclear localization and interaction
+                     with KPNB1, NOTCH1 and PARP1.
+                     /evidence=ECO:0000269|PubMed:21577210,
+                     ECO:0000269|PubMed:22128911"
+     misc_feature    687..689
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphothreonine, by LATS2.
+                     /evidence=ECO:0000269|PubMed:21952048; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     misc_feature    816..818
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="Phosphoserine, by PAK1.
+                     /evidence=ECO:0000269|PubMed:15833848; propagated from
+                     UniProtKB/Swiss-Prot (O95863.2); phosphorylation site"
+     exon            163..690
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /inference="alignment:Splign:2.1.0"
+     exon            691..1705
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      1677..1682
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="hexamer: AATAAA"
+     polyA_site      1705
+                     /gene="SNAI1"
+                     /gene_synonym="dJ710H13.1; SLUGH2; SNA; SNAH; SNAIL;
+                     SNAIL1"
+                     /note="major polyA site"
+ORIGIN
+        1 attgcgccgc ggcacggcct agcgagtggt tcttctgcgc tactgctgcg cgaatcggcg
+       61 accccagtgc ctcgaccact atgccgcgct ctttcctcgt caggaagccc tccgacccca
+      121 atcggaagcc taactacagc gagctgcagg actctaatcc agagtttacc ttccagcagc
+      181 cctacgacca ggcccacctg ctggcagcca tcccacctcc ggagatcctc aaccccaccg
+      241 cctcgctgcc aatgctcatc tgggactctg tcctggcgcc ccaagcccag ccaattgcct
+      301 gggcctccct tcggctccag gagagtccca gggtggcaga gctgacctcc ctgtcagatg
+      361 aggacagtgg gaaaggctcc cagcccccca gcccaccctc accggctcct tcgtccttct
+      421 cctctacttc agtctcttcc ttggaggccg aggcctatgc tgccttccca ggcttgggcc
+      481 aagtgcccaa gcagctggcc cagctctctg aggccaagga tctccaggct cgaaaggcct
+      541 tcaactgcaa atactgcaac aaggaatacc tcagcctggg tgccctcaag atgcacatcc
+      601 gaagccacac gctgccctgc gtctgcggaa cctgcgggaa ggccttctct aggccctggc
+      661 tgctacaagg ccatgtccgg acccacactg gcgagaagcc cttctcctgt ccccactgca
+      721 gccgtgcctt cgctgaccgc tccaacctgc gggcccacct ccagacccac tcagatgtca
+      781 agaagtacca gtgccaggcg tgtgctcgga ccttctcccg aatgtccctg ctccacaagc
+      841 accaagagtc cggctgctca ggatgtcccc gctgaccctc gaggctccct cttcctctcc
+      901 atacctgccc ctgcctgaca gccttcccca gctccagcag gaaggacccc acatccttct
+      961 cactgccatg gaattccctc ctgagtgccc cacttctggc cacatcagcc ccacaggact
+     1021 ttgatgaaga ccattttctg gttctgtgtc ctctgcctgg gctctggaag aggccttccc
+     1081 atggccattt ctgtggaggg agggcagctg gcccccagcc ctgggggatt cctgagctgg
+     1141 cctgtctgcg tgggtttttg tatccagagc tgtttggata cagctgcttt gagctacagg
+     1201 acaaaggctg acagactcac tgggaagctc ccaccccact caggggaccc cactcccctc
+     1261 acacacaccc ccccacaagg aaccctcagg ccaccctcca cgaggtgtga ctaactatgc
+     1321 aataatccac ccccaggtgc agccccaggg cctgcggagg cggtggcaga ctagagtctg
+     1381 agatgccccg agcccaggca gctatttcag cctcctgttt ggtggggtgg cacctgtttc
+     1441 ccgggcaatt taacaatgtc tgaaaaggga ctgtgagtaa tggctgtcac ttgtcggggg
+     1501 cccaagtggg gtgctctggt ctgaccgatg tgtctcccag aactattctg ggggcccgac
+     1561 aggtgggcct gggaggaaga tgtttacatt tttaaaggta cactggtatt tatatttcaa
+     1621 acattttgta tcaaggaaac gttttgtata gttatatgta cagtttattg atattcaata
+     1681 aagcagttaa tttatatatt aaaaa
+//
