@@ -14,7 +14,6 @@ GenBank je zbirka, ki se od zgoraj navedenih uporablja najpogosteje, zato jo bom
 * iskanje po GenBank s programom BLAST (iskanje podobnih zaporedij);
 * prek strežnika FTP z anonimnim dostopom, od koder lahko prenesemo datoteke v formatu ASN.1 ([ftp](ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1)) in kot ploske datoteke - *flatfile* ([ftp](ftp://ftp.ncbi.nlm.nih.gov/genbank)).
 
-
 Zbirka vsebuje zapise iz različnih virov - od zapisov, ki jih prispevajo posamezni laboratoriji (na primer, sekvencirate cDNA za nek protein iz nekega organizma, deponiranje zaporedja v javno dostopno zbirko je pogoj za objavo članka, v katerem zaporedje omenjate) do velikih genomskih projektov, vključno z zaporedji iz projektov WGS (*whole-genome shotgun*, sekvenciranje celotnih genomov po principu hitrem postopku *shotgun*) in TSA (*transcriptome shotgun assembly*, združena zaporedja iz hitrega sekvenciranja transkriptomov) ter zaporedji, določenih iz vzorcev iz okolja.
 
 ### Kode zapisov
@@ -36,5 +35,6 @@ Klasična oblika zapisa v zbirki je t.i. ploski format (*Flat File*), katerega n
 ![GenBank Flat File](slike/genbank_flatfile.png)
 
 
-## Vaje
-Mi si bomo v okviru vaj najprej ogledali dostop z uporabo spletnega vmesnika in E-utilities, iskanje z BLAST pa bomo spoznali v okviru ene kasnejših vaj na temo iskanja podobnih zaporedij.
+## Dodatna literatura
+* kratek video-vodič [How to use GenBank](https://www.youtube.com/watch?v=j7hV10gYz1Q)
+* [NCBI Minute: A Beginner's Guide to Genes and Sequences at NCBI](https://www.youtube.com/watch?v=QIZ8QH6JcC8&t=890s) na uradnem YouTube kanalu NCBI
