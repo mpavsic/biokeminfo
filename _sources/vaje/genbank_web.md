@@ -1,6 +1,7 @@
 # VAJA: Dostop do GenBank v brskalniku
 
-V Okviru te vaje si bomo ogledali najpogostejši in najenostavnejši način dostopa do podatkov v zbirki GenBank, t.j. dostop z uporabo brskalnika.
+
+V okviru te vaje si bomo ogledali najpogostejši in najenostavnejši način dostopa do podatkov v zbirki GenBank, t.j. dostop z uporabo brskalnika.
 
 Do GenBank dostopamo na naslovu: [https://www.ncbi.nlm.nih.gov/genbank/](https://www.ncbi.nlm.nih.gov/genbank/).
 
@@ -28,6 +29,9 @@ V zbirki GenBank izvedite iskanja, kjer poiščete spodaj navedene zapise (vsaka
   * vprašanje 1: Kako dolgo je nukleotidno zaporedje tega kromosoma?
   * vprašanje 2: Kakšne lastnosti oz. regije (*features*) so anotirane in kako je to bilo narejeno?
   * vprašanje 3: Kaj menite, da pomeni *unk100* v delu zapisa CONTIG (=soseska)?
+* **najdaljše človeško zaporedje mRNA**
+  * vprašanje 1: Za kateri protein vsebuje to zaporedje zapis?
+  * vprašanje 2: Kako dolgo je aminokislinsko zaporedje, ki je zapisano v CDS*
 
 **Dodatna vprašanja** (za odgovor se malo razglejte po enem od zapisov v brskalniku):
 * Kako pridemo do celotnega nukleotidnega zaporedja nekega zapisa v GenBank v formatu FASTA?

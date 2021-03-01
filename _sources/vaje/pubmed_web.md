@@ -6,7 +6,7 @@ V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:
 
 Pri tem bomo uporabljali "novo" verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu [https://pubmed.ncbi.nlm.nih.gov/](https://pubmed.ncbi.nlm.nih.gov/). Z iskanjem lahko začnemo tudi na osnovni strani Entrez ([https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/)), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na *All Databases* se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).
 
-![pubmed_web_entrez](slike/pubmed_web_entrez.png)
+![PubMed Entrez](slike/pubmed_web_entrez.png)
 
 ---
 ## Naloga 1
@@ -27,7 +27,7 @@ Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahaj
 * ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,
 * prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.
 
-![pubmed_web_primer1](slike/pubmed_web_primer1.png)
+![PubMed Web primer1](slike/pubmed_web_primer1.png)
 
 ---
 ## Naloga 2
