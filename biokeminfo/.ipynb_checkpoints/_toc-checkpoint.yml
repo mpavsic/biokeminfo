@@ -13,6 +13,10 @@
       - file: vaje/nt-oligo_analiza
       - file: vaje/genbank_web
       - file: vaje/genbank_eutilities
+  - file: osnove/ak
+    sections:
+      - file: vaje/uniprot_web
+      - file: vaje/uniprot_rest
 
 - part: Priloge
   chapters:
