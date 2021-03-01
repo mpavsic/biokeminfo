@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAJA: Iskanje po PubMed &#8212; Biokemijska informatika</title>
+    <title>VAJA: Dostop do GenBank v brskalniku &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/genbank_web.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DEMO: Iskanje po PubMed z uporabo E-utilities (Python)" href="pubmed_eutilities.html" />
-    <link rel="prev" title="PubMed" href="../osnove/pubmed.html" />
+    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="prev" title="VAJA: Enostavna analiza nukleotidnega zaporedja (Python)" href="nt-oligo_analiza.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/genbank_web.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Iskanje po PubMed" />
-<meta property="og:description" content="VAJA: Iskanje po PubMed  V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:  filtriranje rezultatov glede na tip članka, leto ipd.," />
+<meta property="og:title"       content="VAJA: Dostop do GenBank v brskalniku" />
+<meta property="og:description" content="VAJA: Dostop do GenBank v brskalniku  V Okviru te vaje si bomo ogledali najpogostejši in najenostavnejši način dostopa do podatkov v zbirki GenBank, t.j. dostop" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -109,13 +109,13 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
-  <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_web.html">
      VAJA: Iskanje po PubMed
     </a>
    </li>
@@ -128,18 +128,18 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="genbank_web.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
@@ -236,7 +236,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/vaje/pubmed_web.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/genbank_web.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -280,43 +280,9 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-1">
-   Naloga 1
+  <a class="reference internal nav-link" href="#naloga">
+   Naloga
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vprasanja">
-     Vprašanja
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#razlaga">
-     Razlaga
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-2">
-   Naloga 2
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uvod">
-     Uvod
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Vprašanja
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Razlaga
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dodatna-literatura">
@@ -334,73 +300,60 @@
         
               <div>
                 
-  <div class="section" id="vaja-iskanje-po-pubmed">
-<h1>VAJA: Iskanje po PubMed<a class="headerlink" href="#vaja-iskanje-po-pubmed" title="Permalink to this headline">¶</a></h1>
-<p>V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:</p>
-<ul class="simple">
-<li><p>filtriranje rezultatov glede na tip članka, leto ipd.,</p></li>
-<li><p>kompleksno iskanje z večimi termini.</p></li>
-</ul>
-<p>Pri tem bomo uporabljali “novo” verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a>. Z iskanjem lahko začnemo tudi na osnovni strani Entrez (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na <em>All Databases</em> se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).</p>
-<p><img alt="pubmed_web_entrez" src="../_images/pubmed_web_entrez.png" /></p>
+  <div class="section" id="vaja-dostop-do-genbank-v-brskalniku">
+<h1>VAJA: Dostop do GenBank v brskalniku<a class="headerlink" href="#vaja-dostop-do-genbank-v-brskalniku" title="Permalink to this headline">¶</a></h1>
+<p>V Okviru te vaje si bomo ogledali najpogostejši in najenostavnejši način dostopa do podatkov v zbirki GenBank, t.j. dostop z uporabo brskalnika.</p>
+<p>Do GenBank dostopamo na naslovu: <a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/">https://www.ncbi.nlm.nih.gov/genbank/</a>.</p>
+<p>Iskanje lahko zožimo z uporabo kompleksnejših poizvedb (<em>Advanced search</em> - napredno iskanje, podobno kot pri PubMed), prav tako pa lahko rezultate filtriramo z uporabo številnih filtrov (spet, podobno kot pri PubMed): vrsta zaporedja (tRNA, mRNA, genomsko zaporedje), organizem, … Filtri so razporejeni na levi in desni strani rezultatov (v osnovi so vse možnosti filtriranja na levi, na desni pa so nekatere možnosti posebej izpostavljene), kot je prikazano na spodnji zaslonski sliki.</p>
+<p><img alt="GenBank iskanje in filtriranje" src="../_images/genbank_web_primer1.png" /></p>
 <hr class="docutils" />
-<div class="section" id="naloga-1">
-<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="vprasanja">
-<h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Permalink to this headline">¶</a></h3>
-<p>Odgovorite na naslednja vprašanja:</p>
-<ol class="simple">
-<li><p>S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda <strong>coronavirus</strong>.</p></li>
-<li><p>Koliko od teh člankov ima prosto dostopno celotno besedilo?</p></li>
-<li><p>Koliko člankov je na temo kliničnih preizkusov (<em>Clinical Trial</em>)?</p></li>
-<li><p>Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?</p></li>
-<li><p>Koliko člankov v zvezi s koronavirusom (še vedno smo pri iskalnem pojmu <strong>coronavirus</strong>) je preglednih (t.j. <em>Review</em>)?</p></li>
-</ol>
-</div>
-<div class="section" id="razlaga">
-<h3>Razlaga<a class="headerlink" href="#razlaga" title="Permalink to this headline">¶</a></h3>
-<p>Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahajajo na levi strani (slika spodaj). Še več filtrov najdemo čisto na koncu seznama filtrov pod povezavo <em>Additional filters</em>. Na spletni strani je še nekaj uporabnih funkcij, naj jih naštejemo zgolj nekaj:</p>
+<div class="section" id="naloga">
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
+<p>V zbirki GenBank izvedite iskanja, kjer poiščete spodaj navedene zapise (vsaka točka je ločeno iskanje, rezultat iskanja je zapis v zbirko z določeno kodo za dostop) ter prek pregleda zapisa odgovorite na vprašanja:</p>
 <ul class="simple">
-<li><p><em>Display options</em>, kjer lahko nastavimo sortiranje zadetkov ter število prikazanih zadetkov na stran,</p></li>
-<li><p>shranjevanje in pošiljanje rezultatov (npr. za uvoz v program za upravljanje referenc),</p></li>
-<li><p>prenos datoteke formata CSV s frekvenco objav po letih (oglejte si to za primer koronavirusa!),</p></li>
-<li><p>ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,</p></li>
-<li><p>prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.</p></li>
+<li><p><strong>zaporedje mRNA za mišji lizocim 1</strong>, ki vsebuje celotno kodirajočo regijo</p>
+<ul>
+<li><p>vprašanje 1: Iz kolikih eksonov je sestavljen zapis?</p></li>
+<li><p>vprašanje 2: Kateri nukleotid je najpogostejši na koncu 3’-neprevedene regije mRNA? Je to pričakovano?</p></li>
 </ul>
-<p><img alt="pubmed_web_primer1" src="../_images/pubmed_web_primer1.png" /></p>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="naloga-2">
-<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uvod">
-<h3>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">¶</a></h3>
-<p>Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/"><strong>Advanced</strong></a> pod osnovnim iskalnim poljem.</p>
-<p>Graditelj naprednega iskanja (PubMed Advanced Search Builder) nam omogoča, da posameznemu iskalnemu pojmu pripišemo, kje v referenci se naj nahaja (npr. v naslovu, povzetku), določimo časovno obdobje objave ipd., vse to pa združujemo z osnovnimi operatorji <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolove algebre</a> (AND, OR, NOT).</p>
-</div>
-<div class="section" id="id1">
-<h3>Vprašanja<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Vaša naloga je, da poiščete, koliko člankov ima v naslovu besedo <em>SARS</em>, bili so pa objavljeni med letoma 2009 in 2019 (vključno s celotnima omenjenima letoma). Koliko pa je bilo takih člankov med letoma 2020 (od 1. januarja) pa do danes?</p>
-<p>Zanima nas še, koliko od člankov, ki ima v naslovu <em>SARS</em>, ima v naslovu in/ali povzetku še besedo <em>cats</em> (mačke).</p>
-</div>
-<div class="section" id="id2">
-<h3>Razlaga<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v izkalno škatlo (<em>Query box</em>) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.</p>
-</div>
+</li>
+<li><p><strong>zaporedje mRNA za človeški protein p53</strong> in sicer táko, ki vsebuje celotno kodirajočo regijo v osnovni (nemutirani) obliki - protein p53 (“varuh genoma”) oz. gen <em>TP53</em> je pri raku eden najpogosteje mutiranih, proteinski namreč produkt kontrolira ključne točke v celičnem ciklu ter preprečuje delitev celic s poškodovanim genomom in ima s tem tumor-supresorsko vlogo, okvarjen protein pa to sposobnost okvarjeno</p>
+<ul>
+<li><p>vprašanje 1: Kolikšen delež zaporedja mRNA predstavlja kodirajoče zaporedje?</p></li>
+<li><p>vrpašanje 2: Katera regija je daljša, 5’ ali 3’-neprevedena regija? Je to pričakovano?</p></li>
+</ul>
+</li>
+<li><p><strong>zaporedje mRNA za protein p53 iz katerekoli glive</strong></p>
+<ul>
+<li><p>vprašanje: Koliko ustreznih zapisov je v GenBank?</p></li>
+</ul>
+</li>
+<li><p><strong>zaporedje alanil-tRNA pri <em>E. coli</em></strong></p>
+<ul>
+<li><p>vprašanje 1: Kateri kodon (nukleotidno zaporedje) prepozna tRNA?</p></li>
+<li><p>vprašanje 2: Vsebuje ta tRNA zgolj običajne ribonukleotide?</p></li>
+</ul>
+</li>
+<li><p><strong>zaporedje kromosoma št. 13 pri ribici zebrici</strong> (iščemo primarni združek (<em>primary assembly</em>) zaporedij)</p>
+<ul>
+<li><p>vprašanje 1: Kako dolgo je nukleotidno zaporedje tega kromosoma?</p></li>
+<li><p>vprašanje 2: Kakšne lastnosti oz. regije (<em>features</em>) so anotirane in kako je to bilo narejeno?</p></li>
+<li><p>vprašanje 3: Kaj menite, da pomeni <em>unk100</em> v delu zapisa CONTIG (=soseska)?</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Dodatna vprašanja</strong> (za odgovor se malo razglejte po enem od zapisov v brskalniku):</p>
+<ul class="simple">
+<li><p>Kako pridemo do celotnega nukleotidnega zaporedja nekega zapisa v GenBank v formatu FASTA?</p></li>
+<li><p>Kako pridemo do dela nukleotidnega zapisa v formatu FASTA, ki ustreza zgolj regiji CDS?</p></li>
+</ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="dodatna-literatura">
 <h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK3827/">Pomoč za iskanje po PubMed</a>, na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).</p></li>
-<li><p><a class="reference external" href="https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/">18+ Ways to Improve your PubMed searches</a> - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.</p></li>
-<li><p>Uradni kanal NCBI na YouTube:</p>
-<ul>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=kXY5P4C_2l4">avtomatska iskanja po PubMed</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=mih7gJwd5HI">prilagoditev PubMed z MyNCBI</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=696R9GbOyvA">filtri na PubMed</a></p></li>
-</ul>
-</li>
+<li><p>kratek video-vodič <a class="reference external" href="https://www.youtube.com/watch?v=j7hV10gYz1Q">How to use GenBank</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=QIZ8QH6JcC8&amp;t=890s">NCBI Minute: A Beginner’s Guide to Genes and Sequences at NCBI</a> na uradnem YouTube kanalu NCBI</p></li>
 </ul>
 </div>
 </div>
@@ -433,8 +386,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../osnove/pubmed.html" title="previous page">PubMed</a>
-    <a class='right-next' id="next-link" href="pubmed_eutilities.html" title="next page">DEMO: Iskanje po PubMed z uporabo E-utilities (Python)</a>
+    <a class='left-prev' id="prev-link" href="nt-oligo_analiza.html" title="previous page">VAJA: Enostavna analiza nukleotidnega zaporedja (Python)</a>
+    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

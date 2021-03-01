@@ -50,3 +50,7 @@ Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso
 
 * [Pomoč za iskanje po PubMed](https://www.ncbi.nlm.nih.gov/books/NBK3827/), na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).
 * [18+ Ways to Improve your PubMed searches](https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/) - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.
+* Uradni kanal NCBI na YouTube:
+   * [avtomatska iskanja po PubMed](https://www.youtube.com/watch?v=kXY5P4C_2l4)
+   * [prilagoditev PubMed z MyNCBI](https://www.youtube.com/watch?v=mih7gJwd5HI)
+   * [filtri na PubMed](https://www.youtube.com/watch?v=696R9GbOyvA)

@@ -101,7 +101,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../naslovnica.html">
-   Biokemijska informatika
+   Uvod
   </a>
  </li>
 </ul>
@@ -123,7 +123,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/pubmed_eutilities.html">
-     DEMO: Iskanje po PubMed z uporabo E-utilities
+     DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
     </a>
    </li>
   </ul>
@@ -137,7 +137,12 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
-     VAJA: Enostavna analiza nukleotidnega zaporedja
+     VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/genbank_web.html">
+     VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
   </ul>
@@ -168,9 +173,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     <em>
-      Markdown
-     </em>
+     Markdown
     </a>
    </li>
    <li class="toctree-l2">
@@ -280,11 +283,7 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#kaj-je-markdown">
-   Kaj je
-   <em>
-    Markdown
-   </em>
-   ?
+   Kaj je Markdown?
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -368,18 +367,18 @@
               <div>
                 
   <div class="section" id="markdown">
-<h1><em>Markdown</em><a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
+<h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="kaj-je-markdown">
-<h2>Kaj je <em>Markdown</em>?<a class="headerlink" href="#kaj-je-markdown" title="Permalink to this headline">¶</a></h2>
-<p><em>Markdown</em> je enostaven označevalni jezik (<em>markup language</em>) za oblikovanje golega besedila, ki nam omogoča, da vanj vnesemo določene “obogatitve” (npr. <strong>odebeljen</strong> ali <em>poudarjen</em> tekst). Pogosto se uporablja na spletnih forumih in datotekah “premeri me”. Primer tovrstne datoteke je <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, ki je del repozitorija, iz katerega je ustvarjena ta spletna stran. Tudi datoteka HTML, ki jo trenutno berete, je ustvarjena iz datoteke <em>markdown</em>. Ravno ta pretvorba, torej iz golega besedila v (X)HTML, je bila mišljena kot primarna uporaba <em>markdown</em>-a. Danes je na voljo kopica programov, ki omogočajo pretvorbo tudi v druge formate in pa dodatne funkcionalnosti.</p>
+<h2>Kaj je Markdown?<a class="headerlink" href="#kaj-je-markdown" title="Permalink to this headline">¶</a></h2>
+<p><strong>Markdown</strong> je enostaven označevalni jezik (<em>markup language</em>) za oblikovanje golega besedila, ki nam omogoča, da vanj vnesemo določene “obogatitve” (npr. <strong>odebeljen</strong> ali <em>poudarjen</em> tekst). Pogosto se uporablja na spletnih forumih in datotekah “premeri me”. Primer tovrstne datoteke je <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, ki je del repozitorija, iz katerega je ustvarjena ta spletna stran. Tudi datoteka HTML, ki jo trenutno berete, je ustvarjena iz datoteke <em>markdown</em>. Ravno ta pretvorba, torej iz golega besedila v (X)HTML, je bila mišljena kot primarna uporaba <em>markdown</em>-a. Danes je na voljo kopica programov, ki omogočajo pretvorbo tudi v druge formate in pa dodatne funkcionalnosti.</p>
 <div class="section" id="kratka-zgodovina">
 <h3>Kratka zgodovina<a class="headerlink" href="#kratka-zgodovina" title="Permalink to this headline">¶</a></h3>
-<p><em>Markdown</em> je leta 2004 izumil John Gruber v sodelovanju z Aaronom Swartzem; nekaj osnovnih informacij o zgodovini, razvoju in sintaksi je na <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Wikipedii</a>. Avtor vzdržuje tudi <a class="reference external" href="https://daringfireball.net/projects/markdown/">lastno stran</a>, kjer opisuje obe komponenti jezika: <strong>sintakso</strong> (o njej nekoliko več spodaj) in sam <strong>program <em>markdown</em></strong> (napisan v Perlu), ki poskrbi za pretvorbo v format HTML. Njuna specifikacija sintakse ni bila nedvoumna, kar je vodilo v razvoj številnih implementacij in posledično zmešnjave. Kasneje je bila predlagana standardna nedvoumna specifikacija sintakse, imenovana <a class="reference external" href="https://commonmark.org"><strong>CommonMark</strong></a>.</p>
+<p><em>Markdown</em> je leta 2004 izumil John Gruber v sodelovanju z Aaronom Swartzem; nekaj osnovnih informacij o zgodovini, razvoju in sintaksi je na <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Wikipedii</a>. Avtor vzdržuje tudi <a class="reference external" href="https://daringfireball.net/projects/markdown/">lastno stran</a>, kjer opisuje obe komponenti jezika: <strong>sintakso</strong> (o njej nekoliko več spodaj) in sam <strong>program</strong> <code class="docutils literal notranslate"><span class="pre">markdown</span></code> (napisan v Perlu), ki poskrbi za pretvorbo v format HTML. Njuna specifikacija sintakse ni bila nedvoumna, kar je vodilo v razvoj številnih implementacij in posledično zmešnjave. Kasneje je bila predlagana standardna nedvoumna specifikacija sintakse, imenovana <a class="reference external" href="https://commonmark.org"><strong>CommonMark</strong></a>.</p>
 </div>
 <div class="section" id="splosne-znacilnosti">
 <h3>Splošne značilnosti<a class="headerlink" href="#splosne-znacilnosti" title="Permalink to this headline">¶</a></h3>
 <p>Jezik je precej lahek v smislu, da je za opis izgleda besedila potrebno malo dodatnih znakov, datoteka z besedilom v tem formatu pa je enostavno berljiva tudi v primeru, ko ni pretvorjena v HTML (na primer, <em>poudarjeno</em> bomo v nepretvorjenem dokumentu še vedno zaznali, le nekoliko drugače bo izgledalo: *poudarjeno*). Datoteke tipa <em>markdown</em> so sicer čisto običajne tekstovne datoteke - odpremo in urejujemo jih lahko kar v Notepadu (Windows) ali TextEditorju (macOS), vsekakor je pa dobrodošlo, da jih vidimo tudi oblikovane. Za slednje lahko uporabimo kar JupyterLab ali pa katerega od številnih prevajalnikov.</p>
-<p>Jezik <em>Markdown</em> je lahek tudi v smislu, da se ga je enostavno naučiti - več o tem v nadaljevanju, kjer so predstavljeni najpogostejši primeri uporabe.</p>
+<p>Jezik Markdown je lahek tudi v smislu, da se ga je enostavno naučiti - več o tem v nadaljevanju, kjer so predstavljeni najpogostejši primeri uporabe.</p>
 </div>
 </div>
 <div class="section" id="sintaksa">
@@ -437,7 +436,7 @@
 <div class="section" id="poudarjeno-odebeljeno">
 <h3>Poudarjeno, odebeljeno<a class="headerlink" href="#poudarjeno-odebeljeno" title="Permalink to this headline">¶</a></h3>
 <p>Oblikovanje besedila kot <em>podarjeno</em>, <strong>odebeljeno</strong> ali <em><strong>poudarjeno in odebeljeno hkrati</strong></em> je zelo enostavno!</p>
-<p>To bi v <em>Markdown</em> zapisali na naslednji način:</p>
+<p>To bi v Markdown zapisali na naslednji način:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Oblikovanje besedila kot *podarjeno*, **odebeljeno** ali
 ***poudarjeno in odebeljeno hkrati*** je zelo enostavno!
 </pre></div>

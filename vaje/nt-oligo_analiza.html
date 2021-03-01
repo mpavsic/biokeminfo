@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAJA: Enostavna analiza nukleotidnega zaporedja &#8212; Biokemijska informatika</title>
+    <title>VAJA: Enostavna analiza nukleotidnega zaporedja (Python) &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -58,7 +58,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="next" title="VAJA: Dostop do GenBank v brskalniku" href="genbank_web.html" />
     <link rel="prev" title="Nukleotidna zaporedja" href="../osnove/nt.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -68,8 +68,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/nt-oligo_analiza.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Enostavna analiza nukleotidnega zaporedja" />
-<meta property="og:description" content="VAJA: Enostavna analiza nukleotidnega zaporedja  Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili BioPython.  Za osvežitev znanja iz p" />
+<meta property="og:title"       content="VAJA: Enostavna analiza nukleotidnega zaporedja (Python)" />
+<meta property="og:description" content="VAJA: Enostavna analiza nukleotidnega zaporedja (Python)  Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili BioPython.  Za osvežitev zn" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -101,7 +101,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../naslovnica.html">
-   Biokemijska informatika
+   Uvod
   </a>
  </li>
 </ul>
@@ -123,7 +123,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pubmed_eutilities.html">
-     DEMO: Iskanje po PubMed z uporabo E-utilities
+     DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
     </a>
    </li>
   </ul>
@@ -137,7 +137,12 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     VAJA: Enostavna analiza nukleotidnega zaporedja
+     VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="genbank_web.html">
+     VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
   </ul>
@@ -168,9 +173,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../priloge/markdown.html">
-     <em>
-      Markdown
-     </em>
+     Markdown
     </a>
    </li>
    <li class="toctree-l2">
@@ -321,8 +324,8 @@
         
               <div>
                 
-  <div class="section" id="vaja-enostavna-analiza-nukleotidnega-zaporedja">
-<h1>VAJA: Enostavna analiza nukleotidnega zaporedja<a class="headerlink" href="#vaja-enostavna-analiza-nukleotidnega-zaporedja" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="vaja-enostavna-analiza-nukleotidnega-zaporedja-python">
+<h1>VAJA: Enostavna analiza nukleotidnega zaporedja (Python)<a class="headerlink" href="#vaja-enostavna-analiza-nukleotidnega-zaporedja-python" title="Permalink to this headline">¶</a></h1>
 <p>Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili <a class="reference external" href="https://biopython.org">BioPython</a>.</p>
 <p>Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.</p>
 <hr class="docutils" />
@@ -476,7 +479,7 @@ Tm(upoštevana sol) [°C] = 50.6
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../osnove/nt.html" title="previous page">Nukleotidna zaporedja</a>
-    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
+    <a class='right-next' id="next-link" href="genbank_web.html" title="next page">VAJA: Dostop do GenBank v brskalniku</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
