@@ -1,4 +1,4 @@
-# DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
+# DEMO: Programski dostop do PubMed 
 
 Na primeru si bomo ogledali, kako iščemo pu zbirki PubMed prek programskega dostopa.
 
@@ -116,7 +116,7 @@ for identifier in records['IdList']:
 # print(articles_with_abstracts)   # to bi nam izpisalo slovar
 df = pd.DataFrame(list(articles_with_abstracts.items()), columns=['PMID', 'Abstract'])
 print(df)   # izpis dataframe
-df.to_csv('izhod/pubmed_search_output.csv')   # shranimo kot datoteko CSV
+df.to_csv('izhod/pubmed-search_output.csv')   # shranimo kot datoteko CSV
 
 ---
 ## Dodatne informacije

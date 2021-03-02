@@ -1,4 +1,4 @@
-# VAJA: Programski dostop do GenBank in analiza nukleotidnega zaporedja (Python)
+# VAJA: Programski dostop do GenBank (Python)
 
 Tudi pri tej vaji bomo, podobno kot pri dostopu do PubMeda, uporabljali [BioPython](https://biopython.org). Navodila z zgledi so na voljo v [BioPython Tutorial and Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html).
 
@@ -50,20 +50,20 @@ print(seq_record.description)
 
 Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA:
 
-SeqIO.write(seq_record, 'izhod/genbank_entry.gb', 'gb')   # GenBank Flat File
-SeqIO.write(seq_record, 'izhod/genbank_entry.fasta', 'fasta')   # FASTA
+SeqIO.write(seq_record, 'izhod/genbank-sample_output.gb', 'gb')   # GenBank Flat File
+SeqIO.write(seq_record, 'izhod/genbank-sample_output.fasta', 'fasta')   # FASTA
 
 Če bi iskanje ponavljali z različnimi kodami za dostop (pa tudi sicer) je smiselno, da kot ime datoteke uporabimo kar kodo zapisa v zbirko GenBank. To lahko naredimo tako:
 
-SeqIO.write(seq_record, 'izhod/%s.gb' % seq_record.id, 'gb')
-SeqIO.write(seq_record, 'izhod/%s.fasta' % seq_record.id, 'fasta')
+SeqIO.write(seq_record, 'izhod/genbank-%s.gb' % seq_record.id, 'gb')
+SeqIO.write(seq_record, 'izhod/genbank-%s.fasta' % seq_record.id, 'fasta')
 
 ### Ekstrakcija dela zapisa in prevajanje
 
 Zapis preberemo iz datoteke s `SeqIO.parse`, ekstrahiramo pa lahko določeno značilnost, na primer kodirajoče zaporedje (CDS) - seveda to velja na primer pri mRNA, značilnosti pa so prisotne samo v zapisu GenNank, pri FASTA formatu pa seveda ne. CDS lahko tudi prevedemo z uporabo določene kodne tabele (navodila na BioPython: [Translation Tables](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc26)) in dobimo nov objekt, iz katerega lahko izpišemo samo zaporedje (kako bo izpisan kodon STOP lahko tudi nastavimo). 
 
 from Bio.Seq import Seq
-for rec in SeqIO.parse('izhod/genbank_entry.gb', 'gb'):
+for rec in SeqIO.parse('izhod/genbank-sample_output.gb', 'gb'):
     if rec.features:
         for feature in rec.features:
             if feature.type == 'CDS':

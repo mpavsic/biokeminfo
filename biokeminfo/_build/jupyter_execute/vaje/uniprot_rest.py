@@ -1,4 +1,4 @@
-# VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
+# VAJA: Programski dostop do UniProt (Python)
 
 Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi [BioPythona](https://biopython.org), a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula `requests`, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.
 
@@ -116,17 +116,17 @@ payload6 = {'query': 'accession:Q7RTY8', 'format': 'fasta'}
 result6 = requests.get(BASE + KB_ENDPOINT, params=payload6)
 # print(result6.text)
 
-f = open('izhod/uniprot_sample_output.fasta', 'w')
+f = open('izhod/uniprot-sample_output.fasta', 'w')
 f.write(result6.text)
 f.close()
 
 # odpremo in preberemo datoteko
-f = open('izhod/uniprot_sample_output.fasta', 'r')
+f = open('izhod/uniprot-sample_output.fasta', 'r')
 print(f.read())
 
 # izpišemo vsebino prebrane datoteke z uporabo BioPythona
 from Bio import SeqIO
-for seq_record in SeqIO.parse('izhod/uniprot_sample_output.fasta', 'fasta'):
+for seq_record in SeqIO.parse('izhod/uniprot-sample_output.fasta', 'fasta'):
     print(seq_record.id)   # izpišemo ID
     print(repr(seq_record.seq))   # izpišemo objekt
     print(seq_record.seq)   # izpišemo samo zaporedje
@@ -200,7 +200,7 @@ Za delo s podatki v obliki tabel bomo uporabili [pandas](https://pandas.pydata.o
 Spodaj je prikazano, kako uvozimo datoteko formata csv ter definiramo, kateri stolpec služi za indeksiranje podatkov ter kateri stolpec dejansko uvozimo (v našem primeru KD za Kyte-Doolittle).
 
 import pandas as pd
-df = pd.read_csv('vhod/hphob_scales.csv', index_col='code1')
+df = pd.read_csv('vhod/hydrophobicity_scales.csv', index_col='code1')
 num_residues = len(seq_record)
 values=[]
 for residue in seq_record.seq:
@@ -249,7 +249,7 @@ plt.xlim((1, num_residues))
 plt.title('Diagram hidrofobnosti UniProt ID %s' %seq_record.id)   # naslov diagrama
 plt.xlabel('zaporedna številka ak-ostanka')   # naslov x-osi
 plt.ylabel('hidrofobnost po Kyte-Doolittle')   # naslov y-osi
-plt.savefig('izhod/diagram_hidrofobnosti-okno_%d.png' %window_size, bbox_inches='tight')   # sliko shranimo v datoteko
+plt.savefig('izhod/uniprot-hidrofobnost-okno_%d.png' %window_size, bbox_inches='tight')   # sliko shranimo v datoteko
 plt.show()   # sliko prikažemo
 
 ---
