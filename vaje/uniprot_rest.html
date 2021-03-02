@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python) &#8212; Biokemijska informatika</title>
+    <title>VAJA: Programski dostop do UniProt (Python) &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -68,8 +68,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/uniprot_rest.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)" />
-<meta property="og:description" content="VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)  Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi BioPythona, a le" />
+<meta property="og:title"       content="VAJA: Programski dostop do UniProt (Python)" />
+<meta property="og:description" content="VAJA: Programski dostop do UniProt (Python)  Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi BioPythona, a le v delu, ki se nanaša na analizo zapor" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -123,7 +123,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pubmed_eutilities.html">
-     DEMO: Iskanje po PubMed z uporabo E-utilities (Python)
+     DEMO: Programski dostop do PubMed
     </a>
    </li>
   </ul>
@@ -137,7 +137,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="nt-oligo_analiza.html">
-     VAJA: Enostavna analiza nukleotidnega zaporedja (Python)
+     VAJA: Enostavna analiza nt-zaporedja (Python)
     </a>
    </li>
    <li class="toctree-l2">
@@ -147,7 +147,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="genbank_eutilities.html">
-     VAJA: Programski dostop do GenBank in analiza nukleotidnega zaporedja (Python)
+     VAJA: Programski dostop do GenBank (Python)
     </a>
    </li>
   </ul>
@@ -166,7 +166,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
+     VAJA: Programski dostop do UniProt (Python)
     </a>
    </li>
   </ul>
@@ -397,8 +397,8 @@
         
               <div>
                 
-  <div class="section" id="vaja-programski-dostop-do-uniprot-in-analiza-aminokislinskega-zaporedja-python">
-<h1>VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-in-analiza-aminokislinskega-zaporedja-python" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="vaja-programski-dostop-do-uniprot-python">
+<h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Permalink to this headline">¶</a></h1>
 <p>Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi <a class="reference external" href="https://biopython.org">BioPythona</a>, a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula <code class="docutils literal notranslate"><span class="pre">requests</span></code>, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.</p>
 <hr class="docutils" />
@@ -663,17 +663,17 @@ WGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
 <span class="n">result6</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload6</span><span class="p">)</span>
 <span class="c1"># print(result6.text)</span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">result6</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="c1"># odpremo in preberemo datoteko</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 
 <span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
 <span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
-<span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot_sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>   <span class="c1"># izpišemo objekt</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">)</span>   <span class="c1"># izpišemo samo zaporedje</span>
@@ -799,7 +799,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vhod/hphob_scales.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;code1&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vhod/hydrophobicity_scales.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;code1&#39;</span><span class="p">)</span>
 <span class="n">num_residues</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_record</span><span class="p">)</span>
 <span class="n">values</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">residue</span> <span class="ow">in</span> <span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
@@ -862,7 +862,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Diagram hidrofobnosti UniProt ID </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">seq_record</span>.id)   # naslov diagrama
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;zaporedna številka ak-ostanka&#39;</span><span class="p">)</span>   <span class="c1"># naslov x-osi</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;hidrofobnost po Kyte-Doolittle&#39;</span><span class="p">)</span>   <span class="c1"># naslov y-osi</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;izhod/diagram_hidrofobnosti-okno_</span><span class="si">%d</span><span class="s1">.png&#39;</span> <span class="o">%</span><span class="k">window_size</span>, bbox_inches=&#39;tight&#39;)   # sliko shranimo v datoteko
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-hidrofobnost-okno_</span><span class="si">%d</span><span class="s1">.png&#39;</span> <span class="o">%</span><span class="k">window_size</span>, bbox_inches=&#39;tight&#39;)   # sliko shranimo v datoteko
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>   <span class="c1"># sliko prikažemo</span>
 </pre></div>
 </div>
