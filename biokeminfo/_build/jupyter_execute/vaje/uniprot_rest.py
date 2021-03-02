@@ -1,6 +1,6 @@
 # VAJA: Programski dostop do UniProt in analiza aminokislinskega zaporedja (Python)
 
-Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi [BioPythona](https://biopython.org), a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula ```requests```, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.
+Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi [BioPythona](https://biopython.org), a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula `requests`, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.
 
 Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.
 
@@ -34,7 +34,7 @@ Zakaj je tako? Zato, ker lahko do posameznih zapisov v zbirki lahko dostopamo di
 * zaporedje v formatu FASTA: https://www.uniprot.org/uniprot/P59595.fasta
 
 ### Iskanje po UniProtu
-Če iščemo po UniProtu preko spletnega vmesnika (*Advanced search*, na primer s pojmoma *matriptase* kot ime proteina (*name*) ter *homo sapiens* kot organizem ter želimo samo ročno pregledane (*reviewed*) zapise, to izgleda v iskalnem polju tako: ```name:matriptase organism:"homo sapiens" AND reviewed:yes```. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: ```https://www.uniprot.org/uniprot/?query=name%3Amatriptase+organism%3A%22homo+sapiens%22+AND+reviewed%3Ayes```.
+Če iščemo po UniProtu preko spletnega vmesnika (*Advanced search*, na primer s pojmoma *matriptase* kot ime proteina (*name*) ter *homo sapiens* kot organizem ter želimo samo ročno pregledane (*reviewed*) zapise, to izgleda v iskalnem polju tako: `name:matriptase organism:"homo sapiens" AND reviewed:yes`. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: `https://www.uniprot.org/uniprot/?query=name%3Amatriptase+organism%3A%22homo+sapiens%22+AND+reviewed%3Ayes`.
 
 Tak strukturiran zapis lahko uporabimo v Pythonu, pri čemer nastavimo kot tip izpisa seznam (*list*; glejte na konec URL), da dobimo samo seznam kod zapisov, hkrati pa lahko nastavimo, da nam program vrne ime napake, če gre kaj narobe (kode napak in njihovi opisi so [dokumentirani](https://www.uniprot.org/help/api%5Fretrieve%5Fentries)). Torej:
 

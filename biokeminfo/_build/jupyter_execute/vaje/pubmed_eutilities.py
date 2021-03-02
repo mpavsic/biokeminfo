@@ -10,19 +10,19 @@ Del BioPythona, ki nam omogoča iskanje zbirkah na strežnikih NCBI, med drugim 
 ### Modul Bio.Entrez
 
 Modul Bio.Entrez nudi več funkcij, nekaj jih je navedenih tukaj (ostale so opisane v dokumentaciji):
-* *esearch* (Entrez Search) - z njim iščemo po zbirki/zbirkah, vrne nam pa primarne ključe za dostop (ID), ki se jih nato uporabi za prenos posmeznih zapisov z npr. *efetch*;
-* *efetch* (Entrez Fetch) - zapise (kot vhod podamo ključe ID) prenesemo v zahtevanem formatu;
-* *esummary* (Entrez Summary) - za zapise (ID) nam prenese njihove kratke opise;
-* *read* - analizira rezultate v XML, ki nam jih vrnejo zgoraj navedene funkcije;
-* *egquery* - za iskalni pojem nam vrne število zadetkov v posameznih zbirkah, do katerih dostopamo prek Entrez;
-* *einfo* - vrne nam imena polij ipd.
+* `esearch` (Entrez Search) - z njim iščemo po zbirki/zbirkah, vrne nam pa primarne ključe za dostop (ID), ki se jih nato uporabi za prenos posmeznih zapisov z npr. `efetch`;
+* `efetch` (Entrez Fetch) - zapise (kot vhod podamo ključe ID) prenesemo v zahtevanem formatu;
+* `esummary` (Entrez Summary) - za zapise (ID) nam prenese njihove kratke opise;
+* `read` - analizira rezultate v XML, ki nam jih vrnejo zgoraj navedene funkcije;
+* `egquery` - za iskalni pojem nam vrne število zadetkov v posameznih zbirkah, do katerih dostopamo prek Entrez;
+* `einfo` - vrne nam imena polij ipd.
 
 Modul Bio.Entrez je dejansko osnovan na API (*application programming interface*) za Entrez, za katerega obstaja uradna dokumentacija na strežnikih NCBI:
 * [A General Introduction to the E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25497/),
 * [Entrez Programming Utilities Help](https://www.ncbi.nlm.nih.gov/books/NBK25501/).
 
 **Opozorila**:
-* Pri programskem dostopu do Entrez se morate identificirati z e-poštnim naslovom (v primerih spodaj, če jih boste poganjali, nastavite vrednost ```Entrez.email``` na vaš naslov.
+* Pri programskem dostopu do Entrez se morate identificirati z e-poštnim naslovom (v primerih spodaj, če jih boste poganjali, nastavite vrednost `Entrez.email` na vaš naslov.
 * Če boste poizvedbe izvajali z visoko frekvenco (npr. zelo veliko število poizvedb na minuto) vas lahko strežnik začasno blokira. Podobno velja za visoko frekvenco poizvedb s prenosom velike količine podatkov (npr. velikega števila celotnih zapisov).
 
 ---
@@ -41,7 +41,7 @@ record = Entrez.read(handle)
 handle.close()
 print(record)   # to nam izpiše vrednost, ki je slovar
 
-Vidimo, da je ```record``` zapisan kot slovar, vrednost ključa ```DbList``` (Database List, ki je dejansko seznam zbirk) pa dobimo tako:
+Vidimo, da je `record` zapisan kot slovar, vrednost ključa `DbList` (Database List, ki je dejansko seznam zbirk) pa dobimo tako:
 
 print(record['DbList'])   # izpiše nam vrednost ključa DbList (Database List)
 
@@ -49,9 +49,9 @@ Na voljo imamo torej zbirko *pubmed* (literaturna zbirka), zbirko aminokislinski
 
 ### Iskanje
 
-Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost ```db``` (database) ustrezno nastavili na *pubmed*. Definirati moramo tudi iskalni pojem (v spodnjem primeru ```search_term```) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali [pri prejšnji vaji](pubmed_web.md). Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na [Pubmed Advanced Search Builder](https://pubmed.ncbi.nlm.nih.gov/advanced/), zgradimo iskanje, ter vsebino iskalne škatle (*query box*) skopiramo in prilepimo kot vrednost ```search_term```.
+Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost `db` (database) ustrezno nastavili na *pubmed*. Definirati moramo tudi iskalni pojem (v spodnjem primeru `search_term`) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali [pri prejšnji vaji](pubmed_web.md). Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na [Pubmed Advanced Search Builder](https://pubmed.ncbi.nlm.nih.gov/advanced/), zgradimo iskanje, ter vsebino iskalne škatle (*query box*) skopiramo in prilepimo kot vrednost `search_term`.
 
-Pri iskanju moramo zraven zbirke in iskalnega pojma definirati še *retrieval mode* oz. ```retmode``` (včasih še *retrieval type* - ```rettype```), možne vrednosti so navedene v [pomoči](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/).
+Pri iskanju moramo zraven zbirke in iskalnega pojma definirati še *retrieval mode* oz. `retmode` (včasih še *retrieval type* - `rettype`), možne vrednosti so navedene v [pomoči](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/).
 
 Spodaj je en tak primer, kjer za iščemo po imenih člankov, zanimajo pa nas samo taki, kjer se v imenu (*Title*) pojavi *coronavirus*, kjerkoli pa mora biti zraven tega še beseda *Tasmania* (iskanje sicer ni oblutljivo na velike in male črke, to pomeni, da ni *case-sensitive*). Kot rezultat dobimo slovar, ki vsebuje število zadetkov (*count*), seznam številk PMID zapisov oz. člankov (*IDList*) in uporabljen iskalni pojem (kot ga interpretira PubMed, vključno z [MeSH](https://www.ncbi.nlm.nih.gov/mesh/)).
 

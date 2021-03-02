@@ -9,11 +9,11 @@ Najprej si oglejte in preizkusite delovanje delov kode v zgledih, nato pa z ustr
 
 ### Dostop do GenBank
 
-Dostop do GenBank je mogoč direktno z uporabo modulov v **BioPython**, podobno kot to velja za PubMed (modul Bio.Entrez, ki smo ga spoznali [tukaj](pubmed_eutilities.ipynb)). Tudi tokrat se moramo za uporabo E-utilities identificirati z e-poštnim naslovom. Če *accession code* poznamo, lahko uporabimo funkcijo ```efetch```, sicer pa izvedemo iskanje z ```esearch``` in šele nato prenesemo zapis(e) z ```efetch```, v obeh primerih pa rezultate preberemo z ```read```.
+Dostop do GenBank je mogoč direktno z uporabo modulov v **BioPython**, podobno kot to velja za PubMed (modul Bio.Entrez, ki smo ga spoznali [tukaj](pubmed_eutilities.ipynb)). Tudi tokrat se moramo za uporabo E-utilities identificirati z e-poštnim naslovom. Če *accession code* poznamo, lahko uporabimo funkcijo `efetch`, sicer pa izvedemo iskanje z `esearch` in šele nato prenesemo zapis(e) z `efetch`, v obeh primerih pa rezultate preberemo z `read`.
 
 Pa kar gremo k primeru, ki ilustrira branje enega zapisa - tako torej dostopamo do zapisa, če poznamo **kodo za dostop** (*accession code*). Če ne napišemo verzije zapisa nam vrne zadnjo (najnovejšo) verzijo, sicer pa lahko verzijo sami določimo tako, da *accession code* napišemo v obliki NM_005985.4 (če je osnovna koda NM_005985).
 
-Kot zbirko (```db```) izberemo *nucleotide*, podatke pa prenesemo v obliki teksta (```retmod='text'```).
+Kot zbirko (`db`) izberemo *nucleotide*, podatke pa prenesemo v obliki teksta (`retmod='text'`).
 
 from Bio import Entrez
 from Bio import SeqIO
@@ -60,7 +60,7 @@ SeqIO.write(seq_record, 'izhod/%s.fasta' % seq_record.id, 'fasta')
 
 ### Ekstrakcija dela zapisa in prevajanje
 
-Zapis preberemo iz datoteke s ```SeqIO.parse```, ekstrahiramo pa lahko določeno značilnost, na primer kodirajoče zaporedje (CDS) - seveda to velja na primer pri mRNA, značilnosti pa so prisotne samo v zapisu GenNank, pri FASTA formatu pa seveda ne. CDS lahko tudi prevedemo z uporabo določene kodne tabele (navodila na BioPython: [Translation Tables](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc26)) in dobimo nov objekt, iz katerega lahko izpišemo samo zaporedje (kako bo izpisan kodon STOP lahko tudi nastavimo). 
+Zapis preberemo iz datoteke s `SeqIO.parse`, ekstrahiramo pa lahko določeno značilnost, na primer kodirajoče zaporedje (CDS) - seveda to velja na primer pri mRNA, značilnosti pa so prisotne samo v zapisu GenNank, pri FASTA formatu pa seveda ne. CDS lahko tudi prevedemo z uporabo določene kodne tabele (navodila na BioPython: [Translation Tables](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc26)) in dobimo nov objekt, iz katerega lahko izpišemo samo zaporedje (kako bo izpisan kodon STOP lahko tudi nastavimo). 
 
 from Bio.Seq import Seq
 for rec in SeqIO.parse('izhod/genbank_entry.gb', 'gb'):

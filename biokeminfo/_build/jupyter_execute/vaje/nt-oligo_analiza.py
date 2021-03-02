@@ -38,7 +38,7 @@ for x in my_seq:
 print(freq) # izpiše slovar
 print('A:', freq['A']) # izpiše, koliko A je v zaporedju
 
-Pogosto želimo, so vsi nukleotidi napisani bodisi z velikimi ali malimi črkami. Za ta namen lahko uporabimo ```upper``` ali ```lower```:
+Pogosto želimo, so vsi nukleotidi napisani bodisi z velikimi ali malimi črkami. Za ta namen lahko uporabimo `upper` ali `lower`:
 
 print(my_seq.lower())
 
