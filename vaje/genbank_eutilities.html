@@ -562,11 +562,7 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 </div>
 <div class="section" id="id1">
 <h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa:</p>
-<ol class="simple">
-<li><p>izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal, od katerega do katerega kodona se razteza,</p></li>
-<li><p>analiziral delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji).</p></li>
-</ol>
+<p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa **izračunal delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji)*.</p>
 <p>Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5’- in 3’-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:</p>
 <ul class="simple">
 <li><p>več zapisov ali</p></li>
@@ -576,10 +572,27 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 </div>
 <div class="section" id="namigi">
 <h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
+<ul class="simple">
 <li><p>Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.</p></li>
 <li><p>Morda se naloga sliši kompleksna, a v resnici ni - s stavkom <code class="docutils literal notranslate"><span class="pre">if</span></code> lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite <code class="docutils literal notranslate"><span class="pre">+=</span></code>) k skupnemu številu G+C.</p></li>
 <li><p>Število G+C v nekodirajočih regijah lahko enostavno dobite tako, da izračunate število G+C v celotnem zaporedju, od katerega odštejete število G+C v vseh kodirajočih regijah.</p></li>
+</ul>
+<p>Predlagani koraki programa:</p>
+<ol class="simple">
+<li><p>Preberite zapis v formatu GenBank (<code class="docutils literal notranslate"><span class="pre">gb</span></code>).</p></li>
+<li><p>Izračunajte dolžino celotnega zaporedja: <code class="docutils literal notranslate"><span class="pre">len</span></code> (primer pri <a class="reference internal" href="nt-oligo_analiza.html"><span class="doc std std-doc">V01</span></a>).</p></li>
+<li><p>Preštejte G-je in C-je v celotnem zaporedju: <code class="docutils literal notranslate"><span class="pre">.count('C')</span></code> in <code class="docutils literal notranslate"><span class="pre">.count('G')</span></code> (primer pri <a class="reference internal" href="nt-oligo_analiza.html"><span class="doc std std-doc">V01</span></a>).</p></li>
+<li><p>Definirajte dve spremenljivki (nastavite na <code class="docutils literal notranslate"><span class="pre">0</span></code>):</p>
+<ul class="simple">
+<li><p>za število G+C v vseh CDS (npr. <code class="docutils literal notranslate"><span class="pre">gc_cds</span></code>)</p></li>
+<li><p>za skupno dolžino vseh CDS (npr. <code class="docutils literal notranslate"><span class="pre">len_cds</span></code>)</p></li>
+</ul>
+</li>
+<li><p>Z zanko <code class="docutils literal notranslate"><span class="pre">for</span></code> (zgled zgoraj) prečešite vse CDS, pri tem pa vsakič število G+C v analiziranem CDS dodajte k vrednosti <code class="docutils literal notranslate"><span class="pre">gc_cds</span></code>, dolžino analiziranega CDS pa dodate k vrednosti <code class="docutils literal notranslate"><span class="pre">len_cds</span></code> (za dodajanje uporabite <code class="docutils literal notranslate"><span class="pre">+=</span></code>).</p></li>
+<li><p>Število G+C v nekodirajočih regijah dobite tako, da od števila G+C v celotnem zaporedju odštejete <code class="docutils literal notranslate"><span class="pre">gc_cds</span></code> (to naredite šele, ko prečešete vse CDS).</p></li>
+<li><p>Dolžino nekodirajočih regij dobite tako, da od celotne dolžine zaporedja odštejete vsoto dolžin vseh CDS (<code class="docutils literal notranslate"><span class="pre">len_cds</span></code>).</p></li>
+<li><p>Na osnovi <code class="docutils literal notranslate"><span class="pre">gc_cds</span></code> in <code class="docutils literal notranslate"><span class="pre">len_cds</span></code> izračunajte delež GC v CDS.</p></li>
+<li><p>Na osnovi G+C v nekodirajočih regijah in njihove skupne dolžine (izračunano zgoraj) izračunajte še delež GC v nekodirajočih regijah.</p></li>
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
 </div>
