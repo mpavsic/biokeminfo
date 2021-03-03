@@ -24,14 +24,20 @@ Potrebujete: spletni brskalnik.
    * [VAJA: Enostavna analiza nt-zaporedja (Python)](../vaje/nt-oligo_analiza.ipynb)
 
 ---
-## V02: GenBank in UniProt
+## V02: GenBank
 
 Potrebujete: spletni brskalnik, Python 3, JupyterLab, BioPython.
 
 1. **GenBank** (zbirka nukleotidnih zaporedij):
    * [VAJA: Dostop do GenBank v brskalniku](../vaje/genbank_web.md)
    * [VAJA: Programski dostop do GenBank (Python)](../vaje/genbank_eutilities.ipynb)
-2. **UniProt** (zbirka aminokislinskih zaporedij):
+
+---
+## V03: UniProt
+
+Potrebujete: spletni brskalnik, Python 3, JupyterLab, BioPython.
+
+1. **UniProt** (zbirka aminokislinskih zaporedij):
    * [VAJA: Dostop do UniProt v brskalniku](../vaje/uniprot_web.md)
    * [VAJA: Programski dostop do UniProt (Python)](../vaje/uniprot_rest.ipynb)
 
