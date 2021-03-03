@@ -39,7 +39,7 @@ seq_record = SeqIO.read(handle, 'gb')
 print('%s z %i značilnostmi' % (seq_record.id, len(seq_record.features)))
 print(seq_record)   # izpis celotnega objekta
 
-Če preštejemo značilnosti v zapisu na spletu vidimo, da jih je dejansko 25. Sem spadajo CDS, misc_feature itd.
+Če preštejemo značilnosti v zapisu na spletu vidimo, da jih je dejansko toliko. Sem spadajo CDS, misc_feature itd.
 
 Lahko izpišemo tudi nekatere druge karakteristike objekta (podrobneje o tem [tukaj](https://biopython.org/wiki/SeqRecord)), na primer ID in opis:
 
@@ -48,7 +48,7 @@ print(seq_record.description)
 
 ### Shranjevanje zapisa v datoteko
 
-Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA:
+Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA. Pozor, da spodnja koda deluje morate imeti v mapi, kjer se nahaja trenutno ta datoteka `ipynb`, ustvarjeno mapo `izhod`!
 
 SeqIO.write(seq_record, 'izhod/genbank-sample_output.gb', 'gb')   # GenBank Flat File
 SeqIO.write(seq_record, 'izhod/genbank-sample_output.fasta', 'fasta')   # FASTA
@@ -76,16 +76,25 @@ for rec in SeqIO.parse('izhod/genbank-sample_output.gb', 'gb'):
 ---
 ## Naloga
 
-Vaša naloga je, da pripravite program, ki:
-1. vas bo povprašal po kodi zapisa v GenBank ter izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal tako nukleotidno kot aminokislinsko zaporedje CDS vključno s kodonom STOP,
-2. bo nato analiziral delež GC v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji).
+### Ozadje
+Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na [Wikipediji](https://en.wikipedia.org/wiki/Coding_region): "*The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.*"
 
-Zakaj takšna analiza? Znano je namreč, da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na [Wikipediji](https://en.wikipedia.org/wiki/Coding_region): "*The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.*" **Se torej rezultati vaše analize ujemajo s tem?**
+Nekajna to temo lahko preberete tudi v člankih [Both selective and neutral processes drive GC content evolution in the human genome](https://dx.doi.org/10.1186/1471-2148-8-99).
 
-**Pozor!** Da bo analiza smiselna mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5'- in 3'-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:
-* večih zapisov ali
-* kakšnega (krajšega) genoma. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je [GenBank MT066156](https://www.ncbi.nlm.nih.gov/nuccore/MT066156). Lahko poiščete tudi kak prokariontski genom. Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje, prav tako pa morate posebej združiti neprevedene regije in jih posebej analizirati.
+### Naloga
+Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa:
+1. izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal, od katerega do katerega kodona se razteza,
+2. analiziral delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji).
 
-Za izračun deležev GC si oglejte prvo vajo. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.
+Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5'- in 3'-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:
+* več zapisov ali
+* kakšnega (krajšega) genoma (bolje!). Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je [GenBank MT066156](https://www.ncbi.nlm.nih.gov/nuccore/MT066156) ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med $10^6$ in $1.5 \times 10^6$ bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.
+
+*V razmislek - kaj pa prekrivajoče se regije CDS?*
+
+### Namigi
+1. Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.
+2. Morda se naloga sliši kompleksna, a v resnici ni - s stavkom `if` lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite `+=`) k skupnemu številu G+C.
+3. Število G+C v nekodirajočih regijah lahko enostavno dobite tako, da izračunate število G+C v celotnem zaporedju, od katerega odštejete število G+C v vseh kodirajočih regijah.
 
 *Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.*

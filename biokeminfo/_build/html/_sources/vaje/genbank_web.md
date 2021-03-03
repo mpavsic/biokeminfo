@@ -30,7 +30,7 @@ V zbirki GenBank izvedite iskanja, kjer poiščete spodaj navedene zapise (vsaka
   * vprašanje 3: Kaj menite, da pomeni *unk100* v delu zapisa CONTIG (=soseska)?
 * **najdaljše človeško zaporedje mRNA**
   * vprašanje 1: Za kateri protein vsebuje to zaporedje zapis?
-  * vprašanje 2: Kako dolgo je aminokislinsko zaporedje, ki je zapisano v CDS*
+  * vprašanje 2: Kako dolgo je aminokislinsko zaporedje, ki je zapisano v CDS?
 
 **Dodatna vprašanja** (za odgovor se malo razglejte po enem od zapisov v brskalniku):
 * Kako pridemo do celotnega nukleotidnega zaporedja nekega zapisa v GenBank v formatu FASTA?
