@@ -82,9 +82,7 @@ Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje,
 Nekajna to temo lahko preberete tudi v člankih [Both selective and neutral processes drive GC content evolution in the human genome](https://dx.doi.org/10.1186/1471-2148-8-99).
 
 ### Naloga
-Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa:
-1. izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal, od katerega do katerega kodona se razteza,
-2. analiziral delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji).
+Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa **izračunal delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji)*.
 
 Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5'- in 3'-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:
 * več zapisov ali
@@ -93,8 +91,21 @@ Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkus
 *V razmislek - kaj pa prekrivajoče se regije CDS?*
 
 ### Namigi
-1. Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.
-2. Morda se naloga sliši kompleksna, a v resnici ni - s stavkom `if` lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite `+=`) k skupnemu številu G+C.
-3. Število G+C v nekodirajočih regijah lahko enostavno dobite tako, da izračunate število G+C v celotnem zaporedju, od katerega odštejete število G+C v vseh kodirajočih regijah.
+* Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.
+* Morda se naloga sliši kompleksna, a v resnici ni - s stavkom `if` lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite `+=`) k skupnemu številu G+C.
+* Število G+C v nekodirajočih regijah lahko enostavno dobite tako, da izračunate število G+C v celotnem zaporedju, od katerega odštejete število G+C v vseh kodirajočih regijah.
+
+Predlagani koraki programa:
+1. Preberite zapis v formatu GenBank (`gb`).
+2. Izračunajte dolžino celotnega zaporedja: `len` (primer pri [V01](nt-oligo_analiza.ipynb)).
+3. Preštejte G-je in C-je v celotnem zaporedju: `.count('C')` in `.count('G')` (primer pri [V01](nt-oligo_analiza.ipynb)).
+4. Definirajte dve spremenljivki (nastavite na `0`):
+   * za število G+C v vseh CDS (npr. `gc_cds`)
+   * za skupno dolžino vseh CDS (npr. `len_cds`)
+5. Z zanko `for` (zgled zgoraj) prečešite vse CDS, pri tem pa vsakič število G+C v analiziranem CDS dodajte k vrednosti `gc_cds`, dolžino analiziranega CDS pa dodate k vrednosti `len_cds` (za dodajanje uporabite `+=`).
+6. Število G+C v nekodirajočih regijah dobite tako, da od števila G+C v celotnem zaporedju odštejete `gc_cds` (to naredite šele, ko prečešete vse CDS).
+7. Dolžino nekodirajočih regij dobite tako, da od celotne dolžine zaporedja odštejete vsoto dolžin vseh CDS (`len_cds`).
+8. Na osnovi `gc_cds` in `len_cds` izračunajte delež GC v CDS.
+9. Na osnovi G+C v nekodirajočih regijah in njihove skupne dolžine (izračunano zgoraj) izračunajte še delež GC v nekodirajočih regijah.
 
 *Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.*

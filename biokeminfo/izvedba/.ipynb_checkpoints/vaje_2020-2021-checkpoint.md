@@ -1,19 +1,32 @@
 # Vaje 2020/2021
 
+Za izvajanje vaj si na vaše računalnike namestite:
+* **Python 3** (lahko ločeno ali kot del paketa Anaconda - kratka navodila so [tukaj](../priloge/python.md))
+* **JupyterLab** (če uporabljate Anacondo ga instalirajte od tam, sicer ločeno z uporabo `pip` - kratka navodila so [tukaj](../priloge/jupyterlab.ipynb))
+* **BioPython** (spet, če uporabljate Anacondo ga instalirajte od tam (najprej naredite *Update index* in ga potem poiščite med paketi, ki so na voljo), sicer ločeno z uporabo `pip`)
+
+Seznam bo tekom vaj dopolnjen.
+
+---
 ## V01: Uvod, PubMed in BioPython
+
+Potrebujete: spletni brskalnik.
 
 1. Uvod:
    * struktura knjige
    * [Git in GitHub](../priloge/git.md)
    * [Python](../priloge/python.md) in [JupyterLab](../priloge/jupyterlab.ipynb)
    * [Markdown](../priloge/markdown.md)
-2. **PubMed** - zbirka bibliografskih podatkov:
+2. **PubMed** (zbirka bibliografskih podatkov):
    * [VAJA: Iskanje po PubMed](../vaje/pubmed_web.md)
    * [DEMO: Programski dostop do PubMed (Python)](../vaje/pubmed_eutilities.ipynb)
 3. Uvod v uporabo **BioPython**a za analizo nukleotidnega zaporedja:
    * [VAJA: Enostavna analiza nt-zaporedja (Python)](../vaje/nt-oligo_analiza.ipynb)
 
+---
 ## V02: GenBank in UniProt
+
+Potrebujete: spletni brskalnik, Python 3, JupyterLab, BioPython.
 
 1. **GenBank** (zbirka nukleotidnih zaporedij):
    * [VAJA: Dostop do GenBank v brskalniku](../vaje/genbank_web.md)
@@ -22,4 +35,3 @@
    * [VAJA: Dostop do UniProt v brskalniku](../vaje/uniprot_web.md)
    * [VAJA: Programski dostop do UniProt (Python)](../vaje/uniprot_rest.ipynb)
 
-## V03: Poravnave zaporedij
