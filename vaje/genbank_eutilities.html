@@ -52,6 +52,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/genbank_eutilities.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -346,6 +348,23 @@
   <a class="reference internal nav-link" href="#naloga">
    Naloga
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ozadje">
+     Ozadje
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Naloga
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#namigi">
+     Namigi
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -450,7 +469,7 @@ Seq(&#39;ATTGCGCCGCGGCACGGCCTAGCGAGTGGTTCTTCTGCGCTACTGCTGCGCGAA...AAA&#39;)
 </div>
 </div>
 </div>
-<p>Če preštejemo značilnosti v zapisu na spletu vidimo, da jih je dejansko 25. Sem spadajo CDS, misc_feature itd.</p>
+<p>Če preštejemo značilnosti v zapisu na spletu vidimo, da jih je dejansko toliko. Sem spadajo CDS, misc_feature itd.</p>
 <p>Lahko izpišemo tudi nekatere druge karakteristike objekta (podrobneje o tem <a class="reference external" href="https://biopython.org/wiki/SeqRecord">tukaj</a>), na primer ID in opis:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -469,7 +488,7 @@ Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA
 </div>
 <div class="section" id="shranjevanje-zapisa-v-datoteko">
 <h3>Shranjevanje zapisa v datoteko<a class="headerlink" href="#shranjevanje-zapisa-v-datoteko" title="Permalink to this headline">¶</a></h3>
-<p>Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA:</p>
+<p>Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA. Pozor, da spodnja koda deluje morate imeti v mapi, kjer se nahaja trenutno ta datoteka <code class="docutils literal notranslate"><span class="pre">ipynb</span></code>, ustvarjeno mapo <code class="docutils literal notranslate"><span class="pre">izhod</span></code>!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SeqIO</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">seq_record</span><span class="p">,</span> <span class="s1">&#39;izhod/genbank-sample_output.gb&#39;</span><span class="p">,</span> <span class="s1">&#39;gb&#39;</span><span class="p">)</span>   <span class="c1"># GenBank Flat File</span>
@@ -536,19 +555,34 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 <hr class="docutils" />
 <div class="section" id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
-<p>Vaša naloga je, da pripravite program, ki:</p>
+<div class="section" id="ozadje">
+<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
+<p>Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_region">Wikipediji</a>: “<em>The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.</em>”</p>
+<p>Nekajna to temo lahko preberete tudi v člankih <a class="reference external" href="https://dx.doi.org/10.1186/1471-2148-8-99">Both selective and neutral processes drive GC content evolution in the human genome</a>.</p>
+</div>
+<div class="section" id="id1">
+<h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa:</p>
 <ol class="simple">
-<li><p>vas bo povprašal po kodi zapisa v GenBank ter izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal tako nukleotidno kot aminokislinsko zaporedje CDS vključno s kodonom STOP,</p></li>
-<li><p>bo nato analiziral delež GC v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji).</p></li>
+<li><p>izpisal, ali ta zapis vsebuje CDS ter v primeru, da ga, izpisal, od katerega do katerega kodona se razteza,</p></li>
+<li><p>analiziral delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji).</p></li>
 </ol>
-<p>Zakaj takšna analiza? Znano je namreč, da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_region">Wikipediji</a>: “<em>The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.</em>” <strong>Se torej rezultati vaše analize ujemajo s tem?</strong></p>
-<p><strong>Pozor!</strong> Da bo analiza smiselna mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5’- in 3’-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:</p>
+<p>Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5’- in 3’-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:</p>
 <ul class="simple">
-<li><p>večih zapisov ali</p></li>
-<li><p>kakšnega (krajšega) genoma. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a>. Lahko poiščete tudi kak prokariontski genom. Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje, prav tako pa morate posebej združiti neprevedene regije in jih posebej analizirati.</p></li>
+<li><p>več zapisov ali</p></li>
+<li><p>kakšnega (krajšega) genoma (bolje!). Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a> ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med <span class="math notranslate nohighlight">\(10^6\)</span> in <span class="math notranslate nohighlight">\(1.5 \times 10^6\)</span> bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.</p></li>
 </ul>
-<p>Za izračun deležev GC si oglejte prvo vajo. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.</p>
+<p><em>V razmislek - kaj pa prekrivajoče se regije CDS?</em></p>
+</div>
+<div class="section" id="namigi">
+<h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.</p></li>
+<li><p>Morda se naloga sliši kompleksna, a v resnici ni - s stavkom <code class="docutils literal notranslate"><span class="pre">if</span></code> lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite <code class="docutils literal notranslate"><span class="pre">+=</span></code>) k skupnemu številu G+C.</p></li>
+<li><p>Število G+C v nekodirajočih regijah lahko enostavno dobite tako, da izračunate število G+C v celotnem zaporedju, od katerega odštejete število G+C v vseh kodirajočih regijah.</p></li>
+</ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
+</div>
 </div>
 </div>
 
