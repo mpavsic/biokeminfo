@@ -364,6 +364,11 @@
      Namigi
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#v-razmislek">
+     V razmislek
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -558,17 +563,12 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 <div class="section" id="ozadje">
 <h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
 <p>Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_region">Wikipediji</a>: “<em>The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.</em>”</p>
-<p>Nekajna to temo lahko preberete tudi v člankih <a class="reference external" href="https://dx.doi.org/10.1186/1471-2148-8-99">Both selective and neutral processes drive GC content evolution in the human genome</a>.</p>
+<p>Nekajna to temo lahko preberete tudi v članku <a class="reference external" href="https://dx.doi.org/10.1186/1471-2148-8-99">Both selective and neutral processes drive GC content evolution in the human genome</a>.</p>
 </div>
 <div class="section" id="id1">
 <h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa **izračunal delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji)*.</p>
-<p>Da bo analiza smiselna, mora biti neprevedena regija dovolj dolga. Lahko poizkusite z uporabo mRNA z dolgimi 5’- in 3’-neprevedenimi regijami, boljša (a zahteva malo več prilagoditve kode) pa je uporaba kar:</p>
-<ul class="simple">
-<li><p>več zapisov ali</p></li>
-<li><p>kakšnega (krajšega) genoma (bolje!). Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a> ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med <span class="math notranslate nohighlight">\(10^6\)</span> in <span class="math notranslate nohighlight">\(1.5 \times 10^6\)</span> bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.</p></li>
-</ul>
-<p><em>V razmislek - kaj pa prekrivajoče se regije CDS?</em></p>
+<p>Da bo analiza smiselna, je smiselno uporabiti genomsko zaporedje. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a> ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med <span class="math notranslate nohighlight">\(10^6\)</span> in <span class="math notranslate nohighlight">\(1.5 \times 10^6\)</span> bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.</p>
 </div>
 <div class="section" id="namigi">
 <h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this headline">¶</a></h3>
@@ -595,6 +595,13 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 <li><p>Na osnovi G+C v nekodirajočih regijah in njihove skupne dolžine (izračunano zgoraj) izračunajte še delež GC v nekodirajočih regijah.</p></li>
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
+</div>
+<div class="section" id="v-razmislek">
+<h3>V razmislek<a class="headerlink" href="#v-razmislek" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Kaj pa, če analizirano zaporedje vsebuje prekrivajoče se CDS? Je vaš algoritem na to prilagojen? Če ne, kako bi ga prilagodili?</p></li>
+<li><p>Pri analizi smo izračunali odstotek GC parov kar po vseh CDS hkrati (povprečenje), s tem pa smo nekaj informacij izgubili, npr. o razponu deleža GC ter o porazdelitvi deleža GC glede na dolžino CDS. Razmislite, kako bi analizo izvedli, da bi prišli do teh informacij in kako bi jih vizualizirali.</p></li>
+</ul>
 </div>
 </div>
 </div>
