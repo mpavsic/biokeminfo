@@ -82,7 +82,7 @@ Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje,
 Nekajna to temo lahko preberete tudi v članku [Both selective and neutral processes drive GC content evolution in the human genome](https://dx.doi.org/10.1186/1471-2148-8-99).
 
 ### Naloga
-Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa **izračunal delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji)*.
+Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa izračunal **delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5'- in 3'-neprevedeni regiji)**.
 
 Da bo analiza smiselna, je smiselno uporabiti genomsko zaporedje. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je [GenBank MT066156](https://www.ncbi.nlm.nih.gov/nuccore/MT066156) ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med $10^6$ in $1.5 \times 10^6$ bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.
 
