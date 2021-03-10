@@ -1,55 +1,33 @@
-# Contributing
+# Prispevanje
 
-Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given. You can contribute in the ways listed below.
+Komentarji ter prispevki v obliki bedesila, slik in/ali kode so dobrodošli! Prispevate lahko na spodaj opisane načine.
 
-## Report Bugs
+## Poročanje o napakah
 
-Report bugs using GitHub issues.
+O napakah lhko poročate prek *GitHub issues*.
 
-If you are reporting a bug, please include:
+Pri tem navedite čim več podatkov, ki lahko ključno pomagajo pri razrešitvi napake, prav tako pa podrobno opišite vse korake, vključno z vhodnimi podatki pri kodi, ki rezultirajo v napaki.
 
-* Your operating system name and version.
-* Any details about your local setup that might be helpful in troubleshooting.
-* Detailed steps to reproduce the bug.
+Dobrodošlo je tudi, da prispevate s predlogom popravljene kode.
 
-## Fix Bugs
+## Pisanje dokumentacije
 
-Look through the GitHub issues for bugs. Anything tagged with "bug" and "help
-wanted" is open to whoever wants to implement it.
+Več razlage ali podrobnejša razlaga ne bo škodila :)
 
-## Implement Features
+## Prispevki kode
 
-Look through the GitHub issues for features. Anything tagged with "enhancement"
-and "help wanted" is open to whoever wants to implement it.
+Prispevate lahko tudi z vašo kodo.
 
-## Write Documentation
+1. Naredite vilico (*fork*) tega repozitorija na GitHub.
+2. Klonirajte vilico lokalno..
+3. Pripravite si okolje, priporočjivo je virtualno okolje.
+4. Naredite novo vejo in spremembe vnašajte lokalno.
+5. Spremembe potisnite na GitHub.
+6. Pošljite zahtevo (*pull request*) s strani HitGub.
 
-biokeminfo could always use more documentation, whether as part of the
-official biokeminfo docs, in docstrings, or even on the web in blog posts,
-articles, and such.
+## Povratne informacije
 
-## Submit Feedback
-
-The best way to send feedback is to file an issue on GitHub.
-
-If you are proposing a feature:
-
-* Explain in detail how it would work.
-* Keep the scope as narrow as possible, to make it easier to implement.
-* Remember that this is a volunteer-driven project, and that contributions
-  are welcome :)
-
-## Get Started
-
-Ready to contribute? Here's how to set up `biokeminfo` for local development.
-
-1. Fork the repo on GitHub.
-2. Clone your fork locally.
-3. Install your local copy into a virtualenv, e.g., using `conda`.
-4. Create a branch for local development and make changes locally.
-5. Commit your changes and push your branch to GitHub.
-6. Submit a pull request through the GitHub website.
+Dobrodošle so vse vrste povratnih informacij
 
 ## Code of Conduct
 
