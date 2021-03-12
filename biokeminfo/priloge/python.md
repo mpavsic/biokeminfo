@@ -36,6 +36,7 @@ Ko jedro v Binderju ugasnemo, se virtualno okolje pobriše. **Pozor, ko okno brs
 
 Na spletu je brezplačno dostopnih veliko tečajev Pythona, prek katerih se lahko naučite osnov programiranja v tem jeziku ali pa zgolj obnovite svoje znanje. Tukaj je navedenih zgolj nekaj:
 * [Python Village](http://rosalind.info/problems/list-view/?location=python-village) na portalu Rosalind
+* [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english3e/) (Learning with Python 3)
 * [Learn Python](https://www.learnpython.org/)
 * [Python for Absolute Beginners](https://www.udemy.com/course/free-python/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-DTy5bPmtnIIYmHBmoUs_Qw&utm_medium=udemyads&utm_source=aff-campaign) na portalu Udemy
 * [Python for Total Beginners](https://www.udemy.com/course/python-3-for-total-beginners/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-.KxFZERGV5HVjrqvHOnOTQ&utm_medium=udemyads&utm_source=aff-campaign) na portalu Udemy
