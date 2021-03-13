@@ -9,6 +9,7 @@ title                       : Biokemijska informatika  # The title of the book. 
 author                      : Miha Pavšič  # The author of the book
 copyright                   : "2021"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
+exclude_patterns            : [_build, .DS_Store, "*resitev.ipynb", "*resitev.md"]
 repository:
   url                       : https://github.com/mpavsic/biokeminfo
   path_to_book              : biokeminfo
