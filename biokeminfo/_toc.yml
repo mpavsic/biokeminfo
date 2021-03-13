@@ -26,6 +26,7 @@
       - file: priloge/jupyterlab
       - file: priloge/markdown
       - file: priloge/git
+  - file: priloge/datoteke
   - file: priloge/drobnarije
 
 - part: Izvedba
