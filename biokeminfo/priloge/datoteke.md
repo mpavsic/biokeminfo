@@ -30,7 +30,7 @@ Spodaj je nekaj primerov slabe in dobre prakse, ki ilustrirajo uporabo zgoraj na
 |:----------|:----------|
 | `Pavšič seminar verzija 5.docx` | `Pavsic-Seminar_v5.docx`    |
 | `besedilozaseminarskonalogo.txt` | `Seminarska_naloga-besedilo.txt` |
-| `7. januar 2017 sekvenciranje.doc` | `sekvenciranje_2017-01-07.doc` (sploh uporabno, če imamo več datotek stila `sekvenciranje-YYYY-MM-DD.doc`) |
+| `7. januar 2017 sekvenciranje.doc` | `sekvenciranje_2017-01-07.doc` (sploh uporabno, če imamo več datotek stila `sekvenciranje_YYYY-MM-DD.doc`) |
 | `GST wilt type sequence fasta.txt` | `GST_wt-seq.fasta` (ali celo samo `GST_wt.fasta` oz. `GST_wt.seq`) |
 | `diploma slike + besedilo kočna verzija fkkt.docx` | `Diploma-slike_besedilo-koncna_ver.docx` |
 
