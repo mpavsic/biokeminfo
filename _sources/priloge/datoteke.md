@@ -6,7 +6,7 @@ Moderni operacijski sistemi dopuščajo kar precej svobode pri poimenovanju dato
 
 Poglejmo najprej malce v zgodovino. Na primer, star datotečni sistem FAT16 (*16-bit [File Allocation Table](https://en.wikipedia.org/wiki/File_Allocation_Table)*), v uporabi v operacijskem sistemu [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS) in (pra)starih različicah sistema Microsoft Windows, je omogočal imena datotek formata 8.3, kjer je bila glavnina imena omejena na do 8 znakov (seveda ne katerihkoli), sledila je pika, nato pa trije znaki, ki so predstavljali t.i. končnico datoteke (*file extension*) in so s tem na nek način sporočali, kakšni podatki so v datoteki in na kakšen način so zapisani.
 
-Podoben sistem `ime.končnica` je še danes splošno v uporabi, le da imamo v dolžini in znakih imena več svobode, podobno velja tudi za končnico.
+Podoben sistem `ime.končnica` je še danes splošno v uporabi, le da imamo v dolžini in znakih imena več svobode, podobno velja tudi za končnico. Kljub temu je iz različnih razlogov (združljivost, preglednost, sistematičnost) priporočljivo, da pri poimenovanju datotek (in map) nismo preveč ekstravagantni in sledimo osnovnim priporočilom.
 
 ## Priporočila za poimenovanje datotek in map
 
@@ -30,7 +30,7 @@ Spodaj je nekaj primerov slabe in dobre prakse, ki ilustrirajo uporabo zgoraj na
 |:----------|:----------|
 | `Pavšič seminar verzija 5.docx` | `Pavsic-Seminar_v5.docx`    |
 | `besedilozaseminarskonalogo.txt` | `Seminarska_naloga-besedilo.txt` |
-| `7. januar 2017 sekvenciranje.doc` | `sekvenciranje_2017-01-07.doc` (sploh uporabno, če imamo več datotek stila `sekvenciranje-YYYY-MM-DD.doc`) |
+| `7. januar 2017 sekvenciranje.doc` | `sekvenciranje_2017-01-07.doc` (sploh uporabno, če imamo več datotek stila `sekvenciranje_YYYY-MM-DD.doc`) |
 | `GST wilt type sequence fasta.txt` | `GST_wt-seq.fasta` (ali celo samo `GST_wt.fasta` oz. `GST_wt.seq`) |
-| `diploma slike + besedilo kočna verzija fkkt.docx` | `Diploma-slike_besedilo-koncna_ver.docx` |
+| `diploma slike + besedilo kočna verzija fkkt.docx` | `Diploma-slike_besedilo-koncna_ver-FKKT.docx` |
 
