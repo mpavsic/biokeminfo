@@ -40,6 +40,7 @@ Na spletu je brezplačno dostopnih veliko tečajev Pythona, prek katerih se lahk
 * [Learn Python](https://www.learnpython.org/)
 * [Python for Absolute Beginners](https://www.udemy.com/course/free-python/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-DTy5bPmtnIIYmHBmoUs_Qw&utm_medium=udemyads&utm_source=aff-campaign) na portalu Udemy
 * [Python for Total Beginners](https://www.udemy.com/course/python-3-for-total-beginners/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-.KxFZERGV5HVjrqvHOnOTQ&utm_medium=udemyads&utm_source=aff-campaign) na portalu Udemy
+* [Scientific Computing](http://disi.unitn.it/~teso/courses/sciprog/index.html) - spletna stran, kjer najdete nekaj osnov i Pythona in BioPythona
 
 
 Obširen seznam tečajev najdete tudi na uradni [wiki-stran Python](https://wiki.python.org/moin/BeginnersGuide/Programmers).
