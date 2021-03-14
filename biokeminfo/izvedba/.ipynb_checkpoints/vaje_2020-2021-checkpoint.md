@@ -3,6 +3,7 @@
 Za izvajanje vaj si na vaše računalnike namestite:
 * **Python 3** (lahko ločeno ali kot del paketa Anaconda - kratka navodila so [tukaj](../priloge/python.md))
 * **JupyterLab** (če uporabljate Anacondo ga instalirajte od tam, sicer ločeno z uporabo `pip` - kratka navodila so [tukaj](../priloge/jupyterlab.ipynb))
+   * za programiranje lahko sicer uporabljate katero drugo okolje, npr. Python IDLE, v tem primeru si dele kode s te spletne strani enostavno prekopirajte
 * **BioPython** (spet, če uporabljate Anacondo ga instalirajte od tam (najprej naredite *Update index* in ga potem poiščite med paketi, ki so na voljo), sicer ločeno z uporabo `pip`)
 
 Seznam bo tekom vaj dopolnjen.
