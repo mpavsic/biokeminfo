@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAJA: Iskanje po PubMed &#8212; Biokemijska informatika</title>
+    <title>Poravnave &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DEMO: Programski dostop do PubMed" href="pubmed_eutilities.html" />
-    <link rel="prev" title="PubMed" href="../osnove/pubmed.html" />
+    <link rel="next" title="VAJA: Izračun matrike zamenjav (Python)" href="../vaje/matrika_zamenjav.html" />
+    <link rel="prev" title="VAJA: Točkovni diagram" href="../vaje/dotplot_web.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/pubmed_web.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Iskanje po PubMed" />
-<meta property="og:description" content="VAJA: Iskanje po PubMed  Uvod  V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:  filtriranje rezultatov glede na tip članka, leto" />
+<meta property="og:title"       content="Poravnave" />
+<meta property="og:description" content="Poravnave  Matrike zamenjav  Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (substitution ma" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -108,19 +108,19 @@
   Zbirke
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="../osnove/pubmed.html">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="pubmed.html">
    PubMed
   </a>
-  <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/pubmed_web.html">
      VAJA: Iskanje po PubMed
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="pubmed_eutilities.html">
+    <a class="reference internal" href="../vaje/pubmed_eutilities.html">
      DEMO: Programski dostop do PubMed
     </a>
    </li>
@@ -129,22 +129,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../osnove/nt.html">
+  <a class="reference internal" href="nt.html">
    Nukleotidna zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="nt-oligo_analiza.html">
+    <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
      VAJA: Enostavna analiza nt-zaporedja (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="genbank_web.html">
+    <a class="reference internal" href="../vaje/genbank_web.html">
      VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="genbank_eutilities.html">
+    <a class="reference internal" href="../vaje/genbank_eutilities.html">
      VAJA: Programski dostop do GenBank (Python)
     </a>
    </li>
@@ -153,17 +153,17 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../osnove/ak.html">
+  <a class="reference internal" href="ak.html">
    Aminokislinska zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="uniprot_web.html">
+    <a class="reference internal" href="../vaje/uniprot_web.html">
      VAJA: Dostop do UniProt v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="uniprot_rest.html">
+    <a class="reference internal" href="../vaje/uniprot_rest.html">
      VAJA: Programski dostop do UniProt (Python)
     </a>
    </li>
@@ -177,14 +177,14 @@
   Poravnave
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../osnove/dotplot.html">
+  <a class="reference internal" href="dotplot.html">
    Točkovni diagram
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="dotplot_web.html">
+    <a class="reference internal" href="../vaje/dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
@@ -192,13 +192,13 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../osnove/poravnave.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="current reference internal" href="#">
    Poravnave
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="matrika_zamenjav.html">
+    <a class="reference internal" href="../vaje/matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
     </a>
    </li>
@@ -300,7 +300,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/vaje/pubmed_web.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/osnove/poravnave.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -344,52 +344,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#uvod">
-   Uvod
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-1">
-   Naloga 1
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vprasanja">
-     Vprašanja
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#razlaga">
-     Razlaga
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-2">
-   Naloga 2
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Uvod
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Vprašanja
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Razlaga
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dodatna-literatura">
-   Dodatna literatura
+  <a class="reference internal nav-link" href="#matrike-zamenjav">
+   Matrike zamenjav
   </a>
  </li>
 </ul>
@@ -403,77 +359,13 @@
         
               <div>
                 
-  <div class="section" id="vaja-iskanje-po-pubmed">
-<h1>VAJA: Iskanje po PubMed<a class="headerlink" href="#vaja-iskanje-po-pubmed" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="uvod">
-<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">¶</a></h2>
-<p>V okviru te vaje si bomo ogledali nekaj vidikov iskanja po tej zbirki in sicer:</p>
-<ul class="simple">
-<li><p>filtriranje rezultatov glede na tip članka, leto ipd.,</p></li>
-<li><p>kompleksno iskanje z večimi termini.</p></li>
-</ul>
-<p>Pri tem bomo uporabljali “novo” verzijo vmesnika, ki je na voljo od konca leta 2019 in je dosegljiv na naslovu <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a>. Z iskanjem lahko začnemo tudi na osnovni strani Entrez (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>), kjer na vrhu iz menija izberemo Pubmed (slika spodaj). Če bi nastavitev pustili na <em>All Databases</em> se nam prikažejo posamezne zbirke na strežniku in število zadetkov v vsaki izmed njih (poizkusite na enem primeru).</p>
-<p><img alt="PubMed Entrez" src="../_images/pubmed_web_entrez.png" /></p>
+  <div class="section" id="poravnave">
+<h1>Poravnave<a class="headerlink" href="#poravnave" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="matrike-zamenjav">
+<h2>Matrike zamenjav<a class="headerlink" href="#matrike-zamenjav" title="Permalink to this headline">¶</a></h2>
+<p>Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (<em>substitution matrices</em>), kjer so zapisane vrednosti za identičnost oz. zamenjavo nekega ostanka z drugim. Matrike so lahko izračunane na osnovi različnih vhodnih podatkov, najpogosteje pa se uporabljajo take, ki so izračunane na osnovi poravnav zaporedij sámih. Za nukleotidna zaporedja najpogosteje uporabljamo matriko EDNAfull, za aminokislinska zaporedja pa matrike iz družine BLOSUM.</p>
+<div class="toctree-wrapper compound">
 </div>
-<hr class="docutils" />
-<div class="section" id="naloga-1">
-<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="vprasanja">
-<h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Permalink to this headline">¶</a></h3>
-<p>Odgovorite na naslednja vprašanja:</p>
-<ol class="simple">
-<li><p>S pomočjo enostavnega iskanja ugotovite, koliko je člankov, ki so indeksirani v tej zbirki, pri katerih se kjerkoli pojavi beseda <strong>coronavirus</strong>.</p></li>
-<li><p>Koliko od teh člankov ima prosto dostopno celotno besedilo?</p></li>
-<li><p>Koliko člankov je na temo kliničnih preizkusov (<em>Clinical Trial</em>)?</p></li>
-<li><p>Koliko od člankov na temo kliničnih preizkusov ima prosto dostopno celotno besedilo?</p></li>
-<li><p>Koliko člankov v zvezi s koronavirusom (še vedno smo pri iskalnem pojmu <strong>coronavirus</strong>) je preglednih (t.j. <em>Review</em>)?</p></li>
-</ol>
-</div>
-<div class="section" id="razlaga">
-<h3>Razlaga<a class="headerlink" href="#razlaga" title="Permalink to this headline">¶</a></h3>
-<p>Do zgoraj navedenih vprašanj se lahko dokopljemo z uporabo filtrov, ki se nahajajo na levi strani (slika spodaj). Še več filtrov najdemo čisto na koncu seznama filtrov pod povezavo <em>Additional filters</em>. Na spletni strani je še nekaj uporabnih funkcij, naj jih naštejemo zgolj nekaj:</p>
-<ul class="simple">
-<li><p><em>Display options</em>, kjer lahko nastavimo sortiranje zadetkov ter število prikazanih zadetkov na stran,</p></li>
-<li><p>shranjevanje in pošiljanje rezultatov (npr. za uvoz v program za upravljanje referenc),</p></li>
-<li><p>prenos datoteke formata CSV s frekvenco objav po letih (oglejte si to za primer koronavirusa!),</p></li>
-<li><p>ustvarjanje avtomatskih iskanj, kar nam omogoča, da za neko tematiko dobimo e-pošto z novimi članki,</p></li>
-<li><p>prijava v uporabniški račun, kjer si lahko shranjujemo bibliografijo in upravljamo z avtomatskimi iskanji.</p></li>
-</ul>
-<p><img alt="PubMed Web primer1" src="../_images/pubmed_web_primer1.png" /></p>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="naloga-2">
-<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Uvod<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Zgornji primer je, ne glede na uporabljene filtre, primer enostavnega iskanja. Če želimo izvesti kompleksnejšo poizvedbo, jo lahko zapišemno neposredno v iskalno polje za enostavno iskanje, a moramo pri tem poznati sintakso. To si poenostavimo z uporabo naprednega iskanja - povezava <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/"><strong>Advanced</strong></a> pod osnovnim iskalnim poljem.</p>
-<p>Graditelj naprednega iskanja (PubMed Advanced Search Builder) nam omogoča, da posameznemu iskalnemu pojmu pripišemo, kje v referenci se naj nahaja (npr. v naslovu, povzetku), določimo časovno obdobje objave ipd., vse to pa združujemo z osnovnimi operatorji <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolove algebre</a> (AND, OR, NOT).</p>
-</div>
-<div class="section" id="id2">
-<h3>Vprašanja<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>Vaša naloga je, da poiščete, koliko člankov ima v naslovu besedo <em>SARS</em>, bili so pa objavljeni med letoma 2009 in 2019 (vključno s celotnima omenjenima letoma). Koliko pa je bilo takih člankov med letoma 2020 (od 1. januarja) pa do danes?</p>
-<p>Zanima nas še, koliko od člankov, ki ima v naslovu <em>SARS</em>, ima v naslovu in/ali povzetku še besedo <em>cats</em> (mačke).</p>
-</div>
-<div class="section" id="id3">
-<h3>Razlaga<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v izkalno škatlo (<em>Query box</em>) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.</p>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="dodatna-literatura">
-<h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK3827/">Pomoč za iskanje po PubMed</a>, na voljo tudi v obliki PDF (poglejte ob rob strani na povezavi).</p></li>
-<li><p><a class="reference external" href="https://bitesizebio.com/419/18-ways-to-improve-your-pubmed-searches/">18+ Ways to Improve your PubMed searches</a> - enostavna in uporabnikom prijazna razlaga kompleksnejših iskanj.</p></li>
-<li><p>Uradni kanal NCBI na YouTube:</p>
-<ul>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=kXY5P4C_2l4">avtomatska iskanja po PubMed</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=mih7gJwd5HI">prilagoditev PubMed z MyNCBI</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=696R9GbOyvA">filtri na PubMed</a></p></li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -490,7 +382,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./vaje"
+            path: "./osnove"
         },
         predefinedOutput: true
     }
@@ -505,8 +397,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../osnove/pubmed.html" title="previous page">PubMed</a>
-    <a class='right-next' id="next-link" href="pubmed_eutilities.html" title="next page">DEMO: Programski dostop do PubMed</a>
+    <a class='left-prev' id="prev-link" href="../vaje/dotplot_web.html" title="previous page">VAJA: Točkovni diagram</a>
+    <a class='right-next' id="next-link" href="../vaje/matrika_zamenjav.html" title="next page">VAJA: Izračun matrike zamenjav (Python)</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

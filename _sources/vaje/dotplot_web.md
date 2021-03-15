@@ -2,6 +2,7 @@
 
 Na dveh enostavnih primerih si bomo ogledali, kako lahko uporabimo točkovni diagram za detekcijo podobnosti podobnosti med danimi zaporedji. V enem primeru bomo uporabili kratko zaporedje, v drugem pa kar cel genom, a relativno kratek – bakterijski.
 
+---
 ## Naloga 1: primerjava dveh krajših zaporedij
 
 S pomočjo spletnega programa [EMBOSS DotMatcher](http://emboss.bioinformatics.nl/cgi-bin/emboss/dotmatcher) primerjajte med seboj aminokislinski zaporedji proteinov:
@@ -21,6 +22,7 @@ Na kratko o orodju DotMatcher... Orodje DotMatcher je sprogramirano tako, da za 
 
 Obstajajo še drugi programi za točkovne diagrame, seznam najdete [tukaj](https://en.wikipedia.org/wiki/Dot_plot_(bioinformatics)).
 
+---
 ## Naloga 2: Primerjava genomskih zaporedij
 
 Kot omenjeno je primerjava zelo dolgih genomskih zaporedij nekoliko dolgotrajnejša oz. zahteva več procesorske moči. Izvedli jo bomo na namenskem strežniku prek spleta, obstaja pa več takih storitev:
