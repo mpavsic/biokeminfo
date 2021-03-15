@@ -18,6 +18,12 @@
       - file: vaje/uniprot_web
       - file: vaje/uniprot_rest
 
+- part: Poravnave
+  chapters:
+  - file: osnove/dotplot
+    sections:
+      - file: vaje/dotplot_web
+
 - part: Priloge
   chapters:
   - file: priloge/programi
