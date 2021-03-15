@@ -23,6 +23,9 @@
   - file: osnove/dotplot
     sections:
       - file: vaje/dotplot_web
+  - file: osnove/poravnave
+    sections:
+      - file: vaje/matrika_zamenjav
 
 - part: Priloge
   chapters:
