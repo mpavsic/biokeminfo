@@ -48,7 +48,7 @@ Za štetje si najprej definiramo matriko, ki vsebuje posamezne ostanke, v našem
 
 # definiramo dvodimenzionalno matriko/array (dims=2)
 from Bio.Align.substitution_matrices import Array
-frequency = Array("ACGT", dims=2)
+frequency = Array('ACGT', dims=2)
 
 # izpišemo matriko - zdaj je še prazna
 print(frequency)
