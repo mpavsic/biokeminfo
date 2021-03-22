@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAJA: Točkovni diagram &#8212; Biokemijska informatika</title>
+    <title>VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja) &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/dotplot_web.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/poravnava2_web.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Poravnave" href="../osnove/poravnave.html" />
-    <link rel="prev" title="Točkovni diagram" href="../osnove/dotplot.html" />
+    <link rel="next" title="VAJA: Poravnava zaporedij NW &amp; SW (Python)" href="poravnava2_nw_sw.html" />
+    <link rel="prev" title="VAJA: Izračun matrike zamenjav (Python)" href="matrika_zamenjav.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/dotplot_web.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/poravnava2_web.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Točkovni diagram" />
-<meta property="og:description" content="VAJA: Točkovni diagram  Na dveh enostavnih primerih si bomo ogledali, kako lahko uporabimo točkovni diagram za detekcijo podobnosti podobnosti med danimi zapore" />
+<meta property="og:title"       content="VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)" />
+<meta property="og:description" content="VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)  Naloga 1  Izbor načina poravnave  Kateri tip poravnave (globalna ali lokalna) je primernejša za primerjavo a" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -178,13 +178,13 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../osnove/dotplot.html">
    Točkovni diagram
   </a>
-  <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
@@ -192,18 +192,18 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../osnove/poravnave.html">
    Poravnave
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="poravnava2_web.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
     </a>
    </li>
@@ -315,7 +315,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/vaje/dotplot_web.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/poravnava2_web.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -359,13 +359,25 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-1-primerjava-dveh-krajsih-zaporedij">
-   Naloga 1: primerjava dveh krajših zaporedij
+  <a class="reference internal nav-link" href="#naloga-1">
+   Naloga 1
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#izbor-nacina-poravnave">
+     Izbor načina poravnave
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#primerjava-poravnav">
+     Primerjava poravnav
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-2-primerjava-genomskih-zaporedij">
-   Naloga 2: Primerjava genomskih zaporedij
+  <a class="reference internal nav-link" href="#naloga-2">
+   Naloga 2
   </a>
  </li>
 </ul>
@@ -379,40 +391,44 @@
         
               <div>
                 
-  <div class="section" id="vaja-tockovni-diagram">
-<h1>VAJA: Točkovni diagram<a class="headerlink" href="#vaja-tockovni-diagram" title="Permalink to this headline">¶</a></h1>
-<p>Na dveh enostavnih primerih si bomo ogledali, kako lahko uporabimo točkovni diagram za detekcijo podobnosti podobnosti med danimi zaporedji. V enem primeru bomo uporabili kratko zaporedje, v drugem pa kar cel genom, a relativno kratek – bakterijski.</p>
-<hr class="docutils" />
-<div class="section" id="naloga-1-primerjava-dveh-krajsih-zaporedij">
-<h2>Naloga 1: primerjava dveh krajših zaporedij<a class="headerlink" href="#naloga-1-primerjava-dveh-krajsih-zaporedij" title="Permalink to this headline">¶</a></h2>
-<p>S pomočjo spletnega programa <a class="reference external" href="http://emboss.bioinformatics.nl/cgi-bin/emboss/dotmatcher">EMBOSS DotMatcher</a> primerjajte med seboj aminokislinski zaporedji proteinov:</p>
+  <div class="section" id="vaja-poravnava-zaporedij-nw-sw-spletna-orodja">
+<h1>VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)<a class="headerlink" href="#vaja-poravnava-zaporedij-nw-sw-spletna-orodja" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="naloga-1">
+<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="izbor-nacina-poravnave">
+<h3>Izbor načina poravnave<a class="headerlink" href="#izbor-nacina-poravnave" title="Permalink to this headline">¶</a></h3>
+<p>Kateri tip poravnave (globalna ali lokalna) je primernejša za primerjavo aminokislinskih zaporedij iz posameznega para?</p>
 <ul class="simple">
-<li><p>človeški N-CAM-1 (<em>neural cell adhesion molecule 1</em>)</p></li>
-<li><p>miotilin (<em>myotilin</em>)</p></li>
+<li><p>par A: izoobliki 1 in 2 človeške karbonske anhidraze</p></li>
+<li><p>par B: človeška proteina nidogen-2 in IGFBP-1 (Insulin Growth Factor-Like Binding Protein 1)</p></li>
+<li><p>par C: človeški fibronektin in podenota beta mišjega receptorja za interleukin 6</p></li>
+<li><p>par D: človeške neutrofilske elastaze in in duodenaze-1 (duodenase-1) iz zelene morske želve (Chelonia mydas)</p></li>
+<li><p>par E: človeški histon H3.1 in inhibitor ID-2 DNA-vezavnega proteina (DNA-binding protein inhibitor ID-2) iz sumatranskega orangutana (Pongo abelii)</p></li>
 </ul>
-<p>Smiselno je, da za neko zaporedje (če ga primerjate samega s seboj) oz. par zaporedij preizkusite nekaj kombinacij nastavitev (vrednosti praga in velikosti okna) in ugotovite, katere nastavitve vam dajo najbolj jasno sliko, ob tem pa ne izgubite relevantnih elementov primerjave (ponovitve ipd.). Podatke o slednjih lahko razberete iz zapisa v znirki UniProt.</p>
-<p>Naloga:</p>
-<ul class="simple">
-<li><p>Z variacijo navedenih parametrov si oglejte, kako se spreminja občutljivost in količina šuma pri različnih vrednostih parametrov za ak-zaporedji danih proteinov.</p></li>
-<li><p>Ali v točkovnem diagramu opazite kakšen izrazit vzorec? Razložite!</p></li>
-<li><p>Sedaj pa primerjajte še nt-zaporedji celotne kodirajoče regije mRNA za omenjena proteina. Kakšen je rezultat take primerjave in zakaj?</p></li>
-</ul>
-<p>Na kratko o orodju DotMatcher… Orodje DotMatcher je sprogramirano tako, da za posamezne pare ij (i so ostanki iz 1. zaporedja, j pa iz 2. zaporedja) prebere vrednosti iz matrike zamenjav (privzeta EBLOSUM62 (=BLOSUM62) za ak-zaporedja, za nt-zaporedja pa EDNAFULL), nato pa izračuna vsoto nekaj zaporednih ostankov (ta parameter nastavimo z velikostjo okna – <em>window size</em>), na koncu pa znak v matriki nariše le, če je vsota enaka ali pa presega prag (<em>treshold</em>). Zaporedja, ki jih primerjate, vstavite v program v formatu FASTA.</p>
-<p><img alt="EMBOSS DotMatcher" src="../_images/emboss_dotmatcher.png" /></p>
-<p>Obstajajo še drugi programi za točkovne diagrame, seznam najdete <a class="reference external" href="https://en.wikipedia.org/wiki/Dot_plot_(bioinformatics)">tukaj</a>.</p>
+<p>Namig: zaporedja omenjenih proteinov poiščite v zbirki <a class="reference external" href="http://uniprot.org">UniProt</a>, oglejte si pripise. Proteine lahko analizate tudi preko spletne strani <a class="reference external" href="https://www.ebi.ac.uk/interpro/">InterPro</a>.</p>
 </div>
-<hr class="docutils" />
-<div class="section" id="naloga-2-primerjava-genomskih-zaporedij">
-<h2>Naloga 2: Primerjava genomskih zaporedij<a class="headerlink" href="#naloga-2-primerjava-genomskih-zaporedij" title="Permalink to this headline">¶</a></h2>
-<p>Kot omenjeno je primerjava zelo dolgih genomskih zaporedij nekoliko dolgotrajnejša oz. zahteva več procesorske moči. Izvedli jo bomo na namenskem strežniku prek spleta, obstaja pa več takih storitev:</p>
+<div class="section" id="primerjava-poravnav">
+<h3>Primerjava poravnav<a class="headerlink" href="#primerjava-poravnav" title="Permalink to this headline">¶</a></h3>
+<p>Za para B in C (ločeno, seveda) izračunajte poravnavo na dva načina:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://dgenies.toulouse.inra.fr/">D-GENIES</a> - <strong>D</strong>ot plot large <strong>Gen</strong>omes in an <strong>I</strong>nteractive, <strong>E</strong>fficient and <strong>S</strong>imple way</p></li>
-<li><p><a class="reference external" href="https://genomevolution.org/coge/SynMap.pl">SynMap</a> - <em>generates a syntenic dotplot between two organisms and identifies syntenic regions</em></p></li>
-<li><p><a class="reference external" href="https://bioinfo.cristal.univ-lille.fr/yass/yass.php">YASS</a> - <em>genomic similarity search tool</em></p></li>
+<li><p>globalna poravnava (algoritem Needleman-Wunsch oz. Needle (EMBOSS)) in</p></li>
+<li><p>lokalna poravnava (algoritem Smith-Waterman oz. Water (EMBOSS)).</p></li>
 </ul>
-<p>Med zadnjim testom orodje D-GENIS ni delovali, zato bomo uporabili SynMap. Primerjali bomo celotno genomsko zaporedje dveh sevov bakterije <em>E. coli</em>, in sicer seva K-12 MG1655 in CFT073. Zaporedji lahko najdete v zbirki Nucleotide na strežniku NCBI, sta pa dostopni tudi direktno v orodju.</p>
-<p>Kakšen je rezultat in kaj mislite, zakaj je takšen?</p>
-<p>Kaj je posebnega na sevu CFT073? Namig se skriva v članku <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2785843/"><em>Genome reannotation of Escherichia coli CFT073 with new insights into virulence</em></a>.</p>
+<p>Uporabili bomo program, ki teče na strežniku EBI (The European Bioinformatics Institute) in je del programskega paketa EMBOSS (European Molecular Biology Open Software Suite), dostopen pa je preko strani za poravnavo parov zaporedij <a class="reference external" href="http://www.ebi.ac.uk/Tools/psa/">Pairwise Sequence Alignment – PSA</a>.</p>
+<p>Zaporedja vstavite v formatu FASTA vključno z imenom zaporedja, da boste vedeli, katero zaporedje je katero. Ime naj bo smiselno kratko, npr. za človeško elastazo ELAhum (take akronime je smiselno uporabljati na splošno pri poravnavah, saj se v njih skriva tako ime proteina kot tudi ime organizma).</p>
+<p>Razmislite in odgovorite:</p>
+<ul class="simple">
+<li><p>Primerjajte rezultat globalne in lokalne poravnave. Zakaj sta takšna, kot sta?</p></li>
+<li><p>Je rezultat poravnave v skladu s pričakovanji? Predsvem se osredotočite na značilnosti poravnane domene, kar lahko razberete iz zbirke Prosite.</p></li>
+<li><p>Kako nastavitve parametrov vplivajo na končen rezultat (poravnavo)?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="naloga-2">
+<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
+<p>Kateri aminokislinski ostanek (enočrkovna koda in zaporedja številka) bi morali zmutirati v konjski triptazi, da bi zagotovo ukinili aktivnost tega encima, hkrati pa ne bi bistveno posegli v stabilnost/strukturo encima?</p>
+<p><strong>Namig za reševanje</strong>: poravnavo lahko naredite kar v UniProt, pri čemer izberete zaporedja, ki jih želite poravnati, in kliknete na gumb <code class="docutils literal notranslate"><span class="pre">Align</span></code> (zaslonska slika spodaj). Orodje, ki izdela poravnavo, je sicer orodje za poravnavo večih zaporedij (Clustal Omega), a je seveda sposobno poravnavti zgolj dve zaporedji.</p>
+<p><img alt="Poravnava v UniProt" src="../_images/uniprot_poravnava.png" /></p>
 </div>
 </div>
 
@@ -444,8 +460,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../osnove/dotplot.html" title="previous page">Točkovni diagram</a>
-    <a class='right-next' id="next-link" href="../osnove/poravnave.html" title="next page">Poravnave</a>
+    <a class='left-prev' id="prev-link" href="matrika_zamenjav.html" title="previous page">VAJA: Izračun matrike zamenjav (Python)</a>
+    <a class='right-next' id="next-link" href="poravnava2_nw_sw.html" title="next page">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
