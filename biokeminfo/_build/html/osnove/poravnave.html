@@ -363,6 +363,18 @@
    Matrike zamenjav
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#poravnava-zaporedij">
+   Poravnava zaporedij
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#globalna-poravnava-zaporedij-needleman-wunsch">
+     Globalna poravnava zaporedij Needleman-Wunsch
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
         </nav>
@@ -379,7 +391,16 @@
 <div class="section" id="matrike-zamenjav">
 <h2>Matrike zamenjav<a class="headerlink" href="#matrike-zamenjav" title="Permalink to this headline">¶</a></h2>
 <p>Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (<em>substitution matrices</em>), kjer so zapisane vrednosti za identičnost oz. zamenjavo nekega ostanka z drugim. Matrike so lahko izračunane na osnovi različnih vhodnih podatkov, najpogosteje pa se uporabljajo take, ki so izračunane na osnovi poravnav zaporedij sámih. Za nukleotidna zaporedja najpogosteje uporabljamo matriko EDNAfull, za aminokislinska zaporedja pa matrike iz družine BLOSUM.</p>
+</div>
+<div class="section" id="poravnava-zaporedij">
+<h2>Poravnava zaporedij<a class="headerlink" href="#poravnava-zaporedij" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="globalna-poravnava-zaporedij-needleman-wunsch">
+<h3>Globalna poravnava zaporedij Needleman-Wunsch<a class="headerlink" href="#globalna-poravnava-zaporedij-needleman-wunsch" title="Permalink to this headline">¶</a></h3>
+<p>Algoritem Needleman-Wunsch (<a class="reference external" href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm">Wikipedia</a>) vam da optimalno globalno poravnavo dveh zaporedij. Delovanje algoritma si lahko “vizualiziramo” tako, da zaporedji izpišemo v matriko, vrednosti matrike pa izračunamo s sledenjem različnih poti med posameznimi celicami, pri čemer zmeraj vzamemo tisto pot (ali več) med posameznimi celicami, ki vodijo do večje vrednosti.</p>
+<p>Za lažje razumevanje priporočam igranje s spletnim programčkom, ki za dve poljubni zaporedji ob spreminjanju vrednosti za ujemanje, neujemanje ter vrzeli prikaže matriko s puščicami za sledenje, hkrati pa ob premiku miškinega kazalca na posamezno polje v matriki izpiše vse alternativne poti oz. vrednosti, ki bi se na nekem mestu nahajale, če bi uporabili alternativne poti.</p>
+<p>Povezava: <a class="reference external" href="https://bioboot.github.io/bimm143_W20/class-material/nw/">https://bioboot.github.io/bimm143_W20/class-material/nw/</a></p>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 </div>

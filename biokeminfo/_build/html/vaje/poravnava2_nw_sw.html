@@ -494,7 +494,7 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 <hr class="docutils" />
 <div class="section" id="izbor-matrike-zamenjav">
 <h3>Izbor matrike zamenjav<a class="headerlink" href="#izbor-matrike-zamenjav" title="Permalink to this headline">¶</a></h3>
-<p>Naslednja zadevščina, ki jo zraven zaporedja potrebujemo za izračun poravnave, je <strong>substitucijska matrika</strong>. Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - <em>dictionary</em>).</p>
+<p>Naslednje, kar zraven zaporedja potrebujemo za izračun poravnave, je <strong>substitucijska matrika</strong> (matrika zamenjav, <em>substitution matrix</em>). Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - <em>dictionary</em>).</p>
 <p>Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html</p>
 <p>Lahko pa tudi samo pokukamo, kaj imamo v trenutno nainstalirani verziji BioPythona na razpolago:</p>
 <div class="cell docutils container">
@@ -673,21 +673,22 @@ A-CT-A
 <p>Če bi želeli vrednosti za ujemanje in neujemanje posebej nastaviti (opis je nekaj polj višje), lahko to naredimo na način, prikazan spodaj. Bodite pozorni, kako je koda zapisana tokrat - v obliki zanke <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">alignment</span> <span class="ow">in</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalmx</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alignments</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalmx</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">format_alignment</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGCCGA
-| |. |
-A-CT-A
-  Score=3
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGCCG-A
+|  |  |
+A--C-TA
+  Score=6
 
-AGCCGA
-| |. |
-A-CT-A
-  Score=3
+AGCCG-A
+| |   |
+A-C--TA
+  Score=6
 </pre></div>
 </div>
 </div>
@@ -695,16 +696,17 @@ A-CT-A
 <p>Še en primer - določimo kazen za odprtje in razširitev vrzeli. Uporabimo lahko tudi ključne besede, kar pomaga pri razumevanju, kaj je kaj.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">alignment</span> <span class="ow">in</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalms</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">,</span> <span class="n">match</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mismatch</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">open</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">extend</span><span class="o">=-</span><span class="mi">5</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alignments</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalms</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">,</span> <span class="n">match</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mismatch</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">open</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">extend</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">format_alignment</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGCCGA
-| |. |
-A-CT-A
-  Score=3
+|  |.|
+A--CTA
+  Score=-10
 </pre></div>
 </div>
 </div>
@@ -718,7 +720,7 @@ A-CT-A
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-10.0
 </pre></div>
 </div>
 </div>
@@ -775,8 +777,8 @@ AŠŠCŠTA
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">seq3</span> <span class="o">=</span> <span class="s1">&#39;AGGGGATAAGACTCCGCTTAGAATAGCTAGAATAGCCG&#39;</span>
 <span class="n">seq4</span> <span class="o">=</span> <span class="s1">&#39;ACTCCGCTT&#39;</span>
-<span class="n">alignments_local</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalxx</span><span class="p">(</span><span class="n">seq3</span><span class="p">,</span> <span class="n">seq4</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments_local</span><span class="p">:</span>
+<span class="n">alignments_global</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalxx</span><span class="p">(</span><span class="n">seq3</span><span class="p">,</span> <span class="n">seq4</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments_global</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">format_alignment</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -838,8 +840,8 @@ A----------CTC--C--------GCT----T-----
 <p>Predvidevam, da z zgornjimi rezultati nismo zadovoljni. Poizkusimo drugače, določimo kazni za vrzeli:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alignments_local2</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">localxs</span><span class="p">(</span><span class="n">seq3</span><span class="p">,</span> <span class="n">seq4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments_local2</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alignments_local</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">localxs</span><span class="p">(</span><span class="n">seq3</span><span class="p">,</span> <span class="n">seq4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alignments_local</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">format_alignment</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -926,7 +928,7 @@ A----------CTC--C--------GCT----T-----
 <hr class="docutils" />
 <div class="section" id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
-<p>Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislisnkega zaporedja (primer zgoraj) sploh v redu. Napnite oči!</p>
+<p>Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislinskega zaporedja (primer zgoraj) sploh v redu. Napnite oči!</p>
 <p>Če poravnavi nisva v redu predlagajte izboljšane parametre za poravnavo in sicer:</p>
 <ul class="simple">
 <li><p>primerno matriko,</p></li>

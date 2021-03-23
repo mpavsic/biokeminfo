@@ -40,7 +40,7 @@ print(seq1.seq)
 ---
 ### Izbor matrike zamenjav
 
-Naslednja zadevščina, ki jo zraven zaporedja potrebujemo za izračun poravnave, je __substitucijska matrika__. Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - _dictionary_).
+Naslednje, kar zraven zaporedja potrebujemo za izračun poravnave, je **substitucijska matrika** (matrika zamenjav, *substitution matrix*). Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - *dictionary*).
 
 Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html
 
@@ -121,12 +121,14 @@ for a in alignments:
 
 Če bi želeli vrednosti za ujemanje in neujemanje posebej nastaviti (opis je nekaj polj višje), lahko to naredimo na način, prikazan spodaj. Bodite pozorni, kako je koda zapisana tokrat - v obliki zanke `for`.
 
-for alignment in aln.align.globalmx(seq1, seq2, 2, -1):
+alignments = aln.align.globalmx(seq1, seq2, 2, -1)
+for a in alignments:
     print(format_alignment(*a))
 
 Še en primer - določimo kazen za odprtje in razširitev vrzeli. Uporabimo lahko tudi ključne besede, kar pomaga pri razumevanju, kaj je kaj.
 
-for alignment in aln.align.globalms(seq1, seq2, match=2, mismatch=-1, open=-10, extend=-5):
+alignments = aln.align.globalms(seq1, seq2, match=2, mismatch=-1, open=-10, extend=-5)
+for a in alignments:
     print(format_alignment(*a))
 
 Izpis lahko tudi prilagodimo - več o tem lahko preberemo v [opisu modula pairwise2](https://biopython.org/DIST/docs/api/Bio.pairwise2-module.html). Spodaj je primer.
@@ -167,14 +169,14 @@ Poglejmo si še primer lokalne poravnave:
 
 seq3 = 'AGGGGATAAGACTCCGCTTAGAATAGCTAGAATAGCCG'
 seq4 = 'ACTCCGCTT'
-alignments_local = aln.align.globalxx(seq3, seq4)
-for a in alignments_local:
+alignments_global = aln.align.globalxx(seq3, seq4)
+for a in alignments_global:
     print(format_alignment(*a))
 
 Predvidevam, da z zgornjimi rezultati nismo zadovoljni. Poizkusimo drugače, določimo kazni za vrzeli:
 
-alignments_local2 = aln.align.localxs(seq3, seq4, -1, 0)
-for a in alignments_local2:
+alignments_local = aln.align.localxs(seq3, seq4, -1, 0)
+for a in alignments_local:
     print(format_alignment(*a))
 
 Naj bo nukleotidnih zaporedij zaenkrat dovolj, gremo na aminokislinska zaporedja!
@@ -211,7 +213,7 @@ print(pairwise2.format_alignment(*alignments[0]))
 
 ## Naloga
 
-Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislisnkega zaporedja (primer zgoraj) sploh v redu. Napnite oči!
+Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislinskega zaporedja (primer zgoraj) sploh v redu. Napnite oči!
 
 Če poravnavi nisva v redu predlagajte izboljšane parametre za poravnavo in sicer:
 * primerno matriko,

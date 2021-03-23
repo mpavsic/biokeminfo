@@ -26,11 +26,11 @@ Obstajajo še drugi programi za točkovne diagrame, seznam najdete [tukaj](https
 ## Naloga 2: Primerjava genomskih zaporedij
 
 Kot omenjeno je primerjava zelo dolgih genomskih zaporedij nekoliko dolgotrajnejša oz. zahteva več procesorske moči. Izvedli jo bomo na namenskem strežniku prek spleta, obstaja pa več takih storitev:
-* [D-GENIES](http://dgenies.toulouse.inra.fr/) - **D**ot plot large **Gen**omes in an **I**nteractive, **E**fficient and **S**imple way
 * [SynMap](https://genomevolution.org/coge/SynMap.pl) - *generates a syntenic dotplot between two organisms and identifies syntenic regions*
+* [D-GENIES](http://dgenies.toulouse.inra.fr/) - **D**ot plot large **Gen**omes in an **I**nteractive, **E**fficient and **S**imple way
 * [YASS](https://bioinfo.cristal.univ-lille.fr/yass/yass.php) - *genomic similarity search tool*
 
-Med zadnjim testom orodje D-GENIS ni delovali, zato bomo uporabili SynMap. Primerjali bomo celotno genomsko zaporedje dveh sevov bakterije *E. coli*, in sicer seva K-12 MG1655 in CFT073. Zaporedji lahko najdete v zbirki Nucleotide na strežniku NCBI, sta pa dostopni tudi direktno v orodju.
+Med zadnjim testom orodje D-GENIES ni delovalo, strežnik z orodjem YASS pa se je odzival počasi - zato bomo uporabili SynMap. Primerjali bomo celotno genomsko zaporedje dveh sevov bakterije *E. coli*, in sicer seva K-12 MG1655 in CFT073. Zaporedji lahko najdete v zbirki Nucleotide na strežniku NCBI, sta pa dostopni tudi direktno v orodju.
 
 Kakšen je rezultat in kaj mislite, zakaj je takšen?
 
