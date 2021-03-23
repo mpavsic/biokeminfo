@@ -6,10 +6,10 @@
 Kateri tip poravnave (globalna ali lokalna) je primernejša za primerjavo aminokislinskih zaporedij iz posameznega para?
 
 * par A: izoobliki 1 in 2 človeške karbonske anhidraze
-* par B: človeška proteina nidogen-2 in IGFBP-1 (Insulin Growth Factor-Like Binding Protein 1)
+* par B: človeška proteina nidogen-2 in IGFBP-1 (*Insulin Growth Factor-Like Binding Protein 1*)
 * par C: človeški fibronektin in podenota beta mišjega receptorja za interleukin 6
-* par D: človeške neutrofilske elastaze in in duodenaze-1 (duodenase-1) iz zelene morske želve (Chelonia mydas)
-* par E: človeški histon H3.1 in inhibitor ID-2 DNA-vezavnega proteina (DNA-binding protein inhibitor ID-2) iz sumatranskega orangutana (Pongo abelii)
+* par D: človeške neutrofilske elastaze in in duodenaze-1 (*duodenase-1*) iz zelene morske želve (*Chelonia mydas*)
+* par E: človeški histon H3.1 in inhibitor ID-2 DNA-vezavnega proteina (*DNA-binding protein inhibitor ID-2*) iz sumatranskega orangutana (*Pongo abelii*)
 
 Namig: zaporedja omenjenih proteinov poiščite v zbirki [UniProt](http://uniprot.org), oglejte si pripise. Proteine lahko analizate tudi preko spletne strani [InterPro](https://www.ebi.ac.uk/interpro/).
 
@@ -24,7 +24,7 @@ Zaporedja vstavite v formatu FASTA vključno z imenom zaporedja, da boste vedeli
 
 Razmislite in odgovorite:
 * Primerjajte rezultat globalne in lokalne poravnave. Zakaj sta takšna, kot sta?
-* Je rezultat poravnave v skladu s pričakovanji? Predsvem se osredotočite na značilnosti poravnane domene, kar lahko razberete iz zbirke Prosite.
+* Je rezultat poravnave v skladu s pričakovanji? Predvsem se osredotočite na značilnosti poravnane domene, kar lahko razberete iz zbirke Prosite.
 * Kako nastavitve parametrov vplivajo na končen rezultat (poravnavo)?
 
 ## Naloga 2
