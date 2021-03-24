@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAJA: Iskanje podobnih zaporedij z BLAST &#8212; Biokemijska informatika</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/blast.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="prev" title="DEMO: Izračun lastne matrike in njena uporaba" href="poravnava2_lastna_matrika.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/blast.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="VAJA: Iskanje podobnih zaporedij z BLAST" />
+<meta property="og:description" content="VAJA: Iskanje podobnih zaporedij z BLAST  Naloga 1: enostavno iskanje  Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim pr" />
+<meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../naslovnica.html">
+   Uvod
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Zbirke
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/pubmed.html">
+   PubMed
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_web.html">
+     VAJA: Iskanje po PubMed
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pubmed_eutilities.html">
+     DEMO: Programski dostop do PubMed
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/nt.html">
+   Nukleotidna zaporedja
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nt-oligo_analiza.html">
+     VAJA: Enostavna analiza nt-zaporedja (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="genbank_web.html">
+     VAJA: Dostop do GenBank v brskalniku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="genbank_eutilities.html">
+     VAJA: Programski dostop do GenBank (Python)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/ak.html">
+   Aminokislinska zaporedja
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="uniprot_web.html">
+     VAJA: Dostop do UniProt v brskalniku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="uniprot_rest.html">
+     VAJA: Programski dostop do UniProt (Python)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Poravnave
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/dotplot.html">
+   Točkovni diagram
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="dotplot_web.html">
+     VAJA: Točkovni diagram
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/poravnave.html">
+   Poravnave
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="matrika_zamenjav.html">
+     VAJA: Izračun matrike zamenjav (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poravnava2_web.html">
+     VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poravnava2_nw_sw.html">
+     VAJA: Poravnava zaporedij NW &amp; SW (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poravnava2_lastna_matrika.html">
+     DEMO: Izračun lastne matrike in njena uporaba
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     VAJA: Iskanje podobnih zaporedij z BLAST
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Priloge
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../priloge/programi.html">
+   Programi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/jupyterlab.html">
+     JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/markdown.html">
+     Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/git.html">
+     Git in GitHub
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../priloge/datoteke.html">
+   Poimenovanje datotek
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../priloge/drobnarije.html">
+   Drobnarije
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Izvedba
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../izvedba/vaje_2020-2021.html">
+   Vaje 2020/2021
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/vaje/blast.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mpavsic/biokeminfo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-1-enostavno-iskanje">
+   Naloga 1: enostavno iskanje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-2-homologi">
+   Naloga 2: homologi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-3-iskanje-s-kratkim-zaporedjem">
+   Naloga 3: iskanje s kratkim zaporedjem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-4-ortologi">
+   Naloga 4: ortologi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-5-virusni-genom">
+   Naloga 5: Virusni genom
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naloga-6-psi-blast">
+   Naloga 6: PSI-BLAST
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="vaja-iskanje-podobnih-zaporedij-z-blast">
+<h1>VAJA: Iskanje podobnih zaporedij z BLAST<a class="headerlink" href="#vaja-iskanje-podobnih-zaporedij-z-blast" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="naloga-1-enostavno-iskanje">
+<h2>Naloga 1: enostavno iskanje<a class="headerlink" href="#naloga-1-enostavno-iskanje" title="Permalink to this headline">¶</a></h2>
+<p>Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim projektom njihovega prejšnjega sodelavca. Čaka nas nehvaležno delo, da uredimo epice z vzorci plazmidov. Ta prejšnji sodelavec je bil namreč precej nemaren, saj je za seboj pustil kup pomanjkljivo označenih vzorcev. Tako smo recimo naleteli na epico, ka kateri piše »pET-22/insert«. Le kaj je ta insert?</p>
+<p>Plazmid smo poslali na sekvenciranje, pri tem pa uporabili univerzalni smerni in protismerni oligonukleotid, ki se vežeta na del zaporedja za T7 promoter (pod katerim so vključki za izražanje v plazmidih sistema pET) oz. T7 terminator. Dobljeni zaporedji smo lahko sestavili v enotno zaporedje, ki je priloženo spodaj.</p>
+<p><strong>Vprašanje</strong>: Za kateri protein kodira vključek v vektorju?</p>
+<p>GGAATTGTGAGCGGATAACAATTCCCCTCTAGAAATAATTTTGTTTAA
+CTTTAAGAAGGAGATATACATATGGGTATGACACGTATGCTGCTGGAG
+TGCTCCCTGAGCGATAAGCTTTGCGTGATCCAGGAGAAACAATATGAG
+GTGATTATCGTGCCGACCTTGTTGGTGACCATCTTTCTTATTCTGCTG
+GGCGTGATTCTGTGGCTGTTTATTCGCGAGCAACGCACGCAACAGCAG
+CGCTCTGGCCCACAGGGAATCGCGCCCGTGCCTCCGCCACGCGATCTC
+TCCTGGGAAGCGGGCCACGGGGGAAACGTAGCCCTCCCCCTGAAAGAA
+ACGTCGGTGGAAAATTTCCTGGGGGCGACTACCCCAGCACTCGCGAAA
+CTGCAGGTTCCGCGCGAACAGTTGTCTGAAGTATTGGAGCAGATTTGC
+AGCGGGTCATGTGGGCCTATTTTTCGTGCGAACATGAACACAGGCGAT
+CCTAGTAAACCCAAATCTGTCATCCTGAAAGCCCTGAAGGAACCGGCC
+GGATTGCATGAAGTTCAGGACTTTCTTGGCCGTATTCAGTTTCACCAG
+TATCTTGGCAAACATAAAAACTTGGTGCAACTGGAAGGCTGCTGCACC
+GAGAAACTGCCGCTGTACATGGTATTGGAAGACGTCGCCCAGGGGGAT
+CTGCTGTCATTCCTGTGGACATGTCGCCGCGACGTGATGACTATGGAT
+GGCCTGCTGTACGATCTGACTGAAAAACAGGTGTACCATATCGGTAAA
+CAGGTGTTACTCGCGCTTGAATTTCTGCAGGAAAAGCACCTGTTCCAT
+GGTGACGTGGCGGCCCGCAATATTTTAATGCAGTCTGATTTGACCGCG
+AAACTGTGCGGGTTGGGTTTAGCGTATGAAGTTTATACGCGCGGCGCT
+ATTTCTTCCACCCAGACAATCCCGCTCAAATGGTTAGCACCCGAGCGC
+CTGCTTCTTCGCCCAGCATCGATCCGCGCGGATGTTTGGTCTTTCGGC
+ATCTTACTGTACGAGATGGTCACTCTTGGCGCGCCACCCTATCCGGAA
+GTCCCGCCCACCAGTATCCTGGAGCATCTGCAGCGCCGCAAAATTATG
+AAGCGCCCAAGTAGCTGCACGCATACAATGTACTCTATCATGAAAAGC
+TGCTGGCGTTGGCGCGAAGCGGACCGCCCGTCCCCGCGCGAACTGCGC
+CTTCGTCTTGAAGCAGCCATTAAAACGGCCGATGATGAGGCCGTCCTG
+CAGGTCCCGGAATTGGTTGTTCCGGAATTATACGCTGCGGTGGCCGGG
+ATTCGCGTGGAAAGCCTGTTTTATAACTACAGTATGCTGTAACTCGAG
+CACCACCACCACCACCACTGAGATCCGGCTGCTAACAAAGCCCGAAAG
+GAAGCTGAGTTGGCTGC</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-2-homologi">
+<h2>Naloga 2: homologi<a class="headerlink" href="#naloga-2-homologi" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (Mesocricetus auratus).</p></li>
+<li><p>S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z blastn (nucleotide blast) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - accession code):</p>
+<ul class="simple">
+<li><p>celotni zbirki nr (non-redundant database - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in</p></li>
+<li><p>po zaporedjih v zbirki Human Genomic plus Transcript (Human G+T); spet, identificirajte človeški homolog.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Vprašanja</strong>:</p>
+<ul class="simple">
+<li><p>Pri vsakem iskanju si oglejte rezultate iskanja (stran posameznega iskanja pustite odprto, da boste lažje primerjali rezultate obeh iskanj med seboj) in identificirajte vrednosti, ki vam jih izračuna BLAST (pomagajte si s slikami s predavanj).</p></li>
+<li><p>Kako veliki sta zbirki, po katerih ste iskali? Kakšno je razmerje velikosti zbirk, po katerih ste iskali, ter kakšno je razmerje vrednosti E za zgoraj omenjena zadetka (človeški homolog)?</p></li>
+<li><p>Če vzamemo 10-lrat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?</p></li>
+<li><p>Katero drugo različico programa blast bi lahko uporabili za namen iskanja homolognega proteina pri človeku, če iščemo z nukleotidnim zaporedjem?</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-3-iskanje-s-kratkim-zaporedjem">
+<h2>Naloga 3: iskanje s kratkim zaporedjem<a class="headerlink" href="#naloga-3-iskanje-s-kratkim-zaporedjem" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja… Uporabite orodje SeqGen (http://www.cbs.dtu.dk/biotools/SeqGen-1.0/)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.</p></li>
+<li><p>S temi tremi zaporedji pojdite v blastn in jih skupaj (v formatu FASTA) prilepite v iskalno polje (iščete lahko namreč z večimi zaporedji hkrati); vse nastavitve pustite na privzetih vrednostih, posebej pazite pa na:</p>
+<ul class="simple">
+<li><p>zbirka: nr,</p></li>
+<li><p>spremenite program: blastn (Somewhat similar sequences)</p></li>
+<li><p>izključite možnost Automatically adjust parameters for short input sequences</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Vprašanja</strong>:</p>
+<ul class="simple">
+<li><p>Ste našli kakšne zadetke? Če da, kolikšna je identičnost ter vrednost poravnave in vrednost E?</p></li>
+<li><p>Kaj bi to pomenilo v praksi? Namig: PCR.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Iskanje ponovite na podoben način, s tem da uporabite program blastp in iščite s tremi naključnimi aminokislinskimi zaporedji. Upoštevajte, da je algoritem za blastn in blastp nekoliko drugačen; medtem, ko je za blastn potrebno točno ujemanje z besedo (to potem služi kot seme za poravnavo) je za blastp potrebno približno ujemanje z besedo, dobljeno z razkosanjem in variiranjem iskalnega zaporedja). Uporabite:</p>
+<ul class="simple">
+<li><p>zbirka: nr,</p></li>
+<li><p>program: blastp</p></li>
+<li><p>izključite možnost Short queries</p></li>
+</ul>
+</li>
+<li><p>Če ne dobite zadetkov, povečajte največjo vrednost E, za katero prikaže rezultate.</p></li>
+</ol>
+<p><strong>Vprašanje</strong>: Kakšni so sedaj rezultati iskanja (v primerjavi z iskanjem z naključnimi nukleotidnimi zaporedji)?</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-4-ortologi">
+<h2>Naloga 4: ortologi<a class="headerlink" href="#naloga-4-ortologi" title="Permalink to this headline">¶</a></h2>
+<p>Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih filamentov v snope in mreže, najdemo pa ga tako v mišičnih kot tudi nemišičnih celicah.</p>
+<ol class="simple">
+<li><p>Koliko genov za α-aktinin ima miš in kje se izražajo? Katereo zbirko ste uporabili in zakaj? Kakšne so druge alternative iskanja?</p></li>
+<li><p>S pomočjo programa BLAST (Basic Local Alignment Search Tool) poiščite človeški ortolog mišjega α-aktinina 1. Kako lahko preverite, da ste dejansko našli ortolog?</p></li>
+<li><p>Poiskusite poiskati homolog mišjega α-aktinina 1 pri etrušanski rovki (slika [rovka]). Katero obliko orodja BLAST je najbolj smiselno uporabiti in zakaj?</p></li>
+<li><p>Kaj pa mišjega α-aktinina 1 pri evropskem bobru? Kakšen način iskanja z BLAST je najprimernejši in zakaj?</p></li>
+</ol>
+<p><img alt="Etruščanska rovka" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Suncus_etruscus.jpg" />
+<em>Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.</em> Vir slike: Wikipedia.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-5-virusni-genom">
+<h2>Naloga 5: Virusni genom<a class="headerlink" href="#naloga-5-virusni-genom" title="Permalink to this headline">¶</a></h2>
+<p>“V roke” dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.</p>
+<p>GTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGC
+TGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTT
+GACAGGACACGAGTAACT</p>
+<p><strong>Vprašanje 1</strong>: Za kateri virus najverjetneje gre in kako je sestavljen genom tega virusa?</p>
+<p>Virusi pogosto sintetizirajo več sicer posamičnih proteinov kot eno polipeptidno verigo (poliprotein), ki ga potem kakšen virusni encim (proteaza) cepi na posamezne odseke, ki predstavljajo funkcionalne proteine. Ima takšno proteazo tudi naš virus? Kateremu odseku genoma ustreza?</p>
+<p><strong>Vprašanje 2</strong>: Če bi načrtovali inhibitor te proteaze z namenom blokiranja procesiranja poliproteina in s tem inhibiranja virusnega replikacijskega cikla, katero znano proteinsko strukturo bi lahko uporabili za analizo in za modeliranje strukture naše proteaze na osnovi homologije?</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="naloga-6-psi-blast">
+<h2>Naloga 6: PSI-BLAST<a class="headerlink" href="#naloga-6-psi-blast" title="Permalink to this headline">¶</a></h2>
+<p>PSI-BLAST je kratica za position-specific interative BLAST, kjer se zadetki iskanja uporabijo za pripravo pozicijsko utežene matrike zamenjav, slednja pa za novo (ponovljeno - iterirano) iskanje. Tako so na ključnih (ohranjenih) mestih bolje (pozitivno) točkovani ak-ostanki, ki so značilni za neko pozicijo, kar omogoča detekcijo bolj oddaljenih homologov, pri katerih je morda dobro ohranjenih zgolj nekaj ak-ostankov, ključnih za npr. katalizo (če govorimo o encimih). Iskanje se lahko potem še večkrat ponovi, pri vsaki iteraciji lahko dodamo nova najdena zaporedja za izdelavo nove pozicijsko-utežene matrike (PSSM).</p>
+<p>Zanimajo nas homologi proteina s spodnjim zaporedjem. Za analizo bomo uporabili zbirko dobro anotiranih zaporedij UniProt/Swissprot, torej ne celotne zbirke nr (non-redundant). Radi bi tudi ugotovili, kateri so ak-ostanki zaporedja, ključni za delovanje tega proteina.</p>
+<p>MKDTDLSTLLSIIRLTELKESKRNALLSLIFQLSVAYFIALVIVSRFVRYVNYITYNNLV
+EFIIVLSLIMLIIVTDIFIKKYISKFSNILLETLNLKINSDNNFRREIINASKNHNDKNK
+LYDLINKTFEKDNIEIKQLGLFIISSVINNFAYIILLSIGFILLNEVYSNLFSSRYTTIS
+IFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTTTIGQDKQL
+YDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELLNVSIENID
+LKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKLAAANENQE
+IDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKVPPLAINIL
+QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLVVLE</p>
+<p>Potek:</p>
+<ol class="simple">
+<li><p>Z iskalnim zaporedjem sprožite iskanje z blastp in zbirko UniProt/Swissprot (sicer bo preveč zadetkov, pa radi bi samo anotirane). Preglejte in pokomentirajte rezultate. Kaj je funkcija tega proteina, katerega zaporedje imate podano zgoraj?</p></li>
+<li><p>Sedaj iskanje ponovite, ista zbirka, kot algoritem pa izberite psi-blast. Dobite nekaj zadetkov. Iskanje ponovite enkrat ali večkrat z dodajanjem novih zaporedij.</p></li>
+<li><p>Naredite poravnavo več zaporedij (iz BLAST, z orodjem COBALT) in prenesite poravnavo.</p></li>
+<li><p>Naredite sequence logo in ga analizirajte, tudi v luči v UniProt/Swissprot anotiranih zadetkov.</p></li>
+<li><p>Kako je pa s strukturami homolognih proteinov?</p></li>
+</ol>
+<p>Relevantne povezave:</p>
+<ul class="simple">
+<li><p>WebLogo:</p>
+<ul>
+<li><p>verzija 2: <a class="reference external" href="https://weblogo.berkeley.edu">https://weblogo.berkeley.edu</a></p></li>
+<li><p>verzija 3: <a class="reference external" href="http://threeplusone.com/weblogo/">http://threeplusone.com/weblogo/</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="poravnava2_lastna_matrika.html" title="previous page">DEMO: Izračun lastne matrike in njena uporaba</a>
+    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Miha Pavšič<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
