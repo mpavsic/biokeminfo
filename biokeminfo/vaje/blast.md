@@ -7,7 +7,7 @@ Plazmid smo poslali na sekvenciranje, pri tem pa uporabili univerzalni smerni in
 
 **Vprašanje**: Za kateri protein kodira vključek v vektorju?
 
-
+```
 GGAATTGTGAGCGGATAACAATTCCCCTCTAGAAATAATTTTGTTTAA
 CTTTAAGAAGGAGATATACATATGGGTATGACACGTATGCTGCTGGAG
 TGCTCCCTGAGCGATAAGCTTTGCGTGATCCAGGAGAAACAATATGAG
@@ -38,12 +38,13 @@ CAGGTCCCGGAATTGGTTGTTCCGGAATTATACGCTGCGGTGGCCGGG
 ATTCGCGTGGAAAGCCTGTTTTATAACTACAGTATGCTGTAACTCGAG
 CACCACCACCACCACCACTGAGATCCGGCTGCTAACAAAGCCCGAAAG
 GAAGCTGAGTTGGCTGC
+```
 
 ---
 ## Naloga 2: homologi
 
 
-1. V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (Mesocricetus auratus).
+1. V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (*Mesocricetus auratus*).
 2. S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z blastn (nucleotide blast) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - accession code):
    * celotni zbirki nr (non-redundant database - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in
    * po zaporedjih v zbirki Human Genomic plus Transcript (Human G+T); spet, identificirajte človeški homolog.
@@ -58,7 +59,7 @@ GAAGCTGAGTTGGCTGC
 ## Naloga 3: iskanje s kratkim zaporedjem
 
 
-1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja... Uporabite orodje SeqGen (http://www.cbs.dtu.dk/biotools/SeqGen-1.0/)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
+1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja... Uporabite orodje [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
 2. S temi tremi zaporedji pojdite v blastn in jih skupaj (v formatu FASTA) prilepite v iskalno polje (iščete lahko namreč z večimi zaporedji hkrati); vse nastavitve pustite na privzetih vrednostih, posebej pazite pa na:
    * zbirka: nr,
    * spremenite program: blastn (Somewhat similar sequences)
@@ -84,19 +85,21 @@ Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih 
 
 1. Koliko genov za α-aktinin ima miš in kje se izražajo? Katereo zbirko ste uporabili in zakaj? Kakšne so druge alternative iskanja?
 2. S pomočjo programa BLAST (Basic Local Alignment Search Tool) poiščite človeški ortolog mišjega α-aktinina 1. Kako lahko preverite, da ste dejansko našli ortolog?
-3. Poiskusite poiskati homolog mišjega α-aktinina 1 pri etrušanski rovki (slika [rovka]). Katero obliko orodja BLAST je najbolj smiselno uporabiti in zakaj?
+3. Poiskusite poiskati homolog mišjega α-aktinina 1 pri etrušanski rovki. Katero obliko orodja BLAST je najbolj smiselno uporabiti in zakaj?
 4. Kaj pa mišjega α-aktinina 1 pri evropskem bobru? Kakšen način iskanja z BLAST je najprimernejši in zakaj?
 
 ![Etruščanska rovka](https://upload.wikimedia.org/wikipedia/commons/f/ff/Suncus_etruscus.jpg)
-*Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.* Vir slike: Wikipedia.
+*Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.* Vir slike: [Wikipedia](https://en.wikipedia.org/wiki/Etruscan_shrew).
 
 ---
 ## Naloga 5: Virusni genom
 "V roke" dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.
 
+```
 GTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGC
 TGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTT
 GACAGGACACGAGTAACT
+```
 
 **Vprašanje 1**: Za kateri virus najverjetneje gre in kako je sestavljen genom tega virusa?
 
@@ -110,6 +113,7 @@ PSI-BLAST je kratica za position-specific interative BLAST, kjer se zadetki iska
 
 Zanimajo nas homologi proteina s spodnjim zaporedjem. Za analizo bomo uporabili zbirko dobro anotiranih zaporedij UniProt/Swissprot, torej ne celotne zbirke nr (non-redundant). Radi bi tudi ugotovili, kateri so ak-ostanki zaporedja, ključni za delovanje tega proteina.
 
+```
 MKDTDLSTLLSIIRLTELKESKRNALLSLIFQLSVAYFIALVIVSRFVRYVNYITYNNLV
 EFIIVLSLIMLIIVTDIFIKKYISKFSNILLETLNLKINSDNNFRREIINASKNHNDKNK
 LYDLINKTFEKDNIEIKQLGLFIISSVINNFAYIILLSIGFILLNEVYSNLFSSRYTTIS
@@ -118,8 +122,7 @@ YDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELLNVSIENID
 LKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKLAAANENQE
 IDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKVPPLAINIL
 QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLVVLE
-
- 
+```
 
 Potek:
 1. Z iskalnim zaporedjem sprožite iskanje z blastp in zbirko UniProt/Swissprot (sicer bo preveč zadetkov, pa radi bi samo anotirane). Preglejte in pokomentirajte rezultate. Kaj je funkcija tega proteina, katerega zaporedje imate podano zgoraj?
