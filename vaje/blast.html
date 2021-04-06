@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="next" title="VAJA: Poravnave več zaporedij" href="msa.html" />
     <link rel="prev" title="DEMO: Izračun lastne matrike in njena uporaba" href="poravnava2_lastna_matrika.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -67,7 +67,7 @@
 <meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/blast.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="VAJA: Iskanje podobnih zaporedij z BLAST" />
-<meta property="og:description" content="VAJA: Iskanje podobnih zaporedij z BLAST  Naloga 1: enostavno iskanje  Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim pr" />
+<meta property="og:description" content="VAJA: Iskanje podobnih zaporedij z BLAST  Pri vaji bomo uporabljali spletno različico programa BLAST (Basic Local Alignment Search Tool), ki teče na strežniku N" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -220,6 +220,11 @@
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      VAJA: Iskanje podobnih zaporedij z BLAST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="msa.html">
+     VAJA: Poravnave več zaporedij
     </a>
    </li>
   </ul>
@@ -385,7 +390,7 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naloga-5-virusni-genom">
-   Naloga 5: Virusni genom
+   Naloga 5: virusni genom
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -406,6 +411,9 @@
                 
   <div class="section" id="vaja-iskanje-podobnih-zaporedij-z-blast">
 <h1>VAJA: Iskanje podobnih zaporedij z BLAST<a class="headerlink" href="#vaja-iskanje-podobnih-zaporedij-z-blast" title="Permalink to this headline">¶</a></h1>
+<p>Pri vaji bomo uporabljali spletno različico programa <strong>BLAST</strong> (Basic Local Alignment Search Tool), ki teče na strežniku NCBI na tem naslovu: <a class="reference external" href="https://blast.ncbi.nlm.nih.gov">https://blast.ncbi.nlm.nih.gov</a>.</p>
+<p>Do tega strežnika lahko dostopamo tudi prek API (npr. iz Pythona), kjer uporabimo REST, kar smo že spoznali; tak način dostop je opisan <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=DeveloperInfo">tukaj</a>. BLAST lahko poganjamo tudi lokalno, t. j. na lastnem računalniku, pri čemer pa seveda potrebujemo tudi neko zbirko zaporedij, po kateri bomo iskanje izvajali.</p>
+<hr class="docutils" />
 <div class="section" id="naloga-1-enostavno-iskanje">
 <h2>Naloga 1: enostavno iskanje<a class="headerlink" href="#naloga-1-enostavno-iskanje" title="Permalink to this headline">¶</a></h2>
 <p>Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim projektom njihovega prejšnjega sodelavca. Čaka nas nehvaležno delo, da uredimo epice z vzorci plazmidov. Ta prejšnji sodelavec je bil namreč precej nemaren, saj je za seboj pustil kup pomanjkljivo označenih vzorcev. Tako smo recimo naleteli na epico, ka kateri piše »pET-22/insert«. Le kaj je ta insert?</p>
@@ -449,9 +457,9 @@
 <h2>Naloga 2: homologi<a class="headerlink" href="#naloga-2-homologi" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (<em>Mesocricetus auratus</em>).</p></li>
-<li><p>S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z blastn (nucleotide blast) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - accession code):</p>
+<li><p>S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z <code class="docutils literal notranslate"><span class="pre">blastn</span></code> (<em>nucleotide blast</em>) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - <em>accession code</em>):</p>
 <ul class="simple">
-<li><p>celotni zbirki nr (non-redundant database - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in</p></li>
+<li><p>celotni zbirki <code class="docutils literal notranslate"><span class="pre">nr</span></code> (<em>non-redundant database</em> - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in</p></li>
 <li><p>po zaporedjih v zbirki Human Genomic plus Transcript (Human G+T); spet, identificirajte človeški homolog.</p></li>
 </ul>
 </li>
@@ -460,7 +468,7 @@
 <ul class="simple">
 <li><p>Pri vsakem iskanju si oglejte rezultate iskanja (stran posameznega iskanja pustite odprto, da boste lažje primerjali rezultate obeh iskanj med seboj) in identificirajte vrednosti, ki vam jih izračuna BLAST (pomagajte si s slikami s predavanj).</p></li>
 <li><p>Kako veliki sta zbirki, po katerih ste iskali? Kakšno je razmerje velikosti zbirk, po katerih ste iskali, ter kakšno je razmerje vrednosti E za zgoraj omenjena zadetka (človeški homolog)?</p></li>
-<li><p>Če vzamemo 10-lrat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?</p></li>
+<li><p>Če vzamemo 10-krat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?</p></li>
 <li><p>Katero drugo različico programa blast bi lahko uporabili za namen iskanja homolognega proteina pri človeku, če iščemo z nukleotidnim zaporedjem?</p></li>
 </ul>
 </div>
@@ -509,7 +517,7 @@
 </div>
 <hr class="docutils" />
 <div class="section" id="naloga-5-virusni-genom">
-<h2>Naloga 5: Virusni genom<a class="headerlink" href="#naloga-5-virusni-genom" title="Permalink to this headline">¶</a></h2>
+<h2>Naloga 5: virusni genom<a class="headerlink" href="#naloga-5-virusni-genom" title="Permalink to this headline">¶</a></h2>
 <p>“V roke” dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGC</span>
 <span class="n">TGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTT</span>
@@ -584,7 +592,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="poravnava2_lastna_matrika.html" title="previous page">DEMO: Izračun lastne matrike in njena uporaba</a>
-    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
+    <a class='right-next' id="next-link" href="msa.html" title="next page">VAJA: Poravnave več zaporedij</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
