@@ -1,5 +1,10 @@
 # VAJA: Iskanje podobnih zaporedij z BLAST
 
+Pri vaji bomo uporabljali spletno različico programa **BLAST** (Basic Local Alignment Search Tool), ki teče na strežniku NCBI na tem naslovu: [https://blast.ncbi.nlm.nih.gov](https://blast.ncbi.nlm.nih.gov).
+
+Do tega strežnika lahko dostopamo tudi prek API (npr. iz Pythona), kjer uporabimo REST, kar smo že spoznali; tak način dostop je opisan [tukaj](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=DeveloperInfo). BLAST lahko poganjamo tudi lokalno, t. j. na lastnem računalniku, pri čemer pa seveda potrebujemo tudi neko zbirko zaporedij, po kateri bomo iskanje izvajali.
+
+---
 ## Naloga 1: enostavno iskanje
 Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim projektom njihovega prejšnjega sodelavca. Čaka nas nehvaležno delo, da uredimo epice z vzorci plazmidov. Ta prejšnji sodelavec je bil namreč precej nemaren, saj je za seboj pustil kup pomanjkljivo označenih vzorcev. Tako smo recimo naleteli na epico, ka kateri piše »pET-22/insert«. Le kaj je ta insert?
 
@@ -45,14 +50,14 @@ GAAGCTGAGTTGGCTGC
 
 
 1. V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (*Mesocricetus auratus*).
-2. S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z blastn (nucleotide blast) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - accession code):
-   * celotni zbirki nr (non-redundant database - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in
+2. S tem zapisom (uporabite celotno zaporedje, ne samo kodirajočo regijo) iščite z `blastn` (*nucleotide blast*) po (za iskanje prilepite zaporedje v FASTA formatu, lahko pa tudi brez naslovne vrstice, ali pa uporabite kar kodo za dostop - *accession code*):
+   * celotni zbirki `nr` (*non-redundant database* - oglejte si, iz česa je sestavljena!) in med zadetki identificirajte najbolj smiselen zadetek, ki predstavlja človeški homolog, in
    * po zaporedjih v zbirki Human Genomic plus Transcript (Human G+T); spet, identificirajte človeški homolog.
 
 **Vprašanja**:
 * Pri vsakem iskanju si oglejte rezultate iskanja (stran posameznega iskanja pustite odprto, da boste lažje primerjali rezultate obeh iskanj med seboj) in identificirajte vrednosti, ki vam jih izračuna BLAST (pomagajte si s slikami s predavanj).
 * Kako veliki sta zbirki, po katerih ste iskali? Kakšno je razmerje velikosti zbirk, po katerih ste iskali, ter kakšno je razmerje vrednosti E za zgoraj omenjena zadetka (človeški homolog)?
-* Če vzamemo 10-lrat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?
+* Če vzamemo 10-krat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?
 * Katero drugo različico programa blast bi lahko uporabili za namen iskanja homolognega proteina pri človeku, če iščemo z nukleotidnim zaporedjem?
 
 ---
@@ -92,7 +97,7 @@ Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih 
 *Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.* Vir slike: [Wikipedia](https://en.wikipedia.org/wiki/Etruscan_shrew).
 
 ---
-## Naloga 5: Virusni genom
+## Naloga 5: virusni genom
 "V roke" dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.
 
 ```

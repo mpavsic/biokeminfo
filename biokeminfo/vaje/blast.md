@@ -97,7 +97,7 @@ Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih 
 *Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.* Vir slike: [Wikipedia](https://en.wikipedia.org/wiki/Etruscan_shrew).
 
 ---
-## Naloga 5: Virusni genom
+## Naloga 5: virusni genom
 "V roke" dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.
 
 ```

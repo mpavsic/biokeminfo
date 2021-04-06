@@ -30,6 +30,7 @@
       - file: vaje/poravnava2_nw_sw
       - file: vaje/poravnava2_lastna_matrika
       - file: vaje/blast
+      - file: vaje/msa
 
 - part: Priloge
   chapters:
