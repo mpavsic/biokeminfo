@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Markdown &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -105,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -174,7 +175,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -234,7 +235,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -280,7 +302,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -455,26 +477,26 @@
         
               <div>
                 
-  <div class="section" id="markdown">
+  <section id="markdown">
 <h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="kaj-je-markdown">
+<section id="kaj-je-markdown">
 <h2>Kaj je Markdown?<a class="headerlink" href="#kaj-je-markdown" title="Permalink to this headline">¶</a></h2>
 <p><strong>Markdown</strong> je enostaven označevalni jezik (<em>markup language</em>) za oblikovanje golega besedila, ki nam omogoča, da vanj vnesemo določene “obogatitve” (npr. <strong>odebeljen</strong> ali <em>poudarjen</em> tekst). Pogosto se uporablja na spletnih forumih in datotekah “premeri me”. Primer tovrstne datoteke je <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, ki je del repozitorija, iz katerega je ustvarjena ta spletna stran. Tudi datoteka HTML, ki jo trenutno berete, je ustvarjena iz datoteke <em>markdown</em>. Ravno ta pretvorba, torej iz golega besedila v (X)HTML, je bila mišljena kot primarna uporaba <em>markdown</em>-a. Danes je na voljo kopica programov, ki omogočajo pretvorbo tudi v druge formate in pa dodatne funkcionalnosti.</p>
-<div class="section" id="kratka-zgodovina">
+<section id="kratka-zgodovina">
 <h3>Kratka zgodovina<a class="headerlink" href="#kratka-zgodovina" title="Permalink to this headline">¶</a></h3>
 <p><em>Markdown</em> je leta 2004 izumil John Gruber v sodelovanju z Aaronom Swartzem; nekaj osnovnih informacij o zgodovini, razvoju in sintaksi je na <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Wikipedii</a>. Avtor vzdržuje tudi <a class="reference external" href="https://daringfireball.net/projects/markdown/">lastno stran</a>, kjer opisuje obe komponenti jezika: <strong>sintakso</strong> (o njej nekoliko več spodaj) in sam <strong>program</strong> <code class="docutils literal notranslate"><span class="pre">markdown</span></code> (napisan v Perlu), ki poskrbi za pretvorbo v format HTML. Njuna specifikacija sintakse ni bila nedvoumna, kar je vodilo v razvoj številnih implementacij in posledično zmešnjave. Kasneje je bila predlagana standardna nedvoumna specifikacija sintakse, imenovana <a class="reference external" href="https://commonmark.org"><strong>CommonMark</strong></a>.</p>
-</div>
-<div class="section" id="splosne-znacilnosti">
+</section>
+<section id="splosne-znacilnosti">
 <h3>Splošne značilnosti<a class="headerlink" href="#splosne-znacilnosti" title="Permalink to this headline">¶</a></h3>
 <p>Jezik je precej lahek v smislu, da je za opis izgleda besedila potrebno malo dodatnih znakov, datoteka z besedilom v tem formatu pa je enostavno berljiva tudi v primeru, ko ni pretvorjena v HTML (na primer, <em>poudarjeno</em> bomo v nepretvorjenem dokumentu še vedno zaznali, le nekoliko drugače bo izgledalo: *poudarjeno*). Datoteke tipa <em>markdown</em> so sicer čisto običajne tekstovne datoteke - odpremo in urejujemo jih lahko kar v Notepadu (Windows) ali TextEditorju (macOS), vsekakor je pa dobrodošlo, da jih vidimo tudi oblikovane. Za slednje lahko uporabimo kar JupyterLab ali pa katerega od številnih prevajalnikov.</p>
 <p>Jezik Markdown je lahek tudi v smislu, da se ga je enostavno naučiti - več o tem v nadaljevanju, kjer so predstavljeni najpogostejši primeri uporabe.</p>
-</div>
-</div>
-<div class="section" id="sintaksa">
+</section>
+</section>
+<section id="sintaksa">
 <h2>Sintaksa<a class="headerlink" href="#sintaksa" title="Permalink to this headline">¶</a></h2>
 <p>Sintaksa je zraven programa, ki golo besedilo pretvori v format HTML, ena od osnovnih komponent jezika. Opisuje, na kak način dosežemo določeno oblikovanje. Obstaja več variant sintakse, zadnja verzija <strong>CommonMark Markdown</strong> pa je dosegljiva <a class="reference external" href="https://spec.commonmark.org/current/">tukaj</a>. Vse to deluje (tudi) v zvezkih JupyterLab.</p>
 <p>V nadaljevanju je predstavljenih nekaj najpogostejših primerov osnovne sintakse. Pri vsakem primeru je prikazano oblikovano besedilo, spremlja pa ga surova oblika. Do slednje pridemo tako, da uporabimo t.u. <strong>ubežne znake</strong>, ki omogočajo, da znaki za oblikovanje niso interpretirani kot taki. Na primer, kako dosežemo, da <code class="docutils literal notranslate"><span class="pre">*poudarjeno*</span></code> ni prikazano kot <em>poudarjeno</em>? To je zelo enostavno - pred vsak znak, ki določa oblikovanje, damo levo poševnico (<code class="docutils literal notranslate"><span class="pre">\</span></code> ali <em>backslash</em>). Daljše odseke, za katere ne želimo, da so pretvorjeni v HTML, lahko opišemo kot kodo (tak odsek besedila zaobjamemo z ```, ki jih postavimo pred začetek in za koncem takega odseka).</p>
-<div class="section" id="razdelki">
+<section id="razdelki">
 <h3>Razdelki<a class="headerlink" href="#razdelki" title="Permalink to this headline">¶</a></h3>
 <p>Besedilo lahko razdelimo na razdelke tako, da pred naslov razdelka damo enega ali več znakov <code class="docutils literal notranslate"><span class="pre">#</span></code> (deluje do 6. nivoja):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Naslov</span>
@@ -482,8 +504,8 @@
 <span class="c1">### Podpodnaslov</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="seznami">
+</section>
+<section id="seznami">
 <h3>Seznami<a class="headerlink" href="#seznami" title="Permalink to this headline">¶</a></h3>
 <p>V vsako vrstico, ki je del seznama, na začetek dodamo <em>zvezdico</em> (<code class="docutils literal notranslate"><span class="pre">*</span></code>). Tako bo seznam zapisan kot …</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">prva</span> <span class="n">alineja</span>
@@ -521,8 +543,8 @@
    <span class="o">*</span> <span class="n">še</span> <span class="n">ena</span> <span class="n">podtočka</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="poudarjeno-odebeljeno">
+</section>
+<section id="poudarjeno-odebeljeno">
 <h3>Poudarjeno, odebeljeno<a class="headerlink" href="#poudarjeno-odebeljeno" title="Permalink to this headline">¶</a></h3>
 <p>Oblikovanje besedila kot <em>podarjeno</em>, <strong>odebeljeno</strong> ali <em><strong>poudarjeno in odebeljeno hkrati</strong></em> je zelo enostavno!</p>
 <p>To bi v Markdown zapisali na naslednji način:</p>
@@ -531,23 +553,23 @@
 </pre></div>
 </div>
 <p>Namesto znaka <code class="docutils literal notranslate"><span class="pre">*</span></code> lahko uporabimo <code class="docutils literal notranslate"><span class="pre">_</span></code>, končni rezultat je v obeh primerih rezultat je enak. Torej, <code class="docutils literal notranslate"><span class="pre">_kloniranje_</span></code> se izpiše kot <em>kloniranje</em>. Priporočljivo je, da se odločimo za eno od oblik in jo konsistentno uporabljamo.</p>
-</div>
-<div class="section" id="povezave">
+</section>
+<section id="povezave">
 <h3>Povezave<a class="headerlink" href="#povezave" title="Permalink to this headline">¶</a></h3>
 <p>Vstavljanje povezav je enostavno - če želimo npr. povezavo z imenom UL FKKT, ki kaže na spletno stran fakultete, torej <a class="reference external" href="http://www.fkkt.uni-lj.si">UL FKKT</a>, napištemo to takole:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">UL</span> <span class="n">FKKT</span><span class="p">](</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">fkkt</span><span class="o">.</span><span class="n">uni</span><span class="o">-</span><span class="n">lj</span><span class="o">.</span><span class="n">si</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="slike">
+</section>
+<section id="slike">
 <h3>Slike<a class="headerlink" href="#slike" title="Permalink to this headline">¶</a></h3>
 <p>Slike enostavno prikažemo tako:
 <code class="docutils literal notranslate"><span class="pre">![logo](https://mpavsic.github.io/biokeminfo/_static/logo.png</span></code></p>
 <p>Zgornja vrstica nam da:</p>
 <p><img alt="logo" src="https://mpavsic.github.io/biokeminfo/_static/logo.png" /></p>
 <p>Beseda <code class="docutils literal notranslate"><span class="pre">logo</span></code> je alternativno besedilo (<em>alt text</em>), ki se prikaže takrat, ko same slike ni moč prikazati.</p>
-</div>
-<div class="section" id="matematicne-formule">
+</section>
+<section id="matematicne-formule">
 <h3>Matematične formule<a class="headerlink" href="#matematicne-formule" title="Permalink to this headline">¶</a></h3>
 <p>Sintaksa za matematične formule je enaka kot pri LaTeX. Samo formulo objamemo z <code class="docutils literal notranslate"><span class="pre">$$</span></code> (torej pred in za formulo). Na primer, zapis</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">5</span><span class="o">+</span>\<span class="n">cdots</span><span class="o">+</span><span class="n">n</span><span class="p">)(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">5</span><span class="o">+</span>\<span class="n">cdots</span><span class="o">+</span><span class="n">n</span><span class="p">)</span><span class="o">=</span>\<span class="n">frac</span><span class="p">{(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span><span class="n">n</span><span class="o">^</span><span class="n">s</span><span class="p">}{</span><span class="mi">4</span><span class="p">}</span>
@@ -574,8 +596,8 @@ $$
 = \frac{\pi^2}{6}
 \]</div>
 <p>Formule lahko izpisujemo tudi kar znotraj besedila oz. v isti vrstici (<em>inline</em>), kar dosežemo z objemom formule v enojen <code class="docutils literal notranslate"><span class="pre">$</span></code>. Tako lahko do izpisa <span class="math notranslate nohighlight">\(y=\delta sin(x)\)</span> pridemo z <code class="docutils literal notranslate"><span class="pre">$y=\delta</span> <span class="pre">sin(x)$</span></code>.</p>
-</div>
-<div class="section" id="tabele">
+</section>
+<section id="tabele">
 <h3>Tabele<a class="headerlink" href="#tabele" title="Permalink to this headline">¶</a></h3>
 <p>Tabele pravzaprav niso del osnovne sintakse, a jih tukaj vseeno omenjamo. Pri tabelah prva vrstica vsebuje glavo (<em>header</em>), naslednja določa poravnavo (določimo z dvopičjem), sledi pa vsebina. Enostaven primer z razlago:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>| Tabele        | so             | simpl! |
@@ -610,8 +632,8 @@ $$
 | stolpec 2 pa | sredinsko | 20 |
 </pre></div>
 </div>
-</div>
-<div class="section" id="citati">
+</section>
+<section id="citati">
 <h3>Citati<a class="headerlink" href="#citati" title="Permalink to this headline">¶</a></h3>
 <p>Citate (<em>quotes</em>) zapišemo tako, da vrstico začnemo z <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. Zapis</p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;To</span> <span class="pre">je</span> <span class="pre">citat!</span></code></p>
@@ -619,13 +641,13 @@ $$
 <blockquote>
 <div><p>To je citat!</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="sintaksa-v-tej-knjigi">
+</section>
+</section>
+<section id="sintaksa-v-tej-knjigi">
 <h2>Sintaksa v tej knjigi<a class="headerlink" href="#sintaksa-v-tej-knjigi" title="Permalink to this headline">¶</a></h2>
 <p>Datoteke v tej knjigi, tudi besedilni odseki zvezkov JupyterLab, so napisani v razširjeni obliki <strong>CommmonMark Markdown</strong>, prav tako pa je uporabljena sintaksa iz bogatega <a class="reference external" href="https://myst-parser.readthedocs.io"><strong>MyST Markdown</strong></a>, ki omogoča bombončke kot so stranski oblački z beležkami ipd.</p>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h2>Povezave<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://spec.commonmark.org/current/">sintaksa CommonMark Markdown</a> (uradna stran)</p></li>
@@ -633,8 +655,8 @@ $$
 <li><p><a class="reference external" href="https://www.markdownguide.org">Markdown Guide</a> je pregledna stran z navodili za uporabo, vključno s <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/"><em>plonkcem</em> (<em>cheatsheet</em>)</a></p></li>
 <li><p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> (eden od osebnih repozitorijev na GitHub)</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

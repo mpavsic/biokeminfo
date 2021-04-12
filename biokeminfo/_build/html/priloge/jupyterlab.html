@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>JupyterLab &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -421,19 +443,19 @@
         
               <div>
                 
-  <div class="section" id="jupyterlab">
+  <section id="jupyterlab">
 <h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Permalink to this headline">¶</a></h1>
 <p>Pri programiranju bomo uporabljali vmesnik <a class="reference external" href="https://jupyter.org">JupyterLab</a>, ki omogoča vizualno lépo sestavljanje kode in spremljajočega besedila. Osnovan je na sistemu <a class="reference external" href="https://en.wikipedia.org/wiki/IPython">IPython</a>. Koda in komentarji so zapakirani v eno datoteko, imenovano <strong>zvezek</strong> (<em>notebook</em>), ki vsebuje tudi izhod kode (<em>output</em>). Zvezek je sicer tekstovna datoteka s končnico ipynb (<strong>IPy</strong>thon <strong>N</strong>ote<strong>b</strong>ook), za pravilen prikaz in uporabo (t.j. poganjanje kode) pa ga moramo odpreti v ustreznem programu - lokalno nainstaliran JupyterLab (navodila so na dnu strani) ali z uporabo katere od spletnih storitev, npr. <a class="reference external" href="http://mybinder.org">Binder</a>.</p>
 <blockquote>
 <div><p>Za programiranje lahko seveda uporabljate tudi okolje Python IDLE (ali pa kaj tretjega) - v tem rpimeru si zvezke JupyterLab v formatu hmtl ogledate na tej spletni strani, dele kode pa skopirajte v vaš urejevalnik kode.</p>
 </div></blockquote>
-<div class="section" id="zgradba-zvezka">
+<section id="zgradba-zvezka">
 <h2>Zgradba zvezka<a class="headerlink" href="#zgradba-zvezka" title="Permalink to this headline">¶</a></h2>
 <p>Vsak zvezek je sestavljen in enega ali večih segmentov, imenovanih <strong>celice</strong>, ki si sledijo v določenem zaporedju. Celice lahko vsebujejo <strong>kodo</strong> (tip celice <em>Code</em>) ali <strong>spremljajoče besedilo</strong>, oblikovano z <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><strong>Markdown</strong></span></a> (tip celice <em>Markdown</em>). Določeno celico v že pripravljeni datoteki začnemo urejati tako, da eno- (za kodo) ali dvo-kliknemo nanjo (za <em>Markdown</em>). Nastavljen tip celice je povezan z barvanjem kode in pa seveda z interpretacijo tega, kar je v njej napisano - ali naj se prikaže in oblikuje kot besedilo ali pa se naj izvede kot koda. Celice dodajamo preko bližnjic na tipkovnici ali preko menija.</p>
 <p>Celice s spremljajočim besedilom lahko obravnavamo kot komentarje (kodo lahko še vedno komentirate direktno v celici, kjer se nahaja, z uporabo znaka #), ki delijo kodo na več ločenih, a medsebojno vseeno lahko povezanih kosov. Če bi vsebino celic s kodo prenesli v pravilnem vrstnem redu v tekstno datoteko <code class="docutils literal notranslate"><span class="pre">.py</span></code> in jo zagnali v Pythonu, bi zadeva delovala popolnoma enako.</p>
 <p>Ko v neko celico vnesemo vsebino ali jo spremenimo, moramo (ponovno) zagnati program, ki interpretira njeno vsebino in jo izvede (koda) oz. prikaže oblikovano (besedilo). In kako to naredimo?</p>
-</div>
-<div class="section" id="bliznjice">
+</section>
+<section id="bliznjice">
 <h2>Bližnjice<a class="headerlink" href="#bliznjice" title="Permalink to this headline">¶</a></h2>
 <p>Enostavno! Ko smo v določeni celici lahko iz menija zgoraj izberemo ustrezno možnost, lahko pa pritisnemo tipko <em>Esc</em> (<em>escape</em>) na tipkovnici, na ta način skočimo iz načina vpisovanja, ter s pritiskom na tipko za črko <code class="docutils literal notranslate"><span class="pre">m</span></code> ali <code class="docutils literal notranslate"><span class="pre">y</span></code> skočimo na način <em>Markdown</em> oz. <em>Code</em>. Končno oblikovanje oz. zagon kode dosežemo z izbiro iz menija ali uporabo bližnjic na tipkovnici, ki jih je malo morje. Nekaj jih je navedenih tukaj:</p>
 <ul class="simple">
@@ -442,8 +464,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code>: zaženi trenutno celico in vstavi novo spodaj</p></li>
 </ul>
 <p>Ostale lahko najdete v pomoči za JupyterLab.</p>
-</div>
-<div class="section" id="primer">
+</section>
+<section id="primer">
 <h2>Primer<a class="headerlink" href="#primer" title="Permalink to this headline">¶</a></h2>
 <p>Pa poglejmo, kako naredimo nekaj zelo enostavnega! Spodaj je ena celica s kodo. Lahko jo poljubno spreminjate in s kombinacijo tipk <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code> pogledate, kaj je rezultat - slednji se izpiše pod celico s kodo.</p>
 <div class="cell docutils container">
@@ -477,14 +499,14 @@
 </div>
 <p>Za test lahko pobrišemo vse izhode in sicer v meniju izberemo <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">&gt;</span> <span class="pre">Restart</span> <span class="pre">Kernel</span> <span class="pre">and</span> <span class="pre">Clear</span> <span class="pre">All</span> <span class="pre">Outputs</span></code>. Nato zaženemo samo drugo celico s kodo. Kaj se zgodi? Zaženimo zdaj prvo celico s kodo, nato pa ponovno drugo. Torej? :)</p>
 <p>Mislim, da je zdaj jasno, kako se zadevi streže. V nadaljevanju je še na kratko opisano, kako uporabljamo <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><em>Markdown</em></span></a>, da si lahko delamo lepe zapiske.</p>
-</div>
-<div class="section" id="povezave">
+</section>
+<section id="povezave">
 <h2>Povezave<a class="headerlink" href="#povezave" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jupyterlab.readthedocs.io">JupyterLab</a> (dokumentacija)</p></li>
 </ul>
-</div>
-<div class="section" id="namestitev">
+</section>
+<section id="namestitev">
 <h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">¶</a></h2>
 <p>JupyterLab lahko najenostavneje namestimo:</p>
 <ul class="simple">
@@ -494,8 +516,8 @@
 <p>Oba načina sta nazorno opisana na <a class="reference external" href="https://jupyter.org/install">uradni spletni strani</a>.</p>
 <p>Zaslonska slika programa Anaconda (Navigator), kjer je možno sprožiti instalacijo JupyterLaba:
 <img alt="jupyterlab_namestitev-anaconda" src="../_images/jupyterlab_namestitev-anaconda.png" /></p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

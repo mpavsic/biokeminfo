@@ -32,6 +32,12 @@
       - file: vaje/blast
       - file: vaje/msa
 
+- part: Grafi
+  chapters:
+  - file: osnove/grafi
+    sections:
+      - file: vaje/grafi
+
 - part: Priloge
   chapters:
   - file: priloge/programi

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Poravnava zaporedij NW &amp; SW (Python) &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -105,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -174,7 +175,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -234,7 +235,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -280,7 +302,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -435,14 +457,14 @@
         
               <div>
                 
-  <div class="section" id="vaja-poravnava-zaporedij-nw-sw-python">
+  <section id="vaja-poravnava-zaporedij-nw-sw-python">
 <h1>VAJA: Poravnava zaporedij NW &amp; SW (Python)<a class="headerlink" href="#vaja-poravnava-zaporedij-nw-sw-python" title="Permalink to this headline">¶</a></h1>
 <p>V Pythonu lahko z uporabo paketa <a class="reference external" href="https://biopython.org">BioPython</a> na enostaven način delamo poravnave aminokislinskih zaporedij. Uporaba algoritmov, ki dajo matematično optimalno poravnavo (npr. <strong>Needleman-Wunsch</strong> in <strong>Smith-Waterman</strong>), je v primeru manjšega obsega vhodnih podatkov popolnoma normalno izvedljiva na domačem računalniku. V primeru daljšega računanja se lahko uporabi (“pokliče” iz Pythona) orodja na npr. strežniku EMBOSS (opis API-ja za to je tukaj je v <a class="reference external" href="http://europepmc.org/article/MED/30976793">članku</a>).</p>
 <p>Mi si bomo pogledali enostavne primere poravnave, kjer lahko poljubno variiramo parametre (npr. uporabljena matrika zamenjav ter kazni za vrzeli) in opazujemo, kakšne poravnave dobimo. Kot pri preteklih vajah so spodaj že pripravljeni zgledi kode, ki s spremljajočim besedilom ilustrirajo uporabo, na dnu datoteke pa je enostavna naloga, ki ilustrira možnost variacije parametrov.</p>
 <hr class="docutils" />
-<div class="section" id="zgledi">
+<section id="zgledi">
 <h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="definicija-zaporedja">
+<section id="definicija-zaporedja">
 <h3>Definicija zaporedja<a class="headerlink" href="#definicija-zaporedja" title="Permalink to this headline">¶</a></h3>
 <p>Najprej bomo <strong>definirali objekt, ki vsebuje zaporedje</strong>, oz. dva taka objekta. To lahko naredimo na več načinov, eden je direktna ustvaritev, kjer sami podamo zaporedje. Zaporedja lahko preberemo tudi iz <em>lokalno shranjene datoteke</em> v različnih formatih (npr. Genbank ali FASTA) ter seveda tudi iz <em>spletnih podatkovnih zbirk (npr. Genbank ali UniProt)</em>, kar smo si že pogledali na prejšnjih vajah.</p>
 <p>Torej, objekt definiramo podobno kot pri eni izmed začetnih vaj z BioPython:</p>
@@ -500,9 +522,9 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </div>
 </div>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="izbor-matrike-zamenjav">
+<section id="izbor-matrike-zamenjav">
 <h3>Izbor matrike zamenjav<a class="headerlink" href="#izbor-matrike-zamenjav" title="Permalink to this headline">¶</a></h3>
 <p>Naslednje, kar zraven zaporedja potrebujemo za izračun poravnave, je <strong>substitucijska matrika</strong> (matrika zamenjav, <em>substitution matrix</em>). Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - <em>dictionary</em>).</p>
 <p>Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html</p>
@@ -582,9 +604,9 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </div>
 </div>
 <p>Dobro, to je bilo nekaj uvoda, sedaj pa gremo k stvari - poravnavam!</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="globalna-poravnava">
+<section id="globalna-poravnava">
 <h3>Globalna poravnava<a class="headerlink" href="#globalna-poravnava" title="Permalink to this headline">¶</a></h3>
 <p>Za poravnavo zaporedij imamo v <a class="reference external" href="https://biopython.org">BioPython</a> na voljo več orodij. Eno izmed njih, modul <strong><a class="reference external" href="https://biopython.org/DIST/docs/api/Bio.pairwise2-module.html">pairwise2</a></strong>, omogoča izračun poravnave dveh zaporedij z dinamičnim programiranjem, med drugim preko algoritmov Needleman-Wunsch in Smith-Waterman.</p>
 <div class="cell docutils container">
@@ -739,7 +761,7 @@ A--CTA
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">penalize_extend_when_opening</span></code>: boolean (default: False) - ali naj bo odprtje vrzeli dodatno kaznovano še kot ena razširitev ali ne (false = vrzel dolžine 1 je kaznovana samo s kaznijo za odprtje)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">penalize_end_gap</span></code>: boolean - ali naj kaznujemo končne vrzeli, privzeto je vključeno pri globalni poravnavi, pri lokalni to odpade</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gap_char</span></code>: string (default: ‘-‘) - kakšen znak naj se uporabi za vrzel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gap_char</span></code>: string (default: ‘-’) - kakšen znak naj se uporabi za vrzel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">force_generic</span></code>: boolean (default: False) - če vklopimo, se bo uporabil generičen neoptimiziran algoritem za dinamično programiranje (počasno!)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">score_only</span></code>: boolean (default: False) - vrni samo vrednost poravnave brez poravnave same</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">one_alignment_only</span></code>: boolean (default: False) - vrni samo eno poravnavo</p></li>
@@ -778,9 +800,9 @@ AŠŠCŠTA
 </div>
 <p>Že iz prejšnjega prikaza, še bolj nazorno pa iz preoblikovanega, lahko vidimo, da imamo dve poravnavi - ena ima blizu 3’-konca vrzel v obeh zaporedjih, druga pa na tem mestu neujemanje. Vrednost obeh je enaka, saj je kazen tako za odprtje vrzeli kot vrednost za neujemanje enaka 0.</p>
 <p>BioPython sicer ne vsebuje substitucijskih matrik za nukleotidna zaporedja, tako da bi relevantno matriko morali sami uvoziti in nato uporabiti kot <em>dictionary</em>. Tega na tem mestu ne bomo počeli.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="lokalna-poravnava">
+<section id="lokalna-poravnava">
 <h3>Lokalna poravnava<a class="headerlink" href="#lokalna-poravnava" title="Permalink to this headline">¶</a></h3>
 <p>Poglejmo si še primer lokalne poravnave:</p>
 <div class="cell docutils container">
@@ -866,8 +888,8 @@ A----------CTC--C--------GCT----T-----
 </div>
 </div>
 <p>Naj bo nukleotidnih zaporedij zaenkrat dovolj, gremo na aminokislinska zaporedja!</p>
-</div>
-<div class="section" id="globalna-in-lokalna-poravnava-aminokislinskih-zaporedij">
+</section>
+<section id="globalna-in-lokalna-poravnava-aminokislinskih-zaporedij">
 <h3>Globalna in lokalna poravnava aminokislinskih zaporedij<a class="headerlink" href="#globalna-in-lokalna-poravnava-aminokislinskih-zaporedij" title="Permalink to this headline">¶</a></h3>
 <p>Najprej definirajmo naši zaporedji (to je kopija kode od zgoraj):</p>
 <div class="cell docutils container">
@@ -933,10 +955,10 @@ A----------CTC--C--------GCT----T-----
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga">
+<section id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
 <p>Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislinskega zaporedja (primer zgoraj) sploh v redu. Napnite oči!</p>
 <p>Če poravnavi nisva v redu predlagajte izboljšane parametre za poravnavo in sicer:</p>
@@ -945,8 +967,8 @@ A----------CTC--C--------GCT----T-----
 <li><p>kazni za vrzeli.</p></li>
 </ul>
 <p>Analizirajte, kako variacija parametrov (ločeno!) vpliva na poravnavo. Rezultate primerjajte s poravnavo, ki jo naredite s spletno verzijo orodja Needle na strežniku <a class="reference external" href="https://www.ebi.ac.uk/Tools/psa/">Pairwise Sequence Alignment &#64; EBI</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

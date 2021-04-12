@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Python &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -413,28 +435,28 @@
         
               <div>
                 
-  <div class="section" id="python">
+  <section id="python">
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.python.org/">Python</a> je popularen programski jezik in je nameščen že kot del nekateri operacijskih sistemov (macOS, nekatere distribucije Linux) oz. ga je tam izredno preprosto namestiti, na voljo pa je tudi za okolje Windows. Aktualna verzija je 3 (t.j. Python 3.x), na nekaterih starejših sistemih lahko naletimo še na prejšnjo verzijo (2.x). Načeloma programi, napisani v Python 2, delujejo tudi v verziji 3, je pa vsekakor priporočljivo, da uporabljate najnovejšo verzijo, sploh zaradi združljivosti z novejšimi paketi.</p>
-<div class="section" id="namestitev">
+<section id="namestitev">
 <h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">¶</a></h2>
 <p>Ko namestimo Python gre pravzaprav za namestitev prevajalnika, to pa lahko storimo na več načinov, med drugim:</p>
 <ul class="simple">
 <li><p>namestimo osnovni paket z uradne strani <a class="reference external" href="https://www.python.org/">Python</a>,</p></li>
 <li><p>namestimo distribucijo <a class="reference external" href="https://anaconda.org">Anaconda</a>, ki vsebuje Python in kopico drugih paketov.</p></li>
 </ul>
-<div class="section" id="namestitev-prek-osnovnega-paketa">
+<section id="namestitev-prek-osnovnega-paketa">
 <h3>Namestitev prek osnovnega paketa<a class="headerlink" href="#namestitev-prek-osnovnega-paketa" title="Permalink to this headline">¶</a></h3>
 <p>Z <a class="reference external" href="https://www.python.org/downloads/">uradne spletne strani</a> si prenesite zadnjo verzijo namestitvenega programa za vaš operacijski sistem in ga zaženite.</p>
 <p>JupyterLab (ter druge pakete, npr. BioPython) namestite z uporabo upravljalnika paketov <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, BioPython namestite tako: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">biopython</span></code>. Kratka navodila za JupyterLab, vključno z namestitvijo, so <a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">tukaj</span></a>.</p>
-</div>
-<div class="section" id="namestitev-v-okviru-anaconde">
+</section>
+<section id="namestitev-v-okviru-anaconde">
 <h3>Namestitev v okviru Anaconde<a class="headerlink" href="#namestitev-v-okviru-anaconde" title="Permalink to this headline">¶</a></h3>
 <p>Z <a class="reference external" href="https://anaconda.org/">uradne spletne strani</a> prenesite namestitveni paket (<a class="reference external" href="https://www.anaconda.com/products/individual">povezava</a> za vaš operacijski sistem in zaženite namestitev.</p>
 <p>Anaconda pride s svojim upravljalnikom paketom <code class="docutils literal notranslate"><span class="pre">conda</span></code>, ki ga lahko poganjate v lupini (terminalu), lahko pa uporabite tudi grafični vmesnik znotraj Anaconda Navigatorja. Prek tega sistema je dostopnih veliko paketov, ne pa vsi. Priporočljivo je, da pakete najprej poiščete in poizkusite namestiti z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code>, tudi JupyterLab (<a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">navodila</span></a>). Če nekega paketa ni na voljo, pa z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code> namestite <code class="docutils literal notranslate"><span class="pre">pip</span></code> (ukaz: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>), nato pa s <code class="docutils literal notranslate"><span class="pre">pip</span></code> namestite željen paket.</p>
-</div>
-</div>
-<div class="section" id="virtualno-okolje">
+</section>
+</section>
+<section id="virtualno-okolje">
 <h2>Virtualno okolje<a class="headerlink" href="#virtualno-okolje" title="Permalink to this headline">¶</a></h2>
 <p>Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (<em>virtual environment</em>) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. <em>dependencies</em>), ne smetite osnovne instalacije Pythona:</p>
 <ul class="simple">
@@ -442,16 +464,16 @@
 <li><p>navodila za virtualno okolje prek <a class="reference external" href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/">pip</a>.</p></li>
 </ul>
 <p>Če želite uporabljati obstoječo instalacijo JupyterLab v okviru Anaconde je morda najbolj smiselno, da si naredite virtualno okolje v Anaconda, nato pa znotraj njega nainstalirate pip (<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>) ter potrebne ostale pakete.</p>
-<div class="section" id="uporaba-v-binderju">
+<section id="uporaba-v-binderju">
 <h3>Uporaba v Binderju<a class="headerlink" href="#uporaba-v-binderju" title="Permalink to this headline">¶</a></h3>
 <p>Če se želimo izogniti spreminjanju naše lokalne instalacije Pythona, prav tako pa ne želimo ustvarjali lokalnih virtualnih orodij, lahko nekatere pakete uporabljamo tudi prek JupyterLaba v Binderju in sicer si jih namestimo z uporabo <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, namestitev PyMed v virtualnem okolju v Binderju dosežemo tako:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install pymed
 </pre></div>
 </div>
 <p>Ko jedro v Binderju ugasnemo, se virtualno okolje pobriše. <strong>Pozor, ko okno brskalnika, v katerem interagiramo z Binderjem, zapremo, se pobrišejo tudi naše spremembe datotek!</strong></p>
-</div>
-</div>
-<div class="section" id="tecaji-pythona">
+</section>
+</section>
+<section id="tecaji-pythona">
 <h2>Tečaji Pythona<a class="headerlink" href="#tecaji-pythona" title="Permalink to this headline">¶</a></h2>
 <p>Na spletu je brezplačno dostopnih veliko tečajev Pythona, prek katerih se lahko naučite osnov programiranja v tem jeziku ali pa zgolj obnovite svoje znanje. Tukaj je navedenih zgolj nekaj:</p>
 <ul class="simple">
@@ -463,8 +485,8 @@
 <li><p><a class="reference external" href="http://disi.unitn.it/~teso/courses/sciprog/index.html">Scientific Computing</a> - spletna stran, kjer najdete nekaj osnov i Pythona in BioPythona</p></li>
 </ul>
 <p>Obširen seznam tečajev najdete tudi na uradni <a class="reference external" href="https://wiki.python.org/moin/BeginnersGuide/Programmers">wiki-stran Python</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

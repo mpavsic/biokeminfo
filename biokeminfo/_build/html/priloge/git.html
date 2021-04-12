@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Git in GitHub &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -401,19 +423,19 @@
         
               <div>
                 
-  <div class="section" id="git-in-github">
+  <section id="git-in-github">
 <h1>Git in GitHub<a class="headerlink" href="#git-in-github" title="Permalink to this headline">¶</a></h1>
 <p><strong>Git</strong> je program za sledenje sprememb v datotekah, <strong>GitHub</strong> pa je ena izmed storitev, ki ga uporablja. Za jasno uvodno predstavitev uporabnosti sistema priporočam ogled posnetka <a class="reference external" href="https://www.youtube.com/watch?v=w3jLJU7DT5E">What is GitHub</a>.</p>
-<div class="section" id="git">
+<section id="git">
 <h2>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
 <p>Program Git je bil primarno razvit za uporabo programerjev, ki sodelujejo pri razvoju nekega programa, je pa tudi splošno uporaben v različnih drugih sodelovalnih okoljih. Ustvaril ga je <a class="reference external" href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> in sicer pri razvoju jedra operacijskega sistema Linux (da je pri razvoju lahko sodelovalo več ljudi), kasneje pa je bil program dodelan z razširjeno funkcionalnostjo.</p>
 <p>Ključne lastnosti programa Git so enostavna uporaba, hitrost, skrb za integriteto podatkov ter podpora za distribuiran nelinearen tok dela.</p>
-<div class="section" id="primer-uporabe">
+<section id="primer-uporabe">
 <h3>Primer uporabe<a class="headerlink" href="#primer-uporabe" title="Permalink to this headline">¶</a></h3>
 <p>Osnovno delovanje sistema lahko ilustriramo na (izmišljenem) primeru razvoja majhnega programa, ki iz temperaturnega senzorja domače vremenske postaje vsako uro prebere temperaturo in jo zapiše v novo vrstico tabele. Recimo, da trenutna verzija programa dobro deluje in popravki niso potrebni. Čez čas pa ugotovimo, da nam samo temperatura ne zadostuje in bi zraven vsakega odčitka imeli še podatek o jakosti svetlobe ter hitrosti in smeri vetra (ustrezni senzorji so del vremenske postaje). O ideji povemo prijatelju, ki reče “Super ideja, še lepše pa bi bilo, če bi se podatki izrisovali na diagramu za tekoči mesec, ki bi se ob vsaki novi meritvi osvežil!”. Prijatelj se pridruži našemu projektu, a ker živi na drugem koncu države ni ravno praktično, da programiramo skupaj. Tako mu pošljemo kopijo izvorne kode programa, nato pa jo vsak od naju razvijava ločeno. Mi se trudimo z implementacijo branja dodatnih senzorjev, prijatelj pa z izrisom podatkov. Ker v tabelo zdaj beležimo dodatne podatke si jo zamislimo nekoliko drugače, a to pozabimo sporočiti prijatelju. No, tudi prijatelj ima neko svojo idejo, kako bi naj ta tabela izgledala, zato po svoje spremeni del kode, ki jo generira. Ko oba zaključiva moramo kodo sestaviti, takrat pa - ojoj! - ugotovimo, da zaradi različnih sprememb istega dela kode to ne bo enostavno.</p>
 <p>Tovrstnim težavam se lahko izognemo tako, da izvorno kodo naložimo na nek strežnik, od koder jo lahko pridobimo tako mi kot naš prijatelj. Na strežniku teče program <code class="docutils literal notranslate"><span class="pre">git</span></code>, prav tako pa imamo mi in pa prijatelj tak program nainstaliran na svojih računalnikih. Osnovno oz. prvotno obliko kode za vsak slučaj pustimo pri miru (saj vemo, da deluje, strah pa nas je, da jo pokvarimo) - tej verziji rečemo <em>master</em> ali <em>main</em>.  Za potrebe nadaljnjega razvoja naredimo na strežniku kopijo, ki se imenuje veja ali <em>branch</em>, ki jo poimenujemo npr. <code class="docutils literal notranslate"><span class="pre">razvoj</span></code>. Kopijo si mi in pa prijatelj s pomočjo programa git prenesemo na računalnik (operacija <code class="docutils literal notranslate"><span class="pre">fetch</span></code>). Kodo nato razvijamo in vsakič (redno!) spremembe zabeležimo (operacija <code class="docutils literal notranslate"><span class="pre">commmit</span></code>) ter jih zlijemo (operacija <code class="docutils literal notranslate"><span class="pre">merge</span></code>) in prenesemo (operacija <code class="docutils literal notranslate"><span class="pre">push</span></code>) v našo razvojno vejo <code class="docutils literal notranslate"><span class="pre">razvoj</span></code>. Naš prijatelj lahko tem spremembam sledi (prav tako kot mi si lahko tudi on prenese kopijo naše razvojne veje) ter podobno kot mi dela spremembe v tej isti veji. Njegovih sprememb smo deležni tudi mi (in obratno), saj z operacijo <code class="docutils literal notranslate"><span class="pre">pull</span></code> sinhroniziramo lokalno kopijo s tisto na spletu (<code class="docutils literal notranslate"><span class="pre">pull</span></code> = <code class="docutils literal notranslate"><span class="pre">fetch</span></code> + <code class="docutils literal notranslate"><span class="pre">merge</span></code>). Ko smo s končnim izdelkom, ki vsebuje vso želeno funkcionalnost, zadovoljni in preverjeno deluje, lahko vse to zlijemo z glavno vejo.</p>
-</div>
-<div class="section" id="dodatne-informacije">
+</section>
+<section id="dodatne-informacije">
 <h3>Dodatne informacije<a class="headerlink" href="#dodatne-informacije" title="Permalink to this headline">¶</a></h3>
 <p>Več o Git lahko preberete med drugim na <a class="reference external" href="https://en.wikipedia.org/wiki/Git">Wikipediji</a>. Na voljo je tudi odlična spletna knjiga, celo v slovenščini - knjiga <a class="reference external" href="https://git-scm.com/book/sl/v2">Pro Git</a>, ki je na uradni strani projekta <a class="reference external" href="https://git-scm.com/">Git</a>. Pomembne lastnosti najbolje ilustrirajo videoposnetki:</p>
 <ul class="simple">
@@ -422,14 +444,14 @@
 <li><p><a class="reference external" href="https://git-scm.com/video/get-going">Git Basics: Get Going with Git</a>,</p></li>
 <li><p><a class="reference external" href="https://git-scm.com/video/quick-wins">Git Basics: Quick wins with Git</a>.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="github">
+</section>
+</section>
+<section id="github">
 <h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
 <p>GitHub (pravzaprav GitHub Inc.) je podjetje, ki omogoča spletno gostovanje za programske in druge pakete, temelji pa na programu Git. Od leta 2018 je podružnica Microsofta. Več o zgodovini je zapisano na <a class="reference external" href="https://en.wikipedia.org/wiki/GitHub">Wikipediji</a>. Je ena izmed večjih tovrstnih storitev, obstajajo pa seveda tudi alternative, npr. <a class="reference external" href="https://gitlab.com/">GitLab</a> in <a class="reference external" href="https://sourceforge.net/">SourceForge</a>. Če ne želimo uporabljati nobenega od obstoječih (pogosto komercialnih) ponudnikov si lahko postavimo tudi svoj <a class="reference external" href="https://git-scm.com/book/sl/v2/Git-na-stre%C5%BEniku-Protokoli">lasten strežnik</a>.</p>
 <p>Osnovni koncepti so enaki kot pri Git. Posamezen projekt imenujemo repozitorij (<em>repository</em>), ki ga naslovimo kot <code class="docutils literal notranslate"><span class="pre">uporabnisko_ime/ime_repozitorija</span></code> Na primer, repozitorij, ki vsebuje program PyMOL za vizualizacijo struktur makromolekul, lahko naslovimo kot <code class="docutils literal notranslate"><span class="pre">schrodinger/pymol-open-source</span></code>, na strežniku GitHub pa je dostopen na naslovu stila <code class="docutils literal notranslate"><span class="pre">https://github.com/uporabnisko_ime/ime_repozitorija</span></code> (v tem primeru torej <a class="reference external" href="https://github.com/schrodinger/pymol-open-source">https://github.com/schrodinger/pymol-open-source</a>). Repozitorije si lahko ogledujemo, komentiramo ipd. kar v spletnem brskalniku, prav tako si lahko od tam prenesemo cel repozitorij ali njegove dele (tudi v obliki datoteke zip). Repozitorijev drugih ljudi, če seveda nismo člani projektne skupine, ne moremo spreminjati, lahko pa si jih skloniramo (operacija <code class="docutils literal notranslate"><span class="pre">clone</span></code>). Za interakcijo z GitHub sicer primarno uporabljamo lokalno nameščen program <code class="docutils literal notranslate"><span class="pre">git</span></code>, obstaja tudi program z grafičnim vmesnikom <strong>GitHub Desktop</strong>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

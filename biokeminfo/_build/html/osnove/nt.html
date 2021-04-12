@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Nukleotidna zaporedja &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vaje/grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -414,9 +436,9 @@
         
               <div>
                 
-  <div class="section" id="nukleotidna-zaporedja">
+  <section id="nukleotidna-zaporedja">
 <h1>Nukleotidna zaporedja<a class="headerlink" href="#nukleotidna-zaporedja" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="zbirke-nukleotidnih-zaporedij">
+<section id="zbirke-nukleotidnih-zaporedij">
 <h2>Zbirke nukleotidnih zaporedij<a class="headerlink" href="#zbirke-nukleotidnih-zaporedij" title="Permalink to this headline">¶</a></h2>
 <p>Obstajajo tri glavne zbirke nukleotidnih zaporedij, ki pa pravzaprav vsebujejo enake podatke, saj med njimi poteka redna (dnevna) izmenjava oz. sinhronizacija in so del mednarodnega združenja <a class="reference external" href="http://www.insdc.org/"><strong>International Nucleotide Sequence Database Collaboration</strong></a>:</p>
 <ul class="simple">
@@ -424,8 +446,8 @@
 <li><p><a class="reference external" href="https://www.ebi.ac.uk/ena/"><strong>ENA</strong> (European Nucleotide Archive)</a> na strežniku <a class="reference external" href="https://www.ebi.ac.uk">EBI</a> (European Bioinformatics Institute) in</p></li>
 <li><p><a class="reference external" href="https://www.ddbj.nig.ac.jp/"><strong>DDBJ</strong> (DNA Data Bank of Japan)</a>.</p></li>
 </ul>
-</div>
-<div class="section" id="genbank">
+</section>
+<section id="genbank">
 <h2>GenBank<a class="headerlink" href="#genbank" title="Permalink to this headline">¶</a></h2>
 <p>GenBank je zbirka, ki se od zgoraj navedenih uporablja najpogosteje, zato jo bomo uporabljali tudi mi. Do zbirke lahko dostopamo na več osnovnih načinov:</p>
 <ul class="simple">
@@ -435,24 +457,24 @@
 <li><p>prek strežnika FTP z anonimnim dostopom, od koder lahko prenesemo datoteke v formatu ASN.1.</p></li>
 </ul>
 <p>Zbirka vsebuje zapise iz različnih virov - od zapisov, ki jih prispevajo posamezni laboratoriji (na primer, sekvencirate cDNA za nek protein iz nekega organizma, deponiranje zaporedja v javno dostopno zbirko je pogoj za objavo članka, v katerem zaporedje omenjate) do velikih genomskih projektov, vključno z zaporedji iz projektov WGS (<em>whole-genome shotgun</em>, sekvenciranje celotnih genomov po principu hitrem postopku <em>shotgun</em>) in TSA (<em>transcriptome shotgun assembly</em>, združena zaporedja iz hitrega sekvenciranja transkriptomov) ter zaporedji, določenih iz vzorcev iz okolja.</p>
-<div class="section" id="kode-zapisov">
+<section id="kode-zapisov">
 <h3>Kode zapisov<a class="headerlink" href="#kode-zapisov" title="Permalink to this headline">¶</a></h3>
 <p>Vsakemu zapisu, ki vsebuje zaporedje in pripise (anotacije, <em>annotations</em>), je določena unikatna identifikacijska koda, imenovana <em><strong>accession number</strong></em> (koda za dostop), ki predstavlja primarni ključ zapisa v zbirko in je enak v vse treh zgoraj omenjenih zbirkah (GenBank, ENA, DDBJ). V zapisu je napisana v vrstici z oznako ACCESSION. Ta koda je nespremenljiva in se ohrani tudi v primeru sprememb vsebine zapisa - v tem primeru se novim verzijam doda oznaka verzije, npr. 5. verzija zapisa za mRNA za človeški tiroglobulin z osnovno kodo za dostop NM_003235 tako postane NM_003235.5 (oznaka verzije je torej za piko). Velja, da ko dostopamo do nekega zapisa v zbirki bomo privzeto vedno dobili najnovejšo verzijo zapisa, razen, če bomo izrecno navedli kakšno drugo verzijo. Priporočljivo je, da pri navajanju kode za dostop (npr. v članku navedemo, da smo uporabili zaporedje i zbirke GenBank pod to in to kodo) vedno navedemo še verzijo.</p>
 <p>Vsak zapis ima še eno kodo, imenovano <strong>GI</strong> (Geninfo Identifier), ki je povezana s točno določeno verzijo zapisa. Na primer, verziji zapisa NM_003235.4 in NM_003235.5 imata drugačno kodo GI.</p>
-</div>
-<div class="section" id="divizije">
+</section>
+<section id="divizije">
 <h3>Divizije<a class="headerlink" href="#divizije" title="Permalink to this headline">¶</a></h3>
 <p>Zapisi oz. nukleotidna zaporedja so v zbirki GenBank organizirana v t.i. <strong>divizije</strong> (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/htgs/divisions/"><em>GenBank divisions</em></a>) in sicer glede na taksonomsko razvrstitev organizma, iz katerega zaporedje izhaja, ter glede na pristop sekvenciranja, uporabljen za določitev samega zaporedja. Tako torej ločimo taksonomske in funkcijske divizije.</p>
 <p>Taksonomske divizije so: SYN (sintetična zaporedja), PHG (fagi), ENV (zaporedja iz okoljskih vzorcev), VRL (virusi), BCT (bakterije), PLN (rastline), MAM (sesalci, z izjemo tistih, ki so v svoji ločeni diviziji), VRT (drugi vretenčarji), PRI (primati), UNA (zapisi, kjer pripisi ne omogočajo določitve divizije oz. slednja še ni določena), ROD (glodalci), INV (nevretenčarji).</p>
 <p>Funkcijske divizije so: TSA (hitro sekvenciranje transkriptomov), WHS (sekvenciranje celotnih genomov s hitrim pristopom), PAT (patentirana zaporedja), GSS (<em>Genome survey sequences</em>), EST (<em>Expressed sequence tag</em>, t.j. kratka zaporedja, ki so prepisana z genomske DNA), HGT (genomska zaporedja, dobljena z visoko zmogljivim pristopom skevenciranja; <em>High-throughput genomic</em>), STS (<em>Sequence tagged sites</em>) in HCT (visoko zmogljivo sekvenciranje cDNA; <em>High-throughput cDNA</em>).</p>
-</div>
-<div class="section" id="genbank-flat-file">
+</section>
+<section id="genbank-flat-file">
 <h3>GenBank <em>Flat File</em><a class="headerlink" href="#genbank-flat-file" title="Permalink to this headline">¶</a></h3>
 <p>Klasična oblika zapisa v zbirki je t.i. ploski format (<em>Flat File</em>), katerega najpomembnejši elementi so na kratko predstavljeni na spodnji sliki, podrobneje pa opisani na <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">uradni spletni strani</a>.</p>
 <p><img alt="GenBank Flat File" src="../_images/genbank_flatfile.png" /></p>
-</div>
-</div>
-<div class="section" id="dodatna-literatura">
+</section>
+</section>
+<section id="dodatna-literatura">
 <h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>kratek video-vodič <a class="reference external" href="https://www.youtube.com/watch?v=j7hV10gYz1Q">How to use GenBank</a></p></li>
@@ -460,8 +482,8 @@
 </ul>
 <div class="toctree-wrapper compound">
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

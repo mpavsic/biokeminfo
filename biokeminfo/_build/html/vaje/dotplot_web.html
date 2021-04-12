@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Točkovni diagram &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -389,11 +411,11 @@
         
               <div>
                 
-  <div class="section" id="vaja-tockovni-diagram">
+  <section id="vaja-tockovni-diagram">
 <h1>VAJA: Točkovni diagram<a class="headerlink" href="#vaja-tockovni-diagram" title="Permalink to this headline">¶</a></h1>
 <p>Na dveh enostavnih primerih si bomo ogledali, kako lahko uporabimo točkovni diagram za detekcijo podobnosti podobnosti med danimi zaporedji. V enem primeru bomo uporabili kratko zaporedje, v drugem pa kar cel genom, a relativno kratek – bakterijski.</p>
 <hr class="docutils" />
-<div class="section" id="naloga-1-primerjava-dveh-krajsih-zaporedij">
+<section id="naloga-1-primerjava-dveh-krajsih-zaporedij">
 <h2>Naloga 1: primerjava dveh krajših zaporedij<a class="headerlink" href="#naloga-1-primerjava-dveh-krajsih-zaporedij" title="Permalink to this headline">¶</a></h2>
 <p>S pomočjo spletnega programa <a class="reference external" href="http://emboss.bioinformatics.nl/cgi-bin/emboss/dotmatcher">EMBOSS DotMatcher</a> primerjajte med seboj aminokislinski zaporedji proteinov:</p>
 <ul class="simple">
@@ -410,9 +432,9 @@
 <p>Na kratko o orodju DotMatcher… Orodje DotMatcher je sprogramirano tako, da za posamezne pare ij (i so ostanki iz 1. zaporedja, j pa iz 2. zaporedja) prebere vrednosti iz matrike zamenjav (privzeta EBLOSUM62 (=BLOSUM62) za ak-zaporedja, za nt-zaporedja pa EDNAFULL), nato pa izračuna vsoto nekaj zaporednih ostankov (ta parameter nastavimo z velikostjo okna – <em>window size</em>), na koncu pa znak v matriki nariše le, če je vsota enaka ali pa presega prag (<em>treshold</em>). Zaporedja, ki jih primerjate, vstavite v program v formatu FASTA.</p>
 <p><img alt="EMBOSS DotMatcher" src="../_images/emboss_dotmatcher.png" /></p>
 <p>Obstajajo še drugi programi za točkovne diagrame, seznam najdete <a class="reference external" href="https://en.wikipedia.org/wiki/Dot_plot_(bioinformatics)">tukaj</a>.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga-2-primerjava-genomskih-zaporedij">
+<section id="naloga-2-primerjava-genomskih-zaporedij">
 <h2>Naloga 2: Primerjava genomskih zaporedij<a class="headerlink" href="#naloga-2-primerjava-genomskih-zaporedij" title="Permalink to this headline">¶</a></h2>
 <p>Kot omenjeno je primerjava zelo dolgih genomskih zaporedij nekoliko dolgotrajnejša oz. zahteva več procesorske moči. Izvedli jo bomo na namenskem strežniku prek spleta, obstaja pa več takih storitev:</p>
 <ul class="simple">
@@ -423,8 +445,8 @@
 <p>Med zadnjim testom orodje D-GENIES ni delovalo, strežnik z orodjem YASS pa se je odzival počasi - zato bomo uporabili SynMap. Primerjali bomo celotno genomsko zaporedje dveh sevov bakterije <em>E. coli</em>, in sicer seva K-12 MG1655 in CFT073. Zaporedji lahko najdete v zbirki Nucleotide na strežniku NCBI, sta pa dostopni tudi direktno v orodju.</p>
 <p>Kakšen je rezultat in kaj mislite, zakaj je takšen?</p>
 <p>Kaj je posebnega na sevu CFT073? Namig se skriva v članku <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2785843/"><em>Genome reannotation of Escherichia coli CFT073 with new insights into virulence</em></a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

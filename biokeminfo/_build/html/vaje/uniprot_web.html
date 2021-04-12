@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Dostop do UniProt v brskalniku &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -418,24 +440,24 @@
         
               <div>
                 
-  <div class="section" id="vaja-dostop-do-uniprot-v-brskalniku">
+  <section id="vaja-dostop-do-uniprot-v-brskalniku">
 <h1>VAJA: Dostop do UniProt v brskalniku<a class="headerlink" href="#vaja-dostop-do-uniprot-v-brskalniku" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="uvod">
+<section id="uvod">
 <h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">¶</a></h2>
 <p>Na spodnjih primerih si bomo ogledali, kako iščemo po zbirki UniProt ter kakšne podatke lahko iz zapisov pridobimo. Za iskanje uporabite enostavni ali napredni iskalni vmesnik na strani <a class="reference external" href="http://www.uniprot.org">UniProtKB</a>, pri razumevanju zapisa pa si lahko pomagate z navodili na <a class="reference external" href="http://www.uniprot.org/docs/manual">posebni podstrani</a> na UniProt.</p>
-<div class="section" id="napredno-iskanje">
+<section id="napredno-iskanje">
 <h3>Napredno iskanje<a class="headerlink" href="#napredno-iskanje" title="Permalink to this headline">¶</a></h3>
 <p>Iskanje z naprednim vmesnikom v osnovi podobno kot smo to videli na primeru Entrez (NCBI). Na voljo je kopica kategorij iskalnih pojmov, ki lahko vključujejo tudi funkcijo proteina in druge pripise, pri teh pa lahko izbiramo, kako je bil nek podatek v zapisu pridobljen (npr. eksperimentalni dokaz, sklepanje na osnovi podobnosti) ter ali je bil zapis pregledan ročno (<em>manual assertion</em>). Kor primer je spodaj prikazano iskanje mišjih proteinov, ki imajo fosforiliran tirozinski ostanek, fosforilacija pa je bila eksperimentalno potrjena.</p>
 <p><img alt="Napredno iskanje po UniProt" src="../_images/uniprot_web-advanced_search.png" /></p>
-</div>
-<div class="section" id="tabela-z-rezultati">
+</section>
+<section id="tabela-z-rezultati">
 <h3>Tabela z rezultati<a class="headerlink" href="#tabela-z-rezultati" title="Permalink to this headline">¶</a></h3>
 <p>Rezultati iskanja so prikazani v obliki tabele. Slednjo si lahko prilagodimo, enega ali več zadetkov (zapisov) pa si lahko prenesemo v različnih formatih. Kje so relevantne povezave na te funkcije je prikazano na spodnji sliki.</p>
 <p><img alt="UniProt rezultati v tabeli" src="../_images/uniprot_rezultati_primer1.png" /></p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga-1">
+<section id="naloga-1">
 <h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
 <p>Ta naloga je enostavna - z analizo ustreznih zapisov v zbirki UniProt odgovorite na naslednja vprašanja:</p>
 <ol class="simple">
@@ -445,16 +467,16 @@
 <li><p>Koliko cisteinskih aminokislinskih ostankov ene polipeptidne verige proteina mirakulina iz organizma <em>Synsepalum dulcificum</em> je oksidiranih?</p></li>
 <li><p>Poiščite vse človeške proteine, ki so lipidirani (to je post-translacijska modifikacija (PTM), kjer je nanje kovalentno pritrjena lipidna veriga), ta modifikacija pa je eksperimentalno potrjena.</p></li>
 </ol>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga-2">
+<section id="naloga-2">
 <h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
 <p>Ta naloga je nekoliko kompleksnejša in ilustrira, kako bi UniProt uporabili v realnem “laboratorijskem” primeru.</p>
-<div class="section" id="ozadje">
+<section id="ozadje">
 <h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
 <p>Delamo na projektu na temo proteolitskega procesiranja proteinov na celični površini. Posebej nas zanima en encim, ki pri tem sodeluje, in sicer <em>Disintegrin and metalloproteinase domain-containing protein 28</em>, ki ga  kodira človeški gen <em>ADAM28</em>. Da bi ta encim lahko podrobneje proučili smo si zamislili kup eksperimentov <em>in vitro</em>, za katere pa potrebujemo encim v čisti obliki.</p>
-</div>
-<div class="section" id="vprasanja">
+</section>
+<section id="vprasanja">
 <h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Permalink to this headline">¶</a></h3>
 <p>Želimo omenjen encim v rekombinantni obliki in sicer kot topen aktiven protein. Odgovorite na naslednja vprašanja, ki se nanašajo na njegovo pripravo.</p>
 <ol class="simple">
@@ -464,9 +486,9 @@
 <li><p>Kateri ekspresijski sistem je primernejši za izražanje oblike iz 2. točke - bakterijski sistem ali insektne celice?</p></li>
 <li><p>Recimo, da je oblika iz 2. točke stabilna pri pH = 8. Kakšen tip ionskega izmenjevalca (kationski, anionski) moramo izbrati, da se bo med čiščenjem z ionsko-izmenjevalno kromatografijo pri tem pH topen rekombinantni protein nanj vezal? Namig: uporabite spletno orodje <a class="reference external" href="https://web.expasy.org/protparam/">ProtParam</a>, ki vam na osnovi danega aminokislinskega zaporedja izračuna različne parametre, vključno s pI.</p></li>
 </ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>DEMO: Programski dostop do PubMed &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -452,14 +474,14 @@
         
               <div>
                 
-  <div class="section" id="demo-programski-dostop-do-pubmed">
+  <section id="demo-programski-dostop-do-pubmed">
 <h1>DEMO: Programski dostop do PubMed<a class="headerlink" href="#demo-programski-dostop-do-pubmed" title="Permalink to this headline">¶</a></h1>
 <p>Na primeru si bomo ogledali, kako iščemo pu zbirki PubMed prek programskega dostopa.</p>
-<div class="section" id="biopython">
+<section id="biopython">
 <h2>BioPython<a class="headerlink" href="#biopython" title="Permalink to this headline">¶</a></h2>
 <p>Uporabili bomo <a class="reference external" href="https://biopython.org"><strong>BioPython</strong></a>, ki vsebuje orodja za delo z bio-podatki (zaporedja, strukture ipd.); podrobnejša navodila najdete na njegovi domači strani, še posebej uporabna je “kuharica” <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html">Biopython Tutorial and Cookbook</a>, kjer najdete različne primere uporabe z razlagami (težava je le v tem, da nekateri primeri iz kuharice ne delujejo, saj niso bili posodobljeni glede na novo verzijo BioPythona). To ne bo edina uporaba BioPythona - uporabljali ga bomo namreč tudi pri drugih vajah.</p>
 <p>Del BioPythona, ki nam omogoča iskanje zbirkah na strežnikih NCBI, med drugim PubMed, se imenuje <strong>Bio.Entrez</strong>, zanj je v okviru BioPython na voljo <a class="reference external" href="https://biopython.org/docs/1.75/api/Bio.Entrez.html">dokumentacija</a>.</p>
-<div class="section" id="modul-bio-entrez">
+<section id="modul-bio-entrez">
 <h3>Modul Bio.Entrez<a class="headerlink" href="#modul-bio-entrez" title="Permalink to this headline">¶</a></h3>
 <p>Modul Bio.Entrez nudi več funkcij, nekaj jih je navedenih tukaj (ostale so opisane v dokumentaciji):</p>
 <ul class="simple">
@@ -480,13 +502,13 @@
 <li><p>Pri programskem dostopu do Entrez se morate identificirati z e-poštnim naslovom (v primerih spodaj, če jih boste poganjali, nastavite vrednost <code class="docutils literal notranslate"><span class="pre">Entrez.email</span></code> na vaš naslov.</p></li>
 <li><p>Če boste poizvedbe izvajali z visoko frekvenco (npr. zelo veliko število poizvedb na minuto) vas lahko strežnik začasno blokira. Podobno velja za visoko frekvenco poizvedb s prenosom velike količine podatkov (npr. velikega števila celotnih zapisov).</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="zgledi">
+<section id="zgledi">
 <h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
 <p>V nadaljevanju je prikazano nekaj zgledov, ki demonstrirajo poizvedovanje s programskih dostopom do Entrez.</p>
-<div class="section" id="seznam-zbirk">
+<section id="seznam-zbirk">
 <h3>Seznam zbirk<a class="headerlink" href="#seznam-zbirk" title="Permalink to this headline">¶</a></h3>
 <p>Najprej si oglejmo, katere podatkovne zbirke so nam na voljo prek tega vmesnika.</p>
 <div class="cell docutils container">
@@ -520,8 +542,8 @@
 </div>
 </div>
 <p>Na voljo imamo torej zbirko <em>pubmed</em> (literaturna zbirka), zbirko aminokislinskih (<em>protein</em>) in nukleotidnih zaporedij (<em>nucleotide</em>) , struktur (<em>structure</em>) itd.</p>
-</div>
-<div class="section" id="iskanje">
+</section>
+<section id="iskanje">
 <h3>Iskanje<a class="headerlink" href="#iskanje" title="Permalink to this headline">¶</a></h3>
 <p>Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost <code class="docutils literal notranslate"><span class="pre">db</span></code> (database) ustrezno nastavili na <em>pubmed</em>. Definirati moramo tudi iskalni pojem (v spodnjem primeru <code class="docutils literal notranslate"><span class="pre">search_term</span></code>) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali <a class="reference internal" href="pubmed_web.html"><span class="doc std std-doc">pri prejšnji vaji</span></a>. Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/">Pubmed Advanced Search Builder</a>, zgradimo iskanje, ter vsebino iskalne škatle (<em>query box</em>) skopiramo in prilepimo kot vrednost <code class="docutils literal notranslate"><span class="pre">search_term</span></code>.</p>
 <p>Pri iskanju moramo zraven zbirke in iskalnega pojma definirati še <em>retrieval mode</em> oz. <code class="docutils literal notranslate"><span class="pre">retmode</span></code> (včasih še <em>retrieval type</em> - <code class="docutils literal notranslate"><span class="pre">rettype</span></code>), možne vrednosti so navedene v <a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/">pomoči</a>.</p>
@@ -559,8 +581,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="prenos-zapisov">
+</section>
+<section id="prenos-zapisov">
 <h3>Prenos zapisov<a class="headerlink" href="#prenos-zapisov" title="Permalink to this headline">¶</a></h3>
 <p>Kot vidimo po zbirki iščemo z uporabo <em>esearch</em>, če pa želimo prenesti zapise, pa uporabimo <em>efetch</em> in sicer v kombinaciji s seznamom PMID (v <em>IdList</em>).</p>
 <p>Za primer si oglejmo, kako je sestavljen edem izmed zapisov. Spodnja koda vzame prvo kodo PMID v seznamu <em>IdList</em> ter prenese in izpiše vsebino zapisa:</p>
@@ -581,8 +603,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="izpis-dela-zapisa">
+</section>
+<section id="izpis-dela-zapisa">
 <h3>Izpis dela zapisa<a class="headerlink" href="#izpis-dela-zapisa" title="Permalink to this headline">¶</a></h3>
 <p>Vidimo, da je zapis kar ena <em>solata</em>, tako da se v njem malce težko znajti. Spodnja koda nam recimo za vsak PMID izpiše povzetek, če je ta na voljo (tu spet vzamemo vse zadetke prejšnjega iskanja), kar je že nekako lepše.</p>
 <div class="cell docutils container">
@@ -605,8 +627,8 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="shranjevanje-rezultatov-v-csv">
+</section>
+<section id="shranjevanje-rezultatov-v-csv">
 <h3>Shranjevanje rezultatov v CSV<a class="headerlink" href="#shranjevanje-rezultatov-v-csv" title="Permalink to this headline">¶</a></h3>
 <p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <a class="reference internal" href="../priloge/drobnarije.html"><span class="doc std std-doc">drobnarijami</span></a>). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
 <p>Spodnji zgled ilustrira uporabo knjižnice <a class="reference external" href="https://pandas.pydata.org/"><strong>Pandas</strong></a> in sicer:</p>
@@ -646,19 +668,19 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="dodatne-informacije">
+<section id="dodatne-informacije">
 <h2>Dodatne informacije<a class="headerlink" href="#dodatne-informacije" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="drugi-nacini-programskega-dostopa">
+<section id="drugi-nacini-programskega-dostopa">
 <h3>Drugi načini programskega dostopa<a class="headerlink" href="#drugi-nacini-programskega-dostopa" title="Permalink to this headline">¶</a></h3>
 <p>Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je <a class="reference external" href="https://pypi.org/project/pymed/">PyMed</a>, ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek <a class="reference external" href="https://doi.org/10.1016/j.dib.2020.106178">COVID-19: A scholarly production dataset report for research analysis</a>. Kako so podatke pridobili je dostopno v repozitoriju na GitHub <a class="reference external" href="https://github.com/breno-madruga/dib-covid-dataset">breno-madruga/dib-covid-datased</a>, ki si ga lahko prenesete in ogledate.</p>
 <p>Drug tak primer je Entrezpy, ki je opisan v članku <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btz385">Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases</a>. Relevantne povezave <a class="reference external" href="https://gitlab.com/ncbipy/entrezpy">koda v repozitoriju</a>, <a class="reference external" href="https://entrezpy.readthedocs.io/">dokumentacija</a>.</p>
 <p>Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov <strong>pip</strong>. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano <a class="reference internal" href="../priloge/python.html"><span class="doc std std-doc">tukaj</span></a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
