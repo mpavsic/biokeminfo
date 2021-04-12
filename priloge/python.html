@@ -4,11 +4,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -27,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -45,7 +44,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -104,7 +103,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Zbirke
  </span>
@@ -173,7 +172,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Poravnave
  </span>
@@ -233,7 +232,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Grafi
  </span>
@@ -254,7 +253,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Priloge
  </span>
@@ -300,7 +299,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Izvedba
  </span>
@@ -324,21 +323,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -356,7 +355,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -372,21 +371,22 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -428,6 +428,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -435,28 +436,28 @@
         
               <div>
                 
-  <section id="python">
+  <div class="section" id="python">
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.python.org/">Python</a> je popularen programski jezik in je nameščen že kot del nekateri operacijskih sistemov (macOS, nekatere distribucije Linux) oz. ga je tam izredno preprosto namestiti, na voljo pa je tudi za okolje Windows. Aktualna verzija je 3 (t.j. Python 3.x), na nekaterih starejših sistemih lahko naletimo še na prejšnjo verzijo (2.x). Načeloma programi, napisani v Python 2, delujejo tudi v verziji 3, je pa vsekakor priporočljivo, da uporabljate najnovejšo verzijo, sploh zaradi združljivosti z novejšimi paketi.</p>
-<section id="namestitev">
+<div class="section" id="namestitev">
 <h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">¶</a></h2>
 <p>Ko namestimo Python gre pravzaprav za namestitev prevajalnika, to pa lahko storimo na več načinov, med drugim:</p>
 <ul class="simple">
 <li><p>namestimo osnovni paket z uradne strani <a class="reference external" href="https://www.python.org/">Python</a>,</p></li>
 <li><p>namestimo distribucijo <a class="reference external" href="https://anaconda.org">Anaconda</a>, ki vsebuje Python in kopico drugih paketov.</p></li>
 </ul>
-<section id="namestitev-prek-osnovnega-paketa">
+<div class="section" id="namestitev-prek-osnovnega-paketa">
 <h3>Namestitev prek osnovnega paketa<a class="headerlink" href="#namestitev-prek-osnovnega-paketa" title="Permalink to this headline">¶</a></h3>
 <p>Z <a class="reference external" href="https://www.python.org/downloads/">uradne spletne strani</a> si prenesite zadnjo verzijo namestitvenega programa za vaš operacijski sistem in ga zaženite.</p>
 <p>JupyterLab (ter druge pakete, npr. BioPython) namestite z uporabo upravljalnika paketov <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, BioPython namestite tako: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">biopython</span></code>. Kratka navodila za JupyterLab, vključno z namestitvijo, so <a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">tukaj</span></a>.</p>
-</section>
-<section id="namestitev-v-okviru-anaconde">
+</div>
+<div class="section" id="namestitev-v-okviru-anaconde">
 <h3>Namestitev v okviru Anaconde<a class="headerlink" href="#namestitev-v-okviru-anaconde" title="Permalink to this headline">¶</a></h3>
 <p>Z <a class="reference external" href="https://anaconda.org/">uradne spletne strani</a> prenesite namestitveni paket (<a class="reference external" href="https://www.anaconda.com/products/individual">povezava</a> za vaš operacijski sistem in zaženite namestitev.</p>
 <p>Anaconda pride s svojim upravljalnikom paketom <code class="docutils literal notranslate"><span class="pre">conda</span></code>, ki ga lahko poganjate v lupini (terminalu), lahko pa uporabite tudi grafični vmesnik znotraj Anaconda Navigatorja. Prek tega sistema je dostopnih veliko paketov, ne pa vsi. Priporočljivo je, da pakete najprej poiščete in poizkusite namestiti z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code>, tudi JupyterLab (<a class="reference internal" href="jupyterlab.html"><span class="doc std std-doc">navodila</span></a>). Če nekega paketa ni na voljo, pa z uporabo <code class="docutils literal notranslate"><span class="pre">conda</span></code> namestite <code class="docutils literal notranslate"><span class="pre">pip</span></code> (ukaz: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>), nato pa s <code class="docutils literal notranslate"><span class="pre">pip</span></code> namestite željen paket.</p>
-</section>
-</section>
-<section id="virtualno-okolje">
+</div>
+</div>
+<div class="section" id="virtualno-okolje">
 <h2>Virtualno okolje<a class="headerlink" href="#virtualno-okolje" title="Permalink to this headline">¶</a></h2>
 <p>Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje (<em>virtual environment</em>) in si z njimi ter morebitnimi dodatno potrebnimi programi/knjižnicami, od katerih so prvi odvisni (t.i. <em>dependencies</em>), ne smetite osnovne instalacije Pythona:</p>
 <ul class="simple">
@@ -464,16 +465,16 @@
 <li><p>navodila za virtualno okolje prek <a class="reference external" href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/">pip</a>.</p></li>
 </ul>
 <p>Če želite uporabljati obstoječo instalacijo JupyterLab v okviru Anaconde je morda najbolj smiselno, da si naredite virtualno okolje v Anaconda, nato pa znotraj njega nainstalirate pip (<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pip</span></code>) ter potrebne ostale pakete.</p>
-<section id="uporaba-v-binderju">
+<div class="section" id="uporaba-v-binderju">
 <h3>Uporaba v Binderju<a class="headerlink" href="#uporaba-v-binderju" title="Permalink to this headline">¶</a></h3>
 <p>Če se želimo izogniti spreminjanju naše lokalne instalacije Pythona, prav tako pa ne želimo ustvarjali lokalnih virtualnih orodij, lahko nekatere pakete uporabljamo tudi prek JupyterLaba v Binderju in sicer si jih namestimo z uporabo <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Na primer, namestitev PyMed v virtualnem okolju v Binderju dosežemo tako:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install pymed
 </pre></div>
 </div>
 <p>Ko jedro v Binderju ugasnemo, se virtualno okolje pobriše. <strong>Pozor, ko okno brskalnika, v katerem interagiramo z Binderjem, zapremo, se pobrišejo tudi naše spremembe datotek!</strong></p>
-</section>
-</section>
-<section id="tecaji-pythona">
+</div>
+</div>
+<div class="section" id="tecaji-pythona">
 <h2>Tečaji Pythona<a class="headerlink" href="#tecaji-pythona" title="Permalink to this headline">¶</a></h2>
 <p>Na spletu je brezplačno dostopnih veliko tečajev Pythona, prek katerih se lahko naučite osnov programiranja v tem jeziku ali pa zgolj obnovite svoje znanje. Tukaj je navedenih zgolj nekaj:</p>
 <ul class="simple">
@@ -485,8 +486,8 @@
 <li><p><a class="reference external" href="http://disi.unitn.it/~teso/courses/sciprog/index.html">Scientific Computing</a> - spletna stran, kjer najdete nekaj osnov i Pythona in BioPythona</p></li>
 </ul>
 <p>Obširen seznam tečajev najdete tudi na uradni <a class="reference external" href="https://wiki.python.org/moin/BeginnersGuide/Programmers">wiki-stran Python</a>.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -510,15 +511,15 @@
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="programi.html" title="previous page">Programi</a>
     <a class='right-next' id="next-link" href="jupyterlab.html" title="next page">JupyterLab</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -537,7 +538,7 @@
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
