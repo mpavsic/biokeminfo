@@ -1,4 +1,4 @@
-# VAJA: Grafi
+# VAJA: Grafi in program Cytoscape
 
 Pri vaji si bomo na primeru biološke mreže (uporabili bomo mrežo medproteinskih interakcij, *protein-protein interaction network*, PPIN) pogledali, kako lahko na tak sistem apliciramo teorijo grafov in si z njo pomagamo pri analizi večje količine podatkov. Uporabljali bomo prosto dostopen program [**Cytoscape**](http://cytoscape.org).
 

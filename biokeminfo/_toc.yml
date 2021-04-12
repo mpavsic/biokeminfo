@@ -36,7 +36,7 @@
   chapters:
   - file: osnove/grafi
     sections:
-      - file: vaje/grafi
+      - file: vaje/grafi_cytoscape
 
 - part: Priloge
   chapters:
