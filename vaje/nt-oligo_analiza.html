@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Enostavna analiza nt-zaporedja (Python) &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -105,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -174,7 +175,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -234,7 +235,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -280,7 +302,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -413,12 +435,12 @@
         
               <div>
                 
-  <div class="section" id="vaja-enostavna-analiza-nt-zaporedja-python">
+  <section id="vaja-enostavna-analiza-nt-zaporedja-python">
 <h1>VAJA: Enostavna analiza nt-zaporedja (Python)<a class="headerlink" href="#vaja-enostavna-analiza-nt-zaporedja-python" title="Permalink to this headline">¶</a></h1>
 <p>Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili <a class="reference external" href="https://biopython.org">BioPython</a>.</p>
 <p>Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.</p>
 <hr class="docutils" />
-<div class="section" id="teoreticno-ozadje">
+<section id="teoreticno-ozadje">
 <h2>Teoretično ozadje<a class="headerlink" href="#teoreticno-ozadje" title="Permalink to this headline">¶</a></h2>
 <p>Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri verižni reakciji s polimerazo - <strong>PCR</strong>.  Kratek filmček, kjer je razložen potek reakcije, je na voljo na <a class="reference external" href="https://www.youtube.com/watch?v=2KoLnIwoZKU">YouTube</a>, potek skupaj z zaporedjem matrice in oligonukleotidov pa je shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo <em>forward and reverse oligos</em>).</p>
 <p><img alt="pcr" src="../_images/pcr_oligonukleotidi.png" /></p>
@@ -428,9 +450,9 @@
 <li><p>temperatura tališča (<span class="math notranslate nohighlight">\(T_m\)</span>) smernega in protismernega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja (<span class="math notranslate nohighlight">\(T_a\)</span>)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,</p></li>
 <li><p>delež parov GC naj bo med 40 in 60 %.</p></li>
 </ul>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="primeri-kode">
+<section id="primeri-kode">
 <h2>Primeri kode<a class="headerlink" href="#primeri-kode" title="Permalink to this headline">¶</a></h2>
 <p>Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje in dobimo komplementarno ter obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.</p>
 <div class="cell docutils container">
@@ -513,9 +535,9 @@ A: 3
 </div>
 </div>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga">
+<section id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
 <p>Vaša naloga je, da napišete programček, ki bo sprejel nukleotidno zaporedje oligonukleotida (napisano z malimi ali velikimi črkami), ga izpisal z velikimi tiskanimi črkami, izpisal tudi obratno komplementarno zaporedje (spet z velikimi tiskanimi črkami) in zraven tega izračunal (ter izpisal) naslednje parametre:</p>
 <ul class="simple">
@@ -536,8 +558,8 @@ Tm(upoštevana sol) [°C] = 50.6
 </div>
 <p>Program lahko pripravljate kar spodaj - pripravite si novo celico in začnite! Na koncu ne pozabite shraniti svojega izdelka.</p>
 <hr class="docutils" />
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

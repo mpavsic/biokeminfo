@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Poravnave več zaporedij &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
@@ -56,7 +57,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="next" title="Grafi" href="../osnove/grafi.html" />
     <link rel="prev" title="VAJA: Iskanje podobnih zaporedij z BLAST" href="blast.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Zbirke
  </span>
@@ -172,7 +173,7 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Poravnave
  </span>
@@ -232,7 +233,28 @@
   </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/grafi.html">
+   Grafi
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="grafi.html">
+     VAJA: Grafi
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p>
  <span class="caption-text">
   Priloge
  </span>
@@ -278,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Izvedba
  </span>
@@ -418,37 +440,37 @@
         
               <div>
                 
-  <div class="section" id="vaja-poravnave-vec-zaporedij">
+  <section id="vaja-poravnave-vec-zaporedij">
 <h1>VAJA: Poravnave več zaporedij<a class="headerlink" href="#vaja-poravnave-vec-zaporedij" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
-<div class="section" id="naloga-1-enostavna-poravnava-vec-zaporedij">
+<section id="naloga-1-enostavna-poravnava-vec-zaporedij">
 <h2>Naloga 1: enostavna poravnava več zaporedij<a class="headerlink" href="#naloga-1-enostavna-poravnava-vec-zaporedij" title="Permalink to this headline">¶</a></h2>
 <p>Ločeno pripravite poravnavo približno desetih ak-zaporedij za alfa in beta verigo hemoglobina (HBA oz. HBB) iz različnih organizmov (pri tem za beta verigo uporabite zaporedja iz istih organizmov kot ste jih uporabili za alfa verigo) ter primerjajte drevesi, ki jih dobite z metodo združevanja sosedov (NJ, neighbour joining).</p>
 <p>Za izračun poravnave uporabite <a class="reference external" href="https://www.ebi.ac.uk/Tools/msa/clustalo/"><strong>Clustal Omega</strong></a>, drevo skonstruirajte s <strong>Clustal Phylogeny</strong> (direktna povezava iz Clustal Omega), oglejte pa si ga v programu phylo.io, kjer lahko vizualizirate dve drevesi hkrati in ju primerjate. Opazite kakšne razlike?</p>
 <p>Drevesi lahko enostavno primerjate tako, da podatke za njihov izris (to niso zaporedja, ampak razdalje!) prilepite v program <a class="reference external" href="https://phylo.io/">Phylo.io</a>.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga-2-klasifikacija-domen">
+<section id="naloga-2-klasifikacija-domen">
 <h2>Naloga 2: klasifikacija domen<a class="headerlink" href="#naloga-2-klasifikacija-domen" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="ozadje">
+<section id="ozadje">
 <h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
 <p>Pri tej vaji bomo »uporabili« zaporedji dveh proteinov, s katerimi smo že delali in sicer EpCAM in Trop2 (proteina sta paraloga). Za kakšna proteina gre si lahko preberete npr. v zbirki UniProt. Vse domene niso anotirane, med drugim ne majhna prva domena zunajceličnega dela, ki se nahaja med signalnim peptidom (le-ta se seveda odcepi) in tiroglobulinsko domeno (TY). To domeni članki pogosto klasificirajo kot EGF-podobno domeno (EGF = epidermal growth factor) in sicer na osnovi njene velikosti/majhnosti ter števila cisteinskih aminokislinskih ostankov.</p>
-</div>
-<div class="section" id="naloga">
+</section>
+<section id="naloga">
 <h3>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h3>
 <p>Na osnovi poravnav več zaporedij omenjene domene (za proteine EpCAM in Trop2 iz večih organizmov, ter EGF-podobne iz večih organizmov) podprite ali ovržite klasifikacijo te domene kot EGF-podobne domene. Preverite pravilnost poravnave s pomočjo anotacij v UniProt.</p>
 <p>Za to domeno iz proteinov EpCAM in Trop2 ter tudi za EGF-podobne domene pripravite tudi ločene poravnave več zaporedij, na njihovi osnovi pa t. i. sequence logo ter ju primerjajte. Logo pripravite s pomočjo programa <a class="reference external" href="http://weblogo.threeplusone.com/">WebLogo</a>.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga-3-povezava-med-hiv-in-siv">
+<section id="naloga-3-povezava-med-hiv-in-siv">
 <h2>Naloga 3: povezava med HIV in SIV<a class="headerlink" href="#naloga-3-povezava-med-hiv-in-siv" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
+<section id="id1">
 <h3>Ozadje<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Sindrom pridobljene imunske pomanjkljivosti (AIDS) se razvije zaradi okužbe z virusom HIV (human immunodeficiency virus). Pri človeku poznamo dva tipa virusa HIV in sicer HIV-1 in HIV-2, ki sta si med seboj precej podobna, je pa HIV-2 nekoliko bolj razširjev v zahodni Afriki, prav tako pa je nekoliko manj infektiven kot virus HIV-1. Podobne viruse so odkrili tudi pri drugih primatih, npr. opicah, kjer se virus imenuje SIV (simian immunodeficiency virus). HIV in SIV spadata med lentiviruse, le-ti pa med retroviruse, katerih genom je predstavlja enoverižno RNA (ssRNA). Po vstopu v gostiteljske celico se ssRNA preko reverzne transkripcije prepiše v dsDNA, ta pa se vstavi v genom gostiteljske celice, kjer potem služi kot matrica za nove kopije virusne RNA. Okužba z virusom HIV/SIV se prične z vezavo virusnega delca na gostiteljsko celico, pri tem pa gre za interakcijo med proteinom gp120 virusne ovojnice ter proteinom CD4 celic imunskega sistema (TH limfociti (celice pomagalke), monociti, makrofagi).</p>
 <p>Po trenutno splošno sprejeti teoriji je virus SIV v preteklosti preskočil medvrstno bariero med opicami in ljudmi, domnevno med lovom na opice in uživanjem opičjega mesa, kjer so ljudje prišli v stik s krvjo okuženih opic. Virus se je kasneje nekoliko prilagodil, tako da je za ljudi postal bolj infektiven (učinkovitejše širjenje), in sicer preko mutacij v proteinu gp120.</p>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h3>Naloga<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Preko konstrukcije poravnav več ak-zaporedij proteina gp120 virusov HIV-1, HIV-2 ter variant SIV in izrisa filogenetskega drevesa poizkusite ugotoviti, kakšna je povezava med njimi. V poravnavo vključite vsaj 25 zaporedij, obvezno pa tudi proteine gp120 SIV iz šimpanza (Pan troglodytes) ter mangabeja (Cercocebus atys in sorodniki).</p>
 <p>Oris postopka reševanja:</p>
@@ -461,9 +483,9 @@
 </ol>
 <p>Alternativni postopek: poravnavo s Clustal Omega lahko sprožite neposredno iz UniProt, kjer si zaporedja, ki jih želite poravnati, dodate v košarico (Basket).</p>
 <p>Za pripravo MSA lahko uporabite tudi kakšno drugo orodje, recimo <a class="reference external" href="http://tcoffee.crg.cat/">T-COFFEE</a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -494,7 +516,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="blast.html" title="previous page">VAJA: Iskanje podobnih zaporedij z BLAST</a>
-    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
+    <a class='right-next' id="next-link" href="../osnove/grafi.html" title="next page">Grafi</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
