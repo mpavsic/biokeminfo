@@ -4,11 +4,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VAJA: Iskanje podobnih zaporedij z BLAST &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -27,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -45,7 +44,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -104,7 +103,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Zbirke
  </span>
@@ -173,7 +172,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Poravnave
  </span>
@@ -233,7 +232,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Grafi
  </span>
@@ -254,7 +253,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Priloge
  </span>
@@ -300,7 +299,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Izvedba
  </span>
@@ -324,21 +323,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -356,7 +355,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -372,21 +371,22 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -424,6 +424,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -431,12 +432,12 @@
         
               <div>
                 
-  <section id="vaja-iskanje-podobnih-zaporedij-z-blast">
+  <div class="section" id="vaja-iskanje-podobnih-zaporedij-z-blast">
 <h1>VAJA: Iskanje podobnih zaporedij z BLAST<a class="headerlink" href="#vaja-iskanje-podobnih-zaporedij-z-blast" title="Permalink to this headline">¶</a></h1>
 <p>Pri vaji bomo uporabljali spletno različico programa <strong>BLAST</strong> (Basic Local Alignment Search Tool), ki teče na strežniku NCBI na tem naslovu: <a class="reference external" href="https://blast.ncbi.nlm.nih.gov">https://blast.ncbi.nlm.nih.gov</a>.</p>
 <p>Do tega strežnika lahko dostopamo tudi prek API (npr. iz Pythona), kjer uporabimo REST, kar smo že spoznali; tak način dostop je opisan <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=DeveloperInfo">tukaj</a>. BLAST lahko poganjamo tudi lokalno, t. j. na lastnem računalniku, pri čemer pa seveda potrebujemo tudi neko zbirko zaporedij, po kateri bomo iskanje izvajali.</p>
 <hr class="docutils" />
-<section id="naloga-1-enostavno-iskanje">
+<div class="section" id="naloga-1-enostavno-iskanje">
 <h2>Naloga 1: enostavno iskanje<a class="headerlink" href="#naloga-1-enostavno-iskanje" title="Permalink to this headline">¶</a></h2>
 <p>Na novo smo prišli v raziskovalni laboratorij, kjer moramo nadaljevati z raziskovalnim projektom njihovega prejšnjega sodelavca. Čaka nas nehvaležno delo, da uredimo epice z vzorci plazmidov. Ta prejšnji sodelavec je bil namreč precej nemaren, saj je za seboj pustil kup pomanjkljivo označenih vzorcev. Tako smo recimo naleteli na epico, ka kateri piše »pET-22/insert«. Le kaj je ta insert?</p>
 <p>Plazmid smo poslali na sekvenciranje, pri tem pa uporabili univerzalni smerni in protismerni oligonukleotid, ki se vežeta na del zaporedja za T7 promoter (pod katerim so vključki za izražanje v plazmidih sistema pET) oz. T7 terminator. Dobljeni zaporedji smo lahko sestavili v enotno zaporedje, ki je priloženo spodaj.</p>
@@ -473,9 +474,9 @@
 <span class="n">GAAGCTGAGTTGGCTGC</span>
 </pre></div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="naloga-2-homologi">
+<div class="section" id="naloga-2-homologi">
 <h2>Naloga 2: homologi<a class="headerlink" href="#naloga-2-homologi" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>V zbirki Genbank (t.j. Nucleotide na NCBI) poiščite zaporedje mRNA za inzulin pri zlatem hrčku (<em>Mesocricetus auratus</em>).</p></li>
@@ -493,9 +494,9 @@
 <li><p>Če vzamemo 10-krat večjo zbirko, kakšna bo E-vrednost za isti zadetek, če se nahaja v tej večji zbirki?</p></li>
 <li><p>Katero drugo različico programa blast bi lahko uporabili za namen iskanja homolognega proteina pri človeku, če iščemo z nukleotidnim zaporedjem?</p></li>
 </ul>
-</section>
+</div>
 <hr class="docutils" />
-<section id="naloga-3-iskanje-s-kratkim-zaporedjem">
+<div class="section" id="naloga-3-iskanje-s-kratkim-zaporedjem">
 <h2>Naloga 3: iskanje s kratkim zaporedjem<a class="headerlink" href="#naloga-3-iskanje-s-kratkim-zaporedjem" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja… Uporabite orodje <a class="reference external" href="http://www.cbs.dtu.dk/biotools/SeqGen-1.0/">SeqGen</a>  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.</p></li>
@@ -523,9 +524,9 @@
 <li><p>Če ne dobite zadetkov, povečajte največjo vrednost E, za katero prikaže rezultate.</p></li>
 </ol>
 <p><strong>Vprašanje</strong>: Kakšni so sedaj rezultati iskanja (v primerjavi z iskanjem z naključnimi nukleotidnimi zaporedji)?</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="naloga-4-ortologi">
+<div class="section" id="naloga-4-ortologi">
 <h2>Naloga 4: ortologi<a class="headerlink" href="#naloga-4-ortologi" title="Permalink to this headline">¶</a></h2>
 <p>Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih filamentov v snope in mreže, najdemo pa ga tako v mišičnih kot tudi nemišičnih celicah.</p>
 <ol class="simple">
@@ -536,9 +537,9 @@
 </ol>
 <p><img alt="Etruščanska rovka" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Suncus_etruscus.jpg" />
 <em>Etruščanska rovka je najmanjši sesalec na svetu, v povprečju tehta manj kot 2 g. Njena velikost oz. masa je na spodnji meji, ki še omogoča ohranjanje stalne telesne temperature.</em> Vir slike: <a class="reference external" href="https://en.wikipedia.org/wiki/Etruscan_shrew">Wikipedia</a>.</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="naloga-5-virusni-genom">
+<div class="section" id="naloga-5-virusni-genom">
 <h2>Naloga 5: virusni genom<a class="headerlink" href="#naloga-5-virusni-genom" title="Permalink to this headline">¶</a></h2>
 <p>“V roke” dobimo pacienta, okuženega z nekim virusom. Iz njegove sluznice uspemo izolirati virus in ga namnožiti v celični kulturi ter posekvencirati kratek del njegovega genoma. Zaporedje je spodaj.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGC</span>
@@ -549,9 +550,9 @@
 <p><strong>Vprašanje 1</strong>: Za kateri virus najverjetneje gre in kako je sestavljen genom tega virusa?</p>
 <p>Virusi pogosto sintetizirajo več sicer posamičnih proteinov kot eno polipeptidno verigo (poliprotein), ki ga potem kakšen virusni encim (proteaza) cepi na posamezne odseke, ki predstavljajo funkcionalne proteine. Ima takšno proteazo tudi naš virus? Kateremu odseku genoma ustreza?</p>
 <p><strong>Vprašanje 2</strong>: Če bi načrtovali inhibitor te proteaze z namenom blokiranja procesiranja poliproteina in s tem inhibiranja virusnega replikacijskega cikla, katero znano proteinsko strukturo bi lahko uporabili za analizo in za modeliranje strukture naše proteaze na osnovi homologije?</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="naloga-6-psi-blast">
+<div class="section" id="naloga-6-psi-blast">
 <h2>Naloga 6: PSI-BLAST<a class="headerlink" href="#naloga-6-psi-blast" title="Permalink to this headline">¶</a></h2>
 <p>PSI-BLAST je kratica za position-specific interative BLAST, kjer se zadetki iskanja uporabijo za pripravo pozicijsko utežene matrike zamenjav, slednja pa za novo (ponovljeno - iterirano) iskanje. Tako so na ključnih (ohranjenih) mestih bolje (pozitivno) točkovani ak-ostanki, ki so značilni za neko pozicijo, kar omogoča detekcijo bolj oddaljenih homologov, pri katerih je morda dobro ohranjenih zgolj nekaj ak-ostankov, ključnih za npr. katalizo (če govorimo o encimih). Iskanje se lahko potem še večkrat ponovi, pri vsaki iteraciji lahko dodamo nova najdena zaporedja za izdelavo nove pozicijsko-utežene matrike (PSSM).</p>
 <p>Zanimajo nas homologi proteina s spodnjim zaporedjem. Za analizo bomo uporabili zbirko dobro anotiranih zaporedij UniProt/Swissprot, torej ne celotne zbirke nr (non-redundant). Radi bi tudi ugotovili, kateri so ak-ostanki zaporedja, ključni za delovanje tega proteina.</p>
@@ -582,8 +583,8 @@
 </ul>
 </li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -607,15 +608,15 @@
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="poravnava2_lastna_matrika.html" title="previous page">DEMO: Izračun lastne matrike in njena uporaba</a>
     <a class='right-next' id="next-link" href="msa.html" title="next page">VAJA: Poravnave več zaporedij</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -634,7 +635,7 @@
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

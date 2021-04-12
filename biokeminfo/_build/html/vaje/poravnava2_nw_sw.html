@@ -4,11 +4,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VAJA: Poravnava zaporedij NW &amp; SW (Python) &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -27,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -45,7 +44,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -106,7 +105,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Zbirke
  </span>
@@ -175,7 +174,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Poravnave
  </span>
@@ -235,7 +234,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Grafi
  </span>
@@ -256,7 +255,7 @@
   </i>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Priloge
  </span>
@@ -302,7 +301,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Izvedba
  </span>
@@ -326,21 +325,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -358,7 +357,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -374,13 +373,13 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -399,13 +398,14 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -450,6 +450,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -457,14 +458,14 @@
         
               <div>
                 
-  <section id="vaja-poravnava-zaporedij-nw-sw-python">
+  <div class="section" id="vaja-poravnava-zaporedij-nw-sw-python">
 <h1>VAJA: Poravnava zaporedij NW &amp; SW (Python)<a class="headerlink" href="#vaja-poravnava-zaporedij-nw-sw-python" title="Permalink to this headline">¶</a></h1>
 <p>V Pythonu lahko z uporabo paketa <a class="reference external" href="https://biopython.org">BioPython</a> na enostaven način delamo poravnave aminokislinskih zaporedij. Uporaba algoritmov, ki dajo matematično optimalno poravnavo (npr. <strong>Needleman-Wunsch</strong> in <strong>Smith-Waterman</strong>), je v primeru manjšega obsega vhodnih podatkov popolnoma normalno izvedljiva na domačem računalniku. V primeru daljšega računanja se lahko uporabi (“pokliče” iz Pythona) orodja na npr. strežniku EMBOSS (opis API-ja za to je tukaj je v <a class="reference external" href="http://europepmc.org/article/MED/30976793">članku</a>).</p>
 <p>Mi si bomo pogledali enostavne primere poravnave, kjer lahko poljubno variiramo parametre (npr. uporabljena matrika zamenjav ter kazni za vrzeli) in opazujemo, kakšne poravnave dobimo. Kot pri preteklih vajah so spodaj že pripravljeni zgledi kode, ki s spremljajočim besedilom ilustrirajo uporabo, na dnu datoteke pa je enostavna naloga, ki ilustrira možnost variacije parametrov.</p>
 <hr class="docutils" />
-<section id="zgledi">
+<div class="section" id="zgledi">
 <h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
-<section id="definicija-zaporedja">
+<div class="section" id="definicija-zaporedja">
 <h3>Definicija zaporedja<a class="headerlink" href="#definicija-zaporedja" title="Permalink to this headline">¶</a></h3>
 <p>Najprej bomo <strong>definirali objekt, ki vsebuje zaporedje</strong>, oz. dva taka objekta. To lahko naredimo na več načinov, eden je direktna ustvaritev, kjer sami podamo zaporedje. Zaporedja lahko preberemo tudi iz <em>lokalno shranjene datoteke</em> v različnih formatih (npr. Genbank ali FASTA) ter seveda tudi iz <em>spletnih podatkovnih zbirk (npr. Genbank ali UniProt)</em>, kar smo si že pogledali na prejšnjih vajah.</p>
 <p>Torej, objekt definiramo podobno kot pri eni izmed začetnih vaj z BioPython:</p>
@@ -522,12 +523,12 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="izbor-matrike-zamenjav">
+<div class="section" id="izbor-matrike-zamenjav">
 <h3>Izbor matrike zamenjav<a class="headerlink" href="#izbor-matrike-zamenjav" title="Permalink to this headline">¶</a></h3>
 <p>Naslednje, kar zraven zaporedja potrebujemo za izračun poravnave, je <strong>substitucijska matrika</strong> (matrika zamenjav, <em>substitution matrix</em>). Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - <em>dictionary</em>).</p>
-<p>Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html</p>
+<p>Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: <a class="reference external" href="https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html">https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html</a></p>
 <p>Lahko pa tudi samo pokukamo, kaj imamo v trenutno nainstalirani verziji BioPythona na razpolago:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -604,9 +605,9 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </div>
 </div>
 <p>Dobro, to je bilo nekaj uvoda, sedaj pa gremo k stvari - poravnavam!</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="globalna-poravnava">
+<div class="section" id="globalna-poravnava">
 <h3>Globalna poravnava<a class="headerlink" href="#globalna-poravnava" title="Permalink to this headline">¶</a></h3>
 <p>Za poravnavo zaporedij imamo v <a class="reference external" href="https://biopython.org">BioPython</a> na voljo več orodij. Eno izmed njih, modul <strong><a class="reference external" href="https://biopython.org/DIST/docs/api/Bio.pairwise2-module.html">pairwise2</a></strong>, omogoča izračun poravnave dveh zaporedij z dinamičnim programiranjem, med drugim preko algoritmov Needleman-Wunsch in Smith-Waterman.</p>
 <div class="cell docutils container">
@@ -761,7 +762,7 @@ A--CTA
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">penalize_extend_when_opening</span></code>: boolean (default: False) - ali naj bo odprtje vrzeli dodatno kaznovano še kot ena razširitev ali ne (false = vrzel dolžine 1 je kaznovana samo s kaznijo za odprtje)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">penalize_end_gap</span></code>: boolean - ali naj kaznujemo končne vrzeli, privzeto je vključeno pri globalni poravnavi, pri lokalni to odpade</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gap_char</span></code>: string (default: ‘-’) - kakšen znak naj se uporabi za vrzel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gap_char</span></code>: string (default: ‘-‘) - kakšen znak naj se uporabi za vrzel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">force_generic</span></code>: boolean (default: False) - če vklopimo, se bo uporabil generičen neoptimiziran algoritem za dinamično programiranje (počasno!)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">score_only</span></code>: boolean (default: False) - vrni samo vrednost poravnave brez poravnave same</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">one_alignment_only</span></code>: boolean (default: False) - vrni samo eno poravnavo</p></li>
@@ -800,9 +801,9 @@ AŠŠCŠTA
 </div>
 <p>Že iz prejšnjega prikaza, še bolj nazorno pa iz preoblikovanega, lahko vidimo, da imamo dve poravnavi - ena ima blizu 3’-konca vrzel v obeh zaporedjih, druga pa na tem mestu neujemanje. Vrednost obeh je enaka, saj je kazen tako za odprtje vrzeli kot vrednost za neujemanje enaka 0.</p>
 <p>BioPython sicer ne vsebuje substitucijskih matrik za nukleotidna zaporedja, tako da bi relevantno matriko morali sami uvoziti in nato uporabiti kot <em>dictionary</em>. Tega na tem mestu ne bomo počeli.</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="lokalna-poravnava">
+<div class="section" id="lokalna-poravnava">
 <h3>Lokalna poravnava<a class="headerlink" href="#lokalna-poravnava" title="Permalink to this headline">¶</a></h3>
 <p>Poglejmo si še primer lokalne poravnave:</p>
 <div class="cell docutils container">
@@ -888,8 +889,8 @@ A----------CTC--C--------GCT----T-----
 </div>
 </div>
 <p>Naj bo nukleotidnih zaporedij zaenkrat dovolj, gremo na aminokislinska zaporedja!</p>
-</section>
-<section id="globalna-in-lokalna-poravnava-aminokislinskih-zaporedij">
+</div>
+<div class="section" id="globalna-in-lokalna-poravnava-aminokislinskih-zaporedij">
 <h3>Globalna in lokalna poravnava aminokislinskih zaporedij<a class="headerlink" href="#globalna-in-lokalna-poravnava-aminokislinskih-zaporedij" title="Permalink to this headline">¶</a></h3>
 <p>Najprej definirajmo naši zaporedji (to je kopija kode od zgoraj):</p>
 <div class="cell docutils container">
@@ -955,10 +956,10 @@ A----------CTC--C--------GCT----T-----
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="naloga">
+<div class="section" id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
 <p>Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislinskega zaporedja (primer zgoraj) sploh v redu. Napnite oči!</p>
 <p>Če poravnavi nisva v redu predlagajte izboljšane parametre za poravnavo in sicer:</p>
@@ -967,8 +968,8 @@ A----------CTC--C--------GCT----T-----
 <li><p>kazni za vrzeli.</p></li>
 </ul>
 <p>Analizirajte, kako variacija parametrov (ločeno!) vpliva na poravnavo. Rezultate primerjajte s poravnavo, ki jo naredite s spletno verzijo orodja Needle na strežniku <a class="reference external" href="https://www.ebi.ac.uk/Tools/psa/">Pairwise Sequence Alignment &#64; EBI</a>.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -992,15 +993,15 @@ A----------CTC--C--------GCT----T-----
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="poravnava2_web.html" title="previous page">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a>
     <a class='right-next' id="next-link" href="poravnava2_lastna_matrika.html" title="next page">DEMO: Izračun lastne matrike in njena uporaba</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -1019,7 +1020,7 @@ A----------CTC--C--------GCT----T-----
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
