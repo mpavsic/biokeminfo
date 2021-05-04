@@ -1,10 +1,10 @@
 # VAJA: Modeliranje na osnovi homologije
 
 Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je [SWISS-MODEL](https://swissmodel.expasy.org/):
-![SWISS-MODEL vstopna stran](modeliranje-swissmodel1.png)
+![SWISS-MODEL vstopna stran](slike/modeliranje-swissmodel1.png)
 
 Interaktivno modeliranje zaženemo s pritiskom na gumb `Start Modelling`. Kot cvhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko "projektu" določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo izkanje po predlogah (`Search For Templates`), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo `Build Model`, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
-![SWISS-MODEL vnos](modeliranje-swissmodel2.png)
+![SWISS-MODEL vnos](slike/modeliranje-swissmodel2.png)
 
 Podrobnosti in navodila so opisana v [dokumentaciji](https://swissmodel.expasy.org/docs/help).
 
