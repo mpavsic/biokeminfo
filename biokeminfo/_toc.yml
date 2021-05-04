@@ -38,6 +38,13 @@
     sections:
       - file: vaje/grafi_cytoscape
 
+- part: Strukture
+  chapters:
+  - file: osnove/strukture
+    sections:
+      - file: vaje/podobne_strukture
+      - file: vaje/modeliranje
+
 - part: Priloge
   chapters:
   - file: priloge/programi

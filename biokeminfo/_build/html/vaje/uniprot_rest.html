@@ -257,6 +257,32 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
+  Strukture
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/strukture.html">
+   Strukture
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="podobne_strukture.html">
+     VAJA: Iskanje podobnih struktur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="modeliranje.html">
+     VAJA: Modeliranje na osnovi homologije
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
   Priloge
  </span>
 </p>
@@ -503,15 +529,159 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="600"
-    height="300"
-    src="https://www.youtube.com/embed/7YcW25PHnAA"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div></div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">22</span><span class="n">fd607f820e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;7YcW25PHnAA&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">YouTubeVideo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/displayhook.py</span> in <span class="ni">__call__</span><span class="nt">(self, result)</span>
+<span class="g g-Whitespace">    </span><span class="mi">260</span>             <span class="bp">self</span><span class="o">.</span><span class="n">start_displayhook</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">261</span>             <span class="bp">self</span><span class="o">.</span><span class="n">write_output_prompt</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">262</span>             <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">compute_format_data</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">263</span>             <span class="bp">self</span><span class="o">.</span><span class="n">update_user_ns</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">264</span>             <span class="bp">self</span><span class="o">.</span><span class="n">fill_exec_result</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/displayhook.py</span> in <span class="ni">compute_format_data</span><span class="nt">(self, result)</span>
+<span class="g g-Whitespace">    </span><span class="mi">149</span> 
+<span class="g g-Whitespace">    </span><span class="mi">150</span>         <span class="sd">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">151</span><span class="sd">         return self.shell.display_formatter.format(result)</span>
+<span class="g g-Whitespace">    </span><span class="mi">152</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">153</span><span class="sd">     # This can be set to True by the write_output_prompt method in a subclass</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">format</span><span class="nt">(self, obj, include, exclude)</span>
+<span class="g g-Whitespace">    </span><span class="mi">178</span><span class="sd">             md = None</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span><span class="sd">             try:</span>
+<span class="ne">--&gt; </span><span class="mi">180</span><span class="sd">                 data = formatter(obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">181</span><span class="sd">             except:</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span><span class="sd">                 # FIXME: log the exception</span>
+
+<span class="nn">&lt;decorator-gen-2&gt;</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span><span class="sd">     &quot;&quot;&quot;</span><span class="n">show</span> <span class="n">traceback</span> <span class="n">on</span> <span class="n">failed</span> <span class="nb">format</span> <span class="n">call</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">     try:</span>
+<span class="ne">--&gt; </span><span class="mi">224</span><span class="s2">         r = method(self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">225</span><span class="s2">     except NotImplementedError:</span>
+<span class="g g-Whitespace">    </span><span class="mi">226</span><span class="s2">         # don&#39;t warn on NotImplementedErrors</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span><span class="s2">             method = get_real_method(obj, self.print_method)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span><span class="s2">             if method is not None:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span><span class="s2">                 return method()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span><span class="s2">             return None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span><span class="s2">         else:</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/lib/display.py</span> in <span class="ni">_repr_jpeg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">316</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">317</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">318</span><span class="s2">             return urlopen(&quot;https://img.youtube.com/vi/</span><span class="si">{id}</span><span class="s2">/hqdefault.jpg&quot;.format(id=self.id)).read()</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span><span class="s2">         except IOError:</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span><span class="s2">             return None</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">220</span><span class="s2">     else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="s2">         opener = _opener</span>
+<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">     return opener.open(url, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2"> def install_opener(opener):</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">523</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">524</span><span class="s2">         sys.audit(&#39;urllib.Request&#39;, req.full_url, req.data, req.headers, req.get_method())</span>
+<span class="ne">--&gt; </span><span class="mi">525</span><span class="s2">         response = self._open(req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">526</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">527</span><span class="s2">         # post-process response</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">_open</span><span class="nt">(self, req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">540</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">541</span><span class="s2">         protocol = req.type</span>
+<span class="ne">--&gt; </span><span class="mi">542</span><span class="s2">         result = self._call_chain(self.handle_open, protocol, protocol +</span>
+<span class="g g-Whitespace">    </span><span class="mi">543</span><span class="s2">                                   &#39;_open&#39;, req)</span>
+<span class="g g-Whitespace">    </span><span class="mi">544</span><span class="s2">         if result:</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">500</span><span class="s2">         for handler in handlers:</span>
+<span class="g g-Whitespace">    </span><span class="mi">501</span><span class="s2">             func = getattr(handler, meth_name)</span>
+<span class="ne">--&gt; </span><span class="mi">502</span><span class="s2">             result = func(*args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">503</span><span class="s2">             if result is not None:</span>
+<span class="g g-Whitespace">    </span><span class="mi">504</span><span class="s2">                 return result</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">https_open</span><span class="nt">(self, req)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1395</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1396</span><span class="s2">         def https_open(self, req):</span>
+<span class="ne">-&gt; </span><span class="mi">1397</span><span class="s2">             return self.do_open(http.client.HTTPSConnection, req,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1398</span><span class="s2">                 context=self._context, check_hostname=self._check_hostname)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1399</span><span class="s2"> </span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1352</span><span class="s2">         try:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1353</span><span class="s2">             try:</span>
+<span class="ne">-&gt; </span><span class="mi">1354</span><span class="s2">                 h.request(req.get_method(), req.selector, req.data, headers,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1355</span><span class="s2">                           encode_chunked=req.has_header(&#39;Transfer-encoding&#39;))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1356</span><span class="s2">             except OSError as err: # timeout error</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1253</span><span class="s2">                 encode_chunked=False):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1254</span><span class="s2">         &quot;&quot;&quot;</span><span class="n">Send</span> <span class="n">a</span> <span class="n">complete</span> <span class="n">request</span> <span class="n">to</span> <span class="n">the</span> <span class="n">server</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1255</span><span class="s2">         self._send_request(method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1256</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1257</span><span class="s2">     def _send_request(self, method, url, body, headers, encode_chunked):</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">_send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1299</span><span class="s2">             # default charset of iso-8859-1.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1300</span><span class="s2">             body = _encode(body, &#39;body&#39;)</span>
+<span class="ne">-&gt; </span><span class="mi">1301</span><span class="s2">         self.endheaders(body, encode_chunked=encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1302</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1303</span><span class="s2">     def getresponse(self):</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1248</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1249</span><span class="s2">             raise CannotSendHeader()</span>
+<span class="ne">-&gt; </span><span class="mi">1250</span><span class="s2">         self._send_output(message_body, encode_chunked=encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1251</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1252</span><span class="s2">     def request(self, method, url, body=None, headers=</span><span class="si">{}</span><span class="s2">, *,</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">_send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1008</span><span class="s2">         msg = b&quot;</span><span class="se">\r\n</span><span class="s2">&quot;.join(self._buffer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1009</span><span class="s2">         del self._buffer[:]</span>
+<span class="ne">-&gt; </span><span class="mi">1010</span><span class="s2">         self.send(msg)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1011</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1012</span><span class="s2">         if message_body is not None:</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">send</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">948</span><span class="s2">         if self.sock is None:</span>
+<span class="g g-Whitespace">    </span><span class="mi">949</span><span class="s2">             if self.auto_open:</span>
+<span class="ne">--&gt; </span><span class="mi">950</span><span class="s2">                 self.connect()</span>
+<span class="g g-Whitespace">    </span><span class="mi">951</span><span class="s2">             else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">952</span><span class="s2">                 raise NotConnected()</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1415</span><span class="s2">             &quot;Connect to a host on a given (SSL) port.&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1416</span><span class="s2"> </span>
+<span class="ne">-&gt; </span><span class="mi">1417</span><span class="s2">             super().connect()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1418</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1419</span><span class="s2">             if self._tunnel_host:</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">919</span><span class="s2">     def connect(self):</span>
+<span class="g g-Whitespace">    </span><span class="mi">920</span><span class="s2">         &quot;&quot;&quot;</span><span class="n">Connect</span> <span class="n">to</span> <span class="n">the</span> <span class="n">host</span> <span class="ow">and</span> <span class="n">port</span> <span class="n">specified</span> <span class="ow">in</span> <span class="fm">__init__</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">921</span><span class="s2">         self.sock = self._create_connection(</span>
+<span class="g g-Whitespace">    </span><span class="mi">922</span><span class="s2">             (self.host,self.port), self.timeout, self.source_address)</span>
+<span class="g g-Whitespace">    </span><span class="mi">923</span><span class="s2">         self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)</span>
+
+<span class="nn">~/opt/anaconda3/lib/python3.8/socket.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
+<span class="g g-Whitespace">    </span><span class="mi">794</span><span class="s2">             if source_address:</span>
+<span class="g g-Whitespace">    </span><span class="mi">795</span><span class="s2">                 sock.bind(source_address)</span>
+<span class="ne">--&gt; </span><span class="mi">796</span><span class="s2">             sock.connect(sa)</span>
+<span class="g g-Whitespace">    </span><span class="mi">797</span><span class="s2">             # Break explicitly a reference cycle</span>
+<span class="g g-Whitespace">    </span><span class="mi">798</span><span class="s2">             err = None</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <hr class="docutils" />
@@ -560,9 +730,9 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q7RTY8
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q9Y5Y6
+Q7RTY8
 Q8IU80
-Q9Y5Y6
 </pre></div>
 </div>
 </div>
@@ -586,9 +756,9 @@ Q9Y5Y6
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q7RTY8
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q9Y5Y6
+Q7RTY8
 Q8IU80
-Q9Y5Y6
 </pre></div>
 </div>
 </div>
@@ -613,11 +783,11 @@ Q9Y5Y6
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q7RTY8|TMPS7_HUMAN Transmembrane protease serine 7 OS=Homo sapiens OX=9606 GN=TMPRSS7 PE=2 SV=3
-MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKP
-KKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIE
-FLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIV
-FVMPRAKGHIFCEDCVA
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&gt;sp|Q9Y5Y6|ST14_HUMAN Suppressor of tumorigenicity 14 protein OS=Homo sapiens OX=9606 GN=ST14 PE=1 SV=2
+MGSDRARKGGGGPKDFGAGLKYNSRHEKVNGLEEGVEFLPVNNVKKVEKHGPGRWVVLAA
+VLIGLLLVLLGIGFLVWHLQYRDVRVQKVFNGYMRITNENFVDAYENSNSTEFVSLASKV
+KDALKLLYSGVPFLGPYHKESAVTAFSEGSVIAYYWSEFSIPQHLVEEAERVMAEERVVM
+LPPRARSLKSFVV
 </pre></div>
 </div>
 </div>
@@ -786,9 +956,8 @@ AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
 GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
 GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
 SLL
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|Q7RTY8|TMPS7_HUMAN
+
+sp|Q7RTY8|TMPS7_HUMAN
 Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
 MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
 843
