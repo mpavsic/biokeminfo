@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poravnave &#8212; Biokemijska informatika</title>
+    <title>VAJA: Iskanje podobnih struktur &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -52,22 +52,24 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/podobne_strukture.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="VAJA: Izračun matrike zamenjav (Python)" href="../vaje/matrika_zamenjav.html" />
-    <link rel="prev" title="VAJA: Točkovni diagram" href="../vaje/dotplot_web.html" />
+    <link rel="next" title="VAJA: Modeliranje na osnovi homologije" href="modeliranje.html" />
+    <link rel="prev" title="Strukture" href="../osnove/strukture.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/podobne_strukture.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Poravnave" />
-<meta property="og:description" content="Poravnave  Matrike zamenjav  Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (substitution ma" />
+<meta property="og:title"       content="VAJA: Iskanje podobnih struktur" />
+<meta property="og:description" content="VAJA: Iskanje podobnih struktur  Na primeru si bomo ogledali, kako lahko proteine s podobno strukturo identificiramo z iskanjem z uporabo BLAST (uporabimo amino" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -110,17 +112,17 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="pubmed.html">
+  <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_web.html">
+    <a class="reference internal" href="pubmed_web.html">
      VAJA: Iskanje po PubMed
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_eutilities.html">
+    <a class="reference internal" href="pubmed_eutilities.html">
      DEMO: Programski dostop do PubMed
     </a>
    </li>
@@ -129,22 +131,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="nt.html">
+  <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
+    <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nt-zaporedja (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_web.html">
+    <a class="reference internal" href="genbank_web.html">
      VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_eutilities.html">
+    <a class="reference internal" href="genbank_eutilities.html">
      VAJA: Programski dostop do GenBank (Python)
     </a>
    </li>
@@ -153,17 +155,17 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="ak.html">
+  <a class="reference internal" href="../osnove/ak.html">
    Aminokislinska zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_web.html">
+    <a class="reference internal" href="uniprot_web.html">
      VAJA: Dostop do UniProt v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_rest.html">
+    <a class="reference internal" href="uniprot_rest.html">
      VAJA: Programski dostop do UniProt (Python)
     </a>
    </li>
@@ -177,14 +179,14 @@
   Poravnave
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="dotplot.html">
+  <a class="reference internal" href="../osnove/dotplot.html">
    Točkovni diagram
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/dotplot_web.html">
+    <a class="reference internal" href="dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
@@ -192,38 +194,38 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/poravnave.html">
    Poravnave
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/matrika_zamenjav.html">
+    <a class="reference internal" href="matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_web.html">
+    <a class="reference internal" href="poravnava2_web.html">
      VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_nw_sw.html">
+    <a class="reference internal" href="poravnava2_nw_sw.html">
      VAJA: Poravnava zaporedij NW &amp; SW (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_lastna_matrika.html">
+    <a class="reference internal" href="poravnava2_lastna_matrika.html">
      DEMO: Izračun lastne matrike in njena uporaba
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/blast.html">
+    <a class="reference internal" href="blast.html">
      VAJA: Iskanje podobnih zaporedij z BLAST
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/msa.html">
+    <a class="reference internal" href="msa.html">
      VAJA: Poravnave več zaporedij
     </a>
    </li>
@@ -239,12 +241,12 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="grafi.html">
+  <a class="reference internal" href="../osnove/grafi.html">
    Grafi v molekularni biologiji
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/grafi_cytoscape.html">
+    <a class="reference internal" href="grafi_cytoscape.html">
      VAJA: Grafi in program Cytoscape
     </a>
    </li>
@@ -258,19 +260,19 @@
   Strukture
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="strukture.html">
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/strukture.html">
    Strukture
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/podobne_strukture.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VAJA: Iskanje podobnih struktur
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/modeliranje.html">
+    <a class="reference internal" href="modeliranje.html">
      VAJA: Modeliranje na osnovi homologije
     </a>
    </li>
@@ -372,7 +374,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/osnove/poravnave.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/podobne_strukture.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -417,21 +419,14 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#matrike-zamenjav">
-   Matrike zamenjav
+  <a class="reference internal nav-link" href="#uvod">
+   Uvod
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#poravnava-zaporedij">
-   Poravnava zaporedij
+  <a class="reference internal nav-link" href="#naloga">
+   Naloga
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#globalna-poravnava-zaporedij-needleman-wunsch">
-     Globalna poravnava zaporedij Needleman-Wunsch
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -445,22 +440,39 @@
         
               <div>
                 
-  <div class="section" id="poravnave">
-<h1>Poravnave<a class="headerlink" href="#poravnave" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="matrike-zamenjav">
-<h2>Matrike zamenjav<a class="headerlink" href="#matrike-zamenjav" title="Permalink to this headline">¶</a></h2>
-<p>Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (<em>substitution matrices</em>), kjer so zapisane vrednosti za identičnost oz. zamenjavo nekega ostanka z drugim. Matrike so lahko izračunane na osnovi različnih vhodnih podatkov, najpogosteje pa se uporabljajo take, ki so izračunane na osnovi poravnav zaporedij sámih. Za nukleotidna zaporedja najpogosteje uporabljamo matriko EDNAfull, za aminokislinska zaporedja pa matrike iz družine BLOSUM.</p>
+  <div class="section" id="vaja-iskanje-podobnih-struktur">
+<h1>VAJA: Iskanje podobnih struktur<a class="headerlink" href="#vaja-iskanje-podobnih-struktur" title="Permalink to this headline">¶</a></h1>
+<p>Na primeru si bomo ogledali, kako lahko proteine s podobno strukturo identificiramo z iskanjem z uporabo BLAST (uporabimo aminokislinsko zaporedje proteina, za katerega želimo najdi podobne strukture) ter tudi direktno z iskanjem podobnih struktur.</p>
+<div class="section" id="uvod">
+<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">¶</a></h2>
+<p>Če kot <strong>vhodni podatek uporabimo aminokislinsko zaporedje</strong> proteina (ali njegovega dela), za katerega želimo najti podobne strukture oz. identificirati podobne proteine z znano strukturo izhajamo iz dejstva, da na podobno strukturo/zvitje kaže podobno aminokislinsko zaporedje kaže. Iskanje izvedemo z različico <em>blastp</em> programa BLAST (seveda lahko izvedemo tudi iskanje s <em>psi-blast</em>), pri tem pa kot zbirko za iskanje izberemo <code class="docutils literal notranslate"><span class="pre">Protein</span> <span class="pre">Data</span> <span class="pre">Bank</span> <span class="pre">proteins(pdb)</span></code>:
+<img alt="Izbira PDB kot zbirke za iskanje" src="../_images/podobne_strukture-blast.png" /></p>
+<p>Drug način iskanja je da kot <strong>vhodni podatek uporabimo strukturo</strong> sámo. Na voljo je več orodij, ki tako iskanje omogočajo, na primer <a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a> (iskanje prek ujemanja elementov sekundarne strukture) in <a class="reference external" href="http://ekhidna2.biocenter.helsinki.fi/dali/">DALI</a> (uporaba matrik razdalj med ak-ostanki).</p>
+<p>Pri iskanju s <a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a> lahko kot iskanje uporabimo datoteko s strukturo, ki jo prenesemo na strežnik, ali pa uporabimo strukturo iz zbirke PDB. Pri tem se lahko pri iskanju podobnih struktur omejimo na nek segment strukture (veriga, območje ak-ostankov):
+<img alt="PDBeFold" src="../_images/podobne_strukture-pdbefold-vhod.png" /></p>
+<p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a> prikaže rezultate v obliki tabele, ki je provzeto sortirana po padajoči vrednosti Q. Slednja predstavlja funkcijo kvalitete poravnave atomov C<span class="math notranslate nohighlight">\(_{\alpha}\)</span>, ki vključuje tako dolžino poravnave kot tudi RMSD. Na splošno so dobre poravnave take, ki imajo nizek RMSD ter visoko število poravnanih ak-ostankov. Izračuna se po formuli:</p>
+<div class="math notranslate nohighlight">
+\[
+Q = \frac{N_{poravnano}^2}{(1+\frac{RMSD}{R_0}^2 N_1 N_2)}
+\]</div>
+<p>kjer je <span class="math notranslate nohighlight">\(R_0\)</span> empirično določen parameter (3 Å), <span class="math notranslate nohighlight">\(N_1\)</span> ter <span class="math notranslate nohighlight">\(N_2\)</span> predstavljata število ak-osnatkov v poravnanih proteinih, <span class="math notranslate nohighlight">\(N_{poravnano}\)</span> pa predstavlja število poravnanih ak-ostankov. Za identične strukture je Q enak 1.</p>
+<p>V tabeli je še več drugih parametrov, do njihovega opisa pridete s klikom na ime stolpca v tabeli.
+<img alt="PDBeFold" src="../_images/podobne_strukture-pdbefold-tabela.png" /></p>
 </div>
-<div class="section" id="poravnava-zaporedij">
-<h2>Poravnava zaporedij<a class="headerlink" href="#poravnava-zaporedij" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="globalna-poravnava-zaporedij-needleman-wunsch">
-<h3>Globalna poravnava zaporedij Needleman-Wunsch<a class="headerlink" href="#globalna-poravnava-zaporedij-needleman-wunsch" title="Permalink to this headline">¶</a></h3>
-<p>Algoritem Needleman-Wunsch (<a class="reference external" href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm">Wikipedia</a>) vam da optimalno globalno poravnavo dveh zaporedij. Delovanje algoritma si lahko “vizualiziramo” tako, da zaporedji izpišemo v matriko, vrednosti matrike pa izračunamo s sledenjem različnih poti med posameznimi celicami, pri čemer zmeraj vzamemo tisto pot (ali več) med posameznimi celicami, ki vodijo do večje vrednosti.</p>
-<p>Za lažje razumevanje priporočam igranje s spletnim programčkom, ki za dve poljubni zaporedji ob spreminjanju vrednosti za ujemanje, neujemanje ter vrzeli prikaže matriko s puščicami za sledenje, hkrati pa ob premiku miškinega kazalca na posamezno polje v matriki izpiše vse alternativne poti oz. vrednosti, ki bi se na nekem mestu nahajale, če bi uporabili alternativne poti.</p>
-<p>Povezava: <a class="reference external" href="https://bioboot.github.io/bimm143_W20/class-material/nw/">https://bioboot.github.io/bimm143_W20/class-material/nw/</a></p>
-<div class="toctree-wrapper compound">
-</div>
-</div>
+<div class="section" id="naloga">
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
+<p>Zanima nas, kateremu drugemu proteinu z znano strukturo je podobna C-končna zunajcelična domena  človeškega proteina EpCAM, ki ustreza aminokislinskim ostankom 139-265 (številčenje po UniProt). Iskanje izvedite na dva načina:</p>
+<ul class="simple">
+<li><p>z uporabo aminokislinskega zaporedja in</p></li>
+<li><p>z uporabo strukture tega dela molekule pri tem pa uporabite orodje <a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a></p></li>
+</ul>
+<p>Analizirajte rezultate, pripravite superpozicijo struktur v UCSF Chimera ter odgovorite na vprašanja:</p>
+<ul class="simple">
+<li><p>S katerim pristopom identificiramo več zadetkov in zakaj?</p></li>
+<li><p>Je zvitje tega dela EpCAM in identificiranih podobnih proteinov dejansko enako?</p></li>
+<li><p>Je EpCAM funkcijsko soroden identificiranim proteinom?</p></li>
+<li><p>Kako imenujemo zvitje tega dela proteina EpCAM? Namig: uporabite iskanje s PDBeFold in kot Target izberite SCOP, ali pa iščite direktno z zaporedjem po <a class="reference external" href="https://scop.mrc-lmb.cam.ac.uk/">SCOP</a>.</p></li>
+</ul>
 </div>
 </div>
 
@@ -477,7 +489,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./osnove"
+            path: "./vaje"
         },
         predefinedOutput: true
     }
@@ -489,8 +501,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../vaje/dotplot_web.html" title="previous page">VAJA: Točkovni diagram</a>
-    <a class='right-next' id="next-link" href="../vaje/matrika_zamenjav.html" title="next page">VAJA: Izračun matrike zamenjav (Python)</a>
+    <a class='left-prev' id="prev-link" href="../osnove/strukture.html" title="previous page">Strukture</a>
+    <a class='right-next' id="next-link" href="modeliranje.html" title="next page">VAJA: Modeliranje na osnovi homologije</a>
 
         </div>
         

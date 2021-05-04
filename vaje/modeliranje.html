@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poravnave &#8212; Biokemijska informatika</title>
+    <title>VAJA: Modeliranje na osnovi homologije &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/modeliranje.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="VAJA: Izračun matrike zamenjav (Python)" href="../vaje/matrika_zamenjav.html" />
-    <link rel="prev" title="VAJA: Točkovni diagram" href="../vaje/dotplot_web.html" />
+    <link rel="next" title="Programi" href="../priloge/programi.html" />
+    <link rel="prev" title="VAJA: Iskanje podobnih struktur" href="podobne_strukture.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/modeliranje.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Poravnave" />
-<meta property="og:description" content="Poravnave  Matrike zamenjav  Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (substitution ma" />
+<meta property="og:title"       content="VAJA: Modeliranje na osnovi homologije" />
+<meta property="og:description" content="VAJA: Modeliranje na osnovi homologije  Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, k" />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -110,17 +110,17 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="pubmed.html">
+  <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_web.html">
+    <a class="reference internal" href="pubmed_web.html">
      VAJA: Iskanje po PubMed
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/pubmed_eutilities.html">
+    <a class="reference internal" href="pubmed_eutilities.html">
      DEMO: Programski dostop do PubMed
     </a>
    </li>
@@ -129,22 +129,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="nt.html">
+  <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
+    <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nt-zaporedja (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_web.html">
+    <a class="reference internal" href="genbank_web.html">
      VAJA: Dostop do GenBank v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/genbank_eutilities.html">
+    <a class="reference internal" href="genbank_eutilities.html">
      VAJA: Programski dostop do GenBank (Python)
     </a>
    </li>
@@ -153,17 +153,17 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="ak.html">
+  <a class="reference internal" href="../osnove/ak.html">
    Aminokislinska zaporedja
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_web.html">
+    <a class="reference internal" href="uniprot_web.html">
      VAJA: Dostop do UniProt v brskalniku
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/uniprot_rest.html">
+    <a class="reference internal" href="uniprot_rest.html">
      VAJA: Programski dostop do UniProt (Python)
     </a>
    </li>
@@ -177,14 +177,14 @@
   Poravnave
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="dotplot.html">
+  <a class="reference internal" href="../osnove/dotplot.html">
    Točkovni diagram
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/dotplot_web.html">
+    <a class="reference internal" href="dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
@@ -192,38 +192,38 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../osnove/poravnave.html">
    Poravnave
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/matrika_zamenjav.html">
+    <a class="reference internal" href="matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_web.html">
+    <a class="reference internal" href="poravnava2_web.html">
      VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_nw_sw.html">
+    <a class="reference internal" href="poravnava2_nw_sw.html">
      VAJA: Poravnava zaporedij NW &amp; SW (Python)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/poravnava2_lastna_matrika.html">
+    <a class="reference internal" href="poravnava2_lastna_matrika.html">
      DEMO: Izračun lastne matrike in njena uporaba
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/blast.html">
+    <a class="reference internal" href="blast.html">
      VAJA: Iskanje podobnih zaporedij z BLAST
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/msa.html">
+    <a class="reference internal" href="msa.html">
      VAJA: Poravnave več zaporedij
     </a>
    </li>
@@ -239,12 +239,12 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="grafi.html">
+  <a class="reference internal" href="../osnove/grafi.html">
    Grafi v molekularni biologiji
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/grafi_cytoscape.html">
+    <a class="reference internal" href="grafi_cytoscape.html">
      VAJA: Grafi in program Cytoscape
     </a>
    </li>
@@ -258,19 +258,19 @@
   Strukture
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="strukture.html">
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../osnove/strukture.html">
    Strukture
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/podobne_strukture.html">
+    <a class="reference internal" href="podobne_strukture.html">
      VAJA: Iskanje podobnih struktur
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../vaje/modeliranje.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VAJA: Modeliranje na osnovi homologije
     </a>
    </li>
@@ -372,7 +372,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/osnove/poravnave.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/vaje/modeliranje.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -417,21 +417,14 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#matrike-zamenjav">
-   Matrike zamenjav
+  <a class="reference internal nav-link" href="#naloga-1">
+   Naloga 1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#poravnava-zaporedij">
-   Poravnava zaporedij
+  <a class="reference internal nav-link" href="#naloga-2">
+   Naloga 2
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#globalna-poravnava-zaporedij-needleman-wunsch">
-     Globalna poravnava zaporedij Needleman-Wunsch
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -445,22 +438,55 @@
         
               <div>
                 
-  <div class="section" id="poravnave">
-<h1>Poravnave<a class="headerlink" href="#poravnave" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="matrike-zamenjav">
-<h2>Matrike zamenjav<a class="headerlink" href="#matrike-zamenjav" title="Permalink to this headline">¶</a></h2>
-<p>Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (<em>substitution matrices</em>), kjer so zapisane vrednosti za identičnost oz. zamenjavo nekega ostanka z drugim. Matrike so lahko izračunane na osnovi različnih vhodnih podatkov, najpogosteje pa se uporabljajo take, ki so izračunane na osnovi poravnav zaporedij sámih. Za nukleotidna zaporedja najpogosteje uporabljamo matriko EDNAfull, za aminokislinska zaporedja pa matrike iz družine BLOSUM.</p>
+  <div class="section" id="vaja-modeliranje-na-osnovi-homologije">
+<h1>VAJA: Modeliranje na osnovi homologije<a class="headerlink" href="#vaja-modeliranje-na-osnovi-homologije" title="Permalink to this headline">¶</a></h1>
+<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:
+<img alt="SWISS-MODEL vstopna stran" src="vaje/modeliranje-swissmodel1.png" /></p>
+<p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot cvhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo izkanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
+<img alt="SWISS-MODEL vnos" src="vaje/modeliranje-swissmodel2.png" /></p>
+<p>Podrobnosti in navodila so opisana v <a class="reference external" href="https://swissmodel.expasy.org/docs/help">dokumentaciji</a>.</p>
+<div class="section" id="naloga-1">
+<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
+<p>Zanima nas struktura celotnega človeškega klavdina-7 (claudin-7). Poiščite strukturo/model oz. ga sami pripravite ter ga analizirajte v smislu realnosti.</p>
+<p>Potek reševanja:</p>
+<ol class="simple">
+<li><p>Glavne značilnosti človeškega klavdina-7 si oglejte v zbirki UniProt. Je morda v tej bazi povezava na že pripravljen model in če je, je ta model zadovoljiv? Kako bi lahko pripravili boljši model?</p></li>
+<li><p>Pripravite model omenjenega proteina s programom <a class="reference external" href="http://swissmodel.expasy.org/">SWISS-MODEL</a>, model z <a class="reference external" href="http://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a> pa je že pripravljen (za ta program se je potrebno registrirati, izračun pa traja kak dan) in sicer:</p>
+<ul class="simple">
+<li><p>rezultati modeliranja s privzetimi nastavitvami (kot vhodni podatek je bilo dano ak-zaporedje klavdina-7) so zbrani v datotekah:</p>
+<ul>
+<li><p>posamezni modeli: <span class="xref myst">model1</span>, <span class="xref myst">model2</span>, <span class="xref myst">model3</span>, <span class="xref myst">model4</span> in <span class="xref myst">model5</span></p></li>
+<li><p><span class="xref myst">izpis strani</span> z rezultati modeliranja v formatu PDF</p></li>
+<li><p>celoten izhod: <span class="xref myst">ITASSER-CLDN7_HUMAN_default.zip</span></p></li>
+</ul>
+</li>
+<li><p>rezultati modeliranja, pri katerem eksplicitno NISO bile upoštevane strukture s PDB kodami 4p79 in 3x29 je v datoteki I-TASSER-hCldn7_excluded_4p79_3x29.zip (te strukture so v času priprave modela bile edine, ki so predstavljale smiselne predloge za strukturo, danes je to nekoliko drugače, saj je struktur več):</p>
+<ul>
+<li><p>posamezni modeli: <span class="xref myst">model1</span>, <span class="xref myst">model2</span>, <span class="xref myst">model3</span>, <span class="xref myst">model4</span> in <span class="xref myst">model5</span></p></li>
+<li><p><span class="xref myst">izpis strani</span> z rezultati modeliranja v formatu PDF</p></li>
+<li><p>celoten izhod: <span class="xref myst">I-TASSER-hCldn7_excluded_4p79_3x29.zip</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Najboljše modele, dobljene iz posameznih orodij primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zaposa v zbirku UniProt?).</p></li>
+</ol>
 </div>
-<div class="section" id="poravnava-zaporedij">
-<h2>Poravnava zaporedij<a class="headerlink" href="#poravnava-zaporedij" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="globalna-poravnava-zaporedij-needleman-wunsch">
-<h3>Globalna poravnava zaporedij Needleman-Wunsch<a class="headerlink" href="#globalna-poravnava-zaporedij-needleman-wunsch" title="Permalink to this headline">¶</a></h3>
-<p>Algoritem Needleman-Wunsch (<a class="reference external" href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm">Wikipedia</a>) vam da optimalno globalno poravnavo dveh zaporedij. Delovanje algoritma si lahko “vizualiziramo” tako, da zaporedji izpišemo v matriko, vrednosti matrike pa izračunamo s sledenjem različnih poti med posameznimi celicami, pri čemer zmeraj vzamemo tisto pot (ali več) med posameznimi celicami, ki vodijo do večje vrednosti.</p>
-<p>Za lažje razumevanje priporočam igranje s spletnim programčkom, ki za dve poljubni zaporedji ob spreminjanju vrednosti za ujemanje, neujemanje ter vrzeli prikaže matriko s puščicami za sledenje, hkrati pa ob premiku miškinega kazalca na posamezno polje v matriki izpiše vse alternativne poti oz. vrednosti, ki bi se na nekem mestu nahajale, če bi uporabili alternativne poti.</p>
-<p>Povezava: <a class="reference external" href="https://bioboot.github.io/bimm143_W20/class-material/nw/">https://bioboot.github.io/bimm143_W20/class-material/nw/</a></p>
-<div class="toctree-wrapper compound">
-</div>
-</div>
+<div class="section" id="naloga-2">
+<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
+<p>Vsak si naj izbere en protein (pripotočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
+<ol class="simple">
+<li><p>z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;</p></li>
+<li><p>izdelajte model s pomočjo programa SWISS-MODEL in sicer za celotni protein (seveda idstranite morebitni signalni peptid in/ali proregije);</p></li>
+<li><p>model, ki ga izračunate, in pa strukturo, uporabljeno kot predlogo, naložite v program UCSF Chimera in primerjajte preko superpozicije (<em>MatchMaker</em>).</p></li>
+</ol>
+<p>Odgovorite na vprašanja:</p>
+<ol class="simple">
+<li><p>Ali model pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?</p></li>
+<li><p>So med modelom in uporabljeno predlogo v katerih regijah večje razlike? Katerimi? Zakaj?</p></li>
+<li><p>Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja?</p></li>
+<li><p>Bi lahko model kako izboljšali? Kako?</p></li>
+</ol>
 </div>
 </div>
 
@@ -477,7 +503,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./osnove"
+            path: "./vaje"
         },
         predefinedOutput: true
     }
@@ -489,8 +515,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../vaje/dotplot_web.html" title="previous page">VAJA: Točkovni diagram</a>
-    <a class='right-next' id="next-link" href="../vaje/matrika_zamenjav.html" title="next page">VAJA: Izračun matrike zamenjav (Python)</a>
+    <a class='left-prev' id="prev-link" href="podobne_strukture.html" title="previous page">VAJA: Iskanje podobnih struktur</a>
+    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">Programi</a>
 
         </div>
         

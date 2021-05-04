@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poravnave &#8212; Biokemijska informatika</title>
+    <title>Strukture &#8212; Biokemijska informatika</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -52,22 +52,22 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/osnove/strukture.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="VAJA: Izračun matrike zamenjav (Python)" href="../vaje/matrika_zamenjav.html" />
-    <link rel="prev" title="VAJA: Točkovni diagram" href="../vaje/dotplot_web.html" />
+    <link rel="next" title="VAJA: Iskanje podobnih struktur" href="../vaje/podobne_strukture.html" />
+    <link rel="prev" title="VAJA: Grafi in program Cytoscape" href="../vaje/grafi_cytoscape.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/poravnave.html" />
+<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/osnove/strukture.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Poravnave" />
-<meta property="og:description" content="Poravnave  Matrike zamenjav  Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (substitution ma" />
+<meta property="og:title"       content="Strukture" />
+<meta property="og:description" content="Strukture  " />
 <meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -177,7 +177,7 @@
   Poravnave
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="dotplot.html">
    Točkovni diagram
@@ -192,8 +192,8 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="poravnave.html">
    Poravnave
   </a>
   <ul class="collapse-ul">
@@ -258,9 +258,9 @@
   Strukture
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="strukture.html">
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="current reference internal" href="#">
    Strukture
   </a>
   <ul class="collapse-ul">
@@ -372,7 +372,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/osnove/poravnave.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/osnove/strukture.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -410,33 +410,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#matrike-zamenjav">
-   Matrike zamenjav
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#poravnava-zaporedij">
-   Poravnava zaporedij
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#globalna-poravnava-zaporedij-needleman-wunsch">
-     Globalna poravnava zaporedij Needleman-Wunsch
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-        </nav>
-        
         </div>
     </div>
 </div>
@@ -445,22 +418,9 @@
         
               <div>
                 
-  <div class="section" id="poravnave">
-<h1>Poravnave<a class="headerlink" href="#poravnave" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="matrike-zamenjav">
-<h2>Matrike zamenjav<a class="headerlink" href="#matrike-zamenjav" title="Permalink to this headline">¶</a></h2>
-<p>Pri izračunu poravnav nukleotidnih ali aminokislinskih zaporedij uporabljamo za vrednotenje t. i. matrike zamenjav (<em>substitution matrices</em>), kjer so zapisane vrednosti za identičnost oz. zamenjavo nekega ostanka z drugim. Matrike so lahko izračunane na osnovi različnih vhodnih podatkov, najpogosteje pa se uporabljajo take, ki so izračunane na osnovi poravnav zaporedij sámih. Za nukleotidna zaporedja najpogosteje uporabljamo matriko EDNAfull, za aminokislinska zaporedja pa matrike iz družine BLOSUM.</p>
-</div>
-<div class="section" id="poravnava-zaporedij">
-<h2>Poravnava zaporedij<a class="headerlink" href="#poravnava-zaporedij" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="globalna-poravnava-zaporedij-needleman-wunsch">
-<h3>Globalna poravnava zaporedij Needleman-Wunsch<a class="headerlink" href="#globalna-poravnava-zaporedij-needleman-wunsch" title="Permalink to this headline">¶</a></h3>
-<p>Algoritem Needleman-Wunsch (<a class="reference external" href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm">Wikipedia</a>) vam da optimalno globalno poravnavo dveh zaporedij. Delovanje algoritma si lahko “vizualiziramo” tako, da zaporedji izpišemo v matriko, vrednosti matrike pa izračunamo s sledenjem različnih poti med posameznimi celicami, pri čemer zmeraj vzamemo tisto pot (ali več) med posameznimi celicami, ki vodijo do večje vrednosti.</p>
-<p>Za lažje razumevanje priporočam igranje s spletnim programčkom, ki za dve poljubni zaporedji ob spreminjanju vrednosti za ujemanje, neujemanje ter vrzeli prikaže matriko s puščicami za sledenje, hkrati pa ob premiku miškinega kazalca na posamezno polje v matriki izpiše vse alternativne poti oz. vrednosti, ki bi se na nekem mestu nahajale, če bi uporabili alternativne poti.</p>
-<p>Povezava: <a class="reference external" href="https://bioboot.github.io/bimm143_W20/class-material/nw/">https://bioboot.github.io/bimm143_W20/class-material/nw/</a></p>
+  <div class="section" id="strukture">
+<h1>Strukture<a class="headerlink" href="#strukture" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-</div>
-</div>
 </div>
 </div>
 
@@ -489,8 +449,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../vaje/dotplot_web.html" title="previous page">VAJA: Točkovni diagram</a>
-    <a class='right-next' id="next-link" href="../vaje/matrika_zamenjav.html" title="next page">VAJA: Izračun matrike zamenjav (Python)</a>
+    <a class='left-prev' id="prev-link" href="../vaje/grafi_cytoscape.html" title="previous page">VAJA: Grafi in program Cytoscape</a>
+    <a class='right-next' id="next-link" href="../vaje/podobne_strukture.html" title="next page">VAJA: Iskanje podobnih struktur</a>
 
         </div>
         
