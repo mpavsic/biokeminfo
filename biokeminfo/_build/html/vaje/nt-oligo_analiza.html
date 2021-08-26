@@ -4,10 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Enostavna analiza nt-zaporedja (Python) &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -25,8 +26,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,25 +35,25 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/nt-oligo_analiza.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -351,21 +352,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -383,7 +384,7 @@
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
+        <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -399,13 +400,13 @@
 </div>
 
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
+        <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -420,18 +421,22 @@
         
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/nt-oligo_analiza.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
-        </div>
+    </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
+            <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -454,7 +459,6 @@
 
         </nav>
         
-        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -462,12 +466,12 @@
         
               <div>
                 
-  <div class="section" id="vaja-enostavna-analiza-nt-zaporedja-python">
+  <section id="vaja-enostavna-analiza-nt-zaporedja-python">
 <h1>VAJA: Enostavna analiza nt-zaporedja (Python)<a class="headerlink" href="#vaja-enostavna-analiza-nt-zaporedja-python" title="Permalink to this headline">¶</a></h1>
 <p>Podobno kot za iskanje prek programskega dostopa bomo tudi tukaj uporabili <a class="reference external" href="https://biopython.org">BioPython</a>.</p>
 <p>Za osvežitev znanja iz programiranja v Pythonu ter kot uvod v manipulacije z bio-podatki bomo pripravili enostaven programček, ki bo kot vhod vzel kratko nukleotidno zaporedje, ga analiziral ter izpisal rezultate analize.</p>
 <hr class="docutils" />
-<div class="section" id="teoreticno-ozadje">
+<section id="teoreticno-ozadje">
 <h2>Teoretično ozadje<a class="headerlink" href="#teoreticno-ozadje" title="Permalink to this headline">¶</a></h2>
 <p>Vaša naloga je napisati enostaven programček, ki pomaga pri načrtovanju začetnih oligonukleotidov pri verižni reakciji s polimerazo - <strong>PCR</strong>.  Kratek filmček, kjer je razložen potek reakcije, je na voljo na <a class="reference external" href="https://www.youtube.com/watch?v=2KoLnIwoZKU">YouTube</a>, potek skupaj z zaporedjem matrice in oligonukleotidov pa je shematsko prikazan na spodnji sliki. Kot je iz slike razvidno sta za reakcijo potrebna dva začetna oligonukleotida, imenovana smerni in protismerni (začetni) oligonukleotid (v žargonu ju imenujemo <em>forward and reverse oligos</em>).</p>
 <p><img alt="pcr" src="../_images/pcr_oligonukleotidi.png" /></p>
@@ -477,9 +481,9 @@
 <li><p>temperatura tališča (<span class="math notranslate nohighlight">\(T_m\)</span>) smernega in protismernega oligonukleotida se naj ne bi razlikovala za več kot 5 °C (kar nam omogoča njuno optimalno vezavo na matrico pri enaki temperaturi prileganja (<span class="math notranslate nohighlight">\(T_a\)</span>)), hkrati pa naj bo njuna temperatura tališča nekje med 50 in 60 °C,</p></li>
 <li><p>delež parov GC naj bo med 40 in 60 %.</p></li>
 </ul>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="primeri-kode">
+<section id="primeri-kode">
 <h2>Primeri kode<a class="headerlink" href="#primeri-kode" title="Permalink to this headline">¶</a></h2>
 <p>Spodaj je predstavljen zgled, kako definiramo nukleotidno zaporedje in dobimo komplementarno ter obratno-komplementarno zaporedje. Prikazano je tudi, kako preštejemo določen nukleotid v zaporedju.</p>
 <div class="cell docutils container">
@@ -562,9 +566,9 @@ A: 3
 </div>
 </div>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga">
+<section id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
 <p>Vaša naloga je, da napišete programček, ki bo sprejel nukleotidno zaporedje oligonukleotida (napisano z malimi ali velikimi črkami), ga izpisal z velikimi tiskanimi črkami, izpisal tudi obratno komplementarno zaporedje (spet z velikimi tiskanimi črkami) in zraven tega izračunal (ter izpisal) naslednje parametre:</p>
 <ul class="simple">
@@ -585,8 +589,8 @@ Tm(upoštevana sol) [°C] = 50.6
 </div>
 <p>Program lahko pripravljate kar spodaj - pripravite si novo celico in začnite! Na koncu ne pozabite shraniti svojega izdelka.</p>
 <hr class="docutils" />
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -610,15 +614,15 @@ Tm(upoštevana sol) [°C] = 50.6
 
               </div>
               
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
         
-        <div class='prev-next-bottom'>
-            
     <a class='left-prev' id="prev-link" href="../osnove/nt.html" title="previous page">Nukleotidna zaporedja</a>
     <a class='right-next' id="next-link" href="genbank_web.html" title="next page">VAJA: Dostop do GenBank v brskalniku</a>
 
-        </div>
-        
-        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -637,7 +641,7 @@ Tm(upoštevana sol) [°C] = 50.6
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
