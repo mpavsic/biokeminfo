@@ -32,4 +32,3 @@ Analizirajte rezultate, pripravite superpozicijo struktur v UCSF Chimera ter odg
 * S katerim pristopom identificiramo več zadetkov in zakaj?
 * Je zvitje tega dela EpCAM in identificiranih podobnih proteinov dejansko enako?
 * Je EpCAM funkcijsko soroden identificiranim proteinom?
-* Kako imenujemo zvitje tega dela proteina EpCAM? Namig: uporabite iskanje s PDBeFold in kot Target izberite SCOP, ali pa iščite direktno z zaporedjem po [SCOP](https://scop.mrc-lmb.cam.ac.uk/).
