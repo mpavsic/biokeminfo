@@ -4,10 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>VAJA: Programski dostop do UniProt (Python) &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -25,8 +26,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,25 +35,25 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/uniprot_rest.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -351,21 +352,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -383,7 +384,7 @@
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
+        <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -399,13 +400,13 @@
 </div>
 
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
+        <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -420,18 +421,22 @@
         
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/uniprot_rest.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
-        </div>
+    </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
+            <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -503,7 +508,6 @@
 
         </nav>
         
-        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -511,12 +515,12 @@
         
               <div>
                 
-  <div class="section" id="vaja-programski-dostop-do-uniprot-python">
+  <section id="vaja-programski-dostop-do-uniprot-python">
 <h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Permalink to this headline">¶</a></h1>
 <p>Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi <a class="reference external" href="https://biopython.org">BioPythona</a>, a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula <code class="docutils literal notranslate"><span class="pre">requests</span></code>, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.</p>
 <hr class="docutils" />
-<div class="section" id="ozadje">
+<section id="ozadje">
 <h2>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h2>
 <p>Osnovna navodila za t.i. programatski dostop do zbirke <a class="reference external" href="https://www.uniprot.org">UniProt</a> so na voljo na podstrani <a class="reference external" href="https://www.uniprot.org/help/programmatic_access">Programmatic access</a>, kjer je opisan dostop preko <strong>REST</strong>.</p>
 <p>Kaj je REST? REST ali <em>REpresentational State Transfer</em> podaja smernice pri razvoju spletnih storitev z namenom omogočanja in olajšanja interoperabilnosti med sistemi na spletu. Spletne storitve, ki so v skladu s temi smernicami, se imenujejo RESTful spletne storitve ter omogočajo dostop preko uniformnega in definiranega seta operacij. Več o tem lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipediji</a>, razloženo pa je tudi v videoposnetku spodaj (in še mimogrede vidimo primer, kako v zvezek JupyterLab vključumo video z YouTube).</p>
@@ -529,165 +533,21 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">22</span><span class="n">fd607f820e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;7YcW25PHnAA&#39;</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">YouTubeVideo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/displayhook.py</span> in <span class="ni">__call__</span><span class="nt">(self, result)</span>
-<span class="g g-Whitespace">    </span><span class="mi">260</span>             <span class="bp">self</span><span class="o">.</span><span class="n">start_displayhook</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">261</span>             <span class="bp">self</span><span class="o">.</span><span class="n">write_output_prompt</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">262</span>             <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">compute_format_data</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">263</span>             <span class="bp">self</span><span class="o">.</span><span class="n">update_user_ns</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">264</span>             <span class="bp">self</span><span class="o">.</span><span class="n">fill_exec_result</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/displayhook.py</span> in <span class="ni">compute_format_data</span><span class="nt">(self, result)</span>
-<span class="g g-Whitespace">    </span><span class="mi">149</span> 
-<span class="g g-Whitespace">    </span><span class="mi">150</span>         <span class="sd">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">151</span><span class="sd">         return self.shell.display_formatter.format(result)</span>
-<span class="g g-Whitespace">    </span><span class="mi">152</span><span class="sd"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">153</span><span class="sd">     # This can be set to True by the write_output_prompt method in a subclass</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">format</span><span class="nt">(self, obj, include, exclude)</span>
-<span class="g g-Whitespace">    </span><span class="mi">178</span><span class="sd">             md = None</span>
-<span class="g g-Whitespace">    </span><span class="mi">179</span><span class="sd">             try:</span>
-<span class="ne">--&gt; </span><span class="mi">180</span><span class="sd">                 data = formatter(obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">181</span><span class="sd">             except:</span>
-<span class="g g-Whitespace">    </span><span class="mi">182</span><span class="sd">                 # FIXME: log the exception</span>
-
-<span class="nn">&lt;decorator-gen-2&gt;</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">222</span><span class="sd">     &quot;&quot;&quot;</span><span class="n">show</span> <span class="n">traceback</span> <span class="n">on</span> <span class="n">failed</span> <span class="nb">format</span> <span class="n">call</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">     try:</span>
-<span class="ne">--&gt; </span><span class="mi">224</span><span class="s2">         r = method(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">225</span><span class="s2">     except NotImplementedError:</span>
-<span class="g g-Whitespace">    </span><span class="mi">226</span><span class="s2">         # don&#39;t warn on NotImplementedErrors</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span><span class="s2">             method = get_real_method(obj, self.print_method)</span>
-<span class="g g-Whitespace">    </span><span class="mi">344</span><span class="s2">             if method is not None:</span>
-<span class="ne">--&gt; </span><span class="mi">345</span><span class="s2">                 return method()</span>
-<span class="g g-Whitespace">    </span><span class="mi">346</span><span class="s2">             return None</span>
-<span class="g g-Whitespace">    </span><span class="mi">347</span><span class="s2">         else:</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/site-packages/IPython/lib/display.py</span> in <span class="ni">_repr_jpeg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">316</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">317</span><span class="s2">         try:</span>
-<span class="ne">--&gt; </span><span class="mi">318</span><span class="s2">             return urlopen(&quot;https://img.youtube.com/vi/</span><span class="si">{id}</span><span class="s2">/hqdefault.jpg&quot;.format(id=self.id)).read()</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span><span class="s2">         except IOError:</span>
-<span class="g g-Whitespace">    </span><span class="mi">320</span><span class="s2">             return None</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span><span class="s2">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="s2">         opener = _opener</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">     return opener.open(url, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2"> def install_opener(opener):</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">523</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">524</span><span class="s2">         sys.audit(&#39;urllib.Request&#39;, req.full_url, req.data, req.headers, req.get_method())</span>
-<span class="ne">--&gt; </span><span class="mi">525</span><span class="s2">         response = self._open(req, data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">526</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">527</span><span class="s2">         # post-process response</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">_open</span><span class="nt">(self, req, data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">540</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">541</span><span class="s2">         protocol = req.type</span>
-<span class="ne">--&gt; </span><span class="mi">542</span><span class="s2">         result = self._call_chain(self.handle_open, protocol, protocol +</span>
-<span class="g g-Whitespace">    </span><span class="mi">543</span><span class="s2">                                   &#39;_open&#39;, req)</span>
-<span class="g g-Whitespace">    </span><span class="mi">544</span><span class="s2">         if result:</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">500</span><span class="s2">         for handler in handlers:</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span><span class="s2">             func = getattr(handler, meth_name)</span>
-<span class="ne">--&gt; </span><span class="mi">502</span><span class="s2">             result = func(*args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span><span class="s2">             if result is not None:</span>
-<span class="g g-Whitespace">    </span><span class="mi">504</span><span class="s2">                 return result</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">https_open</span><span class="nt">(self, req)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1395</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1396</span><span class="s2">         def https_open(self, req):</span>
-<span class="ne">-&gt; </span><span class="mi">1397</span><span class="s2">             return self.do_open(http.client.HTTPSConnection, req,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1398</span><span class="s2">                 context=self._context, check_hostname=self._check_hostname)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1399</span><span class="s2"> </span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/urllib/request.py</span> in <span class="ni">do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1352</span><span class="s2">         try:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1353</span><span class="s2">             try:</span>
-<span class="ne">-&gt; </span><span class="mi">1354</span><span class="s2">                 h.request(req.get_method(), req.selector, req.data, headers,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1355</span><span class="s2">                           encode_chunked=req.has_header(&#39;Transfer-encoding&#39;))</span>
-<span class="g g-Whitespace">   </span><span class="mi">1356</span><span class="s2">             except OSError as err: # timeout error</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1253</span><span class="s2">                 encode_chunked=False):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1254</span><span class="s2">         &quot;&quot;&quot;</span><span class="n">Send</span> <span class="n">a</span> <span class="n">complete</span> <span class="n">request</span> <span class="n">to</span> <span class="n">the</span> <span class="n">server</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1255</span><span class="s2">         self._send_request(method, url, body, headers, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1256</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1257</span><span class="s2">     def _send_request(self, method, url, body, headers, encode_chunked):</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">_send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1299</span><span class="s2">             # default charset of iso-8859-1.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1300</span><span class="s2">             body = _encode(body, &#39;body&#39;)</span>
-<span class="ne">-&gt; </span><span class="mi">1301</span><span class="s2">         self.endheaders(body, encode_chunked=encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1302</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1303</span><span class="s2">     def getresponse(self):</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1248</span><span class="s2">         else:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1249</span><span class="s2">             raise CannotSendHeader()</span>
-<span class="ne">-&gt; </span><span class="mi">1250</span><span class="s2">         self._send_output(message_body, encode_chunked=encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1251</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1252</span><span class="s2">     def request(self, method, url, body=None, headers=</span><span class="si">{}</span><span class="s2">, *,</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">_send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1008</span><span class="s2">         msg = b&quot;</span><span class="se">\r\n</span><span class="s2">&quot;.join(self._buffer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1009</span><span class="s2">         del self._buffer[:]</span>
-<span class="ne">-&gt; </span><span class="mi">1010</span><span class="s2">         self.send(msg)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1011</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1012</span><span class="s2">         if message_body is not None:</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">send</span><span class="nt">(self, data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">948</span><span class="s2">         if self.sock is None:</span>
-<span class="g g-Whitespace">    </span><span class="mi">949</span><span class="s2">             if self.auto_open:</span>
-<span class="ne">--&gt; </span><span class="mi">950</span><span class="s2">                 self.connect()</span>
-<span class="g g-Whitespace">    </span><span class="mi">951</span><span class="s2">             else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">952</span><span class="s2">                 raise NotConnected()</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1415</span><span class="s2">             &quot;Connect to a host on a given (SSL) port.&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1416</span><span class="s2"> </span>
-<span class="ne">-&gt; </span><span class="mi">1417</span><span class="s2">             super().connect()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1418</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1419</span><span class="s2">             if self._tunnel_host:</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">919</span><span class="s2">     def connect(self):</span>
-<span class="g g-Whitespace">    </span><span class="mi">920</span><span class="s2">         &quot;&quot;&quot;</span><span class="n">Connect</span> <span class="n">to</span> <span class="n">the</span> <span class="n">host</span> <span class="ow">and</span> <span class="n">port</span> <span class="n">specified</span> <span class="ow">in</span> <span class="fm">__init__</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">921</span><span class="s2">         self.sock = self._create_connection(</span>
-<span class="g g-Whitespace">    </span><span class="mi">922</span><span class="s2">             (self.host,self.port), self.timeout, self.source_address)</span>
-<span class="g g-Whitespace">    </span><span class="mi">923</span><span class="s2">         self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)</span>
-
-<span class="nn">~/opt/anaconda3/lib/python3.8/socket.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
-<span class="g g-Whitespace">    </span><span class="mi">794</span><span class="s2">             if source_address:</span>
-<span class="g g-Whitespace">    </span><span class="mi">795</span><span class="s2">                 sock.bind(source_address)</span>
-<span class="ne">--&gt; </span><span class="mi">796</span><span class="s2">             sock.connect(sa)</span>
-<span class="g g-Whitespace">    </span><span class="mi">797</span><span class="s2">             # Break explicitly a reference cycle</span>
-<span class="g g-Whitespace">    </span><span class="mi">798</span><span class="s2">             err = None</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
+<div class="output text_html">
+<iframe
+    width="600"
+    height="300"
+    src="https://www.youtube.com/embed/7YcW25PHnAA"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
 </div>
-</div>
-</div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="zgledi">
+<section id="zgledi">
 <h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="definiranje-naslovov">
+<section id="definiranje-naslovov">
 <h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Permalink to this headline">¶</a></h3>
 <p>Najprej vključimo modul <em>requests</em>, ki nam omogoča dostop do storitev preko protokola HTTP.</p>
 <div class="cell docutils container">
@@ -707,14 +567,14 @@
 </div>
 </div>
 </div>
-<p>Zakaj je tako? Zato, ker lahko do posameznih zapisov v zbirki lahko dostopamo direktno preko naslova, če le poznamo kodo zapisa v zbirko (<em>accession code</em>). Na primer, do zapisa s kodo P59595 lahko direktno dostopamo preko spleta na naslovu <a class="reference external" href="https://www.uniprot.org/uniprot/P59595">https://www.uniprot.org/uniprot/P59595</a>. Druge oblike zapisa so dostopne preko naslednjih naslovov (podanih je nekaj primerov, ostale si lahko ogledate <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">tukaj</a>) - pri vseh vidite enoten vzorec zapisa:</p>
+<p>Zakaj je tako? Zato, ker lahko do posameznih zapisov v zbirki lahko dostopamo direktno preko naslova, če le poznamo kodo zapisa v zbirko (<em>accession code</em>). Na primer, do zapisa s kodo P59595 lahko direktno dostopamo preko spleta na naslovu https://www.uniprot.org/uniprot/P59595. Druge oblike zapisa so dostopne preko naslednjih naslovov (podanih je nekaj primerov, ostale si lahko ogledate <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">tukaj</a>) - pri vseh vidite enoten vzorec zapisa:</p>
 <ul class="simple">
-<li><p>tekstna datoteka: <a class="reference external" href="https://www.uniprot.org/uniprot/P59595.txt">https://www.uniprot.org/uniprot/P59595.txt</a></p></li>
-<li><p>zapis v formatu XML: <a class="reference external" href="https://www.uniprot.org/uniprot/P59595.xml">https://www.uniprot.org/uniprot/P59595.xml</a></p></li>
-<li><p>zaporedje v formatu FASTA: <a class="reference external" href="https://www.uniprot.org/uniprot/P59595.fasta">https://www.uniprot.org/uniprot/P59595.fasta</a></p></li>
+<li><p>tekstna datoteka: https://www.uniprot.org/uniprot/P59595.txt</p></li>
+<li><p>zapis v formatu XML: https://www.uniprot.org/uniprot/P59595.xml</p></li>
+<li><p>zaporedje v formatu FASTA: https://www.uniprot.org/uniprot/P59595.fasta</p></li>
 </ul>
-</div>
-<div class="section" id="iskanje-po-uniprotu">
+</section>
+<section id="iskanje-po-uniprotu">
 <h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Permalink to this headline">¶</a></h3>
 <p>Če iščemo po UniProtu preko spletnega vmesnika (<em>Advanced search</em>, na primer s pojmoma <em>matriptase</em> kot ime proteina (<em>name</em>) ter <em>homo sapiens</em> kot organizem ter želimo samo ročno pregledane (<em>reviewed</em>) zapise, to izgleda v iskalnem polju tako: <code class="docutils literal notranslate"><span class="pre">name:matriptase</span> <span class="pre">organism:&quot;homo</span> <span class="pre">sapiens&quot;</span> <span class="pre">AND</span> <span class="pre">reviewed:yes</span></code>. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: <code class="docutils literal notranslate"><span class="pre">https://www.uniprot.org/uniprot/?query=name%3Amatriptase+organism%3A%22homo+sapiens%22+AND+reviewed%3Ayes</span></code>.</p>
 <p>Tak strukturiran zapis lahko uporabimo v Pythonu, pri čemer nastavimo kot tip izpisa seznam (<em>list</em>; glejte na konec URL), da dobimo samo seznam kod zapisov, hkrati pa lahko nastavimo, da nam program vrne ime napake, če gre kaj narobe (kode napak in njihovi opisi so <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">dokumentirani</a>). Torej:</p>
@@ -764,8 +624,8 @@ Q8IU80
 </div>
 </div>
 <p>Če je nek iskalni pojem sestavljen iz večih besed (npr. <em>homo sapiens</em>), ga moramo dati v narekovaje.</p>
-</div>
-<div class="section" id="izpis-zaporedja">
+</section>
+<section id="izpis-zaporedja">
 <h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Permalink to this headline">¶</a></h3>
 <p>V kakšnem formatu želimo izpis določimo preko spremenljivke <em>format</em>, ki lahko zavzame možnosti html, tab, xls, fasta, txt itd., kar je <a class="reference external" href="https://www.uniprot.org/help/api%5Fqueries">dokumentirano v opisu API</a>. Recimo, če si želimo izpis vseh rezultatov v formatu FASTA in izpis omejimo na prvih 300 znakov, naredimo tako:</p>
 <div class="cell docutils container">
@@ -885,8 +745,8 @@ WGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="napake-pri-iskanju">
+</section>
+<section id="napake-pri-iskanju">
 <h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Permalink to this headline">¶</a></h3>
 <p>Včasih se zatipkamo v imenu ali kodi dostopa. Kaj se zgodi v primeru, da UniProt ne najde ničesar? Nekaj možnosti:</p>
 <ul class="simple">
@@ -911,8 +771,8 @@ WGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="izvoz-v-datoteko">
+</section>
+<section id="izvoz-v-datoteko">
 <h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Permalink to this headline">¶</a></h3>
 <p>Pa naredimo sedaj še nekaj drugega - rezultat (lahko bi jih bilo več) shranimo v lokalno datoteko, nato za test izpišemo njeno vsebino ter jo pretvorimo v objekt Seq:</p>
 <div class="cell docutils container">
@@ -956,8 +816,9 @@ AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
 GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
 GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
 SLL
-
-sp|Q7RTY8|TMPS7_HUMAN
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|Q7RTY8|TMPS7_HUMAN
 Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
 MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
 843
@@ -965,14 +826,14 @@ MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILF
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="drugi-servisi">
+</section>
+<section id="drugi-servisi">
 <h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Permalink to this headline">¶</a></h3>
 <p>Dostop do zbirk zaporedij je mogoč tudi preko drugih servisovm, na primer EMBL/EBI, kjer na voljo obširna navodila za dostop na strani <a class="reference external" href="https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Job+Dispatcher+Sequence+Analysis+Tools+Home">Job Dispatcher Sequence Analysis Tools Home</a>. Vsebina zbirke je enaka kot na UniProt.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
+<section id="izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
 <h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Permalink to this headline">¶</a></h2>
 <p>Za aminokislinsko zaporedje od zgoraj lahko s pomočjo <em>ProteinAnalysis</em>, ki je del modula <a class="reference external" href="https://biopython.org/wiki/ProtParam">ProtParam</a> v BioPython, izračunamo nekatere osnovne parametre. Pri tem moramo biti pozorni, da objekt Seq pretvorimo v niz oz. <em>string</em>.</p>
 <p>Kaj vse modul ProtParam omogoča si oglejte na spletni strani <a class="reference external" href="https://biopython.org/wiki/ProtParam">BioPython ProtParam</a>.</p>
@@ -1017,10 +878,10 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </div>
 </div>
 </div>
-<p>Gre za podobno analizo, ki jo izvede spletna storitev ProtParam na naslovu <a class="reference external" href="https://web.expasy.org/protparam/">https://web.expasy.org/protparam/</a>.</p>
-</div>
+<p>Gre za podobno analizo, ki jo izvede spletna storitev ProtParam na naslovu https://web.expasy.org/protparam/.</p>
+</section>
 <hr class="docutils" />
-<div class="section" id="analiza-zaporedja-z-drsecim-oknom">
+<section id="analiza-zaporedja-z-drsecim-oknom">
 <h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Permalink to this headline">¶</a></h2>
 <p>Za primer bomo analizirali hidrofobnost proteina in sicer bomo narisali hidrofobni profil. Pri tovrstnih analizah ponavadi uporabljamo drseče okno ustrezne velikosti, pri čemer nek parameter povprečimo po tem oknu in ga pripišemo aminokislinskemu ostanki v sredini tega okna. Zato, da je določitev ak-ostanka v sredini okna nedvoumna, uporabljamo kot velikost okna liho število ak-ostankov.</p>
 <p>O analizi z uporabo drsečega okna smo že govorili na predavanjih:
@@ -1128,9 +989,9 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <img alt="../_images/uniprot_rest_36_0.png" src="../_images/uniprot_rest_36_0.png" />
 </div>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="naloga">
+<section id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
 <p>Vaša naloga je, da pripravite program, ki vas bo povprašal po naslednjih parametrih (v tem vrstnem redu):</p>
 <ol class="simple">
@@ -1145,7 +1006,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <li><p>V razmislek: Lahko takšno napoved uporabimo za napoved proteinov s transmembranskimi <span class="math notranslate nohighlight">\(\beta\)</span>-ploskvami kot so <span class="math notranslate nohighlight">\(\beta\)</span>-sodčki, na primer porinov? Primer porina: <a class="reference external" href="https://www.uniprot.org/uniprot/P22340">UniProt P22340</a>.</p></li>
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
-<div class="section" id="dodatna-naloga-za-entuzijaste">
+<section id="dodatna-naloga-za-entuzijaste">
 <h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Permalink to this headline">¶</a></h3>
 <p>Podobno kot pri osnovni nalogi pripravite program, ki (v tem vrstnem redu):</p>
 <ol class="simple">
@@ -1156,9 +1017,9 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <li><p>izriše diagram hidrofobnosti za vse različne lestvice hidrofobnosti, jih prikaže ter shrani v ustrezno poimenovane datoteke (na slikah naj bo v imenu diagrama zraven kode zapisa vsebovano tudi ime lestvice hidrofobnosti, uporabljene za dotično sliko).</p></li>
 </ol>
 <p>Po želji se lahko igrate in si zamislite drugačen potek…</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1182,15 +1043,15 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 
               </div>
               
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
         
-        <div class='prev-next-bottom'>
-            
     <a class='left-prev' id="prev-link" href="uniprot_web.html" title="previous page">VAJA: Dostop do UniProt v brskalniku</a>
     <a class='right-next' id="next-link" href="../osnove/dotplot.html" title="next page">Točkovni diagram</a>
 
-        </div>
-        
-        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -1209,7 +1070,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
