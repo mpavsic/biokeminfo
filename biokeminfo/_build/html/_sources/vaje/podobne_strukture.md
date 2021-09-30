@@ -14,10 +14,10 @@ Pri iskanju s [PDBeFold](https://www.ebi.ac.uk/msd-srv/ssm/) lahko kot iskanje u
 [PDBeFold](https://www.ebi.ac.uk/msd-srv/ssm/) prikaže rezultate v obliki tabele, ki je provzeto sortirana po padajoči vrednosti Q. Slednja predstavlja funkcijo kvalitete poravnave atomov C$_{\alpha}$, ki vključuje tako dolžino poravnave kot tudi RMSD. Na splošno so dobre poravnave take, ki imajo nizek RMSD ter visoko število poravnanih ak-ostankov. Izračuna se po formuli:
 
 $$
-Q = \frac{N_{poravnano}^2}{(1+\frac{RMSD}{R_0}^2 N_1 N_2)}
+Q = \frac{N_{poravnano}^2}{(1+\frac{RMSD}{R_0}^2) N_1 N_2}
 $$
 
-kjer je $R_0$ empirično določen parameter (3 Å), $N_1$ ter $N_2$ predstavljata število ak-osnatkov v poravnanih proteinih, $N_{poravnano}$ pa predstavlja število poravnanih ak-ostankov. Za identične strukture je Q enak 1.
+kjer je $R_0$ empirično določen parameter (3 Å), $N_1$ ter $N_2$ predstavljata število ak-osnatkov v poravnanih proteinih, $N_{poravnano}$ pa predstavlja število poravnanih ak-ostankov. Za identične strukture velja $RMSD=1$ in $N_1 = N_2 = N_{poravnavo}$, posledično je $Q = 1$
 
 V tabeli je še več drugih parametrov, do njihovega opisa pridete s klikom na ime stolpca v tabeli.
 ![PDBeFold](slike/podobne_strukture-pdbefold-tabela.png)
@@ -32,4 +32,3 @@ Analizirajte rezultate, pripravite superpozicijo struktur v UCSF Chimera ter odg
 * S katerim pristopom identificiramo več zadetkov in zakaj?
 * Je zvitje tega dela EpCAM in identificiranih podobnih proteinov dejansko enako?
 * Je EpCAM funkcijsko soroden identificiranim proteinom?
-* Kako imenujemo zvitje tega dela proteina EpCAM? Namig: uporabite iskanje s PDBeFold in kot Target izberite SCOP, ali pa iščite direktno z zaporedjem po [SCOP](https://scop.mrc-lmb.cam.ac.uk/).
