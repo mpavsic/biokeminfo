@@ -1,7 +1,7 @@
 Uvod
 ====
 
-Spletna knjiga je študijsko gradivo za študente univerzitetnega študijskega programa [Biokemija](https://www.fkkt.uni-lj.si/sl/studij/bolonjski-studijski-programi-1-stopnje/univerzitetni-studijski-program-biokemija-20202021/) na [Univerzi v Ljubljani](http://www.uni-lj.si), [Fakulteta za kemijo in kemijsko tehnologijo (UL FKKT)](http://www.fkkt.uni-lj.si).
+Spletna knjiga je študijsko gradivo za študente univerzitetnega študijskega programa [Biokemija](https://www.fkkt.uni-lj.si/sl/studij/bolonjski-studijski-programi-1-stopnje/univerzitetni-studijski-program-biokemija-20212022) na [Univerzi v Ljubljani](http://www.uni-lj.si), [Fakulteta za kemijo in kemijsko tehnologijo (UL FKKT)](http://www.fkkt.uni-lj.si).
 
 ---
 
