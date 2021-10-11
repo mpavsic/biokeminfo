@@ -1,8 +1,14 @@
-# DEMO: Izračun lastne matrike in njena uporaba
+#!/usr/bin/env python
+# coding: utf-8
 
-V spodnjem primeru je prikazan izračun lastne matrike (enako, kot pri prejšnji vaji - [VAJA: Izračun matrike zamenjav (Python)](matrika_zamenjav.ipynb)) ter uporaba tako izračunane matrike za poravnavo dveh zaporedij.
+# # DEMO: Izračun lastne matrike in njena uporaba
+# 
+# V spodnjem primeru je prikazan izračun lastne matrike (enako, kot pri prejšnji vaji - [VAJA: Izračun matrike zamenjav (Python)](matrika_zamenjav.ipynb)) ter uporaba tako izračunane matrike za poravnavo dveh zaporedij.
+# 
+# ## Izračun matrike
 
-## Izračun matrike
+# In[1]:
+
 
 from Bio import SeqIO
 sequence1 = SeqIO.read('vhod/matrika_zamenjav-myoglobin_horse.fasta', 'fasta')
@@ -33,9 +39,13 @@ oddsratios = probabilities / expected
 scoring_matrix = numpy.log2(oddsratios)
 print(scoring_matrix)
 
-## Poravnava
 
-Definirajmo zaporedji in ju poravnajmo, najprej brez uporabe matrike (vzamemo `1` za enakost in `0` za neenakost, ni posebnih kazni za vrzeli).
+# ## Poravnava
+
+# Definirajmo zaporedji in ju poravnajmo, najprej brez uporabe matrike (vzamemo `1` za enakost in `0` za neenakost, ni posebnih kazni za vrzeli).
+
+# In[2]:
+
 
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
@@ -46,9 +56,14 @@ seq2 = 'AGGAGGATTGACT'
 alignments_global = pairwise2.align.globalxx(seq1, seq2)
 print(format_alignment(*alignments_global[0]))
 
-Zdaj pa uporabimo še zgoraj izračunano matriko, spet brez posebne kazni za vrzeli.
+
+# Zdaj pa uporabimo še zgoraj izračunano matriko, spet brez posebne kazni za vrzeli.
+
+# In[3]:
+
 
 alignments_global = pairwise2.align.globaldx(seq1, seq2, scoring_matrix)
 print(format_alignment(*alignments_global[0]))
 
-Primerjajte poravnavi!
+
+# Primerjajte poravnavi!
