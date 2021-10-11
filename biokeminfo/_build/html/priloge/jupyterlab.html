@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JupyterLab &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -20,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,19 +31,19 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -59,23 +55,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Markdown" href="markdown.html" />
     <link rel="prev" title="Python" href="python.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/priloge/jupyterlab.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="JupyterLab" />
-<meta property="og:description" content="JupyterLab  Pri programiranju bomo uporabljali vmesnik JupyterLab, ki omogoča vizualno lépo sestavljanje kode in spremljajočega besedila. Osnovan je na sistemu " />
-<meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -84,37 +71,46 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../naslovnica.html">
    Uvod
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Zbirke
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/pubmed_web.html">
      VAJA: Iskanje po PubMed
@@ -126,14 +122,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/nt-oligo_analiza.html">
      VAJA: Enostavna analiza nt-zaporedja (Python)
@@ -150,14 +149,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/ak.html">
    Aminokislinska zaporedja
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/uniprot_web.html">
      VAJA: Dostop do UniProt v brskalniku
@@ -169,35 +171,41 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Poravnave
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/dotplot.html">
    Točkovni diagram
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/poravnave.html">
    Poravnave
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
@@ -229,42 +237,48 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Grafi
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/grafi.html">
    Grafi v molekularni biologiji
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/grafi_cytoscape.html">
      VAJA: Grafi in program Cytoscape
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Strukture
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/strukture.html">
    Strukture
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../vaje/podobne_strukture.html">
      VAJA: Iskanje podobnih struktur
@@ -276,21 +290,24 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Priloge
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="programi.html">
    Programi
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="python.html">
      Python
@@ -312,8 +329,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="datoteke.html">
@@ -326,12 +341,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Izvedba
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../izvedba/vaje_2020-2021.html">
    Vaje 2020/2021
@@ -339,6 +354,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -350,21 +366,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -382,7 +398,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -397,14 +413,14 @@
     </div>
 </div>
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -428,16 +444,16 @@
     </div>
 </div>
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#zgradba-zvezka">
    Zgradba zvezka
@@ -465,8 +481,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -474,19 +490,19 @@
         
               <div>
                 
-  <section id="jupyterlab">
+  <div class="section" id="jupyterlab">
 <h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Permalink to this headline">¶</a></h1>
 <p>Pri programiranju bomo uporabljali vmesnik <a class="reference external" href="https://jupyter.org">JupyterLab</a>, ki omogoča vizualno lépo sestavljanje kode in spremljajočega besedila. Osnovan je na sistemu <a class="reference external" href="https://en.wikipedia.org/wiki/IPython">IPython</a>. Koda in komentarji so zapakirani v eno datoteko, imenovano <strong>zvezek</strong> (<em>notebook</em>), ki vsebuje tudi izhod kode (<em>output</em>). Zvezek je sicer tekstovna datoteka s končnico ipynb (<strong>IPy</strong>thon <strong>N</strong>ote<strong>b</strong>ook), za pravilen prikaz in uporabo (t.j. poganjanje kode) pa ga moramo odpreti v ustreznem programu - lokalno nainstaliran JupyterLab (navodila so na dnu strani) ali z uporabo katere od spletnih storitev, npr. <a class="reference external" href="http://mybinder.org">Binder</a>.</p>
 <blockquote>
 <div><p>Za programiranje lahko seveda uporabljate tudi okolje Python IDLE (ali pa kaj tretjega) - v tem rpimeru si zvezke JupyterLab v formatu hmtl ogledate na tej spletni strani, dele kode pa skopirajte v vaš urejevalnik kode.</p>
 </div></blockquote>
-<section id="zgradba-zvezka">
+<div class="section" id="zgradba-zvezka">
 <h2>Zgradba zvezka<a class="headerlink" href="#zgradba-zvezka" title="Permalink to this headline">¶</a></h2>
 <p>Vsak zvezek je sestavljen in enega ali večih segmentov, imenovanih <strong>celice</strong>, ki si sledijo v določenem zaporedju. Celice lahko vsebujejo <strong>kodo</strong> (tip celice <em>Code</em>) ali <strong>spremljajoče besedilo</strong>, oblikovano z <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><strong>Markdown</strong></span></a> (tip celice <em>Markdown</em>). Določeno celico v že pripravljeni datoteki začnemo urejati tako, da eno- (za kodo) ali dvo-kliknemo nanjo (za <em>Markdown</em>). Nastavljen tip celice je povezan z barvanjem kode in pa seveda z interpretacijo tega, kar je v njej napisano - ali naj se prikaže in oblikuje kot besedilo ali pa se naj izvede kot koda. Celice dodajamo preko bližnjic na tipkovnici ali preko menija.</p>
 <p>Celice s spremljajočim besedilom lahko obravnavamo kot komentarje (kodo lahko še vedno komentirate direktno v celici, kjer se nahaja, z uporabo znaka #), ki delijo kodo na več ločenih, a medsebojno vseeno lahko povezanih kosov. Če bi vsebino celic s kodo prenesli v pravilnem vrstnem redu v tekstno datoteko <code class="docutils literal notranslate"><span class="pre">.py</span></code> in jo zagnali v Pythonu, bi zadeva delovala popolnoma enako.</p>
 <p>Ko v neko celico vnesemo vsebino ali jo spremenimo, moramo (ponovno) zagnati program, ki interpretira njeno vsebino in jo izvede (koda) oz. prikaže oblikovano (besedilo). In kako to naredimo?</p>
-</section>
-<section id="bliznjice">
+</div>
+<div class="section" id="bliznjice">
 <h2>Bližnjice<a class="headerlink" href="#bliznjice" title="Permalink to this headline">¶</a></h2>
 <p>Enostavno! Ko smo v določeni celici lahko iz menija zgoraj izberemo ustrezno možnost, lahko pa pritisnemo tipko <em>Esc</em> (<em>escape</em>) na tipkovnici, na ta način skočimo iz načina vpisovanja, ter s pritiskom na tipko za črko <code class="docutils literal notranslate"><span class="pre">m</span></code> ali <code class="docutils literal notranslate"><span class="pre">y</span></code> skočimo na način <em>Markdown</em> oz. <em>Code</em>. Končno oblikovanje oz. zagon kode dosežemo z izbiro iz menija ali uporabo bližnjic na tipkovnici, ki jih je malo morje. Nekaj jih je navedenih tukaj:</p>
 <ul class="simple">
@@ -495,8 +511,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code>: zaženi trenutno celico in vstavi novo spodaj</p></li>
 </ul>
 <p>Ostale lahko najdete v pomoči za JupyterLab.</p>
-</section>
-<section id="primer">
+</div>
+<div class="section" id="primer">
 <h2>Primer<a class="headerlink" href="#primer" title="Permalink to this headline">¶</a></h2>
 <p>Pa poglejmo, kako naredimo nekaj zelo enostavnega! Spodaj je ena celica s kodo. Lahko jo poljubno spreminjate in s kombinacijo tipk <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code> pogledate, kaj je rezultat - slednji se izpiše pod celico s kodo.</p>
 <div class="cell docutils container">
@@ -530,14 +546,14 @@
 </div>
 <p>Za test lahko pobrišemo vse izhode in sicer v meniju izberemo <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">&gt;</span> <span class="pre">Restart</span> <span class="pre">Kernel</span> <span class="pre">and</span> <span class="pre">Clear</span> <span class="pre">All</span> <span class="pre">Outputs</span></code>. Nato zaženemo samo drugo celico s kodo. Kaj se zgodi? Zaženimo zdaj prvo celico s kodo, nato pa ponovno drugo. Torej? :)</p>
 <p>Mislim, da je zdaj jasno, kako se zadevi streže. V nadaljevanju je še na kratko opisano, kako uporabljamo <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><em>Markdown</em></span></a>, da si lahko delamo lepe zapiske.</p>
-</section>
-<section id="povezave">
+</div>
+<div class="section" id="povezave">
 <h2>Povezave<a class="headerlink" href="#povezave" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jupyterlab.readthedocs.io">JupyterLab</a> (dokumentacija)</p></li>
 </ul>
-</section>
-<section id="namestitev">
+</div>
+<div class="section" id="namestitev">
 <h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">¶</a></h2>
 <p>JupyterLab lahko najenostavneje namestimo:</p>
 <ul class="simple">
@@ -547,8 +563,8 @@
 <p>Oba načina sta nazorno opisana na <a class="reference external" href="https://jupyter.org/install">uradni spletni strani</a>.</p>
 <p>Zaslonska slika programa Anaconda (Navigator), kjer je možno sprožiti instalacijo JupyterLaba:
 <img alt="jupyterlab_namestitev-anaconda" src="../_images/jupyterlab_namestitev-anaconda.png" /></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -572,17 +588,37 @@
 
               </div>
               
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="python.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Python</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="markdown.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Markdown</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-    <a class='left-prev' id="prev-link" href="python.html" title="previous page">Python</a>
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">Markdown</a>
-
-    </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -597,11 +633,9 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
-
-
-    
+  
   </body>
 </html>

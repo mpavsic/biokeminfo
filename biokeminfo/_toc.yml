@@ -1,61 +1,55 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-- file: naslovnica
-
-- part: Zbirke
+format: jb-book
+root: naslovnica
+parts:
+- caption: Zbirke
   chapters:
   - file: osnove/pubmed
     sections:
-      - file: vaje/pubmed_web
-      - file: vaje/pubmed_eutilities
+    - file: vaje/pubmed_web
+    - file: vaje/pubmed_eutilities
   - file: osnove/nt
     sections:
-      - file: vaje/nt-oligo_analiza
-      - file: vaje/genbank_web
-      - file: vaje/genbank_eutilities
+    - file: vaje/nt-oligo_analiza
+    - file: vaje/genbank_web
+    - file: vaje/genbank_eutilities
   - file: osnove/ak
     sections:
-      - file: vaje/uniprot_web
-      - file: vaje/uniprot_rest
-
-- part: Poravnave
+    - file: vaje/uniprot_web
+    - file: vaje/uniprot_rest
+- caption: Poravnave
   chapters:
   - file: osnove/dotplot
     sections:
-      - file: vaje/dotplot_web
+    - file: vaje/dotplot_web
   - file: osnove/poravnave
     sections:
-      - file: vaje/matrika_zamenjav
-      - file: vaje/poravnava2_web
-      - file: vaje/poravnava2_nw_sw
-      - file: vaje/poravnava2_lastna_matrika
-      - file: vaje/blast
-      - file: vaje/msa
-
-- part: Grafi
+    - file: vaje/matrika_zamenjav
+    - file: vaje/poravnava2_web
+    - file: vaje/poravnava2_nw_sw
+    - file: vaje/poravnava2_lastna_matrika
+    - file: vaje/blast
+    - file: vaje/msa
+- caption: Grafi
   chapters:
   - file: osnove/grafi
     sections:
-      - file: vaje/grafi_cytoscape
-
-- part: Strukture
+    - file: vaje/grafi_cytoscape
+- caption: Strukture
   chapters:
   - file: osnove/strukture
     sections:
-      - file: vaje/podobne_strukture
-      - file: vaje/modeliranje
-
-- part: Priloge
+    - file: vaje/podobne_strukture
+    - file: vaje/modeliranje
+- caption: Priloge
   chapters:
   - file: priloge/programi
     sections:
-      - file: priloge/python
-      - file: priloge/jupyterlab
-      - file: priloge/markdown
-      - file: priloge/git
+    - file: priloge/python
+    - file: priloge/jupyterlab
+    - file: priloge/markdown
+    - file: priloge/git
   - file: priloge/datoteke
   - file: priloge/drobnarije
-
-- part: Izvedba
+- caption: Izvedba
   chapters:
   - file: izvedba/vaje_2020-2021
