@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VAJA: Programski dostop do GenBank (Python) &#8212; Biokemijska informatika</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -20,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -35,49 +31,40 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/genbank_eutilities.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Aminokislinska zaporedja" href="../osnove/ak.html" />
     <link rel="prev" title="VAJA: Dostop do GenBank v brskalniku" href="genbank_web.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://mpavsic.github.io/biokeminfo/vaje/genbank_eutilities.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="VAJA: Programski dostop do GenBank (Python)" />
-<meta property="og:description" content="VAJA: Programski dostop do GenBank (Python)  Tudi pri tej vaji bomo, podobno kot pri dostopu do PubMeda, uporabljali BioPython. Navodila z zgledi so na voljo v " />
-<meta property="og:image"       content="https://mpavsic.github.io/biokeminfo/_static/logo.png" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -86,37 +73,46 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../naslovnica.html">
    Uvod
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Zbirke
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/pubmed.html">
    PubMed
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="pubmed_web.html">
      VAJA: Iskanje po PubMed
@@ -128,14 +124,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../osnove/nt.html">
    Nukleotidna zaporedja
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="nt-oligo_analiza.html">
      VAJA: Enostavna analiza nt-zaporedja (Python)
@@ -152,14 +151,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/ak.html">
    Aminokislinska zaporedja
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="uniprot_web.html">
      VAJA: Dostop do UniProt v brskalniku
@@ -171,35 +173,41 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Poravnave
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/dotplot.html">
    Točkovni diagram
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="dotplot_web.html">
      VAJA: Točkovni diagram
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/poravnave.html">
    Poravnave
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="matrika_zamenjav.html">
      VAJA: Izračun matrike zamenjav (Python)
@@ -231,42 +239,48 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Grafi
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/grafi.html">
    Grafi v molekularni biologiji
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="grafi_cytoscape.html">
      VAJA: Grafi in program Cytoscape
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Strukture
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../osnove/strukture.html">
    Strukture
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="podobne_strukture.html">
      VAJA: Iskanje podobnih struktur
@@ -278,21 +292,24 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Priloge
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../priloge/programi.html">
    Programi
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../priloge/python.html">
      Python
@@ -314,8 +331,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../priloge/datoteke.html">
@@ -328,12 +343,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent" role="heading">
+<p class="caption">
  <span class="caption-text">
   Izvedba
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../izvedba/vaje_2020-2021.html">
    Vaje 2020/2021
@@ -341,6 +356,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -352,21 +368,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -384,7 +400,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -399,14 +415,14 @@
     </div>
 </div>
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -430,16 +446,16 @@
     </div>
 </div>
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#zgledi">
    Zgledi
@@ -491,8 +507,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -500,14 +516,14 @@
         
               <div>
                 
-  <section id="vaja-programski-dostop-do-genbank-python">
+  <div class="section" id="vaja-programski-dostop-do-genbank-python">
 <h1>VAJA: Programski dostop do GenBank (Python)<a class="headerlink" href="#vaja-programski-dostop-do-genbank-python" title="Permalink to this headline">¶</a></h1>
 <p>Tudi pri tej vaji bomo, podobno kot pri dostopu do PubMeda, uporabljali <a class="reference external" href="https://biopython.org">BioPython</a>. Navodila z zgledi so na voljo v <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html">BioPython Tutorial and Cookbook</a>.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v zgledih, nato pa z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode rešite nalogo na dnu zvezka.</p>
 <hr class="docutils" />
-<section id="zgledi">
+<div class="section" id="zgledi">
 <h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">¶</a></h2>
-<section id="dostop-do-genbank">
+<div class="section" id="dostop-do-genbank">
 <h3>Dostop do GenBank<a class="headerlink" href="#dostop-do-genbank" title="Permalink to this headline">¶</a></h3>
 <p>Dostop do GenBank je mogoč direktno z uporabo modulov v <strong>BioPython</strong>, podobno kot to velja za PubMed (modul Bio.Entrez, ki smo ga spoznali <a class="reference internal" href="pubmed_eutilities.html"><span class="doc std std-doc">tukaj</span></a>). Tudi tokrat se moramo za uporabo E-utilities identificirati z e-poštnim naslovom. Če <em>accession code</em> poznamo, lahko uporabimo funkcijo <code class="docutils literal notranslate"><span class="pre">efetch</span></code>, sicer pa izvedemo iskanje z <code class="docutils literal notranslate"><span class="pre">esearch</span></code> in šele nato prenesemo zapis(e) z <code class="docutils literal notranslate"><span class="pre">efetch</span></code>, v obeh primerih pa rezultate preberemo z <code class="docutils literal notranslate"><span class="pre">read</span></code>.</p>
 <p>Pa kar gremo k primeru, ki ilustrira branje enega zapisa - tako torej dostopamo do zapisa, če poznamo <strong>kodo za dostop</strong> (<em>accession code</em>). Če ne napišemo verzije zapisa nam vrne zadnjo (najnovejšo) verzijo, sicer pa lahko verzijo sami določimo tako, da <em>accession code</em> napišemo v obliki NM_005985.4 (če je osnovna koda NM_005985).</p>
@@ -608,8 +624,8 @@ Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA
 </div>
 </div>
 </div>
-</section>
-<section id="shranjevanje-zapisa-v-datoteko">
+</div>
+<div class="section" id="shranjevanje-zapisa-v-datoteko">
 <h3>Shranjevanje zapisa v datoteko<a class="headerlink" href="#shranjevanje-zapisa-v-datoteko" title="Permalink to this headline">¶</a></h3>
 <p>Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA. Pozor, da spodnja koda deluje morate imeti v mapi, kjer se nahaja trenutno ta datoteka <code class="docutils literal notranslate"><span class="pre">ipynb</span></code>, ustvarjeno mapo <code class="docutils literal notranslate"><span class="pre">izhod</span></code>!</p>
 <div class="cell docutils container">
@@ -639,8 +655,8 @@ Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA
 </div>
 </div>
 </div>
-</section>
-<section id="ekstrakcija-dela-zapisa-in-prevajanje">
+</div>
+<div class="section" id="ekstrakcija-dela-zapisa-in-prevajanje">
 <h3>Ekstrakcija dela zapisa in prevajanje<a class="headerlink" href="#ekstrakcija-dela-zapisa-in-prevajanje" title="Permalink to this headline">¶</a></h3>
 <p>Zapis preberemo iz datoteke s <code class="docutils literal notranslate"><span class="pre">SeqIO.parse</span></code>, ekstrahiramo pa lahko določeno značilnost, na primer kodirajoče zaporedje (CDS) - seveda to velja na primer pri mRNA, značilnosti pa so prisotne samo v zapisu GenNank, pri FASTA formatu pa seveda ne. CDS lahko tudi prevedemo z uporabo določene kodne tabele (navodila na BioPython: <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc26">Translation Tables</a>) in dobimo nov objekt, iz katerega lahko izpišemo samo zaporedje (kako bo izpisan kodon STOP lahko tudi nastavimo).</p>
 <div class="cell docutils container">
@@ -673,22 +689,22 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="naloga">
+<div class="section" id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">¶</a></h2>
-<section id="ozadje">
+<div class="section" id="ozadje">
 <h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">¶</a></h3>
 <p>Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_region">Wikipediji</a>: “<em>The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.</em>”</p>
 <p>Nekajna to temo lahko preberete tudi v članku <a class="reference external" href="https://dx.doi.org/10.1186/1471-2148-8-99">Both selective and neutral processes drive GC content evolution in the human genome</a>.</p>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa izračunal <strong>delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji)</strong>.</p>
 <p>Da bo analiza smiselna, je smiselno uporabiti genomsko zaporedje. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a> ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med <span class="math notranslate nohighlight">\(10^6\)</span> in <span class="math notranslate nohighlight">\(1.5 \times 10^6\)</span> bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.</p>
-</section>
-<section id="namigi">
+</div>
+<div class="section" id="namigi">
 <h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.</p></li>
@@ -713,16 +729,16 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 <li><p>Na osnovi G+C v nekodirajočih regijah in njihove skupne dolžine (izračunano zgoraj) izračunajte še delež GC v nekodirajočih regijah.</p></li>
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
-</section>
-<section id="v-razmislek">
+</div>
+<div class="section" id="v-razmislek">
 <h3>V razmislek<a class="headerlink" href="#v-razmislek" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Kaj pa, če analizirano zaporedje vsebuje prekrivajoče se CDS? Je vaš algoritem na to prilagojen? Če ne, kako bi ga prilagodili?</p></li>
 <li><p>Pri analizi smo izračunali odstotek GC parov kar po vseh CDS hkrati (povprečenje), s tem pa smo nekaj informacij izgubili, npr. o razponu deleža GC ter o porazdelitvi deleža GC glede na dolžino CDS. Razmislite, kako bi analizo izvedli, da bi prišli do teh informacij in kako bi jih vizualizirali.</p></li>
 </ul>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -746,17 +762,37 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 
               </div>
               
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="genbank_web.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">VAJA: Dostop do GenBank v brskalniku</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../osnove/ak.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Aminokislinska zaporedja</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-    <a class='left-prev' id="prev-link" href="genbank_web.html" title="previous page">VAJA: Dostop do GenBank v brskalniku</a>
-    <a class='right-next' id="next-link" href="../osnove/ak.html" title="next page">Aminokislinska zaporedja</a>
-
-    </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -771,11 +807,9 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
-
-
-    
+  
   </body>
 </html>
