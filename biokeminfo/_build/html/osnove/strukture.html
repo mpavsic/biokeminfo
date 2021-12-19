@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,17 +33,17 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -95,7 +95,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Zbirke
  </span>
@@ -173,7 +173,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Poravnave
  </span>
@@ -239,7 +239,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Grafi
  </span>
@@ -263,7 +263,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Strukture
  </span>
@@ -292,7 +292,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Priloge
  </span>
@@ -341,7 +341,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Izvedba
  </span>
@@ -427,6 +427,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zbirke-eksperimentalno-dolocenih-struktur">
+   Zbirke eksperimentalno določenih struktur
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modeli-struktur">
+   Modeli struktur
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -437,6 +455,22 @@
                 
   <div class="section" id="strukture">
 <h1>Strukture<a class="headerlink" href="#strukture" title="Permalink to this headline">¶</a></h1>
+<p>Strukturni podatki o makromolekulah so ključnega pomena za razumevanje njihove funkcije, prav tako pa osnovni principi makromolekulske strukture omogočajo napredne pristope v makromolekulskem inženiringu, na primer dizajn <em>de novo</em>.</p>
+<p>V grobem lahko ločimo strukturne podatke na tiste, ki so pridobljeni z eksperimentalnimi pristopi, ter na računalniško generirane modele. Ostro ločnico je včasih težko potegniti - primer so modeli, zgrajeni z uporabo določenih eksperimentalnih podatkov (na primer, kot prostorske omejitve pri modeliranju). Pravzaprav gre tudi pri eksperimentalno določenih strukturah za modele struktur, saj so pogosto odraz nekega povprečnega stanja, pri gradnji teh (modelov) struktur pa je bilo uporabljenih veliko več na eksperimentih osnovanih prostorskih omejitev kot pri klasičnih modelih. Morda je v luči tega bolje strukture oz. modele struktur obravnavati v smislu njihove zanesljivosti, a tukaj se bomo vseeno “držali” klasične delitve na eksperimentalno določene strukture in modele.</p>
+<div class="section" id="zbirke-eksperimentalno-dolocenih-struktur">
+<h2>Zbirke eksperimentalno določenih struktur<a class="headerlink" href="#zbirke-eksperimentalno-dolocenih-struktur" title="Permalink to this headline">¶</a></h2>
+<p>Osnovni vir strukturni podatkov v biološko pomembnih makromolekulah je <a class="reference external" href="https://www.wwpdb.org/">Worlwide Protein Data Bank (wwPDB)</a>, ki vzdržuje zbirko struktur določenih z X-žarkovno kristalografijo, jedrsko magnetno reconanco (NMR), krio-elektronsko mikroskopijo (krio-EM) in drugih pristopov. Do zbirke lahko dostopamo prek treh portalov, ki sicer nudijo enake osnovne podatke, le pripisi in uporabniški vmesnik se razlikujejo: ameriški <a class="reference external" href="https://www.rcsb.org/">RCSB PDB</a> <a class="footnote-reference brackets" href="#rcsb" id="id1">1</a>, evropski <a class="reference external" href="https://www.ebi.ac.uk/pdbe/">PDBe</a> in japonski <a class="reference external" href="https://pdbj.org/">PDBj</a> (podatki med strežniki se redno izmenjujejo, podobno kot pri zbirkah nukleotidnih zaporedij).</p>
+</div>
+<div class="section" id="modeli-struktur">
+<h2>Modeli struktur<a class="headerlink" href="#modeli-struktur" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="rcsb"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Research Collaboratory for Structural Bioinformatics</p>
+</dd>
+</dl>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
