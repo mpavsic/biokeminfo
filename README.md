@@ -3,7 +3,7 @@ Repozitorij je namenjen za uporabo na vajah pri predmetu **Biokemijska informati
 
 Vsebuje teorijo, primere z razlagami ter naloge, vse to je pa na ogled v obliki spletne knjige na naslovu [mpavsic.github.io/biokeminfo](http://mpavsic.github.io/biokeminfo).
 
-*Repozitorij je v nastajanju in bo v študijskem letu 2020/2021 redno posodobljen in dopolnjen.*
+*Repozitorij je v nastajanju in bo redno posodobljen in dopolnjen.*
 
 
 ## Uporaba
