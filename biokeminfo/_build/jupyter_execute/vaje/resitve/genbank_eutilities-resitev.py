@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
+# VAJA: Programski dostop do GenBank (Python)
 
-# # VAJA: Programski dostop do GenBank (Python)
-# 
-# Spodaj je primer kode (rešitev naloge), kjer enostavno preštejemo G+C ter izračunamo njihov delež v CDS ter v regijah, ki niso CDS. Dodani so koraki, ki izpišejo, kaj se trenutno dogaja. Koda vsebuje tudi relevantne komentarje.
-# 
-# V primeru je analizirano genomsko zaporedje s kodo zapisa [CP020452](https://www.ncbi.nlm.nih.gov/nuccore/CP020452.2). Gre za genom bakterije [*Neisseria mucosa*](https://en.wikipedia.org/wiki/Neisseria_mucosa) velikosti 2783943 bp.
+Spodaj je primer kode (rešitev naloge), kjer enostavno preštejemo G+C ter izračunamo njihov delež v CDS ter v regijah, ki niso CDS. Dodani so koraki, ki izpišejo, kaj se trenutno dogaja. Koda vsebuje tudi relevantne komentarje.
 
-# In[1]:
-
+V primeru je analizirano genomsko zaporedje s kodo zapisa [CP020452](https://www.ncbi.nlm.nih.gov/nuccore/CP020452.2). Gre za genom bakterije [*Neisseria mucosa*](https://en.wikipedia.org/wiki/Neisseria_mucosa) velikosti 2783943 bp.
 
 # uvozimo potrebne module
 from Bio import Entrez
@@ -64,4 +58,3 @@ gc_ratio_nocds = (num_gc_nocds / len_nocds) * 100
 print('=======')
 print('Delež GC v CDS [odstotki]: %0.2f' % gc_ratio_cds)
 print('Delež GC izven CDS [odstotki]: %0.2f' % gc_ratio_nocds)
-

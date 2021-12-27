@@ -15,7 +15,7 @@ repository:
   path_to_book              : biokeminfo
   branch                    : main
 html:
-  favicon                   : favicon.ico
+  favicon                   : https://raw.githubusercontent.com/mpavsic/biokeminfo/main/biokeminfo/favicon.ico
   use_repository_button     : true
   use_edit_page_button      : false
   use_issues_button         : false
@@ -23,6 +23,7 @@ html:
   extra_footer              : ""
   baseurl                   : https://mpavsic.github.io/biokeminfo
   home_page_in_navbar       : true
+  google_analytics_id       : G-KG7KWKX5VG
 launch_buttons:
   binderhub_url             : https://mybinder.org
   notebook_interface        : jupyterlab
