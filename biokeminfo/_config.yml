@@ -15,7 +15,7 @@ repository:
   path_to_book              : biokeminfo
   branch                    : main
 html:
-  favicon                   : https://raw.githubusercontent.com/mpavsic/biokeminfo/main/biokeminfo/favicon.ico
+  favicon                   : favicon.ico
   use_repository_button     : true
   use_edit_page_button      : false
   use_issues_button         : false
