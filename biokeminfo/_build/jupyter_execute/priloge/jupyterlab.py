@@ -5,7 +5,7 @@
 # 
 # Pri programiranju bomo uporabljali vmesnik [JupyterLab](https://jupyter.org), ki omogoča vizualno lépo sestavljanje kode in spremljajočega besedila. Osnovan je na sistemu [IPython](https://en.wikipedia.org/wiki/IPython). Koda in komentarji so zapakirani v eno datoteko, imenovano **zvezek** (*notebook*), ki vsebuje tudi izhod kode (*output*). Zvezek je sicer tekstovna datoteka s končnico ipynb (**IPy**thon **N**ote**b**ook), za pravilen prikaz in uporabo (t.j. poganjanje kode) pa ga moramo odpreti v ustreznem programu - lokalno nainstaliran JupyterLab (navodila so na dnu strani) ali z uporabo katere od spletnih storitev, npr. [Binder](http://mybinder.org).
 # 
-# > Za programiranje lahko seveda uporabljate tudi okolje Python IDLE (ali pa kaj tretjega) - v tem rpimeru si zvezke JupyterLab v formatu hmtl ogledate na tej spletni strani, dele kode pa skopirajte v vaš urejevalnik kode.
+# > Za programiranje lahko seveda uporabljate tudi okolje Python IDLE (ali pa kaj tretjega) - v tem primeru si zvezke JupyterLab v formatu hmtl ogledate na tej spletni strani, dele kode pa skopirajte v vaš urejevalnik kode.
 # 
 # ## Zgradba zvezka
 # Vsak zvezek je sestavljen in enega ali večih segmentov, imenovanih **celice**, ki si sledijo v določenem zaporedju. Celice lahko vsebujejo **kodo** (tip celice *Code*) ali **spremljajoče besedilo**, oblikovano z [**Markdown**](markdown.md) (tip celice *Markdown*). Določeno celico v že pripravljeni datoteki začnemo urejati tako, da eno- (za kodo) ali dvo-kliknemo nanjo (za *Markdown*). Nastavljen tip celice je povezan z barvanjem kode in pa seveda z interpretacijo tega, kar je v njej napisano - ali naj se prikaže in oblikuje kot besedilo ali pa se naj izvede kot koda. Celice dodajamo preko bližnjic na tipkovnici ali preko menija.
@@ -57,10 +57,9 @@ print(d)
 # ## Namestitev
 # 
 # JupyterLab lahko najenostavneje namestimo:
-# * kot paket znotraj distribucije Anaconda: uporabimo ukaz ```conda install -c conda-forge jupyterlab```, lahko pa namestitev izvedemo z uporabo upravljalnika paketov z grafičnim vmesnikom (dvokliknite ikono Anaconde (oz. Anaconda-Navigator) ter poiščite med paketi, ki so na voljo, še enostavneje pa namestitev sprožite z osnovne strani Anaconde, kjer je JupyterLab prikazan kot **kartica** - slika spodaj);
-# * z uporabo upravljalnika paketov ```pip```: uporabimo ukaz ```pip install jupyterlab``` (ta način se priporoča, če Anaconde **nimate** nainstalirane - splošno pravilo je, da za instalacijo programov v Anacondi uporabljate pripradajoč upravljalnik paketov in se k instalaciji s ```pip```zatečete šele, če paketa ne najdete na seznamu v Anacondi).
-# 
-# Oba načina sta nazorno opisana na [uradni spletni strani](https://jupyter.org/install).
+# * kot ločeno aplikacijo [**JupyterLab Desktop App**](https://github.com/jupyterlab/jupyterlab-desktop) (izdana je bila šele septembra 2021), ki že vsebuje vse potrebo, vključno s Pythonom;
+# * kot paket znotraj distribucije Anaconda: uporabimo ukaz ```conda install -c conda-forge jupyterlab```, lahko pa namestitev izvedemo z uporabo upravljalnika paketov z grafičnim vmesnikom (dvokliknite ikono Anaconde (oz. Anaconda-Navigator) ter poiščite med paketi, ki so na voljo, še enostavneje pa namestitev sprožite z osnovne strani Anaconde, kjer je JupyterLab prikazan kot **kartica** - slika spodaj) – v tem primeru bo šlo za uporabo Pythona, na instaliranega v okviru Anaconde;
+# * z uporabo upravljalnika paketov ```pip```: uporabimo ukaz ```pip install jupyterlab``` (ta način se priporoča, če Anaconde **nimate** nainstalirane - splošno pravilo je, da za instalacijo programov v Anacondi uporabljate pripadajoč upravljalnik paketov in se k instalaciji s ```pip``` zatečete šele, če paketa ne najdete na seznamu v Anacondi).
 # 
 # Zaslonska slika programa Anaconda (Navigator), kjer je možno sprožiti instalacijo JupyterLaba:
 # ![jupyterlab_namestitev-anaconda](slike/jupyterlab_namestitev-anaconda.png)
