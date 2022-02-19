@@ -44,7 +44,7 @@ Vaša naloga je, da poiščete, koliko člankov ima v naslovu besedo *SARS*, bil
 Zanima nas še, koliko od člankov, ki ima v naslovu *SARS*, ima v naslovu in/ali povzetku še besedo *cats* (mačke).
 
 ### Razlaga
-Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v izkalno škatlo (*Query box*) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.
+Opazili boste, da ko gradite kompleksno iskanje se vam le-to z ustrezno sintakso zapisuje v iskalno škatlo (*Query box*) in ob sprožitvi iskanja se vsebina slednjega pojavi v polju za enostavno iskanje. Tako vidite, da bi dejansko lahko tako iskanje izvršili sami, če bi poznali sintakso. Orodje za gradnjo kompleksnega iskanja ima še eno uporabnost - z njim si lahko pomagamo zgraditi iskanja prek programskega dostopa.
 
 ---
 ## Dodatna literatura
