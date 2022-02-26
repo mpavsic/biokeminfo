@@ -1,6 +1,6 @@
 # Predloga
 
-*V naslovu besedo "Predloga" zamenjajte s kratkim naslovom vašega seminarja – do 4 kratke besede, najbolje, da vsebuje kar naslov programa in eno ali dve ključni besedi. Tole besedilo seveda izbrišite."
+*V naslovu besedo "Predloga" zamenjajte s kratkim naslovom vašega seminarja – do 4 kratke besede, najbolje, da vsebuje kar naslov programa in eno ali dve ključni besedi. Tole besedilo seveda izbrišite.*"*
 
 **Avtorja**: Ime in Priimek, Ime in Priimek
 
