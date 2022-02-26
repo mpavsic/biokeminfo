@@ -53,7 +53,7 @@ parts:
 - caption: Izvedba vaj
   chapters:
   - file: izvedba/vaje_2021-2022
-- Caption: Seminar
+- caption: Seminar
   chapters:
   - file: seminar/navodila
     sections:
