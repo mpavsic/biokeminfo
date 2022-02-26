@@ -50,6 +50,11 @@ parts:
     - file: priloge/git
   - file: priloge/datoteke
   - file: priloge/drobnarije
-- caption: Izvedba
+- caption: Izvedba vaj
   chapters:
   - file: izvedba/vaje_2021-2022
+- Caption: Seminar
+  chapters:
+  - file: seminar/navodila
+    sections:
+    - file: seminar/seminar-predloga
