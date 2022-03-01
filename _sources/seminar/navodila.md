@@ -30,7 +30,7 @@ Na kratko:
 
 - Seminarji oz. vaje, ki jih boste izvedli v okviru seminarja, bodo potekali v računalniški učilnici in sicer v dveh učilnicah hkrati. V vsaki učilnici bo po en iz para, ki bo vodil predstavitev. Pri tem se boste naslanjali na navodila, ki ste jih pripravili.
 - Vaši kolegi bodo sedeli za računalniki (po eden ali dva na računalnik), vi pa jim boste prek računalnika za katedrom demonstrirali uporabo izbranega programa (vaš ekran bo projiciran na platno). Kolegi vam bodo sledili ob pomoči navodil na tej strani.
-- **Posamezna vaja naj traja največ 6 minut + 2 minuti za diskusijo.**
+- **Posamezna vaja naj traja največ 12 minut + 2 minuti za diskusijo.**
 
 ## Ocena seminarja
 
