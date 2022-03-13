@@ -8,9 +8,12 @@ Nekaj smernic:
 - Seminarsko nalogo oz. vajo boste pripravili v paru z drugim študentom/študentko.
 - Tema seminarske naloge bo eden izmed programov, uporaben za študente Biokemije na UL FKKT, oz. splošno uporaben za biokemika ali molekularnega biologa.
   - Predavatelj pri predmetu vam bo vnaprej pripravil seznam potencialnih programov, ki jih boste predstavili (s seznama si boste sami izbrali želenega), lahko pa tudi sami predlagate kak program, a v slednjem primeru mora vaš predlog potrditi predavatelj.
-- Programi naj bodo spletni oz. morajo teči na javno dostopnem strežniku, z njimi pa se naj interagira preko spletnega brskalnika (vajo se tako lahko izvaja na računalniku, ki nima nainstalirane neke programske opreme).
+- Programi naj bodo spletni oz. morajo teči na javno dostopnem strežniku, z njimi pa se naj interagira preko spletnega brskalnika (vajo se tako lahko izvaja na računalniku, ki nima nainstalirane neke posebne programske opreme).
+- **POMEMBNO**: Naloge morajo biti izvedljive v času, predvidenem za izvedbo vaje! Priporočam, da si za vsak primer pripravite rezultate analiz za primer, da gre kaj narobe in jih lahko pokažete ter razložite kolegom. Pri tem seveda uporabite enake vhodne podatke kot so jih uporabili vaši kolegi. Nekateri programi za izračun potrebujejo precej časa, včasih tudi več kot eno uri ali celo nekaj dni – taki programi niso primerna izbira.
+   - Lahko se zgodi, da že predlagami programi ne omogočajo tovrstne izvedbe, zato to vsekakor preverite in po potrebi predlagajte zamenjavo programa s katerim drugim.
 - Zamisliti si morate vsaj dva seta vhodnih podatkov (npr. aminokislinska zaporedja, ... - odvisno, za kateri program bo pač šlo) in sicer enega, ki bo dal *pozitiven* rezultat oz. željen, ter enega, kjer rezultat ne bo pričakovan in boste tako lahko demonstrirali, kdaj določen program ne deluje najbolje. Pri tem uporabite znane podatke (iz podatkovnih zbirk - anotacija na osnovi eksperimenta, literature), da demonstrirate pravilnost oz. napačnost rezultata. Potrudite se, da bodo vhodni podatki zanimivi in morda neobičajni - s tem boste pri kolegih vzbudili več zanimanja. **Pomembno: za primer, ko program ne da pravilnega rezultata, imejte pripravljeno razlago!**
-- Povezava do seznama s termini seminarjev, pari ter izbranimi programi je objavljena v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si/).
+
+Povezava do seznama s termini seminarjev, pari ter izbranimi programi je objavljena v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si/).
 
 ## Priprava navodil za vaje
 
