@@ -47,6 +47,8 @@ Kot vhodne podatke uporabite (to je primer):
 - aminokislinsko zaporedje človeškega grancima B (*granzyme B*, UniProt ID [P10144](https://www.uniprot.org/uniprot/P10144))
 - nukleotidno zaporedje (mRNA) kodirajoče regije človeškega mucina 17 (GenBank ID [NM_001040105.2](https://www.ncbi.nlm.nih.gov/nuccore/NM_001040105.2)) – celotno zaporedje, ne zgolj CDS
 
+*V skranjem primeru, če je potrebno vhodne podatke preoblikovati in bi to zahtevalo preveč časa, jih lahko navedete kar tukaj* (kot zaporedje, če gre za tak vhodni podatek, oz. kot povezavo do ustrezno poimenovane datoteke (glejte navodila za poimenovanje datotek)).
+
 ### Postopek dela
 
 Tukaj opišite postopek dela, najbolje v obliki alinej ali oštevilčenih točk. Lahko vključite tudi kakšno zaslonsko sliko kjer dopišete oz. označite posamezna polja - podobno kot je to narejeno pri drugih vajah ([primer](../vaje/pubmed_web.md)).
