@@ -4,6 +4,8 @@
 
 **Avtorja**: Ime in Priimek, Ime in Priimek
 
+**Datum predstavitve**: datum v formatu YYYY-MM-DD
+
 ---
 ## Namen vaje
 Tukaj v dveh do treh povedih navedite, kaj je bistvo vaje oz. kaj je tisto, kar se bodo vaši kolegi ob izvajanju naučili.
@@ -27,7 +29,7 @@ Tukaj v enem ali več odstavkih opišite, kako program deluje, algoritem ipd. Te
 
 Navedite tudi, za katere vhodne podatke je program primeren in za katere manj (npr. nekateri programi delujejo dobro na nukleotidnih zaporedjih vretenčarjev).
 
-Uporabite lahko tudi kakšno sliko, npr. zaslonsko sliko, lahko tudi sami kaj narišete. Slika naj bo s formatu png ali jpg, pospremite pa jo z besedilom, po zgledu spodaj.
+Uporabite lahko tudi kakšno sliko, npr. zaslonsko sliko, lahko tudi sami kaj narišete. Slika naj bo s formatu png ali jpg, pospremite pa jo z besedilom, po zgledu spodaj. **Pazite, da imate pravico do uporabe slike** - preverite, ali jih lahko uporabite iz članka, ob tem pa morate obvezno upoštevati navodila založnika glede citiranja. Najbolje je, da sami narišete shemo (npr. v Powerpointu) in jo shranite kot png ali jpg.
 
 PSI-BLAST najprej poišče zaporedja iz izbrane zirke, ki so podobna iskalnemu zaporedju (*query sequence*), nato pa iz njih izračuna poravnavo več zaporedij oz. identificira, katera mesta v zaporedju so bolj ohranjena in katera manj. Na osnovi tega izdela pozicijsko uteženo matriko (profil), ki ga nato uporabi za izračun vrednosti poravnav pri ponovljenem iskanju po zbirki, kar je prikazano na spodnji shemi:
 ![PSI-BLAST](seminar-predloga-primer_slike.png)
@@ -41,7 +43,7 @@ Navedite, kaj so vhodni podatki za program in v kakšni obliki morajo biti.
 
 ### Vhodni podatki
 
-V obliki seznama navedite vhodne podatke, zgled je spodaj. Če gre za podatke iz drugih zbirk (npr. iz zbirke aminokislinskih zaporedij), jih navedite kot povezave na ustrezne zapise. Izogibajte se temu, da bodo morali kolegi podatke sami iskati po podatkovnih zbirkah, saj bo to bistveno zavleklo predstavitev.
+V obliki seznama navedite vhodne podatke, zgled je spodaj. Če gre za podatke iz drugih zbirk (npr. iz zbirke aminokislinskih zaporedij), jih navedite kot povezave na ustrezne zapise. Izogibajte se temu, da bodo morali kolegi podatke sami iskati po podatkovnih zbirkah, saj bo to bistveno zavleklo predstavitev. Vhodne podatke si morate zamisliti in poiskati sami - uporaba tistih, ki jih program sam predlaga kot primer, ni dovoljena.
 
 Kot vhodne podatke uporabite (to je primer):
 - aminokislinsko zaporedje človeškega grancima B (*granzyme B*, UniProt ID [P10144](https://www.uniprot.org/uniprot/P10144))
