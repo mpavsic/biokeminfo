@@ -23,10 +23,18 @@ Reference:
 
 ### Opis programa
 
-Tukaj v enem ali več odstavkih opišite, kako program deluje, algoritem ipd. Te podatke najtede bodisi na spletni strani bodisi v članku, ki je naveden pri programu kot referenca. Uporabite lahko tudi kakšno sliko, npr. zaslonsko sliko, lahko tudi sami kaj narišete. Slika naj bo s formatu png ali jpg, pospremite pa jo z besedilom, po zgledu spodaj.
+Tukaj v enem ali več odstavkih opišite, kako program deluje, algoritem ipd. Te podatke najtede bodisi na spletni strani bodisi v članku, ki je naveden pri programu kot referenca.
+
+Navedite tudi, za katere vhodne podatke je program primeren in za katere manj (npr. nekateri programi delujejo dobro na nukleotidnih zaporedjih vretenčarjev).
+
+Uporabite lahko tudi kakšno sliko, npr. zaslonsko sliko, lahko tudi sami kaj narišete. Slika naj bo s formatu png ali jpg, pospremite pa jo z besedilom, po zgledu spodaj.
 
 PSI-BLAST najprej poišče zaporedja iz izbrane zirke, ki so podobna iskalnemu zaporedju (*query sequence*), nato pa iz njih izračuna poravnavo več zaporedij oz. identificira, katera mesta v zaporedju so bolj ohranjena in katera manj. Na osnovi tega izdela pozicijsko uteženo matriko (profil), ki ga nato uporabi za izračun vrednosti poravnav pri ponovljenem iskanju po zbirki, kar je prikazano na spodnji shemi:
 ![PSI-BLAST](seminar-predloga-primer_slike.png)
+
+### Vhodni podatki
+
+Navedite, kaj so vhodni podatki za program in v kakšni obliki morajo biti.
 
 ---
 ## Navodila
@@ -44,3 +52,7 @@ Kot vhodne podatke uporabite (to je primer):
 Tukaj opišite postopek dela, najbolje v obliki alinej ali oštevilčenih točk. Lahko vključite tudi kakšno zaslonsko sliko kjer dopišete oz. označite posamezna polja - podobno kot je to narejeno pri drugih vajah ([primer](../vaje/pubmed_web.md)).
 
 Bodite pozorni, da v navodila vključite (vsaj najpomembnejše) nastavitve programa in jih ustrezno (kratko in jedrnato) razložite.
+
+### Pričakovani rezultati in razlaga
+
+Na kratko opišite pričakovane rezultate, lahko dodate tudi zaslonske slike. Podajte tudi razlago, kdaj program deluje dobro in kdaj rezultati niso realni.
