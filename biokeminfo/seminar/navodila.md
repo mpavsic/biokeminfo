@@ -27,13 +27,14 @@ Na kratko:
       - dovoljen je znak za minus, npr. **primer-blast**,
       - presledki niso dovoljeni, nadomestite jih s spodnjo črtico (angl. *underscore*) - tako ime **Genome Data Viewer** napišete kot **genome_data_viewer**.
    - Primeri imen datotek s seminarjem:
-      - **s16-ensembl.md**,
-      - **s08-m-coffee.md**,
-      - **s02-netsolp.md**.
+      - **s16-ensembl.md**
+      - **s08-m-coffee.md**
+      - **s02-netsolp.md**
    - Imena morebitnih slikovnih datotek (format jpg ali png!) naj bodo enaka imenu glavne datoteke z dodano oznako slike (med ime program in oznako naj bo znak -); primeri imen:
-      - **s07-hmmer-algoritem.png**,
-      - **s15-genome_data_viewer-pregled.jpg**.
+      - **s07-hmmer-algoritem.png**
+      - **s15-genome_data_viewer-pregled.jpg**
    - Seveda pazite, da so slike ustrezno referirane v glavni datoteki seminarja in sicer z relativno potjo do datoteke, ki je kar v isti mapi kot glavna datoteka s seminarjem.
+   - Enako kot za slikovne datoteke velja za vhodne podatke, če jih je neobhodno potrebno navesti v taki obliki (sicer so bolj zaželjene povezave do ustreznih zapisov v zbirkah - glejte navodila v predlogi); primer poimenovanja: **s08-m-coffee-vhod1.txt** (za FASTA datoteko z več zaporedji).
    - Predavatelj bo vašo vajo pregledal ter vam po e-pošti sporočil, če je z vajo oz. datoteko kaj bistvenega narobe (ne gre za tehnične popravke kot so imena datotek - to morate urediti sami!). Bodite odzivni ter zahtevane nujne popravke vnesite čimprej (najkasneje 2 dni pred izvedbo). Popravljeno datoteko naložite prek iste povezave kot prvotno.
 4. Vaša seminarska naloga (navodila za vaje) bodo dostopna pod kategorijo "Seminarji" na tej spletni strani.
 
