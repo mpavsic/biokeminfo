@@ -22,8 +22,19 @@ Na kratko:
    - Na povezavi s [predlogo](seminar-predloga.md) vidite, kako izgleda ta datoteka, ko je pretvorjena v html. Pri oblikovanju si tako pomagajte s primerjavo tega izgleda in pa same datoteke MarkDown. Na enak način bo pretvorjena tudi vaša datoteka.
    - V navodila lahko vključite tudi eno ali več slik. *Pazite, da imate pravico za njihovo uporabo ter da ustreno navedete referenco.* V primeru lastnih zaslonskih slik (*screenshotov*) vmesnika programa ali pa primera rezultata analiz ni teh težav.
 3. Datoteko (s končnico md) naložite prek posebne povezave v spletni učilnici **najkasneje 4 dni pred terminom izvedbe**. Povezava je objavljena pod kategorijo "Seminarji".
-   - **Pomembno je, da datoteko ustrezno poimenujete, enako velja tudi za morebiten slikovni material.** Zahtevano ime datotek(e) je navedeno na povezavi s temami za seminarje v [spletni učilnici](https://ucilnica.fkkt.uni-lj.si/).
-   - Predavatelj bo vašo vajo pregledal ter vam po e-pošti sporočil, če je z vajo oz. datoteko kaj bistvenega narobe. Bodite odzivni ter zahtevane nujne popravke vnesite čimprej (najkasneje 2 dni pred izvedbo). Popravljeno datoteko naložite prek iste povezave kot prvotno.
+   - **Pomembno je, da datoteko ustrezno poimenujete, enako velja tudi za morebiten slikovni material.** Datoteka s seminarjev, pripravljenim na osnovi predloge, naj ima ime **s##-program.md**, pri čemer je **##** številka vašega seminarja (npr. s07 za seminar, ki je na vrsti prvi po seznamu na Google Sheets in je nam naveden kot S07), **program** pa je krako ime programa. Ime programa naj:
+      - bo napisano izključno z malimi črkami, dovoljene so številke (npr **jpred4**),
+      - dovoljen je znak za minus, npr. **primer-blast**,
+      - presledki niso dovoljeni, nadomestite jih s spodnjo črtico (angl. *underscore*) - tako ime **Genome Data Viewer** napišete kot **genome_data_viewer**.
+   - Primeri imen datotek s seminarjem:
+      - **s16-ensembl.md**,
+      - **s08-m-coffee.md**,
+      - **s02-netsolp.md**.
+   - Imena morebitnih slikovnih datotek (format jpg ali png!) naj bodo enaka imenu glavne datoteke z dodano oznako slike (med ime program in oznako naj bo znak -); primeri imen:
+      - **s07-hmmer-algoritem.png**,
+      - **s15-genome_data_viewer-pregled.jpg**.
+   - Seveda pazite, da so slike ustrezno referirane v glavni datoteki seminarja in sicer z relativno potjo do datoteke, ki je kar v isti mapi kot glavna datoteka s seminarjem.
+   - Predavatelj bo vašo vajo pregledal ter vam po e-pošti sporočil, če je z vajo oz. datoteko kaj bistvenega narobe (ne gre za tehnične popravke kot so imena datotek - to morate urediti sami!). Bodite odzivni ter zahtevane nujne popravke vnesite čimprej (najkasneje 2 dni pred izvedbo). Popravljeno datoteko naložite prek iste povezave kot prvotno.
 4. Vaša seminarska naloga (navodila za vaje) bodo dostopna pod kategorijo "Seminarji" na tej spletni strani.
 
 ## Vodenje oz. izvedba vaje
