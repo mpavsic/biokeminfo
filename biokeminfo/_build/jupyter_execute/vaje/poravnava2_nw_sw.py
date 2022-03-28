@@ -132,7 +132,7 @@ print(alignments)
 # Možnosti za ujemanja/neujemanja:
 # 
 # | vrednost | pomen |
-# | :--- : | :---- |
+# | :--- | :--- |
 # | x | brez posebnih vrednosti (ujemanje = 1, neujemanje = 0) |
 # | m | ujemanje je vrednost za identične znake, sicer gre za neujemanje |
 # | d | vrednost za posamezni par znakov se prebere iz slovarja |
@@ -141,7 +141,7 @@ print(alignments)
 # Množnosti za vrzeli:
 # 
 # | vrednost | pomen |
-# | :--- : | :---- |
+# | :--- | :--- |
 # | x | brez kazni za vrzeli (oz. kazen je enaka 0) |
 # | s | enake kazni za odprtje in razširitev vrzeli za obe zaporedji |
 # | d | različne kazni za odprtje in razširitev vrzeli za posamezni zaporedji |
