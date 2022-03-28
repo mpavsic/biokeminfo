@@ -784,19 +784,49 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </ul>
 <p>Ime funkcije, v našem primeru <code class="docutils literal notranslate"><span class="pre">globalxx</span></code>, je dejansko sestavljeno iz 3 komponent oblike <code class="docutils literal notranslate"><span class="pre">&lt;alignment</span> <span class="pre">type&gt;XX</span></code>. Prvi parameter oz. ime samo določa vrsto poravnave (<code class="docutils literal notranslate"><span class="pre">global</span></code> ali  <code class="docutils literal notranslate"><span class="pre">local</span></code> za globalno oz. lokalno poravnavo), druga parametra pa določata, kako se upoštevajo ujemanja in neujemanja (prvi znak) ter vrzeli (drugi znak). Pomen teh stikal je podrobneje opisan v <a class="reference external" href="https://biopython.org/docs/1.77/api/Bio.pairwise2.html">dokumentaciji</a>.</p>
 <p>Možnosti za ujemanja/neujemanja:</p>
-<p>| vrednost | pomen |
-| :— : | :—- |
-| x | brez posebnih vrednosti (ujemanje = 1, neujemanje = 0) |
-| m | ujemanje je vrednost za identične znake, sicer gre za neujemanje |
-| d | vrednost za posamezni par znakov se prebere iz slovarja |
-| c | vrednosti da callback funkcija |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>vrednost</p></th>
+<th class="text-align:left head"><p>pomen</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>x</p></td>
+<td class="text-align:left"><p>brez posebnih vrednosti (ujemanje = 1, neujemanje = 0)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>m</p></td>
+<td class="text-align:left"><p>ujemanje je vrednost za identične znake, sicer gre za neujemanje</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>d</p></td>
+<td class="text-align:left"><p>vrednost za posamezni par znakov se prebere iz slovarja</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>c</p></td>
+<td class="text-align:left"><p>vrednosti da callback funkcija</p></td>
+</tr>
+</tbody>
+</table>
 <p>Množnosti za vrzeli:</p>
-<p>| vrednost | pomen |
-| :— : | :—- |
-| x | brez kazni za vrzeli (oz. kazen je enaka 0) |
-| s | enake kazni za odprtje in razširitev vrzeli za obe zaporedji |
-| d | različne kazni za odprtje in razširitev vrzeli za posamezni zaporedji |
-| c | vrednosti da callback funkcija |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>vrednost</p></th>
+<th class="text-align:left head"><p>pomen</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>x</p></td>
+<td class="text-align:left"><p>brez kazni za vrzeli (oz. kazen je enaka 0)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>s</p></td>
+<td class="text-align:left"><p>enake kazni za odprtje in razširitev vrzeli za obe zaporedji</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>d</p></td>
+<td class="text-align:left"><p>različne kazni za odprtje in razširitev vrzeli za posamezni zaporedji</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>c</p></td>
+<td class="text-align:left"><p>vrednosti da callback funkcija</p></td>
+</tr>
+</tbody>
+</table>
 <p>Vrednost poravnave je vedno izračunana po naslednji enačbi:
 $<span class="math notranslate nohighlight">\(S = \sum s_{a,b} + \sum (I + (n-1) E)\)</span>$</p>
 <p>pri čemer je <span class="math notranslate nohighlight">\(s_{a,b}\)</span> vrednost iz matrike zamenjav (substitucijske matrike), <span class="math notranslate nohighlight">\(I\)</span> in <span class="math notranslate nohighlight">\(E\)</span> pa kazni za odprtje oz. razširitev vrzeli.</p>
@@ -956,9 +986,8 @@ AŠŠCŠTA
           ||| | |        |||    |     
 ----------ACT-C-C--------GCT----T-----
   Score=9
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AGGGGATAAGACTCCGCTTAGAATAGCTAGAATAGCCG
+
+AGGGGATAAGACTCCGCTTAGAATAGCTAGAATAGCCG
         |  || | |        |||    |     
 --------A--CT-C-C--------GCT----T-----
   Score=9
