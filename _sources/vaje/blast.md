@@ -64,7 +64,7 @@ GAAGCTGAGTTGGCTGC
 ## Naloga 3: iskanje s kratkim zaporedjem
 
 
-1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja... Uporabite orodje [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
+1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja... Uporabite eno od orodij za generiranje naključnih zaporedij (npr. [Random Sequence Generator](https://molbiotools.com/randomsequencegenerator.php), kakšno drugo orodje lahko najdete sami)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
 2. S temi tremi zaporedji pojdite v blastn in jih skupaj (v formatu FASTA) prilepite v iskalno polje (iščete lahko namreč z večimi zaporedji hkrati); vse nastavitve pustite na privzetih vrednostih, posebej pazite pa na:
    * zbirka: nr,
    * spremenite program: blastn (Somewhat similar sequences)
