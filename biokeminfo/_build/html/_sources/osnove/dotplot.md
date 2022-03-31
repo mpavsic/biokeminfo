@@ -1,3 +1,0 @@
-# Točkovni diagram
-
-Najenostavnejša poravnava zaporedij, ki to dejansko ni (je bolj *primerjava*), je točkovni diagram, s katerim primerjamo dve zaporedji (lahko tudi 3, a redko), včasih pa kar eno zaporedje s samim saboj. Iz primerjave lahko razberemo, ali sta si primerjani zaporedji v določenih delih podobni - vsebujeta podobe dele, podvojene odseke, inverzije ipd. Na tak način lahko primerjamo tudi celotne genome organizmov, kjer nas predvsem zanima sintenija, t. j. sosledje genov.
