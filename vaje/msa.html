@@ -41,12 +41,14 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/msa.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -386,6 +388,31 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../seminar/s01-signalp.html">
+   SignalP – napovedovanje signalnih peptidov
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../seminar/s02-netsolp.html">
+   NetSolP - topnost proteinov
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../seminar/s03-netnglyc.html">
+   NetNGlyc - N-glikozilacija človeških proteinov
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../seminar/s04-deeploc.html">
+   Napoved lokalizacije proteinov - DeepLoc
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../seminar/s05-interpro.html">
+   Klasifikacija proteinov z InterPro
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -643,22 +670,31 @@ const thebe_selector_output = ".output, .cell_output"
               </div>
               
             
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="blast.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">VAJA: Iskanje podobnih zaporedij z BLAST</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../osnove/grafi.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Grafi v molekularni biologiji</p>
+                
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="blast.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">VAJA: Iskanje podobnih zaporedij z BLAST</p>
+            </div>
+        </a>
     </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+     <div id="next">
+        <a class="right-next" href="../osnove/grafi.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Grafi v molekularni biologiji</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
 </div>
             
         </div>
