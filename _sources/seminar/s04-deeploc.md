@@ -1,7 +1,7 @@
 # Napoved lokalizacije proteinov - DeepLoc
 **Avtorja**: Ena Kartal, Nataša Vujović
 
-**Datum predstavitve**: 2022.04.20
+**Datum predstavitve**: 2022-04-20
 
 -----
 ## Namen vaje
@@ -23,6 +23,7 @@ Aminokislinska zaporedja evkariontskih proteinov v FASTA formatu. Deluje za prot
 
 -----
 ## Navodila
+
 ### Vhodni podatki
 Kot vhodne podatke uporabite :
 
@@ -30,10 +31,12 @@ Kot vhodne podatke uporabite :
   (https://www.uniprot.org/uniprot/P06213#sequences)
 - aminokislinsko zaporedje citokroma b pri pekarskem kvasu- baker's yeast (UniProtKB ID [P00163]
   (https://www.uniprot.org/uniprot/P00163#sequences)
+
 ### Postopek dela
 -Odprite spletno stran UniProt in kopirajte aminokislinsko zaporedje v FASTA formatu.
 -Odprite spletno stran DeepLoc in prilepite aminokislinsko zaporedje v okvir.
 -Izberite opcijo Blosum62, potem pa Submit.
-### PriÄŤakovani rezultati in razlaga:
+
+### Pričakovani rezultati in razlaga:
 Program za prvi primer pravilno poda subcelično lokalizacijo proteinov. Eksperimentalno določeno lokacijo lahko preverimo v UniProtu.
 Pri drugem zaporedju program poda napačen rezultat. To se zgodi, ko vzamemo primer aminokislinskega zaporedja proteina za taksonomsko skupino, ki ima omejeno število podatkov ampak je eksperimentalno določena subcelična lokacija proteina.
