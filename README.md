@@ -5,10 +5,12 @@ Vsebuje teorijo, primere z razlagami ter naloge, vse to je pa na ogled v obliki 
 
 *Repozitorij je v nastajanju in bo redno posodobljen in dopolnjen.*
 
-
 ## Uporaba
 Osnovna uporaba je enostavna - knjigo si lahko ogledate na [mpavsic.github.io/biokeminfo](http://mpavsic.github.io/biokeminfo), kjer najdete tudi povezave za prenos posameznih zvezkov in strani v formatu PDF, prav tako pa je zvezke Jupyter Lab mogoče poganjati v Binder-ju (povezave so na vrhu zvezkov).
 
+## Avtorstvo
+
+Avtor nalog je Miha Pavšič, avtorji seminarskih nalog (razdelek **Seminar**) pa študenti, ki so navedeni pri posameznem seminarju.
 
 ## Zahvala
 Knjiga je bila ustvarjena z uporabo odličnega odprtokodnega projekta [Jupyter Book](https://jupyterbook.org/) ter predloge [executablebooks/cookiecutter-jupyter-book](https://github.com/executablebooks/cookiecutter-jupyter-book).
