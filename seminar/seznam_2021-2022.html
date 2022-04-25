@@ -41,14 +41,12 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seznam_2021-2022.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -530,37 +528,37 @@
 <td><p>2022-04-20</p></td>
 </tr>
 <tr class="row-odd"><td><p>S06</p></td>
-<td><p>HMMER</p></td>
+<td><p><a class="reference internal" href="s06-hmmer.html"><span class="doc std std-doc">HMMER</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Miha Razdevšek, Nuša Kos Thaler</p></td>
 <td><p>2022-04-28</p></td>
 </tr>
 <tr class="row-even"><td><p>S07</p></td>
-<td><p>MUSCLE</p></td>
+<td><p><a class="reference internal" href="s07-MUSCLE.html"><span class="doc std std-doc">MUSCLE</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Tinkara Butara, Gaja Starc</p></td>
 <td><p>2022-04-28</p></td>
 </tr>
 <tr class="row-odd"><td><p>S08</p></td>
-<td><p>M-Cofee</p></td>
+<td><p><a class="reference internal" href="s08-m-coffee.html"><span class="doc std std-doc">M-Cofee</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Klara Razboršek, Jan Kogovšek</p></td>
 <td><p>2022-04-28</p></td>
 </tr>
 <tr class="row-even"><td><p>S09</p></td>
-<td><p>COBALT</p></td>
+<td><p><a class="reference internal" href="s09-cobalt.html"><span class="doc std std-doc">COBALT</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Petja Premrl, Pia Mencin</p></td>
 <td><p>2022-04-28</p></td>
 </tr>
 <tr class="row-odd"><td><p>S10</p></td>
-<td><p>webPRANK</p></td>
+<td><p><a class="reference internal" href="s10-webprank.html"><span class="doc std std-doc">webPRANK</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Klara Ažbe, Ema Kavčič</p></td>
 <td><p>2022-04-28</p></td>
 </tr>
 <tr class="row-even"><td><p>S11</p></td>
-<td><p>Primer-BLAST</p></td>
+<td><p><a class="reference internal" href="s11-primer-blast.html"><span class="doc std std-doc">Primer-BLAST</span></a></p></td>
 <td><p>poravnave</p></td>
 <td><p>Ela Kovač, Tina Urh</p></td>
 <td><p>2022-04-28</p></td>
@@ -688,31 +686,22 @@
               </div>
               
             
-                
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../izvedba/vaje_2021-2022.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Vaje 2021/2022</p>
-            </div>
-        </a>
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../izvedba/vaje_2021-2022.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Vaje 2021/2022</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="navodila.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Navodila za pripravo seminarske naloge</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="navodila.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Navodila za pripravo seminarske naloge</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
