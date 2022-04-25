@@ -35,9 +35,9 @@ webPRANK kot vhodne podatke sprejme DNA, kodonska in aminokislinska zaporedija v
 
 ### Vhodni podatki
 1. primer:
-[Amilaza](s10-webprank-vhod1.txt) aminokislinska zaporedja za protein amilazo različnih organizmov v FASTA formatu
+[Amilaza](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s10-webprank-vhod1.txt) aminokislinska zaporedja za protein amilazo različnih organizmov v FASTA formatu
 2. primer:
-[Mikrosatelitne DNA](s10-webprank-vhod2.txt) zaporedja mikrosatelitne DNA
+[Mikrosatelitne DNA](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s10-webprank-vhod2.txt) zaporedja mikrosatelitne DNA
 
 
 ### Postopek dela
