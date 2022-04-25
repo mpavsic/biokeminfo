@@ -42,8 +42,8 @@ Kot vhodne podatke lahko vnesemo več zaporedij v formatih GCG, FASTA, EMBL, Gen
 ### Vhodni podatki
 
 Kot vhodne podatke uporabite:
-- [aminokislinsko zaporedje prokatepsina L pri različnih organizmih](s07-MUSCLE-vhod1.txt)
-- [aminokislinska zaporedja različnih encimov](s07-MUSCLE-vhod2.fasta)
+- [aminokislinsko zaporedje prokatepsina L pri različnih organizmih](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s07-MUSCLE-vhod1.txt)
+- [aminokislinska zaporedja različnih encimov](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s07-MUSCLE-vhod2.fasta)
 
 ### Postopek dela
 1.	Odpremo [MUSCLE 3.8](https://www.ebi.ac.uk/Tools/msa/muscle/).

@@ -34,7 +34,7 @@ Kot vhodne podatke lahko v program vnesemo accession code iz UniProt-a ali FASTA
 ## Navodila
 
 ### Vhodni podatki
-Kot vhodne podatke v COBALT vstavite [fasta dokument](s09-cobalt-vhod1.txt), ki vsebuje aminokislinska zaporedja proteina PINK1 iz sedmih različnih organizmov: človeka, vinske mušice, miši, riževega mokarja, podgane in bele uši.
+Kot vhodne podatke v COBALT vstavite [fasta dokument](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s09-cobalt-vhod1.txt), ki vsebuje aminokislinska zaporedja proteina PINK1 iz sedmih različnih organizmov: človeka, vinske mušice, miši, riževega mokarja, podgane in bele uši.
 
 ### Postopek dela
 1. Odpremo program, do katerega dostopamo na naslovu: [COBALT](https://www.ncbi.nlm.nih.gov/tools/cobalt/cobalt.cgi) ter vnesemo vhodne podatke. 
@@ -50,7 +50,7 @@ Na vrhu pa je predstavljena še grafično.
 
 6. Podatke filogenetskega drevesa si lahko prenesemo.
 ![postopek4](s09-postopek4.png)
-7. Pridobljeno filogenetsko drevo bomo primerjali s filogenetskim drevesom pridobljenim s programom MUSCLE. To pomo storili tako da bomo obe drevesi primerjali  s [Phylo.io](https://phylo.io/) Vanj vnesemo podatke obeh filogenetskih dreves. Da vam bo lažje so [tukaj](s09-cobalt-tree.nwk) in [tukaj](s09-muscle-tree.nwk) podatki filogenetskega drevesa narejenega v COBALTU in  podatki filogenetskega zaporedja istih zaporedij  v programu MUSCLE.
+7. Pridobljeno filogenetsko drevo bomo primerjali s filogenetskim drevesom pridobljenim s programom MUSCLE. To pomo storili tako da bomo obe drevesi primerjali  s [Phylo.io](https://phylo.io/) Vanj vnesemo podatke obeh filogenetskih dreves. Da vam bo lažje so [tukaj](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s09-cobalt-tree.nwk) in [tukaj](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s09-muscle-tree.nwk) podatki filogenetskega drevesa narejenega v COBALTU in  podatki filogenetskega zaporedja istih zaporedij  v programu MUSCLE.
 ![phylo](s09-phylo.png)
 
 ### Pričakovani rezultati in razlaga
