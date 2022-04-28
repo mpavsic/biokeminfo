@@ -1,6 +1,6 @@
 # COBALT
 
-**Avtorja**: Petja Preml, Pia Mencin
+**Avtorja**: Petja Premrl, Pia Mencin
 
 **Datum predstavitve**: 2022-04-28 
 
