@@ -1,4 +1,4 @@
-AUGUSTUS - identifikacija genov
+# AUGUSTUS - identifikacija genov
 
 **Avtorja**: Kostadin Mitkov, Maša Mencigar
 
