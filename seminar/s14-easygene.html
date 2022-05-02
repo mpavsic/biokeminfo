@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seznam seminarjev 2021/2022 &#8212; Biokemijska informatika</title>
+    <title>EasyGene - napovedovanje prokariontskih genov &#8212; Biokemijska informatika</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -48,12 +48,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seznam_2021-2022.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/s14-easygene.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Navodila za pripravo seminarske naloge" href="navodila.html" />
-    <link rel="prev" title="Vaje 2021/2022" href="../izvedba/vaje_2021-2022.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -368,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   Seminar
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="seznam_2021-2022.html">
    Seznam seminarjev 2021/2022
   </a>
  </li>
@@ -428,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/seminar/seznam_2021-2022.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/seminar/s14-easygene.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -466,6 +464,58 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -473,194 +523,131 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Seznam seminarjev 2021/2022</h1>
+                <h1>EasyGene - napovedovanje prokariontskih genov</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="seznam-seminarjev-2021-2022">
-<h1>Seznam seminarjev 2021/2022<a class="headerlink" href="#seznam-seminarjev-2021-2022" title="Permalink to this headline">¶</a></h1>
-<p>Datum = datum predstavitve. Predstavitve bodo v predavalnici 2074 z izjemo 2022-04-28, ko bodo v predavalnici 4.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Oznaka</p></th>
-<th class="head"><p>Program</p></th>
-<th class="head"><p>Tematika</p></th>
-<th class="head"><p>Avtorji</p></th>
-<th class="head"><p>Datum</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>S01</p></td>
-<td><p><a class="reference internal" href="s01-signalp.html"><span class="doc std std-doc">SignalP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Urša Zevnik, Žan Žnidar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S02</p></td>
-<td><p><a class="reference internal" href="s02-netsolp.html"><span class="doc std std-doc">NetSolP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Pia Trošt, Tina Zajec</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S03</p></td>
-<td><p><a class="reference internal" href="s03-netnglyc.html"><span class="doc std std-doc">NetNGlyc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Teja Spruk, Urša Štefan</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S04</p></td>
-<td><p><a class="reference internal" href="s04-deeploc.html"><span class="doc std std-doc">DeepLoc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Natasa Vujovic, Ena Kartal</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S05</p></td>
-<td><p><a class="reference internal" href="s05-interpro.html"><span class="doc std std-doc">InterPro</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Neža Peternel, Pia Sotlar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S06</p></td>
-<td><p><a class="reference internal" href="s06-hmmer.html"><span class="doc std std-doc">HMMER</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Miha Razdevšek, Nuša Kos Thaler</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S07</p></td>
-<td><p><a class="reference internal" href="s07-MUSCLE.html"><span class="doc std std-doc">MUSCLE</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Tinkara Butara, Gaja Starc</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S08</p></td>
-<td><p><a class="reference internal" href="s08-m-coffee.html"><span class="doc std std-doc">M-Cofee</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Razboršek, Jan Kogovšek</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S09</p></td>
-<td><p><a class="reference internal" href="s09-cobalt.html"><span class="doc std std-doc">COBALT</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Petja Premrl, Pia Mencin</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S10</p></td>
-<td><p><a class="reference internal" href="s10-webprank.html"><span class="doc std std-doc">webPRANK</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Ažbe, Ema Kavčič</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S11</p></td>
-<td><p><a class="reference internal" href="s11-primer-blast.html"><span class="doc std std-doc">Primer-BLAST</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Ela Kovač, Tina Urh</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S12</p></td>
-<td><p><span class="xref myst">Genome Data Viewer</span></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Nuša Brdnik, Mark loborec</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S13</p></td>
-<td><p><span class="xref myst">Ensembl</span></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Martin Stanonik, Klara Kočman</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S14</p></td>
-<td><p><span class="xref myst">EasyGene</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Nik Vidmar, Gašper Struna</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S15</p></td>
-<td><p><span class="xref myst">AUGUSTUS</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Maša Mencigar, Kostadin Mitkov</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S16</p></td>
-<td><p><span class="xref myst">NetGene2</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Andraž Rotar, David Valte</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S17</p></td>
-<td><p>Expression Atlas</p></td>
-<td><p>izražanje genov</p></td>
-<td><p>Tina Javeršek, Hana Glavnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S18</p></td>
-<td><p>TreeFam</p></td>
-<td><p>ortologi-paralogi</p></td>
-<td><p>Špela Sotlar, Jan Trebušak</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S19</p></td>
-<td><p>PhyML</p></td>
-<td><p>filogenetika</p></td>
-<td><p>Jerič Sara, Deutsch Maja</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S20</p></td>
-<td><p>OneTwoTree</p></td>
-<td><p>filogenetika</p></td>
-<td><p>Pia Špehar, Katja Resnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S21</p></td>
-<td><p>CATH</p></td>
-<td><p>struktura</p></td>
-<td><p>Zarja Weingerl, Ivana Vukšinić</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S22</p></td>
-<td><p>IUPred3</p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Kodra, Neža Lanišek</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S23</p></td>
-<td><p>Jpred4</p></td>
-<td><p>struktura</p></td>
-<td><p>Lana Kores, Alliana Kolar</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S24</p></td>
-<td><p>RNAfold</p></td>
-<td><p>struktura</p></td>
-<td><p>Maj Priveršek, Metka Rus</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S25</p></td>
-<td><p>VAST+</p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Maučec, Gašper Možina</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S26</p></td>
-<td><p>Molstar</p></td>
-<td><p>struktura</p></td>
-<td><p>Vanja Ivošević</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S27</p></td>
-<td><p>PDB-Dev</p></td>
-<td><p>struktura</p></td>
-<td><p>Marko Kovačić, Lev Jošt, Špela Rapuš</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-</tbody>
-</table>
+  <div class="tex2jax_ignore mathjax_ignore section" id="easygene-napovedovanje-prokariontskih-genov">
+<h1>EasyGene - napovedovanje prokariontskih genov<a class="headerlink" href="#easygene-napovedovanje-prokariontskih-genov" title="Permalink to this headline">¶</a></h1>
+<p><strong>Avtorja</strong>: Nik Vidmar, Gašper Struna</p>
+<p><strong>Datum predstavitve</strong>: 2022-5-4</p>
+<hr class="docutils" />
+<div class="section" id="namen-vaje">
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">¶</a></h2>
+<p>Spoznati se s spletnim orodjem EasyGene. S pomočjo tega orodja napovedati gene v delu prokariontskega genoma.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="program">
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">¶</a></h2>
+<p>Program: <strong><a class="reference external" href="https://services.healthtech.dtu.dk/service.php?EasyGene-1.2">EasyGene 1.2</a></strong></p>
+<p>Avtorji programa: Thomas Schou Larsen, Anders Krogh; <a class="reference external" href="https://www.dtu.dk/">Technical University of Denmark</a></p>
+<p>Reference:</p>
+<ul class="simple">
+<li><p>Nielsen P, Krogh A. <strong>Large-scale prokaryotic gene prediction and comparison to genome annotation. Bioinformatics.</strong> 2005;21: 4322–4329. <a class="reference external" href="https://doi.org/10.1093/bioinformatics/bti701">10.1093/bioinformatics/bti701</a></p></li>
+<li><p>Larsen TS, Krogh A. <strong>EasyGene–a prokaryotic gene finder that ranks ORFs by statistical significance.</strong> BMC Bioinformatics. 2003;4: 21. <a class="reference external" href="https://doi.org/10.1186/1471-2105-4-21">10.1186/1471-2105-4-21</a></p></li>
+</ul>
+<div class="section" id="opis-programa">
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">¶</a></h3>
+<p>Vsak genom poleg pravih genov vsebuje tudi odprte bralne okvire (ORF), ki ne kodirajo ničesar. Prave gene moramo znati ločiti od naključnih ORF in eden izmed programov, ki ga lahko uporabljamo za napovedovanje genov pri prokariontih je EasyGene.</p>
+<p>EasyGene uporablja skrite modele Markova (HMM) za določanje, identifikacijo genov. Program vsebuje set podatkov za genome 138 prokariontov, izmed the izberemo modelni organizem, ki je najbolj soroden ali pa kar identičen organizmu, iz katerega prihaja izbrano zaporedje. Na podlagi genoma izbranega organizma program oceni HMM. S to oceno potem ovrednoti najdene ORF v podanem zaporedju. Za vsak ORF izračuna R-vrednost. To je pričakovano število ORF, ki bi jih našli v 1 Mbp velikem naključnem zaporedju. Na koncu program poda le gene, ki imajo R-vrednost nižjo od te, ki smo jo izbrali. Izračuna pa tudi verjetnosti, da se nek gen začne pri določenem nukleotidu. Pri končnem izpisu upošteva le izhodišča z največjimi verjetnostmi.</p>
+<p>EasyGene poda dobre rezultate (prave lokacije posameznih genov) pri prokariontih, če seveda izberemo pravi modelni genom. Ob nepravi izbiri so rezultati napačni, saj ocena HMM ni primerna zaradi napačne izbire modelnega genoma. Ker so med modelnimi organizmi le prokarionti program ni primeren za evkariontske organizme, saj ocena HMM ne bi bila ustrezna. Prednost tega programa je tudi, da za vsak nukleotid izračuna verjetnost, da se tam začne gen. S tem daje ustrezne rezultate tudi za genome, ki vsebujejo prekrivajoče se gene, kar se pri prokariontih pogosto pojavlja. Problem tega programa pri prokariontih so krajši geni (geni krajši od 100 nt). Pri ekstrakciji genov iz genomov modelnih organizmov, ki jih nato uporabi za oceno HMM in izračun R-vrednosti, so namreč upoštevali le ORF daljše od 120 baz.</p>
+</div>
+<div class="section" id="vhodni-podatki">
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">¶</a></h3>
+<p>Nukleotidno zaporedje v FASTA-zapisu.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="navodila">
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Kot vhodne podatke uporabite:</p>
+<ul class="simple">
+<li><p>nukleotidno zaporedje dela genoma bakterije <em>Escherichia coli</em> CFT073 (GenBank ID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/AE014075.1">AE014075.1</a>) - od 1 do 5800 nt</p></li>
+<li><p>nukleotidno zaporedje dela genoma bakterije <em>Thermoanaerobacter tengcongensis</em> MB4 (GenBank ID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/AE008691.1">AE008691.1</a>) - od 1 do 9700 nt</p></li>
+</ul>
+</div>
+<div class="section" id="postopek-dela">
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Odpremo EasyGene - 1.2</p></li>
+<li><p>V okno prilepimo nukleotidno/a zaporedje/a v FASTA ali enočrkovnem formatu ali naložimo datoteko.</p></li>
+<li><p>Če izbrana zaporedja pripadajo prokariontskemu organizmu, si izberemo ustrezen orgnizem, da preprečimo iskanje tipov nukleotidnih zaporedij, ki jih pri teh organizmih ni. V primeru, da zaporedje ni prokariontsko in včasih v primeru, da nismo izbrali pravega organizma ne dobimo uporabnih rezultatov.</p></li>
+<li><p>Nato si izberemo R. Najbolje je, da je za krajša zaporedja manj od 2 in za dolga manj od 60. Lahko pa tudi obkljukamo polje <strong>»Predict suboptimal gene starts«</strong>, ki nam poda večje število rezultatov, vendar pa je njihova zanesljivost nižja.</p></li>
+<li><p>Potem zaženemo program s klikom gumba »submit« in počakamo na rezultate.</p></li>
+</ol>
+</div>
+<div class="section" id="pricakovani-rezultati-in-razlaga">
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">¶</a></h3>
+<p>Program nam izpiše rezultate v obliki tabele.
+<strong>Seqname</strong> v tabeli nam pove ime vnosnega zaporedja, <strong>model</strong> pomeni kodo modela organizma, <strong>feature</strong> predstavlja predvideno funkcijo ‘CDS’ ali ‘CDSsub’ (alternativni začetek prevoda) <strong>start</strong> in <strong>end</strong> nam povesta položaja v zaporedju, kjer se gen začne in konča.
+<strong>score</strong> je najpomembnejši del  tabele in je R-vrednost, ki kaže, kako verjetno je, da je fragment le nekodiran odprt bralni okvir in ne pravi gen (manjši kot je »<strong>score</strong> boljše je). <strong>strand</strong> je lahko ‘+’ ali ‘-‘ (- je za gene, ki se nahajajo na drugi verigi, na komplementarnem zaporedju), <strong>startc</strong> napove predviden začetni kodon, <strong>odds</strong> pa večji kot je večja je verjetnost, da je izbrani start kodon res pravi.</p>
+<p><img alt="Napoved genov za del genoma Thermoanaerobacter tengcongensis MB4" src="../_images/s14-easygene-rezultat1.png" /></p>
+<p>Najdeni geni za <em>Thermoanaerobacter tengcongensis</em> MB4 so glede na anotacije v zbirki pravilni. Zadnji trije geni se nahajajo na komplementarni verigi, 4. in 8. gen imata alternativna start kodona TTG oziroma GTG, start kodon na 7924. mestu in stop kodon s koncem na 7927. mestu se prekrivata.</p>
+<p><img alt="Napoved genov za del genoma Escherichia coli CFT073" src="../_images/s14-easygene-rezultat2.png" /></p>
+<p><em>Escherichia coli</em> CFT073 vsebuje na mestih od 190 do 255 kratek gen, ki ga EasyGene sploh ne zapiše. Kljub upoštevanju alternativnih start kodonov, tudi Easy Gene v določenih primerih naredi napako in vseeno preferenčno izbere ATG. To vidimo pri prvem in drugem izpisanem genu, kjer je izbral napačno mesto začetka gena, napačen start kodon. Prvi gen se začne glede na anotacije v GenBanku na 534. mestom (start kodon GTG), drugi pa na 985. mestu (start kodon TTG). Preostala dva gena se skladata z označbo v GenBanku.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -687,21 +674,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../izvedba/vaje_2021-2022.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Vaje 2021/2022</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="navodila.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Navodila za pripravo seminarske naloge</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

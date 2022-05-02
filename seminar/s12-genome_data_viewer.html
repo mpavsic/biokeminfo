@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seznam seminarjev 2021/2022 &#8212; Biokemijska informatika</title>
+    <title>Pregledovalnik genoma GDV &#8212; Biokemijska informatika</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -48,12 +48,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seznam_2021-2022.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/s12-genome_data_viewer.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Navodila za pripravo seminarske naloge" href="navodila.html" />
-    <link rel="prev" title="Vaje 2021/2022" href="../izvedba/vaje_2021-2022.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -368,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   Seminar
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="seznam_2021-2022.html">
    Seznam seminarjev 2021/2022
   </a>
  </li>
@@ -428,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/seminar/seznam_2021-2022.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/seminar/s12-genome_data_viewer.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -466,6 +464,58 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -473,194 +523,126 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Seznam seminarjev 2021/2022</h1>
+                <h1>Pregledovalnik genoma GDV</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="seznam-seminarjev-2021-2022">
-<h1>Seznam seminarjev 2021/2022<a class="headerlink" href="#seznam-seminarjev-2021-2022" title="Permalink to this headline">¶</a></h1>
-<p>Datum = datum predstavitve. Predstavitve bodo v predavalnici 2074 z izjemo 2022-04-28, ko bodo v predavalnici 4.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Oznaka</p></th>
-<th class="head"><p>Program</p></th>
-<th class="head"><p>Tematika</p></th>
-<th class="head"><p>Avtorji</p></th>
-<th class="head"><p>Datum</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>S01</p></td>
-<td><p><a class="reference internal" href="s01-signalp.html"><span class="doc std std-doc">SignalP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Urša Zevnik, Žan Žnidar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S02</p></td>
-<td><p><a class="reference internal" href="s02-netsolp.html"><span class="doc std std-doc">NetSolP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Pia Trošt, Tina Zajec</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S03</p></td>
-<td><p><a class="reference internal" href="s03-netnglyc.html"><span class="doc std std-doc">NetNGlyc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Teja Spruk, Urša Štefan</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S04</p></td>
-<td><p><a class="reference internal" href="s04-deeploc.html"><span class="doc std std-doc">DeepLoc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Natasa Vujovic, Ena Kartal</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S05</p></td>
-<td><p><a class="reference internal" href="s05-interpro.html"><span class="doc std std-doc">InterPro</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Neža Peternel, Pia Sotlar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S06</p></td>
-<td><p><a class="reference internal" href="s06-hmmer.html"><span class="doc std std-doc">HMMER</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Miha Razdevšek, Nuša Kos Thaler</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S07</p></td>
-<td><p><a class="reference internal" href="s07-MUSCLE.html"><span class="doc std std-doc">MUSCLE</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Tinkara Butara, Gaja Starc</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S08</p></td>
-<td><p><a class="reference internal" href="s08-m-coffee.html"><span class="doc std std-doc">M-Cofee</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Razboršek, Jan Kogovšek</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S09</p></td>
-<td><p><a class="reference internal" href="s09-cobalt.html"><span class="doc std std-doc">COBALT</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Petja Premrl, Pia Mencin</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S10</p></td>
-<td><p><a class="reference internal" href="s10-webprank.html"><span class="doc std std-doc">webPRANK</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Ažbe, Ema Kavčič</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S11</p></td>
-<td><p><a class="reference internal" href="s11-primer-blast.html"><span class="doc std std-doc">Primer-BLAST</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Ela Kovač, Tina Urh</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S12</p></td>
-<td><p><span class="xref myst">Genome Data Viewer</span></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Nuša Brdnik, Mark loborec</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S13</p></td>
-<td><p><span class="xref myst">Ensembl</span></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Martin Stanonik, Klara Kočman</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S14</p></td>
-<td><p><span class="xref myst">EasyGene</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Nik Vidmar, Gašper Struna</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S15</p></td>
-<td><p><span class="xref myst">AUGUSTUS</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Maša Mencigar, Kostadin Mitkov</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S16</p></td>
-<td><p><span class="xref myst">NetGene2</span></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Andraž Rotar, David Valte</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S17</p></td>
-<td><p>Expression Atlas</p></td>
-<td><p>izražanje genov</p></td>
-<td><p>Tina Javeršek, Hana Glavnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S18</p></td>
-<td><p>TreeFam</p></td>
-<td><p>ortologi-paralogi</p></td>
-<td><p>Špela Sotlar, Jan Trebušak</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S19</p></td>
-<td><p>PhyML</p></td>
-<td><p>filogenetika</p></td>
-<td><p>Jerič Sara, Deutsch Maja</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S20</p></td>
-<td><p>OneTwoTree</p></td>
-<td><p>filogenetika</p></td>
-<td><p>Pia Špehar, Katja Resnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S21</p></td>
-<td><p>CATH</p></td>
-<td><p>struktura</p></td>
-<td><p>Zarja Weingerl, Ivana Vukšinić</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S22</p></td>
-<td><p>IUPred3</p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Kodra, Neža Lanišek</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S23</p></td>
-<td><p>Jpred4</p></td>
-<td><p>struktura</p></td>
-<td><p>Lana Kores, Alliana Kolar</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S24</p></td>
-<td><p>RNAfold</p></td>
-<td><p>struktura</p></td>
-<td><p>Maj Priveršek, Metka Rus</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S25</p></td>
-<td><p>VAST+</p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Maučec, Gašper Možina</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S26</p></td>
-<td><p>Molstar</p></td>
-<td><p>struktura</p></td>
-<td><p>Vanja Ivošević</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S27</p></td>
-<td><p>PDB-Dev</p></td>
-<td><p>struktura</p></td>
-<td><p>Marko Kovačić, Lev Jošt, Špela Rapuš</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-</tbody>
-</table>
+  <div class="tex2jax_ignore mathjax_ignore section" id="pregledovalnik-genoma-gdv">
+<h1>Pregledovalnik genoma GDV<a class="headerlink" href="#pregledovalnik-genoma-gdv" title="Permalink to this headline">¶</a></h1>
+<p><strong>Avtorja</strong>: Nuša Brdnik, Mark Loborec</p>
+<p><strong>Datum predstavitve</strong>: 2022-05-04</p>
+<hr class="docutils" />
+<div class="section" id="namen-vaje">
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">¶</a></h2>
+<p>Vizualizacija genov, zaporedij, anotacij in drugih podatkov znotraj genoma. Pregledovanje in navigacija po genomu.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="program">
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">¶</a></h2>
+<p>Program: <strong><a class="reference external" href="https://www.ncbi.nlm.nih.gov/genome/gdv/">Genome Data viewer 5.3.1</a></strong></p>
+<p>Avtorji programa: Avtorji niso navedeni. National Center for Biotechnology Information.(<a class="reference external" href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>)</p>
+<p>Reference:</p>
+<ul class="simple">
+<li><p>Rangwala SH, Kuznetsov A, Ananiev V, Asztalos A, Borodin E, Evgeniev V, Joukov V, Lotov V, Pannu R, Rudnev D, Shkeda A, Weitz EM, Schneider VA. <strong>Accessing NCBI data using the NCBI Sequence Viewer and Genome Data Viewer (GDV).</strong> <em>Genome Res.</em> January 2021 31: 159-169.  doi:10.1101/gr.266932.120. PMID: 33239395.</p></li>
+</ul>
+<div class="section" id="opis-programa">
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">¶</a></h3>
+<p>Genome Data Viewer podpira več kot 1500 različnih genomov. Na prvi strani programa lahko vidimo njihovo filogenetsko drevo. Ko izberemo organizem program vizualizira eksperimentalno pridobljene podatke. Vzame zaporedje iz podatkovnih zbirk in jih prikaže na grafičen način. Različne anotacije za kodirajoče regije, introne, eksone, izražanje genov in jih postavi ob genom.
+Genome Data Viewer sprejema iskalne zahtevke v obliki genov, lokacijie v genomu, fenotipa in dbSNP idjev. Lahko tudi ročno pregledujemo genom ali pa se premikamo po kromosomih ali delih kromosomov. Različni assembly-ji so različe serije sekvenciranja oz zbirke podatkov.</p>
+</div>
+<div class="section" id="vhodni-podatki">
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">¶</a></h3>
+<p>Vhodni podatki so imena genov, lokacija v genomu, fenotip… Program ni zahteven, iščemo lahko tudi tekstovno ali preko BLASTa.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="navodila">
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>V obliki seznama navedite vhodne podatke, zgled je spodaj. Če gre za podatke iz drugih zbirk (npr. iz zbirke aminokislinskih zaporedij), jih navedite kot povezave na ustrezne zapise. Izogibajte se temu, da bodo morali kolegi podatke sami iskati po podatkovnih zbirkah, saj bo to bistveno zavleklo predstavitev. Vhodne podatke si morate zamisliti in poiskati sami - uporaba tistih, ki jih program sam predlaga kot primer, ni dovoljena.</p>
+<p>Kot vhodne podatke uporabite (to je primer):</p>
+<ul class="simple">
+<li><p>človeški genom</p></li>
+<li><p>gen za Oksitocin (OXT)</p></li>
+</ul>
+</div>
+<div class="section" id="postopek-dela">
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Odprite Genome Data Viewer. Prepričajte se, da je izbrani genom človeški (Homo Sapiens)</p></li>
+<li><p>Za iskalni zahtevek vnesite OXT. Za assembly izberite GRCh38.p14.</p></li>
+<li><p>Na zaslonu lahko sedaj vidimo lokacijo gena (številka kromosoma in na katere zaporedne baze vsebuje), kodirajočo regijo, smer branja gena, eksone in introne ter končni protein.</p></li>
+<li><p>S klikom na ikono zobnika v zgornjem desnem kotu in nadalnjim klikom na NCBI recommended tracks set bomo dodali še tirnice, ki prikazujejo izražanje (expression)</p></li>
+<li><p>Če se z miško ustavimo na določenem delu tirnice se pojavi okno z anotacijami (pogosto dolžino, natančno lokacijo (od do baznega para), in hiperpovezavo do drugih podatkovnih podatkovnih zbirk)</p></li>
+</ol>
+</div>
+<div class="section" id="pricakovani-rezultati-in-razlaga">
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">¶</a></h3>
+<p>Vidimo okno z vizualizacijo gena na genomu in drugimi podatki.</p>
+<p><span class="xref myst">Okno z rezultati</span></p>
+<p>Program deluje za vse genome, ki jih vsebuje.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -687,21 +669,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../izvedba/vaje_2021-2022.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Vaje 2021/2022</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="navodila.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Navodila za pripravo seminarske naloge</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
