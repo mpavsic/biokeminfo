@@ -472,6 +472,16 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#swiss-model">
+   SWISS-MODEL
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alphafold2">
+   AlphaFold2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naloga-1">
    Naloga 1
   </a>
@@ -502,6 +512,16 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#swiss-model">
+   SWISS-MODEL
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alphafold2">
+   AlphaFold2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naloga-1">
    Naloga 1
   </a>
@@ -522,11 +542,29 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="vaja-modeliranje-na-osnovi-homologije">
 <h1>VAJA: Modeliranje na osnovi homologije<a class="headerlink" href="#vaja-modeliranje-na-osnovi-homologije" title="Permalink to this headline">¶</a></h1>
-<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:
+<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, <em>ab initio</em>, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a></p></li>
+<li><p><a class="reference external" href="https://zhanggroup.org/I-TASSER/">I-TASSER</a></p></li>
+<li><p><a class="reference external" href="https://www.rosettacommons.org/software">Rosetta</a>, ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika <a class="reference external" href="https://robetta.bakerlab.org/">Robetta</a></p></li>
+<li><p><a class="reference external" href="https://github.com/deepmind/alphafold">AlphaFold2</a>, ki ga lahko poganjamo lokalno ali pa izkoristimo <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">iPython Notebook v Google Colab</a></p></li>
+</ul>
+<div class="section" id="swiss-model">
+<h2>SWISS-MODEL<a class="headerlink" href="#swiss-model" title="Permalink to this headline">¶</a></h2>
+<p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:
 <img alt="SWISS-MODEL vstopna stran" src="../_images/modeliranje-swissmodel1.png" /></p>
 <p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot cvhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo izkanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
 <img alt="SWISS-MODEL vnos" src="../_images/modeliranje-swissmodel2.png" /></p>
 <p>Podrobnosti in navodila so opisana v <a class="reference external" href="https://swissmodel.expasy.org/docs/help">dokumentaciji</a>.</p>
+</div>
+<div class="section" id="alphafold2">
+<h2>AlphaFold2<a class="headerlink" href="#alphafold2" title="Permalink to this headline">¶</a></h2>
+<p>AlphaFold2 lahko v osnovni varianti poganjamo v obliki iPython zvezka v storitvi Google Colab (zvezek je v Google Drive), a je ta način za vaje manj primeren, saj modeliranje lahko traja dlje časa (pri brezplačnem računu smo omejeni z računskimi viri), prav tako pa ni primeren za modeliranje večjih proteinov, saj hitro presežemo omejitve osnovnega brezplačnega uporabniškega računa.</p>
+<p>Da bi pa bili modeli, izračunani z AlphaFold2, dostopni čim širši javnosti, so v EBI pripravili podatkovno zbirko vnaprej izračunanih modelov številnih proteinov, dne 2022-05-03 je šlo za 992.316 proteinov. Gre za celoten človeški proteom ter proteome nekaterih modelnih organizmov, vsi ti modeli pa so dostopni preko posebne spletne strani <a class="reference external" href="https://alphafold.ebi.ac.uk/">AlphaFold2 EBI</a>, povezave do modelov pa so dodane tudi v kategorijo <em>Structure</em> v zbirki <a class="reference external" href="https://www.uniprot.org/">UniProt</a>.</p>
+<p><img alt="AlphaFold Model Database" src="../_images/modeliranje-alphafold_database.png" /></p>
+<p>Modele si lahko na Strani UniProt oz. v podatkovni zbirki na EBI ogledamo kot 3D modele, pobarvane glede na zanesljivost napovedi strukture (pLDDT, <em>per-residue confidence score</em>, v razponu od 0 do 100). Pri regijah z nizko pLDDT gre pogosto za strukturno neurejene regije.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="naloga-1">
 <h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">¶</a></h2>
 <p>Zanima nas struktura celotnega človeškega klavdina-7 (claudin-7). Poiščite strukturo/model oz. ga sami pripravite ter ga analizirajte v smislu realnosti.</p>
@@ -551,7 +589,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
-<li><p>Najboljše modele, dobljene iz posameznih orodij primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zaposa v zbirku UniProt?).</p></li>
+<li><p>Poiščite tudi model tega proteina, izračunanega z AlphaFold2.</p></li>
+<li><p>Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zaposa v zbirku UniProt?).</p></li>
 </ol>
 </div>
 <div class="section" id="naloga-2">
