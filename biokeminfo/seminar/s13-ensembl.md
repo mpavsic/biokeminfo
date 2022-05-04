@@ -11,7 +11,7 @@ Pregled izbranega gena vretenčarskega organizma ter vpogled v mutacije na izbra
 ---
 ## Program
 
-Program: **[https://www.ensembl.org/index.html]**
+Program: [Ensembl](https://www.ensembl.org/index.html)
 
 Avtorji programa: European Bioinformatics Institute https://www.ebi.ac.uk/ 
 
@@ -32,35 +32,36 @@ Ime gena vrentenčarja
 
 ---
 ## Navodila
--Kakšna mutacija v zbirki dbSNP se zgodi na mestu 108329199 v genu ATM? Ali je nevarna, kakšno bolezen povzroči?
--Koliko mutacij povzroči izgubo stop kodona na tem genu?
+- Kakšna mutacija v zbirki dbSNP se zgodi na mestu 108329199 v genu ATM? Ali je nevarna, kakšno bolezen povzroči?
+- Koliko mutacij povzroči izgubo stop kodona na tem genu?
 
 ### Vhodni podatki
 Za vhodni podatek uporabite:
-- gen ATM(atm, Genebank ID. [472])(https://www.ncbi.nlm.nih.gov/gene/472)
+- gen ATM(atm, Genebank ID. [472](https://www.ncbi.nlm.nih.gov/gene/472)
 
 ### Postopek dela
-1.V iskalno okence vpišite ime gena ATM
-2.Dobite seznam genov, ki najbolj utrezajo podanem imenu. Na desni je podan najboljši rezultat, ki se tudi nahaja na vrhu seznama, na katerega kliknite 
-![Primer-ENSEMBL](Posnetek zaslona (40).png)
-3.Pred sabo imate prikazano tabelo z označenimi regijami ter kje so kodirani eksoni ter introni. Na levi strani se nahaja tabela na kateri kliknite Variant table
-4.Prikaže se vam tabela z mogočimi mutacijami v tem genu
-![Primer-ENSEMBL](Posnetek zaslona (43).png)
-5.Z uporabo filtrov poiščite želene mutacije
-6.Za prvo vprašanje vpišemo v tabelo mesto kjer se mutacija pojavi ter filtriramo po zbirki dbSNP
-7 Na spletno mesto OMIM vpišem podani gen. Pod molecular genetics, na levi strani, poiščemo tabelo kjer se nahajajo želene variacije in identificiramo bolezen ki jo mutacija povzroča.
-8 Pri drugi nalogi pa z filtri podanimi nad tabelo izločimo želene mutacije. 
+1. V iskalno okence vpišite ime gena ATM
+2. Dobite seznam genov, ki najbolj utrezajo podanem imenu. Na desni je podan najboljši rezultat, ki se tudi nahaja na vrhu seznama, na katerega kliknite 
+![Primer-ENSEMBL](s13-ensembl-slika1.png)
+3. Pred sabo imate prikazano tabelo z označenimi regijami ter kje so kodirani eksoni ter introni. Na levi strani se nahaja tabela na kateri kliknite Variant table
+4. Prikaže se vam tabela z mogočimi mutacijami v tem genu.
+![Primer-ENSEMBL](s13-ensembl-slika2.png)
+5. Z uporabo filtrov poiščite želene mutacije
+6. Za prvo vprašanje vpišemo v tabelo mesto kjer se mutacija pojavi ter filtriramo po zbirki dbSNP
+7. Na spletno mesto OMIM vpišem podani gen. Pod molecular genetics, na levi strani, poiščemo tabelo kjer se nahajajo želene variacije in identificiramo bolezen ki jo mutacija povzroča.
+8. Pri drugi nalogi pa z filtri podanimi nad tabelo izločimo želene mutacije. 
 
-### PriÄakovani rezultati in razlaga
+### Pričakovani rezultati in razlaga
 V Ensemblu:
--v tabeli se nam, ko s pomočjo filtrov najdemo pravo mutacijo, prikaže kje ter kakšna se mutacija pojavi, kaj povzroči, če je patogena ter njen ID in v tabeli različni algoritmi predvidijo nevarnost mutacije. Če se rezultati teh algoritmov razlikujejo je potrebno izvesti dodatno raziskavo glede te mutacije.
--Naši prvi mutaciji je prikazano da je nevarna, ker se spremeni bazni par (single nucleotide change:SNP)(A/G) in posledično aminokislinsko zaporedje v proteinu (missense variant). ALgoritmi pa podajo različne verjetnosti nevarnosti zato gremo preverit mutacijo v OMIM. 
-![Primer-ENSEMBL](Posnetek zaslona (32).png)
--V drugi nalogi je prikazano da samo dve mutaciji povzročita izgubo stop kodona.
-![Primer-ENSEMBL](Posnetek zaslona (35).png)
+- v tabeli se nam, ko s pomočjo filtrov najdemo pravo mutacijo, prikaže kje ter kakšna se mutacija pojavi, kaj povzroči, če je patogena ter njen ID in v tabeli različni algoritmi predvidijo nevarnost mutacije. Če se rezultati teh algoritmov razlikujejo je potrebno izvesti dodatno raziskavo glede te mutacije.
+- Naši prvi mutaciji je prikazano da je nevarna, ker se spremeni bazni par (single nucleotide change:SNP)(A/G) in posledično aminokislinsko zaporedje v proteinu (missense variant). Algoritmi pa podajo različne verjetnosti nevarnosti zato gremo preverit mutacijo v OMIM. 
+![Primer-ENSEMBL](s13-ensembl-slika3.png)
+- V drugi nalogi je prikazano da samo dve mutaciji povzročita izgubo stop kodona.
+![Primer-ENSEMBL](s13-ensembl-slika4.png)
 Vse mutacije se zgodijo na 11 kromosomu kjer se gen nahaja.
+
 V OMIM:
--v tabeli, do katere prideš z zgornijimi navodili, je značeno koliko mutacij se pojavi v podanem genu, kakšno bolezen povzročajo ter njihov ID v različnih zbirkah
--O naši mutaciji v prvi nalogi (22 mutacija) je zapisano da povzroča raka na limfatičnem sistemu (Mantle cell lymphoma).
-![Primer-OMIM](Posnetek zaslona (30).png)
+- v tabeli, do katere prideš z zgornijimi navodili, je značeno koliko mutacij se pojavi v podanem genu, kakšno bolezen povzročajo ter njihov ID v različnih zbirkah
+- O naši mutaciji v prvi nalogi (22 mutacija) je zapisano da povzroča raka na limfatičnem sistemu (Mantle cell lymphoma).
+![Primer-OMIM](s13-ensembl-slika5.png)
 
