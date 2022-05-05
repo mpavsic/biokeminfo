@@ -1,6 +1,6 @@
 # VAJA: Modeliranje na osnovi homologije
 
-Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, *ab initio*, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:
+Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (tj. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, *ab initio*, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:
 - [SWISS-MODEL](https://swissmodel.expasy.org/)
 - [I-TASSER](https://zhanggroup.org/I-TASSER/)
 - [Rosetta](https://www.rosettacommons.org/software), ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika [Robetta](https://robetta.bakerlab.org/)
@@ -12,7 +12,7 @@ Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitr
 Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je [SWISS-MODEL](https://swissmodel.expasy.org/):
 ![SWISS-MODEL vstopna stran](slike/modeliranje-swissmodel1.png)
 
-Interaktivno modeliranje zaženemo s pritiskom na gumb `Start Modelling`. Kot cvhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko "projektu" določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo izkanje po predlogah (`Search For Templates`), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo `Build Model`, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
+Interaktivno modeliranje zaženemo s pritiskom na gumb `Start Modelling`. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko "projektu" določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (`Search For Templates`), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo `Build Model`, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
 ![SWISS-MODEL vnos](slike/modeliranje-swissmodel2.png)
 
 Podrobnosti in navodila so opisana v [dokumentaciji](https://swissmodel.expasy.org/docs/help).
@@ -46,12 +46,12 @@ Potek reševanja:
       * [izpis strani](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.pdf) z rezultati modeliranja v formatu PDF
       * celoten izhod: [I-TASSER-hCldn7_excluded_4p79_3x29.zip](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.zip)
 3. Poiščite tudi model tega proteina, izračunanega z AlphaFold2.
-4.  Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zaposa v zbirku UniProt?).
+4.  Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zapisa v zbirki UniProt?).
 
 ## Naloga 2
-Vsak si naj izbere en protein (pripotočam, da izberete bolj "eksotične" proteine ali pa proteine iz "eksotičnih" organizmov), za katerega:
+Vsak si naj izbere en protein (priporočam, da izberete bolj "eksotične" proteine ali pa proteine iz "eksotičnih" organizmov), za katerega:
 1. z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;
-2. izdelajte model s pomočjo programa SWISS-MODEL in sicer za celotni protein (seveda idstranite morebitni signalni peptid in/ali proregije);
+2. izdelajte model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);
 3. model, ki ga izračunate, in pa strukturo, uporabljeno kot predlogo, naložite v program UCSF Chimera in primerjajte preko superpozicije (*MatchMaker*).
 
 Odgovorite na vprašanja:

@@ -1,6 +1,6 @@
 # VAJA: Iskanje podobnih struktur
 
-Na primeru si bomo ogledali, kako lahko proteine s podobno strukturo identificiramo z iskanjem z uporabo BLAST (uporabimo aminokislinsko zaporedje proteina, za katerega želimo najdi podobne strukture) ter tudi direktno z iskanjem podobnih struktur.
+Na primeru si bomo ogledali, kako lahko proteine s podobno strukturo identificiramo z iskanjem z uporabo BLAST (uporabimo aminokislinsko zaporedje proteina, za katerega želimo najti podobne strukture) ter tudi direktno z iskanjem podobnih struktur.
 
 ## Uvod
 Če kot **vhodni podatek uporabimo aminokislinsko zaporedje** proteina (ali njegovega dela), za katerega želimo najti podobne strukture oz. identificirati podobne proteine z znano strukturo izhajamo iz dejstva, da na podobno strukturo/zvitje kaže podobno aminokislinsko zaporedje kaže. Iskanje izvedemo z različico *blastp* programa BLAST (seveda lahko izvedemo tudi iskanje s *psi-blast*), pri tem pa kot zbirko za iskanje izberemo `Protein Data Bank proteins(pdb)`:
