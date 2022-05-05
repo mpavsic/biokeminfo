@@ -542,7 +542,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="vaja-modeliranje-na-osnovi-homologije">
 <h1>VAJA: Modeliranje na osnovi homologije<a class="headerlink" href="#vaja-modeliranje-na-osnovi-homologije" title="Permalink to this headline">¶</a></h1>
-<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (t.j. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, <em>ab initio</em>, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:</p>
+<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (tj. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, <em>ab initio</em>, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a></p></li>
 <li><p><a class="reference external" href="https://zhanggroup.org/I-TASSER/">I-TASSER</a></p></li>
@@ -553,7 +553,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>SWISS-MODEL<a class="headerlink" href="#swiss-model" title="Permalink to this headline">¶</a></h2>
 <p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:
 <img alt="SWISS-MODEL vstopna stran" src="../_images/modeliranje-swissmodel1.png" /></p>
-<p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot cvhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo izkanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
+<p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
 <img alt="SWISS-MODEL vnos" src="../_images/modeliranje-swissmodel2.png" /></p>
 <p>Podrobnosti in navodila so opisana v <a class="reference external" href="https://swissmodel.expasy.org/docs/help">dokumentaciji</a>.</p>
 </div>
@@ -590,15 +590,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li><p>Poiščite tudi model tega proteina, izračunanega z AlphaFold2.</p></li>
-<li><p>Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zaposa v zbirku UniProt?).</p></li>
+<li><p>Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zapisa v zbirki UniProt?).</p></li>
 </ol>
 </div>
 <div class="section" id="naloga-2">
 <h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">¶</a></h2>
-<p>Vsak si naj izbere en protein (pripotočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
+<p>Vsak si naj izbere en protein (priporočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
 <ol class="simple">
 <li><p>z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;</p></li>
-<li><p>izdelajte model s pomočjo programa SWISS-MODEL in sicer za celotni protein (seveda idstranite morebitni signalni peptid in/ali proregije);</p></li>
+<li><p>izdelajte model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);</p></li>
 <li><p>model, ki ga izračunate, in pa strukturo, uporabljeno kot predlogo, naložite v program UCSF Chimera in primerjajte preko superpozicije (<em>MatchMaker</em>).</p></li>
 </ol>
 <p>Odgovorite na vprašanja:</p>
