@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -500,6 +503,18 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal nav-link" href="#id1">
      Vhodni podatki
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#citokrom-c">
+       Citokrom_c
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#outgroup">
+       Outgroup
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#postopek-dela">
@@ -564,6 +579,18 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal nav-link" href="#id1">
      Vhodni podatki
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#citokrom-c">
+       Citokrom_c
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#outgroup">
+       Outgroup
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#postopek-dela">
@@ -623,10 +650,119 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id1">
 <h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Ker je pretvorba podatkov iz fasta v Phylip format časovno preobsežna za današnjo vajo, so potrebni preoblikovani podatki že podani:</p>
-<ul class="simple">
-<li><p><img alt="Citokrom_c" src="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod1.phy" /></p></li>
-<li><p><img alt="Outgroup" src="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod2.phy" /></p></li>
-</ul>
+<div class="section" id="citokrom-c">
+<h4>Citokrom_c<a class="headerlink" href="#citokrom-c" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod1.phy">Citokrom_c (phy format)</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="mi">11</span>    <span class="mi">169</span>
+<span class="n">Mis</span>        <span class="n">MLASRALSLI</span> <span class="n">GKRAISTSVC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYAFPTYAD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Podgana</span>    <span class="n">MLATRALSLI</span> <span class="n">GKRAISTSVC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Zajec</span>      <span class="n">MLPTRLLSFS</span> <span class="n">GSRAISTSFC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Poto</span>       <span class="o">----------</span> <span class="o">----------</span> <span class="o">----------</span> <span class="o">--</span><span class="n">YALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Govedo</span>     <span class="n">MLATRVFSLI</span> <span class="n">GRRAISTSVC</span> <span class="n">VRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Clovek</span>     <span class="n">MLATRVFSLV</span> <span class="n">GKRAISTSVC</span> <span class="n">VRAHESVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDHPLPEVA</span> 
+<span class="n">Simpanz</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDHPLPEVA</span> 
+<span class="n">Gorila</span>     <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDYPLPEVA</span> 
+<span class="n">Pavijan</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFTLPAYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Mandril</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFTLPAYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Opica</span>      <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+
+           <span class="n">HVTMLSASQK</span> <span class="n">ALKEKEKADW</span> <span class="n">SSLSRDEKVQ</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNRGTNEW</span> 
+           <span class="n">HVKLLSASQK</span> <span class="n">ALKEKEKADW</span> <span class="n">SSLSRDEKVQ</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNKGTNEW</span> 
+           <span class="n">HVKQLSAGQK</span> <span class="n">ALKEKEKAPW</span> <span class="n">GSLTRDEKVE</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNRGTNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SNLSMDEKVE</span> <span class="n">LYRIQFKESF</span> <span class="n">AEMNRGTNEW</span> 
+           <span class="n">HVKNLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSIDEKVE</span> <span class="n">LYRLKFKESF</span> <span class="n">AEMNRSTNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRRSNEW</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRRSNEW</span> 
+           <span class="n">HVRHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIQFKESF</span> <span class="n">AEMNRGSNEW</span> 
+
+           <span class="n">KTVVGMAMFF</span> <span class="n">IGFTALVLIW</span> <span class="n">EKSYVYGPIP</span> <span class="n">HTFDRDWVAM</span> <span class="n">QTKRMLDMKA</span> 
+           <span class="n">KTVVGLAMFF</span> <span class="n">IGFTALVLIW</span> <span class="n">EKSYVYGPIP</span> <span class="n">HTFDRDWVAM</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGTALFF</span> <span class="n">IGFTALILIW</span> <span class="n">EKHYVYGPIP</span> <span class="n">HTFDKEWVAM</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGTAMLF</span> <span class="n">IGFTALIVIW</span> <span class="n">EKRYVYGPIP</span> <span class="n">HTFDPDWVAK</span> <span class="n">QTKKMLDMKV</span> 
+           <span class="n">KTVVGAAMFF</span> <span class="n">IGFTALLLIW</span> <span class="n">EKHYVYGPIP</span> <span class="n">HTFEEEWVAK</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGGAMFF</span> <span class="n">IGFTALVIMW</span> <span class="n">QKHYVYGPLP</span> <span class="n">QSFDKEWVAK</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGGAMFF</span> <span class="n">IGFTALVIMW</span> <span class="n">QKHYVYGPLP</span> <span class="n">QSFDKEWVAK</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGGAMFF</span> <span class="n">IGFTALVIMW</span> <span class="n">QKHYVYGPLP</span> <span class="n">QSFDKEWVAK</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGTAMFF</span> <span class="n">FGITALIVMW</span> <span class="n">EKRYVYGPLP</span> <span class="n">QTFDKEWVAM</span> <span class="n">QTKRMLDMKV</span> 
+           <span class="n">KTVVGTAMFF</span> <span class="n">IGITALVIMW</span> <span class="n">EKLY</span><span class="o">------</span> <span class="o">----------</span> <span class="o">----------</span> 
+           <span class="n">KTVVGAAMFF</span> <span class="n">IGFTAILIIL</span> <span class="n">EKRYVYGPLP</span> <span class="n">HTFDKEWVAM</span> <span class="n">QTKRMLDLKV</span> 
+
+           <span class="n">NPIQGFSAKW</span> <span class="n">DYDKNEWKK</span>
+           <span class="n">NPIQGFSAKW</span> <span class="n">DYNKNEWKK</span>
+           <span class="n">SPIQGFSAKW</span> <span class="n">DYNKNEWRK</span>
+           <span class="n">NPIQGFAAKW</span> <span class="n">DYEKQEWKK</span>
+           <span class="n">APIQGFSAKW</span> <span class="n">DYDKNEWKK</span>
+           <span class="n">NPIQGLASKW</span> <span class="n">DYEKNEWKK</span>
+           <span class="n">NPIQGLASKW</span> <span class="n">DYEKNEWKK</span>
+           <span class="n">NPIQGLASKW</span> <span class="n">DYEKNEWKK</span>
+           <span class="n">NPIQGLASKW</span> <span class="n">DYEKNEWKK</span>
+           <span class="o">----------</span> <span class="o">---------</span>
+           <span class="n">NPVDGLASKW</span> <span class="n">DYDKKEWKK</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="outgroup">
+<h4>Outgroup<a class="headerlink" href="#outgroup" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod2.phy">Outgroup (phy format)</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="mi">12</span>    <span class="mi">170</span>
+<span class="n">Clovek</span>     <span class="n">MLATRVFSLV</span> <span class="n">GKRAISTSVC</span> <span class="n">VRAHESVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDHPLPEVA</span> 
+<span class="n">Simpanz</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDHPLPEVA</span> 
+<span class="n">Gorila</span>     <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFSLPAYMD</span> <span class="n">RRDYPLPEVA</span> 
+<span class="n">Pavijan</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFTLPAYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Mandril</span>    <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDFTLPAYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Opica</span>      <span class="o">----------</span> <span class="o">----------</span> <span class="o">-----</span><span class="n">SVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Mis</span>        <span class="n">MLASRALSLI</span> <span class="n">GKRAISTSVC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYAFPTYAD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Podgana</span>    <span class="n">MLATRALSLI</span> <span class="n">GKRAISTSVC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Zajec</span>      <span class="n">MLPTRLLSFS</span> <span class="n">GSRAISTSFC</span> <span class="n">LRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Govedo</span>     <span class="n">MLATRVFSLI</span> <span class="n">GRRAISTSVC</span> <span class="n">VRAHGSVVKS</span> <span class="n">EDYALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Poto</span>       <span class="o">----------</span> <span class="o">----------</span> <span class="o">----------</span> <span class="o">--</span><span class="n">YALPSYVD</span> <span class="n">RRDYPLPDVA</span> 
+<span class="n">Kvasovka</span>   <span class="o">----------</span> <span class="o">-----</span><span class="n">MLSLR</span> <span class="n">QSIRFFKPAT</span> <span class="n">RTLCSSRYLL</span> <span class="n">QQKPVVKTAQ</span> 
+
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNE</span><span class="o">-</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNE</span><span class="o">-</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRGSNE</span><span class="o">-</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRRSNE</span><span class="o">-</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIKFKESF</span> <span class="n">AEMNRRSNE</span><span class="o">-</span> 
+           <span class="n">HVRHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSMDEKVE</span> <span class="n">LYRIQFKESF</span> <span class="n">AEMNRGSNE</span><span class="o">-</span> 
+           <span class="n">HVTMLSASQK</span> <span class="n">ALKEKEKADW</span> <span class="n">SSLSRDEKVQ</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNRGTNE</span><span class="o">-</span> 
+           <span class="n">HVKLLSASQK</span> <span class="n">ALKEKEKADW</span> <span class="n">SSLSRDEKVQ</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNKGTNE</span><span class="o">-</span> 
+           <span class="n">HVKQLSAGQK</span> <span class="n">ALKEKEKAPW</span> <span class="n">GSLTRDEKVE</span> <span class="n">LYRIQFNESF</span> <span class="n">AEMNRGTNE</span><span class="o">-</span> 
+           <span class="n">HVKNLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SSLSIDEKVE</span> <span class="n">LYRLKFKESF</span> <span class="n">AEMNRSTNE</span><span class="o">-</span> 
+           <span class="n">HVKHLSASQK</span> <span class="n">ALKEKEKASW</span> <span class="n">SNLSMDEKVE</span> <span class="n">LYRIQFKESF</span> <span class="n">AEMNRGTNE</span><span class="o">-</span> 
+           <span class="n">NLAEVNGPET</span> <span class="n">LIGPGAKEGT</span> <span class="n">VPTDLDQETG</span> <span class="n">LARLELLGKL</span> <span class="n">EGIDVFDTKP</span> 
+
+           <span class="n">WKTVVGGAMF</span> <span class="n">FIGFTALVIM</span> <span class="n">WQKHYVYGPL</span> <span class="n">PQSFDKEWVA</span> <span class="n">KQTKRMLDMK</span> 
+           <span class="n">WKTVVGGAMF</span> <span class="n">FIGFTALVIM</span> <span class="n">WQKHYVYGPL</span> <span class="n">PQSFDKEWVA</span> <span class="n">KQTKRMLDMK</span> 
+           <span class="n">WKTVVGGAMF</span> <span class="n">FIGFTALVIM</span> <span class="n">WQKHYVYGPL</span> <span class="n">PQSFDKEWVA</span> <span class="n">KQTKRMLDMK</span> 
+           <span class="n">WKTVVGTAMF</span> <span class="n">FFGITALIVM</span> <span class="n">WEKRYVYGPL</span> <span class="n">PQTFDKEWVA</span> <span class="n">MQTKRMLDMK</span> 
+           <span class="n">WKTVVGTAMF</span> <span class="n">FIGITALVIM</span> <span class="n">WEKLY</span><span class="o">-----</span> <span class="o">----------</span> <span class="o">----------</span> 
+           <span class="n">WKTVVGAAMF</span> <span class="n">FIGFTAILII</span> <span class="n">LEKRYVYGPL</span> <span class="n">PHTFDKEWVA</span> <span class="n">MQTKRMLDLK</span> 
+           <span class="n">WKTVVGMAMF</span> <span class="n">FIGFTALVLI</span> <span class="n">WEKSYVYGPI</span> <span class="n">PHTFDRDWVA</span> <span class="n">MQTKRMLDMK</span> 
+           <span class="n">WKTVVGLAMF</span> <span class="n">FIGFTALVLI</span> <span class="n">WEKSYVYGPI</span> <span class="n">PHTFDRDWVA</span> <span class="n">MQTKRMLDMK</span> 
+           <span class="n">WKTVVGTALF</span> <span class="n">FIGFTALILI</span> <span class="n">WEKHYVYGPI</span> <span class="n">PHTFDKEWVA</span> <span class="n">MQTKRMLDMK</span> 
+           <span class="n">WKTVVGAAMF</span> <span class="n">FIGFTALLLI</span> <span class="n">WEKHYVYGPI</span> <span class="n">PHTFEEEWVA</span> <span class="n">KQTKRMLDMK</span> 
+           <span class="n">WKTVVGTAML</span> <span class="n">FIGFTALIVI</span> <span class="n">WEKRYVYGPI</span> <span class="n">PHTFDPDWVA</span> <span class="n">KQTKKMLDMK</span> 
+           <span class="n">LDSSRKGTMK</span> <span class="n">DPIIIESYDD</span> <span class="n">YRYVGCTGSP</span> <span class="n">AGSHTIMWLK</span> <span class="n">PTVNEVARCW</span> 
+
+           <span class="n">VNPIQGLASK</span> <span class="n">WDYEKNEWKK</span> 
+           <span class="n">VNPIQGLASK</span> <span class="n">WDYEKNEWKK</span> 
+           <span class="n">VNPIQGLASK</span> <span class="n">WDYEKNEWKK</span> 
+           <span class="n">VNPIQGLASK</span> <span class="n">WDYEKNEWKK</span> 
+           <span class="o">----------</span> <span class="o">----------</span> 
+           <span class="n">VNPVDGLASK</span> <span class="n">WDYDKKEWKK</span> 
+           <span class="n">ANPIQGFSAK</span> <span class="n">WDYDKNEWKK</span> 
+           <span class="n">VNPIQGFSAK</span> <span class="n">WDYNKNEWKK</span> 
+           <span class="n">VSPIQGFSAK</span> <span class="n">WDYNKNEWRK</span> 
+           <span class="n">VAPIQGFSAK</span> <span class="n">WDYDKNEWKK</span> 
+           <span class="n">VNPIQGFAAK</span> <span class="n">WDYEKQEWKK</span> 
+           <span class="n">ECGSVYKLNP</span> <span class="n">VGVPNDDHHH</span> 
+
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="postopek-dela">
 <h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">¶</a></h3>

@@ -17,35 +17,17 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-payload6 = {'query': 'accession:Q7RTY8', 'format': 'fasta'}
-result6 = requests.get(BASE + KB_ENDPOINT, params=payload6)
-# print(result6.text)
-
-f = open('izhod/uniprot-sample_output.fasta', 'w')
-f.write(result6.text)
-f.close()
-
-# odpremo in preberemo datoteko
-f = open('izhod/uniprot-sample_output.fasta', 'r')
-print(f.read())
-
-# izpišemo vsebino prebrane datoteke z uporabo BioPythona
-from Bio import SeqIO
-for seq_record in SeqIO.parse('izhod/uniprot-sample_output.fasta', 'fasta'):
-    print(seq_record.id)   # izpišemo ID
-    print(repr(seq_record.seq))   # izpišemo objekt
-    print(seq_record.seq)   # izpišemo samo zaporedje
-    print(len(seq_record))   # izpišemo dolžino zaporedja
+from Bio.Seq import Seq
+seq1 = Seq('AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMCWCVNTAGVRRTDKDTEITC')
+seq2 = Seq('KTRCQLEREHILGAAGGADAQRPTLQGMFVPQCDEYGHYVPTQCHHSTGYCWCVDRDGRELEGSRTPPGMRPPC')
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Input [0;32mIn [10][0m, in [0;36m<cell line: 14>[0;34m()[0m
-[1;32m     11[0m [38;5;28mprint[39m(f[38;5;241m.[39mread())
-[1;32m     13[0m [38;5;66;03m# izpišemo vsebino prebrane datoteke z uporabo BioPythona[39;00m
-[0;32m---> 14[0m [38;5;28;01mfrom[39;00m [38;5;21;01mBio[39;00m [38;5;28;01mimport[39;00m SeqIO
-[1;32m     15[0m [38;5;28;01mfor[39;00m seq_record [38;5;129;01min[39;00m SeqIO[38;5;241m.[39mparse([38;5;124m'[39m[38;5;124mizhod/uniprot-sample_output.fasta[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mfasta[39m[38;5;124m'[39m):
-[1;32m     16[0m     [38;5;28mprint[39m(seq_record[38;5;241m.[39mid)   [38;5;66;03m# izpišemo ID[39;00m
+Input [0;32mIn [1][0m, in [0;36m<cell line: 1>[0;34m()[0m
+[0;32m----> 1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mBio[39;00m[38;5;21;01m.[39;00m[38;5;21;01mSeq[39;00m [38;5;28;01mimport[39;00m Seq
+[1;32m      2[0m seq1 [38;5;241m=[39m Seq([38;5;124m'[39m[38;5;124mAAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMCWCVNTAGVRRTDKDTEITC[39m[38;5;124m'[39m)
+[1;32m      3[0m seq2 [38;5;241m=[39m Seq([38;5;124m'[39m[38;5;124mKTRCQLEREHILGAAGGADAQRPTLQGMFVPQCDEYGHYVPTQCHHSTGYCWCVDRDGRELEGSRTPPGMRPPC[39m[38;5;124m'[39m)
 
 [0;31mModuleNotFoundError[0m: No module named 'Bio'
 ModuleNotFoundError: No module named 'Bio'
