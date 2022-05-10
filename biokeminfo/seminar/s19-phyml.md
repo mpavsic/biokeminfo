@@ -41,6 +41,8 @@ Ker je pretvorba podatkov iz fasta v Phylip format časovno preobsežna za dana�
 
 #### Citokrom_c
 
+[Citokrom_c (phy format)](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod1.phy)
+
 ```
     11    169
 Mis        MLASRALSLI GKRAISTSVC LRAHGSVVKS EDYAFPTYAD RRDYPLPDVA 
@@ -93,6 +95,9 @@ Opica      ---------- ---------- -----SVVKS EDYALPSYVD RRDYPLPDVA
 ```
 
 #### Outgroup
+
+[Outgroup (phy format)](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod2.phy)
+
 ```
     12    170
 Clovek     MLATRVFSLV GKRAISTSVC VRAHESVVKS EDFSLPAYMD RRDHPLPEVA 
