@@ -166,7 +166,7 @@ V okviru vaje bomo pregledali delovanje programa PhyML:
 6. Ko se rezultati naložijo, sprva vidimo, kateri model si je izbral program in njegove parametre, če pa želimo videti naše drevo, moramo izbrati Tree Visualisation (vidimo online). Vse parametre in način risanja drevesa si lahko ogledamo, če si naložimo zip datoteko (Download).
 ![Postopek_dela_3](s19-phyml-postopek3.png)
 
-### PriÄakovani rezultati in razlaga
+### Pričakovani rezultati in razlaga
 Program deluje dobro, ko vsebuje zaporedja organizmov, ki so si dovolj sorodna - tako dobimo prikaz filogenetskega drevesa, ki deluje smiseln in na katerem so vidni dolžina posameznih vej, ki ponazarja genetsko spremembo kot tudi "support values", ki pove kolikokrat od 100ih primerov se ponovi ista veja drevesa, ko naredimo filogenetsko rekonstrukcijo (zato smo tudi predhodno opravili bootstrap analizo).
 ![Rezultat_0](s19-phyml-rezultat0.png)
 
