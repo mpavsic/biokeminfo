@@ -11,7 +11,7 @@ Uporabiti program za izris filogenetskega drevesa na podlagi taksonomskih imen o
 ---
 ## Program
 
-Program: **[OneTwoTree](http://onetwotree.tau.ac.il/index.htm)**
+Program: **[OneTwoTree](http://onetwotree.tau.ac.il/index.html)**
 
 Avtorji programa: Michal Drori,Anna Rice,Moshe Einhorn,Ofer Chay,Lior Glick,Itay Mayrose; [Tel Aviv University](https://english.tau.ac.il/)
 
