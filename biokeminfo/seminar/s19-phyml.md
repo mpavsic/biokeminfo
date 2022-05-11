@@ -38,8 +38,121 @@ Vhodni podatki so aminokislinska oz. nukleotidna zaporedja v formatu Phylip.
 
 ### Vhodni podatki
 Ker je pretvorba podatkov iz fasta v Phylip format časovno preobsežna za današnjo vajo, so potrebni preoblikovani podatki že podani:
-* ![Citokrom_c](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod1.phy)
-* ![Outgroup](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod2.phy)
+
+#### Citokrom_c
+
+[Citokrom_c (phy format)](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod1.phy)
+
+```
+    11    169
+Mis        MLASRALSLI GKRAISTSVC LRAHGSVVKS EDYAFPTYAD RRDYPLPDVA 
+Podgana    MLATRALSLI GKRAISTSVC LRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Zajec      MLPTRLLSFS GSRAISTSFC LRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Poto       ---------- ---------- ---------- --YALPSYVD RRDYPLPDVA 
+Govedo     MLATRVFSLI GRRAISTSVC VRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Clovek     MLATRVFSLV GKRAISTSVC VRAHESVVKS EDFSLPAYMD RRDHPLPEVA 
+Simpanz    ---------- ---------- -----SVVKS EDFSLPAYMD RRDHPLPEVA 
+Gorila     ---------- ---------- -----SVVKS EDFSLPAYMD RRDYPLPEVA 
+Pavijan    ---------- ---------- -----SVVKS EDFTLPAYVD RRDYPLPDVA 
+Mandril    ---------- ---------- -----SVVKS EDFTLPAYVD RRDYPLPDVA 
+Opica      ---------- ---------- -----SVVKS EDYALPSYVD RRDYPLPDVA 
+
+           HVTMLSASQK ALKEKEKADW SSLSRDEKVQ LYRIQFNESF AEMNRGTNEW 
+           HVKLLSASQK ALKEKEKADW SSLSRDEKVQ LYRIQFNESF AEMNKGTNEW 
+           HVKQLSAGQK ALKEKEKAPW GSLTRDEKVE LYRIQFNESF AEMNRGTNEW 
+           HVKHLSASQK ALKEKEKASW SNLSMDEKVE LYRIQFKESF AEMNRGTNEW 
+           HVKNLSASQK ALKEKEKASW SSLSIDEKVE LYRLKFKESF AEMNRSTNEW 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNEW 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNEW 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNEW 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRRSNEW 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRRSNEW 
+           HVRHLSASQK ALKEKEKASW SSLSMDEKVE LYRIQFKESF AEMNRGSNEW 
+
+           KTVVGMAMFF IGFTALVLIW EKSYVYGPIP HTFDRDWVAM QTKRMLDMKA 
+           KTVVGLAMFF IGFTALVLIW EKSYVYGPIP HTFDRDWVAM QTKRMLDMKV 
+           KTVVGTALFF IGFTALILIW EKHYVYGPIP HTFDKEWVAM QTKRMLDMKV 
+           KTVVGTAMLF IGFTALIVIW EKRYVYGPIP HTFDPDWVAK QTKKMLDMKV 
+           KTVVGAAMFF IGFTALLLIW EKHYVYGPIP HTFEEEWVAK QTKRMLDMKV 
+           KTVVGGAMFF IGFTALVIMW QKHYVYGPLP QSFDKEWVAK QTKRMLDMKV 
+           KTVVGGAMFF IGFTALVIMW QKHYVYGPLP QSFDKEWVAK QTKRMLDMKV 
+           KTVVGGAMFF IGFTALVIMW QKHYVYGPLP QSFDKEWVAK QTKRMLDMKV 
+           KTVVGTAMFF FGITALIVMW EKRYVYGPLP QTFDKEWVAM QTKRMLDMKV 
+           KTVVGTAMFF IGITALVIMW EKLY------ ---------- ---------- 
+           KTVVGAAMFF IGFTAILIIL EKRYVYGPLP HTFDKEWVAM QTKRMLDLKV 
+
+           NPIQGFSAKW DYDKNEWKK
+           NPIQGFSAKW DYNKNEWKK
+           SPIQGFSAKW DYNKNEWRK
+           NPIQGFAAKW DYEKQEWKK
+           APIQGFSAKW DYDKNEWKK
+           NPIQGLASKW DYEKNEWKK
+           NPIQGLASKW DYEKNEWKK
+           NPIQGLASKW DYEKNEWKK
+           NPIQGLASKW DYEKNEWKK
+           ---------- ---------
+           NPVDGLASKW DYDKKEWKK
+```
+
+#### Outgroup
+
+[Outgroup (phy format)](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s19-phyml-vhod2.phy)
+
+```
+    12    170
+Clovek     MLATRVFSLV GKRAISTSVC VRAHESVVKS EDFSLPAYMD RRDHPLPEVA 
+Simpanz    ---------- ---------- -----SVVKS EDFSLPAYMD RRDHPLPEVA 
+Gorila     ---------- ---------- -----SVVKS EDFSLPAYMD RRDYPLPEVA 
+Pavijan    ---------- ---------- -----SVVKS EDFTLPAYVD RRDYPLPDVA 
+Mandril    ---------- ---------- -----SVVKS EDFTLPAYVD RRDYPLPDVA 
+Opica      ---------- ---------- -----SVVKS EDYALPSYVD RRDYPLPDVA 
+Mis        MLASRALSLI GKRAISTSVC LRAHGSVVKS EDYAFPTYAD RRDYPLPDVA 
+Podgana    MLATRALSLI GKRAISTSVC LRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Zajec      MLPTRLLSFS GSRAISTSFC LRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Govedo     MLATRVFSLI GRRAISTSVC VRAHGSVVKS EDYALPSYVD RRDYPLPDVA 
+Poto       ---------- ---------- ---------- --YALPSYVD RRDYPLPDVA 
+Kvasovka   ---------- -----MLSLR QSIRFFKPAT RTLCSSRYLL QQKPVVKTAQ 
+
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNE- 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNE- 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRGSNE- 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRRSNE- 
+           HVKHLSASQK ALKEKEKASW SSLSMDEKVE LYRIKFKESF AEMNRRSNE- 
+           HVRHLSASQK ALKEKEKASW SSLSMDEKVE LYRIQFKESF AEMNRGSNE- 
+           HVTMLSASQK ALKEKEKADW SSLSRDEKVQ LYRIQFNESF AEMNRGTNE- 
+           HVKLLSASQK ALKEKEKADW SSLSRDEKVQ LYRIQFNESF AEMNKGTNE- 
+           HVKQLSAGQK ALKEKEKAPW GSLTRDEKVE LYRIQFNESF AEMNRGTNE- 
+           HVKNLSASQK ALKEKEKASW SSLSIDEKVE LYRLKFKESF AEMNRSTNE- 
+           HVKHLSASQK ALKEKEKASW SNLSMDEKVE LYRIQFKESF AEMNRGTNE- 
+           NLAEVNGPET LIGPGAKEGT VPTDLDQETG LARLELLGKL EGIDVFDTKP 
+
+           WKTVVGGAMF FIGFTALVIM WQKHYVYGPL PQSFDKEWVA KQTKRMLDMK 
+           WKTVVGGAMF FIGFTALVIM WQKHYVYGPL PQSFDKEWVA KQTKRMLDMK 
+           WKTVVGGAMF FIGFTALVIM WQKHYVYGPL PQSFDKEWVA KQTKRMLDMK 
+           WKTVVGTAMF FFGITALIVM WEKRYVYGPL PQTFDKEWVA MQTKRMLDMK 
+           WKTVVGTAMF FIGITALVIM WEKLY----- ---------- ---------- 
+           WKTVVGAAMF FIGFTAILII LEKRYVYGPL PHTFDKEWVA MQTKRMLDLK 
+           WKTVVGMAMF FIGFTALVLI WEKSYVYGPI PHTFDRDWVA MQTKRMLDMK 
+           WKTVVGLAMF FIGFTALVLI WEKSYVYGPI PHTFDRDWVA MQTKRMLDMK 
+           WKTVVGTALF FIGFTALILI WEKHYVYGPI PHTFDKEWVA MQTKRMLDMK 
+           WKTVVGAAMF FIGFTALLLI WEKHYVYGPI PHTFEEEWVA KQTKRMLDMK 
+           WKTVVGTAML FIGFTALIVI WEKRYVYGPI PHTFDPDWVA KQTKKMLDMK 
+           LDSSRKGTMK DPIIIESYDD YRYVGCTGSP AGSHTIMWLK PTVNEVARCW 
+
+           VNPIQGLASK WDYEKNEWKK 
+           VNPIQGLASK WDYEKNEWKK 
+           VNPIQGLASK WDYEKNEWKK 
+           VNPIQGLASK WDYEKNEWKK 
+           ---------- ---------- 
+           VNPVDGLASK WDYDKKEWKK 
+           ANPIQGFSAK WDYDKNEWKK 
+           VNPIQGFSAK WDYNKNEWKK 
+           VSPIQGFSAK WDYNKNEWRK 
+           VAPIQGFSAK WDYDKNEWKK 
+           VNPIQGFAAK WDYEKQEWKK 
+           ECGSVYKLNP VGVPNDDHHH 
+
+```
 
 ### Postopek dela
 V okviru vaje bomo pregledali delovanje programa PhyML:
@@ -53,7 +166,7 @@ V okviru vaje bomo pregledali delovanje programa PhyML:
 6. Ko se rezultati naložijo, sprva vidimo, kateri model si je izbral program in njegove parametre, če pa želimo videti naše drevo, moramo izbrati Tree Visualisation (vidimo online). Vse parametre in način risanja drevesa si lahko ogledamo, če si naložimo zip datoteko (Download).
 ![Postopek_dela_3](s19-phyml-postopek3.png)
 
-### PriÄakovani rezultati in razlaga
+### Pričakovani rezultati in razlaga
 Program deluje dobro, ko vsebuje zaporedja organizmov, ki so si dovolj sorodna - tako dobimo prikaz filogenetskega drevesa, ki deluje smiseln in na katerem so vidni dolžina posameznih vej, ki ponazarja genetsko spremembo kot tudi "support values", ki pove kolikokrat od 100ih primerov se ponovi ista veja drevesa, ko naredimo filogenetsko rekonstrukcijo (zato smo tudi predhodno opravili bootstrap analizo).
 ![Rezultat_0](s19-phyml-rezultat0.png)
 
