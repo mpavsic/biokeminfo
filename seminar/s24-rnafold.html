@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seznam seminarjev 2021/2022 &#8212; Biokemijska informatika</title>
+    <title>RNAfold - napoved sekundarnih RNA struktur &#8212; Biokemijska informatika</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,12 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seznam_2021-2022.html" />
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/s24-rnafold.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Navodila za pripravo seminarske naloge" href="navodila.html" />
-    <link rel="prev" title="Vaje 2021/2022" href="../izvedba/vaje_2021-2022.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -371,9 +369,9 @@ const thebe_selector_output = ".output, .cell_output"
   Seminar
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="seznam_2021-2022.html">
    Seznam seminarjev 2021/2022
   </a>
  </li>
@@ -431,7 +429,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/seminar/seznam_2021-2022.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/seminar/s24-rnafold.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -469,6 +467,58 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -476,194 +526,147 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Seznam seminarjev 2021/2022</h1>
+                <h1>RNAfold - napoved sekundarnih RNA struktur</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="seznam-seminarjev-2021-2022">
-<h1>Seznam seminarjev 2021/2022<a class="headerlink" href="#seznam-seminarjev-2021-2022" title="Permalink to this headline">¶</a></h1>
-<p>Datum = datum predstavitve. Predstavitve bodo v predavalnici 2074 z izjemo 2022-04-28, ko bodo v predavalnici 4.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Oznaka</p></th>
-<th class="head"><p>Program</p></th>
-<th class="head"><p>Tematika</p></th>
-<th class="head"><p>Avtorji</p></th>
-<th class="head"><p>Datum</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>S01</p></td>
-<td><p><a class="reference internal" href="s01-signalp.html"><span class="doc std std-doc">SignalP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Urša Zevnik, Žan Žnidar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S02</p></td>
-<td><p><a class="reference internal" href="s02-netsolp.html"><span class="doc std std-doc">NetSolP</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Pia Trošt, Tina Zajec</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S03</p></td>
-<td><p><a class="reference internal" href="s03-netnglyc.html"><span class="doc std std-doc">NetNGlyc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Teja Spruk, Urša Štefan</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S04</p></td>
-<td><p><a class="reference internal" href="s04-deeploc.html"><span class="doc std std-doc">DeepLoc</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Natasa Vujovic, Ena Kartal</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-even"><td><p>S05</p></td>
-<td><p><a class="reference internal" href="s05-interpro.html"><span class="doc std std-doc">InterPro</span></a></p></td>
-<td><p>motivi v ak zaporedjih</p></td>
-<td><p>Neža Peternel, Pia Sotlar</p></td>
-<td><p>2022-04-20</p></td>
-</tr>
-<tr class="row-odd"><td><p>S06</p></td>
-<td><p><a class="reference internal" href="s06-hmmer.html"><span class="doc std std-doc">HMMER</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Miha Razdevšek, Nuša Kos Thaler</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S07</p></td>
-<td><p><a class="reference internal" href="s07-MUSCLE.html"><span class="doc std std-doc">MUSCLE</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Tinkara Butara, Gaja Starc</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S08</p></td>
-<td><p><a class="reference internal" href="s08-m-coffee.html"><span class="doc std std-doc">M-Cofee</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Razboršek, Jan Kogovšek</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S09</p></td>
-<td><p><a class="reference internal" href="s09-cobalt.html"><span class="doc std std-doc">COBALT</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Petja Premrl, Pia Mencin</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S10</p></td>
-<td><p><a class="reference internal" href="s10-webprank.html"><span class="doc std std-doc">webPRANK</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Klara Ažbe, Ema Kavčič</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-even"><td><p>S11</p></td>
-<td><p><a class="reference internal" href="s11-primer-blast.html"><span class="doc std std-doc">Primer-BLAST</span></a></p></td>
-<td><p>poravnave</p></td>
-<td><p>Ela Kovač, Tina Urh</p></td>
-<td><p>2022-04-28</p></td>
-</tr>
-<tr class="row-odd"><td><p>S12</p></td>
-<td><p><a class="reference internal" href="s12-genome_data_viewer.html"><span class="doc std std-doc">Genome Data Viewer</span></a></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Nuša Brdnik, Mark loborec</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S13</p></td>
-<td><p><a class="reference internal" href="s13-ensembl.html"><span class="doc std std-doc">Ensembl</span></a></p></td>
-<td><p>pregledovalniki genoma</p></td>
-<td><p>Martin Stanonik, Klara Kočman</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S14</p></td>
-<td><p><a class="reference internal" href="s14-easygene.html"><span class="doc std std-doc">EasyGene</span></a></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Nik Vidmar, Gašper Struna</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S15</p></td>
-<td><p><a class="reference internal" href="s15-augustus.html"><span class="doc std std-doc">AUGUSTUS</span></a></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Maša Mencigar, Kostadin Mitkov</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-odd"><td><p>S16</p></td>
-<td><p><a class="reference internal" href="s16-netgene2.html"><span class="doc std std-doc">NetGene2</span></a></p></td>
-<td><p>identifikacija genov</p></td>
-<td><p>Andraž Rotar, David Valte</p></td>
-<td><p>2022-05-04</p></td>
-</tr>
-<tr class="row-even"><td><p>S17</p></td>
-<td><p><a class="reference internal" href="s17-expression-atlas.html"><span class="doc std std-doc">Expression Atlas</span></a></p></td>
-<td><p>izražanje genov</p></td>
-<td><p>Tina Javeršek, Hana Glavnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S18</p></td>
-<td><p><a class="reference internal" href="s18-treefam.html"><span class="doc std std-doc">TreeFam</span></a></p></td>
-<td><p>ortologi-paralogi</p></td>
-<td><p>Špela Sotlar, Jan Trebušak</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S19</p></td>
-<td><p><a class="reference internal" href="s19-phyml.html"><span class="doc std std-doc">PhyML</span></a></p></td>
-<td><p>filogenetika</p></td>
-<td><p>Jerič Sara, Deutsch Maja</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S20</p></td>
-<td><p><a class="reference internal" href="s20-onetwotree.html"><span class="doc std std-doc">OneTwoTree</span></a></p></td>
-<td><p>filogenetika</p></td>
-<td><p>Pia Špehar, Katja Resnik</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S21</p></td>
-<td><p><a class="reference internal" href="s21-cath.html"><span class="doc std std-doc">CATH</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Zarja Weingerl, Ivana Vukšinić</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-odd"><td><p>S22</p></td>
-<td><p><a class="reference internal" href="s22-iupred3.html"><span class="doc std std-doc">IUPred3</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Kodra, Neža Lanišek</p></td>
-<td><p>2022-05-11</p></td>
-</tr>
-<tr class="row-even"><td><p>S23</p></td>
-<td><p><a class="reference internal" href="s23-jpred4.html"><span class="doc std std-doc">Jpred4</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Lana Kores, Alliana Kolar</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S24</p></td>
-<td><p><a class="reference internal" href="s24-rnafold.html"><span class="doc std std-doc">RNAfold</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Maj Priveršek, Metka Rus</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S25</p></td>
-<td><p>[VAST+])s25-vast_plus)</p></td>
-<td><p>struktura</p></td>
-<td><p>Ana Maučec, Gašper Možina</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-odd"><td><p>S26</p></td>
-<td><p><a class="reference internal" href="s26-molstar.html"><span class="doc std std-doc">Molstar</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Vanja Ivošević</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-<tr class="row-even"><td><p>S27</p></td>
-<td><p><a class="reference internal" href="s27-pdb-dev.html"><span class="doc std std-doc">PDB-Dev</span></a></p></td>
-<td><p>struktura</p></td>
-<td><p>Marko Kovačić, Lev Jošt, Špela Rapuš</p></td>
-<td><p>2022-05-18</p></td>
-</tr>
-</tbody>
-</table>
+  <div class="tex2jax_ignore mathjax_ignore section" id="rnafold-napoved-sekundarnih-rna-struktur">
+<h1>RNAfold - napoved sekundarnih RNA struktur<a class="headerlink" href="#rnafold-napoved-sekundarnih-rna-struktur" title="Permalink to this headline">¶</a></h1>
+<p><strong>Avtorja</strong>: Maj Priveršek, Metka Rus</p>
+<p><strong>Datum predstavitve</strong>: 2022-05-18</p>
+<hr class="docutils" />
+<div class="section" id="namen-vaje">
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">¶</a></h2>
+<p>Ugotavljanje sekundarnih RNA struktur iz zaporedja nukleotidov s programom RNAfold</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="program">
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">¶</a></h2>
+<p>Program: <strong><a class="reference external" href="http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi">RNAfold 2.5.0</a></strong></p>
+<p>Avtorji programa: Gruber AR, Lorenz R, Bernhart SH, Neuböck R, Hofacker IL.; Institute of Theoretical Chemistry, University of Vienna (<a class="reference external" href="http://www.tbi.univie.ac.at/">http://www.tbi.univie.ac.at/</a>)</p>
+<p>Reference:</p>
+<ul class="simple">
+<li><p>Lorenz, R. and Bernhart, S.H. and Höner zu Siederdissen, C. and Tafer, H. and Flamm, C. and Stadler, P.F. and Hofacker, I.L. “ViennaRNA Package 2.0”, Algorithms for Molecular Biology, 6:1 page(s): 26, 2011 <strong>The Vienna RNA Websuite.</strong> <em>Nucleic Acids Research</em>, Volume 36, Issue suppl_2, 1 July 2008, Pages W70-W74, DOI: <a class="reference external" href="https://almob.biomedcentral.com/articles/10.1186/1748-7188-6-26">10.1093/nar/gkn188</a></p></li>
+<li><p>Mathews DH, Disney MD, Childs JL, Schroeder SJ, Zuker M, Turner DH. (2004) Incorporating chemical modification constraints into a dynamic programming algorithm for prediction of RNA secondary structure. Proc Natl Acad Sci U S A 101(19):7287-92, DOI: <span class="xref myst">101 (19) 7287-7292</span></p></li>
+</ul>
+<div class="section" id="opis-programa">
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">¶</a></h3>
+<p>RNAfold je del obširnega serverja ViennaRNA Web Services, ki zajema mnoge različne načine za obdelavo in predvidevanje sekundarne strukture RNA in baze podatkov potrebne za njihovo delovanje.
+RNAfold Server je sposoben oblikovati sekundarno strukturo RNA iz zaporednja RNA nukleotidov. Deluje na podlagi matematičnega algoritma za napovedovanje sekundarnih struktur RNA, ki so ga predstavili Zuker et al. Gre za model na podlagi energije različnih vrst zank, ki se pojavljajo v sekundarnih strukturah.</p>
+<p>Algoritem za izračun oblike z najmanjšo energijo upošteva vse možne dovoljene oblike sekundarne strukture (vse oblike kjer je vsaka od baz vezana z maksimalno eno drugo bazo, vezi pa se med sabo ne križajo) in iz vseh teh izbere tisto z najmanjšo možno prosto energijo.
+To naredi na podlagi različnih parametrov: topološka in termodinamska pravila (določena v prej objavljenih člankih), dostopni eksperimentalni podatki o termoninamiki različnih oblik in motivov, znani podatki o odzivnosti nukleotidnih parov na kemijske modifikacije, o tem katere fospodiesterske vezi so najprej na udaru pri hidrolizi, podatki o ohranjenih sekundarnih strukturah in specifičnih dovoljenih daljnosežnih interakcijah med nukleotidi.
+Algoritem deluje na podlagi matematičnega modela, ki so ga predstavili že Nussinov et al., ki računa obliko z maksimalnim številom baznih parov. Algoritem je bil seveda prilagojen, da upošteva tudi vse prej naštete parametre.</p>
+<p>Ker pa je RNA dinamična struktura, pa program podaja tudi energijo za ansamble vseh možnih dovoljenih struktur. Ansamble je set vseh sprejemljivih struktur RNA (pari se ne križajo in prekrivajo). Strukturni ansamble RNA ima Boltzmanovo porazdelitev, kjer je vrjetnost da se RNA nahaja v določeni obliki enaka enačbi  P=e^(-β*εp)/Z  . V zapisu Z predstavlja particijsko funkcijo  ali seštevek boltzmanovih funkcij za vse dovoljene oblike sekundarne strukture RNA. Cilj računanja je najti neko povprečno obliko v kateri se RNA nahaja, če vemo, da le-ta s časom spreminja svojo sekundarno obliko med vsemi možnimi dovoljenimi in je v določeni obliki delež časa proporcionalen s tem, kako energijsko ugodna je oblika.
+Program poda tudi strukturo, ki predstavlja srednjo/povprečno strukturo vseh struktur termodinamskega ansambla izračunanih s particijsko funkcijo.</p>
+</div>
+<div class="section" id="vhodni-podatki">
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">¶</a></h3>
+<p>FASTA format RNA zaporedja ali samostojno RNA zaporedje</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="navodila">
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Vhodne podatke podamo v FASTA formatu, lahko pa tudi samo kot zaporedje nukelotidov.
+•	nukleotidno zaporedje transaktivacijske domene virusa HIV</p>
+<blockquote>
+<div><p>1AKX_1|Chain A|TAR RNA|
+GGCCAGAUUGAGCCUGGGAGCUCUCUGGCC</p>
+</div></blockquote>
+<p>•	nukleotidno zaporedje fenilalanin t-RNA iz kvasovke</p>
+<blockquote>
+<div><p>1EHZ_1|Chain A|TRANSFER RNA (PHE)|Saccharomyces cerevisiae (4932)
+GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACCA</p>
+</div></blockquote>
+<p>•	nukleotidno zaporedje adenozilkobalamin RNA stikala</p>
+<blockquote>
+<div><p>4GMA_1|Chain A[auth Z]|Adenosylcobalamin riboswitch|Marine metagenome (408172)
+GGUUAAAGCCUUAUGGUCGCUACCAUUGCACUCCGGUAGCGUUAAAAGGGAAGACGGGUGAGAAUCCCGCGCAGCCCCCGCUACUGUGAGGGAGGACGAAGCCCUAGUAAGCCACUGCCGAAAGGUGGGAAGGCAGGGUGGAGGAUGAGUCCCGAGCCAGGAGACCUGCCAUAAGGUUUUAGAAGUUCGCCUUCGGGGGGAAGGUGAACA</p>
+</div></blockquote>
+<p>•	nukleotidno zaporedje iz 50S velike ribosomalne podenote iz Deinococcus radiodurans</p>
+<blockquote>
+<div><p>1P9X_1|Chain A[auth 0]|23S RIBOSOMAL RNA|Deinococcus radiodurans (1299)
+GGUCAAGAUAGUAAGGGUCCACGGUGGAUGCCCUGGCGCUGGAGCCGAUGAAGGACGCGAUUACCUGCGAAAAGCCCCGACGAGCUGGAGAUACGCUUUGACUCGGGGAUGUCCGAAUGGGGAAACCCACCUCGUAAGAGGUAUCCGCAAGGAUGGGAACUCAGGGAACUGAAACAUCUCAGUACCUGAAGGAGAAGAAAGAGAAUUCGAUUCCGUUAGUAGCGGCGAGCGAACCCGGAUCAGCCCAAACCGAAACGCUUGCGUUUCGGGGUUGUAGGACCAGUUUUUAAGAUUCAACCCCUCAAGCCGAAGUGGCUGGAAAGCUACACCUCAGAAGGUGAGAGUCCUGUAGGCGAACGAGCGGUUGACUGUACUGGCACCUGAGUAGGUCGUUGUUCGUGAAACGAUGACUGAAUCCGCGCGGACCACCGCGCAAGGCUAAAUACUCCCAGUGACCGAUAGCGCAUAGUACCGUGAGGGAAAGGUGAAAAGAACCCCGGGAGGGGAGUGAAAGAGAACCUGAAACCGUGGACUUACAAGCAGUCAUGGCACCUUAUGCGUGUUAUGGCGUGCCUAUUGAAGCAUGAGCCGGCGACUUAGACCUGACGUGCGAGCUUAAGUUGAAAAACGGAGGCGGAGCGAAAGCGAGUCCGAAUAGGGCGGCAUUAGUACGUCGGGCUAGACUCGAAACCAGGUGAGCUAAGCAUGACCAGGUUGAAACCCCCGUGACAGGGGGCGGAGGACCGAACCGGUGCCUGCUGAAACAGUCUCGGAUGAGUUGUGUUUAGGAGUGAAAAGCUAACCGAACCUGGAGAUAGCUAGUUCUCCCCGAAAUGUAUUGAGGUACAGCCUCGGAUGUUGACCAUGUCCUGUAGAGCACUCACAAGGCUAGGGGGCCUACCAGCUUACCAAACCUUAUGAAACUCCGAAGGGGCACGCGUUUAGUCCGGGAGUGAGGCUGCGAGAGCUAACUUCCGUAGCCGAGAGGGAAACAACCCAGACCAUCAGCUAAGGUCCCUAAAUGAUCGCUCAGUGGUUAAGGAUGUGUCGUCGCAUAGACAGCCAGGAGGUUGGCUUAGAAGCAGCCACCCUUCAAAGAGUGCGUAAUAGCUCACUGGUCGAGUGACGAUGCGCCGAAAAUGAUCGGGGCUCAAGUGAUCUACCGAAGCUAUGGAUUCAACUCGCGAAGCGAGUUGUCUGGUAGGGGAGCGUUCAGUCCGCGGAGAAGCCAUACCGGAAGGAGUGGUGGAGCCGACUGAAGUGCGGAUGCCGGCAUGAGUAACGAUAAAAGAAGUGAGAAUCUUCUUCGCCGUAAGGACAAGGGUUCCUGGGGAAGGGUCGUCCGCCCAGGGAAAGUCGGGACCUAAGGUGAGGCCGAACGGCGCAGCCGAUGGACAGCAGGUCAAGAUUCCUGCACCGAUCAUGUGGAGUGAUGGAGGGACGCAUUACGCUAUCCAAUGCCAAGCUAUGGCUAUGCUGGUUGGUACGCUCAAGGGCGAUCGGGUCAGAAAAUCUACCGGUCACAUGCCUCAGACGUAUCGGGAGCUUCCUCGGAAGCGAAGUUGGAAACGCGACGGUGCCAAGAAAAGCUUCUAAACGUUGAAACAUGAUUGCCCGUACCGCAAACCGACACAGGUGUCCGAGUGUCAAUGCACUAAGGCGCGCGAGAGAACCCUCGUUAAGGAACUUUGCAAUCUCACCCCGUAACUUCGGAAGAAGGGGUCCCCACGCUUCGCGUGGGGCGCAGUGAAUAGGCCCAGGCGACUGUUUACCAAAAUCACAGCACUCUGCCAACACGAACAGUGGACGUAUAGGGUGUGACGCCUGCCCGGUGCCGGAAGGUCAAGUGGAGCGGUGCAAGCUGCGAAAUGAAGCCCCGGUGAACGGCGGCCGUAACUAUAACGGUCCUAAGGUAGCGAAAUUCCUUGUCGGGUAAGUUCCGACCUGCACGAAAGGCGUAACGAUCUGGGCGCUGUCUCAACGAGGGACUCGGUGAAAUUGAAUUGGCUGUAAAGAUGCGGCCUACCCGUAGCAGGACGAAAAGACCCCGUGGAGCUUUACUAUAGUCUGGCAUUGGGAUUCGGGUUUCUCUGCGUAGGAUAGGUGGGAGCCUGCGAAACUGGCCUUUUGGGGUCGGUGGAGGCAACGGUGAAAUACCACCCUGAGAAACUUGGAUUUCUAACCUGAAAAAUCACUUUCGGGGACCGUGCUUGGCGGGUAGUUUGACUGGGGCGGUCGCCUCCCAAAAUGUAACGGAGGCGCCCAAAGGUCACCUCAAGACGGUUGGAAAUCGUCUGUAGAGCGCAAAGGUAGAAGGUGGCUUGACUGCGAGACUGACACGUCGAGCAGGGAGGAAACUCGGGCUUAGUGAACCGGUGGUACCGUGUGGAAGGGCCAUCGAUCAACGGAUAAAAGUUACCCCGGGGAUAACAGGCUGAUCUCCCCCGAGAGUCCAUAUCGGCGGGGAGGUUUGGCACCUCGAUGUCGGCUCGUCGCAUCCUGGGGCUGAAGAAGGUCCCAAGGGUUGGGCUGUUCGCCCAUUAAAGCGGCACGCGAGCUGGGUUCAGAACGUCGUGAGACAGUUCGGUCUCUAUCCGCUACGGGCGCAGGAGAAUUGAGGGGAGUUGCUCCUAGUACGAGAGGACCGGAGUGAACGGACCGCUGGUCUCCCUGCUGUCGUACCAACGGCACAUGCAGGGUAGCUAUGUCCGGAACGGAUAACCGCUGAAAGCAUCUAAGCGGGAAGCCAGCCCCAAGAUGAGUUCUCCCACUGUUUAUCAGGUAAGACUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAGUCGAGGUCUUGACCACUC</p>
+</div></blockquote>
+</div>
+<div class="section" id="postopek-dela">
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">¶</a></h3>
+<p>•	v okence vpišemo vhodne podatke – RNA zaporedje, katerega sekundarna struktura nas zanima
+•	po želji lahko nastavimo  različne parametre (npr. omejimo, kateri nukleotidi se parijo) – če ne vemo, kaj delamo, je najbolje parametre pustiti kot so
+•	kliknemo “Proceed &gt;&gt;” in počakamo</p>
+<p><img alt="RNAfold_homepage1" src="../_images/s24-rnafold-homepage1.jpg" />
+<img alt="RNAfold_homepage2" src="../_images/s24-rnafold-homepage2.jpg" /></p>
+<p>•	program izpiše in izriše dve RNA strukturi – strukturo, ki jo je sestavil z računanjem najnižje proste energije in strukturo, ki predstavlja srednjo/povprečno strukturo vseh struktur termodinamskega ansambla izračunanih s particijsko funkcijo; če smo tako  izbrali, nam program poda še grafičen prikaz sekundarne strukture</p>
+</div>
+<div class="section" id="pricakovani-rezultati-in-razlaga">
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">¶</a></h3>
+<p>Za kratke odseke RNA lahko vidimo, da se strukturi ne razlikujeta bistveno (oz. se sploh ne razlikujeta), frekvenca strukture z najnižjo prosto energijo v termodinamskem ansamblu pa je relativno visoka. Posledično je majhna tudi pozicijska entropija.</p>
+<p><img alt="fold_HIV" src="../_images/s24-rnafold-HIV-final.jpg" /></p>
+<p>Daljše kot je naše zaporedje, več različnih struktur lahko tvori. Strukturi se lahko precej razlikujeta, frekvenca strukture z najnižjo prosto energijo – in vseh drugih možnih struktur – pa limitira proti nič. Pozicijska entropija je visoka v delih, kjer je struktura najbolj fleksibilna.</p>
+<p><img alt="fold_riboswitch" src="../_images/s24-rnafold-riboswitch-final.jpg" /></p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -690,21 +693,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../izvedba/vaje_2021-2022.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Vaje 2021/2022</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="navodila.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Navodila za pripravo seminarske naloge</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

@@ -957,11 +957,18 @@ AHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPT
 GQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMS
 GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
 SLL
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [10],</span> in <span class="ni">&lt;cell line: 14&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
+<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
 
-sp|Q7RTY8|TMPS7_HUMAN
-Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
-MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
-843
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
 </pre></div>
 </div>
 </div>
@@ -1062,18 +1069,6 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <span class="n">values</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">residue</span> <span class="ow">in</span> <span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
     <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">residue</span><span class="p">,</span><span class="s1">&#39;KD&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="nn">Input In [13],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vhod/hydrophobicity_scales.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;code1&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">num_residues</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_record</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
 </div>
 </div>
