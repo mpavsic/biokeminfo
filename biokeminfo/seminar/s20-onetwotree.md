@@ -11,7 +11,7 @@ Uporabiti program za izris filogenetskega drevesa na podlagi taksonomskih imen o
 ---
 ## Program
 
-Program: **[OneTwoTree](http://onetwotree.tau.ac.il/index.htm)**
+Program: **[OneTwoTree](http://onetwotree.tau.ac.il/index.html)**
 
 Avtorji programa: Michal Drori,Anna Rice,Moshe Einhorn,Ofer Chay,Lior Glick,Itay Mayrose; [Tel Aviv University](https://english.tau.ac.il/)
 
@@ -39,7 +39,7 @@ Taksonomska imena organizmov ali taksonomske identifikacijske številke (TaxID).
 
 ### Vhodni podatki
 
-Kot vhodne podatke uporabite taksonomska imena in taksonomske identifikacijske številke za različne vrste jagod, ki so že pripravljena v priloženi datoteki - [podatki](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/Vhodni_podatki.txt).
+Kot vhodne podatke uporabite taksonomska imena in taksonomske identifikacijske številke za različne vrste jagod, ki so že pripravljena v priloženi datoteki - [podatki](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s20-onetwotree-vhodni_podatki.txt).
 
 
 
