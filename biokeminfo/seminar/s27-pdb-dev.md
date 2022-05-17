@@ -37,7 +37,7 @@ Proces nalaganja struktur v PDB-Dev:
 
 - Modul, ki olajša pisanje datotek formata mmCIF, ki so skladne z IHM-dictionary je Python-ihm software library. Tudi programi za modeliranje in vizualizacijo struktur lahko uporabljajo ta modul za pomoč. Ker je delo s Python-ihm software library programersko dokaj zahtevno, so ustvarjalci programa PDB-Dev ustvarili protokol za lažje nalaganje struktur (slika 1). Najprej raziskovalci vnesejo koordinate zmodeliranega biološkega kompleksa, avtomatski software preveri, če se še lahko najdejo kakšne dodatne informacije o tem kompleksu. Nato se te informacije nadgradijo z ostalimi podatki (avtorji, protokoli modeliranja, reference eksperimentalnih podatkov iz drugih zbirk, referenčna zaporedja ...). Potem se naložijo koordinate začetnih modelov makromolekul, ki sestavljajo kompleks, in omejitve eksperimentalnih metod. Avtomatski software še enkrat vse preveri in če so podatki ustrezni, se ustvari datoteka mmCIF.
 
-![s27-pdb-dev-olajsan_protokol_ustvarjanja_datoteke_mmcif.png](Diapozitiv1.png)
+![Slika 1 - Olajšan protokol ustvarjanja datoteke mmCIF](s27-pdb-dev-olajsan_protokol_ustvarjanja_datoteke_mmcif.PNG)
 
 - Sledi proces kuracije in validacije. Za vse makromolekule v strukturi se pridobi podatke o referenčnih zaporedjih (tu so predvsem ključni accession code iz UniProta). Uporabi se Blast za poravnavo makromolekularnih sekvenc v strukturah s pripadajočimi referenčnimi zaporedji, da se preveri, če se res ustrezno ujemajo. Preveri se še nomenklatura malih molekul (mali ligandi so pogosto prisotni v integrativnih strukturah in tu se zagotovi da so ustrezno poimenovani in predstavljeni).
 
@@ -45,7 +45,7 @@ Proces nalaganja struktur v PDB-Dev:
 
 Trenutno je v PDB-Dev arhiviranih 78 modelov struktur bioloških makromolekul. Te lahko hitro najdemo pod iskalno vrstico 'Browse structures'. Podatke lahko iščemo glede na eksperimentalne metode, Model Scale in Model State. Dodatno lahko označimo katere podatke bi želeli prikazati (npr. avtorji, datum vnosa, software za modeliranje).
 
-![s27-pdb-dev-iskanje_na_pdb_dev.jpg](Iskanje_na_PDB-Dev.jpg)
+![Slika 2 - Iskanje na PDB-Dev](s27-pdb-dev-iskanje_na_pdb_dev.jpg)
 
 Za razliko od PDB-ja, ta program lahko hrani strukture kompleksov, katerih molekulske komponente so lahko določene z različno ločljivostjo (Multi Scale) ali s približno enako ločljivostjo (Single Scale). Program lahko shrani tudi več različnih konformacijskih oblik posameznega kompleksa (Multi State) ali pa eno samo (Single State).
 
@@ -83,12 +83,12 @@ Strukture se lahko išče z iskalno vrstico preko imen kompleksov ali molekularn
 
 Rezultat programa je izrisana struktura biološkega kompleksa.
 
-![s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_mol*.jpg](Rezultat1.jpg)
+![Slika 3 - Vizualizacija RNF168-RING domain and nucleosome complex v Mol*](s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_mol.jpg)
 
 Vidnih je 10 različnih konformacijskih stanj.
 
-![s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_chimeri.jpg](Rezultat2.jpg)
+![Slika 4 - Vizualizacija RNF168-RING domain and nucleosome complex v Chimeri](s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_chimeri.jpg)
 
-![s27-pdb-dev-vizualizacija_yeast_mediator_complex_v_mol*.jpg](Rezultat3.jpg)
+![Slika 5 - Vizualizacija yeast Mediator complex v Mol*](s27-pdb-dev-vizualizacija_yeast_mediator_complex_v_mol.jpg)
 
 Vidna je slaba ločljivost strukture (okrog 20 Å)
