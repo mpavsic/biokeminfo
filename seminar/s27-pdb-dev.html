@@ -620,13 +620,13 @@ Ti eksperimentalni podatki so zbrani in upoštevajoč njihove omejitve oz. nenat
 <li><p>Zelo pomembna je oblika podatkov oz. tehnične specifikacije, ki definirajo podatke in njihov zapis. Format zapisa podatkov je PDBx/mmCIF. Slovar, v katerem najdemo vse te definicije zapisa podatkov se imenuje IHM Dictionary. Med vse te podatke spadajo: atomske koordinate, eksperimentalni pogoji, omejitve metod (ločljivost, torzijski koti), začetni strukturni modeli molekularnih komponent, informacije o eksperimentalnih podatkih iz drugih zbirk (imena zbirk, accession number …), opis protokolov modeliranja, uporabljeni programi za modeliranje (software), avtorji, referenčna zaporedja itd.</p></li>
 <li><p>Modul, ki olajša pisanje datotek formata mmCIF, ki so skladne z IHM-dictionary je Python-ihm software library. Tudi programi za modeliranje in vizualizacijo struktur lahko uporabljajo ta modul za pomoč. Ker je delo s Python-ihm software library programersko dokaj zahtevno, so ustvarjalci programa PDB-Dev ustvarili protokol za lažje nalaganje struktur (slika 1). Najprej raziskovalci vnesejo koordinate zmodeliranega biološkega kompleksa, avtomatski software preveri, če se še lahko najdejo kakšne dodatne informacije o tem kompleksu. Nato se te informacije nadgradijo z ostalimi podatki (avtorji, protokoli modeliranja, reference eksperimentalnih podatkov iz drugih zbirk, referenčna zaporedja …). Potem se naložijo koordinate začetnih modelov makromolekul, ki sestavljajo kompleks, in omejitve eksperimentalnih metod. Avtomatski software še enkrat vse preveri in če so podatki ustrezni, se ustvari datoteka mmCIF.</p></li>
 </ul>
-<p><img alt="s27-pdb-dev-olajsan_protokol_ustvarjanja_datoteke_mmcif.png" src="seminar/Diapozitiv1.png" /></p>
+<p><img alt="Slika 1 - Olajšan protokol ustvarjanja datoteke mmCIF" src="../_images/s27-pdb-dev-olajsan_protokol_ustvarjanja_datoteke_mmcif.PNG" /></p>
 <ul class="simple">
 <li><p>Sledi proces kuracije in validacije. Za vse makromolekule v strukturi se pridobi podatke o referenčnih zaporedjih (tu so predvsem ključni accession code iz UniProta). Uporabi se Blast za poravnavo makromolekularnih sekvenc v strukturah s pripadajočimi referenčnimi zaporedji, da se preveri, če se res ustrezno ujemajo. Preveri se še nomenklatura malih molekul (mali ligandi so pogosto prisotni v integrativnih strukturah in tu se zagotovi da so ustrezno poimenovani in predstavljeni).</p></li>
 <li><p>Po naložitvi struktur v PDB-Dev je možna vizualizacija s programoma ChimeraX in Mol*.</p></li>
 </ul>
 <p>Trenutno je v PDB-Dev arhiviranih 78 modelov struktur bioloških makromolekul. Te lahko hitro najdemo pod iskalno vrstico ‘Browse structures’. Podatke lahko iščemo glede na eksperimentalne metode, Model Scale in Model State. Dodatno lahko označimo katere podatke bi želeli prikazati (npr. avtorji, datum vnosa, software za modeliranje).</p>
-<p><img alt="s27-pdb-dev-iskanje_na_pdb_dev.jpg" src="seminar/Iskanje_na_PDB-Dev.jpg" /></p>
+<p><img alt="Slika 2 - Iskanje na PDB-Dev" src="../_images/s27-pdb-dev-iskanje_na_pdb_dev.jpg" /></p>
 <p>Za razliko od PDB-ja, ta program lahko hrani strukture kompleksov, katerih molekulske komponente so lahko določene z različno ločljivostjo (Multi Scale) ali s približno enako ločljivostjo (Single Scale). Program lahko shrani tudi več različnih konformacijskih oblik posameznega kompleksa (Multi State) ali pa eno samo (Single State).</p>
 </div>
 <div class="section" id="vhodni-podatki">
@@ -659,10 +659,10 @@ Ti eksperimentalni podatki so zbrani in upoštevajoč njihove omejitve oz. nenat
 <div class="section" id="pricakovani-rezultati-in-razlaga">
 <h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">¶</a></h3>
 <p>Rezultat programa je izrisana struktura biološkega kompleksa.</p>
-<p><img alt="s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_mol*.jpg" src="seminar/Rezultat1.jpg" /></p>
+<p><img alt="Slika 3 - Vizualizacija RNF168-RING domain and nucleosome complex v Mol*" src="../_images/s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_mol.jpg" /></p>
 <p>Vidnih je 10 različnih konformacijskih stanj.</p>
-<p><img alt="s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_chimeri.jpg" src="seminar/Rezultat2.jpg" /></p>
-<p><img alt="s27-pdb-dev-vizualizacija_yeast_mediator_complex_v_mol*.jpg" src="seminar/Rezultat3.jpg" /></p>
+<p><img alt="Slika 4 - Vizualizacija RNF168-RING domain and nucleosome complex v Chimeri" src="../_images/s27-pdb-dev-vizualizacija_rnf168-ring_domain_and_nucleosome_complex_v_chimeri.jpg" /></p>
+<p><img alt="Slika 5 - Vizualizacija yeast Mediator complex v Mol*" src="../_images/s27-pdb-dev-vizualizacija_yeast_mediator_complex_v_mol.jpg" /></p>
 <p>Vidna je slaba ločljivost strukture (okrog 20 Å)</p>
 </div>
 </div>
