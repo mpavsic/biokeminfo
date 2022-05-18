@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/s24-rnafold.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -615,7 +617,7 @@ RNAfold Server je sposoben oblikovati sekundarno strukturo RNA iz zaporednja RNA
 <p>Algoritem za izračun oblike z najmanjšo energijo upošteva vse možne dovoljene oblike sekundarne strukture (vse oblike kjer je vsaka od baz vezana z maksimalno eno drugo bazo, vezi pa se med sabo ne križajo) in iz vseh teh izbere tisto z najmanjšo možno prosto energijo.
 To naredi na podlagi različnih parametrov: topološka in termodinamska pravila (določena v prej objavljenih člankih), dostopni eksperimentalni podatki o termoninamiki različnih oblik in motivov, znani podatki o odzivnosti nukleotidnih parov na kemijske modifikacije, o tem katere fospodiesterske vezi so najprej na udaru pri hidrolizi, podatki o ohranjenih sekundarnih strukturah in specifičnih dovoljenih daljnosežnih interakcijah med nukleotidi.
 Algoritem deluje na podlagi matematičnega modela, ki so ga predstavili že Nussinov et al., ki računa obliko z maksimalnim številom baznih parov. Algoritem je bil seveda prilagojen, da upošteva tudi vse prej naštete parametre.</p>
-<p>Ker pa je RNA dinamična struktura, pa program podaja tudi energijo za ansamble vseh možnih dovoljenih struktur. Ansamble je set vseh sprejemljivih struktur RNA (pari se ne križajo in prekrivajo). Strukturni ansamble RNA ima Boltzmanovo porazdelitev, kjer je vrjetnost da se RNA nahaja v določeni obliki enaka enačbi  P=e^(-β*εp)/Z  . V zapisu Z predstavlja particijsko funkcijo  ali seštevek boltzmanovih funkcij za vse dovoljene oblike sekundarne strukture RNA. Cilj računanja je najti neko povprečno obliko v kateri se RNA nahaja, če vemo, da le-ta s časom spreminja svojo sekundarno obliko med vsemi možnimi dovoljenimi in je v določeni obliki delež časa proporcionalen s tem, kako energijsko ugodna je oblika.
+<p>Ker pa je RNA dinamična struktura, pa program podaja tudi energijo za ansamble vseh možnih dovoljenih struktur. Ansamble je set vseh sprejemljivih struktur RNA (pari se ne križajo in prekrivajo). Strukturni ansamble RNA ima Boltzmanovo porazdelitev, kjer je vrjetnost da se RNA nahaja v določeni obliki enaka enačbi <span class="math notranslate nohighlight">\(P=\frac{e^{-β*εp}}{Z}\)</span>. V zapisu Z predstavlja particijsko funkcijo  ali seštevek boltzmanovih funkcij za vse dovoljene oblike sekundarne strukture RNA. Cilj računanja je najti neko povprečno obliko v kateri se RNA nahaja, če vemo, da le-ta s časom spreminja svojo sekundarno obliko med vsemi možnimi dovoljenimi in je v določeni obliki delež časa proporcionalen s tem, kako energijsko ugodna je oblika.
 Program poda tudi strukturo, ki predstavlja srednjo/povprečno strukturo vseh struktur termodinamskega ansambla izračunanih s particijsko funkcijo.</p>
 </div>
 <div class="section" id="vhodni-podatki">
@@ -630,25 +632,87 @@ Program poda tudi strukturo, ki predstavlja srednjo/povprečno strukturo vseh st
 <h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Vhodne podatke podamo v FASTA formatu, lahko pa tudi samo kot zaporedje nukelotidov.
 •	nukleotidno zaporedje transaktivacijske domene virusa HIV</p>
-<blockquote>
-<div><p>1AKX_1|Chain A|TAR RNA|
-GGCCAGAUUGAGCCUGGGAGCUCUCUGGCC</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="mi">1</span><span class="n">AKX_1</span><span class="o">|</span><span class="n">Chain</span> <span class="n">A</span><span class="o">|</span><span class="n">TAR</span> <span class="n">RNA</span><span class="o">|</span>
+<span class="n">GGCCAGAUUGAGCCUGGGAGCUCUCUGGCC</span>
+</pre></div>
+</div>
 <p>•	nukleotidno zaporedje fenilalanin t-RNA iz kvasovke</p>
-<blockquote>
-<div><p>1EHZ_1|Chain A|TRANSFER RNA (PHE)|Saccharomyces cerevisiae (4932)
-GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACCA</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="mi">1</span><span class="n">EHZ_1</span><span class="o">|</span><span class="n">Chain</span> <span class="n">A</span><span class="o">|</span><span class="n">TRANSFER</span> <span class="n">RNA</span> <span class="p">(</span><span class="n">PHE</span><span class="p">)</span><span class="o">|</span><span class="n">Saccharomyces</span> <span class="n">cerevisiae</span> <span class="p">(</span><span class="mi">4932</span><span class="p">)</span>
+<span class="n">GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCU</span>
+<span class="n">GUGUUCGAUCCACAGAAUUCGCACCA</span>
+</pre></div>
+</div>
 <p>•	nukleotidno zaporedje adenozilkobalamin RNA stikala</p>
-<blockquote>
-<div><p>4GMA_1|Chain A[auth Z]|Adenosylcobalamin riboswitch|Marine metagenome (408172)
-GGUUAAAGCCUUAUGGUCGCUACCAUUGCACUCCGGUAGCGUUAAAAGGGAAGACGGGUGAGAAUCCCGCGCAGCCCCCGCUACUGUGAGGGAGGACGAAGCCCUAGUAAGCCACUGCCGAAAGGUGGGAAGGCAGGGUGGAGGAUGAGUCCCGAGCCAGGAGACCUGCCAUAAGGUUUUAGAAGUUCGCCUUCGGGGGGAAGGUGAACA</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="mi">4</span><span class="n">GMA_1</span><span class="o">|</span><span class="n">Chain</span> <span class="n">A</span><span class="p">[</span><span class="n">auth</span> <span class="n">Z</span><span class="p">]</span><span class="o">|</span><span class="n">Adenosylcobalamin</span> <span class="n">riboswitch</span><span class="o">|</span><span class="n">Marine</span> <span class="n">metagenome</span> <span class="p">(</span><span class="mi">408172</span><span class="p">)</span>
+<span class="n">GGUUAAAGCCUUAUGGUCGCUACCAUUGCACUCCGGUAGCGUUAAAAGGG</span>
+<span class="n">AAGACGGGUGAGAAUCCCGCGCAGCCCCCGCUACUGUGAGGGAGGACGAA</span>
+<span class="n">GCCCUAGUAAGCCACUGCCGAAAGGUGGGAAGGCAGGGUGGAGGAUGAGU</span>
+<span class="n">CCCGAGCCAGGAGACCUGCCAUAAGGUUUUAGAAGUUCGCCUUCGGGGGG</span>
+<span class="n">AAGGUGAACA</span>
+</pre></div>
+</div>
 <p>•	nukleotidno zaporedje iz 50S velike ribosomalne podenote iz Deinococcus radiodurans</p>
-<blockquote>
-<div><p>1P9X_1|Chain A[auth 0]|23S RIBOSOMAL RNA|Deinococcus radiodurans (1299)
-GGUCAAGAUAGUAAGGGUCCACGGUGGAUGCCCUGGCGCUGGAGCCGAUGAAGGACGCGAUUACCUGCGAAAAGCCCCGACGAGCUGGAGAUACGCUUUGACUCGGGGAUGUCCGAAUGGGGAAACCCACCUCGUAAGAGGUAUCCGCAAGGAUGGGAACUCAGGGAACUGAAACAUCUCAGUACCUGAAGGAGAAGAAAGAGAAUUCGAUUCCGUUAGUAGCGGCGAGCGAACCCGGAUCAGCCCAAACCGAAACGCUUGCGUUUCGGGGUUGUAGGACCAGUUUUUAAGAUUCAACCCCUCAAGCCGAAGUGGCUGGAAAGCUACACCUCAGAAGGUGAGAGUCCUGUAGGCGAACGAGCGGUUGACUGUACUGGCACCUGAGUAGGUCGUUGUUCGUGAAACGAUGACUGAAUCCGCGCGGACCACCGCGCAAGGCUAAAUACUCCCAGUGACCGAUAGCGCAUAGUACCGUGAGGGAAAGGUGAAAAGAACCCCGGGAGGGGAGUGAAAGAGAACCUGAAACCGUGGACUUACAAGCAGUCAUGGCACCUUAUGCGUGUUAUGGCGUGCCUAUUGAAGCAUGAGCCGGCGACUUAGACCUGACGUGCGAGCUUAAGUUGAAAAACGGAGGCGGAGCGAAAGCGAGUCCGAAUAGGGCGGCAUUAGUACGUCGGGCUAGACUCGAAACCAGGUGAGCUAAGCAUGACCAGGUUGAAACCCCCGUGACAGGGGGCGGAGGACCGAACCGGUGCCUGCUGAAACAGUCUCGGAUGAGUUGUGUUUAGGAGUGAAAAGCUAACCGAACCUGGAGAUAGCUAGUUCUCCCCGAAAUGUAUUGAGGUACAGCCUCGGAUGUUGACCAUGUCCUGUAGAGCACUCACAAGGCUAGGGGGCCUACCAGCUUACCAAACCUUAUGAAACUCCGAAGGGGCACGCGUUUAGUCCGGGAGUGAGGCUGCGAGAGCUAACUUCCGUAGCCGAGAGGGAAACAACCCAGACCAUCAGCUAAGGUCCCUAAAUGAUCGCUCAGUGGUUAAGGAUGUGUCGUCGCAUAGACAGCCAGGAGGUUGGCUUAGAAGCAGCCACCCUUCAAAGAGUGCGUAAUAGCUCACUGGUCGAGUGACGAUGCGCCGAAAAUGAUCGGGGCUCAAGUGAUCUACCGAAGCUAUGGAUUCAACUCGCGAAGCGAGUUGUCUGGUAGGGGAGCGUUCAGUCCGCGGAGAAGCCAUACCGGAAGGAGUGGUGGAGCCGACUGAAGUGCGGAUGCCGGCAUGAGUAACGAUAAAAGAAGUGAGAAUCUUCUUCGCCGUAAGGACAAGGGUUCCUGGGGAAGGGUCGUCCGCCCAGGGAAAGUCGGGACCUAAGGUGAGGCCGAACGGCGCAGCCGAUGGACAGCAGGUCAAGAUUCCUGCACCGAUCAUGUGGAGUGAUGGAGGGACGCAUUACGCUAUCCAAUGCCAAGCUAUGGCUAUGCUGGUUGGUACGCUCAAGGGCGAUCGGGUCAGAAAAUCUACCGGUCACAUGCCUCAGACGUAUCGGGAGCUUCCUCGGAAGCGAAGUUGGAAACGCGACGGUGCCAAGAAAAGCUUCUAAACGUUGAAACAUGAUUGCCCGUACCGCAAACCGACACAGGUGUCCGAGUGUCAAUGCACUAAGGCGCGCGAGAGAACCCUCGUUAAGGAACUUUGCAAUCUCACCCCGUAACUUCGGAAGAAGGGGUCCCCACGCUUCGCGUGGGGCGCAGUGAAUAGGCCCAGGCGACUGUUUACCAAAAUCACAGCACUCUGCCAACACGAACAGUGGACGUAUAGGGUGUGACGCCUGCCCGGUGCCGGAAGGUCAAGUGGAGCGGUGCAAGCUGCGAAAUGAAGCCCCGGUGAACGGCGGCCGUAACUAUAACGGUCCUAAGGUAGCGAAAUUCCUUGUCGGGUAAGUUCCGACCUGCACGAAAGGCGUAACGAUCUGGGCGCUGUCUCAACGAGGGACUCGGUGAAAUUGAAUUGGCUGUAAAGAUGCGGCCUACCCGUAGCAGGACGAAAAGACCCCGUGGAGCUUUACUAUAGUCUGGCAUUGGGAUUCGGGUUUCUCUGCGUAGGAUAGGUGGGAGCCUGCGAAACUGGCCUUUUGGGGUCGGUGGAGGCAACGGUGAAAUACCACCCUGAGAAACUUGGAUUUCUAACCUGAAAAAUCACUUUCGGGGACCGUGCUUGGCGGGUAGUUUGACUGGGGCGGUCGCCUCCCAAAAUGUAACGGAGGCGCCCAAAGGUCACCUCAAGACGGUUGGAAAUCGUCUGUAGAGCGCAAAGGUAGAAGGUGGCUUGACUGCGAGACUGACACGUCGAGCAGGGAGGAAACUCGGGCUUAGUGAACCGGUGGUACCGUGUGGAAGGGCCAUCGAUCAACGGAUAAAAGUUACCCCGGGGAUAACAGGCUGAUCUCCCCCGAGAGUCCAUAUCGGCGGGGAGGUUUGGCACCUCGAUGUCGGCUCGUCGCAUCCUGGGGCUGAAGAAGGUCCCAAGGGUUGGGCUGUUCGCCCAUUAAAGCGGCACGCGAGCUGGGUUCAGAACGUCGUGAGACAGUUCGGUCUCUAUCCGCUACGGGCGCAGGAGAAUUGAGGGGAGUUGCUCCUAGUACGAGAGGACCGGAGUGAACGGACCGCUGGUCUCCCUGCUGUCGUACCAACGGCACAUGCAGGGUAGCUAUGUCCGGAACGGAUAACCGCUGAAAGCAUCUAAGCGGGAAGCCAGCCCCAAGAUGAGUUCUCCCACUGUUUAUCAGGUAAGACUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAGUCGAGGUCUUGACCACUC</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="mi">1</span><span class="n">P9X_1</span><span class="o">|</span><span class="n">Chain</span> <span class="n">A</span><span class="p">[</span><span class="n">auth</span> <span class="mi">0</span><span class="p">]</span><span class="o">|</span><span class="mi">23</span><span class="n">S</span> <span class="n">RIBOSOMAL</span> <span class="n">RNA</span><span class="o">|</span><span class="n">Deinococcus</span> <span class="n">radiodurans</span> <span class="p">(</span><span class="mi">1299</span><span class="p">)</span>
+<span class="n">GGUCAAGAUAGUAAGGGUCCACGGUGGAUGCCCUGGCGCUGGAGCCGAUG</span>
+<span class="n">AAGGACGCGAUUACCUGCGAAAAGCCCCGACGAGCUGGAGAUACGCUUUG</span>
+<span class="n">ACUCGGGGAUGUCCGAAUGGGGAAACCCACCUCGUAAGAGGUAUCCGCAA</span>
+<span class="n">GGAUGGGAACUCAGGGAACUGAAACAUCUCAGUACCUGAAGGAGAAGAAA</span>
+<span class="n">GAGAAUUCGAUUCCGUUAGUAGCGGCGAGCGAACCCGGAUCAGCCCAAAC</span>
+<span class="n">CGAAACGCUUGCGUUUCGGGGUUGUAGGACCAGUUUUUAAGAUUCAACCC</span>
+<span class="n">CUCAAGCCGAAGUGGCUGGAAAGCUACACCUCAGAAGGUGAGAGUCCUGU</span>
+<span class="n">AGGCGAACGAGCGGUUGACUGUACUGGCACCUGAGUAGGUCGUUGUUCGU</span>
+<span class="n">GAAACGAUGACUGAAUCCGCGCGGACCACCGCGCAAGGCUAAAUACUCCC</span>
+<span class="n">AGUGACCGAUAGCGCAUAGUACCGUGAGGGAAAGGUGAAAAGAACCCCGG</span>
+<span class="n">GAGGGGAGUGAAAGAGAACCUGAAACCGUGGACUUACAAGCAGUCAUGGC</span>
+<span class="n">ACCUUAUGCGUGUUAUGGCGUGCCUAUUGAAGCAUGAGCCGGCGACUUAG</span>
+<span class="n">ACCUGACGUGCGAGCUUAAGUUGAAAAACGGAGGCGGAGCGAAAGCGAGU</span>
+<span class="n">CCGAAUAGGGCGGCAUUAGUACGUCGGGCUAGACUCGAAACCAGGUGAGC</span>
+<span class="n">UAAGCAUGACCAGGUUGAAACCCCCGUGACAGGGGGCGGAGGACCGAACC</span>
+<span class="n">GGUGCCUGCUGAAACAGUCUCGGAUGAGUUGUGUUUAGGAGUGAAAAGCU</span>
+<span class="n">AACCGAACCUGGAGAUAGCUAGUUCUCCCCGAAAUGUAUUGAGGUACAGC</span>
+<span class="n">CUCGGAUGUUGACCAUGUCCUGUAGAGCACUCACAAGGCUAGGGGGCCUA</span>
+<span class="n">CCAGCUUACCAAACCUUAUGAAACUCCGAAGGGGCACGCGUUUAGUCCGG</span>
+<span class="n">GAGUGAGGCUGCGAGAGCUAACUUCCGUAGCCGAGAGGGAAACAACCCAG</span>
+<span class="n">ACCAUCAGCUAAGGUCCCUAAAUGAUCGCUCAGUGGUUAAGGAUGUGUCG</span>
+<span class="n">UCGCAUAGACAGCCAGGAGGUUGGCUUAGAAGCAGCCACCCUUCAAAGAG</span>
+<span class="n">UGCGUAAUAGCUCACUGGUCGAGUGACGAUGCGCCGAAAAUGAUCGGGGC</span>
+<span class="n">UCAAGUGAUCUACCGAAGCUAUGGAUUCAACUCGCGAAGCGAGUUGUCUG</span>
+<span class="n">GUAGGGGAGCGUUCAGUCCGCGGAGAAGCCAUACCGGAAGGAGUGGUGGA</span>
+<span class="n">GCCGACUGAAGUGCGGAUGCCGGCAUGAGUAACGAUAAAAGAAGUGAGAA</span>
+<span class="n">UCUUCUUCGCCGUAAGGACAAGGGUUCCUGGGGAAGGGUCGUCCGCCCAG</span>
+<span class="n">GGAAAGUCGGGACCUAAGGUGAGGCCGAACGGCGCAGCCGAUGGACAGCA</span>
+<span class="n">GGUCAAGAUUCCUGCACCGAUCAUGUGGAGUGAUGGAGGGACGCAUUACG</span>
+<span class="n">CUAUCCAAUGCCAAGCUAUGGCUAUGCUGGUUGGUACGCUCAAGGGCGAU</span>
+<span class="n">CGGGUCAGAAAAUCUACCGGUCACAUGCCUCAGACGUAUCGGGAGCUUCC</span>
+<span class="n">UCGGAAGCGAAGUUGGAAACGCGACGGUGCCAAGAAAAGCUUCUAAACGU</span>
+<span class="n">UGAAACAUGAUUGCCCGUACCGCAAACCGACACAGGUGUCCGAGUGUCAA</span>
+<span class="n">UGCACUAAGGCGCGCGAGAGAACCCUCGUUAAGGAACUUUGCAAUCUCAC</span>
+<span class="n">CCCGUAACUUCGGAAGAAGGGGUCCCCACGCUUCGCGUGGGGCGCAGUGA</span>
+<span class="n">AUAGGCCCAGGCGACUGUUUACCAAAAUCACAGCACUCUGCCAACACGAA</span>
+<span class="n">CAGUGGACGUAUAGGGUGUGACGCCUGCCCGGUGCCGGAAGGUCAAGUGG</span>
+<span class="n">AGCGGUGCAAGCUGCGAAAUGAAGCCCCGGUGAACGGCGGCCGUAACUAU</span>
+<span class="n">AACGGUCCUAAGGUAGCGAAAUUCCUUGUCGGGUAAGUUCCGACCUGCAC</span>
+<span class="n">GAAAGGCGUAACGAUCUGGGCGCUGUCUCAACGAGGGACUCGGUGAAAUU</span>
+<span class="n">GAAUUGGCUGUAAAGAUGCGGCCUACCCGUAGCAGGACGAAAAGACCCCG</span>
+<span class="n">UGGAGCUUUACUAUAGUCUGGCAUUGGGAUUCGGGUUUCUCUGCGUAGGA</span>
+<span class="n">UAGGUGGGAGCCUGCGAAACUGGCCUUUUGGGGUCGGUGGAGGCAACGGU</span>
+<span class="n">GAAAUACCACCCUGAGAAACUUGGAUUUCUAACCUGAAAAAUCACUUUCG</span>
+<span class="n">GGGACCGUGCUUGGCGGGUAGUUUGACUGGGGCGGUCGCCUCCCAAAAUG</span>
+<span class="n">UAACGGAGGCGCCCAAAGGUCACCUCAAGACGGUUGGAAAUCGUCUGUAG</span>
+<span class="n">AGCGCAAAGGUAGAAGGUGGCUUGACUGCGAGACUGACACGUCGAGCAGG</span>
+<span class="n">GAGGAAACUCGGGCUUAGUGAACCGGUGGUACCGUGUGGAAGGGCCAUCG</span>
+<span class="n">AUCAACGGAUAAAAGUUACCCCGGGGAUAACAGGCUGAUCUCCCCCGAGA</span>
+<span class="n">GUCCAUAUCGGCGGGGAGGUUUGGCACCUCGAUGUCGGCUCGUCGCAUCC</span>
+<span class="n">UGGGGCUGAAGAAGGUCCCAAGGGUUGGGCUGUUCGCCCAUUAAAGCGGC</span>
+<span class="n">ACGCGAGCUGGGUUCAGAACGUCGUGAGACAGUUCGGUCUCUAUCCGCUA</span>
+<span class="n">CGGGCGCAGGAGAAUUGAGGGGAGUUGCUCCUAGUACGAGAGGACCGGAG</span>
+<span class="n">UGAACGGACCGCUGGUCUCCCUGCUGUCGUACCAACGGCACAUGCAGGGU</span>
+<span class="n">AGCUAUGUCCGGAACGGAUAACCGCUGAAAGCAUCUAAGCGGGAAGCCAG</span>
+<span class="n">CCCCAAGAUGAGUUCUCCCACUGUUUAUCAGGUAAGACUCCCGGAAGACC</span>
+<span class="n">ACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACU</span>
+<span class="n">GGUGCUCAUCAGUCGAGGUCUUGACCACUC</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="postopek-dela">
 <h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">¶</a></h3>
