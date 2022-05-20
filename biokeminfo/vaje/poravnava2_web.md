@@ -30,6 +30,6 @@ Razmislite in odgovorite:
 ## Naloga 2
 Kateri aminokislinski ostanek (enočrkovna koda in zaporedna številka) bi morali zmutirati v konjski triptazi, da bi zagotovo ukinili aktivnost tega encima, hkrati pa ne bi bistveno posegli v stabilnost/strukturo encima?
 
-**Namig za reševanje**: poravnavo lahko naredite kar v UniProt, pri čemer izberete zaporedja, ki jih želite poravnati, in kliknete na gumb `Align` (zaslonska slika spodaj). Orodje, ki izdela poravnavo, je sicer orodje za poravnavo večih zaporedij (Clustal Omega), a je seveda sposobno poravnavti zgolj dve zaporedji.
+**Namig za reševanje**: poravnavo lahko naredite kar v UniProt, pri čemer izberete zaporedja, ki jih želite poravnati, in kliknete na gumb `Align` (zaslonska slika spodaj). Orodje, ki izdela poravnavo, je sicer orodje za poravnavo večih zaporedij (Clustal Omega), a je seveda sposobno poravnati zgolj dve zaporedji.
 
 ![Poravnava v UniProt](slike/uniprot_poravnava.png)

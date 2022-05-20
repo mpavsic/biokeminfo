@@ -64,7 +64,7 @@ GAAGCTGAGTTGGCTGC
 ## Naloga 3: iskanje s kratkim zaporedjem
 
 
-1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja... Uporabite eno od orodij za generiranje naključnih zaporedij (npr. [Random Sequence Generator](https://molbiotools.com/randomsequencegenerator.php), kakšno drugo orodje lahko najdete sami)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
+1. Kaj pa, če za iskanje uporabimo neka kratka nukleotidna zaporedja? Recimo, da si jih izdelamo tako, da naredimo naključna zaporedja ... Uporabite eno od orodij za generiranje naključnih zaporedij (npr. [Random Sequence Generator](https://molbiotools.com/randomsequencegenerator.php), kakšno drugo orodje lahko najdete sami)  ki vam lahko zgenerira naključna nukleotidna in aminokislinska zaporedja, ter za začetek zgenerirajte 3 nukleotidna zaporedja dolžine 25.
 2. S temi tremi zaporedji pojdite v blastn in jih skupaj (v formatu FASTA) prilepite v iskalno polje (iščete lahko namreč z večimi zaporedji hkrati); vse nastavitve pustite na privzetih vrednostih, posebej pazite pa na:
    * zbirka: nr,
    * spremenite program: blastn (Somewhat similar sequences)
@@ -88,7 +88,7 @@ GAAGCTGAGTTGGCTGC
 Naloga se nanaša na protein alfa-aktinin, ki je pomemben za urejanje aktinskih filamentov v snope in mreže, najdemo pa ga tako v mišičnih kot tudi nemišičnih celicah.
 
 
-1. Koliko genov za α-aktinin ima miš in kje se izražajo? Katereo zbirko ste uporabili in zakaj? Kakšne so druge alternative iskanja?
+1. Koliko genov za α-aktinin ima miš in kje se izražajo? Katero zbirko ste uporabili in zakaj? Kakšne so druge alternative iskanja?
 2. S pomočjo programa BLAST (Basic Local Alignment Search Tool) poiščite človeški ortolog mišjega α-aktinina 1. Kako lahko preverite, da ste dejansko našli ortolog?
 3. Poiskusite poiskati homolog mišjega α-aktinina 1 pri etrušanski rovki. Katero obliko orodja BLAST je najbolj smiselno uporabiti in zakaj?
 4. Kaj pa mišjega α-aktinina 1 pri evropskem bobru? Kakšen način iskanja z BLAST je najprimernejši in zakaj?
