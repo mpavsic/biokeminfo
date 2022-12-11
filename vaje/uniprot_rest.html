@@ -799,16 +799,6 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Definiramo spletni naslov storitve in dodatne parametre (torej, kje se kaj nahaja).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASE</span> <span class="o">=</span> <span class="s1">&#39;http://www.uniprot.org&#39;</span>
-<span class="n">KB_ENDPOINT</span> <span class="o">=</span> <span class="s1">&#39;/uniprot/&#39;</span>
-<span class="n">TOOL_ENDPOINT</span> <span class="o">=</span> <span class="s1">&#39;/uploadlists/&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>Zakaj je tako? Zato, ker lahko do posameznih zapisov v zbirki lahko dostopamo direktno preko naslova, če le poznamo kodo zapisa v zbirko (<em>accession code</em>). Na primer, do zapisa s kodo P59595 lahko direktno dostopamo preko spleta na naslovu <a class="reference external" href="https://www.uniprot.org/uniprot/P59595">https://www.uniprot.org/uniprot/P59595</a>. Druge oblike zapisa so dostopne preko naslednjih naslovov (podanih je nekaj primerov, ostale si lahko ogledate <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">tukaj</a>) - pri vseh vidite enoten vzorec zapisa:</p>
 <ul class="simple">
 <li><p>tekstna datoteka: <a class="reference external" href="https://www.uniprot.org/uniprot/P59595.txt">https://www.uniprot.org/uniprot/P59595.txt</a></p></li>
@@ -848,9 +838,11 @@ Q7RTY8
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASE</span> <span class="o">=</span> <span class="s2">&quot;https://rest.uniprot.org&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># definiramo spletni naslov storitve in dodatne parametre</span>
+<span class="n">BASE</span> <span class="o">=</span> <span class="s2">&quot;https://rest.uniprot.org&quot;</span>
 <span class="n">KB_ENDPOINT</span> <span class="o">=</span> <span class="s2">&quot;/uniprotkb/search&quot;</span>
 <span class="n">TOOL_ENDPOINT</span> <span class="o">=</span> <span class="s2">&quot;/uploadlists/&quot;</span>
+<span class="c1"># izvedemo iskanje</span>
 <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="s1">&#39;protein_name:matriptase AND organism_name:&quot;homo sapiens&quot; AND reviewed:true&#39;</span><span class="p">,</span>
            <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;list&#39;</span><span class="p">}</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE</span> <span class="o">+</span> <span class="n">KB_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
@@ -865,9 +857,6 @@ Q7RTY8
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q8IU80
 Q9Y5Y6
 Q7RTY8
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1210,7 +1199,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/uniprot_rest_36_0.png" src="../_images/uniprot_rest_36_0.png" />
+<img alt="../_images/uniprot_rest_34_0.png" src="../_images/uniprot_rest_34_0.png" />
 </div>
 </div>
 </section>
