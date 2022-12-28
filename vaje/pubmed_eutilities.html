@@ -358,15 +358,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../priloge/datoteke.html">
-   Poimenovanje datotek
+   Datoteke
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../priloge/drobnarije.html">
-   Drobnarije
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/datoteke_formati.html">
+     Pogosti formati datotek
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../priloge/datoteke_poimenovanje.html">
+     Poimenovanje datotek
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -388,16 +400,16 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../seminar/seznam_2021-2022.html">
-   Seznam seminarjev 2021/2022
+  <a class="reference internal" href="../seminar/seminarji_2021-2022.html">
+   Seminarji 2021/2022
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../seminar/navodila.html">
    Navodila za pripravo seminarske naloge
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -894,7 +906,7 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </section>
 <section id="shranjevanje-rezultatov-v-csv">
 <h3>Shranjevanje rezultatov v CSV<a class="headerlink" href="#shranjevanje-rezultatov-v-csv" title="Permalink to this headline">#</a></h3>
-<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <a class="reference internal" href="../priloge/drobnarije.html"><span class="doc std std-doc">drobnarijami</span></a>). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
+<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <span class="xref myst">drobnarijami</span>). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
 <p>Spodnji zgled ilustrira uporabo knjižnice <a class="reference external" href="https://pandas.pydata.org/"><strong>Pandas</strong></a> in sicer:</p>
 <ul class="simple">
 <li><p>definira slovar <em>articles_with_abstracts</em>,</p></li>
