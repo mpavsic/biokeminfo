@@ -49,13 +49,16 @@ parts:
     - file: priloge/markdown
     - file: priloge/git
   - file: priloge/datoteke
+    sections:
+    - file: priloge/datoteke_formati
+    - file: priloge/datoteke_poimenovanje
   - file: priloge/drobnarije
 - caption: Izvedba vaj
   chapters:
   - file: izvedba/vaje_2021-2022
 - caption: Seminar
   chapters:
-  - file: seminar/seznam_2021-2022
+  - file: seminar/seminarji_2021-2022
   - file: seminar/navodila
     sections:
     - file: seminar/seminar-predloga

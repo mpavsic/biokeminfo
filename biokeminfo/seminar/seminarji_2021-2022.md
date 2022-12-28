@@ -1,4 +1,4 @@
-# Seznam seminarjev 2021/2022
+# Seminarji 2021/2022
 
 Datum = datum predstavitve. Predstavitve bodo v predavalnici 2074 z izjemo 2022-04-28, ko bodo v predavalnici 4.
 
