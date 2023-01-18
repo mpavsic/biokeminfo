@@ -733,6 +733,18 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">seq1</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMCWCVNTAGVRRTDKDTEITC&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">seq2</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;KTRCQLEREHILGAAGGADAQRPTLQGMFVPQCDEYGHYVPTQCHHSTGYCWCVDRDGRELEGSRTPPGMRPPC&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <p>Lahko smo še malce bolj kreativni in zraven zaporedja samega definiramo še kakšne pripise (<a class="reference external" href="https://biopython.org/wiki/SeqRecord">dokumentacija</a>):</p>
 <div class="cell docutils container">
@@ -795,7 +807,7 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BENNER22&#39;, &#39;BENNER6&#39;, &#39;BENNER74&#39;, &#39;BLASTN&#39;, &#39;BLASTP&#39;, &#39;BLOSUM45&#39;, &#39;BLOSUM50&#39;, &#39;BLOSUM62&#39;, &#39;BLOSUM80&#39;, &#39;BLOSUM90&#39;, &#39;DAYHOFF&#39;, &#39;FENG&#39;, &#39;GENETIC&#39;, &#39;GONNET1992&#39;, &#39;HOXD70&#39;, &#39;JOHNSON&#39;, &#39;JONES&#39;, &#39;LEVIN&#39;, &#39;MCLACHLAN&#39;, &#39;MDM78&#39;, &#39;MEGABLAST&#39;, &#39;NUC.4.4&#39;, &#39;PAM250&#39;, &#39;PAM30&#39;, &#39;PAM70&#39;, &#39;RAO&#39;, &#39;RISLER&#39;, &#39;SCHNEIDER&#39;, &#39;STR&#39;, &#39;TRANS&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BENNER22&#39;, &#39;BENNER6&#39;, &#39;BENNER74&#39;, &#39;BLOSUM45&#39;, &#39;BLOSUM50&#39;, &#39;BLOSUM62&#39;, &#39;BLOSUM80&#39;, &#39;BLOSUM90&#39;, &#39;DAYHOFF&#39;, &#39;FENG&#39;, &#39;GENETIC&#39;, &#39;GONNET1992&#39;, &#39;HOXD70&#39;, &#39;JOHNSON&#39;, &#39;JONES&#39;, &#39;LEVIN&#39;, &#39;MCLACHLAN&#39;, &#39;MDM78&#39;, &#39;NUC.4.4&#39;, &#39;PAM250&#39;, &#39;PAM30&#39;, &#39;PAM70&#39;, &#39;RAO&#39;, &#39;RISLER&#39;, &#39;SCHNEIDER&#39;, &#39;STR&#39;, &#39;TRANS&#39;]
 </pre></div>
 </div>
 </div>
@@ -870,12 +882,6 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pairwise2 lahko definiramo kot aln, da vsakič ne izpisujemo pairwise2</span>
 <span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">pairwise2</span> <span class="k">as</span> <span class="n">aln</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/homebrew/Caskroom/miniforge/base/envs/biotin/lib/python3.11/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
-  warnings.warn(
 </pre></div>
 </div>
 </div>
