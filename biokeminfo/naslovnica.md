@@ -11,7 +11,7 @@ Knjiga je sicer prosto dostopna in kot taka predstavlja enostavno dostopen in up
 Uvod
 ====
 
-Knjiga je sestavljena iz nalog, podprtih s kratkim uvodom ter razlagami. Naloge so smiselno razvrščene v tematske sklope, njihovo zaporedje pa ni nujno povezano z zaporedjem izvajanja na vajah - slednje je za tekoče študijsko leto prikazano [tukaj](izvedba/vaje_2020-2021.md).
+Knjiga je sestavljena iz nalog, podprtih s kratkim uvodom ter razlagami. Naloge so smiselno razvrščene v tematske sklope, njihovo zaporedje pa ni nujno povezano z zaporedjem izvajanja na vajah.
 
 Naloge so dveh tipov:
 - naloge, ki se nanašajo na uporabo spletnih podatkovnih zbirk ter spletnih ali lokalno nainstaliranih programov s "prijaznim" uporabniškim vmesnikom, kjer znanje programiranja ni potrebno; 
@@ -25,8 +25,6 @@ Vaje iz programiranja so zastavljene tako, da boste (ponavadi) dobili že delno 
 - zvezek oz. zvezke prenesete na vaš računalnik in jih odpreti v okolju JupyterLab (to je priporočen način za na vajah) ali
 - zvezek odprete v spletni storitvi Google Colab ali Binder (povezava je vidna v zvezkih JupyterLab desno zgoraj - ikona rakete). Priporočam Google Colab, saj deluje nekoliko hitreje, prav tako pa se vam spremembe zvezkov shranijo na vaš Google Drive. To ne velja za Binder - za ohranitev sprememb morate zvezek po koncu vaje oz. preden zaprete okno brskalnika shraniti lokalno (ga prenesete na vaš računalnik).
 
-Na splošno priporočam prvi način, saj je veliko manj podvržen težavam s strežniki in kakovosti internetne povezave, pri Binderju pa je še ena težava - ob že nekoliko daljšem obdobju neaktivnosti v se vaše virtualno okolje pobriše. Skratka, odpiranje v Binderju je primerno le za hiter ogled in test kode, za kaj več pa si zvezek/zvezke prenesite na vaš računalnik.
-
 ---
 
-Spletna knjiga je v nastajanju (in neprestanem dopolnjevanju) in bo kot taka v študijskem letu 2021/2022 sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov, saj se lahko naslovi podstrani zaradi morebitne reorganizacija vsebine spremenijo. Komentarji so dobrodošli: [klik!](mailto:miha.pavsic@fkkt.uni-lj.si)
+Spletna knjiga je v neprestanem nastajanju/dopolnjevanju in bo kot taka sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov, saj se lahko naslovi podstrani zaradi morebitne reorganizacija vsebine spremenijo. Komentarji so dobrodošli: [klik!](mailto:miha.pavsic@fkkt.uni-lj.si)
