@@ -1,4 +1,4 @@
-# Navodila za pripravo seminarske naloge
+# Navodila
 
 Kot seminarsko nalogo boste pripravili kratko računalniško vajo in sicer boste:
 1. pripravili [navodila za vajo](#priprava-navodil-za-vaje) za vaše kolege, ki bodo objavljena kot del te spletne strani (navodila boste morali oddati vsaj 4 dni pred izvedbo), in
