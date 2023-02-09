@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Expression Atlas – izražanje genov &#8212; Biokemijska informatika</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2021-2022/s17-expression-atlas.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-KG7KWKX5VG');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../naslovnica.html">
+                    Uvod
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Zbirke
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/pubmed.html">
+   PubMed
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/pubmed_web.html">
+     VAJA: Iskanje po PubMed
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/pubmed_eutilities.html">
+     DEMO: Programski dostop do PubMed
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/nt.html">
+   Nukleotidna zaporedja
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/nt-oligo_analiza.html">
+     VAJA: Enostavna analiza nt-zaporedja (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/genbank_web.html">
+     VAJA: Dostop do GenBank v brskalniku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/genbank_eutilities.html">
+     VAJA: Programski dostop do GenBank (Python)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/ak.html">
+   Aminokislinska zaporedja
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/uniprot_web.html">
+     VAJA: Dostop do UniProt v brskalniku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/uniprot_rest.html">
+     VAJA: Programski dostop do UniProt (Python)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Poravnave
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/dotplot.html">
+   Točkovni diagram
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/dotplot_web.html">
+     VAJA: Točkovni diagram
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/poravnave.html">
+   Poravnave
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/matrika_zamenjav.html">
+     VAJA: Izračun matrike zamenjav (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/poravnava2_web.html">
+     VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/poravnava2_nw_sw.html">
+     VAJA: Poravnava zaporedij NW &amp; SW (Python)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/poravnava2_lastna_matrika.html">
+     DEMO: Izračun lastne matrike in njena uporaba
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/blast.html">
+     VAJA: Iskanje podobnih zaporedij z BLAST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/msa.html">
+     VAJA: Poravnave več zaporedij
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Grafi
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/grafi.html">
+   Grafi v molekularni biologiji
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/grafi_cytoscape.html">
+     VAJA: Grafi in program Cytoscape
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Strukture
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../osnove/strukture.html">
+   Strukture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/podobne_strukture.html">
+     VAJA: Iskanje podobnih struktur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vaje/modeliranje.html">
+     VAJA: Modeliranje na osnovi homologije
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Priloge
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../priloge/programi.html">
+   Programi
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/jupyterlab.html">
+     JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/markdown.html">
+     Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/git.html">
+     Git in GitHub
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../priloge/datoteke.html">
+   Datoteke
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/datoteke_formati.html">
+     Pogosti formati datotek
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../priloge/datoteke_poimenovanje.html">
+     Poimenovanje datotek
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Seminar
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="seminar.html">
+   Seminarji 2021/2022
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="navodila.html">
+     Navodila
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seminar-predloga.html">
+     Predloga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/mpavsic/biokeminfo"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/seminar/seminar_2021-2022/s17-expression-atlas.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Expression Atlas – izražanje genov</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namen-vaje">
+   Namen vaje
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program">
+   Program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opis-programa">
+     Opis programa
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vhodni-podatki">
+     Vhodni podatki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navodila">
+   Navodila
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Vhodni podatki
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#postopek-dela">
+     Postopek dela
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pricakovani-rezultati-in-razlaga">
+     Pričakovani rezultati in razlaga
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="expression-atlas-izrazanje-genov">
+<h1>Expression Atlas – izražanje genov<a class="headerlink" href="#expression-atlas-izrazanje-genov" title="Permalink to this headline">#</a></h1>
+<p><strong>Avtorja</strong>: Hana Glavnik, Tina Javeršek</p>
+<p><strong>Datum predstavitve</strong>: 2022-05-11</p>
+<hr class="docutils" />
+<section id="namen-vaje">
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">#</a></h2>
+<p>Spoznanje z zbirko Expression Atlas, kjer so prosto dostopne informacije o vzorcu izražanja genov RNA zaporedij, mikromrež ter izražanje proteinov iz študij proteoma. Pri tej vaji se bomo naučili iskanja po zbirki in branja rezultatov, ki nam jih zbirka ob iskanju vrne.</p>
+</section>
+<hr class="docutils" />
+<section id="program">
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">#</a></h2>
+<p>Program: <strong>[Expression Atlas]( Home &lt; Expression Atlas &lt; EMBL-EBI)</strong></p>
+<p>Avtorji programa: <strong>[European Bioinformatics Institute](EMBL-EBI: EMBL’s European Bioinformatics Institute | EMBL’s European Bionformatics Institute)</strong></p>
+<p>Reference:</p>
+<ul class="simple">
+<li><p>Moreno P, Fexova S, George N, Manning JR, Miao Z, Mohammed S, et al. Expression Atlas update: gene and protein expression in multiple species. Nucleic Acids Research. 2022;50: D129–D140. (<a class="reference external" href="https://doi.org/10.1093/nar/gkab1030">https://doi.org/10.1093/nar/gkab1030</a>)</p></li>
+<li><p>Misha Kapushesky, Ibrahim Emam, Ele Holloway, Pavel Kurnosov, Andrey Zorin, James Malone, Gabriella Rustici, Eleanor Williams, Helen Parkinson, Alvis Brazma, Gene Expression Atlas at the European Bioinformatics Institute, Nucleic Acids Research, Volume 38, Issue suppl_1, 1 January 2010, Pages D690–D698, (<a class="reference external" href="https://doi.org/10.1093/nar/gkp936">https://doi.org/10.1093/nar/gkp936</a>)</p></li>
+</ul>
+<section id="opis-programa">
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">#</a></h3>
+<p>Expression Atlas je znanstveni vir, ki je odprt širši javnosti, kjer so prosto dostopne informacije o vzorcu izražanja genov iz RNA zaporedij,mikromrež ter izražanje proteinov iz študij proteoma. Podatke, ki jih vnesemo, atlas zbere, analizira in jih predstavi. S pomočjo tega dobimo odgovore na vprašanja, kje se izraža naš izbran gen in kako izražanje vpliva na stanje organizma ter razvoj bolezni. Zbirka črpa podatke iz različnih genomskih zbirk, kot so ArrayExpress, Gene Expression Omnibus (GEO), European Nucleotide Archive (ENA) in druge. Vsebuje podatke o genih 550 donorjev in 53 različnih tkiv, kar sestavlja skoraj 20.000  RNA-sekvenčnih knjižnic. Če bi zagnali analizo podatkov na našem lokalnem računalniku, bi trajalo približno 22 let in bi zavzelo do 78 terabajtov prostora, da bi dobili rezultate vseh vzorcev. Poleg podatkov, ki so jih pridobili pri raziskovanju zdravih vzorcev, zbirka vsebuje tudi raziskave rakavih tkiv, človeškega razvoja in primere razvoja modelnih organizmov ter celičnih linij. Expression atlas zajema podatke o več kot 60 različnih vrstah organizmov in več različnih bioloških stanjih.</p>
+<p>Seti podatkov v zbirki so klasificirani kot osnovni ali diferencialni. Osnovne sete podatkov so pridobili iz visoko kvalitetnih RNA zaporedij, nanašajo pa se predvsem na zdrava tkiva, celične tipe, razvojne faze ali celične linije. Diferencialni seti podatkov obsegajo spremembe v ekspresiji genov med dvema stanjema- zdravimi in patološko spremenjenimi tkivi.</p>
+<p>Podatki o izražanju genov se najprej zberejo in organizirajo v visokokakovostne označene sete podatkov. Vsi ti se nato prepošljejo preko  tehnike oziroma principa vodovodnih cevi.Nato so predstavljeni na način, ki je prijazen uporabnikom in omogoča iskanje podatkov ter njihovo vizualizacijo. Vhodni podatek vpišemo v iskalnik in Expression atlas nam vrne različne eksperimente, tipe tkiva in celic, kjer se iskani gen izraža. Prav tako dobimo informacijo, pod katerimi pogoji nastopa naš gen kot markerski gen. Vsak eksperiment vsebuje tudi datoteke, ki jih lahko posameznik prenese za nadaljnje raziskovanje.</p>
+<p>Kot vhodne podatke uporabljamo ime gena, Uniprot identifikacijsko kodo,Gene Ontology identifikacijsko kodo ali bolezenskega stanja določenega organizma ali celotne vrste.</p>
+</section>
+<section id="vhodni-podatki">
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h3>
+<p>Preko expression atlasa lahko iščemo z imenom iskanega gena,identifikacijsko kodo gena iz Uniprot ali Gene Ontology strani, prav tako lahko iščemo podatke za specifičen organizem in bolezen. Vrne nam pregled vseh eksperimentov, ki so trenutno na voljo za določen organizem.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="navodila">
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Shwachman-Diamond syndrome</p></li>
+<li><p>SBDS gen</p></li>
+<li><p>Marfan syndrome</p></li>
+</ul>
+</section>
+<section id="postopek-dela">
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>V iskalno vrstico vnesemo ime gena ali identifikacijsko kodo, ime bolezni,</p></li>
+<li><p>ko izberemo posamezni eksperiment, se nam prikažejo podatki, ki so del tega seta (ime eksperimenta, uporabljena tehnologija, zasnova eksperimenta in dopolnilne informacije),</p></li>
+<li><p>ob kliku na okence, ki pripada iskanemu genu in posameznem tkivu, nas usmeri na Ensembl, kjer dostopamo do podrobnosti regije, kjer se gen izraža,</p></li>
+<li><p>če izberemo diferencialno iskanje podatkov (Differential expression), dostopamo do eksperimentov, kjer primerjajo izražanje gena v zdravem in obolelem tkivu (celični liniji).</p></li>
+</ul>
+</section>
+<section id="pricakovani-rezultati-in-razlaga">
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">#</a></h3>
+<p>Rezultati pri iskanju osnovnega izražanja genov (Baseline expression) se prikažejo kot toplotna karta, kjer posamezni odtenek modre barve predstavlja nivo izražanja gena. Posamezna vrstica prikazuje eksperiment, ki se nanaša na študijo transkripta (T) ali proteoma (P). Na vrhu toplotne karte (poševno) imamo podatke o tkivu, v katerem se je gen izražal.</p>
+<p><img alt="tabela1" src="../../_images/s17-expression-atlas-1.jpg" /></p>
+<p>Ob kliku na posamezen eksperiment dostopamo do podatkov o izražanju gena v posameznih tkivih - podatki so ponovno prikazani s toplotno karto. Lahko izbiramo enote, v katerih so podani rezultati: TMP (transkripts per milion) ali FPKM (fragments per kilobase million).</p>
+<p><img alt="tabela2" src="../../_images/s17-expression-atlas-2.jpg" /></p>
+<p>Ob iskanju diferencialnega izražanja genov so eksperimenti razvrščeni glede na logaritem z osnovo 2 fold change vrednosti.</p>
+<p><img alt="tabela3" src="../../_images/s17-expression-atlas-3.jpg" /></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2021-2022"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Miha Pavšič<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
