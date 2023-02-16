@@ -53,6 +53,9 @@ parts:
     - file: priloge/datoteke_formati
     - file: priloge/datoteke_poimenovanje
   - file: priloge/drobnarije
+- caption: Izvedba vaj
+  chapters:
+  - file: izvedba/vaje_2022-2023
 - caption: Seminar
   chapters:
   - file: seminar/seminar_2021-2022/seminar
