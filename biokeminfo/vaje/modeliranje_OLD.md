@@ -16,9 +16,7 @@ Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je [SWISS-M
 Interaktivno modeliranje zaženemo s pritiskom na gumb `Start Modelling`. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko "projektu" določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (`Search For Templates`), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo `Build Model`, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
 ![SWISS-MODEL vnos](slike/modeliranje-swissmodel2.png)
 
-Podrobnosti in navodila so opisana v [dokumentaciji](https://swissmodel.expasy.org/docs/help). Posebej je potrebno omeniti parametra, izračunana tekom evaluacije modelov:
-- GMQE (Global Model Quality Estimate) je ocena kvalitete, ki poda na osnovi napovedi lDDT, in
-- QMEANDisCo global score, kjer gre za povprečje ocene kvalitete po posameznem aminokislinskem ostanku.
+Podrobnosti in navodila so opisana v [dokumentaciji](https://swissmodel.expasy.org/docs/help).
 
 ## AlphaFold2
 
@@ -49,22 +47,35 @@ Da bi bili modeli, izračunani z AlphaFold2, dostopni čim širši javnosti, so 
 
 Modele si lahko na Strani UniProt oz. v podatkovni zbirki na EBI ogledamo kot 3D modele, pobarvane glede na zanesljivost napovedi strukture (pLDDT, *per-residue confidence score*, v razponu od 0 do 100). Pri regijah z nizko pLDDT gre pogosto za strukturno neurejene regije.
 
-Pri analizi modelov ne pozabite na pLDDT in PAE:
 
-![AlphaFold Model Database](slike/modeliranje-alphafold_q1.png)
-
-![AlphaFold Model Database](slike/modeliranje-alphafold_q2.png)
 
 ---
 
-## Naloga
-Vsak si naj izbere en protein dolžine največ 300 aminokislinskih ostankov (priporočam, da izberete bolj "eksotične" proteine ali pa proteine iz "eksotičnih" organizmov), za katerega:
-1. z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;
-2. model proteina izračunajte z uporabo [AlphaFold2_mmseq2](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) po navodilih zgoraj;
-3. izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);
-4. Oba izračunana modela in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera in primerjajte preko superpozicije (*MatchMaker*).
+## Naloga 1
+Zanima nas struktura celotnega človeškega klavdina-7 (claudin-7). Poiščite strukturo/model oz. ga sami pripravite ter ga analizirajte v smislu realnosti.
 
-Odgovorite na vprašanji:
-1. Ali model iz SWISS-MODEL pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?
-2. Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?
-3. Ocenite biološko smiselnost modela glede na značilnosti zaporedja, anotirane v Uniprot, oz. glede na značilnosti dobro anotiranega homolognega proteina podobne dolžine.
+Potek reševanja:
+1. Glavne značilnosti človeškega klavdina-7 si oglejte v zbirki UniProt. Je morda v tej bazi povezava na že pripravljen model in če je, je ta model zadovoljiv? Kako bi lahko pripravili boljši model?
+2. Pripravite model omenjenega proteina s programom [SWISS-MODEL](http://swissmodel.expasy.org/), model z [I-TASSER](http://zhanglab.ccmb.med.umich.edu/I-TASSER/) pa je že pripravljen (za ta program se je potrebno registrirati, izračun pa traja kak dan) in sicer:
+   * rezultati modeliranja s privzetimi nastavitvami (kot vhodni podatek je bilo dano ak-zaporedje klavdina-7) so zbrani v datotekah:
+      * posamezni modeli: [model1](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model1.pdb), [model2](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model2.pdb), [model3](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model3.pdb), [model4](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model4.pdb) in [model5](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model5.pdb)
+      * [izpis strani](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-log.pdf) z rezultati modeliranja v formatu PDF
+      * celoten izhod: [ITASSER-CLDN7_HUMAN_default.zip](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default.zip)
+   * rezultati modeliranja, pri katerem eksplicitno NISO bile upoštevane strukture s PDB kodami 4p79 in 3x29 je v datoteki I-TASSER-hCldn7_excluded_4p79_3x29.zip (te strukture so v času priprave modela bile edine, ki so predstavljale smiselne predloge za strukturo, danes je to nekoliko drugače, saj je struktur več):
+      * posamezni modeli: [model1](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model1.pdb), [model2](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model2.pdb), [model3](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model3.pdb), [model4](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model4.pdb) in [model5](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model5.pdb)
+      * [izpis strani](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.pdf) z rezultati modeliranja v formatu PDF
+      * celoten izhod: [I-TASSER-hCldn7_excluded_4p79_3x29.zip](https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.zip)
+3. Poiščite tudi model tega proteina, izračunanega z AlphaFold2.
+4.  Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zapisa v zbirki UniProt?).
+
+## Naloga 2
+Vsak si naj izbere en protein (priporočam, da izberete bolj "eksotične" proteine ali pa proteine iz "eksotičnih" organizmov), za katerega:
+1. z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;
+2. izdelajte model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);
+3. model, ki ga izračunate, in pa strukturo, uporabljeno kot predlogo, naložite v program UCSF Chimera in primerjajte preko superpozicije (*MatchMaker*).
+
+Odgovorite na vprašanja:
+1. Ali model pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?
+2. So med modelom in uporabljeno predlogo v katerih regijah večje razlike? Katerimi? Zakaj?
+3. Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja?
+4. Bi lahko model kako izboljšali? Kako?
