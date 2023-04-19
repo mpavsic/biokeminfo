@@ -1,35 +1,45 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>VAJA: Modeliranje na osnovi homologije &#8212; Biokemijska informatika</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -37,84 +47,115 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/modeliranje';</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/modeliranje.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Programi" href="../priloge/programi.html" />
     <link rel="prev" title="VAJA: Iskanje podobnih struktur" href="podobne_strukture.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
-<script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-KG7KWKX5VG');
-                </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../naslovnica.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Biokemijska informatika</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -123,581 +164,326 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Zbirke
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/pubmed.html">
-   PubMed
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pubmed_web.html">
-     VAJA: Iskanje po PubMed
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pubmed_eutilities.html">
-     DEMO: Programski dostop do PubMed
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/nt.html">
-   Nukleotidna zaporedja
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="nt-oligo_analiza.html">
-     VAJA: Enostavna analiza nt-zaporedja (Python)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="genbank_web.html">
-     VAJA: Dostop do GenBank v brskalniku
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="genbank_eutilities.html">
-     VAJA: Programski dostop do GenBank (Python)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/ak.html">
-   Aminokislinska zaporedja
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="uniprot_web.html">
-     VAJA: Dostop do UniProt v brskalniku
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="uniprot_rest.html">
-     VAJA: Programski dostop do UniProt (Python)
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Poravnave
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/dotplot.html">
-   Točkovni diagram
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="dotplot_web.html">
-     VAJA: Točkovni diagram
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/poravnave.html">
-   Poravnave
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="matrika_zamenjav.html">
-     VAJA: Izračun matrike zamenjav (Python)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="poravnava2_web.html">
-     VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="poravnava2_nw_sw.html">
-     VAJA: Poravnava zaporedij NW &amp; SW (Python)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="poravnava2_lastna_matrika.html">
-     DEMO: Izračun lastne matrike in njena uporaba
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="blast.html">
-     VAJA: Iskanje podobnih zaporedij z BLAST
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="msa.html">
-     VAJA: Poravnave več zaporedij
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="dotplot_web.html">VAJA: Točkovni diagram</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Grafi
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../osnove/grafi.html">
-   Grafi v molekularni biologiji
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="grafi_cytoscape.html">
-     VAJA: Grafi in program Cytoscape
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Strukture
- </span>
-</p>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="../osnove/strukture.html">
-   Strukture
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="podobne_strukture.html">
-     VAJA: Iskanje podobnih struktur
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     VAJA: Modeliranje na osnovi homologije
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../osnove/strukture.html">Strukture</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">VAJA: Modeliranje na osnovi homologije</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Priloge
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../priloge/programi.html">
-   Programi
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/python.html">
-     Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/jupyterlab.html">
-     JupyterLab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/markdown.html">
-     Markdown
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/git.html">
-     Git in GitHub
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../priloge/datoteke.html">
-   Datoteke
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/datoteke_formati.html">
-     Pogosti formati datotek
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../priloge/datoteke_poimenovanje.html">
-     Poimenovanje datotek
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Izvedba vaj
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../izvedba/vaje_2022-2023.html">
-   Vaje 2021/2022
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/git.html">Git in GitHub</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Seminar
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../seminar/seminar_2021-2022/seminar.html">
-   Seminarji 2021/2022
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-  <label for="toctree-checkbox-10">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../seminar/seminar_2021-2022/navodila.html">
-     Navodila
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">
-     Predloga
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../izvedba/vaje_2022-2023.html">Vaje 2022/2023</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar.html">Seminarji 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/mpavsic/biokeminfo"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
 
 </a>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/vaje/modeliranje.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/vaje/modeliranje.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="btn__text-container">.md</span>
 </a>
-
-      </li>
+</li>
+      
+      
+      
       
       <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
   </span>
 
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#swiss-model">
-   SWISS-MODEL
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#alphafold2">
-   AlphaFold2
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-1">
-   Naloga 1
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-2">
-   Naloga 2
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>VAJA: Modeliranje na osnovi homologije</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#swiss-model">
-   SWISS-MODEL
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#alphafold2">
-   AlphaFold2
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-1">
-   Naloga 1
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naloga-2">
-   Naloga 2
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>VAJA: Modeliranje na osnovi homologije</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model">SWISS-MODEL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold2">AlphaFold2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naloga">Naloga</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-modeliranje-na-osnovi-homologije">
 <h1>VAJA: Modeliranje na osnovi homologije<a class="headerlink" href="#vaja-modeliranje-na-osnovi-homologije" title="Permalink to this headline">#</a></h1>
-<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope, najhitrejši in najbolj zanesljivi so pa tisti, ki temeljijo na osnovi homologije. Na slednjo sklepamo iz podobnosti ak-zaporedij tarčnega proteina (tj. protein, ki ga modeliramo) in proteinov z znano (eksperimentalno določeno) strukturo iz zbirke struktur. Na voljo je kar nekaj orodij, ki temeljijo na različnih principih (modeliranje na osnovi homologije, <em>ab initio</em>, kombinacija pristopov) in algoritmih, morda najpogosteje pa se uporabljajo naslednja:</p>
+<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope. Nekaj let nazaj so dali najboljše rezultate v smislu pravilnosti (podobnosti eksperimentalni strukturi) pristopi na osnovi homologije, sploh če je bila med aminokislinskima zaporedjema tarče in znane eksperimentalno določene strukture visoka identičnost. Najnovejši pristopi, ki temeljijo na umetni inteligenci (angl. artificial inteligence, AI), izračunajo danes za “lahke” tarče (zaporedja, pri katerih je identičnost aminokislinskega zaporedja z znano/znanimi eksperimentalno določenimi strukturami zelo visoka, hkrati pa poravnava pokriva celotno tarčno zaporedje ali vsaj veliko večino zaporedja) modele, ki so podobno zanesljivi kot modeli na osnovi homologije, za težje tarče pa so modeli, izračunani s pomočjo AI, neprimerno boljši.</p>
+<p>Od orodij za modeliranje struktur proteinov se morda najpogosteje uporabljajo naslednja:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a></p></li>
-<li><p><a class="reference external" href="https://zhanggroup.org/I-TASSER/">I-TASSER</a></p></li>
-<li><p><a class="reference external" href="https://www.rosettacommons.org/software">Rosetta</a>, ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika <a class="reference external" href="https://robetta.bakerlab.org/">Robetta</a></p></li>
-<li><p><a class="reference external" href="https://github.com/deepmind/alphafold">AlphaFold2</a>, ki ga lahko poganjamo lokalno ali pa izkoristimo <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">iPython Notebook v Google Colab</a></p></li>
+<li><p><a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a> za modeliranje na osnovi homologije, predvsem zaradi enostavnega vmesnika in hitrega izračuna modelov,</p></li>
+<li><p><a class="reference external" href="https://zhanggroup.org/I-TASSER/">I-TASSER</a>, ki je pred prihodom orodij na osnovi AI bilo eno izmed boljših orodij za modeliranje na osnovi homologije ter ab initio modeliranje krajših segmentov,</p></li>
+<li><p><a class="reference external" href="https://www.rosettacommons.org/software">Rosetta</a>, ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika <a class="reference external" href="https://robetta.bakerlab.org/">Robetta</a>, z AI podkrepljena varianta pa se imenuje <a class="reference external" href="https://github.com/RosettaCommons/RoseTTAFold">RoseTTAFold</a> in je dosegljiva kot opcija na strežniku Robetta, ter</p></li>
+<li><p><a class="reference external" href="https://github.com/deepmind/alphafold">AlphaFold2</a>, ki ga lahko poganjamo lokalno (bolje: na računski gruči) ali pa izkoristimo računsko infrastrukturo Google Colab - <a class="reference external" href="https://github.com/sokrypton/ColabFold">ColabFold</a>.</p></li>
 </ul>
 <section id="swiss-model">
 <h2>SWISS-MODEL<a class="headerlink" href="#swiss-model" title="Permalink to this headline">#</a></h2>
-<p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:
-<img alt="SWISS-MODEL vstopna stran" src="../_images/modeliranje-swissmodel1.png" /></p>
-<p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
-<img alt="SWISS-MODEL vnos" src="../_images/modeliranje-swissmodel2.png" /></p>
-<p>Podrobnosti in navodila so opisana v <a class="reference external" href="https://swissmodel.expasy.org/docs/help">dokumentaciji</a>.</p>
+<p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:</p>
+<p><img alt="SWISS-MODEL vstopna stran" src="../_images/modeliranje-swissmodel1.png" /></p>
+<p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.</p>
+<p><img alt="SWISS-MODEL vnos" src="../_images/modeliranje-swissmodel2.png" /></p>
+<p>Podrobnosti in navodila so opisana v <a class="reference external" href="https://swissmodel.expasy.org/docs/help">dokumentaciji</a>. Posebej je potrebno omeniti parametra, izračunana tekom evaluacije modelov:</p>
+<ul class="simple">
+<li><p>GMQE (Global Model Quality Estimate) je ocena kvalitete, ki poda na osnovi napovedi lDDT, in</p></li>
+<li><p>QMEANDisCo global score, kjer gre za povprečje ocene kvalitete po posameznem aminokislinskem ostanku.</p></li>
+</ul>
 </section>
 <section id="alphafold2">
 <h2>AlphaFold2<a class="headerlink" href="#alphafold2" title="Permalink to this headline">#</a></h2>
-<p>AlphaFold2 lahko v osnovni varianti poganjamo v obliki iPython zvezka v storitvi Google Colab (zvezek je v Google Drive), a je ta način za vaje manj primeren, saj modeliranje lahko traja dlje časa (pri brezplačnem računu smo omejeni z računskimi viri), prav tako pa ni primeren za modeliranje večjih proteinov, saj hitro presežemo omejitve osnovnega brezplačnega uporabniškega računa.</p>
-<p>Da bi pa bili modeli, izračunani z AlphaFold2, dostopni čim širši javnosti, so v EBI pripravili podatkovno zbirko vnaprej izračunanih modelov številnih proteinov, dne 2022-05-03 je šlo za 992.316 proteinov. Gre za celoten človeški proteom ter proteome nekaterih modelnih organizmov, vsi ti modeli pa so dostopni preko posebne spletne strani <a class="reference external" href="https://alphafold.ebi.ac.uk/">AlphaFold2 EBI</a>, povezave do modelov pa so dodane tudi v kategorijo <em>Structure</em> v zbirki <a class="reference external" href="https://www.uniprot.org/">UniProt</a>.</p>
+<p>Najlažji način za poganjanje AlphaFold2 je v obliki ColabFold iPython zvezka v storitvi Google Colab, kar je opisano v posebnem <a class="reference external" href="https://doi.org/10.1038/s41592-022-01488-1">članku</a>, zvezki za različne variante ColabFold pa so dostopni na repozitoriju <a class="reference external" href="https://github.com/sokrypton/ColabFold">ColabFold na GitHub</a>. Osnovne variante, ki so na voljo, so:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2_mmseq2</a>, ki za izračun poravnav uporablja MMseqs2 in HHsearch (hitreje kot Jackhammer),</p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/batch/AlphaFold2_batch.ipynb">AlphaFold_batch</a>, ki prav tako uporablja MMseqs2, zvezek pa je prilagojen za pošiljanje več tarčnih zaporedij hkrati,</p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb">AlphaFold2</a>, ki za izračun poravnav uporablja Jackhammer, gre pa za varianto od DeepMind (Google).</p></li>
+</ul>
+<p>Navodila za ColabFold so dostopna na dnu iPython zvezka, uporaba pa je nazorno prikazana tudi na relativno dolgem <a class="reference external" href="https://www.youtube.com/watch?v=Rfw7thgGTwI">videoposnetku na Youtube</a>.</p>
+<p>Na kratko, enostavno modeliranje monomernega proteina lahko z <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2_mmseq2</a> izvedemo tako:</p>
+<ol class="arabic simple">
+<li><p>V polje <code class="docutils literal notranslate"><span class="pre">query_sequence</span></code> vnesemo aminokislinsko zaporedje.</p></li>
+<li><p>Kot <code class="docutils literal notranslate"><span class="pre">jobname</span></code> nastavimo poljubno ime (uporabimo ime proteina, pri dolžini in uporabljenih znakih je dobra razumnost.)</p></li>
+<li><p>Pri <code class="docutils literal notranslate"><span class="pre">num_relax</span></code> izberite, koliko končnih modelov želite energijsko minimizirati (relaksirati) z uporabo Amber. Za enostavne primere to kar pustite na 0, saj simulacija molekulske dinamike traja kar precej časa.</p></li>
+<li><p>Pri <code class="docutils literal notranslate"><span class="pre">template_mode</span></code> izberite, ali bo AlphaFold2 poizkusil najti v zbirki PDB (dejansko gre za reducirano obliko pdb70, prag identičnosti 70 %) strukture s podobnim ak zaporedjem. To lahko tudi izključite (pri računu se upošteva samo stike med ak ostanki na osnovi analize poravnav), lahko pa naložite svojo predlogo (v formatu mmCIF).</p></li>
+<li><p>Ostale nastavitve so še glede MSA (katera zaporedja vzamemo in pa tvorba parov zaporedij, slednje je pomembno za modeliranje kompleksov pri čemer se združujejo zaporedja v pare le, če so vsa iskalna zaporedja (za vse verige kompleksa) prisotna v določeni taksonomski enoti).</p></li>
+<li><p>Za modeliranje monomernega proteina pustimo <code class="docutils literal notranslate"><span class="pre">model_type</span></code> na <em>auto</em>, prav tako število ciklov recikliranja.</p></li>
+<li><p>Priporočljivo je vključiti, da se rezultati na koncu zapakirajo v datoteko zip in naložijo v Google Drive (<code class="docutils literal notranslate"><span class="pre">save_to_google_drive</span></code>).</p></li>
+<li><p>Zaženemo vse celice (najlažje preko Runtime &gt; Run all).</p></li>
+</ol>
+<p>Pozor:</p>
+<ul class="simple">
+<li><p>Ne pretiravajte z velikostjo proteina, saj bo sicer na vam dodeljenem računskem viru na Google Colab zmanjkalo spomina in se bo modeliranje avtomatsko prekinilo.</p></li>
+<li><p>Zavihka v brskalniku, kjer teče AlphaFold2, ne zapirajte, saj je pri brezplačnem računu obvezna uporaba interaktivnega načina. Lahko se zgodi, da se bo med modeliranjem pojavilo tudi pozivno okno, ki bo od vas zahtevalo interakcijo (preverjanje vaše prisotnosti).</p></li>
+</ul>
+<p>Da bi bili modeli, izračunani z AlphaFold2, dostopni čim širši javnosti, so v EBI pripravili podatkovno zbirko vnaprej izračunanih modelov številnih proteinov, dne 2023-04-18 je šlo za modele več kot 200 milijonov proteinov. Med drugim gre za celoten človeški proteom ter proteome nekaterih modelnih organizmov, vsi  modeli pa so dostopni preko posebne spletne strani <a class="reference external" href="https://alphafold.ebi.ac.uk/">AlphaFold DB</a>, povezave do modelov pa so dodane tudi v kategorijo <em>Structure</em> v zbirki <a class="reference external" href="https://www.uniprot.org/">UniProt</a>.</p>
 <p><img alt="AlphaFold Model Database" src="../_images/modeliranje-alphafold_database.png" /></p>
 <p>Modele si lahko na Strani UniProt oz. v podatkovni zbirki na EBI ogledamo kot 3D modele, pobarvane glede na zanesljivost napovedi strukture (pLDDT, <em>per-residue confidence score</em>, v razponu od 0 do 100). Pri regijah z nizko pLDDT gre pogosto za strukturno neurejene regije.</p>
+<p>Pri analizi modelov ne pozabite na pLDDT in PAE:</p>
+<p><img alt="AlphaFold Model Quality 1" src="../_images/modeliranje-alphafold_q1.png" /></p>
+<p><img alt="AlphaFold Model Quality 2" src="../_images/modeliranje-alphafold_q2.png" /></p>
 </section>
 <hr class="docutils" />
-<section id="naloga-1">
-<h2>Naloga 1<a class="headerlink" href="#naloga-1" title="Permalink to this headline">#</a></h2>
-<p>Zanima nas struktura celotnega človeškega klavdina-7 (claudin-7). Poiščite strukturo/model oz. ga sami pripravite ter ga analizirajte v smislu realnosti.</p>
-<p>Potek reševanja:</p>
-<ol class="simple">
-<li><p>Glavne značilnosti človeškega klavdina-7 si oglejte v zbirki UniProt. Je morda v tej bazi povezava na že pripravljen model in če je, je ta model zadovoljiv? Kako bi lahko pripravili boljši model?</p></li>
-<li><p>Pripravite model omenjenega proteina s programom <a class="reference external" href="http://swissmodel.expasy.org/">SWISS-MODEL</a>, model z <a class="reference external" href="http://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a> pa je že pripravljen (za ta program se je potrebno registrirati, izračun pa traja kak dan) in sicer:</p>
-<ul class="simple">
-<li><p>rezultati modeliranja s privzetimi nastavitvami (kot vhodni podatek je bilo dano ak-zaporedje klavdina-7) so zbrani v datotekah:</p>
-<ul>
-<li><p>posamezni modeli: <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model1.pdb">model1</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model2.pdb">model2</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model3.pdb">model3</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model4.pdb">model4</a> in <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-model5.pdb">model5</a></p></li>
-<li><p><a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default-log.pdf">izpis strani</a> z rezultati modeliranja v formatu PDF</p></li>
-<li><p>celoten izhod: <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/ITASSER-CLDN7_HUMAN_default.zip">ITASSER-CLDN7_HUMAN_default.zip</a></p></li>
-</ul>
-</li>
-<li><p>rezultati modeliranja, pri katerem eksplicitno NISO bile upoštevane strukture s PDB kodami 4p79 in 3x29 je v datoteki I-TASSER-hCldn7_excluded_4p79_3x29.zip (te strukture so v času priprave modela bile edine, ki so predstavljale smiselne predloge za strukturo, danes je to nekoliko drugače, saj je struktur več):</p>
-<ul>
-<li><p>posamezni modeli: <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model1.pdb">model1</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model2.pdb">model2</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model3.pdb">model3</a>, <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model4.pdb">model4</a> in <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29-model5.pdb">model5</a></p></li>
-<li><p><a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.pdf">izpis strani</a> z rezultati modeliranja v formatu PDF</p></li>
-<li><p>celoten izhod: <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/vaje/izhod/I-TASSER-hCldn7_excluded_4p79_3x29.zip">I-TASSER-hCldn7_excluded_4p79_3x29.zip</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Poiščite tudi model tega proteina, izračunanega z AlphaFold2.</p></li>
-<li><p>Najboljše modele, dobljene iz posameznih orodij, primerjajte med seboj in s strukturo, uporabljeno kot predlogo za modeliranje na osnovi homologije (superpozicija v UCSF Chimera), prav tako pa jih ocenite v smislu “realnosti” (so modeli v skladu s pričakovanju na osnovi zapisa v zbirki UniProt?).</p></li>
-</ol>
-</section>
-<section id="naloga-2">
-<h2>Naloga 2<a class="headerlink" href="#naloga-2" title="Permalink to this headline">#</a></h2>
-<p>Vsak si naj izbere en protein (priporočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
-<ol class="simple">
+<section id="naloga">
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">#</a></h2>
+<p>Vsak si naj izbere en protein dolžine največ 300 aminokislinskih ostankov (priporočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
+<ol class="arabic simple">
 <li><p>z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;</p></li>
-<li><p>izdelajte model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);</p></li>
-<li><p>model, ki ga izračunate, in pa strukturo, uporabljeno kot predlogo, naložite v program UCSF Chimera in primerjajte preko superpozicije (<em>MatchMaker</em>).</p></li>
+<li><p>model proteina izračunajte z uporabo <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2_mmseq2</a> po navodilih zgoraj;</p></li>
+<li><p>izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);</p></li>
+<li><p>Oba izračunana modela in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera in primerjajte preko superpozicije (<em>MatchMaker</em>).</p></li>
 </ol>
-<p>Odgovorite na vprašanja:</p>
-<ol class="simple">
-<li><p>Ali model pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?</p></li>
-<li><p>So med modelom in uporabljeno predlogo v katerih regijah večje razlike? Katerimi? Zakaj?</p></li>
-<li><p>Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja?</p></li>
-<li><p>Bi lahko model kako izboljšali? Kako?</p></li>
+<p>Odgovorite na vprašanji:</p>
+<ol class="arabic simple">
+<li><p>Ali model iz SWISS-MODEL pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?</p></li>
+<li><p>Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?</p></li>
+<li><p>Ocenite biološko smiselnost modela glede na značilnosti zaporedja, anotirane v Uniprot, oz. glede na značilnosti dobro anotiranega homolognega proteina podobne dolžine.</p></li>
 </ol>
 </section>
 </section>
@@ -714,7 +500,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./vaje"
         },
         predefinedOutput: true
@@ -722,50 +508,107 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="podobne_strukture.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">VAJA: Iskanje podobnih struktur</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="podobne_strukture.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">VAJA: Iskanje podobnih struktur</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../priloge/programi.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../priloge/programi.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Programi</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Miha Pavšič<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model">SWISS-MODEL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold2">AlphaFold2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naloga">Naloga</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

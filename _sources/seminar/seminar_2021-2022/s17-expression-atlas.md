@@ -11,10 +11,9 @@ Spoznanje z zbirko Expression Atlas, kjer so prosto dostopne informacije o vzorc
 
 ---
 ## Program
+Program: [Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 
-Program: **[Expression Atlas]( Home < Expression Atlas < EMBL-EBI)**
-
-Avtorji programa: **[European Bioinformatics Institute](EMBL-EBI: EMBL's European Bioinformatics Institute | EMBL’s European Bionformatics Institute)**
+Avtorji programa: European Bioinformatics Institute, EMBL-EBI
 
 Reference:
 - Moreno P, Fexova S, George N, Manning JR, Miao Z, Mohammed S, et al. Expression Atlas update: gene and protein expression in multiple species. Nucleic Acids Research. 2022;50: D129–D140. (https://doi.org/10.1093/nar/gkab1030) 
@@ -22,7 +21,6 @@ Reference:
 
 
 ### Opis programa
-
 Expression Atlas je znanstveni vir, ki je odprt širši javnosti, kjer so prosto dostopne informacije o vzorcu izražanja genov iz RNA zaporedij,mikromrež ter izražanje proteinov iz študij proteoma. Podatke, ki jih vnesemo, atlas zbere, analizira in jih predstavi. S pomočjo tega dobimo odgovore na vprašanja, kje se izraža naš izbran gen in kako izražanje vpliva na stanje organizma ter razvoj bolezni. Zbirka črpa podatke iz različnih genomskih zbirk, kot so ArrayExpress, Gene Expression Omnibus (GEO), European Nucleotide Archive (ENA) in druge. Vsebuje podatke o genih 550 donorjev in 53 različnih tkiv, kar sestavlja skoraj 20.000  RNA-sekvenčnih knjižnic. Če bi zagnali analizo podatkov na našem lokalnem računalniku, bi trajalo približno 22 let in bi zavzelo do 78 terabajtov prostora, da bi dobili rezultate vseh vzorcev. Poleg podatkov, ki so jih pridobili pri raziskovanju zdravih vzorcev, zbirka vsebuje tudi raziskave rakavih tkiv, človeškega razvoja in primere razvoja modelnih organizmov ter celičnih linij. Expression atlas zajema podatke o več kot 60 različnih vrstah organizmov in več različnih bioloških stanjih.
 
 Seti podatkov v zbirki so klasificirani kot osnovni ali diferencialni. Osnovne sete podatkov so pridobili iz visoko kvalitetnih RNA zaporedij, nanašajo pa se predvsem na zdrava tkiva, celične tipe, razvojne faze ali celične linije. Diferencialni seti podatkov obsegajo spremembe v ekspresiji genov med dvema stanjema- zdravimi in patološko spremenjenimi tkivi. 
@@ -37,30 +35,18 @@ Preko expression atlasa lahko iščemo z imenom iskanega gena,identifikacijsko k
 
 ---
 ## Navodila
-
 ### Vhodni podatki
-
 - Shwachman-Diamond syndrome
-
 - SBDS gen
-
 - Marfan syndrome
 
-
 ### Postopek dela
-
 - V iskalno vrstico vnesemo ime gena ali identifikacijsko kodo, ime bolezni,
-
 - ko izberemo posamezni eksperiment, se nam prikažejo podatki, ki so del tega seta (ime eksperimenta, uporabljena tehnologija, zasnova eksperimenta in dopolnilne informacije),
-
 - ob kliku na okence, ki pripada iskanemu genu in posameznem tkivu, nas usmeri na Ensembl, kjer dostopamo do podrobnosti regije, kjer se gen izraža,
-
 - če izberemo diferencialno iskanje podatkov (Differential expression), dostopamo do eksperimentov, kjer primerjajo izražanje gena v zdravem in obolelem tkivu (celični liniji).
 
-
-
 ### Pričakovani rezultati in razlaga
-
 Rezultati pri iskanju osnovnega izražanja genov (Baseline expression) se prikažejo kot toplotna karta, kjer posamezni odtenek modre barve predstavlja nivo izražanja gena. Posamezna vrstica prikazuje eksperiment, ki se nanaša na študijo transkripta (T) ali proteoma (P). Na vrhu toplotne karte (poševno) imamo podatke o tkivu, v katerem se je gen izražal.
 
 ![tabela1](s17-expression-atlas-1.jpg)
