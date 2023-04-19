@@ -11,9 +11,11 @@ Od orodij za modeliranje struktur proteinov se morda najpogosteje uporabljajo na
 ## SWISS-MODEL
 
 Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je [SWISS-MODEL](https://swissmodel.expasy.org/):
+
 ![SWISS-MODEL vstopna stran](slike/modeliranje-swissmodel1.png)
 
 Interaktivno modeliranje zaženemo s pritiskom na gumb `Start Modelling`. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko "projektu" določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (`Search For Templates`), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo `Build Model`, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.
+
 ![SWISS-MODEL vnos](slike/modeliranje-swissmodel2.png)
 
 Podrobnosti in navodila so opisana v [dokumentaciji](https://swissmodel.expasy.org/docs/help). Posebej je potrebno omeniti parametra, izračunana tekom evaluacije modelov:
@@ -51,9 +53,9 @@ Modele si lahko na Strani UniProt oz. v podatkovni zbirki na EBI ogledamo kot 3D
 
 Pri analizi modelov ne pozabite na pLDDT in PAE:
 
-![AlphaFold Model Database](slike/modeliranje-alphafold_q1.png)
+![AlphaFold Model Quality 1](slike/modeliranje-alphafold_q1.png)
 
-![AlphaFold Model Database](slike/modeliranje-alphafold_q2.png)
+![AlphaFold Model Quality 2](slike/modeliranje-alphafold_q2.png)
 
 ---
 

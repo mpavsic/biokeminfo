@@ -7,11 +7,5 @@ V grobem lahko ločimo strukturne podatke na tiste, ki so pridobljeni z eksperim
 ## Zbirke eksperimentalno določenih struktur
 Osnovni vir strukturni podatkov v biološko pomembnih makromolekulah je [Worlwide Protein Data Bank (wwPDB)](https://www.wwpdb.org/), ki vzdržuje zbirko struktur določenih z X-žarkovno kristalografijo, jedrsko magnetno reconanco (NMR), krio-elektronsko mikroskopijo (krio-EM) in drugih pristopov. Do zbirke lahko dostopamo prek treh portalov, ki sicer nudijo enake osnovne podatke, le pripisi in uporabniški vmesnik se razlikujejo: ameriški [RCSB PDB](https://www.rcsb.org/) [^rcsb], evropski [PDBe](https://www.ebi.ac.uk/pdbe/) in japonski [PDBj](https://pdbj.org/) (podatki med strežniki se redno izmenjujejo, podobno kot pri zbirkah nukleotidnih zaporedij).
 
-## Modeli struktur
-
-
-
-
----
 
 [^rcsb]: Research Collaboratory for Structural Bioinformatics

@@ -28,7 +28,7 @@ Reference:
 
 Program deluje na osnovi GHMM (generalized hidden Markov model), ki definira verjetnost porazdelitve za različne dele genomskega zaporedja. Introni, eksoni in medgenske regije ustrezajo stanjem v modelu in vsako stanje ustvari zaporedja DNK z določenimi vnaprej izbranimi emisijskimi verjetnostim. Program najde optimalno razčlenitev danega genomskega zaporedja, to je segmentacija zaporedij v stanja, ki imajo najboljše ujemanje z osnovnim statističnim modelom. Parametri osnovnega statističnega modela so bili določeni z uporabo več kot 1000 različnimi zaporedji z že poznanimi genomskimi zaporedji. Dokazali so da je program Augustus za dolga genomska zaporedja najbolj natančen v primerjavi z drugimi porgrami. Augustus zelo dobro deluje za daljša genomska zaporedja, predvsem za sesalce.
 
-![Augustus](s15-augustus/s15-augustus-algoritem.jpg)
+![Augustus](s15-augustus-algoritem.png)
 
 ### Vhodni podatki
 
