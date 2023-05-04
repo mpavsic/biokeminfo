@@ -5,7 +5,7 @@ Kot seminarsko nalogo boste pripravili kratko računalniško vajo in sicer boste
 2. [vodili](#vodenje-oz-izvedba-vaje) to dotično vajo (kot da bi bili asistent na vajah) v vnaprej določenem terminu (v okviru seminarjev pri tem predmetu).
 
 Nekaj smernic:
-- Seminarsko nalogo oz. vajo boste pripravili v paru s sošolcem/ sošolko.
+- Seminarsko nalogo oz. vajo boste pripravili v paru s sošolcem/sošolko.
 - Tema seminarske naloge naj bo eden izmed programov, uporaben za študente Biokemije na UL FKKT, oz. splošno uporaben za biokemika ali molekularnega biologa.
   - Predavatelj pri predmetu vam je vnaprej pripravil seznam potencialnih programov, ki jih boste predstavili (s seznama si boste sami izbrali želenega), lahko pa tudi sami predlagate kak program, a v slednjem primeru mora vaš predlog potrditi predavatelj.
 - **Programi naj bodo spletni** oz. morajo teči na javno dostopnem strežniku, z njimi pa se naj interagira preko spletnega brskalnika (vajo se tako lahko izvaja na računalniku, ki nima nainstalirane neke posebne programske opreme).
@@ -21,7 +21,7 @@ Povezava do seznama s termini seminarjev, pari ter izbranimi programi je objavlj
 Navodila za vaje boste pripravili v obliki datoteke formata MarkDown. **Obvezno uporabite [predlogo](seminar-predloga.md)**, pri oblikovanju pa si pomagajte s [splošnimi navodili za oblikovanje](../priloge/markdown.md) tovrstnih datotek.
 
 Na kratko:
-1. Prenesite datoteko s [predlogo](https://mpavsic.github.io/biokeminfo/_sources/seminar/seminar-predloga.md).
+1. Prenesite datoteko s [predlogo](https://mpavsic.github.io/biokeminfo/_sources/seminar/seminar_2021-2022/seminar-predloga.md).
 2. Vsebino prenešene datoteke uredite oz. njeno vsebino nadomestite z vašo – za pisanje lahko uporabite običajen program za delo s tekstovnimi datotekami, priporočam pa uporabo kakšnega specializiranega programa, ki omogoča predogled. Primeri: [Visual Studio Code](https://code.visualstudio.com/) ali pa kar [JupyterLab](../priloge/jupyterlab.ipynb), ki ga sicer uporabljamo za delo z datotekami tipa ipynb (IPython Notebook).
    - Na povezavi s [predlogo](seminar-predloga.md) vidite, kako izgleda ta datoteka, ko je pretvorjena v html. Pri oblikovanju si tako pomagajte s primerjavo tega izgleda in pa same datoteke MarkDown. Na enak način bo pretvorjena tudi vaša datoteka.
    - V navodila lahko vključite tudi eno ali več slik. *Pazite, da imate pravico za njihovo uporabo ter da ustreno navedete referenco.* V primeru lastnih zaslonskih slik (*screenshotov*) vmesnika programa ali pa primera rezultata analiz ni teh težav.
