@@ -429,7 +429,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s00">
 <h1>S00<a class="headerlink" href="#s00" title="Permalink to this headline">#</a></h1>
-<p>Spodaj prikazan primer seminarske naloge ne vsebuje odgovorov na vsa vprašanja, ki se nahajajo v predlogi, namen pa je prikazati obliko pričakovanih odgovorov, podkrepljenih z razlagami. Razlaga, zakaj lahko le za del zapisa identificiramo neko statistično signifikantno podobnost z zapisi iz zbirke, je sicer nekoliko bolj izčrpen, kot se od vas pričakuje.</p>
+<p>Spodaj prikazan primer seminarske naloge ne vsebuje odgovorov na vsa vprašanja, ki se nahajajo v predlogi, namen pa je prikazati obliko pričakovanih odgovorov, podkrepljenih z razlagami. Razlaga, zakaj lahko le za del zapisa identificiramo neko statistično signifikantno podobnost z zapisi iz zbirke, je sicer nekoliko bolj izčrpna, kot se od vas pričakuje.</p>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Poskusni zajček</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-10</p></li>
@@ -483,7 +483,9 @@ document.write(`
 <p>Zadetki pokrivajo začetni del iskalnega aminokislinskega zaporedja:</p>
 <p><img alt="blastp grafični prikaz" src="../../../_images/s00-blastp_swissprot_graficno.png" /></p>
 <p>Najbolj podobno (skoraj 60 % identičnost v poravnanem delu, ki obsega 43 % iskalnega zaporedja) je zaporedje v zapisu Uniprot <a class="reference external" href="https://www.uniprot.org/uniprotkb/O14405">O14405</a>; gre za endoglukanazo-4 (endoglucanase-4) iz organizma <a class="reference external" href="https://en.wikipedia.org/wiki/Trichoderma_reesei"><em>Hypocrea jecorina</em></a> (<em>Trichoderma reesei</em>). Za ta protein, ki je dejansko celulaza, je pripisano, da se nahaja v zunajceličnem okolju, kar se sklada s celulolitično aktivnostjo. Skupaj s signalnim peptidom obsega 344 aminokislinskih ostankov.</p>
-<p>Na osnovi relativno visoke podobnosti z iskalnim zaporedjem lahko sklepam, da je protein z zaporedjem KAG9582750.1_ak <strong>celulaza, ki se nahaja v zunajceličnem okolju</strong>. Očitno je, da le del aminokislinskega zaporedja predstavlja celulazo. Ker ponovno iskanje z blastx (pa tudi ne z blastn) po zbirki nr z delom nukleotidnega zaporedja, ki obsega zadnjo tretjino podanega zaporedja, ne da zadetkov s statistično značilno podobnostjo, je med drugim možno, da:</p>
+<p>Na osnovi relativno visoke podobnosti z iskalnim zaporedjem lahko sklepam, da je protein z zaporedjem KAG9582750.1_ak <strong>celulaza, ki se nahaja v zunajceličnem okolju</strong>. V zaporedju KAG9582750.1_ak sicer ni prisoten signalni peptid, ki pa se nahaja v aminokislinskem zaporedju <a class="reference external" href="https://www.uniprot.org/uniprotkb/O14405">O14405</a> (v Uniprot je anotiran signalni peptid, ki obsega ostanke 1-21), kar je razvidno iz poravnave, pripravljene z orodjem Clustal Omega:</p>
+<p><img alt="poravnava z O14405" src="../../../_images/s00-poravnava-O14405.png" /></p>
+<p>Očitno je, da le del aminokislinskega zaporedja predstavlja celulazo. Ker ponovno iskanje z blastx (pa tudi ne z blastn) po zbirki nr z delom nukleotidnega zaporedja, ki obsega zadnjo tretjino podanega zaporedja, ne da zadetkov s statistično značilno podobnostjo, je med drugim možno, da:</p>
 <ul class="simple">
 <li><p>je pri pripravi konstrukta za sekvenciranje prišlo do napake in se je del zaporedja za endoglukanazo spojil z nekim unikatnim zaporedjem,</p></li>
 <li><p>predstavlja dano zaporedje eksonski+intronski del,</p></li>
