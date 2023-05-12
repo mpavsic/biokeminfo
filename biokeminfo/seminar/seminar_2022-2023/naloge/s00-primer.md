@@ -1,6 +1,6 @@
 # S00
 
-Spodaj prikazan primer seminarske naloge ne vsebuje odgovorov na vsa vprašanja, ki se nahajajo v predlogi, namen pa je prikazati obliko pričakovanih odgovorov, podkrepljenih z razlagami. Razlaga, zakaj lahko le za del zapisa identificiramo neko statistično signifikantno podobnost z zapisi iz zbirke, je sicer nekoliko bolj izčrpen, kot se od vas pričakuje.
+Spodaj prikazan primer seminarske naloge ne vsebuje odgovorov na vsa vprašanja, ki se nahajajo v predlogi, namen pa je prikazati obliko pričakovanih odgovorov, podkrepljenih z razlagami. Razlaga, zakaj lahko le za del zapisa identificiramo neko statistično signifikantno podobnost z zapisi iz zbirke, je sicer nekoliko bolj izčrpna, kot se od vas pričakuje.
 
 - **Avtor**: Poskusni zajček
 - **Datum izdelave**: 2023-05-10
@@ -66,7 +66,11 @@ Zadetki pokrivajo začetni del iskalnega aminokislinskega zaporedja:
 
 Najbolj podobno (skoraj 60 % identičnost v poravnanem delu, ki obsega 43 % iskalnega zaporedja) je zaporedje v zapisu Uniprot [O14405](https://www.uniprot.org/uniprotkb/O14405); gre za endoglukanazo-4 (endoglucanase-4) iz organizma [*Hypocrea jecorina*](https://en.wikipedia.org/wiki/Trichoderma_reesei) (*Trichoderma reesei*). Za ta protein, ki je dejansko celulaza, je pripisano, da se nahaja v zunajceličnem okolju, kar se sklada s celulolitično aktivnostjo. Skupaj s signalnim peptidom obsega 344 aminokislinskih ostankov.
 
-Na osnovi relativno visoke podobnosti z iskalnim zaporedjem lahko sklepam, da je protein z zaporedjem KAG9582750.1_ak **celulaza, ki se nahaja v zunajceličnem okolju**. Očitno je, da le del aminokislinskega zaporedja predstavlja celulazo. Ker ponovno iskanje z blastx (pa tudi ne z blastn) po zbirki nr z delom nukleotidnega zaporedja, ki obsega zadnjo tretjino podanega zaporedja, ne da zadetkov s statistično značilno podobnostjo, je med drugim možno, da:
+Na osnovi relativno visoke podobnosti z iskalnim zaporedjem lahko sklepam, da je protein z zaporedjem KAG9582750.1_ak **celulaza, ki se nahaja v zunajceličnem okolju**. V zaporedju KAG9582750.1_ak sicer ni prisoten signalni peptid, ki pa se nahaja v aminokislinskem zaporedju [O14405](https://www.uniprot.org/uniprotkb/O14405) (v Uniprot je anotiran signalni peptid, ki obsega ostanke 1-21), kar je razvidno iz poravnave, pripravljene z orodjem Clustal Omega:
+
+![poravnava z O14405](s00-poravnava-O14405.png)
+
+Očitno je, da le del aminokislinskega zaporedja predstavlja celulazo. Ker ponovno iskanje z blastx (pa tudi ne z blastn) po zbirki nr z delom nukleotidnega zaporedja, ki obsega zadnjo tretjino podanega zaporedja, ne da zadetkov s statistično značilno podobnostjo, je med drugim možno, da:
 - je pri pripravi konstrukta za sekvenciranje prišlo do napake in se je del zaporedja za endoglukanazo spojil z nekim unikatnim zaporedjem,
 - predstavlja dano zaporedje eksonski+intronski del,
 - ali pa podano zaporedje predstavlja nek fukcijsko neaktiven genomski del, nastal z duplikacijo dela zapisa za endoglukanazo in spojitvijo z nekim drugim unikatnim genomskim zaporedjem.
