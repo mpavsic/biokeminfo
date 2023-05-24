@@ -407,10 +407,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skupina-a">Skupina A</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-1">Termin 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2">Termin 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatki">Vhodni podatki</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-1-za-skupino-a-in-b">Termin 1 za skupino A in B</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2-skupina-a">Termin 2 (skupina A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2-skupina-b">Termin 2 (skupina B)</a></li>
 </ul>
 </li>
 </ul>
@@ -451,15 +452,16 @@ document.write(`
 <li><p><strong>termin 2</strong> je namenjen samostojnemu reševanju problema, pri katerem ima vsak posameznik drugačne vhodne podatke, rezultate analiz ter interpretacijo pa je potrebno po zaključku tega termina oddati.</p></li>
 </ul>
 <hr class="docutils" />
-<section id="skupina-a">
-<h2>Skupina A<a class="headerlink" href="#skupina-a" title="Permalink to this headline">#</a></h2>
 <section id="uvod">
-<h3>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">#</a></h3>
-<p>Na raziskovalnem inštitutu, kjer se ukvarjajo z iskanjem novih potencialno industrijsko uporabnih encimov iz slabše okarakteriziranih organizmov, je prišlo do obsežnega požara. Pri tem je bila uničena vsa lokalno shranjena laboratorijska dokumentacija, po nesreči pa so ugotovili, da že nekaj let zaradi malomarnosti IT osebja sistem za izdelavo varnostne kopije na drugi lokaciji ni deloval. Vse, kar je ostalo, je nekaj potencialno pomembnih vzorcev DNA, ki so ostali v kletnem zamrzovalniku, a brez dokumentacije žal ni mogoče ugotoviti, kaj je uporabno in pomembno ter kaj ne. Vaša naloga je, da poizkusite iz tega materiala izluščiti, za kaj gre in ali se izplača z delom nadaljevati. Na pomoč raziskovalca, ki je vzorce pripravil, ne morete računati, saj je iz obupa delo pustil in odšel na kolesarjenje okoli sveta.</p>
-<p>Ne preostane vam nič drugega kot do, da določite nukleotidna zaporedja vključkov v standardnem klonirnem vektorju, ki je bil v uporabi v tem laboratoriju pri kloniranju zapisov za nove encime. Vaš izhodiščni podatek je eno izmed tako določenih nukleotidnih zaporedij.</p>
+<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">#</a></h2>
+<p>Na raziskovalnem inštitutu, kjer se ukvarjajo z iskanjem novih potencialno industrijsko uporabnih encimov iz slabše okarakteriziranih organizmov, je prišlo do obsežnega požara. Pri tem je bila uničena praktično vsa lokalno shranjena laboratorijska dokumentacija, po nesreči pa so ugotovili, da že nekaj let zaradi malomarnosti IT osebja sistem za izdelavo varnostne kopije na drugi lokaciji ni deloval. Vse, kar je ostalo, je nekaj potencialno pomembnih vzorcev DNA, ki so ostali v kletnem zamrzovalniku, a brez dokumentacije žal ni mogoče ugotoviti, kaj je uporabno in pomembno ter kaj ne. Zraven tega je ostalo še nekaj datotek z aminokislinskimi zaporedji, a so njihove oznake neuporabne. Vaša naloga je, da poizkusite iz tega materiala izluščiti, za kaj gre in ali se izplača z delom nadaljevati. Na pomoč raziskovalca, ki je vzorce pripravil, ne morete računati, saj je iz obupa delo pustil in odšel na kolesarjenje okoli sveta.</p>
+<p>Ne preostane vam nič drugega kot do, da določite nukleotidna zaporedja vključkov v standardnem klonirnem vektorju, ki je bil v uporabi v tem laboratoriju pri kloniranju zapisov za nove encime, seveda pa ne gre zanemariti tudi tistih aminokislinskih zaporedij, ki so se od vseh podatkov ohranila. Vaš izhodiščni podatek je eno izmed tako določenih nukleotidnih zaporedij oziroma aminokislinskih zaporedij iz še ohranjenih zapiskov v laboratoriju.</p>
 </section>
-<section id="termin-1">
-<h3>Termin 1<a class="headerlink" href="#termin-1" title="Permalink to this headline">#</a></h3>
+<hr class="docutils" />
+<section id="vhodni-podatki">
+<h2>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h2>
+<section id="termin-1-za-skupino-a-in-b">
+<h3>Termin 1 za skupino A in B<a class="headerlink" href="#termin-1-za-skupino-a-in-b" title="Permalink to this headline">#</a></h3>
 <p>Vhodni podatek (zaporedje):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">seq1</span>
 <span class="n">TCGGGAACCAGCAACTCCGGTACTTGGGCTTCCGACAAGCTGATCTCTGATGGCTACAA</span>
@@ -480,9 +482,9 @@ document.write(`
 </ul>
 <p>Primer delno rešene naloge, ki naj bo za zgled za pripravo seminarske naloge, je dostopen <a class="reference internal" href="naloge/s00-primer.html"><span class="doc std std-doc">tukaj</span></a>.</p>
 </section>
-<section id="termin-2">
-<h3>Termin 2<a class="headerlink" href="#termin-2" title="Permalink to this headline">#</a></h3>
-<p>V spodnji tabeli so navedene oznake seminarjev in imena, Vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z <a class="reference internal" href="navodila.html"><span class="doc std std-doc">navodili</span></a> in ob upoštevanju <a class="reference internal" href="seminar-predloga_a.html"><span class="doc std std-doc">predloge za skupino A</span></a>.</p>
+<section id="termin-2-skupina-a">
+<h3>Termin 2 (skupina A)<a class="headerlink" href="#termin-2-skupina-a" title="Permalink to this headline">#</a></h3>
+<p>V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z <a class="reference internal" href="navodila.html"><span class="doc std std-doc">navodili</span></a> in ob upoštevanju <a class="reference internal" href="seminar-predloga_a.html"><span class="doc std std-doc">predloge za skupino A</span></a>.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Priimek, ime</p></th>
@@ -627,6 +629,174 @@ document.write(`
 </pre></div>
 </div>
 </section>
+<section id="termin-2-skupina-b">
+<h3>Termin 2 (skupina B)<a class="headerlink" href="#termin-2-skupina-b" title="Permalink to this headline">#</a></h3>
+<p>V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z <a class="reference internal" href="navodila.html"><span class="doc std std-doc">navodili</span></a> in ob upoštevanju <a class="reference internal" href="seminar-predloga_a.html"><span class="doc std std-doc">predloge za skupino A</span></a>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Priimek, ime</p></th>
+<th class="head"><p>Oznaka</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Amidović, Tea</p></td>
+<td><p>S20</p></td>
+</tr>
+<tr class="row-odd"><td><p>Auer, Špela</p></td>
+<td><p>S21</p></td>
+</tr>
+<tr class="row-even"><td><p>Bunc, Zara</p></td>
+<td><p>S22</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jeromelj, Tonja</p></td>
+<td><p>S23</p></td>
+</tr>
+<tr class="row-even"><td><p>Kastelic, Gal</p></td>
+<td><p>S24</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kogoj, Lena</p></td>
+<td><p>S25</p></td>
+</tr>
+<tr class="row-even"><td><p>Kolbl, Karidia</p></td>
+<td><p>S26</p></td>
+</tr>
+<tr class="row-odd"><td><p>Koren, Žiga</p></td>
+<td><p>S27</p></td>
+</tr>
+<tr class="row-even"><td><p>Korošec, Tinkara</p></td>
+<td><p>S28</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kovaček, Lucija</p></td>
+<td><p>S29</p></td>
+</tr>
+<tr class="row-even"><td><p>Krašna, Deni</p></td>
+<td><p>S30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kresal, Martin</p></td>
+<td><p>S31</p></td>
+</tr>
+<tr class="row-even"><td><p>Kristanc, Pia</p></td>
+<td><p>S32</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lah, Urša</p></td>
+<td><p>S33</p></td>
+</tr>
+<tr class="row-even"><td><p>Mikoš, Ula</p></td>
+<td><p>S34</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mužič, Taja</p></td>
+<td><p>S35</p></td>
+</tr>
+<tr class="row-even"><td><p>Petrovič, Filip</p></td>
+<td><p>S36</p></td>
+</tr>
+<tr class="row-odd"><td><p>Simonič, Laura</p></td>
+<td><p>S37</p></td>
+</tr>
+<tr class="row-even"><td><p>Stevanović, Sofija</p></td>
+<td><p>S38</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stojić, Ivana</p></td>
+<td><p>S39</p></td>
+</tr>
+<tr class="row-even"><td><p>Trajković, Miljan</p></td>
+<td><p>S40</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zupanc, Lara</p></td>
+<td><p>S41</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">S20</span>
+<span class="n">VYSHGPETIFMSVSASAYEKYKNGFFRFFHSDTTTISVEGEYEHEEGDLDERSIEITYGH</span>
+<span class="n">SKQGRSDLKQFIISSVMCGGAPAFIKALSGNTSDKNHFREIAKQYGAQLK</span>
+
+<span class="o">&gt;</span><span class="n">S21</span>
+<span class="n">EVTYLPVTGEGLVELSTLEASIRPDTILISVMHANNEVGTIQPLEEIGRLAAERDIYLHS</span>
+<span class="n">DAVQSVGKIPVNVDDLGVDLLSLSAHKLYGPKGVGALYIRKGTKLESIIQ</span>
+
+<span class="o">&gt;</span><span class="n">S22</span>
+<span class="n">TQQGIKNLTDAEAEAIIAKDRESHQRDLFDSIEKGDYPRWKLFIQVMPEKEAQTVPYHPF</span>
+<span class="n">DLTKVWYHGDYPLIEVGVMELNRNPENFFAEVEQAAFNPANIVPGIGFSP</span>
+
+<span class="o">&gt;</span><span class="n">S23</span>
+<span class="n">MTARRFMMPPTAGKRWVYLGVGSMAVNSATIAFPATAAAGDLAVLVYSQSNAHNRVLPSG</span>
+<span class="n">YSWLYSANAVPHHCYKVCAGGETSAPSPGDTPTTDGRGAVMLFRAIGGTA</span>
+
+<span class="o">&gt;</span><span class="n">S24</span>
+<span class="n">AYNSTATRPAADPTHWARVNVTPDDVAAIVAAGIDVARDVPTVTKSGALALTDRGRVVRA</span>
+<span class="n">NGAITIPAQASVAWPEGATMPVRNITGAAISLTPATDVTLRKDGTTKTGA</span>
+
+<span class="o">&gt;</span><span class="n">S25</span>
+<span class="n">IQIELAIDNYNILKEFDFSPIFKGYRQMRVIDTIGRESIIFELEKVDYDRQFKFKNIREI</span>
+<span class="n">VEQNWDISKIRIDKNTEINTLNHILLSGQTGSGKTYALLYLLLILAVRNA</span>
+
+<span class="o">&gt;</span><span class="n">S26</span>
+<span class="n">SILLEALLADVASKSPSLTDESLRAVYNASPEQFRTGPRVKVSHMLFRDRARAEEMLRRI</span>
+<span class="n">GEGEPFEALMKETGAYEGEVAADLGDIGRGNFVREFEAAAFGAKAGQVVG</span>
+
+<span class="o">&gt;</span><span class="n">S27</span>
+<span class="n">PQSSSVALAMAPVVEENKVILMSTGAQSDTISDAGDYIFRVQTNTKQEAEFFAEYIHDQT</span>
+<span class="n">DHEKIDLLVMNTAYANSLIDAFVRQGIYFNQIEKFDSKETDFRTHLNRIK</span>
+
+<span class="o">&gt;</span><span class="n">S28</span>
+<span class="n">KQYAEAFQERNPNLSVYNMVLHDDEANPHLHINYVPNFESSRGLTRRVGMDRALQQQGVE</span>
+<span class="n">GTGRKLIAHWRALETAYIEQLAKEYIPNFERANVGSHKYMKVRQYKEYAE</span>
+
+<span class="o">&gt;</span><span class="n">S29</span>
+<span class="n">VVLEGGSYVDESMITGEPVPVLKSPGARVVGGTLNTTSVFSFRADRIGKDTALARIIRLV</span>
+<span class="n">EDAQATKPPVQRIADVAVTYFIPAVLLIAFSAAAIWYLGFGATLLFSLTV</span>
+
+<span class="o">&gt;</span><span class="n">S30</span>
+<span class="n">YMAGLIMIGLARCIAMVIVWNELAKGDTEYAAGLVAFNSIFQVLFFSVYAYVFLTVFPSW</span>
+<span class="n">LGLQTFAVDITIGQIAESVFIYLGIPFIAGMITRFILLKFKSKEWYEKKF</span>
+
+<span class="o">&gt;</span><span class="n">S31</span>
+<span class="n">MNYYADIETGAVTTLEELRAAHPDTIYPIPLTVNEGYAPLEETLPEHDPATQRLSYSPTA</span>
+<span class="n">TETGGIWSRTITVIDLTPAELAAAKKARVPQVVTRRQARRALAIAGLLDL</span>
+
+<span class="o">&gt;</span><span class="n">S32</span>
+<span class="n">VPKSIGEIYSLLEKAGRLFGAEEDAARMIRELQASLAQIPSFARKPGIIFYQTHGYSPGA</span>
+<span class="n">GTFENSIIEAAGGFNLAAAAGITDYGQMDLEKLVGLKPELVVFASDQMQN</span>
+
+<span class="o">&gt;</span><span class="n">S33</span>
+<span class="n">MKHQPFRKFLFFVFCSICFNLILSKDLLSQSTLDTFLGAKDKYSNIKVIKVISADTIELE</span>
+<span class="n">NSDKIKLIGLKAPDAPEHKEEVKRDKNLQLIEPELSPILTIEEEAFNFTK</span>
+
+<span class="o">&gt;</span><span class="n">S34</span>
+<span class="n">IDQAMARLGHNVDFFLTHNRSIVNRCDDSVIRDGYIIRLSRGLAPKRTPLDLGGRTILGV</span>
+<span class="n">GPELNANITIYRDGFATTSPHIGNVRNPGTFAYLKETIATIGGLLGAEYD</span>
+
+<span class="o">&gt;</span><span class="n">S35</span>
+<span class="n">IAASAASVIAMAADDVQIARAGFIMIHNTWVVAVGDRHALRDVADWLEPFDVTATDIYAA</span>
+<span class="n">RTGLDENEIGRMLDRETWIGGAEAVEKGFADSLLSADEIDSKTNNSIESR</span>
+
+<span class="o">&gt;</span><span class="n">S36</span>
+<span class="n">LINLFFSQLVRVNTQTLPEHDKTLKYQCLLVLDEFTSMGRVGIIEKSIAFTAGYNIRYMI</span>
+<span class="n">IYQNDEQLESDDAYGKSGAFTLRKNLAVEVVYPPKDVDSTAERISKTFGK</span>
+
+<span class="o">&gt;</span><span class="n">S37</span>
+<span class="n">GREAILRVHIKDKPIDEEVDLEILAKRTPGFTGADLANMVNEAALLAARRGKTKIFMEEM</span>
+<span class="n">EESIERVIAGPEKKTRVISDKEKRLVAFHEAGHAVVSYMLPNTDKLHKIS</span>
+
+<span class="o">&gt;</span><span class="n">S38</span>
+<span class="n">PFFEGPKIIFPDIAKNVRFSLDEKGFFGSNTIYFIPKSDKYLLGLLNSKMGYYFFYHLCA</span>
+<span class="n">GLEGKNETYLRFFGQYLEHFPIRTINFSDPADKGRHDTMVALVERMLALH</span>
+
+<span class="o">&gt;</span><span class="n">S39</span>
+<span class="n">IIEGKRADKQAQNFYNWGIPTVESIRNIISLKDKRNLEIITSGGIRNGVDAAKCFALGAD</span>
+<span class="n">VIGMALPFLKEIYRDDKGEISENINKEIAKQNLQKFLNKFIEELKIALFL</span>
+
+<span class="o">&gt;</span><span class="n">S40</span>
+<span class="n">TADAITGFTDVGRGRDVMTSANTIRATFLDPNQDYQSTDADPWADEADVSERGEEAKDVQ</span>
+<span class="n">FNMAPSHSQARRLMKLEWFRANPVWVGTFNTNLMGLAAFAKRFIRIQYPL</span>
+
+<span class="o">&gt;</span><span class="n">S41</span>
+<span class="n">ADELDALETRLATERLDDAVAPGAEQSLASIWQGLTRAERRDPALRAHYARCLIRSGESA</span>
+<span class="n">AAAELLKGWLRHDWDDRLVTAWGELEEVPGDQGFAQAERWLNHRPDDPVL</span>
+</pre></div>
+</div>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -699,10 +869,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skupina-a">Skupina A</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-1">Termin 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2">Termin 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatki">Vhodni podatki</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-1-za-skupino-a-in-b">Termin 1 za skupino A in B</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2-skupina-a">Termin 2 (skupina A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#termin-2-skupina-b">Termin 2 (skupina B)</a></li>
 </ul>
 </li>
 </ul>

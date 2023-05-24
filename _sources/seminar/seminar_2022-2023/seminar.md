@@ -12,14 +12,15 @@ Vsaka skupina ima torej dva termina:
 - **termin 2** je namenjen samostojnemu reševanju problema, pri katerem ima vsak posameznik drugačne vhodne podatke, rezultate analiz ter interpretacijo pa je potrebno po zaključku tega termina oddati.
 
 ---
-## Skupina A
+## Uvod
+Na raziskovalnem inštitutu, kjer se ukvarjajo z iskanjem novih potencialno industrijsko uporabnih encimov iz slabše okarakteriziranih organizmov, je prišlo do obsežnega požara. Pri tem je bila uničena praktično vsa lokalno shranjena laboratorijska dokumentacija, po nesreči pa so ugotovili, da že nekaj let zaradi malomarnosti IT osebja sistem za izdelavo varnostne kopije na drugi lokaciji ni deloval. Vse, kar je ostalo, je nekaj potencialno pomembnih vzorcev DNA, ki so ostali v kletnem zamrzovalniku, a brez dokumentacije žal ni mogoče ugotoviti, kaj je uporabno in pomembno ter kaj ne. Zraven tega je ostalo še nekaj datotek z aminokislinskimi zaporedji, a so njihove oznake neuporabne. Vaša naloga je, da poizkusite iz tega materiala izluščiti, za kaj gre in ali se izplača z delom nadaljevati. Na pomoč raziskovalca, ki je vzorce pripravil, ne morete računati, saj je iz obupa delo pustil in odšel na kolesarjenje okoli sveta.
 
-### Uvod
-Na raziskovalnem inštitutu, kjer se ukvarjajo z iskanjem novih potencialno industrijsko uporabnih encimov iz slabše okarakteriziranih organizmov, je prišlo do obsežnega požara. Pri tem je bila uničena vsa lokalno shranjena laboratorijska dokumentacija, po nesreči pa so ugotovili, da že nekaj let zaradi malomarnosti IT osebja sistem za izdelavo varnostne kopije na drugi lokaciji ni deloval. Vse, kar je ostalo, je nekaj potencialno pomembnih vzorcev DNA, ki so ostali v kletnem zamrzovalniku, a brez dokumentacije žal ni mogoče ugotoviti, kaj je uporabno in pomembno ter kaj ne. Vaša naloga je, da poizkusite iz tega materiala izluščiti, za kaj gre in ali se izplača z delom nadaljevati. Na pomoč raziskovalca, ki je vzorce pripravil, ne morete računati, saj je iz obupa delo pustil in odšel na kolesarjenje okoli sveta.
+Ne preostane vam nič drugega kot do, da določite nukleotidna zaporedja vključkov v standardnem klonirnem vektorju, ki je bil v uporabi v tem laboratoriju pri kloniranju zapisov za nove encime, seveda pa ne gre zanemariti tudi tistih aminokislinskih zaporedij, ki so se od vseh podatkov ohranila. Vaš izhodiščni podatek je eno izmed tako določenih nukleotidnih zaporedij oziroma aminokislinskih zaporedij iz še ohranjenih zapiskov v laboratoriju.
 
-Ne preostane vam nič drugega kot do, da določite nukleotidna zaporedja vključkov v standardnem klonirnem vektorju, ki je bil v uporabi v tem laboratoriju pri kloniranju zapisov za nove encime. Vaš izhodiščni podatek je eno izmed tako določenih nukleotidnih zaporedij.
+---
+## Vhodni podatki
 
-### Termin 1
+### Termin 1 za skupino A in B
 Vhodni podatek (zaporedje):
 ```
 >seq1
@@ -40,9 +41,9 @@ Druge pomembne informacije:
 
 Primer delno rešene naloge, ki naj bo za zgled za pripravo seminarske naloge, je dostopen [tukaj](naloge/s00-primer.md).
 
-### Termin 2
+### Termin 2 (skupina A)
 
-V spodnji tabeli so navedene oznake seminarjev in imena, Vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge za skupino A](seminar-predloga_a.md).
+V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge za skupino A](seminar-predloga_a.md).
 
 | Priimek, ime            | Oznaka |
 | ----------------------- | ------ |
@@ -65,7 +66,6 @@ V spodnji tabeli so navedene oznake seminarjev in imena, Vhodni podatek (zapored
 | Trost, Teo              | S17    |
 | Tušek, Marcel           | S18    |
 | Vranješ, Tin            | S19    |
-
 
 ```
 >S01
@@ -143,4 +143,123 @@ ESIRQIHAFQHVRNSKGTEATPSGWRPGKQTLKPGPDLVGKVWEVWKTKM
 >S19
 DADNISIEGNGIIDGQGFEKYYPIKEGIYRPYIIRFIRCNFVKIKDVTLLNSAAWVQHYI
 ECDDLLIDGITVRSYSNKNNDGLNIEGCQRVTVTRCNIDSEDDSIVLKTL
+```
+
+### Termin 2 (skupina B)
+
+V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge za skupino A](seminar-predloga_a.md).
+
+| Priimek, ime       | Oznaka |
+| ------------------ | ------ |
+| Amidović, Tea      | S20    |
+| Auer, Špela        | S21    |
+| Bunc, Zara         | S22    |
+| Jeromelj, Tonja    | S23    |
+| Kastelic, Gal      | S24    |
+| Kogoj, Lena        | S25    |
+| Kolbl, Karidia     | S26    |
+| Koren, Žiga        | S27    |
+| Korošec, Tinkara   | S28    |
+| Kovaček, Lucija    | S29    |
+| Krašna, Deni       | S30    |
+| Kresal, Martin     | S31    |
+| Kristanc, Pia      | S32    |
+| Lah, Urša          | S33    |
+| Mikoš, Ula         | S34    |
+| Mužič, Taja        | S35    |
+| Petrovič, Filip    | S36    |
+| Simonič, Laura     | S37    |
+| Stevanović, Sofija | S38    |
+| Stojić, Ivana      | S39    |
+| Trajković, Miljan  | S40    |
+| Zupanc, Lara       | S41    |
+
+```
+>S20
+VYSHGPETIFMSVSASAYEKYKNGFFRFFHSDTTTISVEGEYEHEEGDLDERSIEITYGH
+SKQGRSDLKQFIISSVMCGGAPAFIKALSGNTSDKNHFREIAKQYGAQLK
+
+>S21
+EVTYLPVTGEGLVELSTLEASIRPDTILISVMHANNEVGTIQPLEEIGRLAAERDIYLHS
+DAVQSVGKIPVNVDDLGVDLLSLSAHKLYGPKGVGALYIRKGTKLESIIQ
+
+>S22
+TQQGIKNLTDAEAEAIIAKDRESHQRDLFDSIEKGDYPRWKLFIQVMPEKEAQTVPYHPF
+DLTKVWYHGDYPLIEVGVMELNRNPENFFAEVEQAAFNPANIVPGIGFSP
+
+>S23
+MTARRFMMPPTAGKRWVYLGVGSMAVNSATIAFPATAAAGDLAVLVYSQSNAHNRVLPSG
+YSWLYSANAVPHHCYKVCAGGETSAPSPGDTPTTDGRGAVMLFRAIGGTA
+
+>S24
+AYNSTATRPAADPTHWARVNVTPDDVAAIVAAGIDVARDVPTVTKSGALALTDRGRVVRA
+NGAITIPAQASVAWPEGATMPVRNITGAAISLTPATDVTLRKDGTTKTGA
+
+>S25
+IQIELAIDNYNILKEFDFSPIFKGYRQMRVIDTIGRESIIFELEKVDYDRQFKFKNIREI
+VEQNWDISKIRIDKNTEINTLNHILLSGQTGSGKTYALLYLLLILAVRNA
+
+>S26
+SILLEALLADVASKSPSLTDESLRAVYNASPEQFRTGPRVKVSHMLFRDRARAEEMLRRI
+GEGEPFEALMKETGAYEGEVAADLGDIGRGNFVREFEAAAFGAKAGQVVG
+
+>S27
+PQSSSVALAMAPVVEENKVILMSTGAQSDTISDAGDYIFRVQTNTKQEAEFFAEYIHDQT
+DHEKIDLLVMNTAYANSLIDAFVRQGIYFNQIEKFDSKETDFRTHLNRIK
+
+>S28
+KQYAEAFQERNPNLSVYNMVLHDDEANPHLHINYVPNFESSRGLTRRVGMDRALQQQGVE
+GTGRKLIAHWRALETAYIEQLAKEYIPNFERANVGSHKYMKVRQYKEYAE
+
+>S29
+VVLEGGSYVDESMITGEPVPVLKSPGARVVGGTLNTTSVFSFRADRIGKDTALARIIRLV
+EDAQATKPPVQRIADVAVTYFIPAVLLIAFSAAAIWYLGFGATLLFSLTV
+
+>S30
+YMAGLIMIGLARCIAMVIVWNELAKGDTEYAAGLVAFNSIFQVLFFSVYAYVFLTVFPSW
+LGLQTFAVDITIGQIAESVFIYLGIPFIAGMITRFILLKFKSKEWYEKKF
+
+>S31
+MNYYADIETGAVTTLEELRAAHPDTIYPIPLTVNEGYAPLEETLPEHDPATQRLSYSPTA
+TETGGIWSRTITVIDLTPAELAAAKKARVPQVVTRRQARRALAIAGLLDL
+
+>S32
+VPKSIGEIYSLLEKAGRLFGAEEDAARMIRELQASLAQIPSFARKPGIIFYQTHGYSPGA
+GTFENSIIEAAGGFNLAAAAGITDYGQMDLEKLVGLKPELVVFASDQMQN
+
+>S33
+MKHQPFRKFLFFVFCSICFNLILSKDLLSQSTLDTFLGAKDKYSNIKVIKVISADTIELE
+NSDKIKLIGLKAPDAPEHKEEVKRDKNLQLIEPELSPILTIEEEAFNFTK
+
+>S34
+IDQAMARLGHNVDFFLTHNRSIVNRCDDSVIRDGYIIRLSRGLAPKRTPLDLGGRTILGV
+GPELNANITIYRDGFATTSPHIGNVRNPGTFAYLKETIATIGGLLGAEYD
+
+>S35
+IAASAASVIAMAADDVQIARAGFIMIHNTWVVAVGDRHALRDVADWLEPFDVTATDIYAA
+RTGLDENEIGRMLDRETWIGGAEAVEKGFADSLLSADEIDSKTNNSIESR
+
+>S36
+LINLFFSQLVRVNTQTLPEHDKTLKYQCLLVLDEFTSMGRVGIIEKSIAFTAGYNIRYMI
+IYQNDEQLESDDAYGKSGAFTLRKNLAVEVVYPPKDVDSTAERISKTFGK
+
+>S37
+GREAILRVHIKDKPIDEEVDLEILAKRTPGFTGADLANMVNEAALLAARRGKTKIFMEEM
+EESIERVIAGPEKKTRVISDKEKRLVAFHEAGHAVVSYMLPNTDKLHKIS
+
+>S38
+PFFEGPKIIFPDIAKNVRFSLDEKGFFGSNTIYFIPKSDKYLLGLLNSKMGYYFFYHLCA
+GLEGKNETYLRFFGQYLEHFPIRTINFSDPADKGRHDTMVALVERMLALH
+
+>S39
+IIEGKRADKQAQNFYNWGIPTVESIRNIISLKDKRNLEIITSGGIRNGVDAAKCFALGAD
+VIGMALPFLKEIYRDDKGEISENINKEIAKQNLQKFLNKFIEELKIALFL
+
+>S40
+TADAITGFTDVGRGRDVMTSANTIRATFLDPNQDYQSTDADPWADEADVSERGEEAKDVQ
+FNMAPSHSQARRLMKLEWFRANPVWVGTFNTNLMGLAAFAKRFIRIQYPL
+
+>S41
+ADELDALETRLATERLDDAVAPGAEQSLASIWQGLTRAERRDPALRAHYARCLIRSGESA
+AAAELLKGWLRHDWDDRLVTAWGELEEVPGDQGFAQAERWLNHRPDDPVL
 ```
