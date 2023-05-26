@@ -37,13 +37,13 @@ CCTACTCTGCCTCTTCGTCCACTGCTGCTCCCGTCACCACCCAGGCTGCCGTTG
 
 Druge pomembne informacije:
 - [splošna navodila](navodila.md)
-- [predloga za poročilo za skupino A](seminar-predloga_a.md)
+- [predloga za poročilo](seminar-predloga.md)
 
 Primer delno rešene naloge, ki naj bo za zgled za pripravo seminarske naloge, je dostopen [tukaj](naloge/s00-primer.md).
 
 ### Termin 2 (skupina A)
 
-V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge za skupino A](seminar-predloga_a.md).
+V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge](seminar-predloga.md).
 
 | Priimek, ime            | Oznaka |
 | ----------------------- | ------ |
@@ -147,7 +147,7 @@ ECDDLLIDGITVRSYSNKNNDGLNIEGCQRVTVTRCNIDSEDDSIVLKTL
 
 ### Termin 2 (skupina B)
 
-V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge za skupino A](seminar-predloga_a.md).
+V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge](seminar-predloga.md).
 
 | Priimek, ime       | Oznaka |
 | ------------------ | ------ |
