@@ -45,27 +45,29 @@ Primer delno rešene naloge, ki naj bo za zgled za pripravo seminarske naloge, j
 
 V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge](seminar-predloga.md).
 
-| Priimek, ime            | Oznaka |
-| ----------------------- | ------ |
-| Agrež, Tim-David        | S01    |
-| Bohorč, Leila           | S02    |
-| Bohte, Janja            | S03    |
-| Fink, Luka              | S04    |
-| Frelih, Nika            | S05    |
-| Karčovnik, Maša         | S06    |
-| Kobal, Mia              | S07    |
-| Kolander, Patricija     | S08    |
-| Novel, Matija           | S09    |
-| Pečovnik Wutt, Naja     | S10    |
-| Pojbič, Taja            | S11    |
-| Poljanšek, Aleš         | S12    |
-| Pucihar, Samo           | S13    |
-| Rajterič, Lara          | S14    |
-| Rak, Karin              | S15    |
-| Šenica Pavletič, Primož | S16    |
-| Trost, Teo              | S17    |
-| Tušek, Marcel           | S18    |
-| Vranješ, Tin            | S19    |
+Oddane seminarske naloge so dostopne s klikom na oznako seminarja.
+
+| Priimek, ime            | Oznaka               |
+| ----------------------- | -------------------- |
+| Agrež, Tim-David        | [S01](naloge/s01)    |
+| Bohorč, Leila           | [S02](naloge/s02)    |
+| Bohte, Janja            | [S03](naloge/s03)    |
+| Fink, Luka              | [S04](naloge/s04)    |
+| Frelih, Nika            | [S05](naloge/s05)    |
+| Karčovnik, Maša         | [S06](naloge/s06)    |
+| Kobal, Mia              | [S07](naloge/s07)    |
+| Kolander, Patricija     | [S08](naloge/s08)    |
+| Novel, Matija           | [S09](naloge/s09)    |
+| Pečovnik Wutt, Naja     | [S10](naloge/s10)    |
+| Pojbič, Taja            | [S11](naloge/s11)    |
+| Poljanšek, Aleš         | [S12](naloge/s12)    |
+| Pucihar, Samo           | [S13](naloge/s13)    |
+| Rajterič, Lara          | [S14](naloge/s14)    |
+| Rak, Karin              | [S15](naloge/s15)    |
+| Šenica Pavletič, Primož | [S16](naloge/s16)    |
+| Trost, Teo              | [S17](naloge/s17)    |
+| Tušek, Marcel           | [S18](naloge/s18)    |
+| Vranješ, Tin            | [S19](naloge/s19)    |
 
 ```
 >S01
@@ -149,30 +151,32 @@ ECDDLLIDGITVRSYSNKNNDGLNIEGCQRVTVTRCNIDSEDDSIVLKTL
 
 V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z [navodili](navodila.md) in ob upoštevanju [predloge](seminar-predloga.md).
 
-| Priimek, ime       | Oznaka |
-| ------------------ | ------ |
-| Amidović, Tea      | S20    |
-| Auer, Špela        | S21    |
-| Bunc, Zara         | S22    |
-| Jeromelj, Tonja    | S23    |
-| Kastelic, Gal      | S24    |
-| Kogoj, Lena        | S25    |
-| Kolbl, Karidia     | S26    |
-| Koren, Žiga        | S27    |
-| Korošec, Tinkara   | S28    |
-| Kovaček, Lucija    | S29    |
-| Krašna, Deni       | S30    |
-| Kresal, Martin     | S31    |
-| Kristanc, Pia      | S32    |
-| Lah, Urša          | S33    |
-| Mikoš, Ula         | S34    |
-| Mužič, Taja        | S35    |
-| Petrovič, Filip    | S36    |
-| Simonič, Laura     | S37    |
-| Stevanović, Sofija | S38    |
-| Stojić, Ivana      | S39    |
-| Trajković, Miljan  | S40    |
-| Zupanc, Lara       | S41    |
+Oddane seminarske naloge so dostopne s klikom na oznako seminarja.
+
+| Priimek, ime       | Oznaka               |
+| ------------------ | -------------------- |
+| Amidović, Tea      | [S20](naloge/s20)    |
+| Auer, Špela        | [S21](naloge/s21)    |
+| Bunc, Zara         | [S22](naloge/s22)    |
+| Jeromelj, Tonja    | [S23](naloge/s23)    |
+| Kastelic, Gal      | [S24](naloge/s24)    |
+| Kogoj, Lena        | [S25](naloge/s25)    |
+| Kolbl, Karidia     | [S26](naloge/s26)    |
+| Koren, Žiga        | [S27](naloge/s27)    |
+| Korošec, Tinkara   | [S28](naloge/s28)    |
+| Kovaček, Lucija    | [S29](naloge/s29)    |
+| Krašna, Deni       | [S30](naloge/s30)    |
+| Kresal, Martin     | [S31](naloge/s31)    |
+| Kristanc, Pia      | [S32](naloge/s32)    |
+| Lah, Urša          | [S33](naloge/s33)    |
+| Mikoš, Ula         | [S34](naloge/s34)    |
+| Mužič, Taja        | [S35](naloge/s35)    |
+| Petrovič, Filip    | [S36](naloge/s36)    |
+| Simonič, Laura     | [S37](naloge/s37)    |
+| Stevanović, Sofija | [S38](naloge/s38)    |
+| Stojić, Ivana      | [S39](naloge/s39)    |
+| Trajković, Miljan  | [S40](naloge/s40)    |
+| Zupanc, Lara       | [S41](naloge/s41)    |
 
 ```
 >S20

@@ -1,0 +1,655 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>S22 &#8212; Biokemijska informatika</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2022-2023/naloge/s22';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2022-2023/naloge/s22.html" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../naslovnica.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../naslovnica.html">
+                    Uvod
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/dotplot_web.html">VAJA: Točkovni diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/git.html">Git in GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2022-2023.html">Vaje 2022/2023</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar.html">Seminarji 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../navodila.html">Splošna navodila</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../seminar_2021-2022/seminar.html">Seminarji 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/seminar/seminar_2022-2023/naloge/s22.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S22</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikacija">Identifikacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosna-karakterizacija">Splošna karakterizacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strukturna-katakterizacija">Strukturna katakterizacija</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s22">
+<h1>S22<a class="headerlink" href="#s22" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><strong>Avtor</strong>: Zara Bunc</p></li>
+<li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
+<li><p><strong>Koda seminarja</strong>: S22</p></li>
+</ul>
+<hr class="docutils" />
+<section id="vhodni-podatek">
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<p>Zaporedje:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TQQGIKNLTDAEAEAIIAKDRESHQRDLFDSIEKGDYPRWKLFIQVMPEKEAQTVPYHPF</span>
+<span class="n">DLTKVWYHGDYPLIEVGVMELNRNPENFFAEVEQAAFNPANIVPGIGFSP</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="rezultati-analiz">
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<section id="identifikacija">
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<p>Identifikacija je bila narejena z uporabo NCBI BLAST, varianta blastp (zbirka nr). Dobila sem zadetek s 100 % identičnostjo, zato sklepam, da predstavlja celoten zapis za moj protein.</p>
+<p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/NLJ22038.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=76D1PUT7016">&gt;NLJ22038.1 MAG: catalase [Methanothrix soehngenii]
+MPDKKKDKKLTTNVGAPVADNQNVLTAGQRGPMLLQDVWYLEKLAHFDREVIPERRMHAKGSGAYGTFTV
+THDITRFTRAMIFSKIGKKTDLFARFSTVAGERGAADAERDIRGFAVKFYTEEGNWDLVGNNTPVFFLRD
+PLKFPDLNHAIKRDPKTGMRSAKNNWDFWTSLPEALHQVTITMSDRGIPYSFRHMHGFGSHTFSMINTKN
+ERVWVKFHWVTQQGIKNLTDAEAEAIIAKDRESHQRDLFDSIEKGDYPRWKLFIQVMPEKEAQTVPYHPF
+DLTKVWYHGDYPLIEVGVMELNRNPENFFAEVEQAAFNPANIVPGIGFSPDRMLQGRLFSYGDAQRYRLG
+VNHHLIPVNRARCPTNIYHRDGMMRVDDNQGCTLAYEPNSYGEWQEQPEYREPPLELKGEAYHWDFRKDD
+DDYYTQPGKLFRLMKPEQQQALFENTARAMGDAPKMIKIRHIGNCYKADPAYGEGVARALGISMSEVHK</a></p>
+<p><img alt="blast identifikacija nr" src="../../../_images/s22-blast-nr.png" /></p>
+<p><img alt="grafični prikaz" src="../../../_images/s22-graficni_prikaz.png" /></p>
+<p>Najbolj podoben anotiran protein, ki ga dobim, s pomočjo iskanja po bazi podatkov Swiss-Prot (identičnost je bila 81,82 %):</p>
+<p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/Q9ZN99.2?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=76D2016V013">&gt;sp|Q9ZN99.2|CATA_DESVM RecName: Full=Catalase
+MTKHKLTTNAGAPVPDNQNAMTAGPRGPMLLQDVWFLEKLAHFDREVIPERRMHAKGSGAYGTFTVTHDI
+TSYTKAALFSKIGKKTDLFVRFSTVAGERGAADAERDIRGFAIKFYTEQGNWDLVGNNTPVFFLRDPLKF
+PDLNHAVKRDPRTNMRSAKNNWDFWTSLPEALHQVTVVMSDRGIPASYRHMHGFGSHTFSFISPDNQRYW
+VKFHLRTQQGIKNLTDAEAEAIVARDRESHQRDLYDSIERGDFPRWTMYVQVMPEKDAEKLPYHPFDLTK
+VWFHKDCPLIEVGVLELNRNPENYFAEVEQAAFNPANVVPGISFSPDKMLQGRLFSYGDAHRYRLGVNHH
+LIPVNAARCPVHSYHRDGAMRVDGNHGSTLAYEPNSYGEWQEQPDFAEPPLAIRGDAAHWNFREDDADYY
+DQPGRLFRLMTPQQQDELFQNTARAMGDAPEEIKRRHVGNCAKADPAYGAGVARALGLKM</a></p>
+<p><img alt="blast identifikacija swissprot" src="../../../_images/s22-blast-swissprot.png" /></p>
+<p><strong>Protein</strong>: katalaza (na kar sem sklepala iz blastp zadetkov, saj je identičnost 100 %)</p>
+<p><strong>Organizem</strong>: <a class="reference external" href="https://en.wikipedia.org/wiki/Methanothrix_soehngenii"><em>Methanothrix soehngenii</em></a>; gre za arhejo, ki je sposobna produkcije metana (metanogena arheja)</p>
+<p><strong>Potencialna funkcija proteina</strong>: Razgradnja vodikovega peroksida v vodo in kisik. Ščiti celice pred toksičnostjo vodikovega peroksida. Podatek sem pridobila iz prvega zadetka blastp Swiss-Prot (Q9ZN99).</p>
+<p><img alt="funkcija" src="../../../_images/s22-funkcija.png" /></p>
+</section>
+<section id="splosna-karakterizacija">
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<p>Za zapis GenBank NLJ22038.1 ni na voljo pripisov glede značilnosti proteinskega produkta. V pomoč so mi zato bila bolje anotirana zaporedja proteinov z aminokislinskim zaporedjem, podobnim aminokislinskemu zaporedju identificiranega proteina (kot je npr. Q9ZN99).</p>
+<p><strong>Lokacija proteina v celici izvornega organizma</strong>:
+Nahaja se v citoplazmi (sklep s pomočjo drugega anotiranega zaporedja O52762 iz blastp z iskanjem po bazi Swiss-Prot).</p>
+<p><img alt="celična lokacija" src="../../../_images/s22-lokacija.png" /></p>
+<p><strong>Post-translacijske modifikacije</strong>:
+Predvidevam, da jih nima (je citosolni protein). Navedeni anotirani proteini so bile sicer le bakterijski, za katere niso značilne post-translacijske modifikacije. Pri prvih dveh najbolj podobnih nisem našla niti nobene modificirane aminokisline. Čeprav so PTM pri arhejah možne, sklepam, da jih ta specifičen protein nima. Signalni peptid ni bil anotiran, zato sem ga poskušala napovedati z uporabo programa Signal Peptide Prediction. Vanj sem vnesla celotno zaporedje mojega proteina (NLJ22038). Glede na rezultat sklepam, da moj protein nima signalnega peptida.</p>
+<p><img alt="ptm" src="../../../_images/s22-ptm.png" /></p>
+<hr class="docutils" />
+<p><img alt="signalni peptid" src="../../../_images/s22-signalni-peptid.png" /></p>
+<p><strong>Gostiteljski organizem za pripravo proteina v rekombinatni obliki</strong>:
+Glede na to, da protein nima PTM in je relativno majhen, ga je najenostavneje pripraviti in izražati v bakterijski celici.</p>
+<p><strong>Del proteina, ki bi ga izražali</strong>:
+Verjetno je funkcijsko pomembno, da izrazimo celoten protein. Najverjetneje pa je ključno značilno katalazno aktivno mesto (aminokislinski ostanki 47-63). Slednji podatek sem pridobila s pomočjo orodja InterPro (slika se nahaja pri podnaslovu Ohranjene regije).</p>
+<p><strong>Znani homologi (ortologi, paralogi) in njihove značilnosti</strong>:
+Da sta si proteina homologna pomeni, da sta sta si podobna v nukleotidnem oz. aminokislinskem zaporedju in skoraj vedno tudi v 3D-strukturi. Proteine s podobnim zaporedjam najlažje najdemo s pomočjo orodja blastp.</p>
+<p>Ortologi so homologni proteini, prisotni v različnih speciesih, ki imajo podobno ali identično funkcijo. Njih najlažje poiščemo z metodo reverznega blasta. V blastp sem vnesla Fasta zaporedje proteina Q9ZN99, ki sem ga dobila z blastp z iskanjem po Swiss-Protu (ortolog iščem med Swiss-Prot zadetki, ker želim, da je ortolog, ki ga najdem anotiran, da lahko razberem njegove značilnosti) in iskala po organizmu Methanothrix soehngenii.
+Dobila sem nazaj svoje zaporedje (NLJ22038), zato sklepam, da sta proteina med sabo ortologa:</p>
+<p><img alt="ortolog" src="../../../_images/s22-ortolog.png" /></p>
+<p>O ortolognem proteinu iz SwissProta <span class="xref myst">Q9ZN99</span> je znana: funkcija (katalaza), PTM niso navedene (protein je bakterijski in jih nima), aktivno in vezavno mesto je znano (aktivno mesto: H54, N127; vezavno mesto za substrat: Y337), vsebuje kofaktor heme, struktura je napovedana le z AlphaFold.</p>
+<p>Enak postopek bi lahko naredila tudi za ostale blastp Swiss-Prot zadetke in bolj natančno določila, ali gre za ortologe.</p>
+<p>Paralogi pa so homologi, prisotni znotraj enega speciesa. Nastanejo s podvojitvijo gena, funkcija pa ni nujno ohranjena.
+Z iskanjem podobnih zaporedij mojemu s pomočjo orodja blastp (nastavim iskanje le po mojem organizmu) dobim zgolj zadetke proteinov, ki imajo funkcijo katalaze:</p>
+<p><img alt="paralogi 1" src="../../../_images/s22-paralogi-1.png" /></p>
+<p>Zato se iskanja podobnih zaporedij lotim še z orodjem PDBeFold, ki išče proteine tudi na osnovi strukturne podobnosti. Struktura mojega proteina še ni bila določena niti z AlphaFoldom. Moje zaporedje vnesem v PBD-iskalnik, dobim najbolj podobne strukture (označim CSM, da iščem med eksperimentalno in računalniško določenimi). Prav vse najdene strukture so imele vlogo katalaze (označim še filter Archaea - tudi tisti protein je katalaza).</p>
+<p><img alt="paralog 2" src="../../../_images/s22-paralog-2.png" /></p>
+<p>Na podlagi teh podatkov sklepam, da paralogov ni oz. še niso bili določeni.</p>
+<p>S pomočjo 10 zadetkov, ki sem jih dobila prek iskanja blastp po Swiss-Protu tvorim še filogenetsko drevo in ugotovaljam podobnosti. Fasta zaporedja, vključno z mojim, vnesem v Clustal Omega in dobim podatke za tvorbo filogenteskga drevesa. Te vnesem v <a class="reference external" href="http://phylo.io">phylo.io</a> in dobim izris drevesa:</p>
+<p><img alt="filogenetsko drevo" src="../../../_images/s22-filogenetsko-drevo.png" /></p>
+<p>Opazim, da je moj protein (označen z MOJE) daleč najbolj soroden proteinu Q9ZN99 (sta v razvejtivi najbolj blizu skupaj), s katerim ima tudi največjo stopnjo identičnosti, prek reverznega blasta pa sem ugotovila, da je tudi njegov ortolog.</p>
+<p><strong>Vrsta proteina</strong>:
+Encim katalaza.</p>
+<p><strong>Ohranjenost aktivnega mesta glede na homologe</strong>:
+S pomočjo blasta v UniProtu sem po zbirki podatkov UniProt Swiss-Prot (da so bila aktivna mesta anotirana) iskala zaporedja podobna mojemu (NLJ22038). Nato sem moje zaporedje poravnala z prvimi 10 najdenimi. Ugotovila sem, da je aktivno mesto mojega proteina v primerjavi z aktivnimi homologi dobro ohranjeno (H58, N131), prav tako vezavno mesto (Y341).</p>
+<p><img alt="aktivno mesto" src="../../../_images/s22-aktivno-mesto.png" /></p>
+<hr class="docutils" />
+<p><img alt="vezavno mesto" src="../../../_images/s22-vezavno-mesto.png" /></p>
+<p><strong>Ohranjene regije</strong>:
+Ker na UniProtu ni bilo anotiranih nobenih specifičnih regij (razen tistih, za katere naj ne bi bilo povsem določeno, kakšne so), sem pomagala z orodjem InterPro. Vnesla sem svoje zaporedje (prva slika) in najbolj podobno Swiss-Prot zaporedje (druga slika) in ju primerjala med sabo. Najbolj ohranjene regije so: osrednja katalazna domena, domena z imunsko odzivnostjo, aktivno in vezavno mesto katalaze.</p>
+<p><img alt="interpro moje zaporedje" src="../../../_images/s22-interpro-1.png" /></p>
+<hr class="docutils" />
+<p><img alt="interpro swissprot zaporedje" src="../../../_images/s22-interpro-2.png" /></p>
+<p><strong>Ponavljajoče se regije oz. motivi</strong>:
+Za detekcijo ponavljujočih regij sem uporabila Dotmatcher, tako da sem moje zaporedje (NLJ22038) poravnala s samim s sabo in ugotovila, katere regije se ponovijo na katerih mestih (npr. motiv, ki se pojavih pri okoli 50. aminokislinskem ostanku, se ponovno pojavi pri okoli 200.)</p>
+<p><img alt="dotmatcher" src="../../../_images/s22-dotmatcher.png" /></p>
+<p>Ker je ta rezultat nekoliko nenatančen, sem uporabila še spletno orodje <a class="reference external" href="https://novoprolabs.com/tools/repeats-sequences-finder">NovoPro</a> za iskanje ponavljujočih se zaporedij. Število minimalnih ponovitev sem nastavila na 3 (za 5 ni bilo zadetkov, za 4 zgolj en). Izpis regij, ki se ponovijo in njihove pozicije:</p>
+<p><img alt="novopro" src="../../../_images/s22-novopro.png" /></p>
+<p><strong>Interakcije proteina z drugimi proteini in molekulami</strong>:
+V orodje String, ki se uporablja za določanje interakcij med proteini, sem vnesla zaporedje mojega proteina. Nastavitve sem prilagodila tako, da sem iskala le interakcije, ki so bile eksperimentalno potrjene. Najprej nisem dobila nobenega zadetka (tj. da protein funkcijsko in fizično ni povezan z nobenim proteinom). Nato sem iskanje prilagodila tako, da sem iskala zgolj fizične povezave (da sta proteina fizično povezana v kompleksu). Tako sem ugotovila, da moj protein fizično interagira z nukleozid-difosfat kinazo:</p>
+<p><img alt="string" src="../../../_images/s22-string.png" /></p>
+</section>
+<section id="strukturna-katakterizacija">
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<p><strong>Je struktura proteina znana?</strong>
+Struktura mojega proteina ni znana (niti ni napovedana z AlphaFoldom).</p>
+<p><strong>Znane strukture homologov</strong>:
+Struktura najbolj podobnega zadetka iz Swiss-Prota (Q9ZN99) ni znana (le napovedana z AlphaFoldom). Znane pa so strukture nekaterih manj podobnih (O52762, P42321). Bile so določene z X-žarkovno difrakcijo. Našla sem jih s pomočjo iskanja po zbirki PDB (označim iskanje tudi po CSM), kamor vnesem moje zaporedje:</p>
+<p><img alt="paralog 2" src="../../../_images/s22-paralog-2.png" /></p>
+<p><strong>Model proteina oz. njegovega dela, ki bi predstavljal funkcionalen topen protein</strong>:
+Model strukture sem tvorila s pomočjo orodja AlphaFold2. Večina strukture je določena z zelo veliko verjetnostjo:</p>
+<p><img alt="alphafold" src="../../../_images/s22-alphafold.png" /></p>
+<p><strong>Primerjava modela z eksperimentalno strukturo homologa (funkcijsko pomembne regije)</strong>:
+Model strukture mojega proteina in najbolj podobno eksperimentalno določeno strukturo homologa (PDB koda: 2ISA) sem poravnala v Chimeri. Z zeleno je označen moj protein, ki sem ga modelirala s pomočjo orodja AlphaFold2, z vijolično pa homologen eksperimentalno določen protein (ki ima 8 podenot, moj protein sem poravnala z eno). Opazimo, da sta proteina lepo poravnana med sabo, kar nakazuje na njuno veliko strukturno podobnost in posledično gotovo tudi funkcijo.</p>
+<p><img alt="poravnava" src="../../../_images/s22-chimera.png" /></p>
+<p>Struktura homologa je eksperimentalno določena in anotirana, zato sem v Chimeri označila aminokislinske ostanke v njegovem aktivnem in vezavnem mestu (označeni z rdečo):</p>
+<p><img alt="anotacije chimera" src="../../../_images/s22-anotacije-chimera.png" />
+<img alt="struktura" src="../../../_images/s22-struktura.png" /></p>
+<p>Blizu aktivnega mesta najdem tudi kofaktor heme, ki je bistven za katalitično aktivnost encima.
+Ker je tudi struktura mojega proteina na tem mestu dobro ohranjena in zelo podobna strukturi homologa, lahko sklepam, da ima moj protein res enako funkcijo kot njegov homolog (funkcijo encima katalaze).</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2022-2023/naloge"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikacija">Identifikacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosna-karakterizacija">Splošna karakterizacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strukturna-katakterizacija">Strukturna katakterizacija</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

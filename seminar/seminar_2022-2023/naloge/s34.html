@@ -1,0 +1,709 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>S34 &#8212; Biokemijska informatika</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2022-2023/naloge/s34';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2022-2023/naloge/s34.html" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../naslovnica.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../naslovnica.html">
+                    Uvod
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/dotplot_web.html">VAJA: Točkovni diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/git.html">Git in GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2022-2023.html">Vaje 2022/2023</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar.html">Seminarji 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../navodila.html">Splošna navodila</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../seminar_2021-2022/seminar.html">Seminarji 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/seminar/seminar_2022-2023/naloge/s34.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S34</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikacija">Identifikacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosna-karakterizacija">Splošna karakterizacija</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kje-v-izvornem-organizmu-celici-se-protein-nahaja">Kje v izvornem organizmu/celici se protein nahaja?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#katere-post-translacijske-modifikacije-ima">Katere post-translacijske modifikacije ima?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-zelimo-pripraviti-protein-v-rekombinantni-obliki-kateri-gostiteljski-organizem-je-najbolj-smiselno-izbrati-in-kateri-del-proteina-bi-izrazali">Če želimo pripraviti protein v rekombinantni obliki, kateri gostiteljski organizem je najbolj smiselno izbrati in kateri del proteina bi izražali?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#so-znani-kaksni-homologi-ortologi-paralogi-kaj-je-znanega-o-njih-funkcija-modifikacije-regulacija-aktivno-mesto">So znani kakšni homologi (ortologi, paralogi)? Kaj je znanega o njih (funkcija, modifikacije, regulacija, aktivno mesto, …)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#predstavlja-nas-protein-encim-ali-gre-za-kak-drug-protein">Predstavlja naš protein encim ali gre za kak drug protein?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-gre-za-encim-ali-je-aktivno-mesto-v-primerjavi-z-aktivnimi-homologi-ohranjeno">Če gre za encim – ali je aktivno mesto v primerjavi z aktivnimi homologi ohranjeno?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kaj-so-najbolj-ohranjene-regije-v-skupini-ki-jo-predstavlja-ta-protein-in-njegovi-homologi">Kaj so najbolj ohranjene regije v skupini, ki jo predstavlja ta protein in njegovi homologi?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#so-v-zaporedju-kaksne-ponavljajoce-se-regije-oz-motivi">So v zaporedju kakšne ponavljajoče se regije oz. motivi?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s-katerimi-proteini-ali-drugimi-molekulami-bi-lahko-ta-protein-potencialno-interagiral">S katerimi proteini ali drugimi molekulami bi lahko ta protein potencialno interagiral?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strukturna-katakterizacija">Strukturna katakterizacija</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#je-znana-struktura-tega-proteina-ali-njegovega-dela">Je znana struktura tega proteina ali njegovega dela?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#je-znana-struktura-homologov-katerih">Je znana struktura homologov? Katerih?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pripravite-model-proteina-oz-njegovega-dela-ki-bi-predstavljal-funkcionalen-topen-protein">Pripravite model proteina oz. njegovega dela, ki bi predstavljal funkcionalen topen protein.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primerjajte-model-oz-eksperimentalno-strukturo-z-eksperimentalno-strukturo-homologa-osredotocite-se-na-funkcijsko-pomembne-regije">Primerjajte model oz. eksperimentalno strukturo z eksperimentalno strukturo homologa, osredotočite se na funkcijsko pomembne regije.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s34">
+<h1>S34<a class="headerlink" href="#s34" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><strong>Avtor</strong>: Ula Mikoš</p></li>
+<li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
+<li><p><strong>Koda seminarja</strong>: S34</p></li>
+</ul>
+<hr class="docutils" />
+<section id="vhodni-podatek">
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<p>Zaporedje:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IDQAMARLGHNVDFFLTHNRSIVNRCDDSVIRDGYIIRLSRGLAPKRTPLDLGGRTILGV</span>
+<span class="n">GPELNANITIYRDGFATTSPHIGNVRNPGTFAYLKETIATIGGLLGAEYD</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="rezultati-analiz">
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<section id="identifikacija">
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<p><strong>Protein</strong>: karbamoil transferaza</p>
+<p><strong>Organizem</strong>: Organizem ni znan. Vzorec je bil vzet iz okolja - jarek, ki je vseboval oziroma je bil kontaminiran z ogljikovodiki (hydrocarbon metagenome). V takem okolju uspevajo organizmi, ki lahko te ogljikovodike razgrajujejo in s tem pridobivajo potrebno energijo. Sem sodijo tudi <a class="reference external" href="https://en.wikipedia.org/wiki/Methanocalculus"><em>Methanocalculus</em></a> arheje.</p>
+<p><strong>Potencialna funkcija proteina</strong>: prenos karboksamidne skupine</p>
+<p>Identifikacija je bila narejena z uporabo NCBI BLAST, varianta blastp (env_nr). Podobnosti med zaporedji so bila najdena po celotni dolžini naporedja (Query cover &gt;80 %). Prevedeno zaporedje je verjetno protein za sestavljanje metalocentra hidrogenaz (hydrogenase metallocenter assembly protein) (100 % identičnost, E vrednost &lt; 2e-69).</p>
+<p>*ugotovljeno kasneje (pripis pri homologu proteina iz <em>E. coli</em>): v odsotnosti substratov deluje kot karbamoilfosfat fosfataza (acilfosfatazna domena).</p>
+<p>Slika prikazuje tabelo zadetkov blastp.</p>
+<img src='s34-OG-metagenomic.png' alt='BlastP' width='80%' height='80%' title='BlastP'>
+<br/>
+<p>Do potencialne funkcije proteina sem prišla po treh poteh.</p>
+<ol class="arabic simple">
+<li><p>Z uporabo NCBI BLAST, varianta blastp (nr). Zadetki so imeli signifikantno podobnost po celotnem zaporedju in ti so bili v večini karbamoil transferaze.</p></li>
+</ol>
+<img src='s34-blast-non.png' alt='Blast-Non' width='80%' height='80%' title='Blast-Non'>
+<br/>
+<ol class="arabic simple" start="2">
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/KUG14427.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=70ND0RA5013">KUG14427.1</a> je koda zapisa na GenBanku 100 % ujemajočega zaporedja, kjer je pod ‘features&gt;source’ zapisana opomba ‘<em>Methanocalculus</em>’. Pripis tudi vsebuje podatek, da zaporedje kodira protein, ki sestavlja metalocenter hidrogenaz in vsebuje regijo HypF, ki je faktor zorenja hidrogenaz oziroma po funkciji karbamoil transferaza.</p></li>
+</ol>
+<hr class="docutils" />
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Aminokislinsko zaporedje:
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MRQSGRIIIRGIVQGVGFRPFVYARAQEYGMSGWVKNLGSEVEICAKGKLFEEFLAAVRAGPPLARIDHL</span>
+<span class="n">AVTPWDGPIPDDFAILPSGSGTLSGMIPPDIATCEQCLGDITCTGERYDGYWATSCVNCGPRYSIIRNLP</span>
+<span class="n">YDREHTSMDQFRVCPDCGREYSDPSCRRHHAQTIACALCGPRLRLLDPKGNTMDCSDVIQETAHLLDSGS</span>
+<span class="n">IVAIRGIGGFHIACIEESAGVLKGRLGRSEQPFAVMIRPGHIDRIASVSAAERLLLEGPWRPIVAVVKRD</span>
+<span class="n">PTAHAAISNLHTIGCMFPYTGLHHLLFSHLSHPLLVMTSANMPGYPMITEIDQAMARLGHNVDFFLTHNR</span>
+<span class="n">SIVNRCDDSVIRDGYIIRLSRGLAPKRTPLDLGGRTILGVGPELNANITIYRDGFATTSPHIGNVRNPGT</span>
+<span class="n">FAYLKETIATIGGLLGAEYDIIAHDAHPQFLSTRYARELAEAGDATLVPVQHHRAHIAAATADPCIGITI</span>
+<span class="n">DGVGYGDDSTAWGGEVFAGQVPDYERTAHLEVVPMPGGDLATTYPERMLFGILPGAEVQDLLLSRGWTDM</span>
+<span class="n">ELAVLETQLAKSLNVAKTSSTGRVLDAVSALLGICREKTYDGEPAMKLESAAAIGRPQPWDLAYTREGSC</span>
+<span class="n">EVLSTRLLCKKALREYVSQGGAEEGRIADIAASFQYNLARGIAGLAIHAALDRDYQLVVLSGGVAYNRMI</span>
+<span class="n">RETIACEVQQAGLDLLINAEFPLGDGCISFGQCRYAGVLADR</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<ol class="arabic simple" start="3">
+<li><p>Z uporabo NCBI BLAST, varianta blastp (swissprot), kjer sem vnesla aminokislinsko zaporedje zgornjega zadetka, sem dobila podobna anotirana zaporedja. Zgornjih osem zadetkov je bilo približno enake dolžine (Query cover &gt; 97 %), ostali pa so le pokrivali nekaj začetnih in/ali končnih aminokislin. Preko kode zapisa prvega zadetka sem preko Genbanka prišla na Uniprot <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a>, kjer je bila zapisana funkcija tega proteina in sicer je ta bila karbamoil transferaza.</p></li>
+</ol>
+<img src='s34-swiss_poravnava.png' alt='Query' width='60%' height='60%' title='Query'>
+</section>
+<section id="splosna-karakterizacija">
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<p>Za določanje splošnih karakterizacij sem uporabila podatke <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a> proteina v UniProtu, saj je delno anotiran. <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a>  je najverjetneje karbamoil transferaza HypF iz organizma <em>Methanocaldococcus jannaschii</em>, ki sodi v isto domeno (<em>Euryarchaeota</em>), kot rod <em>Methanocalculus</em>.</p>
+<p>Da sem preverila ali lahko to storim, sem naredila poravnavo zaporedij <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a> (Query_10001), ki je torej anotirano in zaporedja <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/KUG14427.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=70ND0RA5013">KUG14427.1</a> (Query_10002), ki je najverjetneje celotno zaporedje, ki vključuje moj vhodni podatek. Za poravnavo sem uporabila orodje Cobalt alignment, ki je pokazal, da se zaporedji ne razlikujeta veliko. Razlika v dolžini 24 aminokislin je posledica nekaj kratkih vrinjenih aminokislin in ne mankajoče domene ali signalnega peptida. Da nobeno od zaporedij ne vsebuje signalnega peptida sem preverila z orodjem SignalP 6.0, kar prikazuje druga slika.</p>
+<img src='s34-poravnava_za_anotacijo.png' alt='poravnava' width='60%' height='60%' title='poravnava'>
+<br/>
+<img src='s34-signalni_peptid.png' alt='signalni peptid' width='60%' height='60%' title='signalni peptid'>
+<section id="kje-v-izvornem-organizmu-celici-se-protein-nahaja">
+<h4>Kje v izvornem organizmu/celici se protein nahaja?<a class="headerlink" href="#kje-v-izvornem-organizmu-celici-se-protein-nahaja" title="Permalink to this headline">#</a></h4>
+<p>Žal niti protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a> niti ostali proteini s podobnim zaporedjem, niso imeli anotirano, kje se encim nahaja.</p>
+</section>
+<section id="katere-post-translacijske-modifikacije-ima">
+<h4>Katere post-translacijske modifikacije ima?<a class="headerlink" href="#katere-post-translacijske-modifikacije-ima" title="Permalink to this headline">#</a></h4>
+<p>Anotiran protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a> tega podatka žal ni imel navedenega. V zapisu (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/KUG14427.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=70ND0RA5013">KUG14427.1</a>) na GenBank poleg funkcije proteina (karbamoil transferaza) piše ‘<em>posttranslational modification</em>’. Zapis si razlagam, kot da protein ima neke post-tranlacijske modifikacije ali bolj verjetno, da jih katalizira.</p>
+</section>
+<section id="ce-zelimo-pripraviti-protein-v-rekombinantni-obliki-kateri-gostiteljski-organizem-je-najbolj-smiselno-izbrati-in-kateri-del-proteina-bi-izrazali">
+<h4>Če želimo pripraviti protein v rekombinantni obliki, kateri gostiteljski organizem je najbolj smiselno izbrati in kateri del proteina bi izražali?<a class="headerlink" href="#ce-zelimo-pripraviti-protein-v-rekombinantni-obliki-kateri-gostiteljski-organizem-je-najbolj-smiselno-izbrati-in-kateri-del-proteina-bi-izrazali" title="Permalink to this headline">#</a></h4>
+<p>Najbolj smiselno bi bilo uporabiti <em>Methanocalculus</em> arheje, saj je bil protein najverjetneje izoliran iz njih. <a class="reference external" href="https://en.wikipedia.org/wiki/Methanocaldococcus_jannaschii"><em>Methampcaldococcus jannaschii</em></a>, ki sicer ne sodi v isti razred, je vzorčni organizem za <em>in vivo</em> genetske študije, torej je dobro poznan.Prav tako pa uspeva v okoljih z visokim deležem oglijkovodikov. Glede na nevednost vrste in količine post-translacijskih modifikacij proteina je težko napovedati ali bi izražanje z bakterjskim ekspresijskim sistemom zadostovalo za izoliranje proteina. (Kasneje je bilo ugotovljeno, da bakterije (<em>E. coli</em>) tudi vsebujejo homolog HypF proteina, vendar tudi tu niso znane post-translacijske modifikacije.)</p>
+</section>
+<section id="so-znani-kaksni-homologi-ortologi-paralogi-kaj-je-znanega-o-njih-funkcija-modifikacije-regulacija-aktivno-mesto">
+<h4>So znani kakšni homologi (ortologi, paralogi)? Kaj je znanega o njih (funkcija, modifikacije, regulacija, aktivno mesto, …)?<a class="headerlink" href="#so-znani-kaksni-homologi-ortologi-paralogi-kaj-je-znanega-o-njih-funkcija-modifikacije-regulacija-aktivno-mesto" title="Permalink to this headline">#</a></h4>
+<p>Z uporabo NCBI BLAST, varianta blastp (nr), sem iskala homologe celotnega proteinskega zaporedja proteina HypF. Vseh 100 zadetkov je imela E vrednost enako 0, Query Cover nad 90 % in identičnost med 58 in 96 %. Večina zaporedij je bilo izoliranih iz arhej, ki sodijo v deblo <em>Methanomicrobia</em> (kamor sodi tudi rod <em>Methanocalculus</em>). Zastopanih je več rodov znotraj debla, vendar večina vrst arhej ni bila indentificirana. Zadetki so predstavljali karbamoil transferaze in acilfosfataze, drugih pripisov pa ni bilo.</p>
+<img src='s34-blast_homologi.png' alt='homologi' width='80%' height='80%' title='homologi'>
+</section>
+<section id="predstavlja-nas-protein-encim-ali-gre-za-kak-drug-protein">
+<h4>Predstavlja naš protein encim ali gre za kak drug protein?<a class="headerlink" href="#predstavlja-nas-protein-encim-ali-gre-za-kak-drug-protein" title="Permalink to this headline">#</a></h4>
+<p>Protein predtavlja encim, ki katalizira prenos karboskamidne skupine. Za to encim potrebuje ATP, vodo in vir karboksamidne skupine, ki je karbamoil fosfat. Skupina se prenese na cistein nekega proteina (hidrogenaza), poleg nastaneta tudi AMP, difosfat in H<sup>+</sup>.</p>
+</section>
+<section id="ce-gre-za-encim-ali-je-aktivno-mesto-v-primerjavi-z-aktivnimi-homologi-ohranjeno">
+<h4>Če gre za encim – ali je aktivno mesto v primerjavi z aktivnimi homologi ohranjeno?<a class="headerlink" href="#ce-gre-za-encim-ali-je-aktivno-mesto-v-primerjavi-z-aktivnimi-homologi-ohranjeno" title="Permalink to this headline">#</a></h4>
+<p>Aktivno mesto ni bilo v nobenem primeru anotirano, ne pri <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q58123/entry">Q58123</a>, niti pri nobenem homologu. Zato sem s pomočjo NCBI BLAST, varianta blastp (swissprot), poiskala ali je kakšen homolog mojega celotnega zaporedja anotiran. Od 100 zadetkov je 8 signifikantnih, saj imajo približno enako dolžino zaporedja (Query Cover &gt; 80 %), E vrednost je dovolj nizka in delež identičnosti je višji od 32 %. Teh 8 zadetkov sem pregledala v UniProtu, da bi raziskala ali je pri vsaj enem anotirano aktivno mesto. Žal ni bilo, niti pri karbamoil transferazi HypF izolirani iz <em>Escherichia coli</em>.</p>
+<img src='s34-anotirani_homologi.png' alt='anotirani homologi' width='80%' height='80%' title='anotirani homologi'>
+</section>
+<section id="kaj-so-najbolj-ohranjene-regije-v-skupini-ki-jo-predstavlja-ta-protein-in-njegovi-homologi">
+<h4>Kaj so najbolj ohranjene regije v skupini, ki jo predstavlja ta protein in njegovi homologi?<a class="headerlink" href="#kaj-so-najbolj-ohranjene-regije-v-skupini-ki-jo-predstavlja-ta-protein-in-njegovi-homologi" title="Permalink to this headline">#</a></h4>
+<p>Da bi raziskala najbolj ohranjene regije sem naredila poravnavo osmih homologov in mojega zaporedja s Cobalt alignment in poravnavo v UniProtu brez mojega zaporedja, da sem te regije lahko identificirala. Zaporedja so si med sabo zelo podobna in imajo več dobro ohranjenih regij. Ker je eden iz med homologov protein <em>E. coli</em> (Query_10007), ki je bolje anotiran kakor ostali, sem odkrila vezavno mesto svojega proteina (Query_10009). Ta regija je zelo močno ohranjena pri vseh homologih: GVG[FM]R. Po matriki zamenjav BLOSUM62 ima zamenjava F v M vrednost 0.</p>
+<img src='s34-CA_homologi_moj.png' alt='poravnava homologov' width='80%' height='80%' title='poravnava homologov'>
+<img src='s34-binding_site.png' alt='vezavno mesto' width='80%' height='80%' title='vezavno mesto'>
+<img src='s34-binding_site_CA.png' alt='vezavno mesto CA' width='80%' height='80%' title='vezavno mesto CA'>
+</section>
+<section id="so-v-zaporedju-kaksne-ponavljajoce-se-regije-oz-motivi">
+<h4>So v zaporedju kakšne ponavljajoče se regije oz. motivi?<a class="headerlink" href="#so-v-zaporedju-kaksne-ponavljajoce-se-regije-oz-motivi" title="Permalink to this headline">#</a></h4>
+<p>Med najbolj ohranjene regije sodita tudi dve ponovitvi motiva cinkovega prsta, kamor se seveda vežeta cinkova iona. Poravnava v Cobalt aligmnet je potrdila, da ima tudi moje zaporedje dobro ohranjena motiva. Vsi proteini imajo v obeh cinkovih prstih prisotne štiri cisteine.</p>
+<img src='s34-cinkov_prst.png' alt='cinkova prsta' width='80%' height='80%' title='cinkova prsta'>
+<img src='s34-CA_cink1.png' alt='cinkov prst 1' width='80%' height='80%' title='cinkov prst 1'>
+<img src='s34-CA_cink2.png' alt='cinkov prst 2' width='80%' height='80%' title='cinkov prst 2'>
+</section>
+<section id="s-katerimi-proteini-ali-drugimi-molekulami-bi-lahko-ta-protein-potencialno-interagiral">
+<h4>S katerimi proteini ali drugimi molekulami bi lahko ta protein potencialno interagiral?<a class="headerlink" href="#s-katerimi-proteini-ali-drugimi-molekulami-bi-lahko-ta-protein-potencialno-interagiral" title="Permalink to this headline">#</a></h4>
+<p>Aktivni protein interagira z molekulami potrebnimi za uspešen prenos karboksamidne skupine. To so molekule ATP, H<sub>2</sub>O, karbamoil fosfat in protein, ki ga modificira. Iteragira tudi z molekulami, ki so stranski produkti reakcije in sicer to so AMP, difosfat in H<sup>+</sup>. Da apoencim postane aktiven, potrebuje dva Zn<sup>2+</sup>, torej interagira tudi z njima.</p>
+<p>Koda zapisa karbamoil transferaze HypF iz <em>E. coli</em> na UniProtu je <a class="reference external" href="https://www.uniprot.org/uniprotkb/P30131/entry">P30131</a>. Zapisano je, da ta protein tvori kompleks s HypE. Da bi preverila, ali obstajajo kakšni homologi HypE v organizmih iz debla <em>Methanomicrobia</em>, sem aminokislinsko zaporedje HypE vnesla v NCBI BLAST, varianta blastp (nr), kjer se iskala le v organizmih <em>Methanococci</em> (taxid:183939). Eden iz med 50 zadetkov je bil tudi protein ekspresije/tvorbe hidrogenaz HypE iz <em>Methanocaldococcus jannaschii</em>, ki je organizem, iz katerega je bil tudi izražen homolog mojega HypF proteina. V GenBanku pod kodo zapisa <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_010870181.1?report=genbank&amp;log$=prottop&amp;blast_rank=7&amp;RID=76M6HSEP013">WP_010870181.1</a> piše, da je HypE vpleten v biosintezo Ni-Fe hidrogenaz in, da dehidrira lastno karbamoilno skupino. Te podatki sovpadajo z zapisom na UniProtu HypE proteina iz <em>E. coli</em> <a class="reference external" href="https://www.uniprot.org/uniprotkb/P24193/entry">P24193</a>, kjer piše, da HypE iteragira s HypF, ki mu doda karboksamidno skupino, katero nato HypE sam dehidrira. Če še preverim, katere interakcije s HypF proteinom (<em>Methanocaldococcus jannaschii</em>) so navedene v String, vidimo, da so navedeni funkcijsko in imensko enaki proteini, kot pri bakterijah. To so HypA, HypB, HypC (MJ_0200), HypD (MJ_0993) in HypE (MJ_0676). Najverjetneje z vsemi temi proteini direktno ne interagira. Vsi so povezani z zorenjem Ni-Fe dehidrogenaz vendar verjento to počnejo ločeno od HypF proteina.</p>
+<p><img src='s34-string_coli.png' alt='interakcije E.coli' width='40%' height='40%' title='interakcije E. coli'> <img src='s34-string_moj.png' alt='interakcije HypF' width='40%' height='40%' title='interakcije HypF'></p>
+</section>
+</section>
+<section id="strukturna-katakterizacija">
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<section id="je-znana-struktura-tega-proteina-ali-njegovega-dela">
+<h4>Je znana struktura tega proteina ali njegovega dela?<a class="headerlink" href="#je-znana-struktura-tega-proteina-ali-njegovega-dela" title="Permalink to this headline">#</a></h4>
+<p>Celotna ali delna struktura mojega protein HypF ni znana.</p>
+</section>
+<section id="je-znana-struktura-homologov-katerih">
+<h4>Je znana struktura homologov? Katerih?<a class="headerlink" href="#je-znana-struktura-homologov-katerih" title="Permalink to this headline">#</a></h4>
+<p>Z uporabo NCBI BLAST, varianta blastp (PDB), sem poiskala, ali je znana kakšna struktura homologov mojega HypF proteina. Izmed 20 zadetkov so prvi štirje primerljive dolžine. Znana je tako kristalna struktura HypF <em>E. coli</em> in kristalna struktura kompleksa z vezanim ATP in karbamoil fosfatom (Query Cover = 86 %).</p>
+<img src='s34-blast_pdb.png' alt='strukturni homologi' width='80%' height='80%' title='strukturni homologi'>
+</section>
+<section id="pripravite-model-proteina-oz-njegovega-dela-ki-bi-predstavljal-funkcionalen-topen-protein">
+<h4>Pripravite model proteina oz. njegovega dela, ki bi predstavljal funkcionalen topen protein.<a class="headerlink" href="#pripravite-model-proteina-oz-njegovega-dela-ki-bi-predstavljal-funkcionalen-topen-protein" title="Permalink to this headline">#</a></h4>
+<p>S pomočjo AlphaFold2 sem pripravila model HypF proteina. Program je modeliral 5 različnih struktur, prikazana je slika najboljše ocenjenega (rank 1). V ChimeriX so alfa vijačnice modela obarvane zeleno in beta ploskve roza.</p>
+<p><img src='s34-AF1.png' alt='model proteina' width='50%' height='50%' title='model proteina'>  <img src='s34-chimera.png' alt='modeliran protein' width='40%' height='40%' title='modeliran protein'></p>
+</section>
+<section id="primerjajte-model-oz-eksperimentalno-strukturo-z-eksperimentalno-strukturo-homologa-osredotocite-se-na-funkcijsko-pomembne-regije">
+<h4>Primerjajte model oz. eksperimentalno strukturo z eksperimentalno strukturo homologa, osredotočite se na funkcijsko pomembne regije.<a class="headerlink" href="#primerjajte-model-oz-eksperimentalno-strukturo-z-eksperimentalno-strukturo-homologa-osredotocite-se-na-funkcijsko-pomembne-regije" title="Permalink to this headline">#</a></h4>
+<p>Poravnavo modela HypF in pa s kristalografijo določene strukture HypF iz <em>E. coli</em> sem naredila v ChimeriX, ki sicer res poravna strukturi na podlagi aminokislinskega zaporedja in ne strukture, vendar je to edino orodje, ki mi je bilo na voljo. Strukturi sta zelo dobro poravnani, saj se tudi njuno aminokislinsko zaporedje zelo dobro ujema (Cobalt alignment). Model AlfaFold2 je obarvan tan in kristalna struktura je obarvana modro. Opazi se, da ima model HypF dodatno strukturo na N-koncu proteina, ki je kristalna struktura nima. To je posledica tega, da raziskovalcem ni uspelo izolirati celotni protein (92 - 750.) Na desni sliki se vidi, da ima model HypF podobno strukturo pri vezavi cinkovih ionov. Tudi poravnava pokaže regiji z visokim deležom identičnosti. Pr kristalni strukturi pa je še eno vezavno mesto za Zn<sup>2+</sup> ion in sicer pri vezavi sodelujejo A475, H497, H502 in A727. V poravnavi z mojim zaporedjem sem odkrila, da so vsa ta štiri mesta prisotna tudi pri mojem proteinu, kar pomeni, da najverjetneje tudi on veže še tretji Zn<sup>2+</sup> ion.</p>
+<p><img src='s34-poravnava_zn.png' alt='Zn vezavna mesta' width='40%' height='40%' title='Zn vezavna mesta'><img src='s34-poravnava.png' alt='poravnava struktur' width='55%' height='55%' title='poravnava struktur'></p>
+<p><img src='s34-Zn_prsta.png' alt='poravnava PDB' width='45%' height='45%' title='poravnava PDB'> <img src='s34-tretji_Zn.png' alt='tretji Zn' width='45%' height='45%' title='tretji Zn'></p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2022-2023/naloge"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikacija">Identifikacija</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosna-karakterizacija">Splošna karakterizacija</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kje-v-izvornem-organizmu-celici-se-protein-nahaja">Kje v izvornem organizmu/celici se protein nahaja?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#katere-post-translacijske-modifikacije-ima">Katere post-translacijske modifikacije ima?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-zelimo-pripraviti-protein-v-rekombinantni-obliki-kateri-gostiteljski-organizem-je-najbolj-smiselno-izbrati-in-kateri-del-proteina-bi-izrazali">Če želimo pripraviti protein v rekombinantni obliki, kateri gostiteljski organizem je najbolj smiselno izbrati in kateri del proteina bi izražali?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#so-znani-kaksni-homologi-ortologi-paralogi-kaj-je-znanega-o-njih-funkcija-modifikacije-regulacija-aktivno-mesto">So znani kakšni homologi (ortologi, paralogi)? Kaj je znanega o njih (funkcija, modifikacije, regulacija, aktivno mesto, …)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#predstavlja-nas-protein-encim-ali-gre-za-kak-drug-protein">Predstavlja naš protein encim ali gre za kak drug protein?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-gre-za-encim-ali-je-aktivno-mesto-v-primerjavi-z-aktivnimi-homologi-ohranjeno">Če gre za encim – ali je aktivno mesto v primerjavi z aktivnimi homologi ohranjeno?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kaj-so-najbolj-ohranjene-regije-v-skupini-ki-jo-predstavlja-ta-protein-in-njegovi-homologi">Kaj so najbolj ohranjene regije v skupini, ki jo predstavlja ta protein in njegovi homologi?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#so-v-zaporedju-kaksne-ponavljajoce-se-regije-oz-motivi">So v zaporedju kakšne ponavljajoče se regije oz. motivi?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s-katerimi-proteini-ali-drugimi-molekulami-bi-lahko-ta-protein-potencialno-interagiral">S katerimi proteini ali drugimi molekulami bi lahko ta protein potencialno interagiral?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strukturna-katakterizacija">Strukturna katakterizacija</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#je-znana-struktura-tega-proteina-ali-njegovega-dela">Je znana struktura tega proteina ali njegovega dela?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#je-znana-struktura-homologov-katerih">Je znana struktura homologov? Katerih?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pripravite-model-proteina-oz-njegovega-dela-ki-bi-predstavljal-funkcionalen-topen-protein">Pripravite model proteina oz. njegovega dela, ki bi predstavljal funkcionalen topen protein.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primerjajte-model-oz-eksperimentalno-strukturo-z-eksperimentalno-strukturo-homologa-osredotocite-se-na-funkcijsko-pomembne-regije">Primerjajte model oz. eksperimentalno strukturo z eksperimentalno strukturo homologa, osredotočite se na funkcijsko pomembne regije.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
