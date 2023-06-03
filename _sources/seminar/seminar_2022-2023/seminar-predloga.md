@@ -1,6 +1,6 @@
-# Predloga za skupino A
+# Predloga
 
-> V naslovu zgoraj besedilo "Predloga za skupino A" nadomestite s kodo vašega seminarja (npr. S05), ki je navedena ob vašem imenu v [tabeli z vhodnimi podatki](seminar.md); znak za oblikovanje kot naslov (# oz. "lojtra") seveda pustite, med njim in kodo seminarja mora biti presledek. Ta odstavek, ki se začne z znakom >, izbrišite, v ustrezna polja v nadaljevanju pa vnesite rezultate zahtevanih analiz, obvezno ustrezne opise/razlago/argumentacijo, dodajte pa tudi povezave do pravilno poimenovanih slik (glejte [navodila](navodila.md)).
+> V naslovu zgoraj besedilo "Predloga" nadomestite s kodo vašega seminarja (npr. S05), ki je navedena ob vašem imenu v [tabeli z vhodnimi podatki](seminar.md); znak za oblikovanje kot naslov (# oz. "lojtra") seveda pustite, med njim in kodo seminarja mora biti presledek. Ta odstavek, ki se začne z znakom >, izbrišite, v ustrezna polja v nadaljevanju pa vnesite rezultate zahtevanih analiz, obvezno ustrezne opise/razlago/argumentacijo, dodajte pa tudi povezave do pravilno poimenovanih slik (glejte [navodila](navodila.md)).
 
 - **Avtor**: (ime in priimek)
 - **Datum izdelave**: (datum v formatu YYYY-MM-DD)
