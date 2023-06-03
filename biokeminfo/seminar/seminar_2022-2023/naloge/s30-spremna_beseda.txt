@@ -1,0 +1,1 @@
+Prilagam še tri pdb strukture, dve izmed katerih sem sam zmodeliral. Prilagam jih tu, saj md datoteke niso dopustljive do pdb datotek. Ravno tako, jih deponiram sem, saj jih drugje ni moči najti in verjamem da bi Vam bilo nadvse neugodno ponovno modeliranje, v primeru da bi jih potrebovali. Menim namreč da je za dobro vizualizacijo potreben celostni pogled.

@@ -1,6 +1,8 @@
 # Splošno o seminarju
 Seminar je pomemben del predmeta Biokemijska informatika, saj gre za bolj ali manj samostojno delo ali delo v manjših skupinah na neki tematiki, povezani z na predavanjih in vajah obravnavano snovjo. Vsako leto je naloga drugačna.
 
+**Avtor(ice) seminarskih nalog so študentke oz. študenti, navedeni pri posamezni nalogi.**
+
 ## Seminar 2022/2023
 V študijskem letu 2022/2023 seminarji potekajo tako, da vsak študent dobi odsek nekega nukleotidnega zaporedja iz neobičajnega organizma, ki  predstavlja izhodišče za identifikacijo gena in nato tudi proteina, zapisanega na tem genu, za slednjega pa je bilo potrebno narediti vrsto "raziskav" z uporabo bioinformatskih orodij: potencialna funkcija proteina, modeliranje strukture, znani in okarakterizirani homologni proteini, potencialni interakcijski partnerji ipd. Vhodni podatki in oddani rezultati analiz ("rešitve") vseh študentov so na voljo na strani [Seminarji 2022/2023](seminar_2022-2023/seminar.md) in kot taki lahko služijo za samostojno izvedbo doma v okviru priprav na kolokvij pri Biokemijski informatiki.
 
