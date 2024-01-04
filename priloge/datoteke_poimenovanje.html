@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Vaje 2022/2023" href="../izvedba/vaje_2022-2023.html" />
     <link rel="prev" title="Pogosti formati datotek" href="datoteke_formati.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -421,15 +437,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="poimenovanje-datotek">
-<h1>Poimenovanje datotek<a class="headerlink" href="#poimenovanje-datotek" title="Permalink to this headline">#</a></h1>
+<h1>Poimenovanje datotek<a class="headerlink" href="#poimenovanje-datotek" title="Permalink to this heading">#</a></h1>
 <section id="uvod">
-<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">#</a></h2>
+<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this heading">#</a></h2>
 <p>Moderni operacijski sistemi dopuščajo kar precej svobode pri poimenovanju datotek (<em>files</em>) in map (direktorijev, torej <em>folders</em> ali <em>directories</em>), k temu pa je vsekakor prispeval standard za konsistentno kodiranje, prikaz in delo z besedilom <a class="reference external" href="https://en.wikipedia.org/wiki/Unicode">UNICODE</a>. Kakšne so možnosti za poimenovanje je povezavo z datotečnim sistemom (<em>file system</em>, tudi <em>filesystem</em>), ki določa, kako so podatki shranjeni in kako do njih dostopamo.</p>
 <p>Poglejmo najprej malce v zgodovino. Na primer, star datotečni sistem FAT16 (<em>16-bit <a class="reference external" href="https://en.wikipedia.org/wiki/File_Allocation_Table">File Allocation Table</a></em>), v uporabi v operacijskem sistemu <a class="reference external" href="https://en.wikipedia.org/wiki/MS-DOS">MS-DOS</a> in (pra)starih različicah sistema Microsoft Windows, je omogočal imena datotek formata 8.3, kjer je bila glavnina imena omejena na do 8 znakov (seveda ne katerihkoli), sledila je pika, nato pa trije znaki, ki so predstavljali t.i. končnico datoteke (<em>file extension</em>) in so s tem na nek način sporočali, kakšni podatki so v datoteki in na kakšen način so zapisani.</p>
 <p>Podoben sistem <code class="docutils literal notranslate"><span class="pre">ime.končnica</span></code> je še danes splošno v uporabi, le da imamo v dolžini in znakih imena več svobode, podobno velja tudi za končnico. Kljub temu je iz različnih razlogov (združljivost, preglednost, sistematičnost) priporočljivo, da pri poimenovanju datotek (in map) nismo preveč ekstravagantni in sledimo osnovnim priporočilom.</p>
 </section>
 <section id="priporocila-za-poimenovanje-datotek-in-map">
-<h2>Priporočila za poimenovanje datotek in map<a class="headerlink" href="#priporocila-za-poimenovanje-datotek-in-map" title="Permalink to this headline">#</a></h2>
+<h2>Priporočila za poimenovanje datotek in map<a class="headerlink" href="#priporocila-za-poimenovanje-datotek-in-map" title="Permalink to this heading">#</a></h2>
 <p>Pri poimenovanju datotek in map si izdelajte shemo oz. smernice, po katerih boste poimenovali vse datoteke in mape. Bolj ohlapno shemo uporabljajte na splošno, za vsak specifični projekt (npr. diplomska naloga) pa si shemo podrobneje definirajte.</p>
 <ul class="simple">
 <li><p>Datotekam dajte unikatna imena, pri kreiranju imen pa konsistentno uporabljajte shemo, ki ste si jo zamislili.</p></li>
@@ -444,7 +460,7 @@ document.write(`
 </ul>
 </section>
 <section id="primeri">
-<h2>Primeri<a class="headerlink" href="#primeri" title="Permalink to this headline">#</a></h2>
+<h2>Primeri<a class="headerlink" href="#primeri" title="Permalink to this heading">#</a></h2>
 <p>Spodaj je nekaj primerov slabe in dobre prakse, ki ilustrirajo uporabo zgoraj navedenih smernic.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -498,11 +514,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="datoteke_formati.html"
@@ -522,10 +537,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -590,8 +602,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

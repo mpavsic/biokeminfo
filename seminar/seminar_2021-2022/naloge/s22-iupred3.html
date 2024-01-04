@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,17 +444,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="iupred3">
-<h1>IUPred3<a class="headerlink" href="#iupred3" title="Permalink to this headline">#</a></h1>
+<h1>IUPred3<a class="headerlink" href="#iupred3" title="Permalink to this heading">#</a></h1>
 <p><strong>Avtorja</strong>: Ana Marija Kodra, Neža Lanišek</p>
 <p><strong>Datum predstavitve</strong>: 2022-05-11</p>
 <hr class="docutils" />
 <section id="namen-vaje">
-<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">#</a></h2>
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this heading">#</a></h2>
 <p>Spoznati spletno orodje IUPred3. S pomočjo tega orodja napovedati neurejene regije v proteinih in primerjati rezultate z eksperimentalnimi podatki.</p>
 </section>
 <hr class="docutils" />
 <section id="program">
-<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">#</a></h2>
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this heading">#</a></h2>
 <p>Program: <strong><a class="reference external" href="https://iupred3.elte.hu/">IUPred3</a></strong></p>
 <p>Avtorji programa: Gábor Erdős, Mátyás Pajkos, Zsuzsanna Dosztányi; <a class="reference external" href="https://www.elte.hu/en/">Eötvös Loránd University</a></p>
 <p>Reference:</p>
@@ -448,21 +464,21 @@ document.write(`
 <li><p>Dosztányi, Z.; Csizmók, V.; Tompa, P.; Simon, I. (2005) <strong>The pairwise energy content estimated from amino acid composition discriminates between folded and intrinsically unstructured proteins.</strong> <em>J. Mol. Biol.</em> 347, 827–839. <a class="reference external" href="https://doi.org/10.1016/j.jmb.2005.01.071">10.1016/j.jmb.2005.01.071</a></p></li>
 </ul>
 <section id="opis-programa">
-<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">#</a></h3>
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this heading">#</a></h3>
 <p>Neurejene regije (IDPR; <em>intrinsically disordered protein region</em>) so regije v proteinih, ki nimajo ene same dobro definirane strukture, temveč lahko zavzamejo različna konformacijska stanja. Prisotne so v proteomu vseh organizmov, najbolj pa so razširjene pri evkariontih. Neurejene regije imajo pomembno funkcionalno vlogo pri mnogih celičnih procesih, predvsem pri signalizaciji in regulaciji celic, in so povezane z različnimi boleznimi. Sodelujejo tudi pri povezovanju različnih domen, sestavljanju makromolekularnih kompleksov in organizaciji nekaterih organelov. Nekatere neurejene regije proteinov lahko zavzamejo tudi urejeno strukturo – to lahko povzroči sprememba v redoks potencialu ali pa prisotnost urejene regije, s katero se neurejena regija poveže in tako tudi sama zavzame urejeno strukturo.</p>
 <p>IUPred3 je program, ki združuje napoved neurejenih regij v proteinih z orodjem IUPred2 in napoved neurejenih vezavnih regij z orodjem ANCHOR2. Program pa lahko identificira tudi neurejene regije, ki pod določenimi pogoji lahko zavzamejo urejeno strukturo. Program je primeren za vse vhodne podatke, podane v pravi obliki, in ne glede na organizem, iz katerega prihaja protein, deluje enako.</p>
 <p>IUPred3 temelji na metodi, ki oceni energijo interakcije med aminokislinskimi ostanki. Na podlagi znanih struktur globularnih proteinov se z uporabo interakcijske matrike, ki prikazuje parni statistični potencial, vsakemu aminokislinskemu ostanku dodeli vrednost energije na podlagi stikov, ki jih vzpostavi z drugimi aminokislinskimi ostanki v strukturi. Energije so ocenjene iz aminokislinskega zaporedja z uporabo matrike za oceno energije velikosti 20 × 20. Parametri v tej matriki so izračunani z metodo najmanjših kvadratov. Ocena energije interakcije je torej odvisna od vrste aminokislinskega ostanka in njegovih bližnjih sosedov. Osnovna predpostavka tega pristopa je, da so aminokislinski ostanki z ugodnimi energijami del urejene regije, medtem ko so aminokislinski ostanki z neugodnimi energijami del neurejene regije. Na koncu program ocenjeno vrednost energije interakcije pretvori v vrednost med 0 in 1. Za aminokislinske ostanke, ki jim program napove vrednost nad 0,5, je torej bolj verjetno, da so del neurejene regije, medtem ko je za aminokislinske ostanke, ki jim program napove vrednost pod 0,5, bolj verjetno, da so del urejene regije.</p>
 </section>
 <section id="vhodni-podatki">
-<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h3>
 <p>Kot vhodne podatke se v program lahko vnese <em>accession code</em> ali ID proteina iz UniProt-a, lahko pa se vnese aminokislinsko zaporedje v FASTA formatu ali naloži datoteka v FASTA formatu.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
-<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">#</a></h2>
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this heading">#</a></h2>
 <section id="id1">
-<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Kot vhodne podatke uporabite:</p>
 <ul class="simple">
 <li><p>aminokislinsko zaporedje nukleoproteina iz ošpic seva Edmonston B (<em>nucleoprotein</em>, UniProt ID <a class="reference external" href="https://www.uniprot.org/uniprot/Q89933">Q89933</a>)</p></li>
@@ -470,7 +486,7 @@ document.write(`
 </ul>
 </section>
 <section id="postopek-dela">
-<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">#</a></h3>
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Odprite spletno orodje <a class="reference external" href="https://iupred3.elte.hu/">IUPred3</a>.</p></li>
 <li><p>Vnesite kodo zapisa  nukleoproteina (Q89933) in pod vrsto analize izberite možnost “IUPred3 long disorder”.</p></li>
@@ -480,7 +496,7 @@ document.write(`
 </ol>
 </section>
 <section id="pricakovani-rezultati-in-razlaga">
-<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">#</a></h3>
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this heading">#</a></h3>
 <p>Rezultat program izriše v obliki grafa, pri katerem se na x osi nahaja zaporedna številka aminokislinskega ostanka v izbranem proteinu, na y osi pa je podana verjetnost za obstoj neurejene regije. Če protein analiziramo z vnosom kode zapisa, dobimo pod grafom podatke o strukturi proteina iz nekaterih drugih zbirk. Ena izmed takih zbirk je DisProt, ki vsebuje podatke o neurejenih regijah v proteinih.</p>
 <p><img alt="Rezultat za nukleoprotein" src="../../../_images/s22-iupred3-rezultat_pravilen.png" /></p>
 <p>Za nukleoprotein opazimo, da IUPred3 predvidi eno neurejeno regijo, ki se nahaja na C-koncu. Rezultat se ujema s podatki iz zbirke DisProt.
@@ -516,16 +532,12 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -599,8 +611,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Markdown" href="markdown.html" />
     <link rel="prev" title="Python" href="python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -417,10 +433,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -428,7 +444,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -472,19 +488,19 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="jupyterlab">
-<h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Permalink to this headline">#</a></h1>
+<h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Permalink to this heading">#</a></h1>
 <p>Pri programiranju bomo uporabljali vmesnik <a class="reference external" href="https://jupyter.org">JupyterLab</a>, ki omogoča vizualno lépo sestavljanje kode in spremljajočega besedila. Osnovan je na sistemu <a class="reference external" href="https://en.wikipedia.org/wiki/IPython">IPython</a>. Koda in komentarji so zapakirani v eno datoteko, imenovano <strong>zvezek</strong> (<em>notebook</em>), ki vsebuje tudi izhod kode (<em>output</em>). Zvezek je sicer tekstovna datoteka s končnico ipynb (<strong>IPy</strong>thon <strong>N</strong>ote<strong>b</strong>ook), za pravilen prikaz in uporabo (t.j. poganjanje kode) pa ga moramo odpreti v ustreznem programu - lokalno nainstaliran JupyterLab (navodila so na dnu strani) ali z uporabo katere od spletnih storitev, npr. <a class="reference external" href="http://mybinder.org">Binder</a>.</p>
 <blockquote>
 <div><p>Za programiranje lahko seveda uporabljate tudi okolje Python IDLE (ali pa kaj tretjega) - v tem primeru si zvezke JupyterLab v formatu hmtl ogledate na tej spletni strani, dele kode pa skopirajte v vaš urejevalnik kode.</p>
 </div></blockquote>
 <section id="zgradba-zvezka">
-<h2>Zgradba zvezka<a class="headerlink" href="#zgradba-zvezka" title="Permalink to this headline">#</a></h2>
+<h2>Zgradba zvezka<a class="headerlink" href="#zgradba-zvezka" title="Permalink to this heading">#</a></h2>
 <p>Vsak zvezek je sestavljen in enega ali večih segmentov, imenovanih <strong>celice</strong>, ki si sledijo v določenem zaporedju. Celice lahko vsebujejo <strong>kodo</strong> (tip celice <em>Code</em>) ali <strong>spremljajoče besedilo</strong>, oblikovano z <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><strong>Markdown</strong></span></a> (tip celice <em>Markdown</em>). Določeno celico v že pripravljeni datoteki začnemo urejati tako, da eno- (za kodo) ali dvo-kliknemo nanjo (za <em>Markdown</em>). Nastavljen tip celice je povezan z barvanjem kode in pa seveda z interpretacijo tega, kar je v njej napisano - ali naj se prikaže in oblikuje kot besedilo ali pa se naj izvede kot koda. Celice dodajamo preko bližnjic na tipkovnici ali preko menija.</p>
 <p>Celice s spremljajočim besedilom lahko obravnavamo kot komentarje (kodo lahko še vedno komentirate direktno v celici, kjer se nahaja, z uporabo znaka #), ki delijo kodo na več ločenih, a medsebojno vseeno lahko povezanih kosov. Če bi vsebino celic s kodo prenesli v pravilnem vrstnem redu v tekstno datoteko <code class="docutils literal notranslate"><span class="pre">.py</span></code> in jo zagnali v Pythonu, bi zadeva delovala popolnoma enako.</p>
 <p>Ko v neko celico vnesemo vsebino ali jo spremenimo, moramo (ponovno) zagnati program, ki interpretira njeno vsebino in jo izvede (koda) oz. prikaže oblikovano (besedilo). In kako to naredimo?</p>
 </section>
 <section id="bliznjice">
-<h2>Bližnjice<a class="headerlink" href="#bliznjice" title="Permalink to this headline">#</a></h2>
+<h2>Bližnjice<a class="headerlink" href="#bliznjice" title="Permalink to this heading">#</a></h2>
 <p>Enostavno! Ko smo v določeni celici lahko iz menija zgoraj izberemo ustrezno možnost, lahko pa pritisnemo tipko <em>Esc</em> (<em>escape</em>) na tipkovnici, na ta način skočimo iz načina vpisovanja, ter s pritiskom na tipko za črko <code class="docutils literal notranslate"><span class="pre">m</span></code> ali <code class="docutils literal notranslate"><span class="pre">y</span></code> skočimo na način <em>Markdown</em> oz. <em>Code</em>. Končno oblikovanje oz. zagon kode dosežemo z izbiro iz menija ali uporabo bližnjic na tipkovnici, ki jih je malo morje. Nekaj jih je navedenih tukaj:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>: zaženemo trenutno celico (ne glede na vsebino - oblikovanje besedila ali zagon kode)</p></li>
@@ -494,7 +510,7 @@ document.write(`
 <p>Ostale lahko najdete v pomoči za JupyterLab.</p>
 </section>
 <section id="primer">
-<h2>Primer<a class="headerlink" href="#primer" title="Permalink to this headline">#</a></h2>
+<h2>Primer<a class="headerlink" href="#primer" title="Permalink to this heading">#</a></h2>
 <p>Pa poglejmo, kako naredimo nekaj zelo enostavnega! Spodaj je ena celica s kodo. Lahko jo poljubno spreminjate in s kombinacijo tipk <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code> pogledate, kaj je rezultat - slednji se izpiše pod celico s kodo.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -529,13 +545,13 @@ document.write(`
 <p>Mislim, da je zdaj jasno, kako se zadevi streže. V nadaljevanju je še na kratko opisano, kako uporabljamo <a class="reference internal" href="markdown.html"><span class="doc std std-doc"><em>Markdown</em></span></a>, da si lahko delamo lepe zapiske.</p>
 </section>
 <section id="povezave">
-<h2>Povezave<a class="headerlink" href="#povezave" title="Permalink to this headline">#</a></h2>
+<h2>Povezave<a class="headerlink" href="#povezave" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jupyterlab.readthedocs.io">JupyterLab</a> (dokumentacija)</p></li>
 </ul>
 </section>
 <section id="namestitev">
-<h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this headline">#</a></h2>
+<h2>Namestitev<a class="headerlink" href="#namestitev" title="Permalink to this heading">#</a></h2>
 <p>JupyterLab lahko najenostavneje namestimo:</p>
 <ul class="simple">
 <li><p>kot ločeno aplikacijo <a class="reference external" href="https://github.com/jupyterlab/jupyterlab-desktop"><strong>JupyterLab Desktop App</strong></a> (izdana je bila šele septembra 2021), ki že vsebuje vse potrebo, vključno s Pythonom;</p></li>
@@ -572,11 +588,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="python.html"
@@ -596,10 +611,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -666,8 +678,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

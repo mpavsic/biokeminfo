@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -77,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="DEMO: Izračun lastne matrike in njena uporaba" href="poravnava2_lastna_matrika.html" />
     <link rel="prev" title="VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)" href="poravnava2_web.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -86,6 +88,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -146,13 +157,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -247,6 +259,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -419,10 +435,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -430,7 +446,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -478,14 +494,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-poravnava-zaporedij-nw-sw-python">
-<h1>VAJA: Poravnava zaporedij NW &amp; SW (Python)<a class="headerlink" href="#vaja-poravnava-zaporedij-nw-sw-python" title="Permalink to this headline">#</a></h1>
+<h1>VAJA: Poravnava zaporedij NW &amp; SW (Python)<a class="headerlink" href="#vaja-poravnava-zaporedij-nw-sw-python" title="Permalink to this heading">#</a></h1>
 <p>V Pythonu lahko z uporabo paketa <a class="reference external" href="https://biopython.org">BioPython</a> na enostaven način delamo poravnave aminokislinskih zaporedij. Uporaba algoritmov, ki dajo matematično optimalno poravnavo (npr. <strong>Needleman-Wunsch</strong> in <strong>Smith-Waterman</strong>), je v primeru manjšega obsega vhodnih podatkov popolnoma normalno izvedljiva na domačem računalniku. V primeru daljšega računanja se lahko uporabi (“pokliče” iz Pythona) orodja na npr. strežniku EMBOSS (opis API-ja za to je tukaj je v <a class="reference external" href="http://europepmc.org/article/MED/30976793">članku</a>).</p>
 <p>Mi si bomo pogledali enostavne primere poravnave, kjer lahko poljubno variiramo parametre (npr. uporabljena matrika zamenjav ter kazni za vrzeli) in opazujemo, kakšne poravnave dobimo. Kot pri preteklih vajah so spodaj že pripravljeni zgledi kode, ki s spremljajočim besedilom ilustrirajo uporabo, na dnu datoteke pa je enostavna naloga, ki ilustrira možnost variacije parametrov.</p>
 <hr class="docutils" />
 <section id="zgledi">
-<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">#</a></h2>
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this heading">#</a></h2>
 <section id="definicija-zaporedja">
-<h3>Definicija zaporedja<a class="headerlink" href="#definicija-zaporedja" title="Permalink to this headline">#</a></h3>
+<h3>Definicija zaporedja<a class="headerlink" href="#definicija-zaporedja" title="Permalink to this heading">#</a></h3>
 <p>Najprej bomo <strong>definirali objekt, ki vsebuje zaporedje</strong>, oz. dva taka objekta. To lahko naredimo na več načinov, eden je direktna ustvaritev, kjer sami podamo zaporedje. Zaporedja lahko preberemo tudi iz <em>lokalno shranjene datoteke</em> v različnih formatih (npr. Genbank ali FASTA) ter seveda tudi iz <em>spletnih podatkovnih zbirk (npr. Genbank ali UniProt)</em>, kar smo si že pogledali na prejšnjih vajah.</p>
 <p>Torej, objekt definiramo podobno kot pri eni izmed začetnih vaj z BioPython:</p>
 <div class="cell docutils container">
@@ -557,7 +573,7 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </section>
 <hr class="docutils" />
 <section id="izbor-matrike-zamenjav">
-<h3>Izbor matrike zamenjav<a class="headerlink" href="#izbor-matrike-zamenjav" title="Permalink to this headline">#</a></h3>
+<h3>Izbor matrike zamenjav<a class="headerlink" href="#izbor-matrike-zamenjav" title="Permalink to this heading">#</a></h3>
 <p>Naslednje, kar zraven zaporedja potrebujemo za izračun poravnave, je <strong>substitucijska matrika</strong> (matrika zamenjav, <em>substitution matrix</em>). Dober nabor le-teh smo že dobili preko BioPythona, slednji pa nam tudi omogoča definicijo čisto poljubne matrike (matrike so definirane kot slovarji - <em>dictionary</em>).</p>
 <p>Pa poglejmo, kaj imamo na voljo! Seznam matrik je dostopen preko tega spletnega naslova: <a class="reference external" href="https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html">https://biopython.org/DIST/docs/api/Bio.SubsMat.MatrixInfo-module.html</a></p>
 <p>Lahko pa tudi samo pokukamo, kaj imamo v trenutno nainstalirani verziji BioPythona na razpolago:</p>
@@ -639,7 +655,7 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </section>
 <hr class="docutils" />
 <section id="globalna-poravnava">
-<h3>Globalna poravnava<a class="headerlink" href="#globalna-poravnava" title="Permalink to this headline">#</a></h3>
+<h3>Globalna poravnava<a class="headerlink" href="#globalna-poravnava" title="Permalink to this heading">#</a></h3>
 <p>Za poravnavo zaporedij imamo v <a class="reference external" href="https://biopython.org">BioPython</a> na voljo več orodij. Eno izmed njih, modul <strong><a class="reference external" href="https://biopython.org/DIST/docs/api/Bio.pairwise2-module.html">pairwise2</a></strong>, omogoča izračun poravnave dveh zaporedij z dinamičnim programiranjem, med drugim preko algoritmov Needleman-Wunsch in Smith-Waterman.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -865,7 +881,7 @@ AŠŠCŠTA
 </section>
 <hr class="docutils" />
 <section id="lokalna-poravnava">
-<h3>Lokalna poravnava<a class="headerlink" href="#lokalna-poravnava" title="Permalink to this headline">#</a></h3>
+<h3>Lokalna poravnava<a class="headerlink" href="#lokalna-poravnava" title="Permalink to this heading">#</a></h3>
 <p>Poglejmo si še primer lokalne poravnave:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -952,7 +968,7 @@ A----------CTC--C--------GCT----T-----
 <p>Naj bo nukleotidnih zaporedij zaenkrat dovolj, gremo na aminokislinska zaporedja!</p>
 </section>
 <section id="globalna-in-lokalna-poravnava-aminokislinskih-zaporedij">
-<h3>Globalna in lokalna poravnava aminokislinskih zaporedij<a class="headerlink" href="#globalna-in-lokalna-poravnava-aminokislinskih-zaporedij" title="Permalink to this headline">#</a></h3>
+<h3>Globalna in lokalna poravnava aminokislinskih zaporedij<a class="headerlink" href="#globalna-in-lokalna-poravnava-aminokislinskih-zaporedij" title="Permalink to this heading">#</a></h3>
 <p>Najprej definirajmo naši zaporedji (to je kopija kode od zgoraj):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1021,7 +1037,7 @@ A----------CTC--C--------GCT----T-----
 </section>
 <hr class="docutils" />
 <section id="naloga">
-<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">#</a></h2>
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this heading">#</a></h2>
 <p>Poglejmo sedaj, kako se lahko z variacijo parametrov kaj naučimo. Najprej analizirajmo, ali sta poravnavi aminokislinskega zaporedja (primer zgoraj) sploh v redu. Napnite oči!</p>
 <p>Če poravnavi nisva v redu predlagajte izboljšane parametre za poravnavo in sicer:</p>
 <ul class="simple">
@@ -1057,11 +1073,10 @@ A----------CTC--C--------GCT----T-----
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="poravnava2_web.html"
@@ -1081,10 +1096,7 @@ A----------CTC--C--------GCT----T-----
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1155,8 +1167,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

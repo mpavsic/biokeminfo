@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -77,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Točkovni diagram" href="../osnove/dotplot.html" />
     <link rel="prev" title="VAJA: Dostop do UniProt v brskalniku" href="uniprot_web.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -86,6 +88,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -146,13 +157,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -247,6 +259,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -419,10 +435,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -430,7 +446,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -485,12 +501,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-programski-dostop-do-uniprot-python">
-<h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Permalink to this headline">#</a></h1>
+<h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Permalink to this heading">#</a></h1>
 <p>Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi <a class="reference external" href="https://biopython.org">BioPythona</a>, a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula <code class="docutils literal notranslate"><span class="pre">requests</span></code>, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.</p>
 <hr class="docutils" />
 <section id="ozadje">
-<h2>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">#</a></h2>
+<h2>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this heading">#</a></h2>
 <p>Osnovna navodila za t.i. programatski dostop do zbirke <a class="reference external" href="https://www.uniprot.org">UniProt</a> so na voljo na podstrani <a class="reference external" href="https://www.uniprot.org/help/programmatic_access">Programmatic access</a>, kjer je opisan dostop preko <strong>REST</strong>.</p>
 <p>Kaj je REST? REST ali <em>REpresentational State Transfer</em> podaja smernice pri razvoju spletnih storitev z namenom omogočanja in olajšanja interoperabilnosti med sistemi na spletu. Spletne storitve, ki so v skladu s temi smernicami, se imenujejo RESTful spletne storitve ter omogočajo dostop preko uniformnega in definiranega seta operacij. Več o tem lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipediji</a>, razloženo pa je tudi v videoposnetku spodaj (in še mimogrede vidimo primer, kako v zvezek JupyterLab vključumo video z YouTube).</p>
 <div class="cell docutils container">
@@ -516,9 +532,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="zgledi">
-<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">#</a></h2>
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this heading">#</a></h2>
 <section id="definiranje-naslovov">
-<h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Permalink to this headline">#</a></h3>
+<h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Permalink to this heading">#</a></h3>
 <p>Najprej vključimo modul <em>requests</em>, ki nam omogoča dostop do storitev preko protokola HTTP.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -535,7 +551,7 @@ document.write(`
 </ul>
 </section>
 <section id="iskanje-po-uniprotu">
-<h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Permalink to this headline">#</a></h3>
+<h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Permalink to this heading">#</a></h3>
 <p>Če iščemo po UniProtu preko spletnega vmesnika (<em>Advanced search</em>, na primer s pojmoma <em>matriptase</em> kot ime proteina (<em>name</em>) ter <em>homo sapiens</em> kot organizem ter želimo samo ročno pregledane (<em>reviewed</em>) zapise, to izgleda v iskalnem polju tako: <code class="docutils literal notranslate"><span class="pre">(protein_name:matriptase)</span> <span class="pre">AND</span> <span class="pre">(organism_name:&quot;homo</span> <span class="pre">sapiens&quot;)</span> <span class="pre">AND</span> <span class="pre">(reviewed:true)</span></code>. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: <code class="docutils literal notranslate"><span class="pre">https://www.uniprot.org/uniprotkb?query=%28protein_name%3Amatriptase%29%20AND%20%28organism_name%3A%22homo%20sapiens%22%29%20AND%20%28reviewed%3Atrue%29</span></code>. Imena posameznih polj (<em>return fields</em>) so na voljo v <a class="reference external" href="https://www.uniprot.org/help/return_fields">dokumentaciji</a>.</p>
 <p>Tak strukturiran zapis lahko uporabimo v Pythonu, pri čemer nastavimo kot tip izpisa seznam (<em>list</em>; glejte na konec URL), da dobimo samo seznam kod zapisov, hkrati pa lahko nastavimo, da nam program vrne ime napake, če gre kaj narobe (kode napak in njihovi opisi so <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">dokumentirani</a>). Da zadeva deluje moramo wgolj <em>www</em> nadomestiti z <em>rest</em> ter pred <em>query</em> vstaviti <em>/search</em>, kot je opisano <a class="reference external" href="https://www.uniprot.org/help/api_queries">tukaj</a>.  Torej:</p>
 <div class="cell docutils container">
@@ -592,7 +608,7 @@ Q7RTY8
 <p>Če je nek iskalni pojem sestavljen iz večih besed (npr. <em>homo sapiens</em>), ga moramo dati v narekovaje.</p>
 </section>
 <section id="izpis-zaporedja">
-<h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Permalink to this headline">#</a></h3>
+<h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Permalink to this heading">#</a></h3>
 <p>V kakšnem formatu želimo izpis določimo preko spremenljivke <em>format</em>, ki lahko zavzame možnosti html, tab, xls, fasta, txt itd., kar je <a class="reference external" href="https://www.uniprot.org/help/api%5Fqueries">dokumentirano v opisu API</a>. Recimo, če si želimo izpis vseh rezultatov v formatu FASTA in izpis omejimo na prvih 300 znakov, naredimo tako:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -689,7 +705,7 @@ SLL
 </div>
 </section>
 <section id="napake-pri-iskanju">
-<h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Permalink to this headline">#</a></h3>
+<h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Permalink to this heading">#</a></h3>
 <p>Včasih se zatipkamo v imenu ali kodi dostopa. Kaj se zgodi v primeru, da UniProt ne najde ničesar (v spodnjem primeru je v <em>accession code</em> iz zgornjega primera dodan še znak <em>x</em>? Nekaj možnosti:</p>
 <ul class="simple">
 <li><p>code 200: poizvedba uspešno opravljena</p></li>
@@ -715,7 +731,7 @@ SLL
 </div>
 </section>
 <section id="izvoz-v-datoteko">
-<h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Permalink to this headline">#</a></h3>
+<h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Permalink to this heading">#</a></h3>
 <p>Pa naredimo sedaj še nekaj drugega - rezultat (lahko bi jih bilo več) shranimo v lokalno datoteko, nato za test izpišemo njeno vsebino ter jo pretvorimo v objekt Seq:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -776,13 +792,13 @@ SLL
 </div>
 </section>
 <section id="drugi-servisi">
-<h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Permalink to this headline">#</a></h3>
+<h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Permalink to this heading">#</a></h3>
 <p>Dostop do zbirk zaporedij je mogoč tudi preko drugih servisovm, na primer EMBL/EBI, kjer na voljo obširna navodila za dostop na strani <a class="reference external" href="https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Job+Dispatcher+Sequence+Analysis+Tools+Home">Job Dispatcher Sequence Analysis Tools Home</a>. Vsebina zbirke je enaka kot na UniProt.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
-<h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Permalink to this headline">#</a></h2>
+<h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Permalink to this heading">#</a></h2>
 <p>Za aminokislinsko zaporedje od zgoraj lahko s pomočjo <em>ProteinAnalysis</em>, ki je del modula <a class="reference external" href="https://biopython.org/wiki/ProtParam">ProtParam</a> v BioPython, izračunamo nekatere osnovne parametre. Pri tem moramo biti pozorni, da objekt Seq pretvorimo v niz oz. <em>string</em>.</p>
 <p>Kaj vse modul ProtParam omogoča si oglejte na spletni strani <a class="reference external" href="https://biopython.org/wiki/ProtParam">BioPython ProtParam</a>.</p>
 <div class="cell docutils container">
@@ -830,7 +846,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </section>
 <hr class="docutils" />
 <section id="analiza-zaporedja-z-drsecim-oknom">
-<h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Permalink to this headline">#</a></h2>
+<h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Permalink to this heading">#</a></h2>
 <p>Za primer bomo analizirali hidrofobnost proteina in sicer bomo narisali hidrofobni profil. Pri tovrstnih analizah ponavadi uporabljamo drseče okno ustrezne velikosti, pri čemer nek parameter povprečimo po tem oknu in ga pripišemo aminokislinskemu ostanki v sredini tega okna. Zato, da je določitev ak-ostanka v sredini okna nedvoumna, uporabljamo kot velikost okna liho število ak-ostankov.</p>
 <p>O analizi z uporabo drsečega okna smo že govorili na predavanjih:
 <img alt="Analiza z drsečim oknom" src="../_images/drsece_okno.png" /></p>
@@ -940,7 +956,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </section>
 <hr class="docutils" />
 <section id="naloga">
-<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">#</a></h2>
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this heading">#</a></h2>
 <p>Vaša naloga je, da pripravite program, ki vas bo povprašal po naslednjih parametrih (v tem vrstnem redu):</p>
 <ol class="arabic simple">
 <li><p>kodi zapisa v UniProt;</p></li>
@@ -955,7 +971,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
 <section id="dodatna-naloga-za-entuzijaste">
-<h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Permalink to this headline">#</a></h3>
+<h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Permalink to this heading">#</a></h3>
 <p>Podobno kot pri osnovni nalogi pripravite program, ki (v tem vrstnem redu):</p>
 <ol class="arabic simple">
 <li><p>vpraša za kodo zapisa v UniProt;</p></li>
@@ -994,11 +1010,10 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="uniprot_web.html"
@@ -1018,10 +1033,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1099,8 +1111,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

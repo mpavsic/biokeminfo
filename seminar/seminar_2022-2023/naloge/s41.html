@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -433,7 +449,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s41">
-<h1>S41<a class="headerlink" href="#s41" title="Permalink to this headline">#</a></h1>
+<h1>S41<a class="headerlink" href="#s41" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Lara Zupanc</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
@@ -441,7 +457,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Zaporedje:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADELDALETRLATERLDDAVAPGAEQSLASIWQGLTRAERRDPALRAHYARCLIRSGESA</span>
 <span class="n">AAAELLKGWLRHDWDDRLVTAWGELEEVPGDQGFAQAERWLNHRPDDPVL</span>
@@ -450,9 +466,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p><strong>Protein</strong>: HemY</p>
 <p><strong>Organizem</strong>: <a class="reference external" href="https://en.wikipedia.org/wiki/Arhodomonas_aquaeolei"><em>Arhodomonas aquaeolei</em></a>; paličasta gram negativna bakterija</p>
 <p><strong>Potencialna funkcija proteina</strong>: sodeluje pri sintezi protohema IX oz. <a class="reference external" href="https://en.wikipedia.org/wiki/Heme_B">hema B</a></p>
@@ -473,10 +489,10 @@ document.write(`
 </div>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Za zapis GenBank <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_018718055.1">WP_018718055.1</a> ni na voljo pripisov glede značilnosti proteina. Da sem prišla do podatkov o proteinu, sem si pomagala z iskanjem po zbirki Uniprot/SwissProt, kjer so dobro anotirana zaporedja proteinov z aminokislinskim zaporedjem, podobnim aminokislinskemu zaporedju identificiranega proteina.</p>
 <section id="lokalizacija-domene-in-post-translacijske-modifikacije">
-<h4>Lokalizacija, domene in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-domene-in-post-translacijske-modifikacije" title="Permalink to this headline">#</a></h4>
+<h4>Lokalizacija, domene in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-domene-in-post-translacijske-modifikacije" title="Permalink to this heading">#</a></h4>
 <p>Z iskanjem z blastp po zbirki Uniprot/SwissProt (dobro anotirani zapisi) z zaporedjem WP_018718055.1_ak sem identificirala 2 proteina, kjer eden izmed rezultatov predstavlja protein HemY iz <em>E. coli</em>.</p>
 <p><img alt="blastp tabela" src="../../../_images/s41-blastp_swissprot_tabela.png" /></p>
 <p>Prvi zadetek pokriva večinski del iskalnega zaporedja:</p>
@@ -487,7 +503,7 @@ document.write(`
 <p><img alt="poravnava s P0ACB7" src="../../../_images/s41-poravnava-P0ACB7.png" /></p>
 <p>Iz poravnave je razvidno, da ima protein le nekaj ohranjenih mest, ki so razporejena po celotnem zaporedju. Prisotnih je nekaj krajših ohranjenih regij dolgih okoli 4-5 aminokislinskih ostankov. Anotiran protein je v primerjavi s preučevanim proteinom krajši za 25 aminokislinskih ostankov.</p>
 <section id="domene-in-motivi-proteina">
-<h5>Domene in motivi proteina<a class="headerlink" href="#domene-in-motivi-proteina" title="Permalink to this headline">#</a></h5>
+<h5>Domene in motivi proteina<a class="headerlink" href="#domene-in-motivi-proteina" title="Permalink to this heading">#</a></h5>
 <p>Na osnovi podobnosti z anotiranim zaporedjem P0ACB7 lahko sklepam tudi kakšne domene sestavljajo moj protein:</p>
 <p><img alt="domene" src="../../../_images/s41-domene-P0ACB7.png" /></p>
 <p>Protein z anotiranim zaporedjem P0ACB7 je sestavljen iz dveh citosolnih in dveh transmembranskih domen ter ene periplazemske domene. Iz zgornje poravnave sem izračunala koliko aminokislinskih ostankov v preučevanem proteinu je enakih s tem proteinom. Transmembranske domene preučevanega proteina imajo 30 % identičnost glede na protein z anotiranim zaporedjem P0ACB7. Njihova identičnost je višja kot pri periplazmatski in C-končni domeni (25 % identičnost) in to pomeni, da so bolj ohranjene. Najbolj ohranjena pa je N-končna domena, katere identičnost je 50 %. Eden izmed potencialnih razlogov za to visoko identičnost je verjetno njeno kratko zaporedje dolgo le 4 aminokislinske ostanke. Glede na vrednost identičnosti, obstaja možnost, da so te domene ohranjene tudi pri proteinu HemY iz <em>Arhodomonas aquaeolei</em>. Moje sklepe o domenah proteina sem potrdila še z uporabo orodja <a class="reference external" href="https://services.healthtech.dtu.dk/services/TMHMM-2.0">TMHMM - 2.0</a>, ki napove, kje se nahajajo transmembranske domene. V orodje sem vnesla zaporedje proteina HemY iz <em>Arhodomonas aquaeolei</em> in dobila rezultat prikazan spodaj:</p>
@@ -497,7 +513,7 @@ document.write(`
 <p><img alt="ponavljajoče se regije" src="../../../_images/s41-ponavljajoce-regije.png" /></p>
 </section>
 <section id="post-translacijske-modifikacije">
-<h5>Post-translacijske modifikacije<a class="headerlink" href="#post-translacijske-modifikacije" title="Permalink to this headline">#</a></h5>
+<h5>Post-translacijske modifikacije<a class="headerlink" href="#post-translacijske-modifikacije" title="Permalink to this heading">#</a></h5>
 <p>Za nadaljnjo poravnavo in iskanje post-translacijskih modifikacij, sem najprej poiskala nekaj zaporedij z iskanjem po zbirki Uniprot z blastp (iskanje preko <a class="reference external" href="https://www.uniprot.org/blast">BLAST&#64;UniProt</a>). Izbrala sem nekaj dobljenih zadetkov, ki so približno enakih dolžin (okoli 400 aminokislinskih ostankov) in njihova identičnost je 40-50 %. Tem zaporedjem sem dodala še dodatne zadetke z iskanjem po delu zbirke SwissProt (dobro anotirana zaporedja) ter naredila poravnavo v orodju UniProt. Ta omogoča identifikacijo potencialno ohranjenih mest post-translacijskih modifikacij.</p>
 <p>Prikaz izbranih zaporedij za poravnavo:</p>
 <p><img alt="izbrana zaporedja" src="../../../_images/s41-izbrana-zaporedja.png" /></p>
@@ -507,11 +523,11 @@ document.write(`
 </section>
 </section>
 <section id="izrazanje-proteina-v-rekombinantni-obliki">
-<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this headline">#</a></h4>
+<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this heading">#</a></h4>
 <p>Glede na to, da gre za protein, ki se nahaja v notranji celični membrani bakterij in ni prisotnih nobenih post-translacijskih modifikacij, bi za izražanje uporabili bakterijski ekspresijski sistem.</p>
 </section>
 <section id="homologi">
-<h4>Homologi<a class="headerlink" href="#homologi" title="Permalink to this headline">#</a></h4>
+<h4>Homologi<a class="headerlink" href="#homologi" title="Permalink to this heading">#</a></h4>
 <p>Paralogi proteina niso znani, ima pa protein nekaj ortologov. Od teh je le eden z anotiranim zaporedjem:</p>
 <ul class="simple">
 <li><p>protein HemY iz <em>E. coli</em> (<a class="reference external" href="https://www.uniprot.org/uniprotkb/P0ACB7">P0ACB7</a>)</p></li>
@@ -527,13 +543,13 @@ document.write(`
 <p>Pri proteinu in njegovih homologih so ohranjene transmembranske domene. Ohranjenih je tudi nekj aminokislinskih ostankov na določenih mestih ter krajša aminokislinska zaporedja.</p>
 </section>
 <section id="interakcije">
-<h4>Interakcije<a class="headerlink" href="#interakcije" title="Permalink to this headline">#</a></h4>
+<h4>Interakcije<a class="headerlink" href="#interakcije" title="Permalink to this heading">#</a></h4>
 <p>Prikaz interakcij proteina HemY iz organizma <em>Arhodomonas aquaeolei</em>:</p>
 <p><img alt="interakcije" src="../../../_images/s41-interakcije.png" /></p>
 <p>Vseh 10 prikazanih proteinov, s katerimi protein HemY (rdeča barva) potencialno interagira, je neanotiranih in iz organizma <em>Arhodomonas aquaeolei</em>. Njihova funkcija je sodelovanje pri procesih, kot so biosinteza hema, presnova hema, biosinteza organodušikovih spojin in še nekaj drugih procesov.</p>
 </section>
 <section id="strukturna-karakterizacija">
-<h4>Strukturna karakterizacija<a class="headerlink" href="#strukturna-karakterizacija" title="Permalink to this headline">#</a></h4>
+<h4>Strukturna karakterizacija<a class="headerlink" href="#strukturna-karakterizacija" title="Permalink to this heading">#</a></h4>
 <p>Struktura preučevanega proteina ni znana. Prav tako ni znana tudi nobena struktura homologov.</p>
 <p>Predviden model proteina HemY iz organizma <em>Arhodomonas aquaeolei</em>:</p>
 <ul class="simple">
@@ -580,16 +596,12 @@ Problem se pojavi pri gradnji modela funkcionalnega proteina. Znano je le, da je
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -668,8 +680,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

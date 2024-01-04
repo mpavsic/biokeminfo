@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -77,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Aminokislinska zaporedja" href="../osnove/ak.html" />
     <link rel="prev" title="VAJA: Dostop do GenBank v brskalniku" href="genbank_web.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -86,6 +88,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -146,13 +157,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -247,6 +259,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -419,10 +435,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -430,7 +446,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -482,14 +498,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-programski-dostop-do-genbank-python">
-<h1>VAJA: Programski dostop do GenBank (Python)<a class="headerlink" href="#vaja-programski-dostop-do-genbank-python" title="Permalink to this headline">#</a></h1>
+<h1>VAJA: Programski dostop do GenBank (Python)<a class="headerlink" href="#vaja-programski-dostop-do-genbank-python" title="Permalink to this heading">#</a></h1>
 <p>Tudi pri tej vaji bomo, podobno kot pri dostopu do PubMeda, uporabljali <a class="reference external" href="https://biopython.org">BioPython</a>. Navodila z zgledi so na voljo v <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html">BioPython Tutorial and Cookbook</a>.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v zgledih, nato pa z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode rešite nalogo na dnu zvezka.</p>
 <hr class="docutils" />
 <section id="zgledi">
-<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this headline">#</a></h2>
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this heading">#</a></h2>
 <section id="dostop-do-genbank">
-<h3>Dostop do GenBank<a class="headerlink" href="#dostop-do-genbank" title="Permalink to this headline">#</a></h3>
+<h3>Dostop do GenBank<a class="headerlink" href="#dostop-do-genbank" title="Permalink to this heading">#</a></h3>
 <p>Dostop do GenBank je mogoč direktno z uporabo modulov v <strong>BioPython</strong>, podobno kot to velja za PubMed (modul Bio.Entrez, ki smo ga spoznali <a class="reference internal" href="pubmed_eutilities.html"><span class="doc std std-doc">tukaj</span></a>). Tudi tokrat se moramo za uporabo E-utilities identificirati z e-poštnim naslovom. Če <em>accession code</em> poznamo, lahko uporabimo funkcijo <code class="docutils literal notranslate"><span class="pre">efetch</span></code>, sicer pa izvedemo iskanje z <code class="docutils literal notranslate"><span class="pre">esearch</span></code> in šele nato prenesemo zapis(e) z <code class="docutils literal notranslate"><span class="pre">efetch</span></code>, v obeh primerih pa rezultate preberemo z <code class="docutils literal notranslate"><span class="pre">read</span></code>.</p>
 <p>Pa kar gremo k primeru, ki ilustrira branje enega zapisa - tako torej dostopamo do zapisa, če poznamo <strong>kodo za dostop</strong> (<em>accession code</em>). Če ne napišemo verzije zapisa nam vrne zadnjo (najnovejšo) verzijo, sicer pa lahko verzijo sami določimo tako, da <em>accession code</em> napišemo v obliki NM_005985.4 (če je osnovna koda NM_005985).</p>
 <p>Kot zbirko (<code class="docutils literal notranslate"><span class="pre">db</span></code>) izberemo <em>nucleotide</em>, podatke pa prenesemo v obliki teksta (<code class="docutils literal notranslate"><span class="pre">retmod='text'</span></code>).</p>
@@ -591,7 +607,7 @@ Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA
 </div>
 </section>
 <section id="shranjevanje-zapisa-v-datoteko">
-<h3>Shranjevanje zapisa v datoteko<a class="headerlink" href="#shranjevanje-zapisa-v-datoteko" title="Permalink to this headline">#</a></h3>
+<h3>Shranjevanje zapisa v datoteko<a class="headerlink" href="#shranjevanje-zapisa-v-datoteko" title="Permalink to this heading">#</a></h3>
 <p>Zapis lahko tudi shranimo v lokalno datoteko v formatu Genbank ali FASTA. Pozor, da spodnja koda deluje morate imeti v mapi, kjer se nahaja trenutno ta datoteka <code class="docutils literal notranslate"><span class="pre">ipynb</span></code>, ustvarjeno mapo <code class="docutils literal notranslate"><span class="pre">izhod</span></code>!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -622,7 +638,7 @@ Homo sapiens snail family transcriptional repressor 1 (SNAI1), mRNA
 </div>
 </section>
 <section id="ekstrakcija-dela-zapisa-in-prevajanje">
-<h3>Ekstrakcija dela zapisa in prevajanje<a class="headerlink" href="#ekstrakcija-dela-zapisa-in-prevajanje" title="Permalink to this headline">#</a></h3>
+<h3>Ekstrakcija dela zapisa in prevajanje<a class="headerlink" href="#ekstrakcija-dela-zapisa-in-prevajanje" title="Permalink to this heading">#</a></h3>
 <p>Zapis preberemo iz datoteke s <code class="docutils literal notranslate"><span class="pre">SeqIO.parse</span></code>, ekstrahiramo pa lahko določeno značilnost, na primer kodirajoče zaporedje (CDS) - seveda to velja na primer pri mRNA, značilnosti pa so prisotne samo v zapisu GenNank, pri FASTA formatu pa seveda ne. CDS lahko tudi prevedemo z uporabo določene kodne tabele (navodila na BioPython: <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc26">Translation Tables</a>) in dobimo nov objekt, iz katerega lahko izpišemo samo zaporedje (kako bo izpisan kodon STOP lahko tudi nastavimo).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -658,19 +674,19 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 </section>
 <hr class="docutils" />
 <section id="naloga">
-<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">#</a></h2>
+<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this heading">#</a></h2>
 <section id="ozadje">
-<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">#</a></h3>
+<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this heading">#</a></h3>
 <p>Znano je , da se sestava kodirajoče in nekodirajoče regije nekoliko razlikuje, kar je opisano tudi na <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_region">Wikipediji</a>: “<em>The coding region is thought to contain a higher GC-content than non-coding regions. There is further research that discovered that the longer the coding strand, the higher the GC-content. Short coding strands are comparatively still GC-poor, similar to the low GC-content of the base composition translational stop codons like TAG, TAA, and TGA.</em>”</p>
 <p>Nekajna to temo lahko preberete tudi v članku <a class="reference external" href="https://dx.doi.org/10.1186/1471-2148-8-99">Both selective and neutral processes drive GC content evolution in the human genome</a>.</p>
 </section>
 <section id="id1">
-<h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Naloga<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Vaša naloga je, da pripravite program, ki bo za dano kodo zapisa izračunal <strong>delež GC (v %) v CDS in pa v zaporedju, ki ni del CDS (torej v 5’- in 3’-neprevedeni regiji)</strong>.</p>
 <p>Da bo analiza smiselna, je smiselno uporabiti genomsko zaporedje. Lahko za primer vzamete virusni genom SARS-CoV-2, en tak zapis je <a class="reference external" href="https://www.ncbi.nlm.nih.gov/nuccore/MT066156">GenBank MT066156</a> ali pa kratek genom kakšne bakterije (pobrskajte po GenBank in omejite rezultate na genomsko DNA dolžine med <span class="math notranslate nohighlight">\(10^6\)</span> in <span class="math notranslate nohighlight">\(1.5 \times 10^6\)</span> bp, da ne bo analiza trajala predolgo). Podite pozorni - genomi vsebujejo več kodirajočih regij, ki jih morate za to analizo združiti v eno zaporedje.</p>
 </section>
 <section id="namigi">
-<h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this headline">#</a></h3>
+<h3>Namigi<a class="headerlink" href="#namigi" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Za izračun deležev GC si oglejte prvo (analiza kratkega nukleotidnega zaporedja), tam je tudi ilustrirano, kako dobite dolžino zaporedja. Izpis programa naj bo takšen, da bo jasno, kaj je kar - podobno, kot ste to naredili pri prvi vaji za izračun temperature tališča oligonukleotida.</p></li>
 <li><p>Morda se naloga sliši kompleksna, a v resnici ni - s stavkom <code class="docutils literal notranslate"><span class="pre">if</span></code> lahko prečešete vhodno zaporedje za posamezne regije CDS in za vsako od njih izračunate število G+C, ki ga prištejete (uporabite <code class="docutils literal notranslate"><span class="pre">+=</span></code>) k skupnemu številu G+C.</p></li>
@@ -696,7 +712,7 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
 </section>
 <section id="v-razmislek">
-<h3>V razmislek<a class="headerlink" href="#v-razmislek" title="Permalink to this headline">#</a></h3>
+<h3>V razmislek<a class="headerlink" href="#v-razmislek" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Kaj pa, če analizirano zaporedje vsebuje prekrivajoče se CDS? Je vaš algoritem na to prilagojen? Če ne, kako bi ga prilagodili?</p></li>
 <li><p>Pri analizi smo izračunali odstotek GC parov kar po vseh CDS hkrati (povprečenje), s tem pa smo nekaj informacij izgubili, npr. o razponu deleža GC ter o porazdelitvi deleža GC glede na dolžino CDS. Razmislite, kako bi analizo izvedli, da bi prišli do teh informacij in kako bi jih vizualizirali.</p></li>
@@ -730,11 +746,10 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="genbank_web.html"
@@ -754,10 +769,7 @@ MPRSFLVRKPSDPNRKPNYSELQDSNPEFTFQQPYDQAHLLAAIPPPEILNPTASLPMLIWDSVLAPQAQPIAWASLRLQ
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -832,8 +844,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

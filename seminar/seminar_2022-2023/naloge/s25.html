@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -438,7 +454,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s25">
-<h1>S25<a class="headerlink" href="#s25" title="Permalink to this headline">#</a></h1>
+<h1>S25<a class="headerlink" href="#s25" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Lena in Kogoj</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
@@ -446,7 +462,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Zaporedje:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">S25</span>
 <span class="n">IQIELAIDNYNILKEFDFSPIFKGYRQMRVIDTIGRESIIFELEKVDYDRQFKFKNIREI</span>
@@ -456,9 +472,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p><strong>Protein</strong>: ATPaza družine AAA (AAA family ATPase)</p>
 <p><strong>Organizem</strong>: <a class="reference external" href="https://en.wikipedia.org/wiki/Streptococcus_parasanguinis"><em>Streptococcus parasanguinis</em></a>; gre za Gram pozitivno bakterijo, ki prebiva v človeški ustni votlini</p>
 <p><strong>Identifikacija</strong>:
@@ -480,10 +496,10 @@ Identifikacija je bila narejena z uporabo <a class="reference external" href="ht
 <p>v splošnem so funkcije ATPaz družine AAA naslednje: replikacija DNA, degradacija proteinov, fuzija membran, biogeneza peroksisimov, signalna transdukcija, regulacija izražanja genov</p>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Za zapis GenBank <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> ni na voljo pripisov glede lastnosti proteina, zato so mi bila v pomoč dobro anotirana zaporedja proteinov z aminokislinskim zaporedjem, podobnim aminokislinskemu zaporedju identificiranega proteina.</p>
 <section id="lokalizacija">
-<h4>Lokalizacija<a class="headerlink" href="#lokalizacija" title="Permalink to this headline">#</a></h4>
+<h4>Lokalizacija<a class="headerlink" href="#lokalizacija" title="Permalink to this heading">#</a></h4>
 <p>Z iskanjem z blastp (privzete nastavitve) po zbirki Uniprot/SwissProt (dobro anotirani zapisi) z zaporedjem <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> lahko identificiramo 3 podobne (homologne) proteine, dva od njih sta DNA translokazi FtsK (mislim, da gre v resnici za dva zapisa za enak protein, saj so dolžina, organizem in ime proteina v obeh zapisih enaki), tretji (tisti, z najvišjo identičnostjo) pa domeno Ftsk vsebuje:</p>
 <p><img alt="blastp tabela" src="../../../_images/S25-blastp_swissprot_tabela.png" /></p>
 <p>Zadetki pokrivajo zaporedje nekje od 180 pa do 350 aminokislinskega ostanka:</p>
@@ -491,14 +507,14 @@ Identifikacija je bila narejena z uporabo <a class="reference external" href="ht
 <p>Najbolj podobno (identičnost v poravnanem delu je še vedno dokaj nizka - 28 %, obsega pa 44 % iskalnega zaporedja, hkrati pa je E-vrednost dokaj nizka) je zaporedje v zapisu Uniprot <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>; gre za proitein YdcQ s Ftsk domeno (Ftsk domain-containing protein YdcQ) iz organizma <a class="reference external" href="https://en.wikipedia.org/wiki/Bacillus_subtilis"><em>Bacillus subtilis</em></a>. Za ta protein je pripisano, da se nahaja v celični membrani, in sicer jo dvakrat prečka (vsebuje dve transmembranski regiji). Obsega 480 aminokislinskih ostankov.</p>
 </section>
 <section id="signalni-peptid">
-<h4>Signalni peptid<a class="headerlink" href="#signalni-peptid" title="Permalink to this headline">#</a></h4>
+<h4>Signalni peptid<a class="headerlink" href="#signalni-peptid" title="Permalink to this heading">#</a></h4>
 <p>Da bi našla signalni peptid v neanotiranem proteinu <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> sem uporabila <a class="reference external" href="https://services.healthtech.dtu.dk/services/SignalP-5.0/">SignalP - 5.0</a>. Z ozirom na rezultat iskanja lahko z veliko verjetnostjo trdim, da moj protein nima signalnega peptiga.</p>
 <p>Prikaz iskanja signalnega peptida:</p>
 <p><img alt="signalni peptid" src="../../../_images/S25-signalni_peptid.png" /></p>
 <p>Glede na pripise na UniProtu signalnega peptida nima niti anotiran protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>, ki je mojemu proteinu homolog.</p>
 </section>
 <section id="funkcija">
-<h4>Funkcija<a class="headerlink" href="#funkcija" title="Permalink to this headline">#</a></h4>
+<h4>Funkcija<a class="headerlink" href="#funkcija" title="Permalink to this heading">#</a></h4>
 <p>Iskanja funkcije svojega proteina <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> sem se lotila s pomočjo anotiranega proteina <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>. Za ta protein, kljub temu, da je anotiran, v UniProtu ni veliko pripisov glede njegove funkcije, vsebuje pa FtsK domeno (med 217. in 399. aminokislinskim ostankom). Zato sem z zaporedjem <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a> preverila zadetke v bazi <a class="reference external" href="https://www.ebi.ac.uk/interpro">InterPro</a> in tem identificirala domeno FtsK.</p>
 <p>Zadetki v InterPro za <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>:</p>
 <p><img alt="InterPro domena" src="../../../_images/S25-interpro_domene.png" /></p>
@@ -508,16 +524,16 @@ Identifikacija je bila narejena z uporabo <a class="reference external" href="ht
 <p>Med 177. in 362. aminokislinskim ostankom tudi neanotiran protein <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> vsebuje domeno Ftsk in torej deluje kot <strong>DNA translokaza</strong> - protein, ki s kemično energijo, ki jo pridobi s hidrolizo ATP, premika DNA, kar je zelo pomembno med celično delitvijo.</p>
 </section>
 <section id="post-translacijske-modifikacije">
-<h4>Post-translacijske modifikacije<a class="headerlink" href="#post-translacijske-modifikacije" title="Permalink to this headline">#</a></h4>
+<h4>Post-translacijske modifikacije<a class="headerlink" href="#post-translacijske-modifikacije" title="Permalink to this heading">#</a></h4>
 <p>Anotiran protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a> ne vsebuje nobenih post-translacijskih modifikacij, kar je bilo za pročakovati, saj se nahaja v bakteriji. Za to skupino organizmov je značilno, da proteini ne vsebujejo post-translacijskih modifikacij. Lahko zaključimo, da tudi naš protein (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a>) post-translacijskih modifikacij ne vsebuje.</p>
 </section>
 <section id="izrazanje-proteina-v-rekombinantni-obliki">
-<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this headline">#</a></h4>
+<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this heading">#</a></h4>
 <p>Ker gre za bakterijski protein, je najbolj smiselno, da se ga izrazi v bakterijskem ekspresijskem sistemu. Verjetno ne bi bilo nič narobe, če bi ga poskusili izraziti tudi v evkariontskem ekspresijskem sistemu, vendar je delo z bakterisjkim ekspresijskim sistemom mnogo lažje.
 Najbolj smiselno je izraziti celotni protein, čeprav ima encimsko funkcijo zgolj domena FtsK, saj je preostanek proteina verjetno pomemben za strukturo proteina (njegovo pravilno zvijanje in lokalizacijo v celici - pritrditev na membrano) in posledično za njegovo funkcijo.</p>
 </section>
 <section id="homologi-ortologi">
-<h4>Homologi, ortologi<a class="headerlink" href="#homologi-ortologi" title="Permalink to this headline">#</a></h4>
+<h4>Homologi, ortologi<a class="headerlink" href="#homologi-ortologi" title="Permalink to this heading">#</a></h4>
 <p>Iskanja homologov sem se lotila z blastp, in sicer z zaporedjem <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a>.</p>
 <p>Zadetki iskanja:</p>
 <p><img alt="iskanje homologov" src="../../../_images/S25-blast_homologi.png" /></p>
@@ -533,7 +549,7 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 <p><img alt="ohranjnost FtsK" src="../../../_images/S25-poravnava_ohranjenost_FtsK.png" /></p>
 </section>
 <section id="funkcija-in-encimska-aktivnost">
-<h4>Funkcija in encimska aktivnost<a class="headerlink" href="#funkcija-in-encimska-aktivnost" title="Permalink to this headline">#</a></h4>
+<h4>Funkcija in encimska aktivnost<a class="headerlink" href="#funkcija-in-encimska-aktivnost" title="Permalink to this heading">#</a></h4>
 <p>Kot sem že omenila, je funkcija proteina transport DNA, za kar je potrebna energija, ki jo protein dobi s hidrolizo ATP. Protein mora torej nekje imeti vezavno mesto za DNA, kjer hkrati pride tudi do hidrolize ATP. Ker protein <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> ni anotiran, sem se iskanja vezavnega mesta za ATP lotila s pomočjo poravnave z anotiranim zaporedjem <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>, kjer je vezavno mesto za ATP označeno, in sicer se nahaja med 234. in 241. mestom. Da je vazavno mesto za ATP hkrati tudia aktivno mesto tega proteina, sem sklepala na podlagi dejstva, da aktivno mesto ni posebej označeno.</p>
 <p>Poravnava s prikzanim aktivnim mestom:</p>
 <p><img alt="poravnava aktivno mesto" src="../../../_images/S25-blast_aktivno_mesto.png" /></p>
@@ -544,7 +560,7 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 <p><img alt="ohranjenost vezavno mesto" src="../../../_images/S25-UniPro_vezavno_mesto.png" /></p>
 </section>
 <section id="interakcije">
-<h4>Interakcije<a class="headerlink" href="#interakcije" title="Permalink to this headline">#</a></h4>
+<h4>Interakcije<a class="headerlink" href="#interakcije" title="Permalink to this heading">#</a></h4>
 <p>Iskanja interakcij neanotiranega proteina <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> sem se lotila s pomočjo anotiranega proteina <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>. V zbirki interakcij <a class="reference external" href="https://string-db.org/">String</a> protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>, ki je v tej zbirki shranjen pod imenom ydcQ, še nima ekperimentalno dokazanih strukturnih interakcij z ostalimi proteini (iskala sem po delu zbirk, kjer so zabeleženi eksperimentalni podatki (‘Experiments’) in zadetki iz ostalih zbirk interakcij (‘Databases’)).</p>
 <p>Prikaz zadetkov v zbirki String (‘Experiments’ in ‘Databases’):</p>
 <p><img alt="strukturne interakcije String" src="../../../_images/S25-String_strukturne_interakcije.png" /></p>
@@ -553,7 +569,7 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 <p><img alt="strukturne interakcije String Textmining" src="../../../_images/S25-String_strukturne_interakcije_Textmining.png" /></p>
 </section>
 <section id="ponavljajoce-se-regije-in-motivi">
-<h4>Ponavljajoče se regije in motivi<a class="headerlink" href="#ponavljajoce-se-regije-in-motivi" title="Permalink to this headline">#</a></h4>
+<h4>Ponavljajoče se regije in motivi<a class="headerlink" href="#ponavljajoce-se-regije-in-motivi" title="Permalink to this heading">#</a></h4>
 <p>Iskanja ponavljajočih se delov aminokislinskega zaporedja proteina <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> sem se lotila z <a class="reference external" href="https://www.novoprolabs.com/tools/repeats-sequences-finder">Repeats Finder for DNA/Protein Sequences</a>. Prag oziroma minimalno število aminokislinskih ostankov, ki tvorijo ponavljajočo se regijo, sem nastavila na 5 - program je torej iskal take ponovitve, kjer se minimalno ponovi 5 aminokislinskih ostankov znotraj celotnega zaporedja. Ugotovila sem, da takih ponovitev ni.</p>
 <p>Prikaz iskanja ponavljajočih se regij:</p>
 <p><img alt="ponavljajoče se regije" src="../../../_images/S25-ponovitve.png" /></p>
@@ -564,9 +580,9 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 </section>
 </section>
 <section id="strukturna-katakterizacija">
-<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this heading">#</a></h3>
 <section id="alphafold-model">
-<h4>AlphaFold model<a class="headerlink" href="#alphafold-model" title="Permalink to this headline">#</a></h4>
+<h4>AlphaFold model<a class="headerlink" href="#alphafold-model" title="Permalink to this heading">#</a></h4>
 <p>Niti moj neanotiran protein <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> niti anotiran homolog <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a> nimata eksperimentalno določene strukture. Za anotiran homolog <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a> sem v zbirki <a class="reference external" href="https://www.rcsb.org/">PDB</a> našla z AlphaFoldom določen model strukture - <a class="reference external" href="https://www.rcsb.org/structure/AF_AFP96634F1">AF_AFP96634F1</a>.</p>
 <p>Prikaz modela strukture homologa <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>:</p>
 <p><img alt="AlphaFold P96634" src="../../../_images/S25-AlphaFold_P96634.png" /></p>
@@ -585,7 +601,7 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 <p>Če primerjam model strukture celotnega proteina z zgolj topnim, citosolnim delom oziroma domeno FtsK, vidim, da AlphaFold z veliko gotovostjo (&gt; 90, modra barva) napove ravno citosolni del, ki je tudi funcijsko najpomembnejši, saj vsebuje domeno FtsK, ter večino domene FtsK. Pri napovedi strukture domene FtsK se vseeno pojavi nekoliko več manj zaneslivo določenih strukturnih regij. Rekla bi, da je to zaradi tega, ker AlphaFold ne ve, da določa zgolj eno domeno, ki je vpeta v celoten protein, in zato iz danega zaporedja sestavi najbolj smiselen celovit in samostojen hipotetičen protein.</p>
 </section>
 <section id="superpozicija-s-homologom">
-<h4>Superpozicija s homologom<a class="headerlink" href="#superpozicija-s-homologom" title="Permalink to this headline">#</a></h4>
+<h4>Superpozicija s homologom<a class="headerlink" href="#superpozicija-s-homologom" title="Permalink to this heading">#</a></h4>
 <p>Da sem ugotovila strukturne podobnosti med svojim proteinom <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> in njegovim anotinarim homologom <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>, sem storila sledeče:</p>
 <ul class="simple">
 <li><p>Primerjala sem model svojega proteina <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_155173302.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=6Y3M1MK0016">WP_155173302.1</a> z modelom anotiranega homologa <a class="reference external" href="https://www.uniprot.org/uniprotkb/P96634/entry">P96634</a>, eksperimentalnih podatkov namreč nimam na voljo. Primerjavo sem izvedla s pomočjo poravnave obeh modelov v programu <a class="reference external" href="https://www.cgl.ucsf.edu/chimera/">Chimera</a>.</p></li>
@@ -629,16 +645,12 @@ iz <em>Streptococcus parasanguinis</em>. To lahko zaključimo kljub temu, da je 
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -722,8 +734,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -429,7 +445,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s06">
-<h1>S06<a class="headerlink" href="#s06" title="Permalink to this headline">#</a></h1>
+<h1>S06<a class="headerlink" href="#s06" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Maša Karčovnik</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-12</p></li>
@@ -437,7 +453,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Aminokislinsko zaporedje:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NTLGFPPVWATAQHGGFDMLATENSRTGSPIKGEIDLDNRNLMGFSMGGGGVLLA</span>
 <span class="n">AGEMGTGYKSAIALAPWLGQYSPAYENIQEPMLVLGSENDELAYYSDVFYASLPT</span>
@@ -446,9 +462,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p><strong>Protein</strong>: alfa/beta hidrolaza (alpha/beta hydrolase)</p>
 <p><strong>Organizem</strong>: <a class="reference external" href="https://en.wikipedia.org/wiki/Thalassolituus_oleivorans"><em>Thalassolituus oleivorans</em></a>; gre za aearobno gramnegativno bakterijo, ki razgrajujejo naftne ogljikovodike. Zaradi potrebe po Na+ ionih za rast so močni halofili.</p>
 <p><strong>Potencialna funkcija proteina</strong>: sodeluje pri razgradnji in asimilaciji plastičnega poli(etilen tereftalata) (PET), kar organizmu omogoča, da uporablja PET kot vir energije in ogljika za rast in delovanje.</p>
@@ -475,11 +491,11 @@ Alfa/beta hidrolaza je superdružina hidrolitskih encimov zelo različnega filog
 <p><img alt="prevod_nukleotidnega_zaporedja_v_aminokislinsko" src="../../../_images/s06-nukleotidno_zaporedje.png" /></p>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Za zapis GenBank <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/WP_025265408">WP_025265408</a> ni na voljo pripisov glede značilnosti proteinskega produkta.
 Iz pripisov za celoten genom organizma lahko razberemo da razgrajuje plastiko (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/nucleotide/CP006829.1?report=genbank&amp;log$=nucltop&amp;blast_rank=1&amp;RID=5WRKGBTZ016">CP006829.1</a>), torej bi vhodno aminokislinsko zaporedje zapisovalo za protein, ki je podoben polietilen tereftalat hidrolazi, ki je dobro anotiran v UniProt-u <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A0K8P6T7/entry#names_and_taxonomy">A0A0K8P6T7</a>.</p>
 <section id="lokalizacija-in-post-translacijske-modifikacije">
-<h4>Lokalizacija in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-in-post-translacijske-modifikacije" title="Permalink to this headline">#</a></h4>
+<h4>Lokalizacija in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-in-post-translacijske-modifikacije" title="Permalink to this heading">#</a></h4>
 <p>Z iskanjem z blastp (privzete nastavitve) po zbirki Uniprot/SwissProt (dobro anotirani zapisi) z vhodnim aminokislinskim zaporedjem lahko identificiramo 2 proteina (gre za hidrolazi:
 <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A0K8P6T7/entry#subcellular_location">polieteilen tereftalat hidrolaza</a> in <a class="reference external" href="https://www.uniprot.org/uniprotkb/P19833/entry#sequences">lipaza 1</a></p>
 <p>Obe zaporedji imata z izhodnim zaporedjem 34 % oziroma 35 % identičnost. S poravnavo zaporedij s programom Cobalt, lahko opazimo ohranjenost aminokislinskih ostankov predvsem v aktivih in vezavnih mestih med polietilen tereftalat hidralazo in vhodnim aminokislinskim zaporedjem, medtem ko lipaza 1 nima anotiranih aktivnih mest. Z iskanjem z blastp (privzete nastavitve) po zbirki Uniprot/SwissProt (dobro anotirani zapisi) z aminokislinskim zaporedjem za lipazo 1 smo ugotovili, da se obe najdeni zaporedji dobro ujemata (75 % zaporedje polietilen tereftalat hidralaze ima 45 % identičnost z lipazo 1.) <img alt="ujemanje_lipaza1_PET" src="../../../_images/s06-ujemanje_lipaza1.png" /></p>
@@ -487,11 +503,11 @@ Iz pripisov za celoten genom organizma lahko razberemo da razgrajuje plastiko (<
 <p><img alt="Cobalt" src="../../../_images/s06-cobalt.png" /></p>
 </section>
 <section id="izrazanje-proteina-v-rekombinantni-obliki">
-<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this headline">#</a></h4>
+<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this heading">#</a></h4>
 <p>Glede na to, da gre za zunajcelični prokariontski protein, ki najverjetneje nima postranslacijskih modifikacij, bi lahko bil primeren eskpresijski sistem za izražanje osnovan na bakterijskem ekspresijskem sistemu.</p>
 </section>
 <section id="ohranjeni-motivi">
-<h4>Ohranjeni motivi<a class="headerlink" href="#ohranjeni-motivi" title="Permalink to this headline">#</a></h4>
+<h4>Ohranjeni motivi<a class="headerlink" href="#ohranjeni-motivi" title="Permalink to this heading">#</a></h4>
 <p>V vseh treh zaporedjih je dobro ohranjen motiv vijačnice (161-172 aminokislinski ostanek v polietilen tereftalat hidrolati), z aktivnim in vezavnim mestom:</p>
 <p><img alt="uniProt" src="../../../_images/s06-uniprot.png" />
 <img alt="primerjava_vseh_treh_zaporedij" src="../../../_images/s06-primerjava_treh.png" /></p>
@@ -499,7 +515,7 @@ Iz pripisov za celoten genom organizma lahko razberemo da razgrajuje plastiko (<
 </section>
 <hr class="docutils" />
 <section id="strukturna-katakterizacija">
-<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Struktura polietilen tereftalat hidrolaze je bila določena z X-žarkovno kristalografijo in jo lahko najdemo v zbirki PDB. <a class="reference external" href="https://www.ebi.ac.uk/pdbe/entry/pdb/6IJ3">6ij3</a></p>
 <p><img alt="PET" src="../../../_images/s06-pet.png" /></p>
 <p>V strukturi lahko najdemo motiv vijačni, ki sige od 161 do 172 aminokislinskega ostanka, kot je anotirano v UniProt-u. Ta motiv je prisoten tudi v modelu lipaze 1, ki je bil narejen z AlphaFold-om.</p>
@@ -507,7 +523,7 @@ Iz pripisov za celoten genom organizma lahko razberemo da razgrajuje plastiko (<
 <p>Obe vijačnicih na slikah sta označeni z rdečo.</p>
 </section>
 <section id="primerjava-struktur">
-<h3>Primerjava struktur<a class="headerlink" href="#primerjava-struktur" title="Permalink to this headline">#</a></h3>
+<h3>Primerjava struktur<a class="headerlink" href="#primerjava-struktur" title="Permalink to this heading">#</a></h3>
 <p>Strukturo proteina vhodnega aminokislinskega zaporedje smo zmodelirali s programom SWISS-MODEL:</p>
 <p><img alt="model_strukture" src="../../../_images/s06-model_strukture.png" /></p>
 <p>S PyMol-om smo primerjali strukturi zmodeliranega proteina in polietilen tereftalat hidralaze. Strukturi obeh proteinov se zelo dobro ujemata.</p>
@@ -543,16 +559,12 @@ Iz pripisov za celoten genom organizma lahko razberemo da razgrajuje plastiko (<
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -627,8 +639,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

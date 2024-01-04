@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Seminarji 2022/2023" href="seminar_2022-2023/seminar.html" />
     <link rel="prev" title="Vaje 2022/2023" href="../izvedba/vaje_2022-2023.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -420,15 +436,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="splosno-o-seminarju">
-<h1>Splošno o seminarju<a class="headerlink" href="#splosno-o-seminarju" title="Permalink to this headline">#</a></h1>
+<h1>Splošno o seminarju<a class="headerlink" href="#splosno-o-seminarju" title="Permalink to this heading">#</a></h1>
 <p>Seminar je pomemben del predmeta Biokemijska informatika, saj gre za bolj ali manj samostojno delo ali delo v manjših skupinah na neki tematiki, povezani z na predavanjih in vajah obravnavano snovjo. Vsako leto je naloga drugačna.</p>
 <p><strong>Avtor(ice) seminarskih nalog so študentke oz. študenti, navedeni pri posamezni nalogi.</strong></p>
 <section id="seminar-2022-2023">
-<h2>Seminar 2022/2023<a class="headerlink" href="#seminar-2022-2023" title="Permalink to this headline">#</a></h2>
+<h2>Seminar 2022/2023<a class="headerlink" href="#seminar-2022-2023" title="Permalink to this heading">#</a></h2>
 <p>V študijskem letu 2022/2023 seminarji potekajo tako, da vsak študent dobi odsek nekega nukleotidnega zaporedja iz neobičajnega organizma, ki  predstavlja izhodišče za identifikacijo gena in nato tudi proteina, zapisanega na tem genu, za slednjega pa je bilo potrebno narediti vrsto “raziskav” z uporabo bioinformatskih orodij: potencialna funkcija proteina, modeliranje strukture, znani in okarakterizirani homologni proteini, potencialni interakcijski partnerji ipd. Vhodni podatki in oddani rezultati analiz (“rešitve”) vseh študentov so na voljo na strani <a class="reference internal" href="seminar_2022-2023/seminar.html"><span class="doc std std-doc">Seminarji 2022/2023</span></a> in kot taki lahko služijo za samostojno izvedbo doma v okviru priprav na kolokvij pri Biokemijski informatiki.</p>
 </section>
 <section id="seminar-2021-2022">
-<h2>Seminar 2021/2022<a class="headerlink" href="#seminar-2021-2022" title="Permalink to this headline">#</a></h2>
+<h2>Seminar 2021/2022<a class="headerlink" href="#seminar-2021-2022" title="Permalink to this heading">#</a></h2>
 <p>V študijskem letu 2021/2022 so študenti za nalogo dobili predstavitev nekega bioinformatskega orodja iz nabora tematskih kategorij (identifikacija motivov v aminokislinskih zaporedjih, poravnave zaporedij, pregledovalniki genoma, identifikacija genov, filogenetske in druge analize ter strukturna bioinformatika). Seminarsko nalogo so pripravljali v parih, orodje pa so predstavili v obliki kratke vaje za kolege, ki so jo tudi vodili. Sama seminarska naloga obsega kratek opis programa, primer vhodnih podatkov ter pričakovane rezultate. Ker so naloge zanimive tudi za kasnejše generacije in uporabne za študij ter poglabljanje znanja so ostale dostopne na strani <a class="reference internal" href="seminar_2021-2022/seminar.html"><span class="doc std std-doc">Seminarji 2021/2022</span></a>.</p>
 </section>
 </section>
@@ -458,11 +474,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../izvedba/vaje_2022-2023.html"
@@ -482,10 +497,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -549,8 +561,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

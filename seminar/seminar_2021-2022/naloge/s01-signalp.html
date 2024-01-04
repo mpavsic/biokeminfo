@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,17 +444,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="signalp-napovedovanje-signalnih-peptidov">
-<h1>SignalP – napovedovanje signalnih peptidov<a class="headerlink" href="#signalp-napovedovanje-signalnih-peptidov" title="Permalink to this headline">#</a></h1>
+<h1>SignalP – napovedovanje signalnih peptidov<a class="headerlink" href="#signalp-napovedovanje-signalnih-peptidov" title="Permalink to this heading">#</a></h1>
 <p><strong>Avtorja</strong>: Urša Zevnik, Žan Žnidar</p>
 <p><strong>Datum predstavitve</strong>: 2022-04-20</p>
 <hr class="docutils" />
 <section id="namen-vaje">
-<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">#</a></h2>
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this heading">#</a></h2>
 <p>Uporabiti program za napoved signalnih peptidov in njihovih cepitvenih mest.</p>
 </section>
 <hr class="docutils" />
 <section id="program">
-<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">#</a></h2>
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this heading">#</a></h2>
 <p>Program: <strong><a class="reference external" href="https://services.healthtech.dtu.dk/service.php?SignalP-6.0">SignalP 6.0</a></strong></p>
 <p>Avtorji programa: Felix Teufel, José Juan Almagro Armenteros, Alexander Rosenberg Johansen, Magnús Halldór Gíslason, Silas Irby Pihl, Konstantinos D Tsirigos, Ole Winther, Søren Brunak, Gunnar Von Heijne, Henrik Nielsen; <a class="reference external" href="https://www.dtu.dk/">Technical University of Denmark</a></p>
 <p>Reference:</p>
@@ -447,7 +463,7 @@ document.write(`
 <li><p>Nielsen H, Engelbrecht J, Brunak S, von Heijne G. <strong>Identification of prokaryotic and eukaryotic signal peptides and prediction of their cleavage sites.</strong> <em>Protein Eng.</em> 1997 Jan;10(1):1-6. <a class="reference external" href="https://doi.org/10.1093/protein/10.1.1">10.1093/protein/10.1.1.</a></p></li>
 </ul>
 <section id="opis-programa">
-<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">#</a></h3>
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this heading">#</a></h3>
 <p>Signalni peptid je kratko (do 30 AK) aminokislinsko zaporedje, ki omogoča sortiranje in translokacijo proteina. V ožjem pomenu besede je signalni peptid N-končni signal, ki pri evkariontih usmerja skozi membrano ER, pri prokariontih pa skozi plazmalemo. Sestoji iz pozitivno nabitega N-konca, osrednjega hidrofobnega dela s tendenco do tvorbe α-vijačnice in C-konca, kjer se zaporedje cepi. Program SignalP lahko napove le te vrste signalnih zaporedij, kar pomeni, da C-končnih signalnih peptidov, jedrnih lokalizacijskih signalov in drugih signalov za vstop v organele (razen v ER) ne bo našel.</p>
 <p>Poleg tega SignalP ne deluje pri celotnem bakterijskem deblu <em>Tenericutes</em>, za katerega je značilen nekoliko neobičajen način translokacije (npr. sploh nimajo signalne peptidaze 1). Program nanje še ni bil prilagojen, zato signalnih zaporedij ne najde ali pa jih napove z nizko verjetnostjo (20 %).</p>
 <p>SignalP deluje na osnovi različnih algoritmov umetne inteligence. Enega od njih predstavljajo <strong>jezikovni modeli</strong>, ki v osnovi skušajo napovedati naslednjo, prejšnjo ali skrito besedo v stavku. Podlaga za učenje so besedila v želenem jeziku. Ker so tudi proteini v svojem bistvu <em>jezik, ki ga celica razume</em>, lahko ustrezno prirejene jezikovne modele uporabimo tudi za aminokislinska zaporedja.</p>
@@ -455,15 +471,15 @@ document.write(`
 <p>Skozi ti dve (že naučeni) plasti potujejo tudi vhodni podatki uporabnika. Rezultat je verjetnost za posamezno vrsto signalnega peptida in verjetnost, da je na nekem položaju cepitveno mesto.</p>
 </section>
 <section id="vhodni-podatki">
-<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h3>
 <p>Aminokislinsko zaporedje v besedilnem (enočrkovnem) ali FASTA-zapisu.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
-<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">#</a></h2>
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this heading">#</a></h2>
 <section id="id1">
-<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Kot vhodne podatke uporabite:</p>
 <ul class="simple">
 <li><p>aminokislinsko zaporedje šaperona iz <em>E. coli.</em> (<em>Chaperone protein PapD</em>, UniProt ID <a class="reference external" href="https://www.uniprot.org/uniprot/P15319">P15319</a>)</p></li>
@@ -471,7 +487,7 @@ document.write(`
 </ul>
 </section>
 <section id="postopek-dela">
-<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">#</a></h3>
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Odpremo <a class="reference external" href="https://services.healthtech.dtu.dk/service.php?SignalP-6.0">SignalP-6.0</a>.</p></li>
 <li><p>V okno prilepimo aminokislinsko(a) zaporedje(a) v FASTA ali enočrkovnem formatu ali naložimo datoteko.</p></li>
@@ -481,7 +497,7 @@ document.write(`
 </ol>
 </section>
 <section id="pricakovani-rezultati-in-razlaga">
-<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">#</a></h3>
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this heading">#</a></h3>
 <p><img alt="Napoved signalnih peptidov za šaperon E. coli" src="../../../_images/s01-signalp-rezultat.png" /></p>
 <p>Vodoravna os na grafu prikazuje aminokislinsko zaporedje, navpična pa verjetnost. Rdeča polna črta nam nakazuje N-končni del signalnega peptida, oranžna hidrofobno regijo, rumena pa C-konec signalnega peptida. Zelena črtkana črta označuje mesto cepitve. Rdeča črtkana črta pa predstavlja nesignalni del proteina.</p>
 <p>Rezultat se sklada z označbo v UniProtu.</p>
@@ -514,16 +530,12 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -597,8 +609,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Grafi v molekularni biologiji" href="../osnove/grafi.html" />
     <link rel="prev" title="VAJA: Iskanje podobnih zaporedij z BLAST" href="blast.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -429,37 +445,37 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-poravnave-vec-zaporedij">
-<h1>VAJA: Poravnave več zaporedij<a class="headerlink" href="#vaja-poravnave-vec-zaporedij" title="Permalink to this headline">#</a></h1>
+<h1>VAJA: Poravnave več zaporedij<a class="headerlink" href="#vaja-poravnave-vec-zaporedij" title="Permalink to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="naloga-1-enostavna-poravnava-vec-zaporedij">
-<h2>Naloga 1: enostavna poravnava več zaporedij<a class="headerlink" href="#naloga-1-enostavna-poravnava-vec-zaporedij" title="Permalink to this headline">#</a></h2>
+<h2>Naloga 1: enostavna poravnava več zaporedij<a class="headerlink" href="#naloga-1-enostavna-poravnava-vec-zaporedij" title="Permalink to this heading">#</a></h2>
 <p>Ločeno pripravite poravnavo približno desetih ak-zaporedij za alfa in beta verigo hemoglobina (HBA oz. HBB) iz različnih organizmov (pri tem za beta verigo uporabite zaporedja iz istih organizmov, kot ste jih uporabili za alfa verigo) ter primerjajte drevesi, ki jih dobite z metodo združevanja sosedov (NJ, neighbour joining).</p>
 <p>Za izračun poravnave uporabite <a class="reference external" href="https://www.ebi.ac.uk/Tools/msa/clustalo/"><strong>Clustal Omega</strong></a>, drevo skonstruirajte s <strong>Clustal Phylogeny</strong> (direktna povezava iz Clustal Omega), oglejte pa si ga v programu <a class="reference external" href="http://phylo.io">phylo.io</a>, kjer lahko vizualizirate dve drevesi hkrati in ju primerjate. Opazite kakšne razlike?</p>
 <p>Drevesi lahko enostavno primerjate tako, da podatke za njihov izris (to niso zaporedja, ampak razdalje!) prilepite v program <a class="reference external" href="https://phylo.io/">Phylo.io</a>.</p>
 </section>
 <hr class="docutils" />
 <section id="naloga-2-klasifikacija-domen">
-<h2>Naloga 2: klasifikacija domen<a class="headerlink" href="#naloga-2-klasifikacija-domen" title="Permalink to this headline">#</a></h2>
+<h2>Naloga 2: klasifikacija domen<a class="headerlink" href="#naloga-2-klasifikacija-domen" title="Permalink to this heading">#</a></h2>
 <section id="ozadje">
-<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this headline">#</a></h3>
+<h3>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this heading">#</a></h3>
 <p>Pri tej vaji bomo »uporabili« zaporedji dveh proteinov, s katerimi smo že delali, in sicer EpCAM in Trop2 (proteina sta paraloga). Za kakšna proteina gre, si lahko preberete npr. v zbirki UniProt. Vse domene niso anotirane, med drugim ne majhna prva domena zunajceličnega dela, ki se nahaja med signalnim peptidom (le-ta se seveda odcepi) in tiroglobulinsko domeno (TY). To domeno članki pogosto klasificirajo kot EGF-podobno domeno (EGF = epidermal growth factor), in sicer na osnovi njene velikosti/majhnosti ter števila cisteinskih aminokislinskih ostankov.</p>
 </section>
 <section id="naloga">
-<h3>Naloga<a class="headerlink" href="#naloga" title="Permalink to this headline">#</a></h3>
+<h3>Naloga<a class="headerlink" href="#naloga" title="Permalink to this heading">#</a></h3>
 <p>Na osnovi poravnav več zaporedij omenjene domene (za proteine EpCAM in Trop2 iz večih organizmov, ter EGF-podobne iz večih organizmov) podprite ali ovrzite klasifikacijo te domene kot EGF-podobne domene. Preverite pravilnost poravnave s pomočjo anotacij v UniProt.</p>
 <p>Za to domeno iz proteinov EpCAM in Trop2 ter tudi za EGF-podobne domene pripravite tudi ločene poravnave več zaporedij, na njihovi osnovi pa t. i. sequence logo ter ju primerjajte. Logo pripravite s pomočjo programa <a class="reference external" href="http://weblogo.threeplusone.com/">WebLogo</a>.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="naloga-3-povezava-med-hiv-in-siv">
-<h2>Naloga 3: povezava med HIV in SIV<a class="headerlink" href="#naloga-3-povezava-med-hiv-in-siv" title="Permalink to this headline">#</a></h2>
+<h2>Naloga 3: povezava med HIV in SIV<a class="headerlink" href="#naloga-3-povezava-med-hiv-in-siv" title="Permalink to this heading">#</a></h2>
 <section id="id1">
-<h3>Ozadje<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Ozadje<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Sindrom pridobljene imunske pomanjkljivosti (AIDS) se razvije zaradi okužbe z virusom HIV (human immunodeficiency virus). Pri človeku poznamo dva tipa virusa HIV, in sicer HIV-1 in HIV-2, ki sta si med seboj precej podobna, je pa HIV-2 nekoliko bolj razširjen v zahodni Afriki, prav tako pa je nekoliko manj infektiven kot virus HIV-1. Podobne viruse so odkrili tudi pri drugih primatih, npr. opicah, kjer se virus imenuje SIV (simian immunodeficiency virus). HIV in SIV spadata med lentiviruse, le-ti pa med retroviruse, katerih genom je predstavlja enoverižno RNA (ssRNA). Po vstopu v gostiteljske celico se ssRNA preko reverzne transkripcije prepiše v dsDNA, ta pa se vstavi v genom gostiteljske celice, kjer potem služi kot matrica za nove kopije virusne RNA. Okužba z virusom HIV/SIV se prične z vezavo virusnega delca na gostiteljsko celico, pri tem pa gre za interakcijo med proteinom gp120 virusne ovojnice ter proteinom CD4 celic imunskega sistema (TH limfociti (celice pomagalke), monociti, makrofagi).</p>
 <p>Po trenutno splošno sprejeti teoriji je virus SIV v preteklosti preskočil medvrstno bariero med opicami in ljudmi, domnevno med lovom na opice in uživanjem opičjega mesa, kjer so ljudje prišli v stik s krvjo okuženih opic. Virus se je kasneje nekoliko prilagodil, tako da je za ljudi postal bolj infektiven (učinkovitejše širjenje), in sicer preko mutacij v proteinu gp120.</p>
 </section>
 <section id="id2">
-<h3>Naloga<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<h3>Naloga<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <p>Preko konstrukcije poravnav več ak-zaporedij proteina gp120 virusov HIV-1, HIV-2 ter variant SIV in izrisa filogenetskega drevesa poizkusite ugotoviti, kakšna je povezava med njimi. V poravnavo vključite vsaj 25 zaporedij, obvezno pa tudi proteine gp120 SIV iz šimpanza (Pan troglodytes) ter mangabeja (Cercocebus atys in sorodniki).</p>
 <p>Oris postopka reševanja:</p>
 <ol class="arabic simple">
@@ -500,11 +516,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="blast.html"
@@ -524,10 +539,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -600,8 +612,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

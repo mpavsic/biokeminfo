@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,17 +444,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="treefam-podatkovna-zbirka-dreves-zivalskih-genov">
-<h1>TreeFam - podatkovna zbirka dreves živalskih genov<a class="headerlink" href="#treefam-podatkovna-zbirka-dreves-zivalskih-genov" title="Permalink to this headline">#</a></h1>
+<h1>TreeFam - podatkovna zbirka dreves živalskih genov<a class="headerlink" href="#treefam-podatkovna-zbirka-dreves-zivalskih-genov" title="Permalink to this heading">#</a></h1>
 <p><strong>Avtorja</strong>: Špela Sotlar, Jan Trebušak</p>
 <p><strong>Datum predstavitve</strong>: 2022_05_11</p>
 <hr class="docutils" />
 <section id="namen-vaje">
-<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">#</a></h2>
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this heading">#</a></h2>
 <p>Namen vaje je spoznavanje programa TreeFam. To je zbirka genetskih dreves živalskih genomov, uporabljamo pa jo za identifikacijo ortolognih in paralogni genov ter opazovanje poteka evolucije le-teh.</p>
 </section>
 <hr class="docutils" />
 <section id="program">
-<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">#</a></h2>
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this heading">#</a></h2>
 <p>Program: <strong><a class="reference external" href="http://www.treefam.org">TreeFam - database of animal gene trees, Release 9</a></strong></p>
 <p>Avtorji programa: Fabian Schreiber, Mateus Patricio, Matthieu Muffato, Miguel Pignatelli, Alex Bateman, vsi delujejo na Sanger Institute (<a class="reference external" href="https://www.sanger.ac.uk">https://www.sanger.ac.uk</a>)</p>
 <p>Reference:</p>
@@ -446,21 +462,21 @@ document.write(`
 <li><p>Schreiber F, Patricio M, Muffato M, Pignatelli M, Bateman A. TreeFam v9: a new website, more species and orthology-on-the-fly. Nucleic Acids Res. 2014 Jan;42(Database issue):D922-5. doi: 10.1093/nar/gkt1055. Epub 2013 Nov 4. PMID: 24194607; PMCID: PMC3965059</p></li>
 </ul>
 <section id="opis-programa">
-<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">#</a></h3>
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this heading">#</a></h3>
 <p>TreeFam je podatkovna zbirka filogenetskih dreves iz živalskih genomov. Zajema 109 vrst in 15736 družin s približno 2,2 milijona zaporedji. Določene baze podatkov napovejo ortologijo/paralogijo glede na filogenetska drevesa, ki so bila skonstruirana z poravnavo homolognih zaporedij – med nje spada tudi TreeFam. Program naredi poravnano zaporedja in ga vmesti v ustrezno družino z uporabo MAFFT (multiple sequence alignment program) nato pa ga doda v ustrezno genetsko drevo z uporabo družine, kot reference za RAxML-EPA algoritem. Prednost filogenetskih dreves pred grafičnimi prikazi je v tem, da si drevesa lažje predstavljamo in so bolj informativna, saj lahko določimo kdaj se je določen gen podvojil/izgubil.
 TreeFam uporablja Ensembl Compara pipeline, z izjemo definicije genetskih družin. TreeFam uporabi HMM pristop, kar zagotavlja stabilnost družin. Za vsako genetsko družino je poravnava narejena z MCoffee (družine z manj kot 200 člani) oziroma MAFFT. Za vsako družino zgardijo genetsko drevo z uporabo TreeBesta. Ta zgradi pet genetskih dreves glede na aminokislinsko zaporedje. Pet dreves je nato združenih v eno. Prednost uporabe AK zaporedja in kodonskega zaporedja je v tem, da drevesa, ki temeljijo na kodonskem zaporedju razrešijo bližnja sorodstva, glede na AK pa daljna. To skupno drevo je nakoncu združeno s taksonomskim drevesom NCBI z uporabo ‘Duplication/Loss Interference’ algoritma.</p>
 <p><img alt="vidra" src="../../../_images/s18-treefam.png" /></p>
 </section>
 <section id="vhodni-podatki">
-<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h3>
 <p>Aminokislinsko zaporedje iskanega proteina v FASTA formatu.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
-<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">#</a></h2>
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this heading">#</a></h2>
 <section id="id1">
-<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>aminokislinsko zaporedje apolipoproteina P1 iz morske vidre <a class="reference external" href="https://www.uniprot.org/uniprot/P0DPG9">UniProt iD: P0DPG9</a></p></li>
 <li><p>aminokislinsko zaporedje za kljunašev receptor za hepatocitni rastni faktor <a class="reference external" href="https://www.uniprot.org/uniprot/Q07E01">UniPROT ID: Q07E01</a></p></li>
@@ -468,7 +484,7 @@ TreeFam uporablja Ensembl Compara pipeline, z izjemo definicije genetskih druži
 </ul>
 </section>
 <section id="postopek-dela">
-<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">#</a></h3>
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Odpremo program TreeFam</p></li>
 <li><p>V okno vnesemo AK zaporedje v formatu FASTA ali ID kodo</p></li>
@@ -478,7 +494,7 @@ TreeFam uporablja Ensembl Compara pipeline, z izjemo definicije genetskih druži
 </ul>
 </section>
 <section id="pricakovani-rezultati-in-razlaga">
-<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">#</a></h3>
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this heading">#</a></h3>
 <p>Primera, ko program deluje:
 Za apolipoprotein morske vidre je rezultat relativno dober. Umesti ga med sesalce, natančneje med zveri, kar je ustrezen rezultat glede na omejitve programa (samo 109 vrst in morska vidra ni ena izmed njih).</p>
 <p><img alt="vidra" src="../../../_images/s18-treefam-vidra.png" /></p>
@@ -516,16 +532,12 @@ Prav tako program ne deluje, če vnesemo zapredje organizmov, ki niso evkarionti
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -599,8 +611,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

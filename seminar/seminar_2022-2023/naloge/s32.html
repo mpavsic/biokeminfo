@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -426,7 +442,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s032">
-<h1>S032<a class="headerlink" href="#s032" title="Permalink to this headline">#</a></h1>
+<h1>S032<a class="headerlink" href="#s032" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Pia Kristanc</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
@@ -434,7 +450,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Zaporedje:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VPKSIGEIYSLLEKAGRLFGAEEDAARMIRELQASLAQIPSFARKPGIIFYQTHGYSPGA</span>
 <span class="n">GTFENSIIEAAGGFNLAAAAGITDYGQMDLEKLVGLKPELVVFASDQMQN</span>
@@ -443,9 +459,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p><strong>Protein</strong>: periplazemski vezavni protein</p>
 <p><strong>Organizem</strong>: Organizem še ni znan, je pa protein iz sedimentnega metagenoma. Organizem je najverjetneje bakterija ali arheja, glede na najdene homologe in njihovo funkcijo.</p>
 <p><strong>Potencialna funkcija proteina</strong>: Protein najverjetneje veže substrate v periplazmi.</p>
@@ -462,7 +478,7 @@ document.write(`
 </div>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Protein se nahaja v periplazemskem prostoru. Protein še ni anotiran, zato sem z orodjem blastp po zbirki Swissprot poiskala homologen anotiran protein. Dobila sem le en zadetek z E vrednostjo 4e10^-13 in le 29,15% identičnostjo. Najden protein je dolg 369 aminokislinskih ostankov. Gre za kobalamin vezavni protein. Ta je verjetno del ABC transporterja, ki skrbi za vnos kobalamina (vitamin B12).</p>
 <p><img alt="blast swissprot" src="../../../_images/s32-blast_swissprot.png" /></p>
 <p>UniProt koda: B0R5G2</p>
@@ -474,7 +490,7 @@ Poravnava v Clustal Omega je pokazala, da se večina zaporedij poravna, le na za
 <p><img alt="signalP" src="../../../_images/s32-signalp.png" /></p>
 <p>Za izražanje proteina je najbolj primeren bakterijski sev, saj protein nima nobenih translacijskih modifikacij.</p>
 <section id="homologi-in-izrazanje-proteina">
-<h4>Homologi in izražanje proteina<a class="headerlink" href="#homologi-in-izrazanje-proteina" title="Permalink to this headline">#</a></h4>
+<h4>Homologi in izražanje proteina<a class="headerlink" href="#homologi-in-izrazanje-proteina" title="Permalink to this heading">#</a></h4>
 <p>Glede na blastp (zbirka nr) ima protein kar nekaj homologov v drugih vrstah (različne vrste bakterij in nekatere arheje). Gre predvsem za različne proteine, ki vežejo substrate za ABC transporter, na primer korinoide. Nekateri organizmi s homolognimi proteini so Candidatus Omnitrophota bacterium, Afifella marina in Afifella aestuarii. Ti proteini tudi nimajo posttranslacijskih modifikacij oziroma še niso anotirani.</p>
 <p><img alt="blast homologi" src="../../../_images/s32-blast_homologi.png" /></p>
 <p>Paralogov ne moremo določiti, saj organizem še ni znan.</p>
@@ -488,7 +504,7 @@ Poravnava originalnega proteina in homologov (UniProt align) pokaže nekaj ohran
 </section>
 </section>
 <section id="strukturna-katakterizacija">
-<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Na PDB ni strukture tega proteina oziroma ga zaradi ne poznavanja organizma ne morem najti. Prav tako nisem našla struktur nobenega homologa, ki sem jih uporabila v UniProt alignmentu, niti homologov, najdenih z blastom. Znane pa so strukture proteinov z enako funkcijo (vežejo substrate za ABC transporter) iz drugih organizmov, ki bi lahko tudi bili homologni.
 Z Alpha Foldom sem pripravila model proteina glede na celotno aminokislinsko zaporedje. Ker strukture katerega od homologov nisem našla, je ne morem primerjati z modelom svojega proteina. Zaradi boljše preglednosti sem dodala še sliko modela v Pymolu.</p>
 <p><img alt="rezultat alpha fold" src="../../../_images/s32-model_alphafold.png" /></p>
@@ -522,16 +538,12 @@ Z Alpha Foldom sem pripravila model proteina glede na celotno aminokislinsko zap
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -603,8 +615,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

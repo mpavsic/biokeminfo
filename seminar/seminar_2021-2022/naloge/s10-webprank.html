@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,37 +444,37 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="webprank">
-<h1>webPRANK<a class="headerlink" href="#webprank" title="Permalink to this headline">#</a></h1>
+<h1>webPRANK<a class="headerlink" href="#webprank" title="Permalink to this heading">#</a></h1>
 <p><strong>Avtorja</strong>: Klara Ažbe, Ema Kavčič</p>
 <p><strong>Datum predstavitve</strong>: 2022-04-28</p>
 <hr class="docutils" />
 <section id="namen-vaje">
-<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this headline">#</a></h2>
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this heading">#</a></h2>
 <p>Pri poravnavi več zaporedij lahko razlikujemo med insercijami in delecijami. Programi, ki uporabljajo hevristične metode pri poravnavah, ne upoštevajo filogenetskega drevesa in velikokrat kopičijo vrzeli na enem mestu. webPRANK pri filogenetski poravnavi upošteva filogenetsko drevo in razlikuje med insercijami in delecijami.</p>
 </section>
 <hr class="docutils" />
 <section id="program">
-<h2>Program<a class="headerlink" href="#program" title="Permalink to this headline">#</a></h2>
+<h2>Program<a class="headerlink" href="#program" title="Permalink to this heading">#</a></h2>
 <p>Program: <strong><a class="reference external" href="https://www.ebi.ac.uk/goldman-srv/webprank/">webPRANK</a></strong></p>
 <p>Avtorji programa:Ari Löytynoja, <a class="reference external" href="https://www.helsinki.fi/en">University of Helsinki</a>, Nick Goldman <a class="reference external" href="https://www.ebi.ac.uk/">EMBL’s European Bioinformatics Institute</a></p>
 <p>Reference:
 -Löytynoja, A.; Goldman, N. (2005) <strong>An algorithm for progressive multiple alignment of sequences with insertions.</strong> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102(30):10557-10562 <a class="reference external" href="https://www.pnas.org/doi/full/10.1073/pnas.0409137102">10.1073/pnas.0409137102</a>
 -Löytynoja, A.; Goldman, N. (2010) <strong>webPRANK: a phylogeny-aware multiple sequence aligner with interactive alignment browser.</strong> <em>BMC Bioinformatics</em> 11:579 <a class="reference external" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-579">10.1186/1471-2105-11-579 </a></p>
 <section id="opis-programa">
-<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this headline">#</a></h3>
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this heading">#</a></h3>
 <p>Program webPRANK je orodje za poravnavo več zaporedij, ki kot osnovo uporablja skriti model Markova. Za razliko od večine drugih programov ta program ne uporablja hevristične metode, vrzeli pa loči na insercije in delecije. Za poravnavo uporablja vodilno drevo (guide tree), ki ga lahko podamo, ali pa ga program izračuna sam s pomočjo metode NJ(združevanje sosedov). V primeru, da vodilno drevo podamo v naprej, se morajo imena v drevesu in imena sekvenc natančno ujemati. Program nato dolžine vej upošteva pri izračunu substitucijske matrike.
 Poravnavo naredi petkrat, vsakič pa potem glede na poravnavo popravi vodilno drevo. Na koncu izpiše poravnavo z najvišjo vrednostjo. Rezultat lahko prenesemo v različnih formatih: XSAML (vsebuje vse podatke analize in omogoča kasnejšo analizno rezultatov), FASTA, PHYLIP, PAML, NEXUS.</p>
 </section>
 <section id="vhodni-podatki">
-<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h3>
 <p>webPRANK kot vhodne podatke sprejme DNA, kodonska in aminokislinska zaporedija v formatu FASTA.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
-<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this headline">#</a></h2>
+<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this heading">#</a></h2>
 <section id="id1">
-<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>primer:
 <a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s10-webprank-vhod1.txt">Amilaza</a> aminokislinska zaporedja za protein amilazo različnih organizmov v FASTA formatu</p></li>
@@ -467,7 +483,7 @@ Poravnavo naredi petkrat, vsakič pa potem glede na poravnavo popravi vodilno dr
 </ol>
 </section>
 <section id="postopek-dela">
-<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this headline">#</a></h3>
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Odpremo <a class="reference external" href="https://www.ebi.ac.uk/goldman-srv/webprank/">webPRANK</a></p></li>
 <li><p>V okno prilepimo aminokislinska zaporedja v FASTA formatu ali naložimo datoteko z AK zaporedji v FASTA formatu. Paziti je potrebno, da se organizmi imenujejo različno oz. da za znakom »&gt;« ne sledi vedno »sp«, kot to vedno sledi pri datotekah naloženih iz UniProt-a.</p></li>
@@ -480,7 +496,7 @@ Poravnavo naredi petkrat, vsakič pa potem glede na poravnavo popravi vodilno dr
 </ol>
 </section>
 <section id="pricakovani-rezultati-in-razlaga">
-<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this headline">#</a></h3>
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>primer
 <img alt="rezultat1" src="../../../_images/s10-webprank-rezultat1.png" />
@@ -520,16 +536,12 @@ Kot je razvidno iz zgornje slike, v tem primeru webPRANK deluje pravilno, saj je
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -603,8 +615,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

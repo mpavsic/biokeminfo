@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,7 +444,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="s36">
-<h1>S36<a class="headerlink" href="#s36" title="Permalink to this headline">#</a></h1>
+<h1>S36<a class="headerlink" href="#s36" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Avtor</strong>: Filip Petrovič</p></li>
 <li><p><strong>Datum izdelave</strong>: 2023-05-26</p></li>
@@ -436,7 +452,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Zaporedje:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LINLFFSQLVRVNTQTLPEHDKTLKYQCLLVLDEFTSMGRVGIIEKSIAFTAGYNIRYMI</span>
 <span class="n">IYQNDEQLESDDAYGKSGAFTLRKNLAVEVVYPPKDVDSTAERISKTFGK</span>
@@ -445,9 +461,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p>Identifikacija se nanaša na protein, katerega del predstavlja  <span class="xref myst">zaporedje</span>.</p>
 <p><strong>Protein</strong>: Type IV secretory system (T4SS) conjugative DNA transfer family protein</p>
 <p><strong>Organizem</strong>: <em>Salmonella enterica</em>, <em>Escherichia coli</em>, … več različnih organizmov, ne moremo trditi da je zgolj pri enem</p>
@@ -460,10 +476,10 @@ document.write(`
 <p>Koda zapisa z BLAST identificiranega proteina: GenBank <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/MJQ38759.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=7J02725C013">MJQ38759.1</a>; gre za delno zaporedje. Ob poimenskem iskanju v zbirki UniProt najdemo zapis s kodo <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A3U1AHI9/entry#function">A0A3U1AHI9</a>, ki vsebuje celotno vhodno zaporedje.</p>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>V GenBank zapisu ni na voljo pripisov glede splošnih ali strukturnih značilnostih proteina, nekaj teh je na voljo v UniProt zapisu.</p>
 <section id="lokalizacija-in-post-translacijske-modifikacije">
-<h4>Lokalizacija in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-in-post-translacijske-modifikacije" title="Permalink to this headline">#</a></h4>
+<h4>Lokalizacija in post-translacijske modifikacije<a class="headerlink" href="#lokalizacija-in-post-translacijske-modifikacije" title="Permalink to this heading">#</a></h4>
 <p>Protein je transmembranski, tako da se nahaja v membrani. Največji del proteina je intracelularni, torej se nahaja v notranjosti celice, ekstracelularni del pa je dolg le 26 aminokislinskih ostankov (od 673). Protein pa ima 2 helikalni transmembranski domeni. Identificirani protein post-translacijskih modifikacij nima ali pa te niso znane, ob izvedbi blastp po podatkovni zbirki swissprot pa dobimo 5 zadetkov - ti sicer predstavljajo 4 proteine. Najbolj se ujema s TraG proteinom iz <em>Escherichia coli</em> (<a class="reference external" href="https://www.uniprot.org/uniprotkb/Q00184/entry">UniProt</a>, <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/Q00184.1?report=genbank&amp;log$=prottop&amp;blast_rank=1&amp;RID=7J152SUC01N">GenBank</a>)- zanj tudi niso znane post-translacijske modifikacije, tako da o teh ne moremo trditi nič konkretnega.</p>
 <p>Tabelarični prikaz zadetkov (iskanje po swissprot):</p>
 <p><img alt="Blast 3" src="../../../_images/s36-tabelaricni_blast_swissprot.png" /></p>
@@ -471,11 +487,11 @@ document.write(`
 <p><img alt="Blast 4" src="../../../_images/s36-graficni_blast_swissprot.png" /></p>
 </section>
 <section id="izrazanje-proteina-v-rekombinantni-obliki">
-<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this headline">#</a></h4>
+<h4>Izražanje proteina v rekombinantni obliki<a class="headerlink" href="#izrazanje-proteina-v-rekombinantni-obliki" title="Permalink to this heading">#</a></h4>
 <p>Glede na to, da gre za bakterijski protein in da nima znanih post-translacijskih modifikacij, bi bile bakterijske celice (npr. <em>Escherichia coli</em>) primeren ekspresijski sistem.</p>
 </section>
 <section id="potencialni-homologi">
-<h4>Potencialni homologi<a class="headerlink" href="#potencialni-homologi" title="Permalink to this headline">#</a></h4>
+<h4>Potencialni homologi<a class="headerlink" href="#potencialni-homologi" title="Permalink to this heading">#</a></h4>
 <p>Kot že omenjeno, ob izvedbi blast p med anotiranimi zaporedji najdemo 5 zadetkov, ki predstavljajo 4 proteine. Pogoje za homologni protein izpolnjujeta 2 - TraG  iz <em>Escherichia coli</em> (<a class="reference external" href="https://www.uniprot.org/uniprotkb/Q00184/entry">UniProt</a>) in VirD4 (<a class="reference external" href="https://www.uniprot.org/uniprotkb/P09817/entry">UniProt</a>) iz <em>Agrobacterium tumefaciens</em> (Sliki pod točko Lokalizacija in post-translacijske modifikacije). Oba imata vlogo pri konjunkciji bakterijskih celic, ampak ker ne poznamo točne funkcije identificiranega proteina, ne moremo trditi, ali je ta encim in za kakšno vrsto homolognih proteinov gre.</p>
 <p>Poravnava zaporedij proteina in obeh homologov (orodje COBALT):</p>
 <p><img alt="Poravnava 1" src="../../../_images/s36-poravnava_homologov.png" /></p>
@@ -486,7 +502,7 @@ document.write(`
 </section>
 </section>
 <section id="strukturna-katakterizacija">
-<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Strukturna katakterizacija<a class="headerlink" href="#strukturna-katakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Struktura proteina ni znana, je zgolj napovedana. Struktura, narejena z brezplačno različico AlphaFolda:</p>
 <p><img alt="Struktura 1" src="../../../_images/s36-struktura_identificiranega_proteina.png" /></p>
 <p>Struktura homologa traG (dobljena iz UniProt zapisa):</p>
@@ -523,16 +539,12 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -606,8 +618,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Poimenovanje datotek" href="datoteke_poimenovanje.html" />
     <link rel="prev" title="Datoteke" href="datoteke.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -428,10 +444,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="pogosti-formati-datotek">
-<h1>Pogosti formati datotek<a class="headerlink" href="#pogosti-formati-datotek" title="Permalink to this headline">#</a></h1>
+<h1>Pogosti formati datotek<a class="headerlink" href="#pogosti-formati-datotek" title="Permalink to this heading">#</a></h1>
 <p>Na tej strani najdete opise nekaterih formatov datotek, s katerimi se srečuje bioinformatik.</p>
 <section id="fasta">
-<h2>FASTA<a class="headerlink" href="#fasta" title="Permalink to this headline">#</a></h2>
+<h2>FASTA<a class="headerlink" href="#fasta" title="Permalink to this heading">#</a></h2>
 <p>To je eden najpogostejših formatov v bioinformatiki, uporablja pa se za zapis aminokislinskih in nukleotidnih zaporedij. Ime izhaja iz imena programa <a class="reference external" href="https://en.wikipedia.org/wiki/FASTA">FASTA</a> za primerjavo zaporedij oz. iskanje podobnih zaporedij, ki sta ga razvila Pearson in Lipman leta 1985 (<a class="reference external" href="https://github.com/wrpearson/fasta36">zadnja verzija programa</a> na GitHub; <a class="reference external" href="https://www.ebi.ac.uk/Tools/sss/fasta/">spletni vmesnik</a> na strani EBI). Včasih se temu formatu reče kar <em>Pearson</em> po imenu enega od avtorjev programa, ali pa <em>Pearson/FASTA</em>.</p>
 <p>Format je nadvse preprost – prva vrstica se začne z znakom “večje” (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>), ki mu v <strong>isti vrstici</strong> sledi ime zaporedja, nato pa v drugi vrstici sledi zaporedje sámo. Slednje se lahko sicer razteza čez več vrstic. Primer zaporedja z imenom HEPC_LARCR:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt;HEPC_PIG
@@ -467,15 +483,15 @@ TDPLVLFRTKRQSHLSLCRFCCKCCRNKGCGYCCKF
 </div>
 <p>Več o FASTA formatu lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/FASTA_format">Wikipediji</a>.</p>
 <section id="posebne-oblike">
-<h3>Posebne oblike<a class="headerlink" href="#posebne-oblike" title="Permalink to this headline">#</a></h3>
+<h3>Posebne oblike<a class="headerlink" href="#posebne-oblike" title="Permalink to this heading">#</a></h3>
 <p>Obstaja več formatov, izvedenih iz osnovnega, nekaj jih je opisanih v nadaljevanju.</p>
 <section id="fastq">
-<h4>FASTQ<a class="headerlink" href="#fastq" title="Permalink to this headline">#</a></h4>
+<h4>FASTQ<a class="headerlink" href="#fastq" title="Permalink to this heading">#</a></h4>
 <p>FASTQ je posebna različica formata FASTA, ki zraven zaporedja vsebuje še oceno kvalitete zaporedja za vsak ostanek posebej. Je standardni format, ki se uporablja za zapis zaporedij, določenih z visoko zmogljivimi sekvenatorji (<em>high-throuput sequencing</em>). Format se uporablja zgolj za zapis nukleotidnih zaporedij.</p>
 <p>Več o formatu na <a class="reference external" href="https://en.wikipedia.org/wiki/FASTQ_format">Wikipediji</a>.</p>
 </section>
 <section id="poravnan-fasta-format">
-<h4>Poravnan FASTA format<a class="headerlink" href="#poravnan-fasta-format" title="Permalink to this headline">#</a></h4>
+<h4>Poravnan FASTA format<a class="headerlink" href="#poravnan-fasta-format" title="Permalink to this heading">#</a></h4>
 <p>Poravnava v formatu FASTA (<em>aligned FASTA format</em>) je izvedenka, kjer je v isti datoteki FASTA zapisanih več zaporedij, ki so enako dolga – enake dolžine sicer niso zato, ker vsebujejo enako število nukleotidnih/aminokislinskih ostankov, ampak ker so zaporedja dejansko poravnana in so vanje vstavljeni znaki <code class="docutils literal notranslate"><span class="pre">-</span></code> kot oznake za vrzeli.</p>
 <p>Kot primer si oglejmo poravnavo štirih aminokislinskih zaporedij hepcidina, poravnanih s programom Clustal Omega, prikazanih v standardnem formatu Clustal (neporavnana zaporedja so prikazana pri opisu snovnega formata FASTA, kjer je razvidno, da niso enako dolga):</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>CLUSTAL O(1.2.4) multiple sequence alignment
@@ -513,7 +529,7 @@ FQRRRRRDTHFPICIFCCGCCHRSKCGMCCKT
 </section>
 </section>
 <section id="csv-in-tsv">
-<h2>CSV in TSV<a class="headerlink" href="#csv-in-tsv" title="Permalink to this headline">#</a></h2>
+<h2>CSV in TSV<a class="headerlink" href="#csv-in-tsv" title="Permalink to this heading">#</a></h2>
 <p>Datoteke <strong>CSV</strong> so enostavne tekstovne datoteke, v katerih so shranjeni tabelirani podatki. Vsaka vrstica v datoteki predstavlja vrstico tabele, v vsaki vrstici pa poseben ločitveni znak (<em>delimiting character</em>) ločuje posamezne celice oz. stolpce. V osnovi je ta ločitveni znak vejica (od tod izhaja ime <em>Comma Separated Values</em>), a ker format CSV ni standardiziran se v tovrstnih datotekah lahko kot ločitveni znak pojavlja tabulator, podpičje, presledek ipd. Uporaba drugačnega znaka kot je vejica je pogosta na primer v državah, kjer se že kot decimalni simbol uporablja vejica, tudi v Sloveniji, saj bi v tem primeru prišlo do napak pri interpretaciji, kje se konča in kje začne nova vrednost v posamezni vrstici. Več o formatu CSV lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipediji</a>.</p>
 <p>Na primer, tabelo</p>
 <table class="colwidths-auto table">
@@ -580,7 +596,7 @@ FZD7	45	17.5487	15.8987
 <p>Datoteke formata CSV/TSV lahko odprete z običajnimi programi za delo s tekstovnimi datotekami (Notepad/Beležnica, TextEdit, …), s specializiranimi programi za datoteke CSV, lahko pa kar z Microsoft Excel.</p>
 </section>
 <section id="pdb-in-pdbx-mmcif">
-<h2>PDB in PDBx/mmCIF<a class="headerlink" href="#pdb-in-pdbx-mmcif" title="Permalink to this headline">#</a></h2>
+<h2>PDB in PDBx/mmCIF<a class="headerlink" href="#pdb-in-pdbx-mmcif" title="Permalink to this heading">#</a></h2>
 <p>Gre za datoteke, v katerih shranjujemo strukturne podatke, pravzaprav koordinate atomov in spremljajoče podatke (anotacije, B-faktor, zasedenost, …). Spet gre za posebej oblikovane tekstovne datoteke. Format PDB je starejši, razvit ob nastanku <a class="reference external" href="http://www.wwpdb.org/">World Wide Protein Data Bank</a> (1971), prve zbirke, namenjene zbiranju, shranjevanju in dostopu do strukturnih podatkov bioloških makromolekul. Format je dolgo zadoščal vsem potrebam strukturnih biologov, a z razvojem novih metod in programov ter pojava modelov/struktur vedno večjih makromolekul(skih kompleksov) so se pokazale nekatere omejitve tega formata. Na primer, v datoteko PDB lahko shranimo modele iz največ 99.999 atomov ter iz največ 62 različnih polipeptidnih/polinukleotidnih verig; omejitev glede števila atomov izhaja iz širine polja, namenjenega za zapis zaporedne številke atoma (vsi atomi imajo unikatno številko!), ki lahko vsebuje zgolj 5 znakov. To je vodilo do nastanka formata PDBx/mmCIF (mmCIF = <em>macromolecular CIF</em>), ki je pravzaprav posebna izvedba formata CIF (<em>Crystallographic Information File</em>, <a class="reference external" href="https://en.wikipedia.org/wiki/Crystallographic_Information_File">Wikipedia</a>), primarno namenjenega shranjevanju strukturnih podatkov manjših molekul.</p>
 </section>
 </section>
@@ -610,11 +626,10 @@ FZD7	45	17.5487	15.8987
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="datoteke.html"
@@ -634,10 +649,7 @@ FZD7	45	17.5487	15.8987
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -709,8 +721,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

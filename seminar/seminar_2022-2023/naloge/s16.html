@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -82,6 +84,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -142,13 +153,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -243,6 +255,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -366,10 +382,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -377,7 +393,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -423,7 +439,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="predloga-za-skupino-a">
-<h1>Predloga za skupino A<a class="headerlink" href="#predloga-za-skupino-a" title="Permalink to this headline">#</a></h1>
+<h1>Predloga za skupino A<a class="headerlink" href="#predloga-za-skupino-a" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>V naslovu zgoraj besedilo “Predloga za skupino A” nadomestite s kodo vašega seminarja (npr. S05), ki je navedena ob vašem imenu v <span class="xref myst">tabeli z vhodnimi podatki</span>; znak za oblikovanje kot naslov (# oz. “lojtra”) seveda pustite, med njim in kodo seminarja mora biti presledek. Ta odstavek, ki se začne z znakom &gt;, izbrišite, v ustrezna polja v nadaljevanju pa vnesite rezultate zahtevanih analiz, obvezno ustrezne opise/razlago/argumentacijo, dodajte pa tudi povezave do pravilno poimenovanih slik (glejte <span class="xref myst">navodila</span>).</p>
 </div></blockquote>
@@ -434,24 +450,24 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="vhodni-podatek">
-<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Permalink to this heading">#</a></h2>
 <p>Zaporedje:</p>
 <p>SEHYTDKFTIPFDGLASTEKEKDLSILQAMVDAGYLTTDEISAVEEMDNDDIFYETLLKD
 FEINLNTLAEQNLSSPRAVLANIKEMAEELKDVGIADELPKRIDSCEDND</p>
 </section>
 <hr class="docutils" />
 <section id="rezultati-analiz">
-<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this headline">#</a></h2>
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Permalink to this heading">#</a></h2>
 <p>Analizo danega zaporedja sem se lotil z balstom po metagenomski zbirki. V omenjeni zbirki sem našel aminokislinsko zaporedje, ki ima 100% ujemanje. Ugotovil sem, da zaporedje pripada hitinazi sekvencirani iz metagenoma najdenega v termalnem vrelcu. V knjižnici swissbank nisem našel nobenega anotiranega zaporedje, ki bi imel signifikantno podobnosti z mojim zaporedjem. Uporabil sem blast po zbirki <a class="reference external" href="https://www.uniprot.org/">uniprot</a> in dobil 100% ujemanje z enim od proteinov. Protein ni anotiran in nima eksperimentalno določene strukture, zato sem strukturo naredil s pomočjo alphafold in posikušal homologe posikati s pomočjo PDBefold, vendar tudi tukaj nisem prejel nobega uporabnega zadetka. S pomočjo PDBebold sem poizkušal najti homologe tudi z iskanjem struktur, ki so podobni le nekaterim domenom proteina, a tudi tu nisem našel proteinov, ki bi bili homologi mojemu modelu iz alphafold. Na uniprotu sem moj protein poravnal z drugimi ne anotiranimi homologi. Največje ujemanje z enim od homologov je bilo 65,7%. <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/NEW61710.1">Homologni protein</a> in je pripadal ne zani <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2695268">bakteriji</a> iz rodu Sulfurovum. Primerjal sem tudi aminokislinka zaporedje in strukturne podobnosti z drugimi anotiranimi hitinazami. Aktivna mesta se med hitinazami se niso ujemala in tudi v strukturnih podobnost med proteini ni bilo večjega ujemanja. Naredil sem tudi poravnavo struktur mojega proteina in njegovega najbolj podobnega homologa, ki jih je naredil alphafold in ugotovil, da sta si strukturna zelo podbna. Imata zelo podne regije, ki so del začetnih aminokislin mojega proteina, zato predvidevam, da ima protein v tej regiji tudi aktivno mesto.</p>
 <section id="identifikacija">
-<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this headline">#</a></h3>
+<h3>Identifikacija<a class="headerlink" href="#identifikacija" title="Permalink to this heading">#</a></h3>
 <p>Identifikacija se nanaša na protein, ki ga kodira gen, katerega del predstavlja  <span class="xref myst">zaporedje</span>.</p>
 <p><strong>Protein</strong>: Hitinaza</p>
 <p><strong>Organizem</strong>: Ime organizma ni določen. DNA izhaja iz <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=652676">metagenoma</a> najdenega v termalnem vrelcu.</p>
 <p><strong>Potencialna funkcija proteina</strong>: Cepi glikozidno vez v hitinu. Torej cepi hitin na manjše enote, kot je N-acetilglukozamin (GlcNAc).</p>
 </section>
 <section id="splosna-karakterizacija">
-<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Splošna karakterizacija<a class="headerlink" href="#splosna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Zanimajo nas odgovori na naslednja vprašanja:</p>
 <ul class="simple">
 <li><p><strong>Kje v izvornem organizmu/celici se protein nahaja?</strong></p></li>
@@ -495,7 +511,7 @@ FEINLNTLAEQNLSSPRAVLANIKEMAEELKDVGIADELPKRIDSCEDND</p>
 <p>Rezultate karakterizacije predstavite na smiseln način in podkrepite s prilogami (slike)!</p>
 </section>
 <section id="strukturna-karakterizacija">
-<h3>Strukturna karakterizacija<a class="headerlink" href="#strukturna-karakterizacija" title="Permalink to this headline">#</a></h3>
+<h3>Strukturna karakterizacija<a class="headerlink" href="#strukturna-karakterizacija" title="Permalink to this heading">#</a></h3>
 <p>Zanimajo nas odgovori na naslednja vprašanja:</p>
 <ul class="simple">
 <li><p><strong>Je znana struktura tega proteina ali njegovega dela?</strong>
@@ -548,16 +564,12 @@ Ekspreimentalno dokazana struktura ni znana. Znan je struktura narejena preko al
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -626,8 +638,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Splošno o seminarju" href="../seminar/seminar.html" />
     <link rel="prev" title="Poimenovanje datotek" href="../priloge/datoteke_poimenovanje.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -432,12 +448,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaje-2022-2023">
-<h1>Vaje 2022/2023<a class="headerlink" href="#vaje-2022-2023" title="Permalink to this headline">#</a></h1>
+<h1>Vaje 2022/2023<a class="headerlink" href="#vaje-2022-2023" title="Permalink to this heading">#</a></h1>
 <p>Vaje bodo potekale računalniški učilnici, kjer je že nameščena potrebna programska oprema. Da boste lahko vaje ponovili doma pa si boste morali namestiti nekaj programov, ker je opisano na <span class="xref myst">dnu te strani</span>.</p>
 <p><em>Seznam vaj ni dokončen in bo sproti dopolnjen oz. osvežen.</em></p>
 <hr class="docutils" />
 <section id="v01-uvod-pubmed-in-biopython">
-<h2>V01: Uvod, PubMed in BioPython<a class="headerlink" href="#v01-uvod-pubmed-in-biopython" title="Permalink to this headline">#</a></h2>
+<h2>V01: Uvod, PubMed in BioPython<a class="headerlink" href="#v01-uvod-pubmed-in-biopython" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik.</p>
 <ol class="arabic simple">
 <li><p>Uvod:</p>
@@ -463,7 +479,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v02-genbank">
-<h2>V02: GenBank<a class="headerlink" href="#v02-genbank" title="Permalink to this headline">#</a></h2>
+<h2>V02: GenBank<a class="headerlink" href="#v02-genbank" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, Python 3, JupyterLab ali katero drugo razvojno okolje, BioPython.</p>
 <p><strong>GenBank</strong> (zbirka nukleotidnih zaporedij):</p>
 <ul class="simple">
@@ -473,7 +489,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v03-uniprot">
-<h2>V03: UniProt<a class="headerlink" href="#v03-uniprot" title="Permalink to this headline">#</a></h2>
+<h2>V03: UniProt<a class="headerlink" href="#v03-uniprot" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, Python 3, JupyterLab ali katero drugo razvojno okolje, BioPython.</p>
 <p><strong>UniProt</strong> (zbirka aminokislinskih zaporedij):</p>
 <ul class="simple">
@@ -483,7 +499,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v04-poravnave-1-del">
-<h2>V04: Poravnave (1. del)<a class="headerlink" href="#v04-poravnave-1-del" title="Permalink to this headline">#</a></h2>
+<h2>V04: Poravnave (1. del)<a class="headerlink" href="#v04-poravnave-1-del" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, Python 3, JupyterLab ali katero drugo razvojno okolje, BioPython.</p>
 <ol class="arabic simple">
 <li><p><strong>Točkovni diagram</strong> (<em>dotplot</em>):</p>
@@ -500,7 +516,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v05-poravnave-2-del">
-<h2>V05: Poravnave (2. del)<a class="headerlink" href="#v05-poravnave-2-del" title="Permalink to this headline">#</a></h2>
+<h2>V05: Poravnave (2. del)<a class="headerlink" href="#v05-poravnave-2-del" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, Python 3, JupyterLab ali katero drugo razvojno okolje, BioPython.</p>
 <p><strong>Globalna in lokalna poravnava dveh zaporedij</strong>:</p>
 <ul class="simple">
@@ -511,7 +527,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v06-iskanje-podobnih-zaporedij">
-<h2>V06: Iskanje podobnih zaporedij<a class="headerlink" href="#v06-iskanje-podobnih-zaporedij" title="Permalink to this headline">#</a></h2>
+<h2>V06: Iskanje podobnih zaporedij<a class="headerlink" href="#v06-iskanje-podobnih-zaporedij" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik.</p>
 <p><strong>Iskanje podobnih zaporedij s programom BLAST</strong></p>
 <ul class="simple">
@@ -520,7 +536,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v07-poravnave-vec-zaporedij">
-<h2>V07: Poravnave več zaporedij<a class="headerlink" href="#v07-poravnave-vec-zaporedij" title="Permalink to this headline">#</a></h2>
+<h2>V07: Poravnave več zaporedij<a class="headerlink" href="#v07-poravnave-vec-zaporedij" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik.</p>
 <p><strong>Poravnave več zaporedij</strong></p>
 <ul class="simple">
@@ -529,7 +545,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v08-grafi">
-<h2>V08: Grafi<a class="headerlink" href="#v08-grafi" title="Permalink to this headline">#</a></h2>
+<h2>V08: Grafi<a class="headerlink" href="#v08-grafi" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, program <a class="reference external" href="http://www.cytoscape.org">Cytoscape</a> (+ vtičniki, ki jih bomo namestili na vajah)</p>
 <p><strong>Teorija grafov v molekularni biologiji</strong></p>
 <ul class="simple">
@@ -538,7 +554,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="v09-strukturna-bioinformatika">
-<h2>V09: Strukturna bioinformatika<a class="headerlink" href="#v09-strukturna-bioinformatika" title="Permalink to this headline">#</a></h2>
+<h2>V09: Strukturna bioinformatika<a class="headerlink" href="#v09-strukturna-bioinformatika" title="Permalink to this heading">#</a></h2>
 <p>Potrebujete: spletni brskalnik, program <a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a>.</p>
 <p><strong>Analiza struktur in modeliranje</strong></p>
 <ul class="simple">
@@ -548,9 +564,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="izvajanje-vaj-doma">
-<h2>Izvajanje vaj doma<a class="headerlink" href="#izvajanje-vaj-doma" title="Permalink to this headline">#</a></h2>
+<h2>Izvajanje vaj doma<a class="headerlink" href="#izvajanje-vaj-doma" title="Permalink to this heading">#</a></h2>
 <section id="programiranje">
-<h3>Programiranje<a class="headerlink" href="#programiranje" title="Permalink to this headline">#</a></h3>
+<h3>Programiranje<a class="headerlink" href="#programiranje" title="Permalink to this heading">#</a></h3>
 <p>Pri programiranju boste potrebovali okolje Python. Slednjega imate lahko lokalno nainstaliranega (ponavadi bolj zanesljivo in hitreje), lahko pa uporabljate tudi Python v okviru <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>. Zvezki JupyterLab vsebujejo povezavo za poganjanje v slednjem (pri vrhu strani desno, ko imate odprt tak zvezek).</p>
 <p>Za programiranje v lokalnem Pythonu si namestite:</p>
 <ul class="simple">
@@ -564,7 +580,7 @@ document.write(`
 </ul>
 </section>
 <section id="ostali-programi">
-<h3>Ostali programi<a class="headerlink" href="#ostali-programi" title="Permalink to this headline">#</a></h3>
+<h3>Ostali programi<a class="headerlink" href="#ostali-programi" title="Permalink to this heading">#</a></h3>
 <p>Potrebovali boste še nekaj drugih programov, ki so sicer navedeni pri posamezni vaji zgoraj, celoten seznam pa je tudi tukaj:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a> za vizualizacijo in analizo makromolekulskih struktur</p></li>
@@ -600,11 +616,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../priloge/datoteke_poimenovanje.html"
@@ -624,10 +639,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -703,8 +715,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

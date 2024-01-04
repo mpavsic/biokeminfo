@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Splošna navodila" href="navodila.html" />
     <link rel="prev" title="Splošno o seminarju" href="../seminar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -425,7 +441,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="seminarji-2022-2023">
-<h1>Seminarji 2022/2023<a class="headerlink" href="#seminarji-2022-2023" title="Permalink to this headline">#</a></h1>
+<h1>Seminarji 2022/2023<a class="headerlink" href="#seminarji-2022-2023" title="Permalink to this heading">#</a></h1>
 <p>Seminar se izvaja v dveh skupinah, vsaka ima nekoliko drugačno nalogo.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -452,15 +468,15 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="uvod">
-<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this headline">#</a></h2>
+<h2>Uvod<a class="headerlink" href="#uvod" title="Permalink to this heading">#</a></h2>
 <p>Na raziskovalnem inštitutu, kjer se ukvarjajo z iskanjem novih potencialno industrijsko uporabnih encimov iz slabše okarakteriziranih organizmov, je prišlo do obsežnega požara. Pri tem je bila uničena praktično vsa lokalno shranjena laboratorijska dokumentacija, po nesreči pa so ugotovili, da že nekaj let zaradi malomarnosti IT osebja sistem za izdelavo varnostne kopije na drugi lokaciji ni deloval. Vse, kar je ostalo, je nekaj potencialno pomembnih vzorcev DNA, ki so ostali v kletnem zamrzovalniku, a brez dokumentacije žal ni mogoče ugotoviti, kaj je uporabno in pomembno ter kaj ne. Zraven tega je ostalo še nekaj datotek z aminokislinskimi zaporedji, a so njihove oznake neuporabne. Vaša naloga je, da poizkusite iz tega materiala izluščiti, za kaj gre in ali se izplača z delom nadaljevati. Na pomoč raziskovalca, ki je vzorce pripravil, ne morete računati, saj je iz obupa delo pustil in odšel na kolesarjenje okoli sveta.</p>
 <p>Ne preostane vam nič drugega kot do, da določite nukleotidna zaporedja vključkov v standardnem klonirnem vektorju, ki je bil v uporabi v tem laboratoriju pri kloniranju zapisov za nove encime, seveda pa ne gre zanemariti tudi tistih aminokislinskih zaporedij, ki so se od vseh podatkov ohranila. Vaš izhodiščni podatek je eno izmed tako določenih nukleotidnih zaporedij oziroma aminokislinskih zaporedij iz še ohranjenih zapiskov v laboratoriju.</p>
 </section>
 <hr class="docutils" />
 <section id="vhodni-podatki">
-<h2>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this headline">#</a></h2>
+<h2>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h2>
 <section id="termin-1-za-skupino-a-in-b">
-<h3>Termin 1 za skupino A in B<a class="headerlink" href="#termin-1-za-skupino-a-in-b" title="Permalink to this headline">#</a></h3>
+<h3>Termin 1 za skupino A in B<a class="headerlink" href="#termin-1-za-skupino-a-in-b" title="Permalink to this heading">#</a></h3>
 <p>Vhodni podatek (zaporedje):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">seq1</span>
 <span class="n">TCGGGAACCAGCAACTCCGGTACTTGGGCTTCCGACAAGCTGATCTCTGATGGCTACAA</span>
@@ -482,7 +498,7 @@ document.write(`
 <p>Primer delno rešene naloge, ki naj bo za zgled za pripravo seminarske naloge, je dostopen <a class="reference internal" href="naloge/s00-primer.html"><span class="doc std std-doc">tukaj</span></a>.</p>
 </section>
 <section id="termin-2-skupina-a">
-<h3>Termin 2 (skupina A)<a class="headerlink" href="#termin-2-skupina-a" title="Permalink to this headline">#</a></h3>
+<h3>Termin 2 (skupina A)<a class="headerlink" href="#termin-2-skupina-a" title="Permalink to this heading">#</a></h3>
 <p>V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z <a class="reference internal" href="navodila.html"><span class="doc std std-doc">navodili</span></a> in ob upoštevanju <a class="reference internal" href="seminar-predloga.html"><span class="doc std std-doc">predloge</span></a>.</p>
 <p>Oddane seminarske naloge so dostopne s klikom na oznako seminarja.</p>
 <table class="colwidths-auto table">
@@ -630,7 +646,7 @@ document.write(`
 </div>
 </section>
 <section id="termin-2-skupina-b">
-<h3>Termin 2 (skupina B)<a class="headerlink" href="#termin-2-skupina-b" title="Permalink to this headline">#</a></h3>
+<h3>Termin 2 (skupina B)<a class="headerlink" href="#termin-2-skupina-b" title="Permalink to this heading">#</a></h3>
 <p>V spodnji tabeli so navedene oznake seminarjev in imena, vhodni podatek (zaporedje) najde vsaj v delu pod tabelo (imena zaporedij so oznake seminarjev, format FASTA). Seminarska naloga naj bo pripravljena v skladu z <a class="reference internal" href="navodila.html"><span class="doc std std-doc">navodili</span></a> in ob upoštevanju <a class="reference internal" href="seminar-predloga.html"><span class="doc std std-doc">predloge</span></a>.</p>
 <p>Oddane seminarske naloge so dostopne s klikom na oznako seminarja.</p>
 <table class="colwidths-auto table">
@@ -828,11 +844,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../seminar.html"
@@ -852,10 +867,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -924,8 +936,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -9,7 +9,7 @@ Zbirka UniProt(KB) je sestavljena osnovnih delov:
 * **UniProtKB/TrEMBL**, ki vsebuje avtomatsko prevedena nukleotidna zaporedja, ti zapisi pa niso ročno pregledani (označeni z modrim listom).
 
 Zaporedja iz zgoraj navedenih delov so *predestilirana* v skupke zaporedij v delu, imenovanem UniRef (referenčna zaporedja). Zraven tega pa v UniProt najdemo še UniMES (metagenomska zaporedja, zaporedja iz okoljskih vzorcev), ki pa so prav tako predestilirana v skupke UniMES. Osnovni tok podatkov, je predstavljen na spodnji sliki (vir: spletna stran UniProt):
-![UniProt tok podatkov](https://www.uniprot.org/images/overview.png)
+![UniProt tok podatkov](https://raw.githubusercontent.com/ebi-uniprot/uniprot-manual/main/images/overview.png)
 
 Do zbirke UniProt dostopamo neposredno z uporabo brskalnika ali programskega dostopa, lahko pa tudi posredno prek drugih orodij, npr. pri iskanju podobnih zaporedij. Vse te načine si bomo ogledali tudi na vajah.
 

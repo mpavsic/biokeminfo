@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,12 +38,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -75,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="VAJA: Enostavna analiza nt-zaporedja (Python)" href="../vaje/nt-oligo_analiza.html" />
     <link rel="prev" title="DEMO: Programski dostop do PubMed" href="../vaje/pubmed_eutilities.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,6 +86,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -144,13 +155,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
   
   
 </a></div>
@@ -245,6 +257,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
 </ul>
 
     </div>
@@ -368,10 +384,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -379,7 +395,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -426,9 +442,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="nukleotidna-zaporedja">
-<h1>Nukleotidna zaporedja<a class="headerlink" href="#nukleotidna-zaporedja" title="Permalink to this headline">#</a></h1>
+<h1>Nukleotidna zaporedja<a class="headerlink" href="#nukleotidna-zaporedja" title="Permalink to this heading">#</a></h1>
 <section id="zbirke-nukleotidnih-zaporedij">
-<h2>Zbirke nukleotidnih zaporedij<a class="headerlink" href="#zbirke-nukleotidnih-zaporedij" title="Permalink to this headline">#</a></h2>
+<h2>Zbirke nukleotidnih zaporedij<a class="headerlink" href="#zbirke-nukleotidnih-zaporedij" title="Permalink to this heading">#</a></h2>
 <p>Obstajajo tri glavne zbirke nukleotidnih zaporedij, ki pa pravzaprav vsebujejo enake podatke, saj med njimi poteka redna (dnevna) izmenjava oz. sinhronizacija in so del mednarodnega združenja <a class="reference external" href="http://www.insdc.org/"><strong>International Nucleotide Sequence Database Collaboration</strong></a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/"><strong>GenBank</strong></a> na strežniku <a class="reference external" href="https://www.ncbi.nlm.nih.gov/">NBCI</a> (National Center for Biotechnology Information),</p></li>
@@ -437,7 +453,7 @@ document.write(`
 </ul>
 </section>
 <section id="genbank">
-<h2>GenBank<a class="headerlink" href="#genbank" title="Permalink to this headline">#</a></h2>
+<h2>GenBank<a class="headerlink" href="#genbank" title="Permalink to this heading">#</a></h2>
 <p>GenBank je zbirka, ki se od zgoraj navedenih uporablja najpogosteje, zato jo bomo uporabljali tudi mi. Do zbirke lahko dostopamo na več osnovnih načinov:</p>
 <ul class="simple">
 <li><p>spletni iskalnik Entrez, ki omogoča dostop tudi do drugih podatkov/zbirk, npr. do aminokislinskih zaporedij, struktur makromolekul, PubMed ipd. - gre za način dostopa, ki je podoben oz. enak kot za <a class="reference internal" href="../vaje/pubmed_web.html"><span class="doc std std-doc">PubMed pred brskalnika</span></a>;</p></li>
@@ -447,24 +463,24 @@ document.write(`
 </ul>
 <p>Zbirka vsebuje zapise iz različnih virov - od zapisov, ki jih prispevajo posamezni laboratoriji (na primer, sekvencirate cDNA za nek protein iz nekega organizma, deponiranje zaporedja v javno dostopno zbirko je pogoj za objavo članka, v katerem zaporedje omenjate) do velikih genomskih projektov, vključno z zaporedji iz projektov WGS (<em>whole-genome shotgun</em>, sekvenciranje celotnih genomov po principu hitrem postopku <em>shotgun</em>) in TSA (<em>transcriptome shotgun assembly</em>, združena zaporedja iz hitrega sekvenciranja transkriptomov) ter zaporedji, določenih iz vzorcev iz okolja.</p>
 <section id="kode-zapisov">
-<h3>Kode zapisov<a class="headerlink" href="#kode-zapisov" title="Permalink to this headline">#</a></h3>
+<h3>Kode zapisov<a class="headerlink" href="#kode-zapisov" title="Permalink to this heading">#</a></h3>
 <p>Vsakemu zapisu, ki vsebuje zaporedje in pripise (anotacije, <em>annotations</em>), je določena unikatna identifikacijska koda, imenovana <em><strong>accession number</strong></em> (koda za dostop), ki predstavlja primarni ključ zapisa v zbirko in je enak v vse treh zgoraj omenjenih zbirkah (GenBank, ENA, DDBJ). V zapisu je napisana v vrstici z oznako ACCESSION. Ta koda je nespremenljiva in se ohrani tudi v primeru sprememb vsebine zapisa - v tem primeru se novim verzijam doda oznaka verzije, npr. 5. verzija zapisa za mRNA za človeški tiroglobulin z osnovno kodo za dostop NM_003235 tako postane NM_003235.5 (oznaka verzije je torej za piko). Velja, da ko dostopamo do nekega zapisa v zbirki bomo privzeto vedno dobili najnovejšo verzijo zapisa, razen, če bomo izrecno navedli kakšno drugo verzijo. Priporočljivo je, da pri navajanju kode za dostop (npr. v članku navedemo, da smo uporabili zaporedje i zbirke GenBank pod to in to kodo) vedno navedemo še verzijo.</p>
 <p>Vsak zapis ima še eno kodo, imenovano <strong>GI</strong> (Geninfo Identifier), ki je povezana s točno določeno verzijo zapisa. Na primer, verziji zapisa NM_003235.4 in NM_003235.5 imata drugačno kodo GI.</p>
 </section>
 <section id="divizije">
-<h3>Divizije<a class="headerlink" href="#divizije" title="Permalink to this headline">#</a></h3>
+<h3>Divizije<a class="headerlink" href="#divizije" title="Permalink to this heading">#</a></h3>
 <p>Zapisi oz. nukleotidna zaporedja so v zbirki GenBank organizirana v t.i. <strong>divizije</strong> (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/htgs/divisions/"><em>GenBank divisions</em></a>) in sicer glede na taksonomsko razvrstitev organizma, iz katerega zaporedje izhaja, ter glede na pristop sekvenciranja, uporabljen za določitev samega zaporedja. Tako torej ločimo taksonomske in funkcijske divizije.</p>
 <p>Taksonomske divizije so: SYN (sintetična zaporedja), PHG (fagi), ENV (zaporedja iz okoljskih vzorcev), VRL (virusi), BCT (bakterije), PLN (rastline), MAM (sesalci, z izjemo tistih, ki so v svoji ločeni diviziji), VRT (drugi vretenčarji), PRI (primati), UNA (zapisi, kjer pripisi ne omogočajo določitve divizije oz. slednja še ni določena), ROD (glodalci), INV (nevretenčarji).</p>
 <p>Funkcijske divizije so: TSA (hitro sekvenciranje transkriptomov), WHS (sekvenciranje celotnih genomov s hitrim pristopom), PAT (patentirana zaporedja), GSS (<em>Genome survey sequences</em>), EST (<em>Expressed sequence tag</em>, t.j. kratka zaporedja, ki so prepisana z genomske DNA), HGT (genomska zaporedja, dobljena z visoko zmogljivim pristopom skevenciranja; <em>High-throughput genomic</em>), STS (<em>Sequence tagged sites</em>) in HCT (visoko zmogljivo sekvenciranje cDNA; <em>High-throughput cDNA</em>).</p>
 </section>
 <section id="genbank-flat-file">
-<h3>GenBank <em>Flat File</em><a class="headerlink" href="#genbank-flat-file" title="Permalink to this headline">#</a></h3>
+<h3>GenBank <em>Flat File</em><a class="headerlink" href="#genbank-flat-file" title="Permalink to this heading">#</a></h3>
 <p>Klasična oblika zapisa v zbirki je t.i. ploski format (<em>Flat File</em>), katerega najpomembnejši elementi so na kratko predstavljeni na spodnji sliki, podrobneje pa opisani na <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">uradni spletni strani</a>.</p>
 <p><img alt="GenBank Flat File" src="../_images/genbank_flatfile.png" /></p>
 </section>
 </section>
 <section id="dodatna-literatura">
-<h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this headline">#</a></h2>
+<h2>Dodatna literatura<a class="headerlink" href="#dodatna-literatura" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>kratek video-vodič <a class="reference external" href="https://www.youtube.com/watch?v=j7hV10gYz1Q">How to use GenBank</a></p></li>
 <li><p><a class="reference external" href="https://www.youtube.com/watch?v=QIZ8QH6JcC8&amp;t=890s">NCBI Minute: A Beginner’s Guide to Genes and Sequences at NCBI</a> na uradnem YouTube kanalu NCBI</p></li>
@@ -499,11 +515,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../vaje/pubmed_eutilities.html"
@@ -523,10 +538,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -596,8 +608,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>
