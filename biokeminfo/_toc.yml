@@ -66,3 +66,6 @@ parts:
     sections:
     - file: seminar/seminar_2021-2022/navodila
     - file: seminar/seminar_2021-2022/seminar-predloga
+- caption: Razno
+  chapters:
+  - file: razno/zanimivosti
