@@ -8,7 +8,7 @@ Knjiga je sicer prosto dostopna in kot taka predstavlja enostavno dostopen in up
 ```
 
 ---
-Uvod
+Predgovor
 ====
 
 Knjiga je sestavljena iz nalog, podprtih s kratkim uvodom ter razlagami. Naloge so smiselno razvrščene v tematske sklope, njihovo zaporedje pa ni nujno povezano z zaporedjem izvajanja na vajah.
@@ -25,6 +25,7 @@ Vaje iz programiranja so zastavljene tako, da boste (ponavadi) dobili že delno 
 - zvezek oz. zvezke prenesete na vaš računalnik in jih odpreti v okolju JupyterLab (to je priporočen način za na vajah) ali
 - zvezek odprete v spletni storitvi Google Colab ali Binder (povezava je vidna v zvezkih JupyterLab desno zgoraj - ikona rakete). Priporočam Google Colab, saj deluje nekoliko hitreje, prav tako pa se vam spremembe zvezkov shranijo na vaš Google Drive. To ne velja za Binder - za ohranitev sprememb morate zvezek po koncu vaje oz. preden zaprete okno brskalnika shraniti lokalno (ga prenesete na vaš računalnik).
 
----
-
-Spletna knjiga je v neprestanem nastajanju/dopolnjevanju in bo kot taka sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov, saj se lahko naslovi podstrani zaradi morebitne reorganizacija vsebine spremenijo. Komentarji so dobrodošli: [klik!](mailto:miha.pavsic@fkkt.uni-lj.si)
+```{admonition} Opomba
+:class: note
+Spletna knjiga je v nastajanju in bo kot taka sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov [https://mpavsic.github.io/biokeminfo](https://mpavsic.github.io/biokeminfo), saj se lahko naslovi podstrani v primeru reorganizacije vsebine spremenijo. Če v knjigi najdete napako mi to sporočite preko klika na ikono GitHub na vrhu dotične strani > 'Suggest edit' (predlagajte popravek) ali 'Open issue' (pokomentirajte).
+```

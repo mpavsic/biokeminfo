@@ -1,5 +1,5 @@
 #  Biokemijska informatika
-Repozitorij je namenjen za uporabo na vajah pri predmetu **Biokemijska informatika** za študente 2. letnika univerzitetnega študijskega programa **Biokemija** na **[Univerzi v Ljubljani](https://www.uni-lj.si), [Fakulteta za kemijo in kemijsko tehnologijo](https://www.fkkt.uni-lj.si)**.
+Repozitorij je namenjen za uporabo na vajah pri predmetu **Biokemijska informatika** za študente 2. letnika univerzitetnega študijskega programa **Biokemija** na **[Univerzi v Ljubljani](https://www.uni-lj.si), [Fakulteti za kemijo in kemijsko tehnologijo](https://www.fkkt.uni-lj.si)**.
 
 Vsebuje nekaaj teorije kot uvod v vaje, primere z razlagami ter naloge, dodaten so tudi seminarske naloge študentov.
 
