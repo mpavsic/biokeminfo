@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VAJA: Programski dostop do UniProt (Python) &#8212; Biokemijska informatika</title>
   
@@ -19,43 +18,41 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -63,17 +60,21 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KG7KWKX5VG');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/uniprot_rest';</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/uniprot_rest.html" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Točkovni diagram" href="../osnove/dotplot.html" />
@@ -90,7 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -130,20 +130,15 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <header>
   
-    <div class="bd-header navbar navbar-expand-lg bd-navbar">
-    </div>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
-  </header>
 
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -177,7 +172,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -561,12 +567,12 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vaja-programski-dostop-do-uniprot-python">
-<h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Permalink to this heading">#</a></h1>
+<h1>VAJA: Programski dostop do UniProt (Python)<a class="headerlink" href="#vaja-programski-dostop-do-uniprot-python" title="Link to this heading">#</a></h1>
 <p>Tudi ta vaja, podobno kot prejšnje, delno temelji na uporabi <a class="reference external" href="https://biopython.org">BioPythona</a>, a le v delu, ki se nanaša na analizo zaporedja. Do zbirke sáme ne dostopamo prek E-utilities (le-te so za strežnik NCBI), ampak kar direktno iz Pythona z uporabo posebnega modula <code class="docutils literal notranslate"><span class="pre">requests</span></code>, ki omogoča dostop do storitev prek HTTP. Načeloma bi lahko podoben dostop uporabili tudi za Entrez, a bi morali naslove ustrezno prilagoditi.</p>
 <p>Najprej si oglejte in preizkusite delovanje delov kode v spodnjih razdelkih, nato pa rešite nalogo na dnu tega zvezka - z ustrezno kombinacijo nekaterih delov kode iz zgledov ter prilagoditvijo kode, da bo rezultat tak, kot je navedeno.</p>
 <hr class="docutils" />
 <section id="ozadje">
-<h2>Ozadje<a class="headerlink" href="#ozadje" title="Permalink to this heading">#</a></h2>
+<h2>Ozadje<a class="headerlink" href="#ozadje" title="Link to this heading">#</a></h2>
 <p>Osnovna navodila za t.i. programatski dostop do zbirke <a class="reference external" href="https://www.uniprot.org">UniProt</a> so na voljo na podstrani <a class="reference external" href="https://www.uniprot.org/help/programmatic_access">Programmatic access</a>, kjer je opisan dostop preko <strong>REST</strong>.</p>
 <p>Kaj je REST? REST ali <em>REpresentational State Transfer</em> podaja smernice pri razvoju spletnih storitev z namenom omogočanja in olajšanja interoperabilnosti med sistemi na spletu. Spletne storitve, ki so v skladu s temi smernicami, se imenujejo RESTful spletne storitve ter omogočajo dostop preko uniformnega in definiranega seta operacij. Več o tem lahko preberete na <a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipediji</a>, razloženo pa je tudi v videoposnetku spodaj (in še mimogrede vidimo primer, kako v zvezek JupyterLab vključumo video z YouTube).</p>
 <div class="cell docutils container">
@@ -592,9 +598,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="zgledi">
-<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this heading">#</a></h2>
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Link to this heading">#</a></h2>
 <section id="definiranje-naslovov">
-<h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Permalink to this heading">#</a></h3>
+<h3>Definiranje naslovov<a class="headerlink" href="#definiranje-naslovov" title="Link to this heading">#</a></h3>
 <p>Najprej vključimo modul <em>requests</em>, ki nam omogoča dostop do storitev preko protokola HTTP.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -611,7 +617,7 @@ document.write(`
 </ul>
 </section>
 <section id="iskanje-po-uniprotu">
-<h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Permalink to this heading">#</a></h3>
+<h3>Iskanje po UniProtu<a class="headerlink" href="#iskanje-po-uniprotu" title="Link to this heading">#</a></h3>
 <p>Če iščemo po UniProtu preko spletnega vmesnika (<em>Advanced search</em>, na primer s pojmoma <em>matriptase</em> kot ime proteina (<em>name</em>) ter <em>homo sapiens</em> kot organizem ter želimo samo ročno pregledane (<em>reviewed</em>) zapise, to izgleda v iskalnem polju tako: <code class="docutils literal notranslate"><span class="pre">(protein_name:matriptase)</span> <span class="pre">AND</span> <span class="pre">(organism_name:&quot;homo</span> <span class="pre">sapiens&quot;)</span> <span class="pre">AND</span> <span class="pre">(reviewed:true)</span></code>. Ko sprožimo iskanje pa izgleda URL v naslovni vrsti v brskalniku tako: <code class="docutils literal notranslate"><span class="pre">https://www.uniprot.org/uniprotkb?query=%28protein_name%3Amatriptase%29%20AND%20%28organism_name%3A%22homo%20sapiens%22%29%20AND%20%28reviewed%3Atrue%29</span></code>. Imena posameznih polj (<em>return fields</em>) so na voljo v <a class="reference external" href="https://www.uniprot.org/help/return_fields">dokumentaciji</a>.</p>
 <p>Tak strukturiran zapis lahko uporabimo v Pythonu, pri čemer nastavimo kot tip izpisa seznam (<em>list</em>; glejte na konec URL), da dobimo samo seznam kod zapisov, hkrati pa lahko nastavimo, da nam program vrne ime napake, če gre kaj narobe (kode napak in njihovi opisi so <a class="reference external" href="https://www.uniprot.org/help/api%5Fretrieve%5Fentries">dokumentirani</a>). Da zadeva deluje moramo wgolj <em>www</em> nadomestiti z <em>rest</em> ter pred <em>query</em> vstaviti <em>/search</em>, kot je opisano <a class="reference external" href="https://www.uniprot.org/help/api_queries">tukaj</a>.  Torej:</p>
 <div class="cell docutils container">
@@ -668,7 +674,7 @@ Q7RTY8
 <p>Če je nek iskalni pojem sestavljen iz večih besed (npr. <em>homo sapiens</em>), ga moramo dati v narekovaje.</p>
 </section>
 <section id="izpis-zaporedja">
-<h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Permalink to this heading">#</a></h3>
+<h3>Izpis zaporedja<a class="headerlink" href="#izpis-zaporedja" title="Link to this heading">#</a></h3>
 <p>V kakšnem formatu želimo izpis določimo preko spremenljivke <em>format</em>, ki lahko zavzame možnosti html, tab, xls, fasta, txt itd., kar je <a class="reference external" href="https://www.uniprot.org/help/api%5Fqueries">dokumentirano v opisu API</a>. Recimo, če si želimo izpis vseh rezultatov v formatu FASTA in izpis omejimo na prvih 300 znakov, naredimo tako:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -765,7 +771,7 @@ SLL
 </div>
 </section>
 <section id="napake-pri-iskanju">
-<h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Permalink to this heading">#</a></h3>
+<h3>Napake pri iskanju<a class="headerlink" href="#napake-pri-iskanju" title="Link to this heading">#</a></h3>
 <p>Včasih se zatipkamo v imenu ali kodi dostopa. Kaj se zgodi v primeru, da UniProt ne najde ničesar (v spodnjem primeru je v <em>accession code</em> iz zgornjega primera dodan še znak <em>x</em>? Nekaj možnosti:</p>
 <ul class="simple">
 <li><p>code 200: poizvedba uspešno opravljena</p></li>
@@ -791,7 +797,7 @@ SLL
 </div>
 </section>
 <section id="izvoz-v-datoteko">
-<h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Permalink to this heading">#</a></h3>
+<h3>Izvoz v datoteko<a class="headerlink" href="#izvoz-v-datoteko" title="Link to this heading">#</a></h3>
 <p>Pa naredimo sedaj še nekaj drugega - rezultat (lahko bi jih bilo več) shranimo v lokalno datoteko, nato za test izpišemo njeno vsebino ter jo pretvorimo v objekt Seq:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -836,29 +842,23 @@ GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
 SLL
 </pre></div>
 </div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">14</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
-<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|Q7RTY8|TMPS7_HUMAN
+Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
+MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
+843
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="drugi-servisi">
-<h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Permalink to this heading">#</a></h3>
+<h3>Drugi servisi<a class="headerlink" href="#drugi-servisi" title="Link to this heading">#</a></h3>
 <p>Dostop do zbirk zaporedij je mogoč tudi preko drugih servisovm, na primer EMBL/EBI, kjer na voljo obširna navodila za dostop na strani <a class="reference external" href="https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Job+Dispatcher+Sequence+Analysis+Tools+Home">Job Dispatcher Sequence Analysis Tools Home</a>. Vsebina zbirke je enaka kot na UniProt.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja">
-<h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Permalink to this heading">#</a></h2>
+<h2>Izračun nekaterih osnovnih parametrov aminokislinskega zaporedja<a class="headerlink" href="#izracun-nekaterih-osnovnih-parametrov-aminokislinskega-zaporedja" title="Link to this heading">#</a></h2>
 <p>Za aminokislinsko zaporedje od zgoraj lahko s pomočjo <em>ProteinAnalysis</em>, ki je del modula <a class="reference external" href="https://biopython.org/wiki/ProtParam">ProtParam</a> v BioPython, izračunamo nekatere osnovne parametre. Pri tem moramo biti pozorni, da objekt Seq pretvorimo v niz oz. <em>string</em>.</p>
 <p>Kaj vse modul ProtParam omogoča si oglejte na spletni strani <a class="reference external" href="https://biopython.org/wiki/ProtParam">BioPython ProtParam</a>.</p>
 <div class="cell docutils container">
@@ -895,7 +895,7 @@ SLL
 Število A: 40
 Delež  A: 0.05
 Izoelektrična točka (pI): 8.84
-Delež alfa-vijačnic: 0.32
+Delež alfa-vijačnic: 0.24
 Molarni ekstinkcijski koeficient, red. [1/(M cm)]: 139690
 Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </pre></div>
@@ -906,7 +906,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </section>
 <hr class="docutils" />
 <section id="analiza-zaporedja-z-drsecim-oknom">
-<h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Permalink to this heading">#</a></h2>
+<h2>Analiza zaporedja z drsečim oknom<a class="headerlink" href="#analiza-zaporedja-z-drsecim-oknom" title="Link to this heading">#</a></h2>
 <p>Za primer bomo analizirali hidrofobnost proteina in sicer bomo narisali hidrofobni profil. Pri tovrstnih analizah ponavadi uporabljamo drseče okno ustrezne velikosti, pri čemer nek parameter povprečimo po tem oknu in ga pripišemo aminokislinskemu ostanki v sredini tega okna. Zato, da je določitev ak-ostanka v sredini okna nedvoumna, uporabljamo kot velikost okna liho število ak-ostankov.</p>
 <p>O analizi z uporabo drsečega okna smo že govorili na predavanjih:
 <img alt="Analiza z drsečim oknom" src="../_images/drsece_okno.png" /></p>
@@ -925,7 +925,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </div>
 </div>
 </div>
-<p>Kot lestvico hidrofobnosti bomo vzeli Kyte-Doolittle lestvico, ki je pripravljena v datoteki formata <em>comma separated values</em> (csv; <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a>): <span class="xref myst">hphob_scales.csv</span>. Datoteka sicer vsebuje naslednje lestvice hidrofobnosti:</p>
+<p>Kot lestvico hidrofobnosti bomo vzeli Kyte-Doolittle lestvico, ki je pripravljena v datoteki formata <em>comma separated values</em> (csv; <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a>): <a class="reference internal" href="#vhod/hphob_scales.csv"><span class="xref myst">hphob_scales.csv</span></a>. Datoteka sicer vsebuje naslednje lestvice hidrofobnosti:</p>
 <ul class="simple">
 <li><p>KD - Kyte &amp; Doolittle</p></li>
 <li><p>HW - Hopp &amp; Woods</p></li>
@@ -946,6 +946,18 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 <span class="n">values</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">residue</span> <span class="ow">in</span> <span class="n">seq_record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
     <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">residue</span><span class="p">,</span><span class="s1">&#39;KD&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vhod/hydrophobicity_scales.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;code1&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">num_residues</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_record</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
 </div>
 </div>
@@ -1016,7 +1028,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </section>
 <hr class="docutils" />
 <section id="naloga">
-<h2>Naloga<a class="headerlink" href="#naloga" title="Permalink to this heading">#</a></h2>
+<h2>Naloga<a class="headerlink" href="#naloga" title="Link to this heading">#</a></h2>
 <p>Vaša naloga je, da pripravite program, ki vas bo povprašal po naslednjih parametrih (v tem vrstnem redu):</p>
 <ol class="arabic simple">
 <li><p>kodi zapisa v UniProt;</p></li>
@@ -1031,7 +1043,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </ol>
 <p><em>Priporočam, da kode v zgledu ne spreminjate temveč si jo skopirate nekje tukaj spodaj ali v nov zvezek, tako da ohranite delujočo kodo za morebitni troubleshooting. Prav tako spremenite imena izhodnih datotek, ki jih program kreira.</em></p>
 <section id="dodatna-naloga-za-entuzijaste">
-<h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Permalink to this heading">#</a></h3>
+<h3>Dodatna naloga “za entuzijaste”<a class="headerlink" href="#dodatna-naloga-za-entuzijaste" title="Link to this heading">#</a></h3>
 <p>Podobno kot pri osnovni nalogi pripravite program, ki (v tem vrstnem redu):</p>
 <ol class="arabic simple">
 <li><p>vpraša za kodo zapisa v UniProt;</p></li>
@@ -1173,8 +1185,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

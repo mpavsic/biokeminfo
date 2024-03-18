@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>DEMO: Programski dostop do PubMed &#8212; Biokemijska informatika</title>
   
@@ -19,43 +18,41 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -63,15 +60,19 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KG7KWKX5VG');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/pubmed_eutilities';</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/vaje/pubmed_eutilities.html" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Nukleotidna zaporedja" href="../osnove/nt.html" />
@@ -88,7 +89,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -128,20 +128,15 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <header>
   
-    <div class="bd-header navbar navbar-expand-lg bd-navbar">
-    </div>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
-  </header>
 
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -175,7 +170,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -559,14 +565,14 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="demo-programski-dostop-do-pubmed">
-<h1>DEMO: Programski dostop do PubMed<a class="headerlink" href="#demo-programski-dostop-do-pubmed" title="Permalink to this heading">#</a></h1>
+<h1>DEMO: Programski dostop do PubMed<a class="headerlink" href="#demo-programski-dostop-do-pubmed" title="Link to this heading">#</a></h1>
 <p>Na primeru si bomo ogledali, kako iščemo pu zbirki PubMed prek programskega dostopa.</p>
 <section id="biopython">
-<h2>BioPython<a class="headerlink" href="#biopython" title="Permalink to this heading">#</a></h2>
+<h2>BioPython<a class="headerlink" href="#biopython" title="Link to this heading">#</a></h2>
 <p>Uporabili bomo <a class="reference external" href="https://biopython.org"><strong>BioPython</strong></a>, ki vsebuje orodja za delo z bio-podatki (zaporedja, strukture ipd.); podrobnejša navodila najdete na njegovi domači strani, še posebej uporabna je “kuharica” <a class="reference external" href="http://biopython.org/DIST/docs/tutorial/Tutorial.html">Biopython Tutorial and Cookbook</a>, kjer najdete različne primere uporabe z razlagami (težava je le v tem, da nekateri primeri iz kuharice ne delujejo, saj niso bili posodobljeni glede na novo verzijo BioPythona). To ne bo edina uporaba BioPythona - uporabljali ga bomo namreč tudi pri drugih vajah.</p>
 <p>Del BioPythona, ki nam omogoča iskanje zbirkah na strežnikih NCBI, med drugim PubMed, se imenuje <strong>Bio.Entrez</strong>, zanj je v okviru BioPython na voljo <a class="reference external" href="https://biopython.org/docs/1.75/api/Bio.Entrez.html">dokumentacija</a>.</p>
 <section id="modul-bio-entrez">
-<h3>Modul Bio.Entrez<a class="headerlink" href="#modul-bio-entrez" title="Permalink to this heading">#</a></h3>
+<h3>Modul Bio.Entrez<a class="headerlink" href="#modul-bio-entrez" title="Link to this heading">#</a></h3>
 <p>Modul Bio.Entrez nudi več funkcij, nekaj jih je navedenih tukaj (ostale so opisane v dokumentaciji):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">esearch</span></code> (Entrez Search) - z njim iščemo po zbirki/zbirkah, vrne nam pa primarne ključe za dostop (ID), ki se jih nato uporabi za prenos posmeznih zapisov z npr. <code class="docutils literal notranslate"><span class="pre">efetch</span></code>;</p></li>
@@ -590,10 +596,10 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="zgledi">
-<h2>Zgledi<a class="headerlink" href="#zgledi" title="Permalink to this heading">#</a></h2>
+<h2>Zgledi<a class="headerlink" href="#zgledi" title="Link to this heading">#</a></h2>
 <p>V nadaljevanju je prikazano nekaj zgledov, ki demonstrirajo poizvedovanje s programskih dostopom do Entrez.</p>
 <section id="seznam-zbirk">
-<h3>Seznam zbirk<a class="headerlink" href="#seznam-zbirk" title="Permalink to this heading">#</a></h3>
+<h3>Seznam zbirk<a class="headerlink" href="#seznam-zbirk" title="Link to this heading">#</a></h3>
 <p>Najprej si oglejmo, katere podatkovne zbirke so nam na voljo prek tega vmesnika.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -628,8 +634,8 @@ document.write(`
 <p>Na voljo imamo torej zbirko <em>pubmed</em> (literaturna zbirka), zbirko aminokislinskih (<em>protein</em>) in nukleotidnih zaporedij (<em>nucleotide</em>) , struktur (<em>structure</em>) itd.</p>
 </section>
 <section id="iskanje">
-<h3>Iskanje<a class="headerlink" href="#iskanje" title="Permalink to this heading">#</a></h3>
-<p>Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost <code class="docutils literal notranslate"><span class="pre">db</span></code> (database) ustrezno nastavili na <em>pubmed</em>. Definirati moramo tudi iskalni pojem (v spodnjem primeru <code class="docutils literal notranslate"><span class="pre">search_term</span></code>) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali <a class="reference internal" href="pubmed_web.html"><span class="doc std std-doc">pri prejšnji vaji</span></a>. Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/">Pubmed Advanced Search Builder</a>, zgradimo iskanje, ter vsebino iskalne škatle (<em>query box</em>) skopiramo in prilepimo kot vrednost <code class="docutils literal notranslate"><span class="pre">search_term</span></code>.</p>
+<h3>Iskanje<a class="headerlink" href="#iskanje" title="Link to this heading">#</a></h3>
+<p>Na tem mestu se bomo osredotočili na iskanje po zbirku Pubmed, zato bomo vrednost <code class="docutils literal notranslate"><span class="pre">db</span></code> (database) ustrezno nastavili na <em>pubmed</em>. Definirati moramo tudi iskalni pojem (v spodnjem primeru <code class="docutils literal notranslate"><span class="pre">search_term</span></code>) - slednjega lahko definiramo kar z navedbo ene ali več besed, s katerimi želimo iskati po PubMedu, lahko pa uporabimo naprednejšo sintakso in sicer na enak način kot prek naprednega spletnega vmesnika za iskanje po tej podatkovni zbirki, kar smo si ogledali <a class="reference internal" href="pubmed_web.html"><span class="std std-doc">pri prejšnji vaji</span></a>. Če si želimo kompleksnejšo poizvedbo, si celoten iskalni pojem najenostavneje zgradimo tako, da gremo na <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/advanced/">Pubmed Advanced Search Builder</a>, zgradimo iskanje, ter vsebino iskalne škatle (<em>query box</em>) skopiramo in prilepimo kot vrednost <code class="docutils literal notranslate"><span class="pre">search_term</span></code>.</p>
 <p>Pri iskanju moramo zraven zbirke in iskalnega pojma definirati še <em>retrieval mode</em> oz. <code class="docutils literal notranslate"><span class="pre">retmode</span></code> (včasih še <em>retrieval type</em> - <code class="docutils literal notranslate"><span class="pre">rettype</span></code>), možne vrednosti so navedene v <a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/">pomoči</a>.</p>
 <p>Spodaj je en tak primer, kjer za iščemo po imenih člankov, zanimajo pa nas samo taki, kjer se v imenu (<em>Title</em>) pojavi <em>coronavirus</em>, kjerkoli pa mora biti zraven tega še beseda <em>Tasmania</em> (iskanje sicer ni oblutljivo na velike in male črke, to pomeni, da ni <em>case-sensitive</em>). Kot rezultat dobimo slovar, ki vsebuje število zadetkov (<em>count</em>), seznam številk PMID zapisov oz. člankov (<em>IDList</em>) in uporabljen iskalni pojem (kot ga interpretira PubMed, vključno z <a class="reference external" href="https://www.ncbi.nlm.nih.gov/mesh/">MeSH</a>).</p>
 <div class="cell docutils container">
@@ -667,7 +673,7 @@ document.write(`
 </div>
 </section>
 <section id="prenos-zapisov">
-<h3>Prenos zapisov<a class="headerlink" href="#prenos-zapisov" title="Permalink to this heading">#</a></h3>
+<h3>Prenos zapisov<a class="headerlink" href="#prenos-zapisov" title="Link to this heading">#</a></h3>
 <p>Kot vidimo po zbirki iščemo z uporabo <em>esearch</em>, če pa želimo prenesti zapise, pa uporabimo <em>efetch</em> in sicer v kombinaciji s seznamom PMID (v <em>IdList</em>).</p>
 <p>Za primer si oglejmo, kako je sestavljen edem izmed zapisov. Spodnja koda vzame prvo kodo PMID v seznamu <em>IdList</em> ter prenese in izpiše vsebino zapisa:</p>
 <div class="cell docutils container">
@@ -689,7 +695,7 @@ document.write(`
 </div>
 </section>
 <section id="izpis-dela-zapisa">
-<h3>Izpis dela zapisa<a class="headerlink" href="#izpis-dela-zapisa" title="Permalink to this heading">#</a></h3>
+<h3>Izpis dela zapisa<a class="headerlink" href="#izpis-dela-zapisa" title="Link to this heading">#</a></h3>
 <p>Vidimo, da je zapis kar ena <em>solata</em>, tako da se v njem malce težko znajti. Spodnja koda nam recimo za vsak PMID izpiše povzetek, če je ta na voljo (tu spet vzamemo vse zadetke prejšnjega iskanja), kar je že nekako lepše.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -713,8 +719,8 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </div>
 </section>
 <section id="shranjevanje-rezultatov-v-csv">
-<h3>Shranjevanje rezultatov v CSV<a class="headerlink" href="#shranjevanje-rezultatov-v-csv" title="Permalink to this heading">#</a></h3>
-<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <span class="xref myst">drobnarijami</span>). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
+<h3>Shranjevanje rezultatov v CSV<a class="headerlink" href="#shranjevanje-rezultatov-v-csv" title="Link to this heading">#</a></h3>
+<p>Rezultate lahko shranimo tudi lokalno, na primer v obliki datoteke CSV (<em>Comma Separated Values</em>; kratka razlaga je med <a class="reference internal" href="#../priloge/drobnarije.md"><span class="xref myst">drobnarijami</span></a>). Kaj bi pravzaprav počeli z lokalno shranjenimi podatki? Na primer, lahko bi izvajali rudarjenje po tekstu (<em>text mining</em>), kjer bi analizirali so-pojavljanje določenih besed (npr. imen proteinov ali genov), so-avtorstva, geografsko porazdelitev raziskav (pri avtorjih je namreč dopisana njihova afiliacija), … Sicer je za obširnejše analize najbolje prekopirati kar celotno zbirko MEDLINE, a to je že druga zgodba.</p>
 <p>Spodnji zgled ilustrira uporabo knjižnice <a class="reference external" href="https://pandas.pydata.org/"><strong>Pandas</strong></a> in sicer:</p>
 <ul class="simple">
 <li><p>definira slovar <em>articles_with_abstracts</em>,</p></li>
@@ -756,12 +762,12 @@ The epicenter of the original outbreak in China has high male smoking rates of a
 </section>
 <hr class="docutils" />
 <section id="dodatne-informacije">
-<h2>Dodatne informacije<a class="headerlink" href="#dodatne-informacije" title="Permalink to this heading">#</a></h2>
+<h2>Dodatne informacije<a class="headerlink" href="#dodatne-informacije" title="Link to this heading">#</a></h2>
 <section id="drugi-nacini-programskega-dostopa">
-<h3>Drugi načini programskega dostopa<a class="headerlink" href="#drugi-nacini-programskega-dostopa" title="Permalink to this heading">#</a></h3>
+<h3>Drugi načini programskega dostopa<a class="headerlink" href="#drugi-nacini-programskega-dostopa" title="Link to this heading">#</a></h3>
 <p>Iskanje po Pubmed z uporabo BioPython-a je, kot ste videli zgoraj, lahko malce zakomplicirano. Primer poenostavitve interakcije je <a class="reference external" href="https://pypi.org/project/pymed/">PyMed</a>, ki so ga avtorji uporabili za analizo znanstvene literature na temo COVID-19 - članek <a class="reference external" href="https://doi.org/10.1016/j.dib.2020.106178">COVID-19: A scholarly production dataset report for research analysis</a>. Kako so podatke pridobili je dostopno v repozitoriju na GitHub <a class="reference external" href="https://github.com/breno-madruga/dib-covid-dataset">breno-madruga/dib-covid-datased</a>, ki si ga lahko prenesete in ogledate.</p>
 <p>Drug tak primer je Entrezpy, ki je opisan v članku <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btz385">Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases</a>. Relevantne povezave <a class="reference external" href="https://gitlab.com/ncbipy/entrezpy">koda v repozitoriju</a>, <a class="reference external" href="https://entrezpy.readthedocs.io/">dokumentacija</a>.</p>
-<p>Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov <strong>pip</strong>. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano <a class="reference internal" href="../priloge/python.html"><span class="doc std std-doc">tukaj</span></a>.</p>
+<p>Zgoraj omenjeni PyMed in Entrezpy sta dosegljiva prek upravljalnika paketov <strong>pip</strong>. Priporočljivo je, da si razne programe, ki jih morda potrebujete samo za test, nameščate v virtualno okolje, kar je na kratko opisano <a class="reference internal" href="../priloge/python.html"><span class="std std-doc">tukaj</span></a>.</p>
 </section>
 </section>
 </section>
@@ -894,8 +900,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

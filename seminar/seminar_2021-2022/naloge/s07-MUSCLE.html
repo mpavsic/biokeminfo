@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Poravnava zaporedij z MUSCLE &#8212; Biokemijska informatika</title>
   
@@ -19,43 +18,41 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
-  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -63,15 +60,19 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KG7KWKX5VG');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2021-2022/naloge/s07-MUSCLE';</script>
     <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2021-2022/naloge/s07-MUSCLE.html" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -86,7 +87,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -126,13 +126,10 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <header>
   
-    <div class="bd-header navbar navbar-expand-lg bd-navbar">
-    </div>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
-  </header>
 
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
@@ -173,7 +170,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -504,17 +512,17 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="poravnava-zaporedij-z-muscle">
-<h1>Poravnava zaporedij z MUSCLE<a class="headerlink" href="#poravnava-zaporedij-z-muscle" title="Permalink to this heading">#</a></h1>
+<h1>Poravnava zaporedij z MUSCLE<a class="headerlink" href="#poravnava-zaporedij-z-muscle" title="Link to this heading">#</a></h1>
 <p><strong>Avtorja</strong>: Tinkara Butara, Gaja Starc</p>
 <p><strong>Datum predstavitve</strong>: 2022-04-28</p>
 <hr class="docutils" />
 <section id="namen-vaje">
-<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Permalink to this heading">#</a></h2>
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Link to this heading">#</a></h2>
 <p>Naučili se bomo uporabljati program za poravnavo več zaporedij in spoznali za katera zaporedja je primeren.</p>
 </section>
 <hr class="docutils" />
 <section id="program">
-<h2>Program<a class="headerlink" href="#program" title="Permalink to this heading">#</a></h2>
+<h2>Program<a class="headerlink" href="#program" title="Link to this heading">#</a></h2>
 <p>Program: <strong><a class="reference external" href="https://www.ebi.ac.uk/Tools/msa/muscle/">MUSCLE 3.8</a></strong></p>
 <p>Avtorji programa: Robert C. Edgar, <a class="reference external" href="https://www.drive5.com/">drive5</a></p>
 <p>Reference:</p>
@@ -524,7 +532,7 @@ document.write(`
 <li><p>Madeira, F.; Park, Y.M.; Lee, J.; Buso, N.; Gur, T.; Madhusoodanan, N.; et al. (2019) <strong>The EMBL-EBI search and sequence analysis tools APIs in 2019.</strong> <em>Nucleic Acids Research</em> 47: W636–W641. <a class="reference external" href="https://doi.org/10.1093/nar/gkz268">10.1093/nar/gkz268</a></p></li>
 </ul>
 <section id="opis-programa">
-<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Permalink to this heading">#</a></h3>
+<h3>Opis programa<a class="headerlink" href="#opis-programa" title="Link to this heading">#</a></h3>
 <p>MUSCLE je zelo zmogljiv program za poravnavo več zaporedij. Poravna lahko 5000 zaporedij povprečne dolžine 350 aminokislinskih ostankov v 7 minutah. Deluje v treh stopnjah. Najprej zgenerira poravnavo več zaporedij, pri čemer poudarja hitrost pred natančnostjo. Izračuna razdaljo za vsak par neporavnanih zaporedij in na osnovi podobnosti izračuna matriko razdalj med pari. Sledi izdelava binarnega drevesa na osnovi matrike razdalj z uporabo metode za hierarhično gručenje (UPGMA) ali z združevanjem parov. Progresivna poravnava je zgrajena tako, da sledi zapovrstju razvejitev drevesa, rezultat česar je poravnava vseh vnešenih zaporedij.</p>
 <p>Cilj druge stopnje je izboljšava drevesa in izdelava nove progresivne poravnave na osnovi le-tega. Največja nenatančnost prve stopnje je namreč aproksimacija razdalj med neporavnanimi zaporedji in posledično izdelava suboptimalnega drevesa. Ta stopnja se po potrebi večkrat ponovi. Podobnost para zaporedij se izračuna na osnovi njegove poravnave znotraj trenutne poravnave več zaporedij. Novo drevo je skonstruirano na osnovi izračuna matrike Kimura razdalj (razdalje za poravnan par) in z iskanjem skupkov (ang. clustering) po tej matriki. Predhodna drevesa se nato primerja z novimi. Pri tem se identificira notranje vrzeli, kjer je prišlo do spremembe v zaporedju razvejitev. Sledi izgradnja nove progresivne poravnave - obstoječa poravnava se ohrani za vsako poddrevo pri katerem se zaporedje razvejitev ne spremeni.</p>
 <p>Tretja stopnja izvaja ponavljajoče se izpopolnjevanje poravnave. Z izbrisom roba (točka razvejitve) se drevo razdeli na dve ločeni poddrevesi. Sledi izračun poravnave zaporedij v obeh poddrevesih. Profil (večkratna poravnava) vsakega poddrevesa je pridobljen iz trenutne poravnave več zaporedij. Stolpci, ki vsebujejo le vrzeli, so zavrženi. Ohranjeni profili pa so ponovno medsebojno poravnani z uporabo poravnave profil-profil. Na osnovi nove poravnave med profiloma se izračuna ocena vsote parov (angl. sum of pairs) za poravnavo. Če je poravnava boljša, se ohrani, sicer se zavrže. Tretja stopnja se izvaja dokler ni dosežena določena stopnja konvergence ali s strani uporabnika določena meja.</p>
@@ -532,15 +540,15 @@ document.write(`
 <p><img alt="Opis programa" src="../../../_images/s07-MUSCLE-opis_programa.png" /></p>
 </section>
 <section id="vhodni-podatki">
-<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Permalink to this heading">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Link to this heading">#</a></h3>
 <p>Kot vhodne podatke lahko vnesemo več zaporedij v formatih GCG, FASTA, EMBL, GenBank, PIR, NBRF, PHYLIP ali UniProtKB/Swiss-Prot. Lahko jih navajamo posamično v ustrezno okence ali kot datoteko.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
-<h2>Navodila<a class="headerlink" href="#navodila" title="Permalink to this heading">#</a></h2>
+<h2>Navodila<a class="headerlink" href="#navodila" title="Link to this heading">#</a></h2>
 <section id="id1">
-<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Vhodni podatki<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Kot vhodne podatke uporabite:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/mpavsic/biokeminfo/blob/main/biokeminfo/seminar/s07-MUSCLE-vhod1.txt">aminokislinsko zaporedje prokatepsina L pri različnih organizmih</a></p></li>
@@ -548,7 +556,7 @@ document.write(`
 </ul>
 </section>
 <section id="postopek-dela">
-<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Permalink to this heading">#</a></h3>
+<h3>Postopek dela<a class="headerlink" href="#postopek-dela" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Odpremo <a class="reference external" href="https://www.ebi.ac.uk/Tools/msa/muscle/">MUSCLE 3.8</a>.</p></li>
 <li><p>Naložimo datoteko ali prilepimo aminokislinska zaporedja v podprtem formatu v ustrezno okno.</p></li>
@@ -557,7 +565,7 @@ document.write(`
 </ol>
 </section>
 <section id="pricakovani-rezultati-in-razlaga">
-<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Permalink to this heading">#</a></h3>
+<h3>Pričakovani rezultati in razlaga<a class="headerlink" href="#pricakovani-rezultati-in-razlaga" title="Link to this heading">#</a></h3>
 <p><img alt="Rezltat1" src="../../../_images/s07-MUSCLE-rezultat1.PNG" /></p>
 <p>Rezultat se ujema z rezultatom, ki ga dobimo s Clustal Omega.
 Filogenetsko drevo je glede na povezave med organizmi smiselno.</p>
@@ -674,8 +682,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
