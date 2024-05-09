@@ -58,10 +58,6 @@ parts:
 - caption: Seminar
   chapters:
   - file: seminar/seminar
-  - file: seminar/seminar_2022-2023/seminar
-    sections:
-    - file: seminar/seminar_2022-2023/navodila
-    - file: seminar/seminar_2022-2023/seminar-predloga_a
   - file: seminar/seminar_2021-2022/seminar
     sections:
     - file: seminar/seminar_2021-2022/navodila
