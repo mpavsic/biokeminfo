@@ -2,7 +2,7 @@
 ```{note}
 Dobrodošli na spletni strani - spletni knjigi **Biokemijska informatika**!
 
-Pričujoča spletna knjiga je primarno študijsko gradivo za vaje pri predmetu **Biokemijska informatika** za študente univerzitetnega študijskega programa [Biokemija](https://www.fkkt.uni-lj.si/sl/studij/bolonjski-studijski-programi-1-stopnje/univerzitetni-studijski-program-biokemija-20212022) na  [Fakulteti za kemijo in kemijsko tehnologijo (UL FKKT)](http://www.fkkt.uni-lj.si) na [Univerzi v Ljubljani](http://www.uni-lj.si).
+Pričujoča spletna knjiga je primarno študijsko gradivo za vaje pri predmetu **Biokemijska informatika** za študente univerzitetnega študijskega programa [Biokemija](https://fkkt.uni-lj.si/studij-in-studentje/univerzitetni-studijski-programi) na  [Fakulteti za kemijo in kemijsko tehnologijo (UL FKKT)](http://www.fkkt.uni-lj.si) na [Univerzi v Ljubljani](http://www.uni-lj.si).
 
 Knjiga je sicer prosto dostopna in kot taka predstavlja enostavno dostopen in uporaben vir informacij tudi kasneje tekom študija Biokemije, prav tako pa bodo kaj uporabnega v njej našli tudi študenti drugih bio-orientiranih študijskih programov.
 ```
