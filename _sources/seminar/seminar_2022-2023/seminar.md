@@ -4,7 +4,7 @@ Seminar se izvaja v dveh skupinah, vsaka ima nekoliko drugačno nalogo.
 
 | Skupina | Termin 1   | Termin 2   |
 |---------|------------|------------|
-| [skupina A](#skupina-a)       | 2023-05-05 | 2023-05-12 |
+| skupina A       | 2023-05-05 | 2023-05-12 |
 | skupina B       | 2023-05-19 | 2023-05-26 |
 
 Vsaka skupina ima torej dva termina:
