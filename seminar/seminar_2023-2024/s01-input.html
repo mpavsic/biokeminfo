@@ -1,0 +1,1899 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vhodni podatek za S01 &#8212; Biokemijska informatika</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2023-2024/s01-input';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2023-2024/s01-input.html" />
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../naslovnica.html">
+                    Predgovor
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/dotplot_web.html">VAJA: Točkovni diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vaje/modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/git.html">Git in GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../izvedba/vaje_2023-2024.html">Vaje 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="seminar.html">Seminar 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar_2021-2022/seminar.html">Seminar 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../razno/zanimivosti.html">Zanimivosti</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/edit/main/biokeminfo/seminar/seminar_2023-2024/s01-input.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/issues/new?title=Issue%20on%20page%20%2Fseminar/seminar_2023-2024/s01-input.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/seminar/seminar_2023-2024/s01-input.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vhodni podatek za S01</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vhodni-podatek-za-s01">
+<h1>Vhodni podatek za S01<a class="headerlink" href="#vhodni-podatek-za-s01" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GATCATGACACTGGTTAAAGGAGAGAGGGAAAGAAGAAAGACTGGATTAGAAGCACCTCAGGTTGTAGCA</span>
+<span class="n">CAGTTCTAAGAAGGTTTTGAAAATGAGGAGTCCTTAGGCCAAAATTGCCTGCTTAGAGGAGTTCCATATT</span>
+<span class="n">TTGCAGAGATGGGCATCCACTAGTGTTCACACCATGCGTTATCATTGGCTAAGAGCAGTCTATGGGGAGC</span>
+<span class="n">ATGCGCTTGTTACAAATGGAGTTGGGGAGCCAGAAGGTCAGGGGCAGGGCCTGGCAGTCAACTATGCTCC</span>
+<span class="n">CCAGAGCAGATCTGAGCGGCACATTTTCCCGGTCACGGCTGCTGGAGGATTTAGAGTTTGAATAAGTCTT</span>
+<span class="n">CTGTTCTGGCTGTACATCTTCTTTGTGCTGCCCTTTAAGCAATTTTTTAATCAACGTGCTATGGACTGAA</span>
+<span class="n">TGTTTGTATCCCTCTGAAATTCATATGTTGACCCCTAAATTCCCAATATTACAGTATTTGGAAATGGGGG</span>
+<span class="n">CCTTTAGGAGGTAATTAGGTCATGGGGGTGGAGCTCTCATGAATGAGATTCAAGTCTGTAAGGAGATAAA</span>
+<span class="n">GGGATCAGAGAGCTCCCACTCTGCCACGTGAGGATAAAACAAGACAGCTGTTCGTACACGAGGAAGAGGG</span>
+<span class="n">TCCTCACAAAATCCAACCATGCTGGCATCTTCATTTCAGACTTTCAGCTTCCCAAACTGTAAGAAAAAAT</span>
+<span class="n">AGTTTGTTGCTGAAGCCAGTCAGTCTATAGTACTTTGTTGTAGCAACCTGAACTGACTGAGACACATGAT</span>
+<span class="n">CAGATTCCATTCTCAGAACCAACCTTCCAACCAAGCAATATTGATTTGCTACACTTAAAAGTTTGGCTTT</span>
+<span class="n">TGTCAAATTTCCAAAGCTATTTACCCCGTCTGAATTCAGAGGATTGACATGAATAATTTCCTTTGGATAT</span>
+<span class="n">GCCCTTGGGAAAAGGGCTTCATTTTAAGCACAGCTTAATGAGGTGTAAGAAGCTTTTGAAGGTGTTCTTT</span>
+<span class="n">ACAGAGTATTCATGGTAGGAGGGTTGCTTGAAGGGTCACACTGAAGACTGTGTCCCGTGACAGCATCACT</span>
+<span class="n">GAAGTTTGACTTTGGATGTAACACTGAAAGTAGATGCTGTGCTACACCAGCAGATCCCCATTCACTGAAG</span>
+<span class="n">TTATCATTCTGGCAGCTGCCTGCCTCCCTAGAGATTTCCCTTGGCTGGAGACACCTGCTTCATCCAAGGA</span>
+<span class="n">TAGGCTCTCTGCCCAGCGACAACACTTACCCCACAAACTTTGGGAGTACACAGTCCTGACTCCTATGCTT</span>
+<span class="n">CAATTGAGGATAACACTGCAAGGCCATCCACGCGGCAGAGACCTCCATGGGACTGGAAGCTCCACTTCTG</span>
+<span class="n">CCTCTACCCAGTCCTGTTTCCCTTACTCCCTTATAAGTGTTGTTCCTTGGCCGGGCACAGTGGCTCACGC</span>
+<span class="n">CTGTAATCCCAGCAACTTGGGACGCTGAGGTGGGCAGATCACTTGAGGTCAGGAGTTTGAGATCAGCCTG</span>
+<span class="n">GCCAACATGGTGAAGCCCCTGTCTCTACTAAAAATACACACATACACACACACACACAAACACACACACA</span>
+<span class="n">CACACACACACACACAGAGATTAGATAGGCATGGCGGCTCGTGCCTATAGTCCCAGCTACTCGGGAGGCT</span>
+<span class="n">GAAGCAGAAGAATTGTTGTTCCTTGGCCGGGCACAGTGGCTCACGCCTGTAATCCCAGCAAGTTGGGACG</span>
+<span class="n">CTGAGGTGGGCAGATCACTTGAGGTCAGGAGTTTGAGATCAGCCTGGCCAACATGGTGAAGCCCCTGTCT</span>
+<span class="n">CTACTAAAAATACACACATACACACACACACACACACACACACACACACACACACACACACACAGAGATT</span>
+<span class="n">AGATAGGCATGGCGGCTCGTGCCTATAGTCCCAGCTACTCGGGAGGCTGAAGCAGAAGAATTGCTTGAAG</span>
+<span class="n">CTGAGAGGCAGAGGTTGCAGTGAGCCGAGATCACACCACTGCACTCCAGCCTGGGTGACAGAGCAAGACT</span>
+<span class="n">CCGTCCTAAATAAATAAATAAATAAGTGTTGTTCCTGAGGTCTCTCCCCTATAAGCCTGCACAAAAAGAT</span>
+<span class="n">TTATCTCAGAATCTGTTTCCAGGGAACCCAGCCTAAAACAATTCAGTCTTCTCCAGTGGAAAACTATATT</span>
+<span class="n">AAATGCCATGACACAGAAAGACATTCATTCACACCTCCTATAGAAAGTGCTGGATGCTGAATACTGAGTT</span>
+<span class="n">AAAGAAGAGAGTGACTCTGAAGAATTATGAGGCATGGCTTGTCTTATAACAGGTTTAGACAGAAGTTCAA</span>
+<span class="n">CAGACAACAATCAGGCCTCTGATGATATAGATTCAGAATGAGAACCAGGTGAAACAGCCACAGGATTTGA</span>
+<span class="n">TGAGGGTCACGTACTTGGAAGGCTGCAATGTATGGGTGGCACCTTGACTGAAGTGGCCTTTCGTTTTTCT</span>
+<span class="n">TGAATATGTGCCAGGCATGACTGTCCAAAAGGGTTGAAATTGTGAATTTGAAATCACTCCAACACAGAGA</span>
+<span class="n">ATTTCAGCATCTTCATTGAAACGTTCTACTCCAACAAAAATCAGCTCAGTGCTTACTTCAACCACAGTTG</span>
+<span class="n">ACTTCTTTTTCTTTCTTGTGTCATCCTAGCCCTTCTTCCCACATAACATGAATAAATCTGCCATTTTAAA</span>
+<span class="n">GTTAATTTTTTGCTTGAAGAGAATGGTCACACCAAGTTCCAGTGTGTTATTTTTACGAATTGCCATCTAA</span>
+<span class="n">ATTATTAGTGCACTAGTATCCTGACTGGTCTCCCTGTCTCCAGCCTCGTTCCTCTTGTCTATACTGCAGC</span>
+<span class="n">CACCAGGACCCAGCTCCTGAAATTGGGTGTGGGATAATTCAGTATGGCTCAGCGAGCTCCATGCAGGGCC</span>
+<span class="n">ATGGGGGAAGGTCTTACTGTGGACATGCCCTTGCTCACTCCCCAGAGATCAGTTCTTCAAAGATGCCAGA</span>
+<span class="n">TGAGCACTTTTCTAAGTGTCAGTGCAAACTATTATTTCTTTATTGCACAAGTGAAATACTAATACCATAG</span>
+<span class="n">AAAAGCAAAACAAAAAAGAGAAAAATCACCCTTAACCTCACTATCCCAAAATAACCACTGTTAACATTTT</span>
+<span class="n">GATGCGTAACCCACTTGAAAAGCAAGATTTAAATTACCTTAAATATTTAAAACATTGATGAGATCAAAGC</span>
+<span class="n">TTCCTCGTTGTTTTGATGTGTATTCCTTTGATTTATAATAATGTAAATGCTTTTTCATGCTTTTATGCTG</span>
+<span class="n">TTTGGATTTCTTCTTTAGCAAATTGCCTGTTCATGCCCTTAACCCATTTTTCTGTAATATATTCATTTGT</span>
+<span class="n">ATCTTATAAACTTAAAACATTTTTTTATACATTTAAGAATTGTCTGTCATTTATGTAGCAAACATTTTCC</span>
+<span class="n">CCACTTGAAGTTTGTCTTTCAACTTTGTTGATTCAGGTGAAAAATACACTTAATTGCTGAAATTTTGATA</span>
+<span class="n">CAGTCAAAAATATCCATCTTTTCATTATGGTTTCTGCCTTCGAGATCATATCTACTGTCTGTCTCAAAAT</span>
+<span class="n">TAAGATTAAATATTTATCATTATTCTAGTACTTGAATGACTTTGTTCTTTCTTAAATCTTTTAAAATATT</span>
+<span class="n">TAATCTACCAGGAATTTATTTCAGCATAAAATAGGAGGAAAAAAAATAACCTAAAATATTTTCGGAATAA</span>
+<span class="n">TTAGGCCAGTGGAGCTTTTACAAAGGATGCATGCATGTGCCCTCCCCATGGTTAGGACCACCAAAGTAAC</span>
+<span class="n">TGCTGTCCCAACAATTAATTTAACATGTCCTGACTGACTTAAAGCATCACTGTTACGATATGCTAAATTC</span>
+<span class="n">CTGTAAATATCTACATATGTTTCTGCAGTTTCCCTTTTTTTCCTTGGTCTGACTGTTCTGGAGTTAGTGC</span>
+<span class="n">ATGATTCTTTCTATTTATTGTAACTTTGTAATATACATTTTATTTTCAAATATTGTCTGGCTCTTACACA</span>
+<span class="n">TTTGACCTTCAAGATGAACTTCTGAACAGTTTTTTTCCAGCTCCCTTCCTAAAAAAAAAGGAATTGGGAT</span>
+<span class="n">TTTTGATTCTGTTATTGTTGTTGTTTTTAATCTTGGATTCATTTGGGTGAGATGTATATCTTTGCAATGT</span>
+<span class="n">TGACTGTCAATCTAGGAAATATGTGCATCTCCATTTATCCAGGTCTTCTTTTATGTCTCTCCATAAAGTC</span>
+<span class="n">TTACAGTTTTCTTATATGGGTCAAAGCAGTATATTTTTAAAAGGAACTATAAACTTTACTTCTTAGGATT</span>
+<span class="n">ATGGAATCTCAGCGCTTGAAAGGACTTAAAAATCACCTCACTGGCCGGGTGCGGTGGCTCATGCCTGTAA</span>
+<span class="n">TCCCAGCACTTTGGGAGGCCGAGGTGGGCGGATCACGAGGTCAGGAGATCGAGACCATCCTGGCTAACAC</span>
+<span class="n">GGTGAAACCCCGTCTCTACTAAAAATACAAAAAAAATTAGCCCGGTGTGGTGGTGGGCGCCCGTAGTACC</span>
+<span class="n">AGCAACTTGGGAGGCTAAGGCAGGTGAATGGCGTGAACCCGGTAGGCAGAGCTTGCAGTGAGCTGAGATC</span>
+<span class="n">GCGCGAATGCACTCCAGCCTGGGCGACAGAGTGAGACTCCATCTCAAAAAAAAAAAATCACCTCAACACT</span>
+<span class="n">CCCACCCCATCTGCTGCTGAGTCCCCATCTCAACCAAAGATATGTGGCATATTTTTAGTGGTTTTTTTTA</span>
+<span class="n">ACATAATGGTATCACACTATGAATATTTTCTGTAACTTCCAGGTTATCACTTGCACAACATGCCTTGGAG</span>
+<span class="n">AAATGTCTTTATCAATACTTGTAGATCAATTTAATCCATTTTAAGCACCATAAGATGTCCTCTGGAAAAG</span>
+<span class="n">ATTTTGCATCATTTACTTTATTACTGTTGATGGACATTTAAACCATTTCTATCATTTTGCTCTCACAAAC</span>
+<span class="n">AACTCAGCTCATAACCTTGAGCTCTAACTGAAGTAAGTCTCCAAATTCCTAGAGCACACACCACTGGGGG</span>
+<span class="n">CACAGTTCCCCTCCTCATATATCACTACCAAGTGTTGTAATGCCTGTTCAAAGAAAGGCATTTGTTTACC</span>
+<span class="n">TTTCCATGGAGTCTCAATTCTGTTCAACAAACATCTATTGCGCATGAATTATTTAGTAAGTACTGGGCTT</span>
+<span class="n">TTTGTTTCTAATCACTAAGATTTATTTTTTAGGGAAATTTTAGGATCACAGCAACATTGAGCAGAAAGAG</span>
+<span class="n">TGTTTTCATCTACTCCCTGTCCCTACATGGGCACAGCCTCCCCCACCACCAAGAGTGGTACATTTGTTAA</span>
+<span class="n">AATTAACATGCCATTATCACCCTAAGTCCGTAGTTTATATTACAGGCATTTTTAACACACTAATTTTGAT</span>
+<span class="n">ACAATAAACAAATCTATATATTCAATAATACTATGGAGGCTACACTATATGCCAGATACTCTACAGAAAC</span>
+<span class="n">TGGTGCTCCAGGGAAAATAGGAAATCCCCTACTCCTCCTCTCAACCTAAACAATTCCCAAAATAAAACAT</span>
+<span class="n">GGGTCATCACATCATGGTATCTATTTATTTATAAGCACAGGTGACTCTTCATCTATCAGATCACTAGACC</span>
+<span class="n">AGGTAGCAGATTTCCAAATAATTTGGATAACCTCTGGAATTTGAGGTATCCATGCTTAAATTTCCATGTT</span>
+<span class="n">CTTATACATGTTACACTTTCTGTGTGTCTCCCAAGGAGACCTCCCTATTAGACAGCATCCCACACAGAAA</span>
+<span class="n">GAGTAGCATGTACAAGATGAGGATACAAATGTGACAAGCACAAAGATTCCAATACAAGTAACTTATTTGG</span>
+<span class="n">GAGGTGATCCTAGGAAGCACCCATTGGTGAGTAGAGAAGTGAGACAGGGAAGGAAAGAAAGCTAATAAAG</span>
+<span class="n">AATACATTAACAAACTAGTTACAAAAGGGGCCAATGGGGTGTCGTCCCTCTGAGGACTGCTAGGAGAATG</span>
+<span class="n">TGTAAAACAGGCCACAGAGTTTTACCAAGTGAGGATGGGAAAGCTGGGCTATTTATTCACCATTCCTGCC</span>
+<span class="n">AGTAGCATTGGTTGAGGGCTGTCCTAGTAAGGATTAATTCTATGACACTTCCAGCCTCCTGCATATGCAC</span>
+<span class="n">ATAGAGTGGGCTCCTACAGGCCAGAGAAAGACTCAAGCAAGGAGCTTCAGGTTCTGGCAGTTGCCAGTTG</span>
+<span class="n">AACCAGTGTGTGCAGAAATATGGGCCAGGCACCAACATAAAGGGAAATGTGAGTGGACACCGGTGGCATC</span>
+<span class="n">TGCTACAAATGCCTATTTCTATCAACACCTGGCTAATTCACTCTTCAAAACACAGGGCAAAATTGTCCAC</span>
+<span class="n">TCTGGCAAGTGTTGCATGTATCTGCACCAGGCCTGGGGAGCTACCCTACTTCTGTATACCTGGGGCAGTT</span>
+<span class="n">TGTGCTTATGTCACTCCTACTAAAAGATTGTAAGTGGTTGCACTGAGTCCAGGTTGGCCTGACTCCACAT</span>
+<span class="n">CCCAAGCTGAAACCCCTAAGCCAATATAAGTGAGCCCCTTAGCCCACAGATGCATCACTCTAATGTCTGC</span>
+<span class="n">CTCCATCTTCACATTGCCCTATTCTCTGTGTTTCTTAGTGTCTCTCCTCCTCTTATAAGGACAGTAGTCA</span>
+<span class="n">TTGGATTTAGGCCCACAAGATCATTAACTTAATTAACATCTGCAAAGACTCTATTTCCAAATAATATCAC</span>
+<span class="n">CATTCTTTTTTTATTATTATTATTTTTGAGACGAAGTCTCGCTTTCTCACTCAGGCTGGAATGCAGTGGC</span>
+<span class="n">ACAGTCTTGGCCCACTGCAGGCTTTGCCTCCCGGTTTCAAGTGATTCTTCTGCCTCTGCCTCCCAACAAA</span>
+<span class="n">TAAGATCACCATTCTGAAGTTCCAGATGGACATAAATTTTGGGACTCTCTTCAAACTACTACATGGACAA</span>
+<span class="n">AACAGACCAATTAGACTAATATCATATTTTATCATTGAAGGGATAAAAATTCTACTGTGTGGCTCTTAAA</span>
+<span class="n">TTAGGCGAATATGAGACAAGGACTACTGATGTGCATTTTGGCCAAGATGAGGAAAAAGCTGGCCTAGAAA</span>
+<span class="n">ATGAAATGAAGTGAAGAGCAGATGAAGATATTAAGAAATAGACAATCAGCATAAGCTTATATCTATTAAG</span>
+<span class="n">GAAACTGATCCAATAATTAATAATCTTCCATAACAGAAAACCCCAGACCCAGGTGGATTTAATGGTAAAT</span>
+<span class="n">TCTACCAAACATTTAAAGAAGAAATTATACTAATTCTCTACAATCTGTTTCAGAAGATAGAAACAAAGGA</span>
+<span class="n">ATACTTCCTAACTCATTCTATAAGGCCAGCATTACCTTAATACCAAAACCAGACAAAGATATAAGAAAAT</span>
+<span class="n">AAAATATATCAGCAAATATCTTTCATGAACATAAATGCAAAATTCCTCAAAAAAATGCCACCATATTGAA</span>
+<span class="n">TACAACAATGTATAAAAGGATTCTTATAGCACGACCAAATGGGAATTATTCTAGATATTCATAGGTCAAC</span>
+<span class="n">ACTTAAAAATCAATTAATGTAATTTATCACATCAGCAGGCTAAAGAAGGAAAGTCACATGATCGTATTAA</span>
+<span class="n">TACATGCAGAAAAAGCGTTTGACAAAATCCTATGTCTAGTCATAAAAACAAAAACCTCTCAGTAAACTAG</span>
+<span class="n">GAACAGAGGGAAACTTCCTAAACTTGGTAAAGAATCTCTACAAAAAGCCTACAGCTAACGTCATACTTAA</span>
+<span class="n">TGGTGAAAAACTAGATGCTTTCCCACTAAAATCAGGAACAAGACAAGGATGTCACCTCTCACCACTGCTT</span>
+<span class="n">TGCAACCTTGTACTAGAAGTCAAAACTAATGCAATACAATGAGAACAAGAAATGTAAGGTATATGGATTG</span>
+<span class="n">GGAAGGAAGAAATAAAACTGTCTTTGTTGTAGATGACATGTTCATCTAAAGACAGAATCCAAAAGAATTA</span>
+<span class="n">ACCAAAAAGAGAAAAAAACCCTCCTGAAACTAATAAGCAATTAAAGCAAGGTTGCAGGATACAAGATTAA</span>
+<span class="n">TATGCAAGTCAACTACTTTCCTACATGCCAGCAATAAACAAGTGAAGTCTGAAATTAAAAACACAATACC</span>
+<span class="n">ATTTACATTAGCATCACTCAAAATGAAATACTTAGGTATAAATTTTTCTTTTTAAGTATAAGATCTATAT</span>
+<span class="n">GAGAAAAAGTGCACAATTTTAATGAAAGAAATCAAGAACTAAATAAGAGATATTCTGTTATTCATGGATG</span>
+<span class="n">GGAAGACATAATATTGTCAGTCAGTTCTTCCCAACTTGACCTATAGAGTCAATGTAATTTCAATGAAACT</span>
+<span class="n">CTCATCGAGTTATTTTGTGGATATTGCCAAACTAATTCTAAAAGCAAAGACGCCGGAGTAGCCAAGACAA</span>
+<span class="n">TATTAAAAGTGAACAAAATTAGAGAACTGACACTACCAGACTTCTAGACTTACTATGAAACTACAGTAAT</span>
+<span class="n">CAAGACAGTGCTGTACTGGCAAAAGAAGAGACAAATAGACCAAAGGAACAGAAAAGGGAGTCCGAGTCCA</span>
+<span class="n">GAATTAGACCCATATAGATATAGTCAACTCATCTTTGACAAAGAAGCAAAGGTAATACAATGGAGAAAAG</span>
+<span class="n">ATAATCTTTTCAAAAAATGGTGCTGGAACAACTAGATAGCCACATACCAAAAAACAAACAAACAGAAAAA</span>
+<span class="n">AAAAAAACGAATCTAGACACAGACCTTACACTCTTCACAAAAATTAACTAAAAATGGATTACGGATGTAA</span>
+<span class="n">ATGTAAAATGCAAAACCAAAAGACTCCATTTTGCATTGTAAAATGCAAAAGTATAAAAATAGATTTTCTC</span>
+<span class="n">ACGGTGTTGCTCCAGCCTGGGAGAAAATCTAGATGACCTTGCATTTGCCAATGACTTTTTTTTTTTTTTT</span>
+<span class="n">TTGAGACAAAGTCTTGCTCTGTCACCCAGCCTGGAGTGCAGTGGTGGCATCTTGGCTCACTGCAAGCTCC</span>
+<span class="n">GCCTGCCAGGTTCTTGCCATTCTCCTGCCTCAGCCTTCCGAGCAGCTGGGACTACAGGCACCTGCCACCA</span>
+<span class="n">CGCCAGGCTAAGTTTTTGTATTTTTAGTAGAGACGGGGTTTCACCGTGTTAGCCAGGATGGTCTCGATCT</span>
+<span class="n">CCTGACCTCGTGATCCACCCTCCTTAGCCTCCCAATGTGCTGGGATTACAGGCATGAGCCACTGAGCCCA</span>
+<span class="n">GCCAGCAATGACTTTTTAAGTGCAACACCAAAGGCATGATCTATGTAAAAAACAATTAATAAAATGGACT</span>
+<span class="n">TTATTAAAATTAAAATTTTCTGCCCTGAAAAAGATACTGTCAGGAGAGTTAAAAGAAAAGTGACAGACTG</span>
+<span class="n">GGGAAAGTATTTGCAAAAAAATACCTATTTTTAAAATGTTATTCAAAATATGTGAATAACTCTTAAAACT</span>
+<span class="n">CAACAACATAAACACACAAAAAAATCTGATTAAAAATGGGTCAAAGACCTTAACAAATATCTCATCAAAG</span>
+<span class="n">AAGAAATACAGATGATAAATAAGCATATAAAAAGATGCCCTACATCATATGTCACCAGGAAAATGCAAAT</span>
+<span class="n">TAAAACAACGAGATACCACTACACACCTATTAGAATGGCCAAAAGGCAGCACACTGATAACATCAAATGC</span>
+<span class="n">TGGTGAGGCTGTGAAGCCACTGGAATTCTCATTCATTGCTGGTAAGAATGTAAAAATGGTACAGCCACTT</span>
+<span class="n">TGAAAGACCAGCTTCTTACCAAACTAAACATACTACTTTTTATCAATGATCCAGCACTTGCACTCCCTGA</span>
+<span class="n">TAGTTACCCAAAGACATTGAAAACTTATGCCTGCACAAAAACCTACACACAGGTGTTTATAGCAGACTTA</span>
+<span class="n">ATGCCAAAACTTGGAAGCAATAAAGATGTCCTTCAGTAGGTGAGTGGATAAAAAAAGCGGCAGTACATCA</span>
+<span class="n">AGACAATGGAATATTATGCAGCAATAAAAAGAAATAAGCTATTAAGCCATGAAAAGACATGAAAGGCTGG</span>
+<span class="n">GTGTGGTGGCACATGCCTGTAGTCCCAGCTGCTTGAGAGGCTGAGGTGGGAGGATGACTTGAGCCCATGA</span>
+<span class="n">GTTCAAGTCCAGCCTGGGCAATATAATGAGACCTCATCACTAAATAAAATAATAAATAAATAAATAAAGT</span>
+<span class="n">TTTAAAAGAAAAAGGCATAGGAGAAACATAAATGCATATTACTAAATTCAAGGAGCCAATCTGAAAAGGT</span>
+<span class="n">GACATACTGTATAATTCCAACTATATAACATTCTGGAAAAGGCAAAATTATAGAGACAATAAAAAGATCA</span>
+<span class="n">ATTGTTGCCACAAGTTAGGGTAAAGTGAAGGATGAATAGGTAGAGCCCAGAGGAATTATTTTAGGGCTGG</span>
+<span class="n">AAAACCACTCTGTGTGATACTGCAATGGTAGATACATGTGATACATTTGTCCAAACCCATTAAATGTACA</span>
+<span class="n">CCACCAAGCTTGAGCCCTAATGTAAACTATGTACTCTACATGATAATAATATGTCATTTTATGTTTATCA</span>
+<span class="n">ATTGTAAAAAGTCTACCACTCTGGTGAAGGCTGTTGATAACGGGGGAGGCTGTGTGTGGAGGGGCAGGGG</span>
+<span class="n">ATATATGGGAAATCTCTGTACCTTTTGTGAAATTTTGCTGCGAACCTATAACAGCTCTAAAATATAGCTT</span>
+<span class="n">ATTGTGACGGTTAATTTTATGGTTAATATGATGGTTGATTTGACTGGGCTAAGGGATGCCCAGATAGCTG</span>
+<span class="n">GTAAAACATTATTTCTGGGTGTGCCTCTGGGGTGTGTCTGGAAGAGATTAGCATTTGAATTGGTAGACAG</span>
+<span class="n">TAAAGAAATAATCCTCACCAGTGTGGGTGAGCCTTATTCAGTCTGTCCAGGGACCCAATAAAACAAGAAA</span>
+<span class="n">GTGGAAGAAGGATGAATTCACTCTCCCTATTTCAGCTGTGACATGCATCTTCTCCTGCCCTCAGTCATTG</span>
+<span class="n">GCACTCCTGCTTCTTGGGCCTTCAGACTTGGACTAGGATTTACACCCCTGGCTCTTCTGGTTCTCAGGCT</span>
+<span class="n">TTCAGGCTTGAACTAAAACTCACCGTTGGTTTTCCTGGGCCTCCAACTTGCAGATGGCAGATGGTGGGAC</span>
+<span class="n">TTCTTAGCCTTCATAATCATGTGAGCCAATCCCTCAGAATAAATTTCTCTCTCTCTCACTCACTCACTAT</span>
+<span class="n">CCCTTTGGTTCTGTTTCTCTGAAGAACCCTAACTAATACATCTGTTTAAAAAATGTAAAGATATTAAGAA</span>
+<span class="n">AGAAAGAGAGTCTTGACAACATTATTTGAACACTTGGATCCAGCCATGGCTAAAGCTAACACCTCCTCTT</span>
+<span class="n">CACTTTCCAGTTACACTAATCAACATATGTTCTTTTTGTGTAAACTTACTTGAGTTGAATAGCTAACATT</span>
+<span class="n">CATAGCTGAATAGTCCTTGCTAATATAGTCAGTTATTGCACATCTAGTTGCCTCCGCAATACATTTTCCT</span>
+<span class="n">TTCCTCTTCTTATACATGACAAGCTCCTGTTTGTCCTCAGGTCTCAGCTTAAGCAGAACTTTCTCGAGCA</span>
+<span class="n">GATCTTCCCTAAACTGATTCCTACTTCCACTCCAGCTTACGTCAGTTCTCCTTGCTGGATGTTCTCGTAA</span>
+<span class="n">CGCCCTGTATTTCCTCATAACACTCATCCCACACTATTGTAATTACTTGTTCCATTTATTCTCCCTGTTC</span>
+<span class="n">CACCACCACTACCAAGCTGAACTGTTAAGATCTTCGAGGGCAGAAAAAAAATATTCTGTTCAGTGTTATA</span>
+<span class="n">TTCTCATTTCTATTGTGATGGAATGAAGTGGGTAGCCAGTGTCTGTTCATTCATAGATTTAAATCTTCAT</span>
+<span class="n">TTGATTTTGAAAATTATGGTAAAATACATTATGAGCAAGTGTAAGTGTTTTTGTATGGCTACTAGACAAT</span>
+<span class="n">TGTAGTAAGTTCTGATTAATTTTTAGCATAAAAGCTAGTAATTGCTTTTACTTAGGGAGTTCTAAATGAA</span>
+<span class="n">ACTGTAATAATTTTTTTTAAAACTCCCCAGGCTGATCAAAGGGAATAATTTGAAGAAGGTAATTATGCAC</span>
+<span class="n">ATGGAGGATGAAGATTATTGCTTTAACAGTATTTAGCAGTCTGATTAAAGAAAGAGAGAACCCAGTCTGC</span>
+<span class="n">CAGTTCTTTGAGCATTTTCTGAAGATCTGGATTGAAGTCTAAAAGTTTCCTAATTCATGTGTAAAAATCG</span>
+<span class="n">CAAGCATTCCCAGACACCAAAATAGACAAATCATGAGTGAACTCCCATTCACAATTGCTACAAAGAGAAT</span>
+<span class="n">AAAATACCTAGGAATACAACTTACAAGGAATGTGAAGGACCTCTTCAATGAGGACTACAAACCACTGCTC</span>
+<span class="n">AAGGAAATAGGAGAGAATGAAAACAAATAGAAAAACATTCCATGCTCATGGATAGGAAGAATCAATATTC</span>
+<span class="n">TGTAAAATGGCCATACTGCCCAAAGTAATTTATAGATTCAATTCCATCTCCATCAAGCTACCACTGACTT</span>
+<span class="n">TCTTCACAGAATTAGAAAAATCTACTTTAAATTTCATATGGAACCAAAAAAGAGCCCGCATAGCCAAGAC</span>
+<span class="n">AATCCTAAGCAAAAAGAACAAAGCTGGAGGCATCATACTACCCGACTTCAAACTATGCTATAAGGCTACA</span>
+<span class="n">GTAACCAAAACAGCATTGTACTGGTACCAAAACAGATATATAGACCAATGGAACAGAGCAGAGTCCTCAG</span>
+<span class="n">AAATAATGCCACACATCTGCAACCATCTGATCTTTGACAAACCTGACAAAAACAAGCAATGGGGAAAGGA</span>
+<span class="n">TTCCCTATTTAATAAATGGTGTTGGGAAAACTGGCTAGCCATATGTGGAAAACTGAAACTAGACCCCTTT</span>
+<span class="n">CTTACACCTTATACAAAAATTAACTCAAGATGGATTAAAGACTTAAATGTAAGACCTAAAACCATAAAAA</span>
+<span class="n">CCCTAGAAGAAAACCTATGCAATACCATTCAGGACATAGGCATGGGCAAAGACTTCACTACTAAAACACC</span>
+<span class="n">AAAAACAATGGCAACAAAAGCCAAAATTGACAAATGGGATCTAATTAAACTAAAGAGCTTCTGCACAGCA</span>
+<span class="n">AAATAAACTATCATCAGAGTGAACAGGCAACCGACAGAATGGGAGAAAAATTTTGCAATCTATCCATCTG</span>
+<span class="n">TCAAAGGGCTAATATACAGAATCTACAAGGAACTTAAACAAATTTAAAAGAAAAAAAACAAACAACCCCA</span>
+<span class="n">TCAAAAAGTGGGCGATATGAACAGACACTTCTCAAAAGAAGACAATTATGTGGCCAACAGACATATGGAA</span>
+<span class="n">AAAAGCTCATCATCACTGGTCATTAGATAAATGCAAATTCAAACCACAATGAGATACCATCTCATGCCAG</span>
+<span class="n">TTAGAATGGTGATCATTAAAAAGTAGGAAACAACAGATACTGGAGAGGATGTGGAGAAATAGGAACACTT</span>
+<span class="n">TTACACTGTTGATGGGATTGTAAATTAGTTCAACCATTGTGGAACACAGTGTGGAGATTCCTCAAGGAGC</span>
+<span class="n">TAGAACCAGAAATACCATTTGACCCAGCAATCCCATTACTGGGTATATACCTAAAGGATTATAAATCATT</span>
+<span class="n">CTACTATGAAGACACATGCACATGTATGTTTATTGCAGCACTATTCACAATAGCAAAGACTTGAAACCAA</span>
+<span class="n">CCCAAATGCCCATCAGTGATAGACTGGATAAAGAGAATGTGGCACATATACACCATGGAATACTATGCAG</span>
+<span class="n">CCATAAAAAAGGATGAGTTCATGTCCTTTGCAGGGACATGGATGAAGCTGGAAACCATCATTCTCAGCAG</span>
+<span class="n">ACTAACACAGGAACAGAAAACCAAACATTGCATGTTCTCACTCATAAGTGGGAGTTGAACAATGAGAACA</span>
+<span class="n">CATGGACACAGGGAGGGGAACATCACACACTGGGGCCTGTCGAGGGGTGGGGGAATAGGGGAGGGATAGC</span>
+<span class="n">ATTAGGAGAAATACCTAATGTAGATGACGGGTTGATGGATGCAGCAAACCACCATGGCACGTGTATACCT</span>
+<span class="n">ATGTAACAAACCTGCACGTTCTGCATGTGTATCCCAGAACTTAAAGTATATAAAATAAAATAAAATAAAA</span>
+<span class="n">ACCACACACACACACAAAGATTCCTTTTGTTTAATTTCCATATAAACAACACTACCCATATAGTACACTT</span>
+<span class="n">GCTTAGCCAACTTAATCTGAAAATTTAGGGGAAAAACCAAGGAGGTGTTTATGTCACAGTTCCATATATA</span>
+<span class="n">TCATTCATTCATTTATTCATTCAGCAGACATAATCTTTAAAATAAATGGAATATTAGAATTCCTTTTTCT</span>
+<span class="n">TAGTCAAGTCACAAACTAGGGGTCTGATTGATACAGGAGTTAAGAAGAAATTACTTAGTCAGATAGCAAG</span>
+<span class="n">GGCATGGGAGTCCTCGGTGAGGCTTTTCTTTTTAATGAAAAGCAGCCCCAAACCGTTTTCTAACAAAGAG</span>
+<span class="n">CAAGCTGGGAACTTGCGTGGCTGAATGCTGCCAGGAACTAAGGACTAGACATATTCAAGATGGCAGCTCC</span>
+<span class="n">ATCTTCCCTTCTCTGCCAGCCACGTGTACTATAAAGGAGGAGACAAGATCATGCTGGTTAACTGGAAATC</span>
+<span class="n">TCCTTTGCATAAGAAGATTAGGGTGGGGCGAACAGCCTTCCCCGTGCACTATGTAAACGTCATACCTGAT</span>
+<span class="n">CGAACCAATCTATGAGCCCTATGTAAATCAGACACTGCCTCCTCAAACTGGACTATAAAACTTGGGGGAT</span>
+<span class="n">TCCCCACCAACTGGTCCTTTCCTCTCGGAGACCCCTTCCTCCAAAGAGGAAGCTGTTTCTCTTTCTCTTC</span>
+<span class="n">TTTTTTACCTATTAAACCTTTGCTCCTAAATGCCTCCTGTGTGTCCATGTCCTAAATTTTTCTGGCATGC</span>
+<span class="n">AACAACGAACCCCAGGGGTATATATCCCAGATAATGTAGCCACTTCATGATCTTATTTGAATAGTATCCT</span>
+<span class="n">CCCCTAATTCATGTTCACCTGGAACTTGTATATGTGATCCTATTGGAAATAGGGTCTTTGCAGACATAAT</span>
+<span class="n">CAAGTTAAGATCAGTTCATACTGGATTAGGATGGGCCCTCATTCAGCGAGTAGTGTCCTTATGAGAAGCC</span>
+<span class="n">AAAAATTTGGACACAGAGATACACACAGAGGGAAGACAGCCATGTGAAGAAAGCAGAGATTGGAGTTATG</span>
+<span class="n">CTGCCACAGTCCGAGGACTTCCCACAACCCCAGAAGCTAGAGGATGCAAGGAAGGATTCTTCCCTAGAGC</span>
+<span class="n">CTTGATTTCAAACTTCTAGCTTCCAGGACTGGAAGAAATTAATTTATGTTATTTTAAGCCTCCGAGTTTG</span>
+<span class="n">TAGTAGTTTTCTATGGAAGCCCCAGGGTACTAATTCATGGTCCAATCTTCTGCCAAGTGACCCTTCCTTT</span>
+<span class="n">CCCCTCACCACCCAGCCTCCATCCAATTCCAAAACATTTTCTCCCATGTCTTCTTTGTTGTTTCCTTTTA</span>
+<span class="n">AAAGAGTTGGAGTTGAGTTTTGCCATGTTGCCTAGACTGGAATGTAGTATCTATTCATGCCATGTTGCCT</span>
+<span class="n">AGGCTGGAATGTAGTGTCTACTCAAACACGCGATCCCTCTACTGATCAGCATGAGAGTTTTGATTTGCAC</span>
+<span class="n">CATTTCTGACCTGGGCCAGTTCACCCCTCCTTAGGCAACCTAGTGGTTCCCCGATCCCAGGAGGTCCCCA</span>
+<span class="n">GATTGATGTCGAACTTGGTGTGGTCATCCAATCAACATAGCACACAGCAGCCCAGAACTCCTGGGCTCAA</span>
+<span class="n">GCGACCCTCCTGCCTCAGCCTCCCCAGGAACTGGGACTCCAGGCTCCAACCACCAAGCCCAAGTTTTTAT</span>
+<span class="n">GCAAAGCAGTTAAGGATCTTTAGCCCCTCACCCAAGCAAAGGCCTTCCCTTTGCATATAGGAAGGCTCAG</span>
+<span class="n">ACTCTGCCTCACCGAATGAGAGGCACCTAGAGAGAGCAGGTTTTCCTTTCCTCCACCCTAGCAGGGTTTT</span>
+<span class="n">CAAAGGGTGAAGAGTGCAGTAAAATGGGAGTGTAGTAGAACAATTGATTTCTCCACTGATTAAAATTATA</span>
+<span class="n">CCATTCCCTTGAAGTTTAAAAAAAGAAAGACAAAAAATAAAAGAGAAAATGAAAGCAGTTACAATCAATT</span>
+<span class="n">TGGATTTAAAACAACAAATTTTGCACTTAAAATGTTTGTTCCCATTTTTTAAAAATGGAGTCTTTTTATA</span>
+<span class="n">ATTTTGTTACTTTTCCCCCCATCACGTAACAGTATATTGTGAGTATTTTCCCATGTTAGAAAGTCCTCAA</span>
+<span class="n">GGATTATACCGTAACGTATACAGATCCACAATCCCTTATCCACTGTCGGGGACAAGGGAAGCTCCTTTTC</span>
+<span class="n">ACTCTCTGAAGGTTCCCTGAAAAATCAGCTTACAAAGCCTGATTAATTGGACAAAAGGCATACAAATGTA</span>
+<span class="n">TTTAACATATATACAATGAGAGCCTTCAGAAAGAATTTGGGGCTTGGATCCTGGCAAAACAGCTATAAGA</span>
+<span class="n">GGAGAAGTCAATGGGCTTGAAGAACATACAATGGTCTATTGGGCCCACAGAGTGAAAGATGATTTGTGAC</span>
+<span class="n">AAAAGTCTGTCCAGGTTTGTTGACAGACTTTGGTCTTCCTTCCTGTGATATGGGTTCAGTTAATGAAAAC</span>
+<span class="n">TTAAGGAAGGGACTGGAGGTAATTGTTTTCTTCTTTGGTAGGTCTGGACTTTAGGCAGATAAGGAAGCTT</span>
+<span class="n">TGGAGAGCAACTTTATCCCATGCTTTGAGAGAGATGGAGGTGGGGGGCAGATCTGGAGAGAGAAGTCAGA</span>
+<span class="n">AAGACCTTGAGGCTCCTTTTTCAGTTTAGCATGTACAAAGCACTGCATTTTGGGATATCGATTTCTGAGC</span>
+<span class="n">CGCAACACCACAAATCCAAAAAGCTGAAAACCCAAGAGCTGTTTTAAAAGTTTGGCAGCAAAACTGACCT</span>
+<span class="n">GAAGTGACCTAAGCCTGCTTATGGTCTATTTATACCACTTAGTGTGACTGTTAATGTTTCATGGCAGAAA</span>
+<span class="n">TCTAAATATATTGATTAGAGATGCTGTCACAGACCCTGCTGAAGGGATTAAAATCATGCACCAAATTATC</span>
+<span class="n">CTTCTAAAATCCGAACATTTCTGAATTCTGAAACACACTAGATCTCAAGGTGTTGTGAACCTATATAATC</span>
+<span class="n">ATCCCCCTGTAGTTAGATATTTATTTTCACCTTTTTACTATTATAAAAAGTGCTGCATGCAACATGTTAT</span>
+<span class="n">ACATGTGAATCTTGTTTGCATCACTATTCATGTCCTTAAGATAAATTCCTTGATATAGAAATAGAAAGTC</span>
+<span class="n">AGAAAAACTAAACATGTTCTTGGTAGATATTGTCTACTTGTTTTCCAGAAAGGTTATACCAATTAACATA</span>
+<span class="n">CCCCTCACCAGCACTGAGAAACAACAGTTTTATTAATTTCACAAAGGAAAATTGTCATAGCATTGTGCTT</span>
+<span class="n">TTAACTCATTTGGTTACCAGTGATGTTAGACATATTTTTAAAAAGAGGTTTATTAGTATTTCGAGTTCCT</span>
+<span class="n">CTCCAGGAATTGTCTATTTATTACCTTTGTTCCTTTTCTACTGAAATTCATCTCATAAGCTTGCTTTGTG</span>
+<span class="n">TATGTGCTGCACCAAGGCCAAGGGAGTGGGGGCCAAAATCAAGCCTGACTCTGATCACTAACTGTGTACC</span>
+<span class="n">CTCCACTGAGGAGGGAGCACTTTTTCTTCTTTGAAAGGTGTCTCTCCACCTGGTGCACTTGCCAAGCCCT</span>
+<span class="n">GCACTGTAAGGCTGAGTCCAACTAGATGGACTGTCTTTTTCTAATTTGTCTGCCCAGAGCAAACAGGATG</span>
+<span class="n">CCCTTTCTAATTTGCACAAAAGTACCAAACTGAGATCTTAACTAGACGAATTGTGTTTCTAATTAATTTG</span>
+<span class="n">AGTTTAAATTCTTTATATAAGCTGGGTGTGATGGTTCACACCTGTAAACCCAGCACTTTGGGAGGCTGAG</span>
+<span class="n">GCAGGTGAATCACTTGAACAGAAGAGTTTGAGATCAGCCTGGGCAACATGGTGAAACCTGTCTCCACAAA</span>
+<span class="n">AAAATACAAATACCCAGGCATGGTGGCGCATGCCTGTAGTCCCAGCTACTGGGGTGGCTGAGGCAGGATA</span>
+<span class="n">ATCGCTTGAACCCAGGAGGCAGAGGCTGCAGTAAGGTGATCATGCCACTGCACTCCAGCCTGGGGGCAGA</span>
+<span class="n">GTGAGACCTGGTTTCAAAAAACACAAAAAATGTTCTTTATATAGTAAAGCTATCATATTAAAATTTCGAG</span>
+<span class="n">TGTTATATTGTGCTGGCTGTGTTTTTCTTGCTTATTGCTTTGTATTTGTTTGACTCATAAGTTATCTAAA</span>
+<span class="n">CGTCTTCCATTTTGCTTTTTCTTAAGAAATATTTGTGGAGCTATAAGTAGCTTTGTTTTTCTTCCTTTTG</span>
+<span class="n">CTTCTGAATATTATTTTAGGTGGTGAGACATGGGTAGAAATGTATGAAATCTAATCCTTGAACAGTTAAT</span>
+<span class="n">CCCAGCTGTCAAAGGGCCATACTTGGCCCTGTTTAAATTCCCAGACCAGAGATAGCCCTTCTGGAAGACA</span>
+<span class="n">TCTACACCCATCTCATCTATCCATCCATTCAACCAGCACTAATTATTGAACACCCAGTATGCTCCAGGCA</span>
+<span class="n">CTGTGCGAGACATTGGGAATACAGAGGTGAATAACAGAAACCGGAATTCCTTCCTTTATGGAGCTTGCAA</span>
+<span class="n">TGGACACCACGTGTTCAAGTTTCATATAACCATAACAATAGCTAACATTTAGGAGTGCTCACTGTGTGCA</span>
+<span class="n">GGCATCAGTTTAAGTGCTTTACCTGCATTAATGTATTTACTTCTCTCAGCAACCCTATGAGGAGGTGGGT</span>
+<span class="n">ATACTATTGTTCCCATTTTACAAGTGAGGAAAATGCACAGGGAGGTTAAGTAACTTGATCCAAGATCACA</span>
+<span class="n">GACCAGCAAATAGCTTGGTTACTTGTAAAGCTGTACCTAGCAAGTTTTCATCACTTCTGTTTCCCATGTC</span>
+<span class="n">ACATTCACAGATTTGTCACTTTGTGACAATGTGTCACAAATTTGTTTACTCCAACCCTCTCTTTCTTCCT</span>
+<span class="n">CTTGGTATAGGGCTTTGCTTCCACCAATGCTTCCACGCCCTGCGAAGAAACTGCTCTGCCACCCGTGACC</span>
+<span class="n">TCTGACTTGGCCTTTATCCCCTGGTAGCAGTCTGGGCTTGTCTTTTAGTCTCCACCCCTGGTTTTAACCA</span>
+<span class="n">TTCTTGGTTTCGTTTGCCAACGCTTTCTCATCTTTCTGGTCCTGGTGTGCTGGAGTCTTTTAAAGCATGT</span>
+<span class="n">TGCTAGTTTTCTTCCCTTCTCAGTCTATCACCTTTTGCTAGACAATTGAATTTCTAACCCTGGCTTTTAA</span>
+<span class="n">GTACTACCTATAAACCAGTGCCTCCCAAATTCCCATCTCCAGCCCATACAACACCAGACTGCTATAGTCA</span>
+<span class="n">GCTTCTGGATGAAAGCCTGAACTCAACTATCCAAAACCATCCTCGTCATTTCCCTCACACCAAACATGTT</span>
+<span class="n">CCCATCCCTGTGTTCCCTTTCTCAGAAAATAGTGCCACCAACCAGTTATGAAAGCCAAAAGCTACAACCA</span>
+<span class="n">TTCTTAACACTTCCCTTGTCCTCACAATCCCCATATAAAATCCATCCCCAAGTCCTGTTGATTTTATATC</span>
+<span class="n">TGAAATATCCCTTCAGTACATCCACTCCTCCCCATCATTATCACTATTTTCTATTCCTGACCCTCATCCA</span>
+<span class="n">AGCTGCTTTTTTTTTTTTTGAGATGGGGTTTCGCTCTTGTTGCCCAGGCTGGAGTGCAATGGCACGATCT</span>
+<span class="n">CAGCTCACTGCAACCTCCTGCCTCCCAAGTTCAAGTGATTATCCTGCCTCAGCCTCCCAGGTAGCTGGGA</span>
+<span class="n">TTACAGGCATGTGCCACCACACCTGGCTAATTTTGTATTTTTAGTAGAGACGGGGTTTCTCCATGTTGGT</span>
+<span class="n">CAGGCTGGTTTCGAACTCCCAACCTCAAGTAATCCACCTGCCCCAGCCTCCCAAAGTGCTGGGATTACAG</span>
+<span class="n">GCGTGAGCCACTGCGCCTAGCATTCCCAAGCTACCTTTACCTTTCACCTGAAATACTCCTATTACTGGTC</span>
+<span class="n">TTTTATGGTTTCCTTGCCTCTATTCTTGTTCCTTTTCAGTCTATTCTCCACACTCCAGCCAGAGTGATCT</span>
+<span class="n">TTCCAGAACATGAATCTGCTTATGTCACCCCTGCTTTAAAACAAATAGTTTTTTCAAGGATTTCTCTATG</span>
+<span class="n">CTGTTGACAGGGGAGGGGGTGAAGTTATGTCAATAGGAAAGTAGAGGACCCTTATTTCTTCACACAAAGG</span>
+<span class="n">CACCTACCAGGCCATTTGCCAAATTTGGCACTGCAGGGTTAAGTCCAACTAGATAGGAAGCATTTTTCTA</span>
+<span class="n">CCTTGTCTGCACAAGGGGTGTGCCCTTTGTGTCATTTGCACAAAGGTCAGAATACTTAGTAGGCTTGAAA</span>
+<span class="n">GGCCTTCCATAGTCTGTTCCCAGCCCACTTCCTCAGTCACAGGCAGCACCAGTCTTCTTGCTACCCACAA</span>
+<span class="n">TCCACCCATTCTTGTCTACTCTCAGGTCCTCAGATAATCCACACTTCCTGCTGCTTCAGGACCTTTGCAC</span>
+<span class="n">ATGCTGTTCTTCCTTACTGAAATGCTTCTCTTCATGCATAAATAACATCTGCTCATGCCTTACATCTCAA</span>
+<span class="n">ATCAAGCATCAATTCCTTAAGGGTCCGACTTCCCCCAAGACTAGGTCAGAACATTCATATTTGCTTTTTT</span>
+<span class="n">TTCTTTAGAGCACGTATCTCATTTTTAAATTGCACCTTAGTTACATGATTGTGTTGTTAATGACTCTCTA</span>
+<span class="n">TGCTGTAGTCTTTATGTTCATTAAAGGCAGAGACTCTACCAGTCAGGATTCTTGGCTGTAAGCAACAGAA</span>
+<span class="n">AAGGATTCTGGCTAAACTTAAGCATAAAAGGAATTTATTGGAGGATTTGGATTAAGTTCACAGAATCAGT</span>
+<span class="n">GGGAAGGCTGGTGAATCAGACCCAGAAAATGAACAGGACCTAAGGTTGCCTAGGCAGCAGGGGATGTGGC</span>
+<span class="n">CAATGTCAAGCTGTGGGGCAATCCGATTGGGATATTCTACCAACGCTGCTGCCACTGGACACTGGCACCC</span>
+<span class="n">ATGGAACAGCTGTGCTCTTGACAAAGCCAGTACTGTTCTGAGAAAATTTCTCAATTGTCCTGATCTATGG</span>
+<span class="n">CTTCATATCCTCTAGGTCTCTGCCCAGGCAGGAGAGTTCAATTGGCTGAGCCATGTCACATGCCCATATC</span>
+<span class="n">CCACCTGCCAGGGAACAGGACCATCAGGCCTCCCATCAAGGTTCACACAATGTGGGTGTTTCCCCCATTG</span>
+<span class="n">AAAACATTGTGGGGATGCCAAGTAAGAAAAAAAAGAGCAGCAGAGAAACCGTATCTGTTCAATTCATATG</span>
+<span class="n">TTCCCCAAACTAGTATGATATCTGGCATCAAATAAGACAAAAAATATTTGAGGGAACAAATAAATGACCA</span>
+<span class="n">ACGCTAGGCATCTCTGAGGACACAGACTGTCCAACTTGTGCCTGCTTCAGGGTAACTGCTCACAATCACT</span>
+<span class="n">GGGGCCTTTGCACTCCAGCTAGAGCCAACACTGGTCAAACTGGCTGCTTAGTCGAGATCACCCCAGTCCC</span>
+<span class="n">ACTGAGGTCAGATGAGGAGCCAGGAGCTCTATGAGCTAGAGTGAGTGGATATTACTAGACCCATTTTATA</span>
+<span class="n">ATGCAAATGTGAGGTTCAGGGAGGTGAACTGCCATATTCAAGATAATACAGCTGGAAAGCAAGAACAAGG</span>
+<span class="n">ACTTGAAGACTCATCTGCTGGCATAGTTTAGTACCTTTTCCCACCTTCTGTATTATGTTGCTTCAATTGC</span>
+<span class="n">ATATGACAATGTGCTTCACATAAAAATATTTGGGTGGCCAGGACATTTCCTCCAACAGTATCAGATAACA</span>
+<span class="n">AGGGAGTGGAGAGTGCTGAGGCCACCTAAGAGATCAGCTACATCCAGCATGGGAGAAAGCTGGGCACAAG</span>
+<span class="n">GATTCCAAGGAGTTAATGCTTATCTAGTCAAGATCCCTTTCCTTGCAAGGAGACAAGATGCCTTGGTAAG</span>
+<span class="n">CTGAGCTGCCTGCTGATAAACTGCTGGTTAACATGTTCAGGCTATCACTGTGGATCATTTATCTTTCCCT</span>
+<span class="n">TCTTACCCAGATCAATTTGGCCTCCTTGTACATCATGAACCTAAGAATTTCCACTGAAATTGATGACATA</span>
+<span class="n">TGGCTTGCTGCAGTGCCAGGGGACACAACCCCCCTGTTTACAGTATAATTCCCTAATAGTGAATGGGCCC</span>
+<span class="n">AGCCCCCCATCCATCCCCATCCCTCCCAACAATTCCTTCTTTGAGCTCACTATAAAAGGCTATAATGAAA</span>
+<span class="n">CCTCTAATGATATTTAGCAATGACAGGGAATGGTTCCAGGAGGGAAATTACAGCTGGAAGATGTCCACCA</span>
+<span class="n">CGACCTGCTAGTAATTGTAAAGGAAATCTACTCAGGTCTCAAAGGGTCCTTTGTTTTATATAAACAGGAG</span>
+<span class="n">GCTTCCAAGGTTGTTCTAGCCTCCTCTAATAGCAGAAGTCTATGGAGAGATATCTCCTTCAGAAAGTGGA</span>
+<span class="n">GTGGAAGTTCTGTTCACATTACATTAGAAAGAACTCACTCATTACTAGTATTTTTCCCCCAAGAACTTGG</span>
+<span class="n">GGGACCTTCCTCTAGTTCTAACAAGAGTGACTATTTACTAAATACATCATCAGGAGACTAACCAGGGAGG</span>
+<span class="n">CAAGTGGAACACCAGACAGGATAGAGTCAGGGTGTTAGAGCTCTAGGGTGGCTCTGCCCCTCTCTGTCTG</span>
+<span class="n">ACTTGGGTAAATCCATTCTCCTCTATGAGCTTCAGTGTCTTCATCTATAGAATCAGAATGTTGAACTAAA</span>
+<span class="n">TGACTCTCTAAGCTTTTTCCAGCTCTGACATAACATTCTGTGATTCCACTTGGAAAATGGTAAGCAAAAA</span>
+<span class="n">ATTTGTAAGCAGAGGGAGGAATGGGTGATCTTTAAAAAAATGCTTCAATAAAAGAAACAGAATGGATAAA</span>
+<span class="n">GCCCTGGTGACCTACACAAGGAAATCAGTCAAGTGTCCTCAGGAGGCTCAGAAGGCAGGCTGCAACTTGC</span>
+<span class="n">TGGGCAAGCCACACCTGCTCCTCACATTCCTTCCAAGGGCAGCCCCAGGTCTGAGCTCTCGGCAGTGAAC</span>
+<span class="n">CAGTGAACTGTAAGGTATTTTTTTGTTTGTTTGTTTGTTTGTTTTTGGTGGGGAGGTGGGTGGAATCTTG</span>
+<span class="n">GAGGCAGCTGCTCAATCCCTGAAGATAGCTGGTTCTTAAGACCCGACCCCAGCAGAGGAAAGCTGATTTT</span>
+<span class="n">CAGAACAGAAGCATGAGGGGGCTCTTCCTTGGAAGAAGTGAGTAAAAAAAGGCATCTTAACCTGCTGGCT</span>
+<span class="n">ACCCAGCAGGAACAGGAGGAAATAAGTATAATGGAGACATGTGGCTAGTTTTTACAGCTAATAGGTAAAA</span>
+<span class="n">CACATCTTTAAAGCACATTAACAGTAAAAATCTTAGCTACACAAGGCAAAAGTCCCAAGCCCCATATTTG</span>
+<span class="n">GTATATGCAGGGTGTGTGTTCATGAATTTACTCAATGTCTTTCAAATCTCAGTTTGCTGACATGTGACAT</span>
+<span class="n">GGATGTAATCTAAACAATTTAAAGTACATGAAACTTTCACTAAGCACCAGATTGTTTCAGACGCTCATAT</span>
+<span class="n">CAATTACTTCATTTAATATTCATAATAGCGAGAGAGGGATTTATAGTTTCATTTAACTAATGAGGAAACA</span>
+<span class="n">GGGGAGGTAAGTGACTTCCTGACCCAAAGGAATAAGATTTGACCTCAGGTTTGTCAACATTTGGGTTACT</span>
+<span class="n">TCCAGTAAGTCAATGGCTCAAAGAAGATTATATGTGTGAAAACGCTTTGCAAATTATAAATGCTATAAAG</span>
+<span class="n">TGCAAGAAGTCACAGTCCTGAATTAATGCAGAAACCTAAATATCATCCAGAAGCAACATTCTGATGGAGT</span>
+<span class="n">AAGGGGCTTTTTCAGGGAGTCTGCTTTGTTCAGTTGCCCACTGGATCCTTTATTTTCCAGGCAGACAAGT</span>
+<span class="n">GAGTTTTTAAAAGTGACTCTTGAAACAATGAGGCTTTCTGGTTCCAGCTGTGCTACAGAAACATTAATCT</span>
+<span class="n">TGAGAATTCACTTGCTCTTTTCATGTGTGAAATGCGGGGTTAGGTCACAGGTGATCACCAAGGTCACTTC</span>
+<span class="n">CGTCAAAGCACTTCAGTGACTCAGAAGTGGAAAGCACCCAGTGAGACCTAGAGTGGGGAGTCTCACTCTC</span>
+<span class="n">ATTGTTAGAGAGCCAGTTCTAACTTCAGGTACTTGGGCCACCCTTCCTACTGTAGGAGAGCCTGCTCACA</span>
+<span class="n">TCCACCCTCTCCCCTTGGTAAGTCTTATTTGACCCTGGAAGGAAGTTTGGAGCCTGGAGGAGTTTCTCCC</span>
+<span class="n">TTGATGAGTGGCAGCAGACTTTGAGATCTCTGGCAATCCCACAGTATCCACTCCACCAGCGCATAGCAGC</span>
+<span class="n">CACAGCCCTAAGTTGAGAAGCCAGTAGCTGAGAGCTATCTCTCCCCAATTCTTACTGGTGTTTCAGTCTT</span>
+<span class="n">GGGAGGTCCTCATAGACTGTAGAAACAGGATGGGAGGAGGGGCATGAAATGGATTCCAGGGGAAGAAACT</span>
+<span class="n">GCAGTCCTGGATCTAGCTTAGCTGTTGCTGAATATGTGATATACCAACCACTCCCTTCCTTTGTACACAC</span>
+<span class="n">CTAGTGTTGTATCAGTTTCTCAGTTACTGTAGTAACTTGTTTACTTGTGGGGTACCCCACAGTCACACAC</span>
+<span class="n">ATAAATGAACGTGAATGACTGAAAAGTAAGAGATAAGTGTAAGAGGGACAAGTGGCTAGTTTTTACAGCT</span>
+<span class="n">AATAGGTAAAACATATCTTTAAAGCACATTAATAGTAAAAATCCCTGGGTGCAGTGGCTCACACCTATGA</span>
+<span class="n">TACCAGCACTTTGGGAGGCCGACGCAGGTGGATCACCTGAGGGCAGGAGTTCAAGACCAGCCTGGCCAAC</span>
+<span class="n">ATGGTGAAACTCCATCTCTACTAAAAATGCAAAAATTAGTTGGGCATAGTGGTGGGCACCTGTAATCCCA</span>
+<span class="n">GTTACTCAGGAGGCTGAGGTAGGAGAATCGCTTGAACCCAGGAGGTGGAGGTTGCAGTGAGCTGAGCTCA</span>
+<span class="n">CTCCACTGCCCTGCAGCCTGGACAACAGAGCAAGACTCCATCTCAAAAAATATATGTAATAAGTAAAAGT</span>
+<span class="n">CTTAGGAAAACAGCCTGTGCACACCCAGCAAAAGTGTAGGGCCCACTGCAGACTGGCTCTAATTATGTGG</span>
+<span class="n">GAAAGTCGTTTAATCTTAGAGCCACAACGCTTTGAGATTAAGTGATTTGCTCAAAGGCTAAATGGAAATA</span>
+<span class="n">GTACCACTTATTTCAAAGTAGGGCTGGGATTCAAAGGAGGTACAGCTCTTGAACTAGAGTTTTCTGTCTC</span>
+<span class="n">CATTGGTGATAAGCCTTGTTTAGAGATGACCAAAGACTGGCACTCTTTTTCATAAAAGCAGCTAGTTTTA</span>
+<span class="n">GCTTCCTCCCTCAAGCTCACCCTCCTGCAGTTTGAAGGAAGTTTCCAAATAATCTTATTTAGAAAGAATA</span>
+<span class="n">GCATTTACACTGGCCAGTTAGGATATCTTAGGACACACCAGAGTAGCAACATGAAACACCCACTTCTGGG</span>
+<span class="n">GGAAAAAAAAGTGTTATAATTTGAAATAAAAAAAAAATACAAGTCTTGGGAAATTAGAGACCAATGTGAT</span>
+<span class="n">AGAAATCTGGAGGGACTTTTCACAAATGCCGACTTCTGGTTTGTGCCTTTCCCATATTTTATTAAATTCG</span>
+<span class="n">TGTTTTATTTTAAAAAATTACAGCAACATTATCAAAGACAACATATGTACAAACATTTTACAAAAAAGAA</span>
+<span class="n">CATTACCAATATCAGTGGCAGTAAGGGCAAGCTGAAGAATAAATAGACTGAGTTTCCGGGCAATGTCTGT</span>
+<span class="n">CCTCAAAGACATCCAAACTGCGTTCAGGCAGCTGAAACAGGCTTCTTTCCCAGTGACAAGCATATGTGGT</span>
+<span class="n">CAGTAATACAAACGATGGTAAATGAGGCTACTACATAGGCCCAGTTAACAAACTCCTCTTCTCCTCGGGT</span>
+<span class="n">AGGCCATGATACAAGTGGAACTCATCAAATAATTTAAACCCAAGGCGATAACAACGCTATTTCCCATCTA</span>
+<span class="n">AACTCATTTAAGCCTTCACAATGTCGCAATGGATTCAGTTACTTGCAAACGATCCCGGGTTGTCATACAG</span>
+<span class="n">ATACTTGTTTTTTACACATAACGCTATGCCATCCCTTCCTTCACTGCCCCAGTCAGGTTTCCTGTTGTTG</span>
+<span class="n">GACCGAAAGGGGATACATTTTAGAAATGCTTCCTTCAAGACAGAAGTGAGAAAGAAAGGAGACCCTGAGG</span>
+<span class="n">CCAGGATCTATTAAACCTGGTGTGTGCGCAAAAGGGAGGGGGAAGGCAGGAATTTGAAAGGATAAACGTC</span>
+<span class="n">TCCTTTGCGCCGAGGAATCAGGAAGCGTGACTCACTTGGGTCTGGGACGATACCGAAATCCGGTACCCCA</span>
+<span class="n">CCCCATCCCCTGCCCCGCCGGGTACCTACAAGCTCGGTTCCTTTCTCAACTCCCCCAGTTCCTTGATCTC</span>
+<span class="n">CACCTTCTTGTACTTCCCCGACTTTCTCCGGTTGGTGATCACCAGGACGGCCATGCCGGCGACGAGGGCC</span>
+<span class="n">ACCACGACCACCACGATGACGGCGATGAGGCCGGCGGTGAGGCGCTTCATGGAGAACTTCGGGGGAATCT</span>
+<span class="n">CGTCCAGGTAATAGATGAGCGTGCGCTCCACCTGCAGGGGTTCTCCGCGCACGCGCAAGTCCAGGCCGCC</span>
+<span class="n">GCGGCCCTGGAATAGAGACTCGCCCTTGATGTCCCTCTCGAAGTAGTAGGCGGCATCGCCGATATCCACG</span>
+<span class="n">TCACCGGCGGCCTTCTGAGACGTGTTCTGCCGCAGCTCGATCTGGATGGTGGGCTGCTCGTAGTGCACGG</span>
+<span class="n">CCGCCACGAACTTGGGGTGCAGCCGATAGCGCTCGCGGAAGAGCCGCCTCAGCTCGGCGTCCAGGTCTGA</span>
+<span class="n">GTGGTTGAAGGCGCCGGCGGTGGGGCGGTGGCGCAGGTCAATGAGGATGTGGTGGGTGCGCACCAGCTCA</span>
+<span class="n">TCGCAGCGTAGGCTCAGGTCGCCCTTGTCCGTGCGGCGCACGCCCACCGAGTTCACGCACCAGCACACCG</span>
+<span class="n">ACGTCTGGTTGCACTGGCGCGCCTTGAAGCGGCCCTCGGGGTCGCAGTCGGGGTCGTAGAGGCCATCGTT</span>
+<span class="n">GTCCACGAGCGCGTGCTCACTCGGCCGCACCAGCGTGCGGGCGTTCTTGGGGGCGCTCATGCGCGCCTTG</span>
+<span class="n">AGCAGCAGACACTTGGAGGTCAGCGTGGAGCAGTCGACCGCCATGCCCGAGCCCAGCGCGCGGCACTGGC</span>
+<span class="n">AGCGGCCGCCGGGGCCGTCGGGGCTGCACACGGTCATCTTGTTGGTGGGACACGTGCAGTTGTCCTGCGC</span>
+<span class="n">GGCCGTGTGGCCGGTCACCGCCGCCAGCACCAGCAGCAGCAGCGGCAGCCGCAGCGGTGGCGGCGCGAGG</span>
+<span class="n">CCGGGGCCCCGAGCCATGGTGGGGCGGAGGAACGCGGACCGGACGCGGGCGGATGAGGCGCGGGGACTCG</span>
+<span class="n">TCGGGGCTCGGGCTCCGGCGTCTGGGATGGTCTGCAGGCGTCTGCCGCCCGGCCGCTCCCTCCGGCTCTT</span>
+<span class="n">ATACTCTACCCGACCTGCCCGGCTGGTTCCACCACCGACCGTCCCCACTGGTATTTGGGTGACACATCCC</span>
+<span class="n">GCCCCCCTCCCCGTCCCACGGAAGGCCAAGCCGGCCCTGCGCCGCCCGCGATAGGATCAGAACAGGGAAG</span>
+<span class="n">CTGCTCCCGCCTCCTCCGGACCGAAAGCCGGGAAGGGGAGAACCGATACTCACCTGTAGGCTTCTGGGGA</span>
+<span class="n">CCCGCCCTCGGCGCGGCCTCCTGCTACAGACCTGGCGCGTCTGGGCCGCTCTCCCGGCAGAAAGTCTAAA</span>
+<span class="n">GAGTTTCATTGCAAAGTGTGGCTCGCGACTGTCGCGCTCTCCTCTATACGCGACTCCCTTTTCGTTCTTT</span>
+<span class="n">CCCAGCCCCAGCCCTCCCTTAATTTCTCTCACTCCCTCTCTTCTTTGTCCAGTTCTCACAGTAGCACACG</span>
+<span class="n">TTTATATAGTTTACAGTTCACAAACATTATCTCATCCTAACACCAGTCCTGACAGGTAGGGACTATCAGA</span>
+<span class="n">CCCGTTTTATAGGTGGTACTGATGAGGCTTAAAGACCTGAAGTCACACTGCTATCAACTTCCTCATATTT</span>
+<span class="n">CTGAGAGGGGTCTTTGGCACCCTGCCTAGGAGTGATGAGACCTTAAATAAAGTGTTTGTGGACACGAAGT</span>
+<span class="n">GACACAGAATCTGAAGGGAAGTTAGGGAAGCAGTTCTGTTACTCACCATATCAAGGGTAAAACACAGGTA</span>
+<span class="n">TCCTGGTGTCCAGAGGGTTAAAAGTTCTGTTAAACACTAATTTTCTGTACCTCACACAAGCGCACACACA</span>
+<span class="n">CAGGCACACACGCACATAATATTTATTTGTGCACTGGCTATAAAGAGACAAACAGGAACAAATTCTTAAA</span>
+<span class="n">GAGCCAGCAAGACTGTAAAGAGTTTTTTGTACAATTTGATTCTAACACAGCAAATCGTTGCTTTTCTTTT</span>
+<span class="n">CCTGTATCCCACGTAAGTAGCTGAACCATGTAAATAATGAAAGAATGGAGCCTGTGAGAAATTGCTTGTC</span>
+<span class="n">TGCCACTGTGTGGCTAGTTTCATGGCATACAGGGGTTGCAATCTCTTTTTGAGTCATTGAGAAAGTCTAG</span>
+<span class="n">AGTTTCAAAGCTGTGGTAAAATTAACAATAATTAGCAAGCTATAATTATTCCCAGGTCCTCCATCAAAGC</span>
+<span class="n">ACATTTTATATGTTCAGCATTTAATGTGCACCACCAGTCGTGCAAGGGTGTTGTTTAGCAGATGAAAGCC</span>
+<span class="n">AGCTGGGCCTCTGTCCCATTAATTTTCACGCAATTCCTGAGGCAGGAAGATTGAAATATATTCTGCCTTG</span>
+<span class="n">ACAGACAGAGGAAGCAGAGACATGTGAGGGACAATTTCTTTTTTCTTTTTTTTTTTTGAGACGGAGTTTT</span>
+<span class="n">GCCCTTGTTGCCCAGGCTGGAGTGCAATGGCGTGATCTCGGCTCACCACAACCTCCGCCGCCCAGGTTCA</span>
+<span class="n">AGCAAGTCTCCCGCGTCAGCCTCCCGAGTAGCTGGGATTACAGGCATGAGCCATCAAGCCTGGCTAATTT</span>
+<span class="n">TTTTTTGTATTTTTAGTAGAGACAGGGTTTCTCCATGTTGGTCAGGCTGGTCTCAAACTCCTGACCTCAG</span>
+<span class="n">GTGATCCGCCCACCTCAGCCTCCCAAAGTGCTGGGATTACAGGCATGAGCCACCACGCCCGGCGAATTTT</span>
+<span class="n">TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTGAGACGGAGTCTCGCTCTGTCACCCAGGCTGGAGTGCAG</span>
+<span class="n">TGGCATGATCTCAACTCACTGCAAGCTCCACCTCCTGGGTTCATGCCATTCTCCTGCTTCAGCCTCCTGA</span>
+<span class="n">GTAGCTGGGACTACAAGCGCCTGCCACCACGCCCGGCTAATTTTTTTGGTATTTTTAGTAGAGACGGGGT</span>
+<span class="n">TTCACCGTGTTAGCCAGGGTGGTCTCGATCTCCTGACCTCGTGATCCGCGTGAGGGACAATTTCTTATCC</span>
+<span class="n">ACAAACATGAGGAATTGTGGGATAGTCCTCTGCTGTCTATCCCCACTGTCTCTGTTCAGGTCTTCCTTGG</span>
+<span class="n">ACAGATATCTGAGTCAGGTTCTAGTTTCTTTTCCCCTCTCCGACCTCGGTCCACCCTGCATCCAAGAAGA</span>
+<span class="n">CTTTCTAAATCAGAAGTCTGTGCCCACCTCCTCTCTGTTAAGTAGAGTGAGGGGGGTGCTCTCGGCTCTC</span>
+<span class="n">CAGATAAAATTCATGCTTCTTATATTAGCCCTTAAGATCATTCCTATATGATGTTATAGGCAAGCTACGT</span>
+<span class="n">CTCTGTGCCTTAGTTTTGTCATCTGTAAAATGGGGATAATAAAAGTACCTACCTTACAAGGTAGGTTTTA</span>
+<span class="n">TAGTTAATGCAGATAAACTGCTTTGAAGAGTATCTGTTCTAACAGTATCTACACATAGTAAGCAACGGAT</span>
+<span class="n">AGATGTTAGCTGCTGTCATTTGTCATCATCGTTGTCGTCGTCGTCGTCATCATCATCATCATCATCATCG</span>
+<span class="n">TGCTCCTGCCAACCTCTCCGGCAGTCCATGTTTTCAAGTCTTTGCAAAGTCACCTACCTGGAGTCTCCCT</span>
+<span class="n">TTCTTTATTTAGTGCATAATTCTGTTTTTCTACTCAGCTCTTGAGTCACCTCCAAGATGCCTTCCCTAAT</span>
+<span class="n">AAGGCCCTCCCTGTTACACTCAGGGATATGCCTCTCTATTCGTTCCTAATCTCAGACATACTAGGATGGC</span>
+<span class="n">AACATTAACTTTTCTGGGCTTTTGTCCTCCCATCTGTCAAATGGGCAAAATACAGCCTGTTTCGTAGATT</span>
+<span class="n">ATGCTGAGACTCAAATACAAAGAGATGAGATGGTAGATGCCAAAGCTTTGTAAACTCTAAGACTCTGTAA</span>
+<span class="n">AAATATTAGATTTCACTTTTATTTCTAAAATATATATACCCTCTTCTTGCTTTTCCAGGTATTAACTAGG</span>
+<span class="n">TAGCCACAATGTTCTATAACTAGCAGAGTTCTCTATTTTCCATTCCATCAGGTCCCAGGCTGGCAAGAGG</span>
+<span class="n">AAAGCTGATGAGAGAGGGTTCTCAGGGCTGAGGAATTTGTGTGATGGTGTCATTGACTACCAAGCTAGAA</span>
+<span class="n">CAGCCCCACATGGGTGGTACTGGGGCTAGTGCTCTGAGGCATCCAAGCCTTTGCTTCTTCCAATTATGTT</span>
+<span class="n">AGGTACTGAGAGGACAGGAATAGAAGGGGCCCAGCCTCAATATCTTCTGGGGAAGTTAGAGTAAGGCAAA</span>
+<span class="n">GATGACCTCCTAATCCCCTCCCCCCACAGACTCCACTTGCTTAAATTCTCTGGTTCTGCCAGGCTTTCCC</span>
+<span class="n">CAACACACACAAAGACCACAATGAGTTTATTATGTAAACACAGTCTCAGCTGTGATTCTCCCTTTTCCCT</span>
+<span class="n">TCGTCCTTTTTCTGCCAAGTTCTGCAAAATAGCATGTATTAGCTTTATCTCTTTTTATTTATTTATTTAT</span>
+<span class="n">TTATTTTTGAGACAGAGTTTTGCTCTTGTCACCCAGGCTGGAGTGCAGTAGCATGACCTCGGCTCACTGA</span>
+<span class="n">AACCTCCGCCTCCTGGGTTCAAGTGATTCTCCTGCCTCAGCCTCCCAAGTAGCTGGGATTACAGGTGCTC</span>
+<span class="n">AACACCATGCTCAGCTAATTTTTGTATTTTTAGTATAGACGGGGTTTCACCATGTTGGCCAGGGTGGTCT</span>
+<span class="n">CAAACTCCTGACCTCAGGTGATCCTCCCGCCTTGGCCTCCCAAACTGCTGGGATTACAGGCGTAATCCCA</span>
+<span class="n">CCACACCCAGCCTGTATTTTTTAATTTTAATTTAAAAAATATTTAACACAAGCATTTCAGGCTTGTCATG</span>
+<span class="n">TGTTTATGAGGGGCGGGAAGCACATATAAGCACTGTATGTAGCCCCAGCACCAGAATATTAGGCACTAAG</span>
+<span class="n">TAATGTTTATTGGATTAACACTGAGTTGTGCCCAGAATGTTTCAATATCAATATATTCTCCTAGGAGTGT</span>
+<span class="n">TCATGTGGACCATTTCAGTACTTCTTTCCTTGTCTAAGCCTCACCACCTGCCCCAACCATGAATCTCTGT</span>
+<span class="n">CCCTACCCTAACCCACCCTCCAAACACCCAATTTCAAGGAAGACTGGGTAACGATGCCCTTATTGTCATT</span>
+<span class="n">TTTGTCCAATCCTTAACTTTTGTCAGCCTTGTGCCTGCAAGGATGAAGGATATGATCTGAGGACACCAAG</span>
+<span class="n">AGCAGCCAAAGATTCTATAAGCAAGTGTATAATGTAGTTGAAAGAAAATGGACCTTGGATCCAGTGAGAC</span>
+<span class="n">TTAGGCTCAAGTTTTGGCTTCACACCACTCACTGCTGTGTGTTTCTCAGCAAGTTGTTTCAGCACTCTGC</span>
+<span class="n">GCCTCAGCTTCCTTAACTGTAAAATGGGGGTAACAGGGCCTACACTGCATCAATGCCTGTGAAAACAATG</span>
+<span class="n">ATTTCCCACCTTGTAATTAATAATACATTTTTCCCCATTGAACTTCACACTTCAGCTGTTCTTGTGCTCT</span>
+<span class="n">TTGATAAATTCTTGGTGATAATCTGATTCTCCTTGGTATAAGACCAATACCAGCATGTGAATTTTATATT</span>
+<span class="n">AAAGGGTATGATATATAAAAACAAAACATAAAAATAAAACTGTTTGATTAATTAAAAATAAACAGCACTT</span>
+<span class="n">ACCATCGAGAATTATTTTAATGATTCCAGATAAAGACTATAAAATACTCAACATAATGTTTGGTATGTGC</span>
+<span class="n">TAAGTAAAATATTTTAGCTATTATTATCAGCCATCTCAGGAATGTGAAGATGCTTTAAGATCATTAAAGG</span>
+<span class="n">GTTCTTCACAAGGCCAGTGATTATGGGGACTGCTGAAGATCAAGTCCAGGGAGCTGAGTGCTAGGCAGGA</span>
+<span class="n">GAGCAGCCCGAGAGCCCCAACCATCCCCTGACCTCCAGGATGCAGCAATATGGAGAGTATCTAGATGCAG</span>
+<span class="n">ATAGTGCTTTAGTATATTTGCCCCCATTATCTGCTGGGATCCCTGCAGCACCTCTGGGGGTTAGGCAGGG</span>
+<span class="n">AAGATATTATTATCCCTATTTTATAGATGTGGAAACAGAGGCCTTGGGGGAAGGGAACAATTTGCCCATG</span>
+<span class="n">GTCACATGCTTATAAAAGGTGAGGCCAGGCCTAGAAACCAGGTCTCCTGACTGCAAATGTATATAGAAAT</span>
+<span class="n">TAACAAAGATGGAATTAACAAGGGGTTGAAAGAGCTTAGAGACTCATCTCATGTTTCTCAGGTTTTCTGT</span>
+<span class="n">TACTTTTCATCCCTTCCCTTAATTGTACAAATATTTTTAGGAATTTCTTGTTTCAAGAAGAATGATTAAA</span>
+<span class="n">TAATTTATTTTCTTTTTTTTCTATTTATTTATTTATTTTTTTTATTTTTTTATTTTTTTATTATTATACT</span>
+<span class="n">TTAAGTTTTAGGGTACATGTGCACATTGTGCAGGTTAGTTACATACATATACATGTGCCATGCTGGTGTG</span>
+<span class="n">CTGCACCCACTAACTCGTCATCTAGCATCAGGTATATCTCCCAATGCTATCCCTCCCCCCTCCCCCCACC</span>
+<span class="n">CCACAACAGTCCCCAGAGTATGATGTTCCCCTTCCTGTGTCCATGTGTTCTCATTGTTCAATTCCCACCT</span>
+<span class="n">ATGAGTGAGAATATGCGGTGTTTGGTTTTTTGTTCTTGCGATAGTTTACTGAGAATGATGGTTTCCAATT</span>
+<span class="n">TCATCCATGTCCCTACAAAGGACATGAACTCATCATTTTTTATGGCTGCATAGTATTCCATGGTGTATAT</span>
+<span class="n">GTGCCACATTTTCTTAATCCAGTCTATCATTGTTGGACATTTGGGTTGGTTCAAAGTCTTTGCTATTGTG</span>
+<span class="n">AATAATGCCGCAATAAACATACGTGTGCATGTGTCTTTATAGCAGCATGATTTATAGTCCTTTGGGTGTA</span>
+<span class="n">TACCCAGTAATGGGATGGCTGGGTCAAATGGTATTTCTAGTTCTAGATCCCTGAGGAATCGCCACACTGA</span>
+<span class="n">CTTCCACAATGGTTGAACTAGTTTACAGTCCCACCAACAGTGTAAAAGTGTTCCTATTTCTCCACATCCT</span>
+<span class="n">CTCCAGCACCTGTTGTTTCCTGACTTTTTAATGATTGCCATTCTAACTGGTGTGAGATGGTGTCTCATTG</span>
+<span class="n">TGGTTTTGATTTGCATTTCTCTGATGGCCAGTGATGGTGAGCATTTTTTCATGTGTTTTTTGGCTGCATA</span>
+<span class="n">AATGTCTTCTTTTGAGAAGTGTCTGTTCATGTCCTTCGCCCACTTTTTGATGGGGTTGTTTGTTTTTTTC</span>
+<span class="n">TTGTAAATTTGTTTGAGTTCATTGTAGATTCTGGATATTAGCCCTTTGTCAGATGAGTAGGTTGCAAAAA</span>
+<span class="n">TTTTCTCCCATTTTGTAGGTTGCCTGTTCACTCTGATGGTAGTTTCTTTTGCTGTGCAGAAGCTCTTTAG</span>
+<span class="n">TTTAATTAGATCCCATTTGTCAAAATAATTTATTTTCTAGGACACAGCTGTGAGCCCACAGCTGAAGACC</span>
+<span class="n">CTAATGCCCAGCACTATGCAGGGAGGGGTCCGCACTCTTCTTTCTAGCCTGACCACCATCAGCTTCAGCC</span>
+<span class="n">TCTTTTAAGGAGCTCCTTTTGAGACAGTGGGCAGTGCTGGAGGGCCAGAGTTTCCTTTTCTCCTCAGCAG</span>
+<span class="n">AAGCTTGCAGTCCTAGAAGAAGCAGGTAACTCTTCAGCCAGAATACAGATAATGCAGAGAGAGAAGTTGG</span>
+<span class="n">TTGTGGTGATTGTTAGTTCAGGCTGGAGGAAGGAAGCCCCAAGAAACAGAACATAAAAAAGGAAGTTGGA</span>
+<span class="n">CAGTGTCCAGAGTGTAGAGGTGTGGAGAACAGAATAGACAAGGGCTACACAACTGTATCTTCGGTGTTTC</span>
+<span class="n">ATTTCTTTAAAAATGTGTTTTAAGTATTTCAAAATACTAGAAATCAAGAGCTAGGGAATGGGTACACTCT</span>
+<span class="n">CCATATTTTGTTTGCTTAAAATGTTTGTAATAAAAAAATTCACATCAATTCCTCAAAGTAAGTTTTGGAG</span>
+<span class="n">GAAGTATTTGGGAGTAATATTTTCTGTTTTTGCTTCCTCTTTTTCTCCATTTCTGTTATTTTTATTAATA</span>
+<span class="n">TAAGCTGTCATTTATTGATCATCATATTATAAATTCCTTGTAATTCCCCCAGCAAGCCTACAAAATAATT</span>
+<span class="n">ACTCTTGTCCCCATTCACCTGATCAGGAAGCTGAGGCTTAGGGTCACATAGTTAGAAATGAGTCCAGGAA</span>
+<span class="n">GGATCTGAGCCAAGTCTCGTGACTGGGACATTTTTCCATTGCACAGTTTAGTCTCTCGCTGATGGGTCTT</span>
+<span class="n">GAATAAACGAGAGAGGTCAAAGATGTTCTGCTGGTAAACTGGGTGTGGTCTGGGTCCTGGCTGCCCAGGG</span>
+<span class="n">AATGTTTGATCTTTTCACTTTTCTGGGAAGACAACACGTTTCTGTTTGTGCTTGCTCATTTGGGTGGGCC</span>
+<span class="n">CAACTCAGTTTCTTTCAGGAGAAGTTGCCTGTGATGTGTACAGTTCTGCTTGGTTTTTGTGGTTCATCTG</span>
+<span class="n">GATTTGAAAAGTGACTGCAGTTTCACCTTACAAGTGTGTGTCATGGTTTCATTTCAGAATCCTGCCCATC</span>
+<span class="n">ATCTTCTTTTCATGGTGTCCTTGTTCTGAATTGCAAACCATAAATGGCCTCCTTCTCATTCTGGTCTCTT</span>
+<span class="n">CATCTAGGGGCAGTCAGCTTCTCCTGTAAGGGCTTTACACTCTGGGGAAAGCCAGTAAAACACTCAGTGA</span>
+<span class="n">CTTTTAATTTCACTGGGCCCAACAGCTTCCAGACAGATTTGGCAACAAATAAAGAGAGATTGGGAAACCT</span>
+<span class="n">TCTCCCTACATTCCTGAGGCAGCCACAATGCTCGAACCCCACACTGATGAGTCACGGTGCTTCCTTTCCC</span>
+<span class="n">AGAGCTGGCCCGGCGATGTGTGATGCCCTGTTAAGGGGATGTGGAGGTGTTTGCTGTTTTTAACCACTTT</span>
+<span class="n">CAGCTGTCCTTGAGATAAGGGCAGGTGGTGAGAGGTCTTAAGTGGGCTGCTGCTACTGACAAATTCGTCT</span>
+<span class="n">GCCTTTCTGGACAGTCCTGATCCAAGTGAGGCTCCTTAGAGTTATCAAAAGGGGTCTTAGAGGACATGTA</span>
+<span class="n">TTCCAGTCTCCCACCCAAAGAGAGGTATCTCAGAATGCTAAACAGGTGCTTGTAGGCTACCTGTGATAAT</span>
+<span class="n">GCAACATCCTTACCTCCCCACAAGACAACCCATTCCAGTCCCAAGCAGCTTTACTAAGAAGTTCATCATA</span>
+<span class="n">ATTAAGGAAATTCAGTGCCTCTGTAATTTTCACAAACTGATCTAAATTTCTACTCTTGGAGCAAGAAAGA</span>
+<span class="n">GTAAGTAATGTTCCCCTTTCACTCCTTGGTTCCTCAGGAATTTGAAGCCAGTTCTCCTGTCCCCAGACTT</span>
+<span class="n">TCCCCTTTCCTGCTCTCTCCCTGCCTCTTCCATTGCCTTTCTCTAGTGGAACGTCCCTATCCCGTCATCC</span>
+<span class="n">TTCCTCCTGTGCCAACCTCACACCCTAGGTGGTGGCAAGCACCATCTCCACCAGTGGCCCAGCCCAGCAA</span>
+<span class="n">ATGACATTATGAGAGATACCAGCAGAGGATTCTAGGGAAGCTTTGAGGAGGTTTTACTCCTGTTGTCTTG</span>
+<span class="n">CCTTTCTACTCCCCTGTCTAGGAAGGCAGGAGTAACCCTAACAGCCCCTTACCTATCTATCAATTTCCTC</span>
+<span class="n">TTTTCTAGGAACAGATGGTTTCTGGGCAATACTTACAATAAATATCTACACTGTATTGAGAGCCTATTAC</span>
+<span class="n">CAGCCAGCAACTCAACATGTGTTTCCTCTATCCCTATAACATCTGAAGGGAGTGGGTTTTGTTATTCTCA</span>
+<span class="n">CTTTACAAATAAGGAAACAGGCAGAAGGGCGCTTGTCTAAGAATACACAAATAGTAAATGGAACAGCTGT</span>
+<span class="n">AATTCACATTCTTTTCTAAACATATTTTAGAGACAGGATCTCTCTCTGTTGCCCAGGCTAGAGTGCGGTG</span>
+<span class="n">ATGCAATCATAGCTCACTACAGCCTCAACTCCTGAGCTCAAGTAATCCTCCCACCTCAGCTTCAAGTAGC</span>
+<span class="n">TAGGGCTTCAGGTACGTGCCACTGCACCCAGCTCACACCCCTTTTTGCCTGGTTCTGAGATTATGCTTTT</span>
+<span class="n">TCTGTGACATCATGCTGCTACAGACCATATAAATTTCCTGAACCCAACATGTTTAAAACTCCAGCATGGT</span>
+<span class="n">AGTATAGAAGTTCACTGGTATACAAGTTCAAGTTATACCCTAACCTCTCTTACTCATGCTGAATCAGAAC</span>
+<span class="n">ATCAAAAATGGCCTCTCAAGAGAATCCAAGTAAGGATAAGGCTTTGATTTTATCCGACAACTTACTACCT</span>
+<span class="n">TTAGATGGTATGGATAGTAAGTTTTGCTATCTTCTCCTTTTGGGAAGACAGACAAGTATTATGGACACTG</span>
+<span class="n">CAGATGAATACAGTACAGCCTAGTGCAGGTGAATTTTGTTTTGTTTTGTTCAAAACAAGAAAGCAGAACA</span>
+<span class="n">GAACCTTTCAGTCTCCCTGGTAGAAGATGCTCTCCTTAGCTCTTGTGCTGCCCCTCCCACAGACATTAAT</span>
+<span class="n">ACCCAAGCTACATCCCTGGCATGGCTTACCCTCCTGCTCCTCCCTGCGCCTGTTCCTGTCCATCTCAAGA</span>
+<span class="n">CATCTCCAGTCACATCGGTCCAGGGCTGAGTGTGCTGAGGGGCTCAACTGCACTCCTACTCTCAGCCGTC</span>
+<span class="n">ATGAGTCACAAGACTCACACCAGGGATGGAAGTAGAGGCGAGGAGGAGTGGGAGAGAGGAAAAGTTCAGA</span>
+<span class="n">AGTCTAGGAAGAATGAGGCAGGCAGGAAAGAGGAGACTTCATTGTTCTCTAATTCTGGGATGTGTGGGCC</span>
+<span class="n">CAAGACAAAGGGCAAGAAAGTCCTTGTTGTTCCTCTGACCTTAGTGGGATGTAAGAAAATGGATTAATTT</span>
+<span class="n">CTTTGGATTCATGTGAGAAGTCCTGGCTCTGTCAGCTGATCTTCAACTAGCATCTTTCAAAGCATGACTG</span>
+<span class="n">ATGGGAAAATGAGGACTGCCCTCAAAAGCTTCTCCAAGATCATGGGAGGCTGCCAATTGGAAGGTACCAG</span>
+<span class="n">AAACCAACACAACTAAATTGCTCAGCACCCTGAACCTCTTTCCCCACCCACACTACTGATTTTTCATATA</span>
+<span class="n">CTTTCCAGCCTTCTATTCATCCGTCTCTTCAGCCAGGCAGGCAGGCAGGCAGGCATCCTCACTGAGTGCC</span>
+<span class="n">TCCCAGGTGCCAGGTCTGTATTGGGCTGAGGAGGTACAATGGCAAGTTACACCTAACCCCTGGCTCCATG</span>
+<span class="n">GAGGTTACAGTGCACACAGCAACTACCTCCTAGTGGGGGTTTAGTACATATTTGTTAAATAAATAACATG</span>
+<span class="n">GAAACATATGAATAACTACAATATGGATTTATAAACCATATCTCCTGTCCTCTCCACTTATACAGATTAT</span>
+<span class="n">TTATATAGAGTTGCAGGATACATCAGTAGAAAAACCTCACTGGCTCTTAAGGTTGTCTGTTTTTCTCATT</span>
+<span class="n">TTTTAAAGGTAATGAGTATGTAGCAATTTGGAGGTGGGAGCAAATACAATCCAATAGATAACATTTGCAT</span>
+<span class="n">TTTAAAAGGCATCTGAAATAAATAACATTTAGGCAGAAAAGACAACCTAAACAGATAGCACATGAGGAAA</span>
+<span class="n">AAAATCCAAATAAATAACATTGAAGAATGTTAAGGCTGGAGATAGCCTTCCAAGAAAGCTAGTCCAGTAG</span>
+<span class="n">TTCTGTTTTGAGTCACAGAATCCATTTCTGAAGACAGTGATGGATTCTCTCTTCAAATAATGCAACTGTG</span>
+<span class="n">CACAAAGACAGTATATTTTGCACAGATTCCAGAGTCACAGACTCCCTGAAATTCATTTCAAGGACCTTCC</span>
+<span class="n">TGACCTCAGTTTTAAATTTCTGGTGGGACTCATCACCTTCATCTCACTTAACAGGGACAGTGAAATGACT</span>
+<span class="n">TGCTCAAGATCATCAGCCAGTTAGTGAAAACATTAGGCAGTTTGGTCTTAAGAAGGAACTCAGAAACCAG</span>
+<span class="n">TTGCCTGAGTTCAAATTTTGCCTTTGCCATTTACTAGCGATTTGACCTCAATACATCATTTAACCTCCCC</span>
+<span class="n">CTGCCTCTATTTGCTCATCTGTAAAATGGGGATAATAATAGTTAACCTACTTTGCAGGGTTATTGTGAGG</span>
+<span class="n">ATTAGGAATTAATCCATGTTAAAAAAAAAAAAAAGTTGGAGCAGGGGTTGGTTAGCAAACTAGTTAGTTA</span>
+<span class="n">AAGGCTAGATAAACAATTTAGGCTTTGTGTGCTAAGGATCAAAATTAAAGATGAGACTGGGTGCGGTGGC</span>
+<span class="n">TCATGCCTGTAATCCCAGCAGTTTGGGAAGCTGAGGCGGGCAGTGGCTTGAACCCAGGAGTTCGAGACCA</span>
+<span class="n">GCCAGGCAACATGGCAAAACCCTATCTCTACAAAAACTTTAAAATTTAGTCAGGTGTGGTTGTGTGTGCC</span>
+<span class="n">TGCGGTCCCAGCTACTTGGGAAGCTGAGGTGGGAGGATCACTTAGGCCTGAGAGGTCGAGGCTACAGTGA</span>
+<span class="n">GCCTTGTTGGCGCCACTGTGCTCCAGCCTGGGTGACAGAGCAAGACCCTGTCAAAAAAAAAAAAAAACAA</span>
+<span class="n">ATCAAGATAATTATGAAGTACTTATATAATTATTTAACAATGTAAACAACATCTCGGCCAGGCTCGATGG</span>
+<span class="n">CTCACACTTGTAATCCTAGCACTTTGGGAGGCCAAGGAGGGTGGATCACTTGAGCTCAGGAGTTTGAGAC</span>
+<span class="n">CAGTATGGACAACATGACAAAACCCCATCTTTAAAAAAATCCAAAAATTAGCCCAGCGTCGTGCCATGTG</span>
+<span class="n">CCTGTAGTCACAGCTACTTGGGAGGTTGAGATGGGAGGTTGGCTTGAGCCCAAGAGGCGGAGGTTGCAGT</span>
+<span class="n">GAAGTGAGTTGTGATTTTGTCCAGCCGGGTGACACAGCCAGACCCTGTCTCAAAATTTAAAAGTGTCTCA</span>
+<span class="n">GCCCATGGACCACACAAAAACAGAATTTGGCCAGTGTAGTTTGCTGACCCTTAGCTTAAAGCAGCACCTG</span>
+<span class="n">GCACACAATAAATGCTCAATAAATGGTAGTTTCTATTATCCAAATCAGGGCTCTTTCGATTGCTCTGAAC</span>
+<span class="n">TGCTTATGCTCCATGTAACATAAATAACAGGAAACAAGGTGCGGGCTGACCAACTTAGCCAACCTGTTTG</span>
+<span class="n">TTTAGACACAAGCCAAAGTTACCAAGATGTAACGCGTCTCCGTGCTCCTCCCTGTATCAGAGCCTTCCTA</span>
+<span class="n">TTCGTGTCCTGCTCCAGTAGGTAAAGCAGCCAATGCTCTAACTGTTCTCAGGGAAGCCTCAAGTCAGGTG</span>
+<span class="n">CCATATGAAGACAGGCGGGAGGAGCTGGAATGGTTTCTGGGCAGAGGTAGAGACCGGAGAAGAAGAGAGG</span>
+<span class="n">GGCCCATCCCACAGCTCTGAGGTGTCCCAGACTCTGGAGCACTATGCTATCTTCCAGCTGTGGCATCCTG</span>
+<span class="n">GCCACATCCTGCCTCTTGTACCTGTAGAAGGCCAGTTCTGTCCATCAGCCACCTCCTGCTACTTTAGAGC</span>
+<span class="n">AGCCCTGCCTGGGGCAGATCCAGACATAAATTCAACCACAGCTCTGAGTTAGAAGGGACCCCATCATCTA</span>
+<span class="n">CTTCCAATCACCCCATTTTACCAATAGGAAAATTAAGGCCTGGGTTGGAGAAGTGACTTGCCTGAGGCCG</span>
+<span class="n">CATAGCAGGCACAGTTATGCTGGGATTAAAAACCCAGGCTCCTGCCTCCCAGGCCAGTGCTTTTTTCTTG</span>
+<span class="n">CCTGAGTTCCTGCAGGTTTCTCTTTGGCGCATAATGGAAATACCAGTGGAGTTGTCTGGTGCAGTTTTTT</span>
+<span class="n">ATGCTTATCAGAGAGCAGCTGGATTTGATGTAGATGCAGCCGTCTTCAGAGGGTATTCTCTTGTTTATCA</span>
+<span class="n">ACATTCCTTGAGCTCCTTCTATGTGCCAGGCTGTGTGCTGAGCACAAAAGATGAAAAGAGAGCCAATGTC</span>
+<span class="n">TTCTTTCAAAGACTCAGTTTACAACTGGATGTGATTATTGTTTCTCATTGGTTGGTTTGCGTATTTGTTT</span>
+<span class="n">GTTCATTCAACAAACATTATTGAGCACATACTTTGTGTCAGGCATGGCACTAGATGCTGGGACTAAGCAT</span>
+<span class="n">TAGTAAAGCCTCTGCCTTTGCAAAAATTATGATCTAGTGAGAGAGATACACAATAAATGAAATAAACACA</span>
+<span class="n">GAATAGTATGCACATAGGTGTTTGAAAACAAGTTCTCCAGGAGAAAAAAGAAAGTACCCTAATTTGTAGC</span>
+<span class="n">CTTTGGTGATTTTCAAGTAGCTAGTCAATGGTGAAGTCAGGATTTGAACTCAAGCAACTGGTTTCTGAGT</span>
+<span class="n">TCCTTCTTAAAACCAAATTGCCTAATGTTTTCATTAACTGGCTGTGTGACCTTGAACCAGCCATTTCACT</span>
+<span class="n">ATCCCTGTTAAGTGAGATGAAGGTGATGAGTTCCATCAGAGATTCTAAATTGAGGGCAGGAGGGGCCTTA</span>
+<span class="n">GTGTACTCTCCCTGTGACCAATTTCAAGCTATCAACATGGTGTCACTGAGTGCCAATTTGGGAGTGATTC</span>
+<span class="n">ACACAGCTGGCTCTTGCAGCCCCATATTGCATGGGCCCTAGACAGATGACAAGTGCTCTGAAGGAAAAGA</span>
+<span class="n">AGCAGGTTACAGGGTGGGAGAGTGAGGGAGGCTGTGCTATCTTAGATTGGCTGGTCAGGCAGGTCTTTCT</span>
+<span class="n">GAGAGGCAAGATTTGAACAGAGACCTGAATGAAGTAAGGAAGCCAGATATTTAGTGAATATTTAGGAAAT</span>
+<span class="n">GAGCATCCCAGGCAGAGGGAACAACACGTGCAAAGGCCCTGAGTCAGGACTGTGCTTGGCCCTTTGAGGA</span>
+<span class="n">ACGGCGAGACCAGTCTGCAGTGAACACAGGATTTAGGGGAGCACACAGAGGGGGAATTTGAATTCAACAG</span>
+<span class="n">GTATGTGCAGCAGTAGTGAGGGCAAGAGTTGTTAGCTGGACAAAGGGATGATATTTGCAGGGTATCTTAA</span>
+<span class="n">AACATGAGGACAGGTTTAACCAGAAGGGTTGGAGTGTGGGCAGAAATGGAAAGAGAAGAGAGCTCTGGAA</span>
+<span class="n">AGAAAGAATGGTGTGAGCAAAGGTGCCAAAGGTTGGAACAGAGTAATATGGCGGGGGATTGGGAGCATAT</span>
+<span class="n">GGCCAGTCAAACCTGCACGGGTAAGTGAGAGCCACATCGTGAAGCTAGTGATAGTTTTTCACCTGGGATA</span>
+<span class="n">GACATATAGGCAGGCATTTGTGGAGGATAAATTTGACAGGGAGACACAAAAGGCAAAGAGGCTACTCTGG</span>
+<span class="n">AGGCTACTGGTACAGGATAGAAAGGATGGATGAGTGCTTGATTTAGGGAAGAGAGAAAAGGATGGACGTG</span>
+<span class="n">GAACAATAACCTCATGTCTCTGTAATGATTTACACTAAGGGCTTTCATGCATGCCATTGCTACTCACCTT</span>
+<span class="n">CACAACAGCCCTGCGAGGTACATGGGATATGTGGTGTGGTGGGTTCAAGATGGTGAAAAATCTTTGACAC</span>
+<span class="n">TCCTCCCTTCACTTCGCCTTGAATCTGGGCTGGGCCCATATCTCATTTATAGCTAATAGAATGTAGCAGA</span>
+<span class="n">AGTGACACAAAGGGACTTCCAAGACTAGGTCACAGGTAACCATTTTGTTTCTGCCTTGGCGTCTTGGCAT</span>
+<span class="n">GCATGCTCTATGGGAAGCCAGCTGCCTTGTGAGAAGTCTGACTACTCTAAGAAGAAGTCCCAGCTAGAGA</span>
+<span class="n">TGACACATGGCAAGAGAGGTGTCCAACCAGCGTCCAGACTTGCAGCCTTCCCAGCCCAGGTAAGTAAAAA</span>
+<span class="n">AGCCACCTTGGACATCAAGCCCAGTCAAGCCTTTGGATAAGTCCAGCCCCAGGGGCCTCTGACTGCAGCT</span>
+<span class="n">GCGCTAGACCCCAAGCAAGAACCACCCAGCTGAGTCCAGTCAACACGAACCCTGAGAGGTAATAATTGTT</span>
+<span class="n">GTAAGCCATTAAGGTTTAGGGTGGTTTGTGATGCCACAATAGATAATCAGAAGATACCTGATATTATCCC</span>
+<span class="n">CATTTTAGATGGGGAACTGAGGCTCAGGGAGATCACGAGGGCTTGTCCAAAGTCATATGGCTAATAAATG</span>
+<span class="n">CTAGAGCCAGAGCCAAAATCCAGATGTGCTGACATTTATAACTGTTGTTTGGACTCCTTTCTGCTCTGTC</span>
+<span class="n">ATTACCATCCTCTCCCATGCCCTGGGCCCAGAAAGGTTGGGGAGGGAGGGAGCCAGCCATCTGAGTCTTT</span>
+<span class="n">TTGCCAGCCCAAAGGAGAGGTCTACTCATGCCATTTATAGCAGCCCAGTTCTCAGGGGGGTTAGAGAAGT</span>
+<span class="n">GTGTCCCCTCCAGCATCCTGATGCCCAAAGGGTACTCCCTTCTGGCATGTCCTCATGTTCTTCCTCTCTC</span>
+<span class="n">TATTCAAGTCCTTCTGTCAACCAGCTGTCCCCTTGGGAATGAAGAAACGCACATTTACTGAGCATCATCT</span>
+<span class="n">GCCTAAGCATTTTTACATGATGTTAGCTCATATAATCCATATGGCATGAATACCAAGTAGATACTGCCAC</span>
+<span class="n">AATTGGTGGGAAACTGAGGCTCAGAGGGGAAGATCTTTGCCCAGACTCACACAGCAAGTGAGTTTCAGAG</span>
+<span class="n">CCTGGATTCCAACCCAGATTTCTCTATTCTACCATCTGCATTCCTTCCACTGGAAGATGGGGCTAATGTT</span>
+<span class="n">ATGCAGACATGCCACCAGAGCATCTGATGTGACACAGGTTCTCAGTGTATGCCACATTCCCTTCCTTTTC</span>
+<span class="n">CCTCCCTCTATTTCTGCTCCATCCCAGAGAAATTCAGAACCTGCCAAAAGGCAAGAGAAGTCCTTGAGTA</span>
+<span class="n">GAAAAATAAGACTCAACAATTATTGAACTCTCTGTGATATAGGCTCAAGGATTATCTTATTCTCACAAAT</span>
+<span class="n">ACACTGTGAATTTAGGTGCTGTTATTAGCTCCACTTTCCATCTGATGAAGTCAAGGCTTAGACAGATAAG</span>
+<span class="n">AAACTTGCCCAAGATCCTACAGCTAGTAAGGGATGGATTCAAGATCGAAACCCTGGTGTTTTTGTCTCTG</span>
+<span class="n">AAGTTCATGCTCTTAAACAGCAAAGCCTACCTCAGCCCCTGAACTGGGAGCTCCCATGCCAGCTGCATGC</span>
+<span class="n">CTGGCAGCCTGCCTGATAGAGCAGGACTGGGCAGGCTGATTAATGAGGGGAACGACCTGGGGAAGGAATG</span>
+<span class="n">AGGTCACATTCCAGGAGGCTGAGGCAAGGCTGTTCACGAATCACTTCAAAATACTCACTCTCTTGGAAAA</span>
+<span class="n">ATACTAGCAGGGTTGGATACTCATGCCAAATAAGAAAACTAGATATACAAAATGGATATTAGGACTGAGC</span>
+<span class="n">ATAGTATTCAACCTTCCAGGGCCATAGGCCTAAAGGGGACCAATTGCTCAGCCATGGGTCATAGCCTTCC</span>
+<span class="n">AAGGACTCGTTCATGTCCTGCCCCCTTCCCATACCTATCCCTGGTCTCCAGAAGATCAGATGGCCTTCCC</span>
+<span class="n">TCTGACTTCCACCCCTCTTTGTATGTGACTTAAGCACATAACATGTGCTTGAATTATTAATAAATTCATT</span>
+<span class="n">GGCTTTAAAGATATTTTTTGGGCACCGACTTGATGTCAGGCACTGTGCTAGGAGTAGTGAATATGACATA</span>
+<span class="n">TTAGTTACCCCCTTGGCCCTTACAATCTAGTGAGGAAGGTAGACATTAAACTGGAGATGAACATTTTGAT</span>
+<span class="n">AGGATAGGGTGCTATAGGAACTAACATTCTTCCTTTCTTCTTTCCCTTCCCCATTCCTCCCTTCTTTCCC</span>
+<span class="n">TTCCCCATTCCTCCCTTTTTCTATTATCTCCTTCCTTCCAGAAATACTTATTAAGAACCTACTATGTGCT</span>
+<span class="n">AGTATCAGTCGAGGTGCTAGAGAAGAAAGCAGTGAACAACAGAGATGCTTGCCCCCTTGGAGCTTATATC</span>
+<span class="n">CCAGTGATGACTGGGGAATTTGACTTGGGATAGGAACAACTTGTGAAGGAACTTGTGAGCCATGCCAGAG</span>
+<span class="n">TTTGAACTTTATCTGGTTGGTAAAAGAGAACCTAAAATTGAATTTAGGCAAGGGAATAGTCTGAGCAGAT</span>
+<span class="n">TTGTGTTTCAGAAAAATCGCAGGAAAACTATATGGAGGATGAGTGGCAGGAGGTGAGACTGGAAGCAGCA</span>
+<span class="n">AGATCAGATTGGAGGTTGCTGGGAGACCATGAGAGAGACAGGTTGGTGCTCTAGACCAAGTGGGCTATTG</span>
+<span class="n">AGAAAGGAAGAGAGCCCCATAACTCACTCCCACAGGGTGAGTAGTGACAGTGGCACCTTGGACAGGATGG</span>
+<span class="n">CAGAGTAGCACCTCTTCAAACTGATACTTAAAAAAATCATGGACACATCTATTTGGTGGGCATAGAGAGA</span>
+<span class="n">AACAAATGACTTGTTATTAAAAATTGCATGCCCATTGCTTTACGTTAATTATGTGTACTGAAGATGACAT</span>
+<span class="n">TTCAAATCATTTGAATTATCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTGAGACGGAGTCTCGCTCTGTC</span>
+<span class="n">GCCCAGGCTGGAGTGCAGTGGCGGGATCTCGGCTCACTGCAAGCTCCGCCTCCCGGGTTCACGCCATTCT</span>
+<span class="n">CCTGCCTCAGCCTCCCAAGTAGCTGGGACTACAGGCGCCCGCCACTACGCCCGGCTAATTTTTTGTATTT</span>
+<span class="n">TTAGTAGAGACGGGGTTTCACCGTTTTAGCCGGGATGGTCTCGATCTCCTGACCTCGTGATCCGCCCGCC</span>
+<span class="n">TCGGCCTCCCAAAGTGCTGGGATTACAGGCGTGAGCCACCGCGCCCGGCCATCATTTGAATTATCTTTCA</span>
+<span class="n">TTTCACAATTTCTCTGTCACTCATAGGAGGGTAGCAAACTGAGGCACCATGGGATGAGTCCATCTACCCC</span>
+<span class="n">ACTGGAGAGACCACATGGAGAGGGGGAGGGGTCCAGCTGAGCCCAGCCCAGTCTCCCGCTGTCCCCAGCG</span>
+<span class="n">GGGTGCCAGGCATGTGAGTGATGACATCCAGGATCCTCAGACCAGACCAGATGCCACCTGAATACCACTG</span>
+<span class="n">AGTAGCCCCAGTCAAAGCTCTATGAAGCCTAAGTGTCTCCAGGCTAAGCCCTGCCTGAATTTATGACCCA</span>
+<span class="n">TAAATGGTGAGATATAGTAAAATGTTAGTATGTTCAAGCCAGTTTTGTTGTTTGCTGCTCAGCAATTAAT</span>
+<span class="n">AAACAGAACAGCCCCATTTGTTGACAGTCAAGCAACATCGAAGTTGACAAGCCCCTGCACCACCTGGAAG</span>
+<span class="n">CCTTGTCATGTGATCCCCACAGAGGCCACTGTGGCTGAGTCTCCAGTGTCCATTACATCCCAGCTGATTG</span>
+<span class="n">CTCTAAGTAAACCTTGCTAACATCATTCTCCTTGACAGGTGGATATGGGGAGGCTTGAGACAATGTAAGC</span>
+<span class="n">CCCTGTGTCATGAGGGGAGGCTCCTAAACACTCTAGTAAAAGATTTTTCATGGGTATCAGCTCTCTTTCT</span>
+<span class="n">CTCCTTCACTGGATGTGAAAAAAGACATATATCCCAATTGCCATTAGCAGCCACCATCTTATTACAGGGG</span>
+<span class="n">GAACTAGACTTGGGAAGAAGCCAGTGTTATTGAGGGCAGAGGGGAGAGATGGAAAGAACCTAAGACCACA</span>
+<span class="n">ATGGTATCAATGAATCACTGAATCAACCAACCCTGAAGCCCACCCTACAGTTGGACAGGTGCTATGTGAA</span>
+<span class="n">CCAATTCTTAAGTTTCCAGCTTAAGCTAATTTGTGCAGGATTTTTTGCTTGCTACTCAAGGCAACCTACT</span>
+<span class="n">TAATTTAATGCTATGGTTCCTTTCTGTGGAATATGGATATTTAGTTGGTAAATTCAATTTCTTAATTTCT</span>
+<span class="n">AGCTTATCCTGAACTCAACCTATTCTCACTTGCTGTAGTTAAAGCCCTAGAATGGAGAATGAGAGAGAAA</span>
+<span class="n">TATTCTTGAGCCAGCTATCATTTAAACCATAATTTTGACTTACTACACAAAATCCATGAAAGCAGTGCCT</span>
+<span class="n">CTAAACAGTAAGAGTGCTACCAATGAATATTAATAGCAATAATTATAAGAAGGATAACAAATATCATGGA</span>
+<span class="n">GGAGTCGCAATATGCCAAACATTGTTTTAAATACCATATGGATTACCTCATTTAATTCCCATAACACTTC</span>
+<span class="n">CATGTGGTTAGAGATATTTTAATCTCCATTTTACAGAGCAGAATCTGAGACAGGAAAAAATTAAGTTAAT</span>
+<span class="n">TTTTTTCTAGGTCACACAGCAGCAAGTGGTGGAATTGGAATTTAAACTGAGAAAGTCTGACTCCCGAGCT</span>
+<span class="n">CTGTCTCTTAACAACTATTATAAACCAAGGTAGTAGTAACAAGGAAAGTAGTAGCACCAATAAAATAAAT</span>
+<span class="n">AAGAAGTATTATAGATTTGTTAGTAAGAAAGGACGACTCGACCAGGCGCGGTGGCTTATGCCTGTAATCC</span>
+<span class="n">TAGCACTTTGGGAGGCTCAGGTGGGTGGATCACAAGGTCAGGAGATCGAGACCATCCTGGCCAACATGGT</span>
+<span class="n">AAAACCCCGTCTCTACTAAAAAAAAAATACAAAAATTAGCTGGATGTGGTGGTGCGTGCCTGTAATCCCA</span>
+<span class="n">GCTACTCAGGAGGCTGAGGCAGGAGAATCTCTTGAACCAGGGAGTTGGAGGTTGCAGTGAGCTGAGATCG</span>
+<span class="n">CGCCACAGCACTCCAGTCTGGTGACGGAGCAAGACGCCGTCTCAAAAAAAAAAAAAAAAAAGAAAAGAAA</span>
+<span class="n">GGACGACTCATGGGCGATGTGGAGGATTTGGGAGTGAATGAATCAATTATGAGGTACAAGTGGACCCTCA</span>
+<span class="n">ATATTTTACACATGCCCATGAACACTACTTATTGATGTTTTATAAATAGCTACATTATTACATATTCATA</span>
+<span class="n">TACACATATATATACTATGGATTTATTGTGTGTGTGTGTGTTTTTTTAGACAGAGTCTTGCTCTATCACC</span>
+<span class="n">CAGGCTGGAGTGAGTGTAGTGGTGCAATCTCAGCTCACTGCAACCTCTGCCTCCCAGCTTCAAGTGATTC</span>
+<span class="n">TCGTGTTTCAGCCTCTGGAGTAGCGGGATTACAGGTGCACGCTACCATGCCCCGCTAATTTTTAGTAGAG</span>
+<span class="n">ACGGGGTTTCACCATGTTGGCCAGGCTGGTCTTGAACTCCCGACCTCAAGTGATCCAGCCACCTCAGCAT</span>
+<span class="n">CCCAAAGTACTGTGACTACAGGCATGAGCCACTGTGCTCAGATGATTTACTGTTAATGTTTCTTTTTTAT</span>
+<span class="n">GTGACCTTTCAAACTTTAGTTTTATTAATCATGGTAACGTATTTTGGGAGAAAGCTGTGACCCTAGACAA</span>
+<span class="n">CAGGTGTCAAAACCAAGCCCCATAGCAGTGGTTTTCCCTTGATCAGCCCCAGTTGCTCCCTCTGGCTTCA</span>
+<span class="n">CTTCCTCCTGGCTGCCTCTGAACTCACCGTGCTAACACTTCCAACTGTAGTCAGGTCACTGGGGCAAAAT</span>
+<span class="n">GCAGAGGAACTGGATATCGCAAAATGCAGAGGAGCTGGGTATCCCAAAATGAGTTCTGCATCTGTTTGAG</span>
+<span class="n">ATAAGACCTTCATTCCTCCAATGTCACTGGTATGTCTGCTTAGAGGAAAGGAGCTCCTGACTGGCTGATT</span>
+<span class="n">TTACCACCAATTTTGCCAGAGCCTAGGCATTGCTGAGTCACACATGTACCTGCTCTTCAGGCTCTTTCTT</span>
+<span class="n">CTGAAAAGTAAAACTCTTCAGTATCGTGGCTAGGCTTCCATACAGACCCAGCCTTCACAAACAAACAAGC</span>
+<span class="n">TGTCAGGTCAAATCCTTGGAGAAGTGAGTCTGTATTCAAACCAGAGCCCTCCAAGGGCTGCATGGGAAAT</span>
+<span class="n">GTTCCCTCTCTGGGATTCAGTCTGTTCTGAGGACTGGGCAGCGGGCAACCTCTGAACAAAGACAATTCCT</span>
+<span class="n">GTATTTTGAGGCTCTTGAGCATCGCGTTGATCTTACGAAGTGGCCAGGCACGCGCCAGCCTCCTCAGAGG</span>
+<span class="n">CAAATACTCCAGGGAACAACGTTGCTTATTGACAACAGACGCCTGTGAGTGGGAAGCATCATTCCCTTCC</span>
+<span class="n">GAGAATTTGATTCCATTCAAGGCTGCTGAAGAAAATTTGTTTTTTAAAACATGACAGATTTTTTCCAGAT</span>
+<span class="n">GATATCCAGGTTTGCTAGCAATTTAAGAGACCTGCTATATTTTATACTGAGTGTATCCACTCCCTGCAAA</span>
+<span class="n">AAACAGATCACAGAGATTGCAACCCTCCCCATGTTGAAAGAACTTTTCTCCAACTGATGTCATTATCGCC</span>
+<span class="n">TTATTTCAAGCTGTTCCCACAGAATTCACCCTGATCTTCTCCTTTGTGCCTTCATTTATTTATACATTCA</span>
+<span class="n">ACACATGCTTTCATTTCACATGAAGAGATTGTCACATTCCAGGCACTGGGCAAGCTATTGAGAATACTGG</span>
+<span class="n">GGTGTACAAGATAGATACACTTCCTGCCATGATGGAGTTTAGCAGGGAGGGCTGACCAGTTCTTAGAGGG</span>
+<span class="n">TGGTGAGTATAATCACAGGGCAATATGGTGGGTATTCTCAGCAGGTACTGGGGATGAGGTGGGGCATCTA</span>
+<span class="n">GACAGGCTGTGAGGCAGGGAACATCTTCTTAAGCAAGTGGAGTGTAACCCAAGACCTAAGGATGAGTAGT</span>
+<span class="n">ACTGGGCCAGGGGAAGAGGTAGAACAGAGTGTTCCAGGCTATGCAGATGTCGTCCACTGGCACTCAATAT</span>
+<span class="n">CTACTCCAACCTTCTTCTACCGTGTTAGTCTGGAAAGCTAAAAGCCACATTTTCTGGGTTTCTTTGTAGT</span>
+<span class="n">ACGTGTTCTGAATGTGAATTAGCTCCATCAGTCAGTGCATTCCTGCGGGATTTGGAAGATGGGGGTGCTG</span>
+<span class="n">CAGTGGCCTCACCTCCCTGCTTCTGTGGCTTCTGCTGGTTGGTAAGCTCCTCATGGACGGAAGTCTGGCC</span>
+<span class="n">GCCACAAGGCACTTCTTGATTTTGGTGGCTTCCTGGGTATTTCAGTTTCTAGGTTGTGGCTGTTTGCTGG</span>
+<span class="n">TTTTGGTGGGTTTTTGATCCTGGCAGAGAGCTGCTGCAGGGGCAGCTTCCCAATTTGGCTGCCAGCTCCC</span>
+<span class="n">TGATGGCAGAAGAGACAAAAGCACCCGAGGTGGCCAGATCTGCCTGCAGCTCTTGGGGTTGTCTTAGAGT</span>
+<span class="n">CTCATTTTCCCGGCTTGCCATTGCTTCTGGAACCATGTAATATCCTGCAATAAATAAATCCCTTACTACT</span>
+<span class="n">TAATCTAACTAGAATCGCTTCTCATTCCTATAACTGATCCCTAAACAACTTACAGACCATAGGAACCACA</span>
+<span class="n">TATGTGAATGTCCACTAGGAAGAAAGCTGGTAGCATTCCAAGGATGCCCCCATGCGTCTGGGACAGAGCC</span>
+<span class="n">ATTTAAGGGAAGAAGGACTGGAGGGACAAGAAAGTGCTAAATCATGGAGTGTCTTATTAAGCAGGCTAAA</span>
+<span class="n">AATCTCTATTGAAAGGGCAACTGAAGGTTTTCAAGCTGTTTGACCCCAGAACCAGATTTGTACTTTTCAA</span>
+<span class="n">ACACACTGCCCACTAAGTGGAGAAGAGATGGAAGGCAGAGACTGAACACAAGAACACCAGTTGGAATCTA</span>
+<span class="n">TTGTGTTAGTCCTGGATTCAGAATATGCCTCATGTATCAATACTCAATTCCATGTTGAAAACAGGTAGTT</span>
+<span class="n">AAGAGATTCTCAAGTTTATTTGTGTAAAAAATTAGATCTTTCTTACTTCATCTTCTATCTTATTCCAAAT</span>
+<span class="n">AGAGTGTGACCACCATTCTTTTCTTTCTTTTTTTTAAGATGGAGTTTCGCTCTTGTTGCCCAGGCTGGAG</span>
+<span class="n">TGCAATGGCGCAATCTTGGCTCACTGCAACCTCTGCCTCCTAGGTTTGAGTGATTCTCCTGCCTCAGCCT</span>
+<span class="n">CCCAAGTAGCTGGGATTACAGGTGCCTGCCACCATACCTGGCTAATTCTTTTTTCTTTTTCTGTATTTTT</span>
+<span class="n">AGGAGAGACAAGGTTTCGCCATGTTGGCCAGGCTGGTCTTGAACTCCTGACCTCAGATGATCTACCTGCC</span>
+<span class="n">TTGGCCTCCCAAAGTGCTGGGATTACAGGCGTAGGCCACGTGCCCAGCCGAGAGTGACCACCATTCTAAC</span>
+<span class="n">CATCAGTGTGCAATATTTCTTGGCAACCTTGTTGTGTCCTTCAACCCAAGGTCACAGCCACCATAAGGAG</span>
+<span class="n">GCCCTCTCCATGGCTTTTGTTCTCTCTTTTCCTTCCTTCCCTCTCTCTCTCACTATGTATCCTCTGTTAC</span>
+<span class="n">AGTAACTATTCCTCCCCTGTTCCTTTTTCCCTAAAATGGCAATGTCTCGTGAGTTGTAATTAGCTCTGGG</span>
+<span class="n">ATCCTGTGCTATCTCTTTTTGCCTTGTGGTTTCCCTATATCCCACCCAAATCTTTCTAAGTAGTCCTTTT</span>
+<span class="n">ACTAAGCCCTTCTCAAATTACCTAATTTGAATGTGCCATCTGTTTCTTGCTGGGACCTTGATGGATACAC</span>
+<span class="n">TGGGTCATTTGTCATGTAGAATTCTCCTACATTTTGGGTTTGGCTAATTGTCTCTTTGTCATATCATTCA</span>
+<span class="n">ATACATTTCTTTATCCTCTAGATTTCCTGTCAACTGGTAGGTAGACCTAGAGACTTGAAGAGATCCAGAT</span>
+<span class="n">TCAAGGTGTTTTTGGCAGGTGGGGTGGGAACAACAATATTTCATAGGCGGCTTCTTTATACCTCTATAGC</span>
+<span class="n">ATCTCATTAGAACCCACATAAAATCTGATTGTCTAATTTTTTTTTTTTTCTGGCAGAAAGCTTGTTGTCA</span>
+<span class="n">GCTTTCTTTTTTAATTTTTTTTTTTTTATTTTATTTTTATTTCAATAGTTTTTGGGGAACAGGTGGTTTT</span>
+<span class="n">TTGTTACATGGATAAGTGCTTTAGTGGTAATTTCTGAGATTTTGGTGCACCTATCATCCAAGCAGTGTAC</span>
+<span class="n">ACTGTACCCAATGTGTAGTCTTATCCCTCATGCTCCTCCTCCCGAGTCCCCAAAGTCCCCATCATTCCTA</span>
+<span class="n">TGCCTTTGTGTCCTCATAGCTTAGCTCCCACTTATAAGTGAGAACATATGATATTTGGTTTTCCATTCCT</span>
+<span class="n">GTTTTACTTCACTTAGAATAATGGTCTCCAATTCCATCCAGGTTGCTGCAAATGCCATTATTTCATTCCT</span>
+<span class="n">TTTTATGGCTGCATAATATTCCACAGTGTATATATATACCACATTTTCTTTGTCCACCCATTGGTTGATG</span>
+<span class="n">GGCATTTAGGCTGGTTCCATGTATTTACAATTGCAAATTGTGCTGCTACAAACGTGTGTGCAAGTGTCTT</span>
+<span class="n">TTTCATATAATGACTTCTTTTCCTCTGAGTAGATACCCAGTAGTGAGATTACTGGATCCAATGGTAGTTC</span>
+<span class="n">TACTTTTAGTTCTTTAAGGAATCTCCACACGGTTTTCCATAGCAGTAATACTAGTTTACATTCCCACCAG</span>
+<span class="n">CATTGTAAAAGTGTTCCCTTTTCACCACATTCATGCCAACATCTATTATTTTTTGATTTTTTAATTATGG</span>
+<span class="n">CCATTCTTGCAGGAGTAAGGTGATATCTCATTGTGGTTTTAATTTTCATTTCCCTGATAATTAAAGATGT</span>
+<span class="n">TGATCATTTTTTCCTGTTTGTTGGCCATTTGTATATTTTCTTTTGAGAATTGTCTATTCATGTCATTTGT</span>
+<span class="n">CCACTTTTTGATGGGGTTATTTGTTTTTGTTTTTCTTTCTTGCTGATTTGTTTGAGTTCCCTGTAGATTC</span>
+<span class="n">TGGATATTAGTCCTTTGTTGGATGTATAGTTTGCAAATATTTTCCCCCATTCAGTGGGTTGTCTGTTTGC</span>
+<span class="n">TGATTATTTCTTTTGCTGTGCAGAAGCTTTTTAGTTTAATTAGATCCTATCTATTTATTTTTGTTTTTGT</span>
+<span class="n">TTCATTTGCTTTTGCATTCTTGGTCATGATCTCTTTGCCAAGCCAACATCCGGAAGAGTTTTACCAATGC</span>
+<span class="n">CATCTTCATCATTTTTATGGTTTCAGGTCTTAGATTTAAGTCTTCAATCCATCTTGAGCTGATTTTTGTA</span>
+<span class="n">TAAGGTGAGAAATGAGGATCCAGTTTTATTATTCTGCATGTGGCTTGCCAATTATCCCAGCACCATTTGT</span>
+<span class="n">TGAATAGGGTGCCCTTTCCCCATTTTATGTTTCTGTTTGCTTTGTCAAAGATCAGTTGGCTGTAAGCATT</span>
+<span class="n">TGGCTTTATTTCTGCATTCTGTATTCTGTTCCAATGGTCTATGTACCTATTTTTATACCAGTACCATACT</span>
+<span class="n">GTTTTGGTAACCACAGCCTTGTAGTATAGCTTGAAGTCCAGCAATGTGATGCCTCCAGATTTTTTCCTTT</span>
+<span class="n">TGCTCAGTCTTGCTTTGGCTATGTCGGGTCTTTCTTTTGGTTCCATATGAAATTTCAGATTGTTTTTCCT</span>
+<span class="n">GGCTCTGTGAAGAATGATGATGGTACTTTGATGGGAATTGTATTGAATCTGTAGATTGCTTTTGTCAGTA</span>
+<span class="n">TGGTCATTTTCACAATATTGATTCTTCCCATCCATGAGCATGGGACGTGTTTCCATTTACTTGTGTCATT</span>
+<span class="n">GATGATTTCTTTCAGCAGCGTTTTGTAGATTTCCTTGTAGAGATCTTTCACCTACTTGGTTAGGTATATT</span>
+<span class="n">CCTAAGTGTTTTATTTTATTTTTTGCAGCTGTTGTAAAAGGGAATTAGTTCTTTATTTGTTCCTGAGCTT</span>
+<span class="n">GGTTGTTGTTGGTGTATAGCAGTGCTACTGATTTGTGTACATTGATTTTGTATCCTGAAACTTTACTAAA</span>
+<span class="n">TTCATATATCAGATCTAGGAGCATTTTGGACGAGTTTTTAGGGTTTTCCAGGTATACATCATATCATCGG</span>
+<span class="n">TGAACAGCGACAGTTTGACTTCCTCTTTACCAATCTGGATGCCCTTTATTTCTTTCTCTTGTCTGATTGC</span>
+<span class="n">TCTGGCTAGGACTTTCAGTACTATGCTGAATAGAAGTGGTAAAAGTGGGCAATCTTGTCTTGTTCCAGTT</span>
+<span class="n">TTCAGTTTCAGTTTTCCATTTGTCCCCATTCAGTATAATGTTGGCTGTGGGTTTTTCACAGATGGCTTTT</span>
+<span class="n">ATTATTTTGAGATAAGTCCCTTCTATGCCAGTTTTGCTGAGGGCTTTAATCATAAAGGGATGCTAGCTTT</span>
+<span class="n">TGTCAAATGCTTTTTCAGCATCTATTGAAATGATCATATGGTATTTGTTTTTAGTTCTGTTTATGTGATA</span>
+<span class="n">TATCACATTTATTGACTTGCATGTGTTAAACTATCCCTGCATCCCTGGTATGAAACCCACTTGATCATGG</span>
+<span class="n">TGTATTTTTTTTTTTTTTTGACATGCTGCTAGATTCAGTTAGTTAGTACTTTGTTAAGGATTTTTGCATC</span>
+<span class="n">TATGTTTATCAGGGATATTGGTCTGTAGTTTTCTTTTTTTGTTATGTCCTTTCCTGATTTTGGAATTATG</span>
+<span class="n">GTGATACTGGCTTCATCAAATGATTTAGGGAGGATTTCCTCTTTATCTTTTGGAATAGTAAGATTGGTAT</span>
+<span class="n">CAATTCTTTGAATGTCTGATGGAATTCAGCTGTGAATCCATCTGATCCTAGACTTTTTTTGTTGGCAATT</span>
+<span class="n">TTTAAATTACTGTTTCAACCTTGCTACTTGTTATTGGTCTGTTCAGAGTTTCTGTTTCTCCTGATTTAAT</span>
+<span class="n">CTGGGAGCATTGTATATTTCCAGGAATTTATCCATCTCCTCTACATTTTCTAGTTTGTGTATGTAAAGGT</span>
+<span class="n">GTTCATAGTAGCCTGGAATGACCTAGTACTTCTGTGGTATTAGTTGTAATATCTCCTGTTTCCTTTCTAA</span>
+<span class="n">TTGAGCTTACTTGGATCTTCTCTCTTCTTTTCTTGGTTAATCTCACTAGGTCTATCAATTTTGTTTATTT</span>
+<span class="n">TTTTAAAGAACCAGCTTTTTGTTTCATTTATCCTTTGTATTTCTGTTTGCTTGTTTGCTTCAATTTCATT</span>
+<span class="n">TAGTTTTGCTCTGATCTTTATTTTTTTCTTCTGCTGGGCTTGGGTTTGGTTTGGTCTTGTTTCTCTAATT</span>
+<span class="n">CCTTGAGGTATGACCTTAGATTGTCGATTTGTGCTCTTTCAGACTTTTTGATGTAGGCATTTAATGCTAT</span>
+<span class="n">GGACTTTCCTCTTAGCACTGCTTTTGCTATATCCCAGAGGTTTTGATAAGTTGTGTCACTATTATCGTTC</span>
+<span class="n">AGCTTAAATAATGGTTATTTTTTATTTATTTTTATTTATTTATTTATTTTTTTGAGACAGTCTTGCTCTG</span>
+<span class="n">TCGCCCAGGCTGGAGTGCAGTGGCACAATCTTAGCTCACTGCAAGCTCCGCTTCCCAGGTTCACGCCATT</span>
+<span class="n">CTCCTGCCTCAGCCTCCAGAGTAGCTGGGACTACAGGCGCCCACCTCCACACCCGGCTAATTTTTTGTAT</span>
+<span class="n">TTTTTAGCAGAGACAGAGTTTCACTGTGTTAGCCAGGATGGTCTCGATCTCCTGACCTCATGATCTGCCC</span>
+<span class="n">ACCTCGGCCTCCATATTTGTTTAATTTTTATCTTGATTTTATTGTTTATCCAAAGATCATTCAAGAGCAG</span>
+<span class="n">ATTATTTAATTTCCATGTATTTGTATAGTTTTGAGGATTCCTTTTGGAGTTAATTTCTGGTTTTATTCCA</span>
+<span class="n">CTGTGGTCTGAGAGGATACTTGATATAATTTTGATTTTCTTAAATTTATTAAGACTTGTTTTGTGGCCTA</span>
+<span class="n">TCATATGGTCTATCTGTGAGAATGTTACAGTGCTGAAGAAAAGAATGTATATTCTGCAGTTGTTGGGTAG</span>
+<span class="n">AATGTTCTATAAATATCTTTTAAGTCCATTTATTCTAGAGTACAGTTTAAACCCATTGTTTCTTTATTGA</span>
+<span class="n">CCTTCTGTCTTGATGACCTATCTAGTGCTGCCAGTGGAGTATTGAATTCCCCCACTATTACTGTGTTGCT</span>
+<span class="n">GTCTATCTCATTTCTTAGGTCTAGCAGTAATTGTTTTATAAATTTGGGAGCTCCAGTATTAGGTGCATAT</span>
+<span class="n">ATATTTATGATTGTGACATTTTCCTCTTGGACTAGTTCTTTTATCATTACATAATGTCACTCTTTATCTA</span>
+<span class="n">TTTTTACTGTTGTTGCTTTAAAGTCTGTTTTGTCTGATATAAGAATAGGTACTCCTGCCCACTTTTGGTT</span>
+<span class="n">TCCATTTGTGTGGAATATCTTTTTCCAACCCTTTACCTTAAGTTTGAGTCCTTATGTGTTAGGTGAGTCT</span>
+<span class="n">CTTGAAGACAGTGGATACTTGGTTGGTGGATTTTTACCAATTCTGCCATCCTCTCTCTCTTAAGTGGAGC</span>
+<span class="n">ATTTAGGTCATTTATATTCAACGTTAGTATTGAGATGTGAGGTACTTTTCTATTCATCATGTTCGTTGTT</span>
+<span class="n">GCCTTGATACCTTGTTTTTTTCCCCTTTTTGTTATTGTTTTATAGGCCCTGTGAGACTTACACTTTAAGG</span>
+<span class="n">GAGTTCTATTTTGGTGTATTTCAAGGTTTTGTTTCAAGATTTAGGACTCCTTTAAGCATTTCTTGTAGTG</span>
+<span class="n">CTGGCTTAGTAATGGTGAATTCTCTCAGCATTTGTTTGTCTGAAAAAGACTATCTCTCCTTCATTTATGA</span>
+<span class="n">AGCTTACTTTTGCTGAATACAAAAATCTTGGTTGACAATTATTTTGTTTCAGGAGGCTAAAGATGGGACC</span>
+<span class="n">CCAGTTGCTTCTGACTTGTAAGGTTTCTGCTGAGAAGTCTGCTATTAATCTGATAGGTTTTCCTTTCTAG</span>
+<span class="n">ATTATCTGATGCTTTTGTCTCACAGCCCTTAAGATTCTTCCCTTCACCTTGACTTTAGATAACCTGATGA</span>
+<span class="n">TTATGTGCCTGGGTGATAATCTTTTTGTGATGAATTTCCCAGGTGTTCTTTGAGCTTCTTGTATTTGAAT</span>
+<span class="n">GTCTAGATCTCTAGCAAGGCCAGGAAAGTTTTCCTTAATTTTTCCTTCAAATAAGTTTTACAAACTTTTA</span>
+<span class="n">GATTTCTCTTCTTCATCAGGAACAGCAATTATTCTTTGGTTTGGCTGCTTAACATAATCCCAAATTTCTT</span>
+<span class="n">GAAGGCTTTGTTGATTTTTTTAATTCTTTTTTCTTTGTCTTTGTTTGATTGGGTTAATTTGAAAGCCTTG</span>
+<span class="n">TCTTTGAACTCTGAAGTTCTTTTTTCTACTTGTTCTAGTCTATTGTTGAAACTTTCCAGTGCATTCTGTA</span>
+<span class="n">TTTCTCTAAGTGTGTCTTTCATTTCCAGAAGTTTGTAATTGTTTTTTTCTTTATGATATCTGTTTCTCTG</span>
+<span class="n">GAGAATTTTTCATCCACATCCTGTATTTTTAAAAATTTCTTTAAGTTGGTTTTCACCTTTCTCTGGTATC</span>
+<span class="n">TCCTTGAGTAGCTCAATAATCAATCTTCTGAATTCTGTATCTGGCAATTCAGAGATTTCTTCTTGGTTTG</span>
+<span class="n">GATCCATTGCTAGGGAGCTGGTGTGACCTTTTGGGGGTGTTATAGAAACCTGTTTTGTCATATAATCAGA</span>
+<span class="n">ATTACTTTTCTGATTCCTTCTCATTTGGGGAGACTATTTCAGTGGAGAGGTCTGAAACTCAAGGTCTGCT</span>
+<span class="n">GTTCAGATTCTCTTCTCCCATGGGATGATCCCTTGATATGGTGCTCTCTTCCTCCCCCAAGGGATGGAGC</span>
+<span class="n">TTTCTGAGAGCTGGACTGCAGTGATTGTTATTGCTCTTCTGCGTCTGTTATTGCTCTTCTGGGTCTAGCC</span>
+<span class="n">ACCACATGGATCTAGGGATTGTTTTTGCTCTTCTGGGTCTGGCCACCATGTGGGGCTATGAGGCTCTGAG</span>
+<span class="n">CTGGTGGTCTGAAAAAAGTCCTGTGATGTGATCTGACTTCAGGTCTACAGCCATGGATACCAGCACCTGT</span>
+<span class="n">TCAGTGGAGGTGGCAGGGGAGTGAAATAAGACTCTGTGAGAATCCTTGGTTGTAGATATGTTTAGTGCAC</span>
+<span class="n">TTGCTGAAGTGGCATTGTTGTCTGGGGTAAATACACAAGGTTTGTTGCCTCATGCCAAGGAAATCAAGGA</span>
+<span class="n">CATGAACACATGTGGAGTGAGGTTAAGAGCATAGGTTTAATAGGCAAAAAAAAGCGAAAGGAAAACAGCT</span>
+<span class="n">CTCTCTCCTATGAGACAGAGGGGTGCCTGAGTGGGACTTCAGGCCTGCATCAGTGCACCGGATTTTATAG</span>
+<span class="n">ACAGGCTTGAGGAGGCAGTGTCTGATTTACACAGGGGCCAAAGATTGGTTGGACCAGGTGCGCACATTTA</span>
+<span class="n">TTTACATAGCGCATGGGGAAGCTGGCCCCCACCCTAATCTTATTATGCTAATGGGGTCTTTACTTTATTA</span>
+<span class="n">TGCAAATGGCGCCACGTTGTCTGTTCCTTGCTGTAGACATGGTTGATAAGGAAAGGGGAAGATGGAGCCA</span>
+<span class="n">CCATGTTGGACATGCCTAGCCCTCAGGTAGCCTTTTCCTAATGGCACAGCTGCCAGCATTCACTCATGCA</span>
+<span class="n">AGCTTCCAGCTTGCTTGTCTATGTCTGCAGCTCCATTTTACAGGCTGCTCTTTGTTAGAAAAGAAGATTA</span>
+<span class="n">TTTTGGATCTGCTTTTCATTAAAAGGAAAACCTTACCAAAGACTCTCTTACCCTCGCTTTCTGCCTAAAT</span>
+<span class="n">AATTTCTTCTTAACTCCTATATCGTCGCTTTCTTGAATTCTGGTTCTATTAGCAGTGAAGTTGTCACATG</span>
+<span class="n">GACACATTCAAAACCTCTGGTTACCCAAGATGTTGCAGGCAGTGGAATTAGGTGTTGTCTTCTCCTTTCT</span>
+<span class="n">GGGATCAGGGTTATTCTGTCATGAGTTGCTGTAATAACCTGAGTTGGTTGGCCTCCAGCCAATAGGTGGC</span>
+<span class="n">ACTTCCAAGAGAACACCAGCTATGATAGTGGTAGGGAGCTCTAAACTTGCCCTAAGATGGCCAGGGTAAG</span>
+<span class="n">TATTTTGGTTTCTCAGGTAATGGGTGGGGCCATAAAGCTCCAAAGAATGATTATGTTTTGTGTTCAGCTA</span>
+<span class="n">CCAAGGTGAATAGGGAAATACCATCAGGTGGGGACAGGGTTAGACAGGTCTGCACTCAGATTCTCCTTGG</span>
+<span class="n">GTAGGGCTTGCTACTACCCAAGGCCACTGTGGTGGGTGGGTGGTGGTTCTCAGGCCAATGGGACTACGTT</span>
+<span class="n">CCAGAGGGGATTATGGCTGCCTCTGCTGTGTCCAGGGAAGTGGTGGATAGCTGGTAGTGAGAGGCTTCAT</span>
+<span class="n">CCAGCTCCCATGCACTTGGAGAGATTGGTCTTCCACTACAGTGCCCTGCTCAGACCTTGCCCCAGGCCAT</span>
+<span class="n">GAGCTACCCAGCTGAGAATCAGCACAGCTTCCAGACCTCATCCCTCCCCATCTGCTCACTCCATTGGTGG</span>
+<span class="n">TAGGTCCTGTGCTCACTCATACCAGCAGCACCTGATCATCCCCCAGACTCCACTCAAGAAATTTGTGCCC</span>
+<span class="n">AGTCCACTACCAATTTCAGTTGGGACCTTTCTTCATCCCACAACACCTTCCCAATTCCACTGACTGCCTT</span>
+<span class="n">TCCCAAGGGCCCCAGTGAGATATAGTCAGGGATGGCTTCCCTGGGCTCAAGCTGGATACTGGGAATATGT</span>
+<span class="n">GCAAGGTACTTCCCACTGCCACTTCCACTTTTATATTTCATGCAACCCCCTAAATCTGTTTCATCTCTAG</span>
+<span class="n">GTAAAGTTAAATCCTTCTCATGTGATCTGGATTTTCAGATTCCCCAGTGGGGATATGTGTTTGGAGGTAG</span>
+<span class="n">GTTTGCCTCCTCTCACACTTTGGGAACTCACAGTTTTTTTTTGCCTGTTTCATGGAATTTGCAGCAGTGT</span>
+<span class="n">GCAACTTCTTTCAAAAAATCTGTGAATTCCTTTGGTTTTCCCGGTACGTTCCTGTGGTAGTTCTTGGAGC</span>
+<span class="n">AAAAGATCATGGTGTGAGTCTGCACACACTGTTCTGTCCATCCATGTGGGAGCTGCACATTAGCCCTGTC</span>
+<span class="n">TCCTATTCATCATCTTCCCCCGTTCTTGTCCTGATTATCCAATTTTGAGTGCTGTTGAGGTTGATCTGTG</span>
+<span class="n">GGTTCAGGTGTTTCAGCTGTAATGATGGTATTATAAAGTTACTCATCAATTTTCACCTAATGATTTTTTT</span>
+<span class="n">GCAGTCACTGATGATTGCTGACTACATCCACTATTTCATTAAAGATTTGCAAAATAGTGATTTTCTAATT</span>
+<span class="n">CTACCCTTCATTCTGCACCTATTAGCTGGGTTTTTCAATAAAGAAGAACTTTCCCTCATCAACCAAAAAG</span>
+<span class="n">CTTCTTGCAAGGTTTTCTTTTTGGTTTACTGTGGGTTCATTAAGATGTGACAGATACGACTAGATGCAGG</span>
+<span class="n">GACTTCAGAATGCTTTCCACCGTTGCTCCCTCACATATATACTCTTGTCATCATGTACTTTTATTCTACA</span>
+<span class="n">TATTATTATTGTTGTTTTCATTTCAATGTTTCACTCCAATGTTCATTTATACAATCAGTGAAAAATATTC</span>
+<span class="n">CCCATAAATTAATATTTCTTTCTTTTCTTTCTTTCTTTCCTCTTCTTTTTTTTTTTTTTTTTGACAGGGT</span>
+<span class="n">CTCACTCTGCCATCCAGGCTGGAGTGCAGTGGCATACTCATGACTCAATGCAGCCTTGATCTCCTGGGTT</span>
+<span class="n">CAAGCGATCTTCCCACTTCTCACCTCAACCTCCACAAGTAGCTTGGACCAGAGGTGCATTCTACCATGTT</span>
+<span class="n">TGGCTAATTTTTTTTTATTTTTTGCAGAAATAGTGTCTCCCTGTATTGCCCATGCCCTGTATTACCTCAA</span>
+<span class="n">ACTCTTGGGCTCAAGTGATACTCCCACCTAGGCCTCCCAAAGTGCTGGGATTGCAGGCATGAGTCACTGT</span>
+<span class="n">GCCTGGCCAAATTAATCTTTTTCTTTTCTGCATTCTTTTCTGTGTCTCTTCATTCTTTTCTGCATCTCTG</span>
+<span class="n">ACTTCCAATCTGGAATCTGGTTTCCAGCCCTAAATTTCCTGGCTTCAGCACTGGCAAATTCTATTTTCCC</span>
+<span class="n">AGGGAGGGGAAAAAAAGTACCTGACCAGGCCCAAAGACTTCATTTATTTTCTTCATTATTTTATTTACCT</span>
+<span class="n">CTATAGGGGCTTTTTCCAAGTCACCCTCAATGGGATTTCCTTTACTCTATCTTCTGTAACAGCCAGAGCA</span>
+<span class="n">CATCAAATACATAGAAGCTGGCATTCTAGGCCATAGTAATTGTTCAGTAGGTACTTTATCTTGTTTACTT</span>
+<span class="n">TGTTGGATAGCCTTTCTTAACAAACTTTCTCTGATATCTCAGTCTCAGATACAAGTCTCCCTGCCTTTAA</span>
+<span class="n">CCATTGTATCAGTTAGGACTTGCATTAACTGCAAACAAGTAAAAACTCAACCACATTTTACAGTTAGGCA</span>
+<span class="n">TTACACATATGCACACATGTATGTGTACACACACACACACACACAGAGAGAGAGAGAGCGAGAGAGAGAG</span>
+<span class="n">AACTCTAGAACTTCTAGTCCCATGGCTTAAAAGTGTCAGGACCACTGACTCCACATTTTTCCAGGCACCT</span>
+<span class="n">TCCTAATGCCTGTGAGTCAGCTAGTATTGCTTCAGCCATGACATCTATATTCCAGACAAAAAGTAGAAGG</span>
+<span class="n">AAGAAGAAGAAAGGAAATGTCTCTACCTGTATCAGGTATATCAACCAGACTGAGAAATCCCCACTAGTCC</span>
+<span class="n">GTTGCTTACACCTCATTGGTCACAACTCAGTCAAATGGCTACCTCAATCTGAATGAGAGGCTAGAAAATG</span>
+<span class="n">TGTATATATGTGTTAGTTGTGCACTTCGCTATCCTAAACAAAACTGCAGTTCTGGCAAGGAAACATTGAC</span>
+<span class="n">TTTGGGTTGACAATCAACAGTTTGCCCTCTCCCTACTCTTCCCTTGGCATAGGATGCCCTTCCCTCCTCC</span>
+<span class="n">CCACCTACTGAAATCTTATTAGAATATCACCTCTTCCAGGAAGTCTTTTCAGGTTATCTCAGTAGGAATT</span>
+<span class="n">TTCTTTTAATTCTTCAGTTTAATAAGCAATATCTTGTTTGCCTAGTAACTGCAAGGCGCTACTAAGATAC</span>
+<span class="n">TATAGATGGAGATAAGTAAAATAGCGTTACTGTCCTGATAGAGCTCAGTTTACTTTTAGTATCTAAAAAT</span>
+<span class="n">CAGACTCCAATTATTATTTAATGATTACAGAGTTTCTATTTGAGGTGATGAAAAGGTTTTGGAAGCAGAT</span>
+<span class="n">CATGAGGATGGTAGCACAACAGTGTGAATGTACAACTGACCCTTAAGCAACATGGGTTTGAATTGCATGG</span>
+<span class="n">GTCTATTTACAGAAAGATTTTTTCCAACCAAATGCAGATTGAAAACACAGTATTTGCAGAATGTGAACCC</span>
+<span class="n">AAGTGTAAAGAGGGCTAACTTTTCATGTATATAGGTTCCACAGGGCTTGACTACAGGACTTGAGTATACA</span>
+<span class="n">GGATTTGGATATATGTTGGGGGCAGAGGAGTTCTAGAATTAATCCCACTTGTATACTGAGGGGTGTCTAT</span>
+<span class="n">AATTAACACCACTGAATTGTACACTTCAAAATGATTACAATAGCAAATTCTGTGTTATATATATTTTATC</span>
+<span class="n">ACAGACAGGCAAATCGGACTCCAAATCCAAAAATGCCAGCATGGTGTGAAAATACAGACAGAAAGGAGGT</span>
+<span class="n">ATGGGTGTTGGGGTGCATAGAAAAGTCATTTAAATTACCTAGGCATTGGATCCTGTTCTGATGCTGTCTA</span>
+<span class="n">TTAGTTCATCTTCACACTGCCATAAAGACATATTCAAGACTGGGTAATTTATGAAGAAAAGAGGTTTTAT</span>
+<span class="n">TGACTCACAGTTCTGCATGGCTGGGGAGGCCTCAGGAAACTTACAATCATGGTGGAAGGGAAAGAGGCAT</span>
+<span class="n">GTCCTACATGGAAGCAGATGAGAGAGAGTGAGCAAGAGCAGGGAAAACTGCCCTATAAAACCATCAGATC</span>
+<span class="n">TCTTGAGAACTCACTCATTATCATGAGAACAGCATGGGGGGAAGTGCCCCCATGATTCAATCACCTCCCA</span>
+<span class="n">CCTTGTCCCTCCCTTGACACATGGGGATTGTGGGGATTACAATTCAAGATGAGATTTGGGTGGGGACACA</span>
+<span class="n">GAGCCAAACCACATCACACTGCTAGTTCTGTCTACTGAGAAGCAGATGCGGAGATGCAGTTAGGACAAAC</span>
+<span class="n">AGGCATATTTGGGTAAACTTGTGAAAGGAATTTCTTCTACTTTCACAAGAAACTTCTTTTCTTAGAAGCA</span>
+<span class="n">GGACTGGTCAGAGGAAGCCATTAAACCGTGAAGTAGATCAAGTAGAAAAAGCCTCTCTGCCTAAAGGGGA</span>
+<span class="n">GCTCTAGAGGAAAGAGCCCATTACAGGAATCCTGCTTTGGGTGGAAGTGCCTAAACCTTGCTCAGTCATT</span>
+<span class="n">GGCTGGGGCTGCACTGGGAAGAACTGAAGGAGACCAGAAAGAACAAGTGGAAGCTGTCAGCCCACCACCT</span>
+<span class="n">TCTCACAGCTAGGCAAGGCATCCTTTCTTGCAAGGGAATAAGTACAGCCCACCTCTGTCTGCCACAGCTG</span>
+<span class="n">CTACTAGCTATGTGATCTTGTGGCATTTGAGCTTTCTGTGCCTCAGTTTTTTCATTTGCAAAATAAATAT</span>
+<span class="n">AATAATAAAAATAGCAACCCAATCTGGTTATTGGAACAACTATATGAGCTAATGAATGAATAGTGCTTAG</span>
+<span class="n">AATAGTGTCTGTTTAATTATAGGTGCTCATTAAATGTGGGCTATCATTATCAATATTGCCAAGCAGAATG</span>
+<span class="n">TACATTATGAAATAAACACAAAACTAAATTACATATATATGATACAGTAAATATAAATCAAAGTTCTGAT</span>
+<span class="n">ATCTTCTGGACCTTGATTGGTTTTGTTCTATTTTTAGACTTCTGGTTTGGGCAAGAAATGACAGTGACTG</span>
+<span class="n">CAGGTAAGATGGTGGCAGTAGATCTAGTAAGATGTGAACAGATTCAAAATGCAATTTAAAGTTTTAGAAT</span>
+<span class="n">ATGCAGTGAAGTGGTCAAGGGGAGTGAAGTAGAATCAAGCCTGACTCTCAGGCTTTTGGCTTGATCAGCT</span>
+<span class="n">GTGTGGATGCTGCTGTCAATAAGGTGAGAAAGACTGGAGGACAAAGGGCAGATGGGGGCCAGTCAAGACT</span>
+<span class="n">TTCATTTGAACCCATGAAGCCTGAGTTATCTGTGAGGTAGTGGAAGCCAACAAGGCAGGTGGCCATGAGA</span>
+<span class="n">ACTAAGAGATGCAATCTGAGCTGGAAATAGAAGTTTGGGAGTAATTACCATAAGGATGGTATTTAAGTCC</span>
+<span class="n">ACAGGAATGGACAAGATAACTGCGAGAGTGAAGAAAACCAGTCTCTACCTGCTTCCTCACCCTCCAAATC</span>
+<span class="n">CAATCAAGCTTTGGCTCTACCTCACTGTATTTTGGCTCCACCCCTCTTTTTTATCCTCTGTTTTGCTGCA</span>
+<span class="n">CCTGTTCAGTCAATACTGCTCATGACACTGTCCTTATAAACCATATAAAATTAATCAGGGAGGAAGGGAG</span>
+<span class="n">GAGGAGAAGCAAAAATAAGCCAATCTTGCAGCACATTTAGTGTTAATCACTAGGCCAGTTTGCTCTCTGA</span>
+<span class="n">CCTGCTTCCTCATAGTTGTTTAGTGCCTATTGCCTCAGAATCACGTAGACCCTGTTACAGGTTATAGTTC</span>
+<span class="n">CCCCTAACTGCTCTATACATAACAACTTGAACATTATACAATGTTACGTTTTCTATATGAGATCATCTTT</span>
+<span class="n">TAAGTCCTGCATGCCAGTGAAACTATGGACACCAGCTGGTCTGAAGGACTCCACAAGAAGCTGACTCACA</span>
+<span class="n">ATGCAATTTCCACATCCTTATGATTTTATACCCCTTACTCCAACCACTTAATGACCCCAATTTTCCAGTC</span>
+<span class="n">TCCCACCCTCCATGATCCCCTTGTGGATCCAGAAGTCCTTGTGGAGATGTATTTGAGAGTCTCCTTCCAT</span>
+<span class="n">CTCCTTGCTCAGCTTCCTGAGATCATTAAACTCTTTCTCTGCTGCAAACTTTGCTGTCACAGTGTATTGG</span>
+<span class="n">ACTATTACTGTGCCATGGGACTACAAACCTGTTGGTCCGGTAAAAAATTTTGGTGAGTCAAGCCTAGAGC</span>
+<span class="n">CCCTTGTGGGCATTTGTCCATGGCTCAGTGCCCCTGCACAATTGGGACAGGCCCAGAGACAAGCCCACGT</span>
+<span class="n">AGCCACTAGGTTCTATTGTACTAGGAGCTGTTGACAGGGCAGTGCCAACCTTCAGCACATAAGTTGCTTG</span>
+<span class="n">CACCAAAGGAACAGTTTCCAGATTTGAAAGACATCTTTAGTGAGTTTTCTCTGTGCAACTGGCACATTTA</span>
+<span class="n">ATTGGCTGAAACTCTTTTGGCTCTAAGTCCCTTGGCCATAGGGTCCCACTGAGGGACAAGATGGACCCAA</span>
+<span class="n">GGCAGGTAGCCATACCACTTCGGCAACAACATGGGACAGAATAAAAGCTTGGCCATCAATGCAGCTTCTG</span>
+<span class="n">GCATATCTTGACCAAAAAAGGGAATGTAAATTAAAAATAAAATTCTAAGCCCCTACCAACTGAACAGACT</span>
+<span class="n">CTGCTTATAGCCAATGGAAACCCACAAAGACCTTATAACCTGAGTTCCTAGCCATGATGGAATGGGTGGT</span>
+<span class="n">CAGACATGTCTCATTATACTGTCTCCCTCTCAGCATCTAGACACAGCAACTGGCCAGCATTAATGTTAAA</span>
+<span class="n">ATGGAGGTCATAACACTGACAGAACAGACTCTTTGTGTCAGTAAGATTTCATGAGTATTCCAGAGTTTTC</span>
+<span class="n">AGTCTTATTTTGCAAGGACTTTTGAAATTTGAGCTCACAGCTCTGATAATAATTAATTGCACACCAGATT</span>
+<span class="n">ATAAGATAATAATTTATAGATAAATATAAATTTATTTATAAATATGCATTTATCTAAGACGTATAGATAA</span>
+<span class="n">TTGAATTATCTATAAGTTGTATGCGTTGAACTACCAGCTGTTTAGGCTTCTGTATACCTGTCCTTGATTT</span>
+<span class="n">GAAAGGTCTGAATTAATTTTATCCCTTGGAACTGGCCCTTACGATCTTATGTGCCCACATCTTTTGTCAT</span>
+<span class="n">GGTCCCTGGGCCTAGAGAGAGGATGTTTGATATTGCATAATTTTAGCAGCAGTGCGTTGGCAATGGAAAA</span>
+<span class="n">CAGATTGTCCCAGTGAGATTGAATAGTTTCAGATTCTGGCCCTGTGTTTCATGAAATATTATCAGAGACT</span>
+<span class="n">AAAAGATAAATTATTATCTTATAGTCTGGTGTGCAATTAAATGCTGTGCTAAGACAGTGGATTGGAGCAC</span>
+<span class="n">TAAGGTGTTTGTACTGCACCCCTGAGATCCCCAACTGAGCACTTGTAAATACTTACAGGTTACTCCAAGG</span>
+<span class="n">CAGTTTCATTCCTCTAATCCTGACTCTTACCTCAACTGTGCCCCTTGCCAACAGGAAGAAGCTAGGGTCA</span>
+<span class="n">TCTTCCCCCAGTTCCCACCATATTAGCTCTCACTTCAGGATTGAAGTATGACCAAGCCCACAGAGGGACA</span>
+<span class="n">GAAACCATCCTTATAAATAGTATAAAATTAATCAAGGAAGAAGGGAGGAGGTGAAATAAAAATAAGCCAA</span>
+<span class="n">TCTTGCAGCACATTCAGCATTAAGCACTAGGTCAGCTTGCTCTCAGACCTGCTTCCTCATAGCTGTTTGG</span>
+<span class="n">TGCCTATTGCCTCGGAATCACGTAGACCCTGTTACAGGTCATAGTTCCCCTTAACTTCTCCTTAACAACT</span>
+<span class="n">TAACTTCTCCCCTTAACAACTTGAACATTGTACAATGTTACGTTTTCTATTTGAGATCATCTTTCAAGTC</span>
+<span class="n">CTGCATGCCAATGAAACTATGGACATCAGTTGGTCTGAAGGACCCCATGAGAAGCTGACTCACAAAAGAA</span>
+<span class="n">TGCAATTTTGACATCCTTATGATTTTATACCCCTCAATCTAACCAATCAATGACCCCAATTTTCCAGCCC</span>
+<span class="n">CTCACCCTCCAGGATCTCCTTAAAAACCCCAGCCAAGAGCTTCCTGGGGAGGATTTGAGAGTGTCTTTCC</span>
+<span class="n">ATCTCATTGTGGGTGCCCTGTGATCATTAAGCTCTTTACTGCAAACCCTGCTATCTCAGTGCATTGGACT</span>
+<span class="n">ATTACTGTGCAGCAGGCATTCGGACCAGTCCATCCTGTAACAGTCACCTGGATGAGGACACCATCTTGCC</span>
+<span class="n">TGATTGGTTTCCCATGCCCTTATTTTGCTTCCTCTCTCATATCCTATTTCCTTATTCTTCTAATCCGTCT</span>
+<span class="n">TCCAAAATGGCCACAAATCATTTTTCCAAAACCCCAATCTGCTCATGTCAATTGAATACTTGTTTCCTTA</span>
+<span class="n">AAATCTTTCAGTTACTTCCATTGCACTCAGAATAAATCTCAACTTTCTCAGTTTAGAGCTCTTTCTTGGC</span>
+<span class="n">TAGGCCTTTCATGTTCAGCCTCCAGCTTGCTTTTCTACTGATTTTTCTATGATCTCTAGTGTGAACTTCA</span>
+<span class="n">CAGGAAAATCATATCGGACTATTTGTACGTTTCTCAATGCTTCCAATTATCTCATGCCTTGCCACCTCAA</span>
+<span class="n">TGGCCTCAAGGCATCCTCAGACTCACAATAAAATCCAGACTCCTAATCATGGCTTGCAAGGCTCTGTCTA</span>
+<span class="n">AACTGGATACCACGTCAACCTCATTCCCTACCTCTCTTTCCCTCCCTCCCTGCTGTAGCCATTGACCTCC</span>
+<span class="n">TAGATATTCCTTCTCTTTTTTCTTTTCTTTCTTTCTTTCTTTTTTTTTTTTTTTTTTTTTTTTTTTGACA</span>
+<span class="n">GATTCTGACTTTGTCACCCAGGCTGGAGTGCAGTAGCATGATCTCGGCTAACTGCAACCTCTGCCTCCAG</span>
+<span class="n">GGTTCAAGCGATTCTCCTGCCTCAGTCTCCCGAGTAGCTGGGACCACAGGTGCGCACTACCACGCCCGGC</span>
+<span class="n">TACATTTTTTGTATTTTTAGTAGAGATGTGGTTTTGCCATGTTGGCCAGGCTGGTCTTGAACTCCTGACA</span>
+<span class="n">TCAAGTGATTAGCCCACTTGGGCCTCCCAAAGTGCTGGGATTATAGGCATGAGCCACCGTGCTCGGCCTT</span>
+<span class="n">CTCTTTTCTTTTGACTTAATTTTTTTTAGGGCAGTTTTAGGTTCACAGTAAAATTGGGAGGAAAGTATTG</span>
+<span class="n">AAATTGCCCATATACTCCCTGCCCTAACACATGCGCAACCTCCCCTATTACCAATATCCCCTGTCAGAGT</span>
+<span class="n">GGTATATTTGTTACAATTGATGAATCTATATTGACACATCTATCACCCAAAGTCCACAATTTACATTGGG</span>
+<span class="n">GTTTACTCTTGGTGTTGTATTTTCTATAGGCTTGGACAAATGTAAAATGACATGTATCCACCATTACAGT</span>
+<span class="n">ATCATACAGATTATTGTAAGAATAATCCTAAAAATTCTCTGTGCTCCAACATCCTAGCTGTTTCTTGAAC</span>
+<span class="n">TTGCCAAAAAAATTCCAGACTCAGAGATTTTACATTTGCTGTTCCCTTTATCTTGAATGCTGTTCCTCTA</span>
+<span class="n">GATGGTCAAATGTGTTAGTCTCTCATTTCAAATGAATTTCCACTTATATCTTGCCTCATCAACACCTCCC</span>
+<span class="n">CTCTCCACTCTATGCATAACAACTATGGCCCCTTTCGTACCTCCCCCTATTATCTCCTGTATCTCCTTCA</span>
+<span class="n">TCAACTTCATTTCACTTTTCCCTATCTGATGTTATATTACATATTTCTTCTGTTGTTTGCTTACTATCTC</span>
+<span class="n">TCTCCTCATTCTAGAATACAAAATGCACAAAGGCAGAGATTTTTCTTTTGTTCACTGCTGTATCCCCATT</span>
+<span class="n">GCTTATATCAATTTCTGTATTTATTTATAGGTTATTTATTTATTTCTGTATTTATAGTAGGTATCTAACA</span>
+<span class="n">AATACTAGTTAAGTGAATTAATGAATGAATAAACACAGGAATAAATGCCACCACTTCTGACTGTCTTTTT</span>
+<span class="n">CCACTTGGTTAACTCCTACTCATCCTAAAGACTCAGGGTAGGCACCAACTCCTCCAGCAAGTCTTCCCTG</span>
+<span class="n">ACCGTCCGCCCAGGCTGGGATGAGGGCCCTTTGTTGTTCCTCTGGGCTCTCTCAGCCACCTGGACTGGCA</span>
+<span class="n">CCTCTATTGCAACACTTCTTATCTTGTGCCTCCTAACCCAATCTCTAAGCTTCTCTAGGGCAGAAAAATC</span>
+<span class="n">TTATGCATCTCCCCCTCTCTCCAGTGCCTGGAAGAAAGTAAGTGCTCTGTAAATGTTCATGAAATGAATG</span>
+<span class="n">GAAGAATGAATAAGTGAAAGAATTATAGCAGAATTTAAAATGTGCAAACTCTGATGTGCAAAATAACACA</span>
+<span class="n">ATTTTCTTTGTCATTAACTGATCTACTTTGCTCTTGCATCTCCATTCCTCCTGATGGTGAAAAATAATCC</span>
+<span class="n">TTAAATTTGCCAATTAAAGGCAATTCAGTTTGCTTTGCAACTGAATTCAGTCTGCAACTGAATTCAGTCT</span>
+<span class="n">GAATTCAGTCATGTTGGCGTTGATTATTGAAAAAATATCAATACCATTTCTCCCCTCATTCAAAAGACTC</span>
+<span class="n">CTCCTTTTCTTCTTTGCCAAGATTGTATCTGGGTACAAGTGTGTATTTCTGCATCTCCATGGTCAAGAAG</span>
+<span class="n">GTGGTGGGGAAGAGAGTACAGGTGAAGGTGGAACCCCTGGTCTGAGTTCCCTTAGTTCTCAGTGAATTCC</span>
+<span class="n">AGAGGGTTGGCGGGTTTAACATGGTCCCTGGGCACTCTGAGTGGATGTCTACTGAGAGATTCATAATACC</span>
+<span class="n">CGTGGTCTTCTGGGTGTCATCCATCTATCCATAGCCCCTGATGCTGAAGACTTCACCCTACTTTACCCTC</span>
+<span class="n">TAGTTGTGAGGTTCCTGCTGTCTGTGGCTTCTAGCTCCTGTTCCCAGGACTGGAGCTTGCAGGAATGTTC</span>
+<span class="n">TGTTTCTCTGCCCAAACTAGTGTGCAGCCTCTACGCTGTTGCCTCTAAGCACCTCCTTACTATGTCTGTA</span>
+<span class="n">CTGTGTTGGACATGATGCCATGCTGAACCTGAGAGTTGGGATTTTTTTCAGAGCTAGATCCTAAGAAATA</span>
+<span class="n">AGAAACAGATGATTCTGCCCTGTTATCCCCACATCTCACTCATAAAACCTCCTGCTTCAGAGAGCTCAGC</span>
+<span class="n">CCTCAGGTTGGGCTTTCTTCTCCCTCTGTCTCCACTGCCCTAAACCCCAGTACAAAAGGAGCTTTCTGTT</span>
+<span class="n">ACCCATTCCTGTCTGATAGATGCCCCTTTATTTCTTACCTTCCTTCTTTTGTGCTCTGTAGATTTCTATG</span>
+<span class="n">TTCCAGGTGGTTTCCTCTGTTATCACACTTGGGCAATAAGCACCATATGGTGTAGAGATGCTAGAGATTC</span>
+<span class="n">AAGAAAAAGGAAACTACCCTGGAGATAGTCTATTCAGATGAGAGGCAGGTGGGTGGATGGATGGATGGTT</span>
+<span class="n">ATTAGATGACTTGTCCCATATCATCAGGTCCTTATGTAAAGAGCCCAGGACTCCAAGCCAGATCTTCTGA</span>
+<span class="n">TCACTCTTTCCATTGTATCTTTTGGATTGAAAATCCAGTTCTCCAACTTCCCAACTTTCCCAAATGCCAT</span>
+<span class="n">TCATCCTGGAAAGCTTTCTCAGAGGGTAATTATGTGCTTGAGGACTCTGAGCTGTTCAGATGTGAGGACA</span>
+<span class="n">TGCGTCCCAAGATGCGCACAGCAGTAATTTGCCTTGTGGGTTTCCCAGTGCCCGGTGCTCTGTAGAGCCA</span>
+<span class="n">GCTAATTAAAGGCCTTATCACAATTATGGAAAATCACAAGGCAGCAGTTTAATTAGATTTTCATGTGGAA</span>
+<span class="n">CTCTGTTTCATTCCCCTCATTTTTGCCTAAGATGTCTGAGAGTAGAATTGAGTCTAATGGCCATTAAAGT</span>
+<span class="n">AGTGTTTGTTTTTATATTTAATTTCTTCTTCTCCAAAATCTTGATGCCTGAACCCTAAATGCCCAAGCAA</span>
+<span class="n">CGCTTAGATGTCTATTCAGCATTTCAAACTTAGTGTCCAAAATGAACTCCTGATTTCAACCCTATCTCTG</span>
+<span class="n">TTCTTTCCCTATCTTCCCCATCTGGCAACACATTCTACTAAATCTTGGAATTAACTCTCCTCTTTTTCTA</span>
+<span class="n">ATTCCTCACATTCATTCCGTCAGACTTCATCACTTGTCTCTTCGCAATATTTTCAGAACCTGAGCTTCTC</span>
+<span class="n">ATCACCTCCAAAGCTACTACCTTTTTTCAAGCCACCATCATCTTTGCCTGCACTATTTCAAAAGCTTCTG</span>
+<span class="n">ACTGGTTCCTCTGCTGCCACTTTTGTCCACAGAATTAAATGGTCTGTGTGTGCCTGTGAGTGCACACATA</span>
+<span class="n">TAGCTTAGTCACTCTAACAGAGACCCAAATAAACAGTGGCTTAAACAAGACAGGAATTTGTTTCTCACTC</span>
+<span class="n">ATGTAGCAACCCGTGTGGAAGCAGTCCAGGACTTGTGTGTCAGGCACCCTGTTTTCATGGTTCCGCCCTC</span>
+<span class="n">CTTAGGGTATTTCCCCTGCTCATAGGATCCAGTATTACTCACCCCCATGTCTGCTTTCCATCCAGTAGGG</span>
+<span class="n">AGGAAGCCCTGGAGAAGAGGAAGGCATGCCCACTTCCTTTAACTGCCTGGCCCACAAATTGTGCCCACCA</span>
+<span class="n">CTTCCACTTGTCTGCCAATGGTCAGAATTTTGGCTAACAGCCACATCTAGCTACCTGGGAGGCTGGAAAA</span>
+<span class="n">TGCAGGCTATTTCTGGGCATCTAGGAGTCCAGCTAAGAATCACAGCTCTGTTGCTACAGAAAATGTCTTG</span>
+<span class="n">AATGGATATTGAGGTTTCTGTCCTACTCATTCCCCCTGGTCTGTTTTCCCTACAGTGGCCAAAGAGAATA</span>
+<span class="n">GCATAGAGATCAGGACATGTCACTCAGTAAATGACAGGATGGCACTCAACAATTATTTTTCTAGTGCCCC</span>
+<span class="n">ATTTAATAAATTCCAAGTCACAAGAATCAGGCCTCAATTCTAGTCTGCACTAGCTGGAAGAGACCCCAGA</span>
+<span class="n">GAATATTTAGCGCATGGTTTTCAAAATGATTTTAGGCTATATATGTATATATATTTAGAGAAACTTTAAT</span>
+<span class="n">AAGGAAGCCTACTATGTTAAATGGGGAACAAGCTGGCTGCTATTTTTGAAATCAAGGGCAAGATGGATTC</span>
+<span class="n">ATTTGCTTTTTCTTTTCTGCTTTAACTCAAAGCTGGTTTAGATTCAAAGTCCCACTTCCAGAGGTGTTCG</span>
+<span class="n">GACCACAGATTGAAACAATGAACTCCAGCAGAACATCTTCATTTTCCCTATGGGGAAACTGATGCCCAGG</span>
+<span class="n">GAACAACAGGAGTTGTAGCTTACCGAGCTCAGTGCCTCACATGCTTGAGCTAACTTTCCCAAAGCGGGGA</span>
+<span class="n">TCCCGGCCATGGAAGAAAGCCTGCCTCATGACTGGCCACTCTCCCAGAAGCACCAGGCTATGTGCCCACC</span>
+<span class="n">AGAGGGAATCCCAGCAGATTGATTCCTGCAATAACTTCATGCTCTCTGAAAAAAAAAAGTACCATACTCA</span>
+<span class="n">TGTTTCAGTACCTCCAAACTGGCAGTGGGGTTTCCTTTGTGGGGGAGGGGTAAGGAAGGAAACACTGGGA</span>
+<span class="n">GGAGCCCTTCACTTCAGCTAAACCAGCTCTGAAAACTTGGCCAAGTCTCTCATTTACTTTGGTAACCATA</span>
+<span class="n">TCTGCTTGGAAGTGTTGCTGTAAAGATCAGAAAGAGATGAGGTCTACAGGCAACAATAGAGAGATGAAAG</span>
+<span class="n">GGATTGTTTTTTCTGTGTGGGCCGTACAATATCCCACACTCTCATACCCTTGAGGGGCTTACCAGCTGAA</span>
+<span class="n">GTGGAGACAGGAGAAGAAGGGAAGCCAAGAATCTCAGGTGCCTGGCACAGAATCAAAGGAGCAGTGGGAA</span>
+<span class="n">TTGTGCATGCTGCAGGAGGGACCAGGGCTAAAGTGGTGAGGACAGGGACACACTCCAGTGCTGGGTGGAA</span>
+<span class="n">GAGAACCTGAGGGATAACATAGAGGTGGTGAAGGACAGGGCTCCCCACCTGGGGATCTTGTTAAAATGAA</span>
+<span class="n">GATTCTGGCCAAGAGGACTGGGGAGAAGCCTGAGATTATTCATTTTTAACAAACTTTCTGGGGACGCTGA</span>
+<span class="n">AGCTGCTGCTCCTGGTAACACCTTTAGTAACAACATAGAAAAAGAGACCCCACTGGTGCAGGGATCAGGC</span>
+<span class="n">CAGCCTGAATTCCAGCCTCTCTTCTACCACCCAACAGTTGTGGACCTCAGGCAGCCTCGGGCCTTTTACC</span>
+<span class="n">TTATAAGTGGGCACACTATTAGCAACTTTACACCAGAACCGCCAGCTTTCAGAATCCACTTCTCTCCTGT</span>
+<span class="n">GCGGACAGAGGTGCAGACACATCTAGTGTAAAATGGGCCATCTGCAGTGACTCTCTCACTCTGTTTCTAG</span>
+<span class="n">TCCTCCGCCAGCCCTCAATCCTACACACTTCCTCCCACCGCCTGTTTGTTTTGTTTTGTTTGATTTCATT</span>
+<span class="n">ATCTTCACTTCTCTGAAAAACAGAGGTAATACTGGCCTTTCAGGTTTGCTGGGAGGATTAGGTGAGCTCT</span>
+<span class="n">TGTGTTCTCAGAAGCAATTAGACCCGCCCCCAACCGCTCCCATTGCCCTGCCCCTCCCCAGCCTAAGGTT</span>
+<span class="n">TGTCCTTCACTTTCTATCACACGACCCCAGTGTCATCCCTAAGGCAGGGAACCTCTGCATCCTTTCCAGT</span>
+<span class="n">CTTAGACATGGGCAAGACACCTGGGAGCAGCCTCGCTAGACCAAAACTAACACCCAGAGAGGAACCCACC</span>
+<span class="n">CTCCAGGGGAACAAGAGGATCTCTTGCTTCCTGCCTGAGACTCTGAGACCTGAGAGGTCAACCCACCAAA</span>
+<span class="n">TCCTTTAACCTCTTCAAGTGGTGTTTTTGTTTGTTTTTTGAGATGGAGTCTCACTCTGTCACCCAGGCCT</span>
+<span class="n">GGAGTGCAGTGGCATGATCTCGGCTCACTGCAACCTCCGCCTCCTGAGTAGCTGGGATTACAGGCATGTG</span>
+<span class="n">CCACAATGCCTGGCTAATTTTTGTAGTTTTAGTAGGAAAGGGGTCTCACCATGTTGGCCAGGCTGGTCTC</span>
+<span class="n">AAACTCCTGACCTCAGGCGACCTGCCTGCCTCAGCCTCCCAAAGTGTTGAGATTACAGGCATGAGCCACC</span>
+<span class="n">ACGCCCAGCCTCCTCAAGTGATTTTTAGTGAAGAAGCACATTCGCTCATTTTCCTGTCAGTCAATCTCTG</span>
+<span class="n">TGAGGGAACTGTTATTTCCCCTTGGTAGGTGAGTAAACAGAGGACTCACTCTTCTGAATCCCACAGCTGA</span>
+<span class="n">CAAGTGACAAGATTCAAGCCCAGGCTTTGGAGATTTTATCTCTGTTCTAGAAATGAGCTTTTTGTCTTAG</span>
+<span class="n">AGGATCCAAAGATGTCCAGTGGTTGGGCGTAGTTTGTTCATTTGCTGATGCTTTAGCCGAGGCAGGGATG</span>
+<span class="n">ATAAGAGAATCAGGAGGCAAGGGGGAGGTGTTTGAAAATCCAGGCTGTGGAGAGGATAGATCCTCCCTGA</span>
+<span class="n">GCTGTGCGAGCTTGGCCTAAATTGCCCCATCTCCAAAATGAAATAATAATAACCACGACCTACCTCATAG</span>
+<span class="n">GGTTGTTGTGAGGATTAAATGTGGTAATGTTATCCCCATGCCTAGCACACAGTAAGCACCTAAATACATC</span>
+<span class="n">TCAACCATAATTATTTCCACCCCCACCGCCGACCACAATCCTTGGCTTAGGATTAACTATAATTATTAAT</span>
+<span class="n">GACACAACTGAACCAGGCTCTACCACTTCCTCAATTTGTAATCTCAGAAAAGTTCCTTACCCATTGTGAA</span>
+<span class="n">CCTTGGCTTCCTCTTCTGTAGAATGGGAATGATACTCACCTCTCTCTGCTTTAGGAAAGATTAAGCAATC</span>
+<span class="n">TGATATGGAGTCTAGCACAGTGCTTGGCACAACACAGTCAATAATAGGGAACATTTCTTGCTGATGCCTG</span>
+<span class="n">ATGTTTCTGTTCTGTGAAGGAACCATCTTGCTCTTGGGGGTAAGCCTGCCCATGGGGAGTGTACACTGCT</span>
+<span class="n">GATTCTCCCTCCCAGTGTCCCCTCACCTGGGTGGGTGTCTGCTTAATGCCATGGTTCCCTGGCAGACCCA</span>
+<span class="n">CTTGGCCTTCAAACTAAGCTACATCCTCTGACATAGCGTCTATCAGTAGTAAAAGTGCTATGTGGCTTGC</span>
+<span class="n">GTCTTCATCGACTTATTTCTCAAATTATTCAGAAGTGTTATTCATGGGTACCCTCCTCGGAAGGACTTAA</span>
+<span class="n">TAAAGAAAATGTATTCAATTAGTCTTTTATTTAGCTTTTATTTAATCCACTATGTACTAGGAACCAAGCT</span>
+<span class="n">AGGGATTAAGGCATAAATAAGACAATCCTGCCCCTCAGGGGCCCACCATTTACGGTGGGGAAGACAGGTG</span>
+<span class="n">TGTAAACAGATGGTAATGCAGTATGCAGGGTGTTCTGGGACAGACATGTCAGGATGTGAATGGAATACAC</span>
+<span class="n">AGGAGAGTACATAGCCCAGCATGGAGAATCTGGAGAGACTTCCTGGAGGGAGGTGACGTCTAAATTGAAT</span>
+<span class="n">TTTAAAAATGATTATTCAAGTCTGTAAAATATATAACCCAGCATCACAGTTTAGTGTCATGTCCACCTGT</span>
+<span class="n">TCCCTGCTTTGAGCCAAGTGCCTGATCCATAGTAGGCACTTAATAAATCATGAAATTACAAATAGGAGAG</span>
+<span class="n">GGTATGGAGTAAAAGGAGCAAGAAGAGAGAGCTGGAGAGTAATTAGAGGGAGTGGGCGCTGCCATCGGGT</span>
+<span class="n">CTGGGATTTGCTGCTCCCACCCCTGCTGCAAGTTCCCGAAAGACATGGAAGGTGGATTAAGAGATACATG</span>
+<span class="n">GCAATGGGGAGCTGTGATCTTTCCAGGCCCAGGACAGAATAGAGGTTGAAAAGAGAGCTGCAGGCTTCAG</span>
+<span class="n">AGGAATTCATGACATCAATGTGGCGAGAGGGCGGAAGACATGAGCGAGTCTCCAAAGGGAGCACAAATCG</span>
+<span class="n">TTGAGGAGGCAGCTGAGGGTGAGCCCCTTGACAGCAGGGCGTGATGGGTCTCCTACTTATCCTTATTCAG</span>
+<span class="n">CCTCTACAAGAGGAGAGCTTTGCACTTGATATGACATCAGAGTTGAGCATGAATAGGATTTCTCTGGTTT</span>
+<span class="n">TGTTCATATTTGAAAATTCCATTAAATTTTCTTAACAAAAAGTTAAAAATCTTTTGGAAAAAAGATTTTT</span>
+<span class="n">TTTTTTTTGAGACAGAGTCTCACTCTGTCACCCAGTCTAGAGTGCAGTGGCCGATCTTGGCTCACTGCAA</span>
+<span class="n">TCTCCACCTTCCAAGTTCAAGTGATTCTCCTGCCTCAGCCTCCAGAGTAGCTGGGATTACAGGTGCTTGC</span>
+<span class="n">CACCATGCCTGGCTAATTTTCGTGTTTTTAGTAGAGACGGGATTTCACCATTTTGGCCAGGCTGGTCTCG</span>
+<span class="n">AACTCCTGACCTCAGGTGATCTGCCTTCCTCGACCTCCCAAAGTGCTGGTGAGAGGTGACAGCATGCTGG</span>
+<span class="n">CAGTCCTCACAGCCCTCGCTCGCTCTGGGCGCCTCCTCTGCCTGGGCTCCCACTTTGGCGGCACTTGAGG</span>
+<span class="n">AGCCCTTCAGCCCGCTGCTGTACTGTGGGGGCCCCTTTCTGGGCTGGCCAAGGCCGGAGCCGGCTCCCTC</span>
+<span class="n">AGCTTGCGGGGAGGTGTAGAGGGAGAGGCGCGGGTGGGAACCGAGGCTGCACGGGGCGCTCGCCGGCCAG</span>
+<span class="n">CTGGAGTTCCGGGTGGGCGTCGGCTTGGCGGGCCCGCACTGGGAGCAGCCGGCCGGCTCTGCCGGCCCAG</span>
+<span class="n">GGCAATGAGGGGCTTAGCACCCAGGCCAGCGGCTGCGGAGGGTGTACTGGGTCCCCCAGCAGTGCCAGCC</span>
+<span class="n">CACCAGCGCTGAGCTCGATTTCTCACCAGGCCTTAGCTGCCTTTCCGCGGGGCAGGGCTCGAGACCTGCA</span>
+<span class="n">GCCCGCCATGCCTGAGCCTCCCACCCCCTCCATGGGCTCCTGTGCGGCCCAAGCCTCCCCGATGAGCGCC</span>
+<span class="n">GCCCCCTGCTCCACGGCGCCCAGTCCCATCGACCACCCAAGGGCTGAGGAATGCGGGCGCACGGCGCGGG</span>
+<span class="n">ACTGGCAGGCAGCTCCACCTGCAGCCCAGTGCCGCATCCACTGGGTGAAGCCAGCTGGGCTCCTGAGTCT</span>
+<span class="n">GGTGGGGACGTGGAGAACCTTTATGTCTAGCTCAGGGATTGTAAATACACCAATCGGCACTCTGTATCTA</span>
+<span class="n">GCTCAAAGTTTGTAAACACACCAATCAGCACCCTGTGTCTAGCTCAGGGTTTGTGAATGCACCAATCGAC</span>
+<span class="n">ACTGTATCTAGCTACTCTGGTGGGACCTTGGAGAACCTTTATGTCTAGCTCAGGGATTGTAAATACACCA</span>
+<span class="n">ATCAGCACTCTGTATCTAGCTCAAGGTTTGTAAACACACCAATCAGCACCCTGTGTCTAGCTCAGGGTTT</span>
+<span class="n">GTGAATGCACCAATCGACACTCTGTATCTAGCTACTCTGGTGGGGCCTTGGAGAACCTTTGTGTCCACAC</span>
+<span class="n">TCTGTATCTAGCTAATCTGGTGGGGACGAGGAGAACCTTTGTGTCTAGCTCAGGGATTGTAAATGCACCA</span>
+<span class="n">ATCTGCGCCCTGTCAAAACAGACCACTCGGCTCTACCAATCAGCAGGATGTGGGTGGTGCCAGATAAGAG</span>
+<span class="n">AATAAAAGCAGCCTGCCTCAGCCAGCAGTGGCAACCCGCTGGGGTCCCCTTCCTCATCGTGGGAGCTTTG</span>
+<span class="n">TTCTTTTGCTCTTTGCAATAAATCTTGCTACTGCTCACTCTTTGGGTCCACACTGCTTTTATGAGCTGTA</span>
+<span class="n">ACACTCACCGTGAAGATCTGCAGCTTCACTCCTGAAGCCAGCGAGACCATGAGCCCACCGGGAGGAACGA</span>
+<span class="n">ACAACTCCAGACGCAGTGCATTAAGAGCTGTAACACTCACCGCGAAGGTCTGCAGCTTCACTCCTGAGCC</span>
+<span class="n">AGCGAGACCACGAACCCACCGGAAGAAAGAAACTCCGAACACATCCGAACATCAAAAGGAACAAACTCCA</span>
+<span class="n">GACGCGCCACCTTAAGAGCTGTAGCACTCACCGCGAGGGTCCGCAGCTTCATTCTTGAAGTCAGTGAGAC</span>
+<span class="n">CAAGAACCCACCAATTCCGGACACACTGGGATTACAGGCGTAAGCCACTGTGCCCGGCAGGAAAAATATT</span>
+<span class="n">CTTTTAAATAAACAAAATTAAGGTTTTAAAAATAATTAGATTATACTATTAACTAAAAGTTGTTGAAAAT</span>
+<span class="n">TAAGTAATCTAGCCAAGATGCCGTTAAGGGAGCCACTACCCAGTGGGAGAAGAACATCATAACAGCATAG</span>
+<span class="n">TTTGGAAGCAACTCCTAGGAAAAAAAAAAAAAAATTCATGTTTATGCCCGACTAACTGGACTCCCCCTAA</span>
+<span class="n">AACAGTTACACATGGAGTTTCTATGAGATGAGAAATAAAGAAGCAAAGAAAAAAGATTGGTAAATAGAAA</span>
+<span class="n">TATAAAATAAGATGTTAGAAAGAAGTCCAAATACCTCAGTATTCACAAGAAATGTAATAGATTTAAATAC</span>
+<span class="n">TCTGTTAAAAGGAGTAGCACTTGGCACAGTATTATAAAATACTTTCTTTTCTTGGTTCTCGCTCCCTACC</span>
+<span class="n">CTCTCCTGGTTTTCTCCTACCTCACTGGCCGCTACTCCTCAATCTCCTTCTGTGGATGTGTCTCCTCTTC</span>
+<span class="n">CAGGAGGAGCTACAAGCATTAGAAGAGGATGCATTTCTTCTTCCAGGAGGAACTACAGTCATTAGCAGAG</span>
+<span class="n">GAAGACGCACATCCTCTCCTAAGGATTGTAGCTCCCCTATGTCTCAATCCTCTCATGTCTTCTCACCATA</span>
+<span class="n">CCTTCTCCAGCCTCATGGCTTTAAATAACATTTGATAACTCCAAATTCACATCTTCAGCCTGCAGCTTCT</span>
+<span class="n">TCCTTGAGCTTCAGCTTACTTATCCAACATCCTACTTGATGCCTGTACTAGGTTATCTAATAAACCCATC</span>
+<span class="n">AAAATTGGTGGAAGTAGAACTCTTAAAAATGTGCATCCTGTTCCCATTCTTCCTGAATCTTCCCCACCCA</span>
+<span class="n">ATAGACGGCACCACCGTTTTGTTAATTGCTCAGTCCAAAACGCATGTAGTCATCCTTAATATCTTCTTTT</span>
+<span class="n">TCTCATATAATCTTGTTACAGGCCTACATTTTAAACTCCTCTCCTGGGATTCTTTCCCTTGCTCAACCTG</span>
+<span class="n">TTTTAGTCACATTTGTCTTTGTTTGTTATTCGTAGAACACACCAAGGTTGTCAGGACCTTGGCGTCTGCT</span>
+<span class="n">TTTTTCTCTGTTAAAATGGTATTCTGCCTGGTCTTCCCCCTTATTTCATCAATTCCTACTAGAATAGTAC</span>
+<span class="n">CCCTCAAAGGCTTCTTGCCTGACCCCACTTAAAAAAATGGAGCTGTCCCTCAGGCCACTCTCTATTCCTT</span>
+<span class="n">TACCCAACTTCATTTCTCTGAATAGCACTTTCTACTGCCTCAGATTATATTTCCTATGTGTTTGTTGGCC</span>
+<span class="n">AGTTTTTTAGTCATCTCCCCCAACTACAATGTAAGTTTTGTAAAAGCAGGGGTGTTGTCTTGTTCACCGC</span>
+<span class="n">CACATCCCCAGTCACTAGAAATATGCCTGGCGCAGAGGATGCTTTATTAAATGAATTTCAAATTGATGAA</span>
+<span class="n">TGAATGAATGCATGAATATATTAATGAATAAAAGGAGGTAGACCTCTTAGGAGCTGAAGAAATAGTCCAG</span>
+<span class="n">GTGAGAAATAATGAAAGACTGAACTAGATGTCATGGTTAATTTAATGTGTCAACTTGGCTAGGCCACAGT</span>
+<span class="n">GCCCAGACATTTGGTTAAACATTACTCTAGATGTTTCTGTAACAGGACTGTTGGATGAGACTGACATTTA</span>
+<span class="n">CATTGGTAGACTTTGAGTAAGGAGATTCACCTCCATAATTTGGGTGAGCCTCATTTGATCAGTTGAAGGC</span>
+<span class="n">CTGAGTAGAACCAAAGACTGACCTTCCCTGAGCAAGGGAGAATTCTCCAGCATGTAGCCTTTGGACTTGA</span>
+<span class="n">ACTGATATATTAGCATTTCTCTGTGTCTCCAGCATACTGGCCCACTCTGTAGATTTTGGGCTTGCCAGCC</span>
+<span class="n">ACTATAATCATGAATCAATTCCTTAAATAAATCTCTCTGTATATACACATCCTATTGGTTTTGTATGTCT</span>
+<span class="n">AGAGAACCCCAACTAGTACACTAGGCCAGGTAGATGGGATGGAGAAGTGAAATAAGATATGGGAAATTAA</span>
+<span class="n">GAAGACCTGGGAGGAATCATCAAATTAAGGCATTTGGCTTGGGAGACTGGGAACCTGTGGAAGCCATGCA</span>
+<span class="n">CCAACACAGAAAAGGCAAAAAACAGGTAACCCCAGCAATAATCTTGCAAGCAGCTGGGTTAATTCATTTG</span>
+<span class="n">TTCGTTTGGAGGAATCATCAAATTAAGGTATCTTAATTATCTTAGTCTCTCCTAGGCTTGAGAGACCAAG</span>
+<span class="n">AACTTGTGGGTGCCATACACCAAGACAAAAAACAAGTATCCCCAGCAATGGTCTTGCAAGCAATTGTGTT</span>
+<span class="n">CATTCATTTACTTGTTTATATATTCATCGGGTCCAAGTACCTGCTCCACATGTAAGGTTCCTAAAAGCCA</span>
+<span class="n">GGGAGATTACAGGATTTTCATAGATTGCACAACAAGTTTCTTTGGTTTGAGAGTTCTTTTTATTATTGTT</span>
+<span class="n">ATTATTACATCTCTGATAGGGAGTCCAGTTTTCTTGATTTTGCGATAGCCAATAATAATTGAGGGAGTTT</span>
+<span class="n">TATAATGATTCAGCATGGGAAAATCAGAGTTAAGAAACTGCCCAGAGGTTCCCTGCAATTCCTGGTTGTG</span>
+<span class="n">GCCTTTCATTGTTACTGTTCACAGACTCAATCTTTGTCATCCTGCTGGAAGTGAGGCCACCCCTTCTCCC</span>
+<span class="n">TCAGGGTTTGCTGCTGCTGCCTGAGCTGTTTCCTCCCTAGCAGCCAATGGGCTAGTGAGGCTGTGGGTAT</span>
+<span class="n">GGTATGATGCAGATCTAAGTAATGATGGCCCGGAACTTTAAAAAAGCAAAAAGCTCAGTGAATTATTATT</span>
+<span class="n">ATTAGTCCTTCTTCAGAAGTACAGAGAAAGGGATCCTATCGCATTGGAGAAGTGTGGGCTGCACCAGTTA</span>
+<span class="n">GATTGTCAGAAATGATGAGGCAAGCCCTATATGGAAGAGATCATTAATGAATAAAAATTCTAACATTTCT</span>
+<span class="n">TTACTATGAAGTTTATGAAATGTTTTAAGATGTATTGTGCATTGGAGCTTCACGGCTATACTTTGAAGCA</span>
+<span class="n">GATATTTTTATTACTCCAAATTTCCAAAAATAGAAACTATCAGAGATATTAAATGACTTTCTAAAATTCC</span>
+<span class="n">ATACTTAGTAATTTACAAAGTAGAATTCAAGCCCATGTCTTTTGGTTTCCAATCTTCGGAATTTTTCTAG</span>
+<span class="n">AGGTTAGCTGGTTTTAGGCATCAGAGATGGGCTAACTAAATTGGAATAAATCACTTGCAGTTTGTTAAAA</span>
+<span class="n">ATGCAGATTTCTGGGCTCCACCCCCAAAAGATTCTGATTCAATAGGTTTTGAAGCCCCCAGATCTATATA</span>
+<span class="n">TTTATAAAATGCACTATAAAAATCTCCTGAGCAGCCAGGATGTTAACTAAGCTCCTGCTATGCTTAGCAA</span>
+<span class="n">AATATGCTCAATATAAAAGCTCTAACAAAGGACAAAATAATAGTTTTTATTTTATCATTCAAAAAAATTG</span>
+<span class="n">ACATAGTTTCTATCCTTATAGAAATTTTAGTCTCTTAGGTGAGATAAACACATACAATGATCATACAAAT</span>
+<span class="n">AAATAGATATTTTGAAATAGATAAACAGAGAAGGAGTAAGAGGGGATGACTTGAAATTTAAAATATCTGA</span>
+<span class="n">TTTAGATAAGGGCAACAGGGAAACTTAAGCAGAGACCTGAAAGAATGAGATGGGTTAGCTAGACCAAGGG</span>
+<span class="n">GGAGGCTGGGGTTGTTCAAGGCAGAGAGAAGAGCATGCACCCATGGCCTGAGGTAGGAAGAACTTAGTGT</span>
+<span class="n">GTTCCAGAAATTGAGGAAGGCCCATGTCACTGAAGGCTGATGAGCAAAGAGGATAAAACAAGGCAATTAT</span>
+<span class="n">GACGGGTGGTGGCCCGGTGATCTGGGGCCTATGGACCGTGGTAAGAGATTTAGATTTTAAGTACAACCGG</span>
+<span class="n">AATCCTCTTTCATGAAAGAAAAAGAAAAGTCAACAAGATTTGCATTTTTTTAAAGATTTGGATGAAGAAC</span>
+<span class="n">CAGAAATGGATGAAGAGTAATAGGGGATTCAGGGAGGCTTCTTAGGTGGTTATAGCACAAATCGAGGTGA</span>
+<span class="n">GAGATGATGGTTTAGACCAGTGTGGTTAAAGTGGAGGTAGAAGGAAGTGGATAAAATTAAGAAGTATTTT</span>
+<span class="n">GATGGGAGAATGAATGTGGTTTGGGCAAGAAATGAGGAATTCTCAAAAATGGCCCTGAGTTTCTGTCGTA</span>
+<span class="n">AGTAATTGCAGTACCTGAGTGAAATAAGAGACATTTGTTGATCTGAGTCAGTGTGGAGAAGGAACTTATT</span>
+<span class="n">TAGGGACATAAAAAGATTAAGAGTTTAGTTGCTGACATACTAACTTTGAGATGTCCATTAGACATTCAAG</span>
+<span class="n">TAGATGTGTCAGATCTTGGCTGGAGATAAAATTTTTGGAATTTTCAGCATAGCCACAGAAGTGGATGAGA</span>
+<span class="n">TTCCTTGAGGAGAGAGTGCATGTTGATAACAGGAGCACTATGAGAGAGCCCTGAGGAATGGGACTGATGC</span>
+<span class="n">ATAAGGTCAATAAGTGGCTCCTCAGATTGGGGTGCATTATTTCTTGATCTATAGGAGGTCACTGTAAAGA</span>
+<span class="n">GAAGAGCACTTGTCACCCTGCAGTTAGGTATCTGCTTATTTGTCTTAATTGCTCAATAGGTTGTAAGTCC</span>
+<span class="n">TTCAAAGGTGAAGGATAAGAGTGTAACTCAATTATCCTGAAAACCACAGCACCTAACACACTGGGCATCT</span>
+<span class="n">AAATGAATCATGCACACTGTTAAAAGCTTTACATTTATCACATAATGTAGTGCTCCAAAATTATATTATT</span>
+<span class="n">CTCATTTTACAGAAGAGGAAACCTAAATTCAGAGATGTTAAATTCTTTGACCAAGGTCACATATTTAGTA</span>
+<span class="n">AATGGGAAGGTTACATTTAGAATCAAAATCTATCAGATTGACAAATATGGCTTTCAAATTCCAGTGGATG</span>
+<span class="n">AGAAATTTTAGACAACATCCTATGATAGGTAAGTGTTGCCATGGTTTGAATGTGTTCCCTCGAAGGTTCA</span>
+<span class="n">TCTGTTGGAAACTTAATCCCTAAAGCAATAGTGGTGTGTGCATGTGTGCTGGGGTGGCGGGGTGGGGGCA</span>
+<span class="n">CTACTAAAAGGTGATTGGGTCATGAGGGCAGAGCCTTCTTGAGTGGATTAATTTTGTTACTGTGGGAGTG</span>
+<span class="n">GCTTAGTTATCATAAGCAAGTTGTTATAAAGCAAGTCCTAACCCTTGTGCCTCTCTTACGGTCTTTTTTT</span>
+<span class="n">TTTTTTCTTCAAATTTTAACATATTTTATTGATTTAGGGGCCAAACAAGGCAGCATTTGGTCAGTTAAGA</span>
+<span class="n">AAGGCACCTCATTGAAAATAATACATCACAGTGCTGTTGAGTGATCCCAGTCACAGGATTTGAGAATGGA</span>
+<span class="n">AAGGACAATCTTTGGATGACATAGCTTAGGACACTTGCTCATTTATTTAAAAGAGTCCCTTCACACATTG</span>
+<span class="n">CAGATAAAAGAAGGCAAGAGCATAGGATTGTGGCATGTGCTGGGTAGCTGTGAGAGGTTACTCATGAGAT</span>
+<span class="n">TACGTAGCCTAGTAAATTAGTGGTAAGTCAGGGGAAGGGAATCAGCCTCCCTTTCCATTTCATTCCCTTC</span>
+<span class="n">TCCCTCCCCTTGATTCCAGTTTGTTTGATTTGTTGAGCCACCATCCCTATGAATACACCTTACATCTCTT</span>
+<span class="n">TCAGATGTGGAAATGGTTTTTTGATCTTACAGTGTGTGGAACCGGGGTCAGTAATCAAAGCCTCCCTGTT</span>
+<span class="n">CCAAGCTATAGACAGACAGGACAACAATTTGATTTCCTGTACTCTTGGTCTGGAACCCATGGGGTTCTGA</span>
+<span class="n">GATAAAAGCTGAGGTCTTAGAGCACTGGCTTTAAAAAATATTTTCACCAGTCCAGAGTAAATGAAAACCC</span>
+<span class="n">GATTCCTTAGAAATAATATTGTGTCTCTCTATTTCTACCCCCACCCTCCAAGCATGGTGTTTTTTAAAAA</span>
+<span class="n">ATTAATTTTTCCCTTACACTTTAAAAACTCTCACCTATGTATAAAATAAACTGCCACATTACAATAACAC</span>
+<span class="n">TGCTGTTGTTTCAAGTATTCCTCTCAGCCCCTCACCAGCCCTCCCTCACCATCCTCACCCTGACCACCCT</span>
+<span class="n">TTCCCTCTGCCCAGCACCTAAGAGCAGGGATCACGCCACCGGGTGATGAGCAGTGTTGCAGTTTCGCCTG</span>
+<span class="n">GCCTTCTGATACTAGGATGTGGCTTTGGAGAAGGCTGCTAGGATGCTTGCGAACACGACATCAGGGGTCT</span>
+<span class="n">GGGATGCATTGATGGCAGAGTGGATCCCCCGTTTCCTGTAGTACTCTATGAGTGGGGTGGTTTGAGTGTG</span>
+<span class="n">GTAGGCTTGCCGGCAGATTTTCAAGGCCTTTTCATTATCATCTGATCAACGGATCAAGGGTTCCCCGGTG</span>
+<span class="n">ATGTCATCTTTCATGGGCTCTTTTGGAGGGTTGAACTCCTCGTGGTAGGAACGGCCACTCTTGGGGTGAT</span>
+<span class="n">CAGCCTTCCTGTGATTCTTCGGATCAGCAGAGAGTCTGGGATGCTGAATTCAATCACAGAATCAAGCTTC</span>
+<span class="n">TCTTTCCTCTTCTCCATGAGGTCATCGAGCATTTCTGCCTGCCTCACAGTCCGAGGGAAGCCATCCAGAA</span>
+<span class="n">GAAAACCATTTTTGCACAAGGGGGTCTCCAAATTCTTCTCAATGAGCTCCACTACCATTTCATCACTCAC</span>
+<span class="n">CAGTTTCCCAGCATCCATAGTTGCCTTCAGCTTTTTTCCTAGCTCTGAGCCAGAAGCCACCATGGCCCTC</span>
+<span class="n">AGCATGTCCCCAGTAGCTAAATGGCAGACACAGAAGTTTTCAGCCAATCTGGGTGCCTGGGTGCCTTTAC</span>
+<span class="n">CGGCCCTGGGAGGCCCCAGCAGCACAGCCTTTAGGACACTCGGGTTCTGCCGCTGGCACGCTGGGAGCCA</span>
+<span class="n">TGTCCGCCGAAGTCTCTCACTGCCACCAGTTCGCACACCTCACAGGTCCCTCTCTTTTGGTCTTATGTTC</span>
+<span class="n">TCACTTCCACCTTTGTCCTTCTCACCATGGGATGACCCTTGCCAAATGTTGGCGCCATGCTCTTGGACTT</span>
+<span class="n">CCCAGCCTCAAGAACCATGCACTAAATAAATTTCTGTTCATTATAAATTACTCAGTCTCAGTTGTCCTTT</span>
+<span class="n">TGTAGCAACACACAATGAATCAAGAGAGGCAATGTGTACCAAGAAGGGGGGATTGTTGCTATAAAAATAT</span>
+<span class="n">CTGAAATTGTGAAAGCAGCTTGGTACTGGGTAATTGGTAGAGGCTGGAAGAATTTGGAAGAGTAGGTTAG</span>
+<span class="n">TAAAAGCTTGTATTGCTATAAACAGAGCATTAAGGGTGATTCTGGTGAGGGCTCAGAAGAGCTGACTTGG</span>
+<span class="n">GAAAGTCTGAATCTTCTTAGAGATTACTTAAGTAGTTGTGACCAAAATGTTGATGCAACTATGGACAGTA</span>
+<span class="n">AAGGCCATTCTGATGAGGTCTTCAATGGAACTGAGGAACAAGGTATTGGAAGATAGATCAAAGGGCATCC</span>
+<span class="n">TTGTTATAGAATAGCAAAGAACTTGCCTGAACTGTGTCCATGCGCAAGGGCTTTATGGAAGATGGCATTT</span>
+<span class="n">AAGAACAATGAATTAGATCATTTGGCAGAAGAAGTATCTAAACAGCAAAGCACTCAGGCTACTGCCCAGC</span>
+<span class="n">TACTTTTAACCACTTATAGTAAGATACTACAAGAAAGGAATGGTTTAAAGACAGAATTTATCATTAAAAG</span>
+<span class="n">GGAAGGAGAGCAGAAAGATTTGGAAAATTTGCAGCCTGGTCATGTAAAGAACAAAAAAAGTATGCAAGGG</span>
+<span class="n">TGAAATCAAACAACCTTTTGCTAAAGAGATTAGCATGGATAGAAGGAAGACAGCTCTGTTCATCAAGACA</span>
+<span class="n">ATGGTAGAAAGACCCAGAAGGCATTTTAGAAATCTTCAAGGGTTCCTCTCCTATCACAAGCCAAGAGTTC</span>
+<span class="n">TAGGACGGCAGAATGGTTCTGGGGGATGGGCCTAGGGTTCCCTTCATGGGCTTACTGCCCATGGCTGCCT</span>
+<span class="n">TGGGTCTCTGCATCCTGCATCTTGCTTGGGCAGTGCTCTTGGCTGCCCCAACTATGGCTCAAACAACTAC</span>
+<span class="n">AGGTGTGGCTTGACCCACTGCTCTGGAAGGTAGAAGTGGCAAATCTTGGCAATGTCCACATACTGCTAGG</span>
+<span class="n">TCTGCAGGCATGCAGAATGCAAGAGTGGTGGGGGCATGGCTTCCTATACCAAGATTTTAAAGTATATCAC</span>
+<span class="n">AGAGAACTGGGGGCCCAGGCAGGGACTTGTCACAGTGATGGAGCTACTATAGAAGAGCCCCCACTAGGAC</span>
+<span class="n">AAGCCAAATGGAGCCATGGAAGCAAAGCCACCACACAGTCACCACTAGGATAATGCCTAGTGAAGCCATG</span>
+<span class="n">GGTGCAGGACTACCTGAGAACTGTAGAGCTACCAGTGTAAGCCCAGAAATGCCATGGGGCTGGGGTTGCC</span>
+<span class="n">ATAGGTCTTGGGGGTTTAACCCCTATTCTAGTGTGCCTAGGATGCAGGACACGAAGTCAAAGGAGATTAT</span>
+<span class="n">TCTCCATCTTTAAGCCTTAATGTTATTTCAGGTTGGGTTTTGGACTTACTTGGGGACTTTCGCTTTTTTG</span>
+<span class="n">TTCTTGCCTATTTTACCCTTTTAGAATGGGAATATCTGTTCTATGCCTGTCCCATCATTATAGTTTGGAA</span>
+<span class="n">ACAGATAATTTGTTTAATTTCACAGGCAAACAGCTAGAAGGAATTAACCTCAGGGTGAATCATGCCTTGA</span>
+<span class="n">GTTTCACCCATATCTGATTTAGATGAGACTTTGGACTTTTGAGTTGATGCTGGAATGAGCTAAGGCTTTT</span>
+<span class="n">GAGATCATGAGGATGGAATAAATGTATTTTTCATTCTGAGAATATAAATTTGTGTTGGGGGGGAGGGGTG</span>
+<span class="n">GAATGCTATGGTTTCATGTATCCCCTAAAAGTTAATATGTTAGAAAAAATCCATAATGCCACAGTGCTGG</span>
+<span class="n">GAGGTAGGACCTAATAAGAGGTGATTTGGTCATAAATGGTTTAATGTTGTCATCGTGGGACCAGGTTAGT</span>
+<span class="n">TATCATGAGACTGGGTTGTTATAAAGCGAGTCTGGCCCCTGGTGCCTCTCTCTCTGTCCTTTGTGCTCAC</span>
+<span class="n">TTGTACCTTCTGCCCTTCTACCATGGGATGACCCTTGCCAGATGCTGGCACTATGCTCCTGGACTTCCCA</span>
+<span class="n">GCCTCCCAAACTGTGAGCTAAATAAATTTTTGTTCATTAAAAATTACCCAGTGTCAGGTATTCTGTTATA</span>
+<span class="n">GTAACAAAAAATGGACTAAGACAAGTATCTTTGGTGTCTTGTACCAAATTTTGCATTTGATAGTTTTATT</span>
+<span class="n">TTATCAATCTTTATGATTTATGCATTATGTCCTATTTTAGTAATCTTTTCCTACTCTAATCTCATAAATA</span>
+<span class="n">TATTGTCTTCAAAAAGTTTTATAGGTTATTTTCTTTACTCTATTTGTAATTTATTTTTACAAATGAGGTA</span>
+<span class="n">AAGTAGAGAATTAATTTTGTTTATTTACTTGTATGTGTATGAATAATACACTGTCCTAGGACCATTTATT</span>
+<span class="n">AATGTTTTCCCCCACTGATTTATAATACCACATCTGACCTTCATTCATTCAATAACTATGTATTAAAGAG</span>
+<span class="n">CCAACTATATGCCAGGCTCGGTTCAAGTCACTGGAGAAAGTATTGACACTCAGAAGATTAGGAAGATCTA</span>
+<span class="n">GGCACAGCTGCTGGCCCTGAAAAGATTTTCTTATGTGATAAGCATTTTGCAACATATCTTAGATTCATGT</span>
+<span class="n">TGTAACAAGATAATATATAAATAAATAAGCAGTTTCATTCTTTAGGCCCAACTTAGGCCGTCACAATTCT</span>
+<span class="n">AGGAAGTCTTCTATGAGCTCCTCAAGCTGAGTTAAGTCCTTTTTTTGGTGCTCTTTCATTATCTTATAAA</span>
+<span class="n">GTTTTCACTATAACATTGACCACATTATATCAATTCCTGTTTACATATTTTTTTCCCAGCAACAATAAAA</span>
+<span class="n">ATTTTGAGAACAGAGACTCTCCCTTATTTATTTCAGAATCTTGTACAGGGCCTTGGTTCCAATCATATTT</span>
+<span class="n">GATAAATAAATAAATTACTATGTAACACTTTGGTTATAACTGTTTGACTTCAGGAGTGTGAAGTACATTA</span>
+<span class="n">CCAAGAAGAAAGCAATGTTGCTATTGGCCAATTGCAAACATATATGAAATCCAGAGGATAATTCAAACAG</span>
+<span class="n">AAAACACACACACACACACACACACACACGCACACACACACACACACACACAATGATATGGTTTGGCTCT</span>
+<span class="n">GTGTCCCCACCCAAGTCTCATCTGGAATTGTACTCCCATAATTCCCATGTGTTGTGTGAGGGACCGGTGG</span>
+<span class="n">GAGATAATTTGAATCATGGGGGCAGTTTCCCCCATACTGTTCTCCTGGTAGTGAATAATTCTCACAAGAT</span>
+<span class="n">CTGATGGTTTTATCAAGAGTTTCCGCTTTTGCATCCTTCTCATTTTCTCTTGCCTTCACCATGTAAGAAG</span>
+<span class="n">TGCCTTTTGCCTCCTGCCATGATTCTGAGGCCTCCCCAGCCACGTGGAACTGTAAGTCCAATTAAACCTC</span>
+<span class="n">TTTATCTTCCCAGTCTCGGGCATGTCTTTATCAGCAGCATGAAAATGGACTAATACAGTAAATTGGTACT</span>
+<span class="n">GGTAGAGTGGGGCATTGCTGAAAAGATACCCAAAAATGTGGAAGTGATTTTGGAACTGGGTAACAGGCAG</span>
+<span class="n">AGATTAGAACAGTTTGAAGGACTCAGAAGAAGACAGGAAAGTGTGGGAAAGTTTGGAACTTCCTAGAGAC</span>
+<span class="n">TTGTTGAGTGGCTTTACCCAAAATGCTGATAGCAATATGAATAAGAAGGTCCAGGCTGAGGTGGTCTCAG</span>
+<span class="n">ATAGAGATGAGGAACCAGTTGGGAAGGTGACTCTTGTTATGTTTTAGTAAAGAGACTGGCGGCATTTTGC</span>
+<span class="n">CCCTGCCCTAGAGATTTGTGGAACTTTGAACTTGAGAGAGATGATTTAGAGTATCTGGTGGAAGAAATTT</span>
+<span class="n">CTAAGCATCAAAGCATTCAAGAGGTGACTTGGGTGCTGTTAAAGGCATCTAGTTTTATAAGGGAAGCAGA</span>
+<span class="n">GCATAAAAGTTTGGAAAATTTGCAGCCTGACTATGCAATAGAAAAGAAAACCCCATTCTCTGGGGAGAAA</span>
+<span class="n">TACAAGTCAGCTACAGAAACTTGCATAAGTAGCAAGGAGCCTAATGTTAATCCCCAAGACCATGGGGAAA</span>
+<span class="n">ATGTCACCAGGCCATGTCAGAGACCTTCACGGCAGCCCCTCCCATCACAGGTCTGGAGGCCCAGGAGGAA</span>
+<span class="n">AAAGTGGTTTTGTGGGCCGGGCCCAGGGTCCCCCTGCTGTGTGCAGTCTAAGGGCTTGGTGCACTGTGTC</span>
+<span class="n">CCAGATGCTCCAGCCATGGCTGAAAGGGGCAAATGTACAGCTCAGGCTATGACTTCAGAGAGTGCAAGCC</span>
+<span class="n">ACAAACCTTGGCAGCTTCCACATGGTGTTGAGCCTGAGAGTGCACAGAAGTCAACAATTGAGGTTTGGGA</span>
+<span class="n">ACCTCTGCCTAGATTTCAGAAGATGTGTGGAAATGCCTGGATGCCCAGGCAAAAGTTTGCTGCAGGGGTG</span>
+<span class="n">AGGCCCTCATGGAGAAAATCTGCTAGGGCAGTGCTGAAGGGAAATATGGGTTCAGAGCCCCACACAGAGT</span>
+<span class="n">CCCTACTGGGGCACTGCCTAGTAGACTTGTGAGAAGAGGATCACCGTCCTCCAGACCCCAGAAAGGTAGA</span>
+<span class="n">TCCACCAACAGCTTGCACCATGCACCTGGGAAAGCCACAGACACTCAATGCCAGCCCATGAAAGCAGACA</span>
+<span class="n">GAAGGGGGCTATACCCTGCAAAGCCACAAGGGTGGAACTGCCCCAAGACTATGGGAACCTACCTCTTGCA</span>
+<span class="n">TCAGCGTGACCTGGATGTGAGACATGGAATCAAAGGAGATCATTTTGGAGCATTAAAATTTGACTGCTCC</span>
+<span class="n">TCTGAATTTCGGACTTGCATGGGCCCTATAACCCCTTTGTTTTGGCCAATTTCTCCCCTTTGGAATGGCT</span>
+<span class="n">GTATTTACCCAATACCTGTACCCCATTGTATCTAGGAAGTAACTAGCTTGCTTTTGATTTTACAGGCTCA</span>
+<span class="n">TAGGCAGAAGGGACTTGCCTTGTCTCAGATGAGGCTTTGGACTGTGGACTTGTGGGTTAATGCTAAAATG</span>
+<span class="n">AGTTAAGACTTTGGGGGACTGTTTGGAAGGTATGATTGGTTTTGAAATGTGAGGACATGAGATTTGGAGG</span>
+<span class="n">GGCCAGGGGTGGAGTGATATGGTTTGGCTCTGTGTCCCCACCCAAATCTCATCTTAAATTGTACTCCCAT</span>
+<span class="n">AATTCCCATGTGTTGTGGGAGGGACCCAGTGGGAGATAATTTAAATCCTGATGGTGGTTTACTCCATACT</span>
+<span class="n">ATTCTCGTGGTAGTGAATAAGTCTCACGAGATCTGATGGTTTTTATCAGGGGTTTCCACTTTTGCATCCT</span>
+<span class="n">TCTCATTTTCTCTTGCCACCACCATGTAAGAAGTGCCTGTTGCCTCCTGCCATGATTCTGAGGCCTCCCT</span>
+<span class="n">AGCCATGTGGAACTGTAAGTCCAATTAAACCTCTTTGTCTTCCCAGTCTTGGGGATGTATTTATCAGCAG</span>
+<span class="n">TATGAAAAAGGACTAACACACAGTCCCATCTTCTTTTTAAAGGGTATACTCCAGCAAAACTAGGGAAAGA</span>
+<span class="n">AAAAGACATGAAATCCAGGCAATAGAGGATGCTACCCAGGAGGGTAATAAAGAGAATTCCCCAAATGGCA</span>
+<span class="n">TCTGTGCAATAGGCATAGAGAGCAGCCTGCCTCGTCTATAGCAGGTGGACAGAGCTCCTGGAGAGATGTC</span>
+<span class="n">TCCATGTTGAAACAAAAAGAGAAGGTAATGAGACAAATAGAGTCTGATATGAGAGTTTTGGAAAACAATA</span>
+<span class="n">ATCAAAGCATAGGTAGATGGCAGATCTGATGAGCAGTCTGAGCAAAATTGAATAACTATATTTACATAGT</span>
+<span class="n">CATTATAATATAAACCCTAATTTCCAATTAAATTTAACAAATGATATGGGGCAGGTGGGGGATGGGAGAT</span>
+<span class="n">TGTGTAAGAATGCTAAAGGCATGGATTATCACAGAAATATAATAGATGACATCTAATTTTGACAAAATAG</span>
+<span class="n">GAAATATTAAAAGAAGCACATTTGTTTAGAAATATGAGATAACTGGTGAGACAGCTCAAGGAGTGAACTG</span>
+<span class="n">AGGTTTCCTTTAGAGTGTGAAACTGGGTTTCATTATAAGTCTCATGACATTTTTTTTTAAGCTATGTGTA</span>
+<span class="n">TGTATAAATTGATGAAAAAATTTTTTTAACTTTTAAGTTCAGGGGTACTAATGCAGGTTTTGTGTCATGG</span>
+<span class="n">GGGTTTGTTGTAAAGACTATTTCATCACCCAGGTATTAAGCCTTGTGCCAATTGGTTATTTTTCCTGATC</span>
+<span class="n">CTTGCCCTTCTCCCACTCTTTGAAAGGCCCCAATGTGTGTTGTTCCCCTCTATGTTTCCATGTGTTCTTA</span>
+<span class="n">TCATTTTGCTTCCACTTGTAAGTAAGAACATGTGGTATTTGGTTTTCTGTTCCTGTGATAATTTGCTAAG</span>
+<span class="n">GATAATGGCCTCCAGCTCCATCCATGTCCCTGCAAAGGACATGATCTCATTCTTTTTTATAGCTGCGTAG</span>
+<span class="n">TATTCCATCATGTATATATACATTTTCTTTATCTAGTCTATCACTGATGGGCATTTAGGTTGATCTACAT</span>
+<span class="n">CTTTGCTATTGTGAATAGTGCTTCAATGAATATATGTGTGCATGTGTCTTTAAAACAGAATGATTTATAT</span>
+<span class="n">TCCTTTGGATATATATCCAGTAATGGGATTGCTTGGTCAAATGGTTCTGTCTTTAGGTCTTTGAATAATT</span>
+<span class="n">GCCACACTGTCTTCCACAATGGCTGAACTAATTTATACTCTCACCAACAGTGTATTAACTGTTCTTTTTC</span>
+<span class="n">CCTACAACGTTGCCAGCATCTGTTATTTTTTGACTTTTTATAATGAAAAATGTTGAAAAACTAAGTGAAC</span>
+<span class="n">CACTGTTTTACCAGGAGTTCTAGGTGAATCGACTGCTCCTCTATCTATGTGGAAGCATACAGAAATCTTG</span>
+<span class="n">CTCATTTGGAGAGTTGATTCATCCTGGAGTGTTTATGTTGAGCCAGGGAAGCTGTTCTTCTGACTCCTTG</span>
+<span class="n">CTCCTTGTTGAGAAGGGGAAGAAATGCCAAGTGGCCCCTTAGGGCTAATGACAGTGTCCCCTGTGAACAT</span>
+<span class="n">GTGTCAGAAGCAATCATATCTAATCTTGACAGCAGGTCTTTAAAGTGAGTATTATCATGCCCCATTTAAA</span>
+<span class="n">CGATAAAGAAACTGGGATTCAGAGACATTGACTTGCCCAAGCTGCTCCACTAAATGGAGCTATTATATAT</span>
+<span class="n">TTAGTGGTGGAGGAGGGGTCTGAACTCATGTATGCTGACTCCAGAACACAAGCAAGCCTGGATAGCAAAT</span>
+<span class="n">TATCTCTGAAGTCCTGCCCAAACTTGTTTTCTGTACTGCCATGCACTGCTCACATCTGCTGCAACCCCTT</span>
+<span class="n">CTATGCCCATCTTCTCCCGTCCGACAAGCCTAGTTCCAACCCTACCTCTACTCCAGCTCTGCCTGCCTCT</span>
+<span class="n">CCCAGCCCCCCAGCTAACTCCTGCACCCATAGTCAACACTGGTTTATGTCTTTCCATTTATCTTTTTATA</span>
+<span class="n">TAGATACAAATAGATCTCTTTTAAAGATAAATGCCATCATAGGGTACATAGTGTTGTATTCTTCATTTTT</span>
+<span class="n">CTCATATGTCTTGTCTTTCCACATCACTTCAGGTTAAGATCATTTTTTTCCATACATGATCTGTACTATT</span>
+<span class="n">CTGCAGTACATATTTCCTTAATTCATTTATCTCCTTTATTTTTCTCTAGGGTCATTTGTCAACATTTTAT</span>
+<span class="n">CATTCTGACCCTCCTAGCAACCCTTTTGACAGAGGTATTATTATTCTAGCATGTAAAGATGGAGAGTGGA</span>
+<span class="n">GGCTTAGACAGTTAATTCTTTGGCACTAGCTAACAACTCTACAATAAAGGCTTGACAGGGACTATCCACC</span>
+<span class="n">ATCCAGAAACAACTCCAAAGACTTCAAAACGTGTTCCTTACTGGGCACTGCCTTTGGCCAGAGGGAGCTG</span>
+<span class="n">TCTCACTCTCTCCCAGCAACGGCGAGGGATCACCACCTGGCTGATGCCCGGATATAAAGACCCTGCCGTT</span>
+<span class="n">TCTGCCTCAATTTGGACAGCTCTGAAGGTTCCTCTCAACTGCAGGGGCCACTGTAGGATGGGCTGAGGGC</span>
+<span class="n">TCAGTTGCAATTATATTGCAGTTCAGCTTCTCCCTCTGTCCAATCCTGCTCTCTTCACTTCCTTAGAGTT</span>
+<span class="n">AAATATCCCGAGAGCACCTCCCAATAAACCTGCATGCAATCTCAGGCTCAGAGCGTGTCTCCAAGGTACC</span>
+<span class="n">TAGTCTGAGATATTTAGTTACATAGCTATATATCTATTCTTTTTTTTTTTTCTTTTTTTTGAGCCGGAGT</span>
+<span class="n">CTCACTCTGCCACCCAGGCTGGAGTGCCGTGGCGTGATCTCAGCTCACTGCAACCTCCGCCTCCCAGGTT</span>
+<span class="n">CATGCAATTCTCCTGCCCCAGCCTCCAGAGTAGCTGGGATTACAGGCATGCACTCTTTGTATTTTTGTAT</span>
+<span class="n">TTTACAGGCCCGGCTAATCTTTGTATTTTTGGTAGACACAGGGTTTCACCATGTTGGCCAGGCTGGTCTC</span>
+<span class="n">GAACTCCTGACCTGATCTGCCTGCCTCGACCTCCCAAAATGCTGGGATTACAGGCATGAGCCACCGCACC</span>
+<span class="n">CAGCCTGTATATCTACTCTTTAAATAGTGCTGTCTGTCATACTCTCTACCTTTGTTCATAGCACTTTCCA</span>
+<span class="n">GTACCTGATACATGATATATTTATTAGTTTATTCGTTATCTGTTTTCCTGTCTTCAGAATGTATGCTCCG</span>
+<span class="n">TGCAAACAGGGACTTTATTTTATTCTCTATTGTATCCCCAGCACCTAAAATAGTGCCTGACACTAATTAA</span>
+<span class="n">CAATAAGAAAATTGTTAAATTGATTGAATAAATGAATCCTTTGAAAATTGTGGAGGCAGCAGAGACAAGT</span>
+<span class="n">GGATAAAATCATGCTCCTTGATAGCAGACAGGTCTGAGATAGAGTTCTAGTTCAGCCCCATTCCCAGGGG</span>
+<span class="n">TGAGCAAGTTTCTTAATCCATTTGAGCCTCAGTATCCTCACCTATAGAATAAGGTAAATAACAGGACCTA</span>
+<span class="n">CCTCATGGGGGTTTTGTGATAACTAAAGGAGGTAATGCATACAAAGCCTTCAGAATACAGCATACCCATT</span>
+<span class="n">GTAAGCTCTCAAAACTGTTAGATGATGATGATTATAATACCGAACAGATCCCTTGGAAAAGGTAATTATA</span>
+<span class="n">AAAACTACATTTCAAAATTATTTTTCTAAACCATTGGGTTAAAATACTGGAGAAAATGCAATTAGACAGT</span>
+<span class="n">GATTATCTCTTCAACCTGCTGCAGGAATATTTTCTCTAATTGCAATGAAGATTTCATTAGCTGGGTCTGC</span>
+<span class="n">AACATACAGTCCAGGACACAAAAAGCCTACTTGACAAATTACCTCCTGTACTCACTGGGCATGGAGCCTT</span>
+<span class="n">CCATCTGAGCAACTGGGGCTTTAGGGCATGTAGCTATTACCTGTAGCAGCCTGCAATGGCAGGTGTAATT</span>
+<span class="n">TGGTAAACTAGGGAGGCTGGAGAACTGATTTTAAAGCTAGGTGATCCAGAATTAAGAGTATGGAAAGAAG</span>
+<span class="n">GCTTGCCTTTGGGTCCTTGTCACTCCATCTGCTGGCCATGGTATCCTAAACAGATCACCCATCAATCCAT</span>
+<span class="n">CCATGTATCCATCCATCCATATATCCATTCATTCATGTATCCATCCATCCATCCATCCATCCATCCATCC</span>
+<span class="n">ATCCATCCATCCATCCATCCAACATTTACTATGCATTTACTATATGACAGATGCTGTGCTAGACCCTGGA</span>
+<span class="n">GATAGAGATGAGCCATTTCAGCCCTCAAGGAGCACCCCCTTTTGCGAAAAAGGGAAAAAAAACCAATTTC</span>
+<span class="n">ATATTTAAGAAGTAAGCAGTGGCAACAAGTCCAATGTTGCTGGGGCTTAGTCCTGTGCTGGGAAATGGGA</span>
+<span class="n">AGTCAGGGGAAACTTGTTGGAGAAGTTGATGATAACTGAGTCAGTCAGGAAGACAGAGCAGGGATAAAAT</span>
+<span class="n">GCCAGACAGAGCAAACAACACATAAATAGAGATGAAGTCTTGAGTGCCATGCTTTTTGTATTTTTATGAT</span>
+<span class="n">TTCTGTTGATTTTGCTGTTTAAAGTGACCCCCAAATAGAGGCTGAAGTGCTGCCTAGTGTTCCTAAATAC</span>
+<span class="n">AAGAAGGCTGTGATGTGCCTTATGGAAAAAATATGCATGTTAAATATGTTTCGTGAAAGCATGAGTTATA</span>
+<span class="n">TTGTTGTTGACCATGAGTTTAATGTTAATGAATTAACAATATATATTAAATAAGGTGCCTTTAAACAAAA</span>
+<span class="n">ACACACATAAGATTAGGTTATGTATTGATAGACTGAGAAAAATTTTGTGACTAGAGGCTCACAGGAGCCT</span>
+<span class="n">AATTCTGTATATCCTGTAGGAGCAAATTTTCATAATTCTGTGTTCATAGTGATTTTATAGAATGGAAGTA</span>
+<span class="n">CTGTGAATAATGAGAATCACCTATATCTGTTATCTTCCACAAGACATAAACCAAGTCCCTTTCCTCAATT</span>
+<span class="n">TCTTTCCCTGGAGAGAAGCTCTCACGTGTGAGGCAGTGTATAAGTGGGTAGCAATGTTTTCCCAGATTCC</span>
+<span class="n">CTGAAGGTCTAAGTGAACCAAACCACACATGTATTTCTTGCCTTTTAAATATGGGCCTCATCCTTATTTC</span>
+<span class="n">TCTAAGCCTCCCTCTATGTTGCCCCCTTGTCTACTTCCCACTAGACAAGGTTTATAGTGTTCTGCACAAG</span>
+<span class="n">TATTGAGACTCTATGACACCAGGGAGTTTTGCCTCCTAAGACTGCCACCTCCACATCCCTACTCTCCATT</span>
+<span class="n">CCTGATCTACTTTGCTCCATGTTCCAAGTAAGTTAGAATGAGAGGTTCTCACTATATGTGTGGGAGCACG</span>
+<span class="n">TGCCTGTCCTTTGCTTCACAAGGCCCATCTACATTAGAGTATGTATTTGAATGTCCTTCTATGGACATTA</span>
+<span class="n">GACTCATTTTATAAAGCACCTCCATTCCCTTTGCCCCATTCCCCTTAGGGGATGCCTAGCTGGTTCTTCC</span>
+<span class="n">TGATGTCTAGCTGCTTCTCTCTACTGGCTGAGTCTGGTGTCTTTACAGGCACAGCATGAGAGCTGGGCAG</span>
+<span class="n">CCTGTAGGTAGTTTTGGAAAAGTCAACATTTGATTGGTAAGAGGACATTATTCAGAAAGAACAAATCGGG</span>
+<span class="n">AGAGAGTGGGCACACAGGGATGGAAGTTCTCACTTTGGGCTGCAGGTTTCAGGTGAGACTTGTCAAGCTG</span>
+<span class="n">ATTCTAAAATTAACATGATTTATTAGAGGGCCAATATTAGCAAAGACAAGTTTGAAAAAAAAAAAAAGGA</span>
+</pre></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2023-2024"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
