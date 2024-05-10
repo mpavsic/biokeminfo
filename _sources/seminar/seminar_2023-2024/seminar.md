@@ -16,7 +16,7 @@ Vsak mora priti na glavni termin, udeležba na dodatnem terminu je opcijska:
 ---
 ## Splošne informacije
 
-Na seminarju boste reševali enostaven [problem](#problem), ki je v osnovi za vse enak, razlika je pa v tem da vsak posameznik dobi drugačen [vhodni podatek](#vhodni-podatki).
+Na seminarju boste reševali enostaven [problem](#problem-in-naloga), ki je v osnovi za vse enak, razlika je pa v tem da vsak posameznik dobi drugačen [vhodni podatek](#vhodni-podatki).
 
 ---
 ## Problem in naloga
