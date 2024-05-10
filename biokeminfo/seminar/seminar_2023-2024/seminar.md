@@ -73,6 +73,7 @@ Za vsako študentko oz. vsakega študenta je pripravljena vhodna datoteka, ki vs
 | 1 | Varlamov, Mark | [S20](naloge/s20-input.md) |
 | 1 | Veler, Jakob Urh | [S21](naloge/s21-input.md) |
 | 1 | Vogrič, Vanja | [S22](naloge/s22-input.md) |
+| 1 | Matek, Nik | [S23](naloge/s23-input.md) |
 
 ---
 ## Navodila za izdelavo seminarske naloge
