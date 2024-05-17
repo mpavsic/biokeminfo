@@ -74,6 +74,31 @@ Za vsako študentko oz. vsakega študenta je pripravljena vhodna datoteka, ki vs
 | 1 | Veler, Jakob Urh | [S21](naloge/s21-input.md) |
 | 1 | Vogrič, Vanja | [S22](naloge/s22-input.md) |
 | 1 | Matek, Nik | [S23](naloge/s23-input.md) |
+| 2 | Bervar, Amber | [S24](naloge/s24-input.md) |
+| 2 | Boštjančič, Ava | [S25](naloge/s25-input.md) |
+| 2 | Bregar, Jana | [S26](naloge/s26-input.md) |
+| 2 | Cankar, Nina | [S27](naloge/s27-input.md) |
+| 2 | Čarman, Jasna | [S28](naloge/s28-input.md) |
+| 2 | Čerenak, Blaž | [S29](naloge/s29-input.md) |
+| 2 | Dular, Maj | [S30](naloge/s30-input.md) |
+| 2 | Frantar, Mark | [S31](naloge/s31-input.md) |
+| 2 | Gomiršek, Katarina | [S32](naloge/s32-input.md) |
+| 2 | Gričar Vintar, Peter | [S33](naloge/s33-input.md) |
+| 2 | Hvalec, Jan | [S34](naloge/s34-input.md) |
+| 2 | Kosovel, Tina | [S35](naloge/s35-input.md) |
+| 2 | Kozel, Vid | [S36](naloge/s36-input.md) |
+| 2 | Kramar, Zala | [S37](naloge/s37-input.md) |
+| 2 | Lešnik, Tjaša | [S38](naloge/s38-input.md) |
+| 2 | Longar, Špela | [S39](naloge/s39-input.md) |
+| 2 | Makuc, Nika | [S40](naloge/s40-input.md) |
+| 2 | Mulalić, Anita | [S41](naloge/s41-input.md) |
+| 2 | Oman Sušnik, Tonja | [S42](naloge/s42-input.md) |
+| 2 | Pajnhart, Lara | [S43](naloge/s43-input.md) |
+| 2 | Pšeničnik, Tiara | [S44](naloge/s44-input.md) |
+| 2 | Puhov, Špela | [S45](naloge/s45-input.md) |
+| 2 | Robek, Tinkara | [S46](naloge/s46-input.md) |
+| 2 | Škarabot, Anja | [S47](naloge/s47-input.md) |
+| 2 | Trontelj, Domen | [S48](naloge/s48-input.md) |
 
 ---
 ## Navodila za izdelavo seminarske naloge
@@ -90,5 +115,5 @@ Za vsako študentko oz. vsakega študenta je pripravljena vhodna datoteka, ki vs
 
 ```{admonition} Poimenovanje datotek
 :class: warning
-Obvezno se držite navodil za poimenovanje datotek!
+Obvezno se držite navodil za poimenovanje datotek! Prav tako se pred oddajo prepričajte, da boste naložili le eno MarkDown datoteko, vse ostale datoteke (slike) pa bodo ustrezno naslovljene v njej s povezavami.
 ```
