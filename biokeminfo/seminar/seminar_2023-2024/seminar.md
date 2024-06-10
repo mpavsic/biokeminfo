@@ -117,3 +117,60 @@ Za vsako študentko oz. vsakega študenta je pripravljena vhodna datoteka, ki vs
 :class: warning
 Obvezno se držite navodil za poimenovanje datotek! Prav tako se pred oddajo prepričajte, da boste naložili le eno MarkDown datoteko, vse ostale datoteke (slike) pa bodo ustrezno naslovljene v njej s povezavami.
 ```
+
+---
+## Oddane naloge
+
+V tabeli spodaj, ki je le nekoliko razširjena tabela z vhodnimi podatki, so dodane še povezave do oddanih nalog. Vse datoteke, ki so bile duplikati ali celi triplikati (in so posledično zaradi nalaganja pridobile dodatek " (2)" ali " (3)" v svojem imenu), sem pobrisal, glavnim MarkDown datotekam pa ime spremenil tako, da je "s" majhen (kot je prikazano v navodilih). Vse ostalo sem pustil pri miru ter stvari naložil na to spletno stran. Prikaz je pač takšen kot je – če ste navodila dosledno upoštevali je prikaz OK, sicer pa ne.
+
+
+| skupina | priimek, ime | vhodni podatek | oddana naloga |
+|:--------|:-------------|:---------------|:--------------|
+| 1 | Bajec, Lana | [S01](naloge/s01-input.md) | [S01](naloge/s01.md) |
+| 1 | Ferjančič, Lara | [S02](naloge/s02-input.md) | [S02](naloge/s02.md) |
+| 1 | Habot, Hanna | [S03](naloge/s03-input.md) | [S03](naloge/s03.md) |
+| 1 | Hudobivnik, Laura | [S04](naloge/s04-input.md) | [S04](naloge/s04.md) |
+| 1 | Janc, Nika | [S05](naloge/s05-input.md) | [S05](naloge/s05.md) |
+| 1 | Jordan Ferbežar, Uma | [S06](naloge/s06-input.md) | [S06](naloge/s06.md) |
+| 1 | Klinar, Brina | [S07](naloge/s07-input.md) | [S07](naloge/s07.md) |
+| 1 | Kociper, Debora | [S08](naloge/s08-input.md) | [S08](naloge/s08.md) |
+| 1 | Kolenc, Klara | [S09](naloge/s09-input.md) | [S09](naloge/s09.md) |
+| 1 | Kolnik, Dan | [S10](naloge/s10-input.md) | [S10](naloge/s10.md) |
+| 1 | Kristl, Simon | [S11](naloge/s11-input.md) | [S11](naloge/s11.md) |
+| 1 | Kunstelj, Karin | [S12](naloge/s12-input.md) | [S12](naloge/s12.md) |
+| 1 | Majerle, Nina | [S13](naloge/s13-input.md) | [S13](naloge/s13.md) |
+| 1 | Mohar, Teja | [S14](naloge/s14-input.md) | [S14](naloge/s14.md) |
+| 1 | Osterc, Igor | [S15](naloge/s15-input.md) | [S15](naloge/s15.md) |
+| 1 | Perc, Anže | [S16](naloge/s16-input.md) | [S16](naloge/s16.md) |
+| 1 | Polutnik, Patricija | [S17](naloge/s17-input.md) | [S17](naloge/s17.md) |
+| 1 | Snedec, Andraž | [S18](naloge/s18-input.md) | [S18](naloge/s18.md) |
+| 1 | Trobiš, Veronika | [S19](naloge/s19-input.md) | [S19](naloge/s19.md) |
+| 1 | Varlamov, Mark | [S20](naloge/s20-input.md) | [S20](naloge/s20.md) |
+| 1 | Veler, Jakob Urh | [S21](naloge/s21-input.md) | [S21](naloge/s21.md) |
+| 1 | Vogrič, Vanja | [S22](naloge/s22-input.md) | [S22](naloge/s22.md) |
+| 1 | Matek, Nik | [S23](naloge/s23-input.md) | [S23](naloge/s23.md) |
+| 2 | Bervar, Amber | [S24](naloge/s24-input.md) | [S24](naloge/s24.md) |
+| 2 | Boštjančič, Ava | [S25](naloge/s25-input.md) | [S25](naloge/s25.md) |
+| 2 | Bregar, Jana | [S26](naloge/s26-input.md) | [S26](naloge/s26.md) |
+| 2 | Cankar, Nina | [S27](naloge/s27-input.md) | [S27](naloge/s27.md) |
+| 2 | Čarman, Jasna | [S28](naloge/s28-input.md) | [S28](naloge/s28.md) |
+| 2 | Čerenak, Blaž | [S29](naloge/s29-input.md) | [S29](naloge/s29.md) |
+| 2 | Dular, Maj | [S30](naloge/s30-input.md) | [S30](naloge/s30.md) |
+| 2 | Frantar, Mark | [S31](naloge/s31-input.md) | [S31](naloge/s31.md) |
+| 2 | Gomiršek, Katarina | [S32](naloge/s32-input.md) | [S32](naloge/s32.md) |
+| 2 | Gričar Vintar, Peter | [S33](naloge/s33-input.md) | [S33](naloge/s33.md) |
+| 2 | Hvalec, Jan | [S34](naloge/s34-input.md) | [S34](naloge/s34.md) |
+| 2 | Kosovel, Tina | [S35](naloge/s35-input.md) | [S35](naloge/s35.md) |
+| 2 | Kozel, Vid | [S36](naloge/s36-input.md) | [S36](naloge/s36.md) |
+| 2 | Kramar, Zala | [S37](naloge/s37-input.md) | [S37](naloge/s37.md) |
+| 2 | Lešnik, Tjaša | [S38](naloge/s38-input.md) | [S38](naloge/s38.md) |
+| 2 | Longar, Špela | [S39](naloge/s39-input.md) | [S39](naloge/s39.md) |
+| 2 | Makuc, Nika | [S40](naloge/s40-input.md) | [S40](naloge/s40.md) |
+| 2 | Mulalić, Anita | [S41](naloge/s41-input.md) | [S41](naloge/s41.md) |
+| 2 | Oman Sušnik, Tonja | [S42](naloge/s42-input.md) | [S42](naloge/s42.md) |
+| 2 | Pajnhart, Lara | [S43](naloge/s43-input.md) | [S43](naloge/s43.md) |
+| 2 | Pšeničnik, Tiara | [S44](naloge/s44-input.md) | [S44](naloge/s44.md) |
+| 2 | Puhov, Špela | [S45](naloge/s45-input.md) | [S45](naloge/s45.md) |
+| 2 | Robek, Tinkara | [S46](naloge/s46-input.md) | [S46](naloge/s46.md) |
+| 2 | Škarabot, Anja | [S47](naloge/s47-input.md) | [S47](naloge/s47.md) |
+| 2 | Trontelj, Domen | [S48](naloge/s48-input.md) | [S48](naloge/s48.md) |
