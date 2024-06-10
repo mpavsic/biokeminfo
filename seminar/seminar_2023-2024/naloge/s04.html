@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>S04 &#8212; Biokemijska informatika</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2023-2024/naloge/s04';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2023-2024/naloge/s04.html" />
+    <link rel="icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../naslovnica.html">
+                    Predgovor
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/dotplot_web.html">VAJA: Točkovni diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/git.html">Git in GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2023-2024.html">Vaje 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar.html">Seminar 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../seminar_2021-2022/seminar.html">Seminar 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/edit/main/biokeminfo/seminar/seminar_2023-2024/naloge/s04.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/issues/new?title=Issue%20on%20page%20%2Fseminar/seminar_2023-2024/naloge/s04.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/seminar/seminar_2023-2024/naloge/s04.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S04</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">S04</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#osnovni-podatki">Osnovni podatki</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ime-proteina">Ime proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#izvorni-organizem-proteina">izvorni organizem proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalizacija-in-topologija-ce-je-membranski">Lokalizacija in topologija (če je membranski)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velikost-proteina">Velikost proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domenska-zgradba">Domenska zgradba</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-translacijske-modifikacije-ptm">Post-translacijske modifikacije (PTM)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcija">Funkcija</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcija-proteina">Funkcija proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substrat">Substrat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#najbolj-in-najmanj-ohranjene-regije">Najbolj in najmanj ohranjene regije</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sorodni-proteini">Sorodni proteini</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sorodni proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filogenetsko-drevo-in-poravnava">Filogenetsko drevo in poravnava</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobni-evkariontski-proteini">Podobni evkariontski proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcijska-povezanost-z-drugimi-proteini">Funkcijska povezanost z drugimi proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morebitne-medproteinske-interakcije">Morebitne medproteinske interakcije</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktura">Struktura</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksperimentalno-dolocena-struktura">eksperimentalno določena struktura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#superpozicija-pro-in-evakriontskih-variant">Superpozicija pro- in evakriontskih variant</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s04">
+<h1>S04<a class="headerlink" href="#s04" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Avtor</strong>: Laura Hudobivnik</p></li>
+<li><p><strong>Datum izdelave</strong>: 2024-05-10</p></li>
+<li><p><strong>Koda seminarja</strong>: S04</p></li>
+</ul>
+<hr class="docutils" />
+<section id="vhodni-podatek">
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Link to this heading">#</a></h2>
+<p>Povezava do datoteke z vhodnim podatkom: <a class="reference internal" href="#naloge/s04-input.md"><span class="xref myst">S04</span></a></p>
+</section>
+<section id="rezultati-analiz">
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Link to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="osnovni-podatki">
+<h1>Osnovni podatki<a class="headerlink" href="#osnovni-podatki" title="Link to this heading">#</a></h1>
+<section id="ime-proteina">
+<h2>Ime proteina<a class="headerlink" href="#ime-proteina" title="Link to this heading">#</a></h2>
+<p><strong>Thimet oligopeptidase</strong></p>
+<p><em>Thimet oligopeptidases (EC 3.4.24.15), okrajšano kot TOPs, so vrsta M3 metalopeptidaz (Wikipedia)</em></p>
+<p>Postopek je vseboval 2 dela:</p>
+<ul class="simple">
+<li><p>določitev inserta in</p></li>
+<li><p>identifikacijo proteina.</p></li>
+</ul>
+<p>DOLOČITEV INSERTA</p>
+<p>Za določitev inserta smo najprej pridobili zaporedje plazmidnega vektorja pUC57, v katerega je bil protein/del proteina vstavljen. Osnovne podatke o vektorju pUC57 in njegovo zaporedje smo pridobili s spletne strani enega izmed ponudnikov: <a class="reference external" href="https://www.genscript.com/vector/SD1176-pUC57_plasmid_DNA.html">GenScript</a></p>
+<p>z orodjem EMBOSS Needle smo naredili (globalno) poravnavo zaporedja vektorja pUC57 in naših izhodnih podatkov (vektor pUC57 + insert). Rezultat je prikazan na naslednji sliki:</p>
+<p><img alt="identifikacija inserta s poravnavo v EMBOSS Needle" src="../../../_images/S04-identifikacija_inserta.png" /></p>
+<p>Obširnejša sklenjena vrzel, ki jo obdajata dva popolnoma poravnana območja kaže, da gre tam za področje inserta. Plazmid je krožna DNA, zato pride do krajšega zaporedja na začetku in koncu, ki nista poravnana, ampak sta popolnoma identična, zatorej ne gre za še eno vrzel. Začetek in konec inserta je prikazan na naslednjih dveh slikah:</p>
+<p><img alt="začetek inserta v poravnavi" src="../../../_images/S04-zacetek_inserta.png" /></p>
+<p><img alt="konec inserta v poravnavi" src="../../../_images/S04-konec_inserta.png" /></p>
+<p>IDENTIFIKACIJA PROTEINA</p>
+<p>V naslednjem koraku smo z orodjem BLASTx z insertom v obliki FASTA formata poiskali čimbolj podobne proteine, v želji, da najdemo tega, kjer je 100 % identičnost, saj bi tako lahko določili iskani protein. Iskanje smo začeli z non-redundant protein sequences (nr), ampak nismo našli nobenih 100 % identičnih proteinov, kar demonstrira spodnja slika z vrednostmi pod “per. ident”.</p>
+<p><img alt="identifikacija proteina v nr z blastX" src="../../../_images/S04-TOP_identif_nr.png" /></p>
+<p>Iskanje smo zato ponovili z bazo metagenomic proteins (env_nr) in našli eno 100 % ujemanje pod prvim zadetkom, kar je vidno na spodnjih dveh slikah. Prva kaže na 100 % per.ident, druga pa poravnavo.</p>
+<p><img alt="identifikacija proteina v env_nr z blastX" src="../../../_images/S04-TOP_identif_env_nr.png" /></p>
+<p><img alt="identifikacija thimet oligopeptidase" src="../../../_images/S04-TOP_identif_poravnava.png" /></p>
+<p>Kot kaže, je bil v insertu vstavljen celoten zapis za protein, kar z enako dolžino protein, demonstrirajo podatki z GenBank. Na vrhu v isti liniji kot “LOCUS” je zapis “646 aa”, kar pomeni dolžino 646 aminokislinskih ostankov. Ta dolžina je enaka kot na zgornji fotografiji pod “Length”.</p>
+<p><img alt="Thimet oligopeptidase v GenBank" src="../../../_images/S04-TOP_GenB.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="izvorni-organizem-proteina">
+<h2>izvorni organizem proteina<a class="headerlink" href="#izvorni-organizem-proteina" title="Link to this heading">#</a></h2>
+<p><strong>Nocardioides cavernae</strong></p>
+<p>Aminokislinsko zaporedje našega proteina temelji na metagenomski bazi podatkov. Najbolj jasno to lahko vidimo na GenBank, kjer je navedeno, da je organizem “metagenom”, vir izolacije pa “liquid mineral medium”. (glej zgornjo sliko - tretja in četrta vrstica pod “source”).</p>
+<p>Metagenom si lahko podrobneje ogledamo, kot je izpisan na sledeči sliki ampak iz njega nismo mogli razbrati izvornega organizma.</p>
+<p><img alt="prikaz podatkov o specifičnem metagenomu" src="../../../_images/S04-metagenom_info.png" /></p>
+<p>Za dodatne informacije, smo se obrnili na podobne proteine - tiste, ki niso bili 100 % identični, najdene z BLASTx v bazi non-redundant protein sequences (nr).</p>
+<p>Prva dva zadetka sta imela vse pomembnejše parametre enake, predvsem pa je bil delež identičnosti pri obeh 95,93 %</p>
+<p><img alt="poravnava našega proteina s prvim zadetkom" src="../../../_images/S04-zadetek1-poravnava.png" /></p>
+<p><img alt="poravnava našega proteina z drugim zadetkom" src="../../../_images/S04-zadetek2_poravnava.png" /></p>
+<p>To sta bila spodaj navedena:</p>
+<ul class="simple">
+<li><p>peptidase M3 [Nocardioides sp. Root122]</p></li>
+<li><p>M3 family metallopeptidase [Nocardioides]</p></li>
+</ul>
+<p>Po prvem sodeč naj bi po vsej verjetnosti bil izvorni organizem proteina bakterija Nocardioides sp. Root122. Za drug zadetek, če odpremo rubriko “alignments” opazimo, da ima M3 family metallopeptidase [Nocardioides] še eno poimenovanje: Zn-dependent oligopeptidase [Nocardioides cavernae]. Po izbiri najdbe identičnih proteinov znotraj GenBank, dobimo izpis spodnje tabele:</p>
+<p><img alt="tabela identičnih proteinov v GenBank" src="../../../_images/S04-identicni_proteini.png" /></p>
+<p>Kot kaže, gre za popolnoma identične proteine le z nekoliko drugačnimi oznakami in skoraj identičnimi organizmi. Ob pogledu na taksonomijo vsakega naletimo na to, da je Nocardioides sp. Root122 neklasificiran, zatorej smo se za odgovor glede izvornega organizma odločili za drugi zadetek.</p>
+<p><img alt="taksonomija prvega zadetka" src="../../../_images/S04-zadetek1_takson.png" /></p>
+<p><img alt="taksonomija drugega zadetka" src="../../../_images/S04-zadetek2_takson.png" /></p>
+<p>Pod “Lineage” vidimo celotno klasifikacijo za oba organizma. Pri Nocardioides sp. Root122 se konča z “unclassified Nocardioides”</p>
+<p><em>Nocardioides cavernae je morfološko bacil, glede na sestavo celične membrane in stene Gram-pozitivna bakterija, glede tolerantnosti na kisik pa aerobna bakterija. (Wikipedija)</em></p>
+<p><img alt="taksonomija izhodnega organizma" src="../../../_images/S04-izhodni_org_takson.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="lokalizacija-in-topologija-ce-je-membranski">
+<h2>Lokalizacija in topologija (če je membranski)<a class="headerlink" href="#lokalizacija-in-topologija-ce-je-membranski" title="Link to this heading">#</a></h2>
+<p><strong>Citoplazma</strong></p>
+<p>Podatka o lokaciji proteina na Uniprotu nismo našli, saj se protein nahaja v izrazito specifičnem organizmu.</p>
+<p>Glede na to, da je izvorni organizem bakterija, so mogoče lokacije citoplazma, periplazma, membrana ali extracelularni prostor (izločanje s sekrecijo).</p>
+<p>Na Uniprotu so tudi za ostale bakterije večinoma odsotni podatki, zato smo se obrnili na različna orodja, ki glede na aminokislinsko zaporedje (in signalne sekvence) predvidevajo lokalizacijo.</p>
+<p>WoLFPSORT kot največjo verjetnost mesta nahajanja prevideva citoplazmo. Omenjeno orodje ne ponuja izbire bakterij, ampak le živali, rastline in glive.</p>
+<p>V prvi vrstici zgornje slike so z naraščajočim številom posameznih lokacij povezane večje verjetnosti nahajanja. za citosol/citoplazmo ta znaša 8.5, kar je največ izmed vseh navedenih možnosti.</p>
+<p><img alt="prikaz lokalizacije z WolFSPORT" src="../../../_images/S04-lokaliz_WolFSPORT.png" /></p>
+<p>Zato smo za dodatno verifikacijo uporabili še SignalP. Ta ponuja izbiro bakterijo, tudi specifično Gram pozitivnih, kar je predvideni izvorni organizem.</p>
+<p><img alt="prikaz lokalizacije s SignalP" src="../../../_images/S04-lokaliz_SignalP.png" /></p>
+<p>Spodnja slika povzema rezultate: zelo majhna je verjetnost, da gre za sekretoren ali membranski protein  (Signal peptide (Sec/SPI),	TAT signal peptide (Tat/SPI), Lipoprotein signal peptide ,(Sec/SPII)). Po principu izključevanja sklepamo, da je edina preostala možna lokacija (pod “other”) verjetno citoplazma.</p>
+<hr class="docutils" />
+</section>
+<section id="velikost-proteina">
+<h2>Velikost proteina<a class="headerlink" href="#velikost-proteina" title="Link to this heading">#</a></h2>
+<p><strong>646 aminokislinskih ostankov</strong> (razloženo že zgoraj), oz 71 060 Daltonov, kar je približno 71 kDa</p>
+<p>Podatek o dolžini aminokislinskega zaporedja (velikosti proteina) je bil pridobljen z GenBank, pretvorbo v enoto Daltonov pa smo izvedli na podlagi predpostavke, da je molekulska masa ene aminokisline 110 Da.</p>
+<p>Dolžina aminokislinskega zaporedja je navedena v isti liniji kot “LOCUS” v obliki “646 aa”.</p>
+<p><img alt="Thimet oligopeptidase v GenBank" src="../../../_images/S04-TOP_GenB.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="domenska-zgradba">
+<h2>Domenska zgradba<a class="headerlink" href="#domenska-zgradba" title="Link to this heading">#</a></h2>
+<p><strong>peptidaza M3A/M3B s katalitični domeno in potencialni signalni peptid na N-koncu</strong></p>
+<p>Na Uniprotu je za protein na voljo razdelek “family &amp; domains”, kjer je od 218 do 642 aminokislinskega ostanka označena peptidaza M3A/M3B katalitična domena (Peptidase M3A/M3B catalytic).</p>
+<p>To demonstrira spodnja slika:</p>
+<p><img alt="domenska zgradba glede na UniProt" src="../../../_images/S04-domene_UniP.png" /></p>
+<p>Za podrobnejše določitev (predvidevanje) domen smo uporabili InterPro, kamor smo vnesli aminokislinsko zaporedje (GenBank) proteina. Rezultate povzemata spodnji dve sliki.</p>
+<p>(Predvidene) domene, ki jih najdemo v bazi Interpro so:</p>
+<ul class="simple">
+<li><p>Neurolyisin/Thimet oligopeptidase, N-terminal</p></li>
+<li><p>Metallopeptidase, catalytic domain superfamily</p></li>
+<li><p>Neurolysin/Thimet oligopeptidase, domain 2</p></li>
+<li><p>Peptidase M3A/M3B s predelom katalitične domene</p></li>
+</ul>
+<p>kot jih prepoznamo v …</p>
+<p><img alt="naštete domene iz baze InterPro" src="../../../_images/S04-nastete_domene-InterP.png" /></p>
+<p><img alt="domenska zgradba glede na InterPro" src="../../../_images/S04-domene_InterP.png" /></p>
+<p>Zadnja domena (Peptidase M3A/M3B s predelom katalitične domene) je enaka, kot jo podaja Uniprot, pokriva tudi enako področje. Vse ostale spadajo pod homologno superdružino -  evolucijsko te domene izhajajo iz skupnega prednika. Pokrivajo pretežno predel pred (v obeh orodjih potrjeno) peptidaza M3A/M3B katalitično domeno.</p>
+<p>Alternativno razlago, kaj predstavlja področje na N-koncu ponuja proučevanje drugega zadetka homolognih proteinov našemu pod alternativnim imenom “Zn-dependent oligopeptidase” (obrazloženo že zgoraj). V večih bakterijah se poleg peptidaza M3A/M3B katalitične domene nahaja še signalna sekvenca.</p>
+<p><img alt="domene primerljivih od cinka-odvisnih oligopeptidaz" src="../../../_images/S04-domene_Zn.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="post-translacijske-modifikacije-ptm">
+<h2>Post-translacijske modifikacije (PTM)<a class="headerlink" href="#post-translacijske-modifikacije-ptm" title="Link to this heading">#</a></h2>
+<p>Podatka o potencialnih post-translacijskih modifikacijah proteina na Uniprotu nismo našli, saj se protein nahaja v izrazito specifičnem organizmu.</p>
+<p>Proučevanje podobnih proteinov v bakterijah kaže na raznolikost rezultatov.
+Ker torej spet ne moremo z gotovostjo trditi do kakšnih modifikacij prihaja, če sploh, smo se obrnili na orodja za predvidevanje.</p>
+<p>Orodje ScanProsite ne napoveduje nobenih modifikacij, le identificira aktivno mesto na aminokislinskem ostanku 445 in vezavno mesto za Zn.</p>
+<p><img alt="Post-translacijske modifikacije v ScanProsite" src="../../../_images/S04-PTM_ProSITE.png" /></p>
+<p>V nadaljevanju smo si za dodatnov verifikacijo z orodjem MusiteDeep ogledali, kaj so predvidevane PTM. Score smo ponastavili na min. 0.6, kar sega v zgornji del območja srednje gotovosti. Na štirih serinih predvideva <strong>srednjo gotovo napoved fosforilacije</strong>.</p>
+<p><img alt="Post-translacijske modifikacije s MusiteDeep" src="../../../_images/S04-PTM_MusiteDeep.png" /></p>
+<p>(predvidene PTM ob ponastavljenih parametrih za dovolj stroge pogoje navedene v najbolj desnem stolpcu)</p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="funkcija">
+<h1>Funkcija<a class="headerlink" href="#funkcija" title="Link to this heading">#</a></h1>
+<section id="funkcija-proteina">
+<h2>Funkcija proteina<a class="headerlink" href="#funkcija-proteina" title="Link to this heading">#</a></h2>
+<p>Molekulska funkcija: <strong>vezava kovinskega iona in metaloendopeptidazna aktivnost</strong></p>
+<p>Metalloendopeptidazna aktivnost pomeni cepitev peptidov srednjih dolžin s pomočjo kovinskega iona.</p>
+<p>(Protein namreč spada pod Thimet oligopeptidase family, veliko družino sesalskih in bakterijskih oligopeptidaz, ki cepijo peptide srednjih dolžin).</p>
+<p>Informacijo smo pridobili z Interpro glede na osnovno domeno: peptidaza M3A/M3B s katalitično funkcijo (in tako tudi funkcijsko pomembnostjo). Omenjena domena spada pod peptidaze družine M3.</p>
+<p><em>opomba: vse, kar je o funkciji zapisano v zgornjih odstavkih izhaja iz besedila naslednjih treh slik:</em></p>
+<p><img alt="Funkcije glede na Interpro" src="../../../_images/S04-funkc_InterP.png" /></p>
+<p><img alt="Peptidaze M3" src="../../../_images/S04-peptidaze_M3.png" /></p>
+<p><img alt="Peptidaze M3A/M3B" src="seminar/seminar_2023-2024/naloge/S04-peptidaze_M3A:MB.png" /></p>
+<p>Del katerega biološkega procesa: <strong>proteolize</strong></p>
+<p>Podatke v odebeljenem zapisu smo pridobili z Uniprota pod razdelkom “Function”</p>
+<p><img alt="Funkcije glede na UniProt" src="../../../_images/S04-funkcije_UniP_prikaz.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="substrat">
+<h2>Substrat<a class="headerlink" href="#substrat" title="Link to this heading">#</a></h2>
+<p><strong>oligopeptidaze</strong></p>
+<p>(vir že pod točko “Funkcija proteina”, kjer so obrazložene peptidaze M3)</p>
+<p><strong>cink kot ligand za katalizo</strong></p>
+<p>(vir je v okviru podatkov o funkciji z UniProt pod “Keywords/Ligand” na zgornji sliki)</p>
+<hr class="docutils" />
+</section>
+<section id="najbolj-in-najmanj-ohranjene-regije">
+<h2>Najbolj in najmanj ohranjene regije<a class="headerlink" href="#najbolj-in-najmanj-ohranjene-regije" title="Link to this heading">#</a></h2>
+<p><em>V luči funkcije proteina</em></p>
+<p>Poravnavo večih zaporedij proteinov podobnih glede na aminokislinsko zaporedje smo izvedli s Clustal Omega, grafično predstavo pa z WebLogo3 po pretvorbi poravnave v FASTA format.</p>
+<p><img alt="grafično prikazana ohranjenost regij" src="../../../_images/S04-ohranjenost_regij_WebL.png" /></p>
+<p>Za funkcijo proteina je najpomembnejša domena peptidaza M3A/M3B s katalitičnim delom, zato ni presenetljivo, da je del ki ga pokriva (večina zaporedja le brez krajšega zaetnega dela), večinoma dobro ohranjen.</p>
+<p>Slabša ohranjenost je le na začetku (manjša velikost črk)</p>
+<p><em>opomba: odločili smo se za monokromatsko barvno skalo, ker je bila kljub pričakovanemu glede na ostale možnosti barvne možnosti najprimernejša za olajšano prepoznavanje velikosti črk</em></p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="sorodni-proteini">
+<h1>Sorodni proteini<a class="headerlink" href="#sorodni-proteini" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Sorodni proteini<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Sorodne proteine smo določali na podlagi treh kriterijev</p>
+<ul class="simple">
+<li><p>glede na podobnost aminokislinskega zaporedja</p></li>
+<li><p>glede na ključne motive/domene</p></li>
+<li><p>glede na 3D strukturo</p></li>
+</ul>
+<p>GLEDE NA AMINOKISLINSKO ZAPOREDJE</p>
+<p><strong>M3 family metallopeptidase</strong> (ali z drugim imenom: Zn-dependent oligopeptidase) v pretežno v različnih vrstah Nocardioides.</p>
+<p>Z iskanje po nr bazi BLASTp z zaporedjem našega protein, smo pridobili naslednje zadetke:</p>
+<p><img alt="Sorodni proteini z blastP" src="../../../_images/S04-podobni_prot_blastX.png" /></p>
+<p>GLEDE NA OHRANJENE KLJUČNE MOTIVE/DOMENE:</p>
+<p><strong>Thimet oligopeptidaze za organizme</strong>: Mus Musculus (hišna miš), Ratts norvegicus (podgana), Bos taurus (govedo), Sus scrofa (prašič), homo sapiens (človek) in nekoliko manj soroden (mitohodrijski) <strong>nevrolizin</strong> v različnih organizmih. Delež identičnosti se je pri najbližjih zadetkih gibal okrog 30 %, kar je malo.</p>
+<p><img alt="podobni proteini glede na ohranjene ključne domene" src="../../../_images/S04-podobni_prot1_PSIblast.png" /></p>
+<p><img alt="podobni proteini glede na ohranjene ključne domene glede na možnosti v bazi" src="../../../_images/S04-podobni_prot2_PSIblast.png" /></p>
+<p>V tem primeru, smo iskanje izvedli z PSI-BLAST (Sequence Similarity Search (SSS)) s čimer dobimo manjšo podobnost sekvence, ampak bolj konzervativne domene (pri nas je ta ena). S tem dobimo zadetke, evolucijsko bolj oddaljenih vrst, ki so funkcijsko (bolj) relevantne.</p>
+<p>GLEDE NA 3D STRUKTURO</p>
+<p>Še boljši odgovor na to, kaj so funkcijsko primerljivi proteini, lahko dobimo z iskanjem proteinom s podobno 3D strukturo. To smo izvedli z orodjem DALI.</p>
+<p>Namesto “Heuretic”, smo uporabili “Extensive search” za povečano bazo iskanje, s katero bi lažje preprečili lažne visoke vrednosti Z.</p>
+<p><img alt="Podobni proteini glede na 3D strukturo" src="../../../_images/S04-podobni_prot_DALI.png" /></p>
+<p>Prva dva zadetka: <strong>4ka7-A, OLIGOPEPTIDASE A</strong> in <strong>2h1n-A  OLIGOENDOPEPTIDASE F</strong> sta glede na primerljivo dolžino aminokislinskega zaporedja in dovolj visoko vrednost Z (&gt; 2.0) strukturno dokaj primerljiva. Res pa je, da smo iskali le po PDB bazi, ki je srednje velika, in izključuje številne (npr. le predvidene) strukture.</p>
+<hr class="docutils" />
+</section>
+<section id="filogenetsko-drevo-in-poravnava">
+<h2>Filogenetsko drevo in poravnava<a class="headerlink" href="#filogenetsko-drevo-in-poravnava" title="Link to this heading">#</a></h2>
+<p>Poravnavo smo izvedli s ClustalOmega za ogled filogenetskega drevesa. Spodnja fotografija prikazuje le del poravnave. Izbranih je bilo začetnih 25 najbolj podobnih zaporedij in še naše izhodno (skupno 26).</p>
+<p><img alt="poravnava podobnih proteinov s ClustalOmega" src="../../../_images/S04-podobni_prot_ClustalO.png" /></p>
+<p>Filogenetsko drevo sorodnih proteinov glede na aminokislinsko zaporedje (neposreden pogled iz BLASTp pod razdelkom “Distance tree of results”)</p>
+<p><img alt="filogenetsko drevo" src="../../../_images/S04-filogenetsko_drevo.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="podobni-evkariontski-proteini">
+<h2>Podobni evkariontski proteini<a class="headerlink" href="#podobni-evkariontski-proteini" title="Link to this heading">#</a></h2>
+<p>Uporabili smo celotno zaporedje za naš protein v orodju BLASTp z dodatnim kriterijem organizma: Eukaryota (taxid:2759) kot bazo podatkov pa: non-redundant protein sequences (nr)</p>
+<p>Edini z E-vrednostjo O in največjo identičnostjo (48,58 %), ki je vseeno prenizka, da bi ta protein lahko z gotovostjo označili kot podobnega je bil <strong>hipotetični protein Q3G72_001378 [Acer saccharum]</strong>. Zanesljivih podatkov o njegovi funkciji ni bilo moč pridobiti.</p>
+<p><img alt="iskanje podobnih evkariontskih proteinov z blastP" src="../../../_images/S04-iskanje_evkar_blastP.png" />
+<img alt="sorodni evkariontski proteini najdeni z blastP" src="../../../_images/S04-rezultati_evkar_blastP.png" /></p>
+<p>Iskanje smo ponovili še z najbolj podobnim proteinom našemu (95,93 % identičnost) peptidase M3, ki v nasprotju z našim pripada speicifičnemu organizmu: [Nocardioides sp. Root122].
+Dobili smo enake rezultate.</p>
+<hr class="docutils" />
+</section>
+<section id="funkcijska-povezanost-z-drugimi-proteini">
+<h2>Funkcijska povezanost z drugimi proteini<a class="headerlink" href="#funkcijska-povezanost-z-drugimi-proteini" title="Link to this heading">#</a></h2>
+<p>S pomočjo orodja STRING, smo našli 6 funkcijskih partnerjev. Kot organizem smo ponastavili: Nocardioides sp. Root122, ker je imel glede na ponujene možnosti največji delež ujemanja (gre za prvi zadetek, ki smo ga dobili tudi z BLASTx pri določanju izvornega organizma)</p>
+<p><img alt="grafični prikaz funkcijske povezanosti" src="../../../_images/S04-funkc_povezanost_STRING.png" /></p>
+<p><img alt="prikaz funkcijske povezanosti v tabeli " src="../../../_images/S04-funkc_povezanost2_STRING.png" /></p>
+<p><em>Opomba: vsi proteini, ki se začnejo s KQV, so bili pridobljeni s pomočjo predvidevanja glede na proteinske homologe (automated computational analysis using gene prediction method)</em></p>
+<p>Upoštevali smo le proteine, kjer je score segal v mejo vsaj srednje vrednosti zanesljivosti (0.400 - 0.700), kar so že bolj zanesljivi rezultati, vseeno pa bi za potrditev potrebovali eksperimentalne podatke.</p>
+<p>Blizu drug drugega v genskem zapisu (gene neighbour) naj bi bila 2 - oksidoreduktaza pod oznako <strong>KQV77549.1</strong> in preprotein translokazna podenota SecD z imenom <strong>SecF</strong>.
+Geni, ki so lokacijsko blizu, še posebej pa v prokariontih, so pogosto funkcijsko povezani in regulirani ali pa deli istega operona.</p>
+<p><strong>KQV63027.1</strong> (hipotetični protein), <strong>KQV65832.1</strong> (Xaa-Pro aminopeptidaza) in <strong>KQV69489.1</strong> (še en hipotetični protein) so glede na filogenetsko določitev (concurrence or phylogenetic profiling) potencialno funkcijsko povezani z našim. Ta način funkcijske analize pregleda, ali se gena za izbrana dva proteina (ali proteina sama) konsistentno pojavljata skupaj preko različnih vrst. To namreč nakazuje, da sta morda funkcijsko povezani, vključena v iste biološke procese.</p>
+<p>Glede na že obstoječo znanstveno literaturo (text mining) sta funkcijsko z našim proteinom potencialno povezana <strong>gltX</strong> (glutamat-tRNA ligaza) in <strong>KQV65832.1</strong> (hipotetični protein).</p>
+<p>Celokupno se največ interakcij predvideva z <strong>KQV65832.1</strong></p>
+<hr class="docutils" />
+</section>
+<section id="morebitne-medproteinske-interakcije">
+<h2>Morebitne medproteinske interakcije<a class="headerlink" href="#morebitne-medproteinske-interakcije" title="Link to this heading">#</a></h2>
+<p>O našem proteinu nismo našli podatkov.
+Sorodni proteini v evkariontskih organizmih so obsegali le en hipotetičen protein (glej razdelek “Sorodni evkariontski proteini”), zatorej tudi tega nismo mogli uporabiti za napoved medproteinsih interakcij.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="struktura">
+<h1>Struktura<a class="headerlink" href="#struktura" title="Link to this heading">#</a></h1>
+<section id="eksperimentalno-dolocena-struktura">
+<h2>eksperimentalno določena struktura<a class="headerlink" href="#eksperimentalno-dolocena-struktura" title="Link to this heading">#</a></h2>
+<p>Podatka za strukturo thimet oligopeptidase v PDB za naš izhodnji organizem ni.
+V bazi je le struktura za človeka (PDB ID: 1S4B), zato smo lahko v Chimeri vizualizirali slednjo. Zaradi katalitične pomembnosti smo posebej označili cinkov ion.</p>
+<p><img alt="eksperimentalno določena struktura" src="../../../_images/S04-struktura_eksp_human_TOP.png" /></p>
+<hr class="docutils" />
+</section>
+<section id="model">
+<h2>Model<a class="headerlink" href="#model" title="Link to this heading">#</a></h2>
+<p>Model proteina je bil oblikovan s pomočjo zaporedja iz GenBank v Alphafold 2 (Google Colab)</p>
+<p><img alt="AlphaFold2 model" src="../../../_images/S04-model_AlphaFold2.png" /></p>
+<p>Pretežno je zanesljivost strukture proteina zelo visoka (&gt; 90 %). Nekoliko manjšo zanesljivost najdemo na manjšem odseku tekom strukture (svetlo modro obarvano, &gt; 80 %). Izraziteje manj zanesljivo regijo prepoznamo le v N-terminalnem delu (padec vse do &lt; 50%)</p>
+<hr class="docutils" />
+</section>
+<section id="superpozicija-pro-in-evakriontskih-variant">
+<h2>Superpozicija pro- in evakriontskih variant<a class="headerlink" href="#superpozicija-pro-in-evakriontskih-variant" title="Link to this heading">#</a></h2>
+<p>V SWISS-PROT smo oblikali model našega proteina glede na aminokislinsko zaporedje. Dobili smo 2 modela, ki ju prikazuje slednja slika:</p>
+<p><img alt="model v SWISS-PROT" src="../../../_images/S04-model_SWISS-prot.png" /></p>
+<p>Za superpozicijo smo uporabili program Chimera X, kjer smo v isti seji izvedli poravnavo (MatchMaker) našega proteina (SWISS_PROT) in najbolj podobnega evkariontskega proteina glede na 3D strukturo (PDB: 4KA7, OLIGOPEPTIDASE A. Omenjen in določen je bil pri iskanju podobnih proteinov glede na 3D strukturo z DALI).</p>
+<p><img alt="superpozicija" src="../../../_images/S04-poravnava_ChimeraX.png" /></p>
+<p><em>opomba: vijolično je obarvan naš protein (thimet oligopeptidase), turkizno pa oligopeptidase A pod PDB ID: 4KA7</em></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2023-2024/naloge"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">S04</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#osnovni-podatki">Osnovni podatki</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ime-proteina">Ime proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#izvorni-organizem-proteina">izvorni organizem proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalizacija-in-topologija-ce-je-membranski">Lokalizacija in topologija (če je membranski)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velikost-proteina">Velikost proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domenska-zgradba">Domenska zgradba</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-translacijske-modifikacije-ptm">Post-translacijske modifikacije (PTM)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcija">Funkcija</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcija-proteina">Funkcija proteina</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substrat">Substrat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#najbolj-in-najmanj-ohranjene-regije">Najbolj in najmanj ohranjene regije</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sorodni-proteini">Sorodni proteini</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sorodni proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filogenetsko-drevo-in-poravnava">Filogenetsko drevo in poravnava</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobni-evkariontski-proteini">Podobni evkariontski proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funkcijska-povezanost-z-drugimi-proteini">Funkcijska povezanost z drugimi proteini</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morebitne-medproteinske-interakcije">Morebitne medproteinske interakcije</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktura">Struktura</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksperimentalno-dolocena-struktura">eksperimentalno določena struktura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#superpozicija-pro-in-evakriontskih-variant">Superpozicija pro- in evakriontskih variant</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

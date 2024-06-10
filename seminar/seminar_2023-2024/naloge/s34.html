@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>S34 &#8212; Biokemijska informatika</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KG7KWKX5VG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KG7KWKX5VG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/seminar_2023-2024/naloge/s34';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/biokeminfo/seminar/seminar_2023-2024/naloge/s34.html" />
+    <link rel="icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../naslovnica.html">
+                    Predgovor
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/dotplot_web.html">VAJA: Točkovni diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/poravnave.html">Poravnave</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_nw_sw.html">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/poravnava2_lastna_matrika.html">DEMO: Izračun lastne matrike in njena uporaba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/msa.html">VAJA: Poravnave več zaporedij</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../vaje/modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/git.html">Git in GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2023-2024.html">Vaje 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar.html">Seminar 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../seminar_2021-2022/seminar.html">Seminar 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/navodila.html">Navodila</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../razno/zanimivosti.html">Zanimivosti</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/edit/main/biokeminfo/seminar/seminar_2023-2024/naloge/s34.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/biokeminfo/issues/new?title=Issue%20on%20page%20%2Fseminar/seminar_2023-2024/naloge/s34.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/seminar/seminar_2023-2024/naloge/s34.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S34</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s34">
+<h1>S34<a class="headerlink" href="#s34" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Avtor</strong>: Jan Hvalec</p></li>
+<li><p><strong>Datum izdelave</strong>: 2024-05-27</p></li>
+<li><p><strong>Koda seminarja</strong>: S34</p></li>
+</ul>
+<section id="vhodni-podatek">
+<h2>Vhodni podatek<a class="headerlink" href="#vhodni-podatek" title="Link to this heading">#</a></h2>
+<p>Povezava do datoteke z vhodnim podatkom: <a class="reference internal" href="#naloge/s34-input.md"><span class="xref myst">S34</span></a></p>
+</section>
+<section id="rezultati-analiz">
+<h2>Rezultati analiz<a class="headerlink" href="#rezultati-analiz" title="Link to this heading">#</a></h2>
+<p>###Ime in izvorni organizem proteina
+V plazmid pUC57 je bil vstavljen neznan fragment na neznano mesto, zato sem najprej naredil lokalno poravnavo sekvence praznega plazmida <a class="reference external" href="https://www.genscript.com/vector/SD1176-pUC57_plasmid_DNA.html">pUC57</a> in vhodnega podatka s <a class="reference external" href="https://www.ebi.ac.uk/jdispatcher/psa/emboss_water">Smith-Watermanovim algoritmom</a>. Zaporedji se popolno poravnata povsod, razen na mestu našega vstavljenega zaporedja in ugotovimo, da se nahaja med nukleotidi 1321-1859. Poravnavo vidimo na naslednji sliki:</p>
+<p><img alt="prazen, vstavljen plazmid" src="../../../_images/s34-water-plazmid.png" /></p>
+<p>Nukleotidno zaporedje tega zaporedja je:</p>
+<blockquote>
+<div><p>AATTCTGCCTACCTCTATTTCGTTTGTGTAAAAAATAAATGTTGGAACAAAATTAATATTAAGCCAGTCAACTTCATCACTTAATCCTACCTTGGCTCTATCTACACAAATTAAATCTACATTTTGTTCATCAAACCGGAGTGCATCTAAAATCTTGTAAAACCGGGGAACTTCTCTTCGGCTGTCGCTGCACCAAGTACCCATAACAATTTTAATATGTAAACCGTCTATTTGCTCTTTAAGTACTTGCAAAACATTTTCATCGGCAGAGTATAAGTCATATTCATAGGTAAACCAATCTACAAAACTGGAATCAAGAAAAACTGATCGGTCAAATTTACCAAGCGGTATTCGTCGGTTTGATGTTTCGTCAACAACAATAATACCCTCTTGGGCTGTTTGAGTAGAGTTGAGTATTATAAACAGAAAAAATAGTACTGCAACGCTAATCTTTTTTTGTAGAGTTATTCTTTCTGACATCCAATCCCCACATTAGTTTGTTTCTGAGAATTTCGAAATAACTTATTCTGTTAGAGTGA</p>
+</div></blockquote>
+<p>Z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;LINK_LOC=blasthome">Blastx</a> iščemo po “Metagenomic proteins” in dobimo 100 % podobnost s hipotetičnim proteinom <a class="reference external" href="https://www.ncbi.nlm.nih.gov/protein/KUG26322.1?report=genbank&amp;amp;log$=protalign&amp;amp;blast_rank=1&amp;amp;RID=4E21E9PS016">ASZ90_003842</a>. To je celoten zapis za naš protein in od tu dobimo aminokislinsko zaporedje našega proteina. Sodeč po oznaki bi protein naj izviral iz družine <em>Melioribacter</em>, ki je del redu <em>Ignavibacteriales</em>.</p>
+<p>Aminokislinsko zaporedje našega proteina je:</p>
+<blockquote>
+<div><p>MSERITLQKKISVAVLFFLFIILNSTQTAQEGIIVVDETSNRRIPLGKFDRSVFLDSSFVDWFTYEYDLYSADENVLQVLKEQIDGLHIKIVMGTWCSDSRREVPRFYKILDALRFDEQNVDLICVDRAKVGLSDEVDWLNINFVPTFIFYTNEIEVGRIIETPDVTLEIDFESILK</p>
+</div></blockquote>
+<p>Iskanje podobnih bolje anotiranih aminokislinskih zaporedij z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;amp;PROGRAM=blastp&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;BLAST_SPEC=">Blastp</a> po zbirki “non-redundant” nam najde proteine družine tioredoksinov iz reda bakterij <em>Ignavibacteriales</em>, zato lahko po podobnosti sklepamo, da je naš protein tudi tioredoksin in izvira iz reda <em>Ignavibacteriales</em>. Rezultati iskanja so prikazani na naslednji sliki:</p>
+<p><img alt="blastp non-redundant" src="../../../_images/s34-blastp-non-redundant.png" /></p>
+<p>###Lokalizacija in topologija
+Iskanje z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;amp;PROGRAM=blastp&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;BLAST_SPEC=">Blastp</a> po zbirki “non-reduntant” je vrnilo slabo anotirane rezultate, iskanje po zbirki “swiss-prot” pa ni vrnilo ustreznih rezultatov, saj so imeli preveliko E-vrednost. Za iskanje podobnih, bolje anotiranih zaporedij sem uporabil <a class="reference external" href="https://www.uniprot.org/blast">UniProt BLAST</a>. Rezultate sem omejil na deblo <a class="reference external" href="https://lpsn.dsmz.de/phylum/ignavibacteriota-1"><em>Ignavibacteriota</em></a>. To deblo se imenuje tudi <em>Chlorobiota</em>. Rezultati iskanja so na naslednji sliki:</p>
+<p><img alt="UniProt BLAST" src="../../../_images/s34-uniprot-blast.png" /></p>
+<p>Rezultati so anotirani, ampak so samo vstavljeni v UniProt iz EMBL/GenBank/DDBJ WGS (whole genome shotugn), podatki pa prihajajo, tako kot naš protein, iz metagenomskih podatkov. Primer takega proteina, ki je zelo podoben našemu je <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A7C2NJP5/entry">A0A7C2NJP5</a>. Anotacije teh proteinov niso zanesljive in o lastnostih našega proteina ne moremo sklepati. V <a class="reference external" href="https://www.uniprot.org/">UniProt</a> sem poiskal tioredoxine iz debla <em>Chlorobiota</em>, ki so bili bolje anotirani in jih primerjal z našim proteinom z <a class="reference external" href="https://www.ebi.ac.uk/jdispatcher/psa/emboss_water">algoritmom Smith-Waterman</a>. Naš protein sem primerjal z proteini <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KBN8/entry">Q8KBN8</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KED5/entry">Q8KED5</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/P10472/entry">P10472</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KE49/entry">Q8KE49</a> in <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KEA4/entry">Q8KEA4</a>. Primerjava s temi proteini je pokazala nizko podobnost in neohranjenost aktivnega mesta. Naš protein in našemu podobni proteini najdeni z <a class="reference external" href="https://www.uniprot.org/blast">UniProt BLAST</a>, so verjetno napačno avtomatsko anotirani kot tioredoksini. Lokalizacije na podlagi podobnosti ne moremo določiti.</p>
+<p>Protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A7C2NJP5/entry">A0A7C2NJP5</a> ima anotiran signalni peptid. Začetno zaporedje je na našem proteinu dobro ohranjeno, zato sem z orodjem <a class="reference external" href="https://services.healthtech.dtu.dk/services/SignalP-6.0/">SignalP-6.0</a> preveril prisotnost signalnega peptida. Glede na rezultat je visoka verjetnost, da se signalni peptid nahaja med ostanki 1-29. Rezultat je prikazan na sliki:</p>
+<p><img alt="Signalni peptid" src="../../../_images/s34-signalp.png" /></p>
+<p>Pri topologiji sem si pomagal z orodjem <a class="reference external" href="https://golgi.sandbox.google.com/">AlphaFold</a>. Rezultat je prikazan na naslednji sliki:</p>
+<p><img alt="AlphaFold rezultat" src="../../../_images/s34-alphafold-zanesljivost.png" /></p>
+<p>Na sliki vidimo visoko zanesljivost strukture, razen na N-koncu proteina, kjer se nahaja signalni peptid. V preostalem delu strukture najdemo motiv podoben motivu <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S096921260100154X">tioredoksinskega pregiba</a>. Primerjava struktur <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksina 1</a> iz <em>E. coli</em> in našega proteina kaže strukturno podobnost, ampak neohranjeno aktivno mesto CGPC, ki se nahaja na tioredoksinu 1 na mestih 33-36. Slika superpozicije teh proteinov je na naslednji sliki:</p>
+<p><img alt="Superpozicija s tioredoksinom 1" src="../../../_images/s34-superpozicija-ecoli.png" /></p>
+<p>###Velikost proteina
+Velikost sem preprosto izračunal z uporabo aminokislinskega zaporedja za naš protein in orodja <a class="reference external" href="https://web.expasy.org/cgi-bin/protparam/protparam">ProtParam</a>. Masa proteina meri 20616 Daltona.</p>
+<p>###Domenska zgradba
+Domenske zgradbe ne moremo zanesljivo določiti. Po podobnosti s proteini, ki sem jih dobil pri iskanju z UniProt BLAST, po strukturni podobnosti s <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksinom 1</a> in s pomočjo rezultatov iz orodja <a class="reference external" href="https://www.ebi.ac.uk/interpro/">InterPro</a> bi lahko sklepal, da naš protein vsebuje tioredoksin-like domeno. Nasprotno nam <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi">iskalnik ohranjenih domen NCBI</a> ne najde ohranjene domene. Prav tako lokalne aminokislinske poravnave znanih tioredoksinov in našega proteina ne kažejo na večjo podobnost. Rezultat uporabe InterPro je na naslednji sliki:</p>
+<p><img alt="InterPro" src="../../../_images/s34-interpro.png" /></p>
+<p>###Funkcija proteina
+Protein zaradi neohranjenosti aktivnega mesta v primerjavi z dobro anotiranimi tioredoksini nima katalitične funkcije, zmožnosti vezave kakšnega drugega substrata pa samo iz sekvence ni možno določiti. Te lastnosti bi morali določiti eksperimentalno. Lokalna poravnava tioredoksina 1 in našega proteina je prikazana na naslednji sliki. Opazimo, da aktivno mesto CGPC ni ohranjeno:</p>
+<p><img alt="Water tioredoksin 1" src="../../../_images/s34-tioredoksin-water.png" /></p>
+<p>###Sorodni proteini
+Podatke za filogenetsko drevo sem pridobil s pomočjo <a class="reference internal" href="#"><span class="xref myst">UniProt BLAST</span></a>. Iskal sem našemu podobna zaporedja in iskanje omejil na <em>Ignavibacteriales</em>. Izbral sem prvih 20 zadetkov razvrščenih po padajočih točkah. Seznamu teh zaporedij sem dodal še naše zaporedje in jih poravnal z v UniProt vgrajeno funkcijo za poravnavo večih zaporedij, kjer se nam tudi izriše filogenetsko drevo. V nadaljevanju so slike rezultatov UniProt BLAST, orodja za poravnavo in samega filogenetskega drevesa:</p>
+<p><img alt="UniProt BLAST Filogenetsko" src="../../../_images/s34-filogenetsko-podatki.png" /></p>
+<p><img alt="UniProt Alignment" src="../../../_images/s34-filogenetsko-poravnava.png" /></p>
+<p><img alt="Filogenetsko drevo" src="../../../_images/s34-filogenetsko.png" /></p>
+<p>###Ohranjene regije
+V našem proteinu ni ohranjenih regij. Zaradi neohranjenosti aktivnega mesta, sklepam, da so našemu podobna zaporedja in naše zaporedje napačno anotirana kot tioredoksin in ne nosijo nobene funkcije. Ker je protein strukturno podoben <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksinu 1</a>, ampak nima ohrnajenega aktivnega mesta, dvomim, da je tak protein funkcionalen in se verjetno ne sintetizira.</p>
+<p>###Podobni evkariontski proteini
+Podobne evkariontske proteine sem iskal z <a class="reference external" href="https://www.uniprot.org/blast">UniProt BLAST</a> in <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;amp;PROGRAM=blastp&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;BLAST_SPEC=">blastp</a>. Iskanje sem omejil na zbirko UniProtKB pri UniProt BLAST in “non-redundant” pri blastp, ter pri obeh omejil rezultate na domeno <em>Eukaryota</em>. Rezultati UniProtBLAST nam pokažejo nezanesljivo anotirane proteine in proteine z visoko E-vrednostjo. Rezultata blastp nam pokažeta nepodobna proteina, ki tudi nista dobro anotirana. Podobnih evkariontskih proteinov ne morem določiti. Rezultati so na naslednjih dveh slikah:</p>
+<p><img alt="UniProt BLAST evkarionti" src="../../../_images/s34-uniprot-blast-e.png" /></p>
+<p><img alt="Blastp evkarionti" src="../../../_images/s34-blastp-e.png" /></p>
+<p>###Potencialna funkcijska povezanost z drugimi proteini
+Zaradi neuspešnega iskanja za podobnimi, bolje anotiranimi proteini in slabo anotiranega začetnega zaporedja, povezanosti z drugimi proteini ni mogoče določiti. Če sklepamo, da je naš protein navsezadnje tioredoksin, interagira z večimi proteini, najpomembneje z <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1220815/">tioredoksin reduktazo</a>, ki skrbi, da je tioredoksin v svojem reduciranem stanju. Naloga tioredoksinov je redukcija cisteinskih aminokislinskih ostankov.</p>
+<p>###Modeli struktur
+Model strukture našega proteina sem naredil s pomočjo AlphaFold, kot je že bilo prikazano, in prikazal v programu ChimeraX. Model strukture je prikazan na naslednji sliki:</p>
+<p><img alt="Naš protein" src="../../../_images/s34-alphafold.png" /></p>
+<p>Ker nisem uspel določiti podobnih, bolje anotiranih proteinov, sem sklepal, da je naš protein navsezadnje tioredoksin in naredil superpozicijo s <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksinom 1</a> <a class="reference external" href="https://www.rcsb.org/structure/1sl1">(PDB: 1SL1)</a> iz <em>E. coli</em>. Superpozicija struktur je prikazana na naslednji sliki s programom ChimeraX:</p>
+<p><img alt="Superpozicija prokarionti" src="../../../_images/s34-superpozicija-ecoli.png" /></p>
+<p>Z enakim sklepom sem naredil tudi superpozicijo našega proteina in <a class="reference external" href="https://www.uniprot.org/uniprotkb/P22217/entry#structure">tioredoksina 1</a> <a class="reference external" href="https://www.rcsb.org/structure/3f3q">(PDB: 3F3Q)</a> iz <em>Saccharomyces cerevisiae</em>. Superpozicija je bila prikazana s programom ChimeraX:</p>
+<p><img alt="Superpozicija evkarionti" src="../../../_images/s34-superpozicija-scerevisiae.png" /></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./seminar/seminar_2023-2024/naloge"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatek">Vhodni podatek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rezultati-analiz">Rezultati analiz</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
