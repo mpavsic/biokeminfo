@@ -14,35 +14,35 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -88,27 +88,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -130,8 +126,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -195,30 +196,30 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zbirke</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/pubmed.html">PubMed</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/pubmed.html">PubMed</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="pubmed_web.html">VAJA: Iskanje po PubMed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pubmed_eutilities.html">DEMO: Programski dostop do PubMed</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/nt.html">Nukleotidna zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/nt.html">Nukleotidna zaporedja</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="nt-oligo_analiza.html">VAJA: Enostavna analiza nt-zaporedja (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="genbank_web.html">VAJA: Dostop do GenBank v brskalniku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="genbank_eutilities.html">VAJA: Programski dostop do GenBank (Python)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/ak.html">Aminokislinska zaporedja</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/ak.html">Aminokislinska zaporedja</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="uniprot_web.html">VAJA: Dostop do UniProt v brskalniku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uniprot_rest.html">VAJA: Programski dostop do UniProt (Python)</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Poravnave</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/dotplot.html">Točkovni diagram</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/dotplot.html">Točkovni diagram</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="dotplot_web.html">VAJA: Točkovni diagram</a></li>
 </ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../osnove/poravnave.html">Poravnave</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../osnove/poravnave.html">Poravnave</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="matrika_zamenjav.html">VAJA: Izračun matrike zamenjav (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="poravnava2_web.html">VAJA: Poravnava zaporedij NW &amp; SW (spletna orodja)</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">VAJA: Poravnava zaporedij NW &amp; SW (Python)</a></li>
@@ -226,37 +227,37 @@
 <li class="toctree-l2"><a class="reference internal" href="blast.html">VAJA: Iskanje podobnih zaporedij z BLAST</a></li>
 <li class="toctree-l2"><a class="reference internal" href="msa.html">VAJA: Poravnave več zaporedij</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grafi</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/grafi.html">Grafi v molekularni biologiji</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/grafi.html">Grafi v molekularni biologiji</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="grafi_cytoscape.html">VAJA: Grafi in program Cytoscape</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/strukture.html">Strukture</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/strukture.html">Strukture</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/programi.html">Programi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/programi.html">Programi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/python.html">Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/jupyterlab.html">JupyterLab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/markdown.html">Markdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/git.html">Git in GitHub</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/datoteke.html">Datoteke</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../priloge/datoteke.html">Datoteke</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/datoteke_formati.html">Pogosti formati datotek</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priloge/datoteke_poimenovanje.html">Poimenovanje datotek</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
 <ul class="nav bd-sidenav">
@@ -265,15 +266,15 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../seminar/seminar.html">Splošno o seminarju</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar.html">Seminar 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar.html">Seminar 2023/2024</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar-predloga.html">Predloga</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar.html">Seminar 2021/2022</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar.html">Seminar 2021/2022</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/navodila.html">Navodila</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2021-2022/seminar-predloga.html">Predloga</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
 <ul class="nav bd-sidenav">
@@ -293,7 +294,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -302,7 +303,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -578,6 +579,18 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">seq1</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMCWCVNTAGVRRTDKDTEITC&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">seq2</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;KTRCQLEREHILGAAGGADAQRPTLQGMFVPQCDEYGHYVPTQCHHSTGYCWCVDRDGRELEGSRTPPGMRPPC&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <p>Lahko smo še malce bolj kreativni in zraven zaporedja samega definiramo še kakšne pripise (<a class="reference external" href="https://biopython.org/wiki/SeqRecord">dokumentacija</a>):</p>
 <div class="cell docutils container">
@@ -640,7 +653,7 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BENNER22&#39;, &#39;BENNER6&#39;, &#39;BENNER74&#39;, &#39;BLASTN&#39;, &#39;BLASTP&#39;, &#39;BLOSUM45&#39;, &#39;BLOSUM50&#39;, &#39;BLOSUM62&#39;, &#39;BLOSUM80&#39;, &#39;BLOSUM90&#39;, &#39;DAYHOFF&#39;, &#39;FENG&#39;, &#39;GENETIC&#39;, &#39;GONNET1992&#39;, &#39;HOXD70&#39;, &#39;JOHNSON&#39;, &#39;JONES&#39;, &#39;LEVIN&#39;, &#39;MCLACHLAN&#39;, &#39;MDM78&#39;, &#39;MEGABLAST&#39;, &#39;NUC.4.4&#39;, &#39;PAM250&#39;, &#39;PAM30&#39;, &#39;PAM70&#39;, &#39;RAO&#39;, &#39;RISLER&#39;, &#39;SCHNEIDER&#39;, &#39;STR&#39;, &#39;TRANS&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BENNER22&#39;, &#39;BENNER6&#39;, &#39;BENNER74&#39;, &#39;BLOSUM45&#39;, &#39;BLOSUM50&#39;, &#39;BLOSUM62&#39;, &#39;BLOSUM80&#39;, &#39;BLOSUM90&#39;, &#39;DAYHOFF&#39;, &#39;FENG&#39;, &#39;GENETIC&#39;, &#39;GONNET1992&#39;, &#39;HOXD70&#39;, &#39;JOHNSON&#39;, &#39;JONES&#39;, &#39;LEVIN&#39;, &#39;MCLACHLAN&#39;, &#39;MDM78&#39;, &#39;NUC.4.4&#39;, &#39;PAM250&#39;, &#39;PAM30&#39;, &#39;PAM70&#39;, &#39;RAO&#39;, &#39;RISLER&#39;, &#39;SCHNEIDER&#39;, &#39;STR&#39;, &#39;TRANS&#39;]
 </pre></div>
 </div>
 </div>
@@ -718,12 +731,6 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/homebrew/Caskroom/miniforge/base/envs/teach/lib/python3.12/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
-  warnings.warn(
-</pre></div>
-</div>
-</div>
 </div>
 <p>Za ilustracijo bomo poravnavo izvedli na nt-zaporedjih. Pa jih definirajmo, enostavno, kot <em>string</em>:</p>
 <div class="cell docutils container">
@@ -756,7 +763,7 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </ul>
 <p>Ime funkcije, v našem primeru <code class="docutils literal notranslate"><span class="pre">globalxx</span></code>, je dejansko sestavljeno iz 3 komponent oblike <code class="docutils literal notranslate"><span class="pre">&lt;alignment</span> <span class="pre">type&gt;XX</span></code>. Prvi parameter oz. ime samo določa vrsto poravnave (<code class="docutils literal notranslate"><span class="pre">global</span></code> ali  <code class="docutils literal notranslate"><span class="pre">local</span></code> za globalno oz. lokalno poravnavo), druga parametra pa določata, kako se upoštevajo ujemanja in neujemanja (prvi znak) ter vrzeli (drugi znak). Pomen teh stikal je podrobneje opisan v <a class="reference external" href="https://biopython.org/docs/1.77/api/Bio.pairwise2.html">dokumentaciji</a>.</p>
 <p>Možnosti za ujemanja/neujemanja:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>vrednost</p></th>
 <th class="head text-left"><p>pomen</p></th>
@@ -777,8 +784,9 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </tr>
 </tbody>
 </table>
+</div>
 <p>Množnosti za vrzeli:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>vrednost</p></th>
 <th class="head text-left"><p>pomen</p></th>
@@ -799,6 +807,7 @@ X  0.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -2.0  0.
 </tr>
 </tbody>
 </table>
+</div>
 <p>Vrednost poravnave je vedno izračunana po naslednji enačbi:
 $<span class="math notranslate nohighlight">\(S = \sum s_{a,b} + \sum (I + (n-1) E)\)</span>$</p>
 <p>pri čemer je <span class="math notranslate nohighlight">\(s_{a,b}\)</span> vrednost iz matrike zamenjav (substitucijske matrike), <span class="math notranslate nohighlight">\(I\)</span> in <span class="math notranslate nohighlight">\(E\)</span> pa kazni za odprtje oz. razširitev vrzeli.</p>
@@ -1135,7 +1144,7 @@ A----------CTC--C--------GCT----T-----
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1229,8 +1238,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>
