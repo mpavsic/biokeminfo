@@ -70,5 +70,3 @@ Odgovorite na vprašanji:
 1. Ali model iz SWISS-MODEL pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?
 2. Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?
 3. Ocenite biološko smiselnost modela glede na značilnosti zaporedja, anotirane v Uniprot, oz. glede na značilnosti dobro anotiranega homolognega proteina podobne dolžine.
-
-<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/na-ecori.molx&snapshot-url-type=molx&hide-controls=1" style="width: 500px; height: 130px; border: 0px"></iframe>
