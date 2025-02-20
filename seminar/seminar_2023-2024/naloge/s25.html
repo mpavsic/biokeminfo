@@ -16,37 +16,40 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=87e54e7c" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -77,6 +80,7 @@
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -92,19 +96,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -112,7 +105,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -120,8 +112,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -139,7 +131,8 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -154,6 +147,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../../../naslovnica.html">
   
@@ -167,21 +162,17 @@
     
     
     <img src="../../../_static/logo.png" class="logo__image only-light" alt="Biokemijska informatika - Home"/>
-    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Biokemijska informatika - Home"/>`);</script>
+    <img src="../../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Biokemijska informatika - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -259,7 +250,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Izvedba vaj</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2023-2024.html">Vaje 2023/2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../izvedba/vaje_2024-2025.html">Vaje 2024/2025</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
@@ -285,9 +276,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -306,9 +302,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -448,27 +444,19 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -525,7 +513,7 @@ Vhodni podatek vsebuje nukleotidno zaporedje plazmida pUC57 z vstavljenim neznan
 </div></blockquote>
 <p>Z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;BLAST_SPEC=&amp;amp;LINK_LOC=blasttab&amp;amp;LAST_PAGE=blastp">blastp</a> iščemo podobne proteine, ki so bolje anotirani. Z iskanjem po zbirki “non-redundant” najdemo podobne proteine, ki pripadajo glikoziltransferazni družini 4, zato lahko sklepamo, da je naš protein zagotovo član glikoziltransferazne družine 4. Po nizki E-vrednosti (0) in visoki podobnosti (do 80 %) podobnih proteinov sklepamo, da naš protein pripada rodu <em>Syntrophomonas</em>. Zadetek iskanja je na <a class="reference internal" href="#slika3"><span class="xref myst">sliki 3</span></a>.
 <a name="slika3"></a></p>
-<p>Slika 3:<img alt="Slika3" src="seminar/seminar_2023-2024/naloge/s25-blastp-non-redundant.png" /></p>
+<p>Slika 3:<img alt="Slika3" src="../../../_images/s25-blastp-non-redundant.png" /></p>
 <p>###Lokalizacija in topologija proteina
 Naš in našemu podobni proteini nimajo označene lokalizacije ali topologije, manj podobni proteini, ki so bolje anotirani, pa so premalo podobni, da bi lahko po podobnosti sklepali lokalizacijo in topologijo našega proteina. Za podatke o lokalizaciji se obrnemo na značilnosti glikoziltransferazne družine 4. Iz <a class="reference external" href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR000715/">Interpro</a> razberemo, da se proteini te družine nahajajo na membrani, ampak na podlagi primanjkljaja daljše regije hidrofobnih aminokislinskih ostankov in AlphaFold modela lahko sklepamo, da naš protein ni transmembranski, ampak le periferni membranski protein. Ob pogledu AlphaFold modela in glede na <a class="reference external" href="https://www.ebi.ac.uk/interpro/entry/pfam/PF13439/">Pfam</a> in <a class="reference external" href="https://www.ncbi.nlm.nih.gov/Structure/cdd/cd05844">NCBI CDD</a> lahko topologijo našega proteina opišemo kot protein z dvema domenama, z visoko strukturno, a majhno sekvenčno homologijo. Vsaka domena vsebuje motiv Rossmanovega zvitja. Domeni sta ločeni s praznino, ki vsebuje vezavno mesto za substrat in omogoča fleksibilnost proteina.</p>
 <p>###Velikost proteina
@@ -543,7 +531,7 @@ Filogenetsko drevo podobnih proteinov naredimo z iskanjem <a class="reference ex
 <p>###Ohranjenost regij
 Iskanje z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&amp;amp;PAGE_TYPE=BlastSearch&amp;amp;BLAST_SPEC=&amp;amp;LINK_LOC=blasttab&amp;amp;LAST_PAGE=blastp">blastp</a> po bazi “PDB” (rezultat na <a class="reference internal" href="#slika6"><span class="xref myst">sliki 6</span></a>) nam vrne eksperimentalno določeno strukturo podobnega prokariontskega proteina <a class="reference external" href="https://www.rcsb.org/structure/7FG9">(7FG9)</a>. <a class="reference external" href="https://www.ebi.ac.uk/jdispatcher/psa/emboss_water">Lokalna poravnava (EMBOSS Water)</a> nam pokaže, da sta si proteina podobna <a class="reference internal" href="#slika7"><span class="xref myst">(slika 7)</span></a>. <a class="reference external" href="https://www.rcsb.org/structure/7FG9">(7FG9)</a> ima v <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8DIJ4/entry#sequences">Uniprot (Q8DIJ4)</a> označeno vezavno mesto substrata (UDP), glikoziltransferazno 4-like N-končno domeno in glikoziltransferazno 1 domeno. Lokalna poravnava pokaže, da sta domeni dobro ohranjeni in da ima naš protein v aktivnem mestu zamenjan valinski aminokislinski ostanek za serinskega. Na podlagi te zamenjave sklepamo, da se katalitska aktivnost encima spremeni, čeprav je zamenjan le en izmed devetih aminokislinskih ostankov, ki gradijo vezavno mesto našega proteina. Valin je nepolaren in hidrofoben, medtem ko je serin polaren in hidrofilen, zaradi vezane hidroksilne skupine lahko tvori vodikove vezi. Zaradi zamenjave hidrofobnega ostanka s hidrofilnim se lahko spremeni lokalno okolje aktivnega mesta, zaradi česar je lahko ovirana vezava substrata ali stabilizacija prehodnega stanje. Hidroksilna skupina na serinu za razliko od valina se lahko povezuje z vodikovimi vezmi, kar lahko ali poveča ali zmanjša katalitsko aktivnost, odvisno od prvotne vloge valina v aktivnem mestu. Prav tako lahko sprememba velikosti in oblike stranske skupine zaradi zamenjava aminokislinskega ostanka povzroči konformacijsko spremembo aktivnega mesta, kar posredno vpliva na katalitsko aktivnost. Za natančnejšo določitev  katalitske aktivnosti bi bilo potrebno izvesti ustrezne encimske teste.
 <a name="slika6"></a></p>
-<p>Slika 6:<img alt="Slika6" src="seminar/seminar_2023-2024/naloge/s25-blastp-pdb.png" />
+<p>Slika 6:<img alt="Slika6" src="../../../_images/s25-blastp-pdb.png" />
 <a name="slika7"></a></p>
 <p>Slika 7:<img alt="Slika7" src="../../../_images/s25-water.png" />
 ###Eksperimentalne strukture podobnih evkariontskih proteinov
@@ -555,15 +543,15 @@ Na podlagi podobnosti s prokariontskim proteinom <a class="reference external" h
 <p>###Model strukture
 Model strukture našega proteina narejen z <a class="reference external" href="https://golgi.sandbox.google.com/">AlphaFold</a> je viden na <a class="reference internal" href="#slika9"><span class="xref myst">sliki 9</span></a>. Surovi podatek iz AlphaFolda je viden na <a class="reference internal" href="#slika10"><span class="xref myst">sliki 10</span></a>. Sklepamo, da je model našega proteina zelo zanesljiv, saj je vrednost pLDDT za skoraj vse regije našega proteina med 90 % in 100 %, za preostale regije pa je med 70 % in 90 %. Glede na graf in nizko vrednost PAE je zanesljivost, da je večina regij na svojih relativnih mestih, visoka, zato sklepamo, da je model našega proteina zanesljiv.
 <a name="slika9"></a></p>
-<p>Slika 9:<img alt="Slika9" src="seminar/seminar_2023-2024/naloge/s25-protein.png" />
+<p>Slika 9:<img alt="Slika9" src="../../../_images/s25-protein.png" />
 <a name="slika10"></a></p>
 <p>Slika 10:<img alt="Slika10" src="../../../_images/s25-alphafold.png" /></p>
 <p>Zanesljivost modela potrjuje tudi ujemanje našega modela z modelom podobnega prokariontskega proteina (pridobljen eksperimentalno), ko izvedemo superpozicijo v programu ChimeraX. Superpozicija našega proteina in eksperimentalne strukture podobnega prokariontskega proteina je vidna na <a class="reference internal" href="#slika11"><span class="xref myst">sliki 11</span></a>.
 <a name="slika11"></a></p>
-<p>Slika 11:<img alt="Slika11" src="seminar/seminar_2023-2024/naloge/s25-superpozicija.png" /></p>
+<p>Slika 11:<img alt="Slika11" src="../../../_images/s25-superpozicija.png" /></p>
 <p>Ko izvedemo superpozicijo v programu ChimeraX, je ujemanje našega modela z modelom podobnega evkariontskega proteina (pridobljen eksperimentalno) slabše kot pri superpoziciji z modelom prokariontskega proteina, kar je posledica slabše podobnosti evkariontskega proteina našemu. Vseeno se modela na nekaterih mestih dobro ujemata, zato je naš model (predvsem na podlagi parametrov programa AlphaFold in ujemanja s prokariontskim proteinom) zanesljiv. Superpozicija našega proteina in eksperimentalne strukture podobnega evkariontskega proteina je vidna na <a class="reference internal" href="#slika12"><span class="xref myst">sliki 12</span></a>.
 <a name="slika12"></a></p>
-<p>Slika 12:<img alt="Slika 12" src="seminar/seminar_2023-2024/naloge/s25-superpozicija-eukaria.png" /></p>
+<p>Slika 12:<img alt="Slika 12" src="../../../_images/s25-superpozicija-eukaria.png" /></p>
 
     <script type="text/x-thebe-config">
     {
@@ -602,7 +590,8 @@ Model strukture našega proteina narejen z <a class="reference external" href="h
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -660,8 +649,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
