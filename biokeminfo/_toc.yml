@@ -54,7 +54,7 @@ parts:
     - file: priloge/datoteke_poimenovanje
 - caption: Izvedba vaj
   chapters:
-  - file: izvedba/vaje_2023-2024
+  - file: izvedba/vaje_2024-2025
 - caption: Seminar
   chapters:
   - file: seminar/seminar
