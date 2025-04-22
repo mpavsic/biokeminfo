@@ -1,16 +1,16 @@
-# VAJA: Modeliranje na osnovi homologije
+# VAJA: Modeliranje
 
-Pri modeliranju struktur proteinov lahko uporabljamo različne pristope. Nekaj let nazaj so dali najboljše rezultate v smislu pravilnosti (podobnosti eksperimentalni strukturi) pristopi na osnovi homologije, sploh če je bila med aminokislinskima zaporedjema tarče in znane eksperimentalno določene strukture visoka identičnost. Najnovejši pristopi, ki temeljijo na umetni inteligenci (angl. artificial inteligence, AI), izračunajo danes za "lahke" tarče (zaporedja, pri katerih je identičnost aminokislinskega zaporedja z znano/znanimi eksperimentalno določenimi strukturami zelo visoka, hkrati pa poravnava pokriva celotno tarčno zaporedje ali vsaj veliko večino zaporedja) modele, ki so podobno zanesljivi kot modeli na osnovi homologije, za težje tarče pa so modeli, izračunani s pomočjo AI, neprimerno boljši.
+Pri modeliranju struktur proteinov lahko uporabljamo različne pristope. Nekaj let nazaj so dali najboljše rezultate v smislu pravilnosti (podobnosti eksperimentalni strukturi) pristopi na osnovi homologije, sploh če je bila med aminokislinskima zaporedjema tarče in znane eksperimentalno določene strukture visoka identičnost. Najnovejši pristopi, ki temeljijo na umetni inteligenci (UI; angl. *artificial inteligence*, AI), izračunajo danes izredno dobre modele struktur – med ta orodja spada AlphaFold.
 
 Od orodij za modeliranje struktur proteinov se morda najpogosteje uporabljajo naslednja:
 - [SWISS-MODEL](https://swissmodel.expasy.org/) za modeliranje na osnovi homologije, predvsem zaradi enostavnega vmesnika in hitrega izračuna modelov,
 - [I-TASSER](https://zhanggroup.org/I-TASSER/), ki je pred prihodom orodij na osnovi AI bilo eno izmed boljših orodij za modeliranje na osnovi homologije ter ab initio modeliranje krajših segmentov,
 - [Rosetta](https://www.rosettacommons.org/software), ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika [Robetta](https://robetta.bakerlab.org/), z AI podkrepljena varianta pa se imenuje [RoseTTAFold](https://github.com/RosettaCommons/RoseTTAFold) in je dosegljiva kot opcija na strežniku Robetta, ter
-- [AlphaFold2](https://github.com/deepmind/alphafold), ki ga lahko poganjamo lokalno (bolje: na računski gruči) ali pa izkoristimo računsko infrastrukturo Google Colab - [ColabFold](https://github.com/sokrypton/ColabFold).
+- [AlphaFold2](https://github.com/deepmind/alphafold), ki ga lahko poganjamo lokalno (bolje: na računski gruči) ali pa izkoristimo računsko infrastrukturo Google Colab - [ColabFold](https://github.com/sokrypton/ColabFold) oz. [AlphaFold3](https://alphafoldserver.com/), ki ga poganjamo preko za to namenjenega strežnika (potrebujemo Google račun).
 
 ## SWISS-MODEL
 
-Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je [SWISS-MODEL](https://swissmodel.expasy.org/):
+Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij za modeliranje na osnovi homologije je [SWISS-MODEL](https://swissmodel.expasy.org/):
 
 ![SWISS-MODEL vstopna stran](slike/modeliranje-swissmodel1.png)
 
@@ -57,16 +57,22 @@ Pri analizi modelov ne pozabite na pLDDT in PAE:
 
 ![AlphaFold Model Quality 2](slike/modeliranje-alphafold_q2.png)
 
+## AlphaFold3
+
+AlphaFold3 lahko najenostavneje poganjamo preko strežnika z izredno prijaznim uporabniškim vmesnikom – [AlphaFold Server](https://alphafoldserver.com/). Na voljo je modeliranje posameznih proteinov, posameznih nukleinskih kislin ter kompleksov, zna pa tudi dodati ligande in ione in nekatere post-translacijske modifikacije. Modeli so načeloma boljši kot pri AlpaFold2, še posebej v primerih, kjer gre za proteine, za katere ni moč najti veliko podobnih zaporedij, t.i. proteine "sirote" (angl. *orphans*).
+
+Vmesnik je resnično enostaven in ga verjetno ni potrebno posebej razlagati, je pa na voljo [spletni vodič](https://alphafoldserver.com/guides).
+
 ---
 
 ## Naloga
 Vsak si naj izbere en protein dolžine največ 300 aminokislinskih ostankov (priporočam, da izberete bolj "eksotične" proteine ali pa proteine iz "eksotičnih" organizmov), za katerega:
-1. z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;
-2. model proteina izračunajte z uporabo [AlphaFold2_mmseq2](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) po navodilih zgoraj;
-3. izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);
-4. Oba izračunana modela in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera in primerjajte preko superpozicije (*MatchMaker*).
+1. Z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein.
+2. Model proteina izračunajte z uporabo [AlphaFold2_mmseq2](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) po navodilih zgoraj ali [AlphaFold3](https://alphafoldserver.com/).
+3. Izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije).
+4. Izračunane modele in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera (ali ChimeraX) in primerjajte preko superpozicije (*MatchMaker*). Lahko uporabite tudi MolStar.
 
 Odgovorite na vprašanji:
 1. Ali model iz SWISS-MODEL pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?
-2. Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?
+2. Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2/3)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?
 3. Ocenite biološko smiselnost modela glede na značilnosti zaporedja, anotirane v Uniprot, oz. glede na značilnosti dobro anotiranega homolognega proteina podobne dolžine.
