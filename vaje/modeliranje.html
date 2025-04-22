@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>VAJA: Modeliranje na osnovi homologije &#8212; Biokemijska informatika</title>
+    <title>VAJA: Modeliranje &#8212; Biokemijska informatika</title>
   
   
   
@@ -229,7 +229,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../osnove/strukture.html">Strukture</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">VAJA: Modeliranje na osnovi homologije</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">VAJA: Modeliranje</a></li>
 </ul>
 </details></li>
 </ul>
@@ -467,7 +467,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>VAJA: Modeliranje na osnovi homologije</h1>
+    <h1>VAJA: Modeliranje</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -479,6 +479,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model">SWISS-MODEL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold2">AlphaFold2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold3">AlphaFold3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naloga">Naloga</a></li>
 </ul>
             </nav>
@@ -491,19 +492,19 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vaja-modeliranje-na-osnovi-homologije">
-<h1>VAJA: Modeliranje na osnovi homologije<a class="headerlink" href="#vaja-modeliranje-na-osnovi-homologije" title="Link to this heading">#</a></h1>
-<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope. Nekaj let nazaj so dali najboljše rezultate v smislu pravilnosti (podobnosti eksperimentalni strukturi) pristopi na osnovi homologije, sploh če je bila med aminokislinskima zaporedjema tarče in znane eksperimentalno določene strukture visoka identičnost. Najnovejši pristopi, ki temeljijo na umetni inteligenci (angl. artificial inteligence, AI), izračunajo danes za “lahke” tarče (zaporedja, pri katerih je identičnost aminokislinskega zaporedja z znano/znanimi eksperimentalno določenimi strukturami zelo visoka, hkrati pa poravnava pokriva celotno tarčno zaporedje ali vsaj veliko večino zaporedja) modele, ki so podobno zanesljivi kot modeli na osnovi homologije, za težje tarče pa so modeli, izračunani s pomočjo AI, neprimerno boljši.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="vaja-modeliranje">
+<h1>VAJA: Modeliranje<a class="headerlink" href="#vaja-modeliranje" title="Link to this heading">#</a></h1>
+<p>Pri modeliranju struktur proteinov lahko uporabljamo različne pristope. Nekaj let nazaj so dali najboljše rezultate v smislu pravilnosti (podobnosti eksperimentalni strukturi) pristopi na osnovi homologije, sploh če je bila med aminokislinskima zaporedjema tarče in znane eksperimentalno določene strukture visoka identičnost. Najnovejši pristopi, ki temeljijo na umetni inteligenci (UI; angl. <em>artificial inteligence</em>, AI), izračunajo danes izredno dobre modele struktur – med ta orodja spada AlphaFold.</p>
 <p>Od orodij za modeliranje struktur proteinov se morda najpogosteje uporabljajo naslednja:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a> za modeliranje na osnovi homologije, predvsem zaradi enostavnega vmesnika in hitrega izračuna modelov,</p></li>
 <li><p><a class="reference external" href="https://zhanggroup.org/I-TASSER/">I-TASSER</a>, ki je pred prihodom orodij na osnovi AI bilo eno izmed boljših orodij za modeliranje na osnovi homologije ter ab initio modeliranje krajših segmentov,</p></li>
 <li><p><a class="reference external" href="https://www.rosettacommons.org/software">Rosetta</a>, ki jo je treba z nekaj truda nainstalirati lokalno, dostopna pa je tudi preko strežnika <a class="reference external" href="https://robetta.bakerlab.org/">Robetta</a>, z AI podkrepljena varianta pa se imenuje <a class="reference external" href="https://github.com/RosettaCommons/RoseTTAFold">RoseTTAFold</a> in je dosegljiva kot opcija na strežniku Robetta, ter</p></li>
-<li><p><a class="reference external" href="https://github.com/deepmind/alphafold">AlphaFold2</a>, ki ga lahko poganjamo lokalno (bolje: na računski gruči) ali pa izkoristimo računsko infrastrukturo Google Colab - <a class="reference external" href="https://github.com/sokrypton/ColabFold">ColabFold</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/deepmind/alphafold">AlphaFold2</a>, ki ga lahko poganjamo lokalno (bolje: na računski gruči) ali pa izkoristimo računsko infrastrukturo Google Colab - <a class="reference external" href="https://github.com/sokrypton/ColabFold">ColabFold</a> oz. <a class="reference external" href="https://alphafoldserver.com/">AlphaFold3</a>, ki ga poganjamo preko za to namenjenega strežnika (potrebujemo Google račun).</p></li>
 </ul>
 <section id="swiss-model">
 <h2>SWISS-MODEL<a class="headerlink" href="#swiss-model" title="Link to this heading">#</a></h2>
-<p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:</p>
+<p>Eno izmed uporabnikom zelo prijaznih in za uporabo preprostih orodij za modeliranje na osnovi homologije je <a class="reference external" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>:</p>
 <p><img alt="SWISS-MODEL vstopna stran" src="../_images/modeliranje-swissmodel1.png" /></p>
 <p>Interaktivno modeliranje zaženemo s pritiskom na gumb <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Modelling</span></code>. Kot vhodni podatek vnesemo ak- zaporedje v formatu FASTA (ali kar UniProt kodo zapisa), eventuelno lahko “projektu” določimo ime in opcijsko vpišemo še e-poštni naslov (v primeru, da modeliranje traja dlje in nas o rezultatih obvesti prek e-pošte). Na voljo imamo iskanje po predlogah (<code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">For</span> <span class="pre">Templates</span></code>), kjer nam predlaga eno ali več možnih struktur kot predloge (izberemo eno ali več, za vsako nam naredi ločen model), ali pa kar kliknemo <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Model</span></code>, kjer program sam izbere zanj najbolj smiselno predlogo in izračuna en model.</p>
 <p><img alt="SWISS-MODEL vnos" src="../_images/modeliranje-swissmodel2.png" /></p>
@@ -545,20 +546,25 @@
 <p><img alt="AlphaFold Model Quality 1" src="../_images/modeliranje-alphafold_q1.png" /></p>
 <p><img alt="AlphaFold Model Quality 2" src="../_images/modeliranje-alphafold_q2.png" /></p>
 </section>
+<section id="alphafold3">
+<h2>AlphaFold3<a class="headerlink" href="#alphafold3" title="Link to this heading">#</a></h2>
+<p>AlphaFold3 lahko najenostavneje poganjamo preko strežnika z izredno prijaznim uporabniškim vmesnikom – <a class="reference external" href="https://alphafoldserver.com/">AlphaFold Server</a>. Na voljo je modeliranje posameznih proteinov, posameznih nukleinskih kislin ter kompleksov, zna pa tudi dodati ligande in ione in nekatere post-translacijske modifikacije. Modeli so načeloma boljši kot pri AlpaFold2, še posebej v primerih, kjer gre za proteine, za katere ni moč najti veliko podobnih zaporedij, t.i. proteine “sirote” (angl. <em>orphans</em>).</p>
+<p>Vmesnik je resnično enostaven in ga verjetno ni potrebno posebej razlagati, je pa na voljo <a class="reference external" href="https://alphafoldserver.com/guides">spletni vodič</a>.</p>
+</section>
 <hr class="docutils" />
 <section id="naloga">
 <h2>Naloga<a class="headerlink" href="#naloga" title="Link to this heading">#</a></h2>
 <p>Vsak si naj izbere en protein dolžine največ 300 aminokislinskih ostankov (priporočam, da izberete bolj “eksotične” proteine ali pa proteine iz “eksotičnih” organizmov), za katerega:</p>
 <ol class="arabic simple">
-<li><p>z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein;</p></li>
-<li><p>model proteina izračunajte z uporabo <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2_mmseq2</a> po navodilih zgoraj;</p></li>
-<li><p>izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije);</p></li>
-<li><p>Oba izračunana modela in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera in primerjajte preko superpozicije (<em>MatchMaker</em>).</p></li>
+<li><p>Z iskanjem po zbirki PDB preko programa BLAST preverite, ali je znana struktura točno tega proteina; če je znana struktura, ki pokriva večji del zaporedja izbranega proteina, si izberite drug protein.</p></li>
+<li><p>Model proteina izračunajte z uporabo <a class="reference external" href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2_mmseq2</a> po navodilih zgoraj ali <a class="reference external" href="https://alphafoldserver.com/">AlphaFold3</a>.</p></li>
+<li><p>Izdelajte tudi model s pomočjo programa SWISS-MODEL, in sicer za celotni protein (seveda odstranite morebitni signalni peptid in/ali proregije).</p></li>
+<li><p>Izračunane modele in pa strukturo, uporabljeno kot predlogo v SWISS-MODEL, naložite v program UCSF Chimera (ali ChimeraX) in primerjajte preko superpozicije (<em>MatchMaker</em>). Lahko uporabite tudi MolStar.</p></li>
 </ol>
 <p>Odgovorite na vprašanji:</p>
 <ol class="arabic simple">
 <li><p>Ali model iz SWISS-MODEL pokriva celotno ak zaporedje, ki ste ga uporabili? Zakaj da oz. ne?</p></li>
-<li><p>Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?</p></li>
+<li><p>Kako je z zanesljivostjo modela vzdolž aminokislinskega zaporedja (tako za SWISS-MODEL kot AlphaFold2/3)? Je to kakorkoli povezano s pričakovano strukturo (ali strukturno neurejenostjo) določenih regij zaporedja (npr. zanke)?</p></li>
 <li><p>Ocenite biološko smiselnost modela glede na značilnosti zaporedja, anotirane v Uniprot, oz. glede na značilnosti dobro anotiranega homolognega proteina podobne dolžine.</p></li>
 </ol>
 </section>
@@ -631,6 +637,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model">SWISS-MODEL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold2">AlphaFold2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold3">AlphaFold3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naloga">Naloga</a></li>
 </ul>
   </nav></div>
