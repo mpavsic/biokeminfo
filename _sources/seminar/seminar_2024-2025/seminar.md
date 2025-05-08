@@ -16,7 +16,7 @@ Poimenska razporeditev v skupini je objavljena v spletni učilnici UL FKKT pod p
 ---
 ## Splošne informacije
 
-Vaša naloga oz. naloga posameznega para je, da **pripravi nalogo s področja biokemijske informatike** *ob upoštevanju na vajah in predavanjih obravnavane snovi* (torej ne nujno zgolj na vajah obravnavane snovi!) ter **spremljajočo rešitev te naloge z razlago** (v ločeni datoteki). Naloge, ki jih boste ustvarili pari iz ene skupine, bodo naključno dodeljene parom iz druge skupine (in obratno), ki jih bodo morali rešiti, nato primerjati svojo rešitev z dokumentirano rešitvijo avtorjev naloge, svoje mnenje pa bodo posredovali v preko spletne ankete (povezava do ankete bo dodana kasneje).
+Vaša naloga oz. naloga posameznega para je, da **pripravi nalogo s področja biokemijske informatike** *ob upoštevanju na vajah in predavanjih obravnavane snovi* (torej ne nujno zgolj na vajah obravnavane snovi!) ter **spremljajočo rešitev te naloge z razlago** (v ločeni datoteki). Naloge, ki jih boste ustvarili pari iz ene skupine, bodo naključno dodeljene parom iz druge skupine (in obratno), ki jih bodo morali rešiti, nato primerjati svojo rešitev z dokumentirano rešitvijo avtorjev naloge, svoje mnenje pa bodo posredovali preko spletne ankete (povezava do ankete bo dodana kasneje).
 
 Načrt izvedbe je grafično prikazan na spodnji shemi.
 
@@ -30,15 +30,14 @@ Da se bo seminar upošteval kot opravljen mora(ta) biti:
 
 Naloge se sicer ne bodo ocenjevale, **bodo pa avtorji do največ petih najboljših nalog (torej skupno 10 avtorjev) nagrajeni z dodatkom pri končni oceni predmeta in sicer v višini +5 %** (prišteje se h končni oceni, izračunani iz uspešno opravljenega kolokvija in izpita).
 
-## Navodila
+## Navodila za pripravo nalog in rešitev
 
 Vaša naloga je torej sestavljena iz dveh delov:
-1. Zamislite si morate [nalogo](#priprava-naloge) ter jo zapisati na način, da bo reševalec(ka) dobil vse potrebne podatke zareševanje.
-2. Posebej pripravite rešitev te naloge in jo pospremite z razlago.
+1. **Zamislite si morate nalogo ter jo zapisati** na način, da bo reševalec(ka) dobil vse potrebne podatke zareševanje.
+2. **Posebej pripravite rešitev te naloge in jo pospremite z razlago.**
 
 ### Koraki
 
-Koraki:
 1. Prenesite Markdown [datoteko s predlogo](https://mpavsic.github.io/biokeminfo/_sources/seminar/seminar_2024-2025/naloga-predloga.md) (desni klik -> shrani kot ...), jo ustrezno preimenujte (npr. `S01.md` pri čemer je `01` paru dodeljena številka), iz nje pobrišite komentarje in zapišite nalogo.
 2. Pripravite Word datoteko, jo poimenujte kot `S01-resitev.docx` (to je primer imena, vezan na prejšnjo točko), v njej pa pripravite rešitev naloge, dodajte zaslonske slike ipd.
 3. Po potrebi lahko pripravite še dodatne spremljevalne datoteke kot del rešitve, če je to potrebno (poimenujte jih po ključu `S01-resitev-vsebina.koncnica`, pri čemer besedo `vsebina` nadomestite s kratkim opisom, `koncnica` pa s končnico, npr. `pdb`).
@@ -61,14 +60,14 @@ Pri poimenovanju datotek upoštevajte smernice, navedene [tukaj](../../priloge/d
 
 Pri **pripravi naloge** upoštevajte smernice:
 - Naloga mora biti rešljiva.
-- Reševanje naloge ne sme zahtevati od povprečnega posameznika več kot 90 minut časa.
+- Naloga ne sme biti preveč enostavna, hkrati pa ne preobsežna ali prezahtevna – od povprečnega reševalca mora zahtevati približno 90 min časa.
 - Potrudite se, da bo naloga čim bolj zanimiva. Lahko je recimo povezana s kakšnim člankom ali aktualnim problemom.
-- Za idejo, kako zapisati zanimivo nalogo, malce pomislite na naloge, ki ste jih dobili na kolokviju.
+- Za idejo, kako zapisati zanimivo nalogo, malce pomislite na naloge, ki ste jih dobili na kolokviju. Seveda mora biti vaša naloga kompleksnejša.
 - Naloga naj bo rešljiva z uporabo zbirk in orodij, dostopnih preko spleta (podobno kot na vajah).
 - Če reševanje naloge zahteva uporabo programa, ki ga niste uporabljali na vajah (npr. orodje za identifikacijo genov v zaporedjih, identifikacija intronov, napoved neurejenih regij, ...), lahko na to namignite v nalogi.
 
 Pri **pripravi rešitve** upoštevajte smernice:
 - Jasno navedite vse korake, potrebne za rešitev naloge, ter jih razložite.
 - Navedite morebitne alternativne rešitve in jih pokomentirajte.
-- Vključite zaslonske slike.
+- Vključite zaslonske slike, ko dokumentirajo proces reševanja ter vmesne in končne rezultate. Opremite jih s komentarji oz. naslovi, da bo jasno, kaj je na posamezni sliki prikazano. Prav tako se na slike naslavljajte v opisu postopa reševanja.
 - Če je potrebna uporaba spletnega programa (ali zbirke), ki ga niste uporabljali na vajah, posebno pozornost namenite opisu tega programa (kako se uporablja, interpretacija rezultatov). Dodate lahko tudi povezave do spletne pomoči ipd.
