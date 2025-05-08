@@ -231,7 +231,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../osnove/strukture.html">Strukture</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="podobne_strukture.html">VAJA: Iskanje podobnih struktur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modeliranje.html">VAJA: Modeliranje na osnovi homologije</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeliranje.html">VAJA: Modeliranje</a></li>
 </ul>
 </details></li>
 </ul>
@@ -831,10 +831,16 @@ GKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVP
 SLL
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sp|Q7RTY8|TMPS7_HUMAN
-Seq(&#39;MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRP...SLL&#39;)
-MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILFTVFLFILAVIAWTLLWLYISKTESKDAFYFAGMFRITNIEFLPEYRQKESREFLSVSRTVQQVINLVYTTSAFSKFYEQSVVADVSSNNKGGLLVHFWIVFVMPRAKGHIFCEDCVAAILKDSIQTSIINRTSVGSLQGLAVDMDSVVLNAGLRSDYSSTIGSDKGCSQYFYAEHLSLHYPLEISAASGRLMCHFKLVAIVGYLIRLSIKSIQIEADNCVTDSLTIYDSLLPIRSSILYRICEPTRTLMSFVSTNNLMLVTFKSPHIRRLSGIRAYFEVIPEQKCENTVLVKDITGFEGKISSPYYPSYYPPKCKCTWKFQTSLSTLGIALKFYNYSITKKSMKGCEHGWWEINEHMYCGSYMDHQTIFRVPSPLVHIQLQCSSRLSDKPLLAEYGSYNISQPCPVGSFRCSSGLCVPQAQRCDGVNDCFDESDELFCVSPQPACNTSSFRQHGPLICDGFRDCENGRDEQNCTQSIPCNNRTFKCGNDICFRKQNAKCDGTVDCPDGSDEEGCTCSRSSSALHRIIGGTDTLEGGWPWQVSLHFVGSAYCGASVISREWLLSAAHCFHGNRLSDPTPWTAHLGMYVQGNAKFVSPVRRIVVHEYYNSQTFDYDIALLQLSIAWPETLKQLIQPICIPPTGQRVRSGEKCWVTGWGRRHEADNKGSLVLQQAEVELIDQTLCVSTYGIITSRMLCAGIMSGKRDACKGDSGGPLSCRRKSDGKWILTGIVSWGHGSGRPNFPGVYTRVSNFVPWIHKYVPSLL
-843
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">14</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
+<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio</span><span class="w"> </span><span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
 </pre></div>
 </div>
 </div>
@@ -884,13 +890,9 @@ MDKENSDVSAAPADLKISNISVQVVSAQKKLPVRRPPLPGRRLPLPGRRPPQRPIGKAKPKKQSKKKVPFWNVQNKIILF
 Število A: 40
 Delež  A: 0.05
 Izoelektrična točka (pI): 8.84
-Delež alfa-vijačnic: 0.24
+Delež alfa-vijačnic: 0.32
 Molarni ekstinkcijski koeficient, red. [1/(M cm)]: 139690
 Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/homebrew/Caskroom/miniforge/base/envs/teach/lib/python3.12/site-packages/Bio/SeqUtils/ProtParam.py:106: BiopythonDeprecationWarning: The get_amino_acids_percent method has been deprecated and will likely be removed from Biopython in the near future. Please use the amino_acids_percent attribute instead.
-  warnings.warn(
 </pre></div>
 </div>
 </div>
@@ -1003,7 +1005,7 @@ Molarni ekstinkcijski koeficient, oks. [1/(M cm)]: 141940
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2b9a2f04cb3530a5ab7cc8b311e599335eecd1d1d5cb3baf3288ccd7d2636129.png" src="../_images/2b9a2f04cb3530a5ab7cc8b311e599335eecd1d1d5cb3baf3288ccd7d2636129.png" />
+<img alt="../_images/f6da5d868a91feae19684d13bd347fc65daf531f42dd0f56f298e2d8d1fd41ab.png" src="../_images/f6da5d868a91feae19684d13bd347fc65daf531f42dd0f56f298e2d8d1fd41ab.png" />
 </div>
 </div>
 </section>
