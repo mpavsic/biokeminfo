@@ -257,6 +257,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../seminar/seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../seminar/seminar_2024-2025/seminar.html">Seminar 2024/2025</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar.html">Seminar 2023/2024</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar-predloga.html">Predloga</a></li>
 </ul>
@@ -567,18 +568,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.Seq</span><span class="w"> </span><span class="kn">import</span> <span class="n">Seq</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">seq1</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMCWCVNTAGVRRTDKDTEITC&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">seq2</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s1">&#39;KTRCQLEREHILGAAGGADAQRPTLQGMFVPQCDEYGHYVPTQCHHSTGYCWCVDRDGRELEGSRTPPGMRPPC&#39;</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p>Lahko smo še malce bolj kreativni in zraven zaporedja samega definiramo še kakšne pripise (<a class="reference external" href="https://biopython.org/wiki/SeqRecord">dokumentacija</a>):</p>
 <div class="cell docutils container">
@@ -641,7 +630,24 @@ Seq(&#39;AAKCLVMKAEMNGSKLGRRAKPEGALQNNDGLYDPDCDESGLFKAKQCNGTSMC...ITC&#39;)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BENNER22&#39;, &#39;BENNER6&#39;, &#39;BENNER74&#39;, &#39;BLOSUM45&#39;, &#39;BLOSUM50&#39;, &#39;BLOSUM62&#39;, &#39;BLOSUM80&#39;, &#39;BLOSUM90&#39;, &#39;DAYHOFF&#39;, &#39;FENG&#39;, &#39;GENETIC&#39;, &#39;GONNET1992&#39;, &#39;HOXD70&#39;, &#39;JOHNSON&#39;, &#39;JONES&#39;, &#39;LEVIN&#39;, &#39;MCLACHLAN&#39;, &#39;MDM78&#39;, &#39;NUC.4.4&#39;, &#39;PAM250&#39;, &#39;PAM30&#39;, &#39;PAM70&#39;, &#39;RAO&#39;, &#39;RISLER&#39;, &#39;SCHNEIDER&#39;, &#39;STR&#39;, &#39;TRANS&#39;]
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">MissingPythonDependencyError</span><span class="g g-Whitespace">              </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.Align</span><span class="w"> </span><span class="kn">import</span> <span class="n">substitution_matrices</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">matrix_list</span> <span class="o">=</span> <span class="n">substitution_matrices</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">matrix_list</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">Caskroom</span><span class="o">/</span><span class="n">miniforge</span><span class="o">/</span><span class="n">base</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">teach</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">Bio</span><span class="o">/</span><span class="n">Align</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">32</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span> <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">Bio</span><span class="w"> </span><span class="kn">import</span> <span class="n">MissingPythonDependencyError</span>
+<span class="ne">---&gt; </span><span class="mi">32</span>     <span class="k">raise</span> <span class="n">MissingPythonDependencyError</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span>         <span class="s2">&quot;Please install NumPy if you want to use Bio.Align. &quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span>         <span class="s2">&quot;See http://www.numpy.org/&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span>     <span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio</span><span class="w"> </span><span class="kn">import</span> <span class="n">BiopythonDeprecationWarning</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.Align</span><span class="w"> </span><span class="kn">import</span> <span class="n">_aligncore</span>  <span class="c1"># type: ignore</span>
+
+<span class="ne">MissingPythonDependencyError</span>: Please install NumPy if you want to use Bio.Align. See http://www.numpy.org/
 </pre></div>
 </div>
 </div>

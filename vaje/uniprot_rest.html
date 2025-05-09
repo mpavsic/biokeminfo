@@ -257,6 +257,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../seminar/seminar.html">Splošno o seminarju</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../seminar/seminar_2024-2025/seminar.html">Seminar 2024/2025</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar.html">Seminar 2023/2024</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/seminar_2023-2024/seminar-predloga.html">Predloga</a></li>
 </ul>
@@ -832,7 +833,7 @@ SLL
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="ne">MissingPythonDependencyError</span><span class="g g-Whitespace">              </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">14</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 <span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># izpišemo vsebino prebrane datoteke z uporabo BioPythona</span>
@@ -840,7 +841,24 @@ SLL
 <span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="k">for</span> <span class="n">seq_record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;izhod/uniprot-sample_output.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">):</span>
 <span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="nb">print</span><span class="p">(</span><span class="n">seq_record</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>   <span class="c1"># izpišemo ID</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;Bio&#39;
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">Caskroom</span><span class="o">/</span><span class="n">miniforge</span><span class="o">/</span><span class="n">base</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">teach</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">Bio</span><span class="o">/</span><span class="n">SeqIO</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">401</span>
+<span class="g g-Whitespace">    </span><span class="mi">399</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.SeqIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">SwissIO</span>
+<span class="g g-Whitespace">    </span><span class="mi">400</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.SeqIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">TabIO</span>
+<span class="ne">--&gt; </span><span class="mi">401</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.SeqIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">TwoBitIO</span>
+<span class="g g-Whitespace">    </span><span class="mi">402</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.SeqIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">UniprotIO</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.SeqIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">XdnaIO</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">Caskroom</span><span class="o">/</span><span class="n">miniforge</span><span class="o">/</span><span class="n">base</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">teach</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">Bio</span><span class="o">/</span><span class="n">SeqIO</span><span class="o">/</span><span class="n">TwoBitIO</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">80</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span> <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">78</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">Bio</span><span class="w"> </span><span class="kn">import</span> <span class="n">MissingPythonDependencyError</span>
+<span class="ne">---&gt; </span><span class="mi">80</span>     <span class="k">raise</span> <span class="n">MissingPythonDependencyError</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">81</span>         <span class="s2">&quot;Install NumPy if you want to use Bio.SeqIO with TwoBit files.&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">82</span>         <span class="s2">&quot;See http://www.numpy.org/&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span>     <span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.Seq</span><span class="w"> </span><span class="kn">import</span> <span class="n">Seq</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Bio.Seq</span><span class="w"> </span><span class="kn">import</span> <span class="n">SequenceDataAbstractBaseClass</span>
+
+<span class="ne">MissingPythonDependencyError</span>: Install NumPy if you want to use Bio.SeqIO with TwoBit files.See http://www.numpy.org/
 </pre></div>
 </div>
 </div>

@@ -523,11 +523,11 @@ Iskanje z <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/Bla
 <p><img alt="UniProt BLAST" src="../../../_images/s34-uniprot-blast.png" /></p>
 <p>Rezultati so anotirani, ampak so samo vstavljeni v UniProt iz EMBL/GenBank/DDBJ WGS (whole genome shotugn), podatki pa prihajajo, tako kot naš protein, iz metagenomskih podatkov. Primer takega proteina, ki je zelo podoben našemu je <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A7C2NJP5/entry">A0A7C2NJP5</a>. Anotacije teh proteinov niso zanesljive in o lastnostih našega proteina ne moremo sklepati. V <a class="reference external" href="https://www.uniprot.org/">UniProt</a> sem poiskal tioredoxine iz debla <em>Chlorobiota</em>, ki so bili bolje anotirani in jih primerjal z našim proteinom z <a class="reference external" href="https://www.ebi.ac.uk/jdispatcher/psa/emboss_water">algoritmom Smith-Waterman</a>. Naš protein sem primerjal z proteini <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KBN8/entry">Q8KBN8</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KED5/entry">Q8KED5</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/P10472/entry">P10472</a>, <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KE49/entry">Q8KE49</a> in <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q8KEA4/entry">Q8KEA4</a>. Primerjava s temi proteini je pokazala nizko podobnost in neohranjenost aktivnega mesta. Naš protein in našemu podobni proteini najdeni z <a class="reference external" href="https://www.uniprot.org/blast">UniProt BLAST</a>, so verjetno napačno avtomatsko anotirani kot tioredoksini. Lokalizacije na podlagi podobnosti ne moremo določiti.</p>
 <p>Protein <a class="reference external" href="https://www.uniprot.org/uniprotkb/A0A7C2NJP5/entry">A0A7C2NJP5</a> ima anotiran signalni peptid. Začetno zaporedje je na našem proteinu dobro ohranjeno, zato sem z orodjem <a class="reference external" href="https://services.healthtech.dtu.dk/services/SignalP-6.0/">SignalP-6.0</a> preveril prisotnost signalnega peptida. Glede na rezultat je visoka verjetnost, da se signalni peptid nahaja med ostanki 1-29. Rezultat je prikazan na sliki:</p>
-<p><img alt="Signalni peptid" src="seminar/seminar_2023-2024/naloge/s34-signalp.png" /></p>
+<p><img alt="Signalni peptid" src="../../../_images/s34-signalp.png" /></p>
 <p>Pri topologiji sem si pomagal z orodjem <a class="reference external" href="https://golgi.sandbox.google.com/">AlphaFold</a>. Rezultat je prikazan na naslednji sliki:</p>
-<p><img alt="AlphaFold rezultat" src="seminar/seminar_2023-2024/naloge/s34-alphafold-zanesljivost.png" /></p>
+<p><img alt="AlphaFold rezultat" src="../../../_images/s34-alphafold-zanesljivost.png" /></p>
 <p>Na sliki vidimo visoko zanesljivost strukture, razen na N-koncu proteina, kjer se nahaja signalni peptid. V preostalem delu strukture najdemo motiv podoben motivu <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S096921260100154X">tioredoksinskega pregiba</a>. Primerjava struktur <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksina 1</a> iz <em>E. coli</em> in našega proteina kaže strukturno podobnost, ampak neohranjeno aktivno mesto CGPC, ki se nahaja na tioredoksinu 1 na mestih 33-36. Slika superpozicije teh proteinov je na naslednji sliki:</p>
-<p><img alt="Superpozicija s tioredoksinom 1" src="seminar/seminar_2023-2024/naloge/s34-superpozicija-ecoli.png" /></p>
+<p><img alt="Superpozicija s tioredoksinom 1" src="../../../_images/s34-superpozicija-ecoli.png" /></p>
 <p>###Velikost proteina
 Velikost sem preprosto izračunal z uporabo aminokislinskega zaporedja za naš protein in orodja <a class="reference external" href="https://web.expasy.org/cgi-bin/protparam/protparam">ProtParam</a>. Masa proteina meri 20616 Daltona.</p>
 <p>###Domenska zgradba
@@ -538,9 +538,9 @@ Protein zaradi neohranjenosti aktivnega mesta v primerjavi z dobro anotiranimi t
 <p><img alt="Water tioredoksin 1" src="../../../_images/s34-tioredoksin-water.png" /></p>
 <p>###Sorodni proteini
 Podatke za filogenetsko drevo sem pridobil s pomočjo <a class="reference internal" href="#"><span class="xref myst">UniProt BLAST</span></a>. Iskal sem našemu podobna zaporedja in iskanje omejil na <em>Ignavibacteriales</em>. Izbral sem prvih 20 zadetkov razvrščenih po padajočih točkah. Seznamu teh zaporedij sem dodal še naše zaporedje in jih poravnal z v UniProt vgrajeno funkcijo za poravnavo večih zaporedij, kjer se nam tudi izriše filogenetsko drevo. V nadaljevanju so slike rezultatov UniProt BLAST, orodja za poravnavo in samega filogenetskega drevesa:</p>
-<p><img alt="UniProt BLAST Filogenetsko" src="seminar/seminar_2023-2024/naloge/s34-filogenetsko-podatki.png" /></p>
-<p><img alt="UniProt Alignment" src="seminar/seminar_2023-2024/naloge/s34-filogenetsko-poravnava.png" /></p>
-<p><img alt="Filogenetsko drevo" src="seminar/seminar_2023-2024/naloge/s34-filogenetsko.png" /></p>
+<p><img alt="UniProt BLAST Filogenetsko" src="../../../_images/s34-filogenetsko-podatki.png" /></p>
+<p><img alt="UniProt Alignment" src="../../../_images/s34-filogenetsko-poravnava.png" /></p>
+<p><img alt="Filogenetsko drevo" src="../../../_images/s34-filogenetsko.png" /></p>
 <p>###Ohranjene regije
 V našem proteinu ni ohranjenih regij. Zaradi neohranjenosti aktivnega mesta, sklepam, da so našemu podobna zaporedja in naše zaporedje napačno anotirana kot tioredoksin in ne nosijo nobene funkcije. Ker je protein strukturno podoben <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksinu 1</a>, ampak nima ohrnajenega aktivnega mesta, dvomim, da je tak protein funkcionalen in se verjetno ne sintetizira.</p>
 <p>###Podobni evkariontski proteini
@@ -551,11 +551,11 @@ Podobne evkariontske proteine sem iskal z <a class="reference external" href="ht
 Zaradi neuspešnega iskanja za podobnimi, bolje anotiranimi proteini in slabo anotiranega začetnega zaporedja, povezanosti z drugimi proteini ni mogoče določiti. Če sklepamo, da je naš protein navsezadnje tioredoksin, interagira z večimi proteini, najpomembneje z <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1220815/">tioredoksin reduktazo</a>, ki skrbi, da je tioredoksin v svojem reduciranem stanju. Naloga tioredoksinov je redukcija cisteinskih aminokislinskih ostankov.</p>
 <p>###Modeli struktur
 Model strukture našega proteina sem naredil s pomočjo AlphaFold, kot je že bilo prikazano, in prikazal v programu ChimeraX. Model strukture je prikazan na naslednji sliki:</p>
-<p><img alt="Naš protein" src="seminar/seminar_2023-2024/naloge/s34-alphafold.png" /></p>
+<p><img alt="Naš protein" src="../../../_images/s34-alphafold.png" /></p>
 <p>Ker nisem uspel določiti podobnih, bolje anotiranih proteinov, sem sklepal, da je naš protein navsezadnje tioredoksin in naredil superpozicijo s <a class="reference external" href="https://www.uniprot.org/uniprotkb/P0AA25/entry#structure">tioredoksinom 1</a> <a class="reference external" href="https://www.rcsb.org/structure/1sl1">(PDB: 1SL1)</a> iz <em>E. coli</em>. Superpozicija struktur je prikazana na naslednji sliki s programom ChimeraX:</p>
-<p><img alt="Superpozicija prokarionti" src="seminar/seminar_2023-2024/naloge/s34-superpozicija-ecoli.png" /></p>
+<p><img alt="Superpozicija prokarionti" src="../../../_images/s34-superpozicija-ecoli.png" /></p>
 <p>Z enakim sklepom sem naredil tudi superpozicijo našega proteina in <a class="reference external" href="https://www.uniprot.org/uniprotkb/P22217/entry#structure">tioredoksina 1</a> <a class="reference external" href="https://www.rcsb.org/structure/3f3q">(PDB: 3F3Q)</a> iz <em>Saccharomyces cerevisiae</em>. Superpozicija je bila prikazana s programom ChimeraX:</p>
-<p><img alt="Superpozicija evkarionti" src="seminar/seminar_2023-2024/naloge/s34-superpozicija-scerevisiae.png" /></p>
+<p><img alt="Superpozicija evkarionti" src="../../../_images/s34-superpozicija-scerevisiae.png" /></p>
 </section>
 </section>
 
