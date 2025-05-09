@@ -43,7 +43,7 @@ Vaša naloga je torej sestavljena iz dveh delov:
 3. Po potrebi lahko pripravite še dodatne spremljevalne datoteke kot del rešitve, če je to potrebno (poimenujte jih po ključu `S01-resitev-vsebina.koncnica`, pri čemer besedo `vsebina` nadomestite s kratkim opisom, `koncnica` pa s končnico, npr. `pdb`).
 3. Word datoteko shranite kot PDF, npr. `S01-resitev.pdf`.
 4. Prepričajte se, da ste datoteke res ustrezno poimenovali.
-5. Datoteke oddajte preko posebne povezave v spletni učilnici (razdelek 'Seminar'). Word datoteke ni potrebno oddajati, dovolj je PDF.
+5. Datoteke oddajte preko posebne povezave v spletni učilnici (razdelek 'Seminar'). Word datoteke ni potrebno oddajati, dovolj je PDF. **Datoteke morate oddati znotraj seminarskega termina.**
 
 **V datoteko z nalogo ne zapisujte vaših imen!**
 
