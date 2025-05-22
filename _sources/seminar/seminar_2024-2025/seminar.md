@@ -71,3 +71,7 @@ Pri **pripravi rešitve** upoštevajte smernice:
 - Navedite morebitne alternativne rešitve in jih pokomentirajte.
 - Vključite zaslonske slike, ko dokumentirajo proces reševanja ter vmesne in končne rezultate. Opremite jih s komentarji oz. naslovi, da bo jasno, kaj je na posamezni sliki prikazano. Prav tako se na slike naslavljajte v opisu postopa reševanja.
 - Če je potrebna uporaba spletnega programa (ali zbirke), ki ga niste uporabljali na vajah, posebno pozornost namenite opisu tega programa (kako se uporablja, interpretacija rezultatov). Dodate lahko tudi povezave do spletne pomoči ipd.
+
+## Naloge za reševanje
+
+Naključen razpored nalog za reševanje je na posebni [podstrani](naloge.md) v tabeli.
