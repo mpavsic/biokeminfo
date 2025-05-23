@@ -10,23 +10,23 @@ Avtorji nalog so študentke in študenti, katerih ime v spodjem seznamu zaenkrat
 
 ## 1. skupina (2025-05-23)
 
-| št. računalnika | dodeljena naloga     |
-| --------------- | -------------------- |
-| 1               | [TTC](naloge-resitve/TTC.md) |
-| 2               | [GGT](naloge-resitve/GGT.md) |
-| 3               | [ATC](naloge-resitve/ATC.md) |
-| 4               | [GAA](naloge-resitve/GAA.md) |
-| 5               | [CAT](naloge-resitve/CAT.md) |
-| 6               | [GAT](naloge-resitve/GAT.md) |
-| 7               | [GCC](naloge-resitve/GCC.md) |
-| 8               | [CAA](naloge-resitve/CAA.md) |
-| 9               | [TCC](naloge-resitve/TCC.md) |
-| 10              | [TAG](naloge-resitve/TAG.md) |
-| 11              | [CGA](naloge-resitve/CGA.md) |
-| 12              | [ATT](naloge-resitve/ATT.md) |
-| 13              | [GCA](naloge-resitve/GCA.md) |
-| 14              | [GAC](naloge-resitve/GAC.md) |
-| 15              | [TAA](naloge-resitve/TAA.md) |
+| št. računalnika | dodeljena naloga             | rešitev                                         |
+| --------------- | ---------------------------- | ----------------------------------------------- |
+| 1               | [TTC](naloge-resitve/TTC.md) | [TTC – rešitev](naloge-resitve/TTC-resitev.pdf) |
+| 2               | [GGT](naloge-resitve/GGT.md) | [GGT – rešitev](naloge-resitve/GGT-resitev.pdf) |
+| 3               | [ATC](naloge-resitve/ATC.md) | [ATC – rešitev](naloge-resitve/ATC-resitev.pdf) |
+| 4               | [GAA](naloge-resitve/GAA.md) | [GAA – rešitev](naloge-resitve/GAA-resitev.pdf) |
+| 5               | [CAT](naloge-resitve/CAT.md) | [CAT – rešitev](naloge-resitve/CAT-resitev.pdf) |
+| 6               | [GAT](naloge-resitve/GAT.md) | [GAT – rešitev](naloge-resitve/GAT-resitev.pdf) |
+| 7               | [GCC](naloge-resitve/GCC.md) | [GCC – rešitev](naloge-resitve/GCC-resitev.pdf) |
+| 8               | [CAA](naloge-resitve/CAA.md) | [CAA – rešitev](naloge-resitve/CAA-resitev.pdf) |
+| 9               | [TCC](naloge-resitve/TCC.md) | [TCC – rešitev](naloge-resitve/TCC-resitev.pdf) |
+| 10              | [TAG](naloge-resitve/TAG.md) | [TAG – rešitev](naloge-resitve/TAG-resitev.pdf) |
+| 11              | [CGA](naloge-resitve/CGA.md) | [CGA – rešitev](naloge-resitve/CGA-resitev.pdf) |
+| 12              | [ATT](naloge-resitve/ATT.md) | [ATT – rešitev](naloge-resitve/ATT-resitev.pdf) |
+| 13              | [GCA](naloge-resitve/GCA.md) | [GCA – rešitev](naloge-resitve/GCA-resitev.pdf) |
+| 14              | [GAC](naloge-resitve/GAC.md) | [GAC – rešitev](naloge-resitve/GAC-resitev.pdf) |
+| 15              | [TAA](naloge-resitve/TAA.md) | [TAA – rešitev](naloge-resitve/TAA-resitev.pdf) |
 
 ## 2. skupina (2025-05-30)
 
