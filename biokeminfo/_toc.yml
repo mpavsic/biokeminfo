@@ -59,6 +59,8 @@ parts:
   chapters:
   - file: seminar/seminar
   - file: seminar/seminar_2024-2025/seminar
+    sections:
+    - file: seminar/seminar_2024-2025/naloge
   - file: seminar/seminar_2023-2024/seminar
     sections:
     - file: seminar/seminar_2023-2024/seminar-predloga
