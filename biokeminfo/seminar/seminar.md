@@ -7,6 +7,10 @@ Seminar je pomemben del predmeta Biokemijska informatika, saj gre za bolj ali ma
 Avtor(ice) seminarskih nalog so študentke oz. študenti, navedeni pri posamezni nalogi.
 ```
 
+## Seminar 2025/2026
+
+Navodila za pripravo seminarskih nalog bodo objavljena pravočasno.
+
 ## Seminar 2024/2025
 
 V študijskem letu 2024/2025 vsak par študentov pripravi nalogo (in spremljajočo rešitev z razlago), ki jo drug naključno izbran par študentov reši, primerja svojo rešitev z rešitvijo avtorjev naloge, ter preko spletne ankete pokomentira nalogo in njeno rešitev. Podrobnosti so zbrane na podstrani [Seminar 2024/2025](seminar_2024-2025/seminar.md).
