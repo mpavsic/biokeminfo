@@ -16,7 +16,7 @@ Poimenska razporeditev v skupini je objavljena v spletni učilnici UL FKKT pod p
 ## Splošne informacije
 
 Naloga vsakega posameznika je, da:
-- **pripravi nalogo s področja biokemijske informatike** (kot da bi pripravljali nalog za vaje ali kolokvij v razširjeni obliki) – nalogo začnete pripravljati v okviru 'termina v učilnici' (glejte tabelo zgoraj), dokončate doma, ter do 'roka za oddajo' (glejte tabelo zgoraj);
+- **pripravi nalogo s področja biokemijske informatike** (kot da bi pripravljali nalogo za vaje ali kolokvij v razširjeni obliki) – nalogo začnete pripravljati v okviru 'termina v učilnici' (glejte tabelo zgoraj), dokončate doma, ter jo oddate do 'roka za oddajo' (glejte tabelo zgoraj);
 - **pripravi rešitev te naloge**, ki jo prav tako odda do 'roka za oddajo' (glejte tabelo zgoraj);
 - **reši njemu dodeljeno nalogo**, ki jo je sestavil kolega (dodelitev bo 2026-05-20) in do 'roka za reševanje' odda rešitev, komentar in izpolni anketo.
 
