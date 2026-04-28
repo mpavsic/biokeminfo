@@ -9,5 +9,5 @@ Avtor(ice) seminarskih nalog so študentke oz. študenti, navedeni pri posamezni
 
 ## Seminar 2025/2026
 
-Navodila za pripravo seminarskih nalog bodo objavljena pravočasno.
+Navodila za pripravo seminarskih nalog so [tukaj](seminar_2025-2026/seminar.md).
 
